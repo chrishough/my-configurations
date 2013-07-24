@@ -1,5 +1,7 @@
 #My Workstation Configurations: OSX
+
 ---
+
 This setup will backup your existing configuration files and hook up various text editor configurations,
 application mappings, sets of my favorite functions and utilities, and a few other goodies.  Use this setup
 at your own risk, and if you find bugs please let me know in git or ping me on twitter @chrishough.
@@ -7,6 +9,7 @@ at your own risk, and if you find bugs please let me know in git or ping me on t
 [Grok - Trunk - Live](http://www.youtube.com/watch?v=Qi_AAqi0RZM&feature=share)
 
 ---
+
 This configuration has been built upon a few assumptions. Feel free to tailor it to your needs as required:
 
 * [Autojump](https://github.com/joelthelion/autojump) for terminal installed.
@@ -18,6 +21,7 @@ This configuration has been built upon a few assumptions. Feel free to tailor it
 * My blog is running on [octopress](http://octopress.org/) so I have a system's file for this service.
 * If you have ```private``` configurations you can use the ```settings/private``` file to omit them from the git repository.
 * [iterm2](http://www.iterm2.com/#/section/home) is my primary terminal.
+
 ---
 
 Let's start by getting the manual steps out of the way first:
