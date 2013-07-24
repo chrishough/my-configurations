@@ -1,0 +1,11 @@
+[user]
+  name = Chris Hough
+  email = chris@noconformity.com
+[mergetool]
+  keepBackup = true
+[core]
+  editor = subl -w
+[color]
+  ui = auto
+[push]
+  default = simple
