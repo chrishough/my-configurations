@@ -1,22 +1,22 @@
 #!/bin/zsh
 
 # SHELL
-source shell
+source $HOME/.myconfigurations/settings/shell
 # ---------------------------------------------------------------
 # Ruby
-source ruby
+source $HOME/.myconfigurations/settings/ruby
 # ---------------------------------------------------------------
 # GIT
-source git
+source $HOME/.myconfigurations/settings/git
 # ---------------------------------------------------------------
 # HEROKU
-source heroku
+source $HOME/.myconfigurations/settings/heroku
 # ---------------------------------------------------------------
 # OCTOPRESS
-source octopress
+source $HOME/.myconfigurations/settings/octopress
 # ---------------------------------------------------------------
 # PRIVATE CONFIGURATIONS
-source private
+source $HOME/.myconfigurations/settings/private
 
 # ---------------------------------------------------------------
 # VIEW CONFIGURATIONS
