@@ -33,9 +33,9 @@ When you kick off the build system script it will process the following:
 
 1. cd $home
 2. mkdir .myconfigurations-backups
-3. make backup copies of: .zprofile,
-4. remove installed copies of: .zprofile,
-5. create symlinks to my configurations for: .zprofile
+3. make backup copies of: .zprofile,.zshrc,.gemrc,.gitconfig,.bash_profile,.bashrc,.vimrc
+4. remove installed copies of: .zprofile,.zshrc,.gemrc,.gitconfig,.bash_profile,.bashrc,.vimrc
+5. create symlinks to my configurations for: .zprofile.zshrc,.gemrc,.gitconfig,.bash_profile,.bashrc,.vimrc
 6. close terminal
 
 
