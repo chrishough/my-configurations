@@ -1,0 +1,15 @@
+#!/bin/zsh
+# ---------------------------------------------------------------
+# Ruby Environment Commands
+alias rb="rbenv"
+# ---------------------------------------------------------------
+# Rails Rake Environment Commands
+alias rk="rake"
+# ---------------------------------------------------------------
+# rbenv shortcuts
+export PATH=".bundle/binstubs:$PATH" 
+# ---------------------------------------------------------------
+# List Gem Versions
+function gemv() {
+ gem list "$*" --remote --all;
+}

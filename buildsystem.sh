@@ -43,4 +43,4 @@ else
 fi
 # process all re-maps
 rm .zprofile
-ln -s $home/.myconfigurations/system/.zprofile .zprofile
+ln -s .myconfigurations/system/.zprofile .zprofile

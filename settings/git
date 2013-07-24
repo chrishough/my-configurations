@@ -1,0 +1,52 @@
+#!/bin/zsh
+# ---------------------------------------------------------------
+# Git Check In, Push, Status Check
+function gitc() {
+ git commit -m "$*";
+ git push;
+ git status;
+}
+# ---------------------------------------------------------------
+# Git Merge, Push, Status Check
+function gitm() {
+ git merge "$*";
+ git push;
+ git status;
+}
+# ---------------------------------------------------------------
+# Git Merge, Push, Status Check
+function gitpb() {
+ git push -u origin "$*";
+ git status;
+}
+# ---------------------------------------------------------------
+# Create .gitkeep
+function gitk() {touch .gitkeep}
+# ---------------------------------------------------------------
+alias gita="git add ."
+alias gitad="git add . -A"
+alias gitck="git checkout "
+alias gitpull="git pull"
+
+alias gitp="git push"
+alias gitpo="git push origin "
+alias gitpot="git push origin --tags"
+alias gitphm="git push heroku master"
+alias gitpt="git push --tags"
+
+alias gitcl="git config --list"
+alias gits="git status"
+alias gitb="git branch"
+alias gitt="git tag"
+alias gitsh="git show"
+
+alias gitl="git log"
+alias gitltree="git log --graph --oneline --all"
+alias gitltreeb="git log --graph --all --decorate"
+
+alias gitdr="git push --delete origin "
+alias gitdb="git branch -d "
+alias gitdt="git tag -d "
+
+alias gitrso="git remote show origin"
+alias gitrv="git remote -v"
