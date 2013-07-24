@@ -1,4 +1,4 @@
-#Hough Workstation Configurations: OSX
+#My Workstation Configurations: OSX
 ---
 This setup will backup your existing configuration files and hook up various text editor configurations,
 application mappings, sets of my favorite functions and utilities, and a few other goodies.  Use this setup 
