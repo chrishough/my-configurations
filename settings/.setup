@@ -22,5 +22,5 @@ source $HOME/.myconfigurations/settings/private
 # VIEW CONFIGURATIONS
 # ---------------------------------------------------------------
 function printconfig() {
- cat $HOME/.myconfigurations/$*;
+ cat $HOME/.myconfigurations/settings/$*;
 }
