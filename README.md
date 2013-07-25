@@ -21,6 +21,15 @@ This configuration has been built upon a few assumptions. Feel free to tailor it
 * My blog is running on [octopress](http://octopress.org/) so I have a system's file for this service.
 * If you have ```private``` configurations you can use the ```settings/private``` file to omit them from the git repository.
 * [iterm2](http://www.iterm2.com/#/section/home) is my primary terminal.
+* These files are affected by this build:
+  * .zprofile
+  * .zshrc
+  * .gemrc
+  * .gitconfig
+  * .bash_profile
+  * .bashrc
+  * .vimrc
+  * .profile
 
 ---
 
@@ -37,9 +46,9 @@ When you kick off the build system script it will process the following:
 
 1. cd $home
 2. mkdir .myconfigurations-backups
-3. make backup copies of: .zprofile,.zshrc,.gemrc,.gitconfig,.bash_profile,.bashrc,.vimrc
-4. remove installed copies of: .zprofile,.zshrc,.gemrc,.gitconfig,.bash_profile,.bashrc,.vimrc
-5. create symlinks to my configurations for: .zprofile.zshrc,.gemrc,.gitconfig,.bash_profile,.bashrc,.vimrc
+3. make backup copies of:
+4. remove installed copies
+5. create symlinks to my configurations
 6. close terminal
 
 

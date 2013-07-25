@@ -66,6 +66,14 @@ else
    echo "skipped: .vimrc backup exits!"
 fi
 # ---------------------------------------------------------------
+if [ ! -L .profile ]; then
+  cp .profile .myconfigurations-backups/.profile
+  rm .profile
+  ln -s .myconfigurations/system/.profile .profile
+else
+   echo "skipped: .profile backup exits!"
+fi
+# ---------------------------------------------------------------
 # END
 
 
