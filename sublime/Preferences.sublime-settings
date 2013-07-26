@@ -1,0 +1,31 @@
+{
+  "auto_indent": true,
+  "color_scheme": "Packages/Base16 Color Schemes/base16-railscasts.dark.tmTheme",
+  "detect_indentation": true,
+  "fade_fold_buttons": false,
+  "font_face": "Inconsolata",
+  "font_size": 14.0,
+  "highlight_line": false,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "match_brackets_angle": true,
+  "phoenix_color_blue": true,
+  "phoenix_color_expanded_folder": true,
+  "phoenix_dirty_bottom_bar": true,
+  "phoenix_dirty_bottom_bar_red": true,
+  "phoenix_eighties": true,
+  "phoenix_highlight_current_tab": true,
+  "phoenix_sidebar_tree_small": true,
+  "phoenix_solid_current_tab": true,
+  "phoenix_tabs_auto_width": true,
+  "phoenix_tabs_large": true,
+  "tab_size": 2,
+  "theme": "Phoenix Dark.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_automatic_white_space": true,
+  "trailing_spaces_trim_on_save": true,
+  "trailing_spaces_save_after_trim": true,
+  "word_wrap": false
+}

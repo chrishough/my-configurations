@@ -1,79 +1,108 @@
-cd $home
-# START
+cd $HOME
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# START: CORE SETTINGS
 # ---------------------------------------------------------------
 # build back up directory
 if [ ! -d .myconfigurations-backups ]; then
-  mkdir .myconfigurations-backups
+  mkdir $HOME/.myconfigurations-backups
 else
-  echo "skipped: .myconfigurations-backups already configured!"
+  echo "skipped: $HOME/.myconfigurations-backups already configured!"
 fi
 # ---------------------------------------------------------------
 # ZPROFILE
 if [ ! -L .zprofile ]; then
-  cp .zprofile .myconfigurations-backups/.zprofile
+  cp .zprofile $HOME/.myconfigurations-backups/.zprofile
   rm .zprofile
-  ln -s .myconfigurations/system/.zprofile .zprofile
+  ln -s $HOME/.myconfigurations/system/.zprofile .zprofile
 else
    echo "skipped: .zprofile already configured!"
 fi
 # ---------------------------------------------------------------
 # ZSHRC
 if [ ! -L .zshrc ]; then
-  cp .zshrc .myconfigurations-backups/.zshrc
+  cp .zshrc $HOME/.myconfigurations-backups/.zshrc
   rm .zshrc
-  ln -s .myconfigurations/system/.zshrc .zshrc
+  ln -s $HOME/.myconfigurations/system/.zshrc .zshrc
 else
   echo "skipped: .zshrc already configured!"
 fi
 # ---------------------------------------------------------------
+# GEMRC
 if [ ! -L .gemrc ]; then
-  cp .gemrc .myconfigurations-backups/.gemrc
+  cp .gemrc $HOME/.myconfigurations-backups/.gemrc
   rm .gemrc
-  ln -s .myconfigurations/system/.gemrc .gemrc
+  ln -s $HOME/.myconfigurations/system/.gemrc .gemrc
 else
    echo "skipped: .gemrc backup exits!"
 fi
 # ---------------------------------------------------------------
+# GITCONFIG
 if [ ! -L .gitconfig ]; then
-  cp .gitconfig .myconfigurations-backups/.gitconfig
+  cp .gitconfig $HOME/.myconfigurations-backups/.gitconfig
   rm .gitconfig
-  ln -s .myconfigurations/system/.gitconfig .gitconfig
+  ln -s $HOME/.myconfigurations/system/.gitconfig .gitconfig
 else
    echo "skipped: .gitconfig backup exits!"
 fi
 # ---------------------------------------------------------------
+# BASH_PROFILE
 if [ ! -L .bash_profile ]; then
-  cp .bash_profile .myconfigurations-backups/.bash_profile
+  cp .bash_profile $HOME/.myconfigurations-backups/.bash_profile
   rm .bash_profile
-  ln -s .myconfigurations/system/.bash_profile .bash_profile
+  ln -s $HOME/.myconfigurations/system/.bash_profile .bash_profile
 else
    echo "skipped: .bash_profile backup exits!"
 fi
 # ---------------------------------------------------------------
+# BASHRC
 if [ ! -L .bashrc ]; then
-  cp .bashrc .myconfigurations-backups/.bashrc
+  cp .bashrc $HOME/.myconfigurations-backups/.bashrc
   rm .bashrc
-  ln -s .myconfigurations/system/.bashrc .bashrc
+  ln -s $HOME/.myconfigurations/system/.bashrc .bashrc
 else
    echo "skipped: .bashrc backup exits!"
 fi
 # ---------------------------------------------------------------
+# VIMRC
 if [ ! -L .vimrc ]; then
-  cp .vimrc .myconfigurations-backups/.vimrc
+  cp .vimrc $HOME/.myconfigurations-backups/.vimrc
   rm .vimrc
-  ln -s .myconfigurations/system/.vimrc .vimrc
+  ln -s $HOME/.myconfigurations/system/.vimrc .vimrc
 else
    echo "skipped: .vimrc backup exits!"
 fi
 # ---------------------------------------------------------------
+# PROFILE
 if [ ! -L .profile ]; then
-  cp .profile .myconfigurations-backups/.profile
+  cp .profile $HOME/.myconfigurations-backups/.profile
   rm .profile
-  ln -s .myconfigurations/system/.profile .profile
+  ln -s $HOME/.myconfigurations/system/.profile .profile
 else
    echo "skipped: .profile backup exits!"
 fi
 # ---------------------------------------------------------------
-# END
-
-
+# END: CORE SETTINGS
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# START: SUBLIME SETTINGS
+# ---------------------------------------------------------------
+# PREFERENCES.SUBLIME-SETTINGS
+cd $HOME/library/Application\ Support/Sublime\ Text\ 3/Packages/user
+if [ ! -L Preferences.sublime-settings ]; then
+  cp Preferences.sublime-settings $HOME/.myconfigurations-backups/Preferences.sublime-settings
+  rm Preferences.sublime-settings
+  ln -s $HOME/.myconfigurations/sublime/Preferences.sublime-settings Preferences.sublime-settings
+else
+   echo "skipped: Preferences.sublime-settings backup exits!"
+fi
+# ---------------------------------------------------------------
+# DEFAULT (OSX).SUBLIME-KEYMAP
+if [ ! -L Default\ \(OSX\).sublime-keymap ]; then
+  cp Default\ \(OSX\).sublime-keymap $HOME/.myconfigurations-backups/Default\ \(OSX\).sublime-keymap
+  rm Default\ \(OSX\).sublime-keymap
+  ln -s $HOME/.myconfigurations/sublime/Default\ \(OSX\).sublime-keymap Default\ \(OSX\).sublime-keymap
+else
+   echo "skipped: Default (OSX).sublime-keymap Default backup exits!"
+fi
+# ---------------------------------------------------------------

@@ -1,0 +1,3 @@
+[
+  { "keys": ["command+shift+t"], "command": "delete_trailing_spaces" }
+]

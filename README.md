@@ -12,15 +12,15 @@ at your own risk, and if you find bugs please let me know in git or ping me on t
 
 This configuration has been built upon a few assumptions. Feel free to tailor it to your needs as required:
 
-* [Autojump](https://github.com/joelthelion/autojump) for terminal installed.
+* [Autojump](https://github.com/joelthelion/autojump) for terminal pre-installed.
 * [Google Chrome](www.google.com/chrome) is your primary development browser.
-* [Sublime Text 3](http://www.sublimetext.com/3) is your text editor for coding.
-* [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally.
-* [homebrew](http://brew.sh/) has been configured and ```brew doctor``` does not report any errors.
+* [Sublime Text 3](http://www.sublimetext.com/3) is your text editor for coding pre-installed.
+* [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally, pre-installed.
+* [homebrew](http://brew.sh/) has been configured and ```brew doctor``` does not report any errors, pre-installed.
 * I have numerous applications running on [heroku](https://www.heroku.com) so I have a system's file for this service.
 * My blog is running on [octopress](http://octopress.org/) so I have a system's file for this service.
 * If you have ```private``` configurations you can use the ```settings/private``` file to omit them from the git repository.
-* [iterm2](http://www.iterm2.com/#/section/home) is my primary terminal.
+* [iterm2](http://www.iterm2.com/#/section/home) is my primary terminal, pre-installed.
 * These files are affected by this build:
   * .zprofile
   * .zshrc
