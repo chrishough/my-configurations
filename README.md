@@ -21,7 +21,7 @@ This configuration has been built upon a few assumptions. Feel free to tailor it
 * My blog is running on [octopress](http://octopress.org/) so I have a system's file for this service.
 * If you have ```private``` configurations you can use the ```settings/private``` file to omit them from the git repository.
 * [iterm2](http://www.iterm2.com/) is my primary terminal, pre-installed.
-* These files are affected by this build:
+* These system and shell files are affected by this build:
   * .zprofile
   * .zshrc
   * .gemrc
@@ -30,6 +30,10 @@ This configuration has been built upon a few assumptions. Feel free to tailor it
   * .bashrc
   * .vimrc
   * .profile
+* These application files are affected by this build:
+  * Preferences.sublime-settings
+  * Default (OSX).sublime-keymap
+
 
 ---
 
@@ -46,7 +50,7 @@ When you kick off the build system script it will process the following:
 
 1. cd $home
 2. mkdir .myconfigurations-backups
-3. make backup copies of:
+3. make backup copies
 4. remove installed copies
 5. create symlinks to my configurations
 6. close terminal
