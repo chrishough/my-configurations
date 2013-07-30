@@ -111,6 +111,16 @@ while true; do
              echo "skipped: Default (OSX).sublime-keymap Default backup exits!"
           fi
           # ---------------------------------------------------------------
+          # BASE16-RAILSCASTS.DARK.CH.TMTHEME
+          cd $HOME/library/Application\ Support/Sublime\ Text\ 3/Packages
+          if [ ! -L base16-railscasts.dark.ch.tmTheme ]; then
+            cp base16-railscasts.dark.ch.tmTheme $HOME/.myconfigurations-backups/base16-railscasts.dark.ch.tmTheme
+            rm base16-railscasts.dark.ch.tmTheme
+            ln -s $HOME/.myconfigurations/sublime/base16-railscasts.dark.ch.tmTheme base16-railscasts.dark.ch.tmTheme
+          else
+             echo "skipped: base16-railscasts.dark.ch.tmTheme Default backup exits!"
+          fi
+          # ---------------------------------------------------------------
           echo "\n"
           break;;
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -21,7 +21,7 @@ function gitpb() {
 }
 # ---------------------------------------------------------------
 # Create .gitkeep
-function gitk() {touch .gitkeep}
+function gitk() {touch .keep}
 # ---------------------------------------------------------------
 alias gita="git add ."
 alias gitad="git add . -A"
@@ -33,6 +33,7 @@ alias gitpo="git push origin "
 alias gitpot="git push origin --tags"
 alias gitphm="git push heroku master"
 alias gitpt="git push --tags"
+alias gitpushall="git push --recurse-submodules=on-demand"
 
 alias gitcl="git config --list"
 alias gits="git status"
