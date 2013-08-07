@@ -51,3 +51,7 @@ alias gitdt="git tag -d "
 
 alias gitrso="git remote show origin"
 alias gitrv="git remote -v"
+
+alias standup="git log --since '1 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
+alias standup5="git log --since '5 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
+alias standup10="git log --since '10 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
