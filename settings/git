@@ -55,3 +55,5 @@ alias gitrv="git remote -v"
 alias standup="git log --since '1 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
 alias standup5="git log --since '5 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
 alias standup10="git log --since '10 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
+
+alias purgeSVN="find . -name .svn  -type d -print0 |xargs -0 rm -rf;"
