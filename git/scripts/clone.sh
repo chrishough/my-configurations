@@ -27,8 +27,3 @@ git config --list
 cp $HOME/.myconfigurations/git/hooks/commit_msg_add_branch_name .git/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 
-
-
-
-
-

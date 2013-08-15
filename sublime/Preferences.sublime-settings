@@ -27,5 +27,6 @@
 	"trailing_spaces_trim_on_save": true,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"word_wrap": false
+	"word_wrap": false,
+	"sublimelinter_popup_errors_on_save": true
 }
