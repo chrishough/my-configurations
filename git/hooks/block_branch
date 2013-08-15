@@ -5,6 +5,7 @@
 # Put this file in your local repo, in the .git/hooks folder
 # and make sure it is executable.
 # The name of the file *must* be "pre-commit" for Git to pick it up.
+# Edit .git/hooks/pre-commit & make sure it is excutable chmod +x
 # https://gist.github.com/Simbul/1781656
 
 FORBIDDEN_BRANCHES = ["testing", "staging", "production"]
