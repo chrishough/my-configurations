@@ -27,6 +27,7 @@ alias gita="git add ."
 alias gitad="git add . -A"
 alias gitck="git checkout "
 alias gitpull="git pull"
+alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
 
 alias gitp="git push"
 alias gitpo="git push origin "
