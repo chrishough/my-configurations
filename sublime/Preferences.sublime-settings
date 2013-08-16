@@ -21,12 +21,12 @@
 	"phoenix_solid_current_tab": true,
 	"phoenix_tabs_auto_width": true,
 	"phoenix_tabs_large": true,
+	"sublimelinter_popup_errors_on_save": true,
 	"tab_size": 2,
 	"theme": "Phoenix Dark.sublime-theme",
 	"trailing_spaces_save_after_trim": true,
 	"trailing_spaces_trim_on_save": true,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"word_wrap": false,
-	"sublimelinter_popup_errors_on_save": true
+	"word_wrap": false
 }

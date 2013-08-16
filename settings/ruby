@@ -2,6 +2,7 @@
 # ---------------------------------------------------------------
 # Ruby Environment Commands
 alias rb="rbenv"
+alias rbuild="bundle install --path=.bundle --binstubs=.bundle/binstubs"
 # ---------------------------------------------------------------
 # Rails Rake Environment Commands
 alias rk="rake"
