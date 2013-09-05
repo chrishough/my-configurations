@@ -22,6 +22,10 @@ function gitpb() {
 # ---------------------------------------------------------------
 # Create .gitkeep
 function gitk() {touch .keep}
+function gitkf() {
+ mkdir "$*";
+ touch "$*/.keep";
+}
 # ---------------------------------------------------------------
 alias gita="git add ."
 alias gitad="git add . -A"
