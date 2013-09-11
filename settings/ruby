@@ -7,6 +7,20 @@ alias rbuild="bundle install --path=.bundle --binstubs=.bundle/binstubs"
 # Rails Rake Environment Commands
 alias rk="rake"
 # ---------------------------------------------------------------
+# Rails GenerateCommands
+function rgc() {
+  rails g controller "$*";
+}
+function rgcP() {
+  rails g controller "$*";
+}
+function rgm() {
+  rails g model "$*";
+}
+function rgmP() {
+  rails g model "$*" --migration=false;
+}
+# ---------------------------------------------------------------
 # rbenv shortcuts
 export PATH=".bundle/binstubs:$PATH" 
 # ---------------------------------------------------------------
