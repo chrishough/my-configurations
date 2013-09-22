@@ -16,6 +16,9 @@ export AUTOJUMP_IGNORE_CASE=1
 export BROWSER='open -a /Applications/Google Chrome.app'
 # ---------------------------------------------------------------
 # Get Current Path
+function openmd() { open -a "/Applications/Mou.app" "$@"; }
+# ---------------------------------------------------------------
+# Get Current Path
 function reloadshell() {exec $SHELL}
 # ---------------------------------------------------------------
 # Get Current Path
