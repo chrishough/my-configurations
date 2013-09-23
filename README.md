@@ -23,7 +23,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 
 #### Shell Theme
 -----
-![My Current Theme](https://github.com/chrishough/myconfigurations/blob/master/assets/settings/shellThemeExample.png)
+![My Current Theme](https://github.com/chrishough/myconfigurations/blob/master/assets/settings/shellThemeExample.png "My Current Theme")
 
 
 
