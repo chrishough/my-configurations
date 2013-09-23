@@ -41,9 +41,3 @@ source $ZSH/oh-my-zsh.sh
 #disable auto correct
 unsetopt correct_all
 
-# Customize to your needs...
-
-# RUBY DEVELOPMENT
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-
