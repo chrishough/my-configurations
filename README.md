@@ -23,11 +23,14 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 
 #### Shell Theme
 -----
-![My Current Theme](https://github.com/chrishough/myconfigurations/blob/master/assets/settings/shellThemeExample.png "My Current Theme")
+![my current shell theme](https://github.com/chrishough/myconfigurations/raw/master/assets/settings/shellThemeExample.png)
 
+1. Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors, and import them under the colors panel in iterm2 preferences.  
 
+![my iterm2 color settings](https://github.com/chrishough/myconfigurations/raw/master/assets/settings/shellThemeItermColorsExample.png)
 
-1. Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors
+2. TEST
+
 
 
 
