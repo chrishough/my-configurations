@@ -12,14 +12,22 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * Running ```brew doctor``` does not report any configuration issues.
 
 
-#### Setup
+#### Setup Shell
 -----
 1. Download and install [iterm2](http://www.iterm2.com).  This shell will be configured to replace the default bash and adjust terminal.
 2. Follow the guide to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) which will give you access to a vast amount of themes. 
 3. Once the themes finish installing make sure to run ```chsh -s /bin/zsh``` to set zsh as your default shell.
 4. ```brew install autojump``` [Autojump](https://github.com/joelthelion/autojump) memorizes your favorite locations and alows you to quickly navigate to a path from anywhere in your shell.
 5. ```brew install the_silver_searcher``` [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) replaces ack and is by far the fastest search utility I have used.
-6. Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2)
+
+
+#### Shell Theme
+-----
+![My Current Theme](https://github.com/chrishough/myconfigurations/blob/master/assets/settings/shellThemeExample.png)
+
+
+
+1. Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors
 
 
 
