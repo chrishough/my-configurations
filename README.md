@@ -13,6 +13,7 @@ at your own risk, and if you find bugs please let me know in git or ping me on t
 This configuration has been built upon a few assumptions. Feel free to tailor it to your needs as required:
 
 * [Autojump](https://github.com/joelthelion/autojump) for terminal pre-installed.
+* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) for terminal pre-installed. Far faster than ack.
 * [Google Chrome](http://www.google.com/chrome) is your primary development browser.
 * [Sublime Text 3](http://www.sublimetext.com/3) is your text editor for coding pre-installed.
 * [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally, pre-installed.
