@@ -152,7 +152,7 @@ at your own risk, and if you run into bugs please let me know.
 
 * I have numerous applications running on [heroku](https://www.heroku.com) so I have a settings file for this service.
 * If you have ```private``` configurations you can use the ```settings/private``` file to omit them from the git repository.
-* My blog is running on [octopress](http://octopress.org/) so I have a settingss file for this service.
+* My blog is running on [octopress](http://octopress.org/) so I have a settings file for this service.
 * These system and shell files are affected by this build:
   * .zprofile
   * .zshrc
