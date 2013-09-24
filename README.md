@@ -65,7 +65,7 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 2.	Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
 3.	Using [Package Control](https://sublime.wbond.net/installation) install these plugins:
 
-	* [Base16 Color Schemes](https://github.com/chriskempson/base16-textmate)
+	* [Base16 Color Schemes](https://github.com/chriskempson/base16-textmate/)
 
 
 **Note**: Currently [Sublime Text 3](http://www.sublimetext.com/3) is in beta, so make sure to check each of the listed plugins for Sublime Text 3 installation details.
