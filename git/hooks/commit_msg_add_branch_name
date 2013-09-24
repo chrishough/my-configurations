@@ -7,9 +7,6 @@
 NAME=$(git branch | grep '*' | sed 's/* //')
 DESCRIPTION=$(git config branch."$NAME".description)
 TEXT=$(cat "$1" | sed '/^#.*/d')
-GIT_COMMIT_SHORT_ID=$(git rev-parse --short HEAD)
-GIT_COMMIT_ID=$(git rev-parse HEAD)
-GIT_GITHUB_URL=$(git config --get remote.github.url)
 
 if [ -n "$TEXT" ]
 then
@@ -19,7 +16,6 @@ then
        echo "" >> "$1"
        echo $DESCRIPTION >> "$1"
     fi
-    echo $GIT_GITHUB_URL$GIT_COMMIT_ID >> "$1"
 else
     echo "Aborting commit due to empty commit message."
     exit 1
