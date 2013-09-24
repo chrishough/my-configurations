@@ -181,6 +181,6 @@ When you kick off the build system script it will process the following:
 3. remove installed copies.
 4. create symlinks to my configurations.
 
-TESTING GIT HOOKS 1
+TESTING GIT HOOKS 12
 
 
