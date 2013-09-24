@@ -46,7 +46,7 @@ alias gitb="git branch"
 alias gitt="git tag"
 alias gitsh="git show"
 
-alias gitl="git log"
+alias gitl="git log --show-notes"
 alias gitltree="git log --graph --oneline --all"
 alias gitltreeb="git log --graph --all --decorate"
 
