@@ -61,9 +61,9 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 
 ## Setup Our Text Editor
 
-* Download and install [Sublime Text 3](http://www.sublimetext.com/3), and yes pay the license fee. It's worth it.
-* Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
-* Using the [Package Control](https://sublime.wbond.net/installation) install these plugins:
+1.	Download and install [Sublime Text 3](http://www.sublimetext.com/3), and yes pay the license fee. It's worth it.
+2.	Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
+3.	Using [Package Control](https://sublime.wbond.net/installation) install these plugins:
 
 	* [Base16 Color Schemes](https://github.com/chriskempson/base16-textmate)
 	* [Theme - Phoenix (phoenix dark red)](https://github.com/netatoo/phoenix-theme)
