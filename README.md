@@ -182,7 +182,7 @@ When you kick off the build system script it will process the following:
 4. create symlinks to my configurations.
 
 
-TESTING GIT HOOKS 12345678
+TESTING GIT HOOKS 123456789
 
 
 
