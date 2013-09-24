@@ -61,12 +61,24 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 
 ## Setup Our Text Editor
 
-1.	Download and install [Sublime Text 3](http://www.sublimetext.com/3), and yes pay the license fee. It's worth it.
-2.	Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
-3.	Using [Package Control](https://sublime.wbond.net/installation) install these plugins.
+* Download and install [Sublime Text 3](http://www.sublimetext.com/3), and yes pay the license fee. It's worth it.
+* Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
+* Using [Package Control](https://sublime.wbond.net/installation) install these plugins.
 
-	1. [Base16 Color Schemes](https://github.com/chriskempson/base16-textmate/)
-
+	* [Base16 Color Schemes](https://github.com/chriskempson/base16-textmate)
+	* [Theme - Phoenix](https://github.com/netatoo/phoenix-theme)
+	* [Sublime Better CoffeeScript](https://github.com/aponxi/sublime-better-coffeescript)
+	* [Emmet (PyV8)](https://github.com/sergeche/emmet-sublime)
+	* [Git Gutter](https://github.com/jisaacks/GitGutter)
+	* [LESS](https://github.com/danro/less-sublime)
+	* [MacTerminal](https://github.com/afterdesign/MacTerminal)
+	* [SASS](https://github.com/nathos/sass-textmate-bundle/)
+	* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements/)
+	* [SLIM (ruby-slim.tmbundle)](https://github.com/slim-template/ruby-slim.tmbundle)
+	* [Sublime Alignment](http://wbond.net/sublime_packages/alignment)
+	* [Trailing Spaces](https://github.com/SublimeText/trailingspaces)
+	* [knockdown](https://github.com/aziz/knockdown)
+	* [Bracket Highlighter](https://github.com/facelessuser/BracketHighlighter/tree/BH2ST3)
 
 **Note**: Currently [Sublime Text 3](http://www.sublimetext.com/3) is in beta, so make sure to check each of the listed plugins for Sublime Text 3 installation details.
 
