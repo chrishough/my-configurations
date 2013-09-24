@@ -65,7 +65,7 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 2.	Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
 3.	Using [Package Control](https://sublime.wbond.net/installation) install these plugins:
 
-	* [Base16 Color Schemes](https://github.com/chriskempson/base16-textmate "Title")
+	* [Base16 Color Schemes](/chriskempson/base16-textmate)
 	* [Theme - Phoenix (phoenix dark red)](https://github.com/netatoo/phoenix-theme)
 	* [Sublime Better CoffeeScript](https://github.com/aponxi/sublime-better-coffeescript)
 	* [Emmet (PyV8)](https://github.com/sergeche/emmet-sublime)
