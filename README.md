@@ -1,11 +1,11 @@
-## My Workstation
-
+### My Workstation
+----
 I have found every developer's workstation configuration to be highly variable and tailored to their exact desires.  Whatever makes the person tick right?  I tend to spend a chunk of time each month tuning my box for maximum efficiency, and just like the quantified self movement this is my guide tracking the updates.  In a nutshell this is how I [grok, trunk, and live](href="http://www.youtube.com/watch?v=Qi_AAqi0RZM) each and every day. I believe in being part cyborg actually and rarely unplug, however, that is a totally different story.
 
 If you want to keep up with my rants hit me up on twitter [@chrishough](http://twitter.com/chrishough), and check out my blog [noconformity](http://noconformity.com).
 
-## Assumptions
-
+### Assumptions
+----
 * The workstation is running the latest production release of [Apple OSX](http://www.apple.com/osx/).
 * The latest release of [Xcode](https://developer.apple.com/xcode/) has been installed with the developer command line tools.
 * [Homebrew](http://brew.sh/) has been successfully installed.
@@ -16,8 +16,8 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * I would fork this repo to your github account so you can build off it and tailor it to your needs.
 
 
-## Setup Shell
-
+### Setup Shell
+----
 1. Download and install [iterm2](http://www.iterm2.com).  This shell will be configured to replace the default bash and adjust terminal.
 2. Follow the guide to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) which will give you access to a vast amount of themes.
 3. Once the themes finish installing make sure to run ```chsh -s /bin/zsh``` to set zsh as your default shell.
@@ -25,8 +25,8 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 5. ```brew install the_silver_searcher``` [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) replaces ack and is by far the fastest search utility I have used.
 
 
-## Setup Shell Theme
-
+### Setup Shell Theme
+----
 ![my current shell theme](https://github.com/chrishough/myconfigurations/raw/master/assets/settings/shellThemeExample.png)
 
 * Download and install the following font files: [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) and [Sauce Code Powerline Regular](https://github.com/Lokaltog/powerline-fonts).
@@ -51,16 +51,16 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 ![my iterm2 window settings](https://github.com/chrishough/myconfigurations/raw/master/assets/settings/shellThemeItermWindowExample.png)
 
 
-## Setup Base Configuration
-
+### Setup Base Configuration
+----
 In your shell ```cd``` to your home directory and let's get this code repo downloaded.
 
 ```
 	git clone git@github.com:chrishough/myconfigurations.git .myconfigurations
 ```
 
-## Setup Our Text Editor
-
+### Setup Our Text Editor
+----
 * Download and install [Sublime Text 3](http://www.sublimetext.com/3), and yes pay the license fee. It's worth it.
 * Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
 * Using [Package Control](https://sublime.wbond.net/installation) install these plugins.
@@ -143,8 +143,8 @@ Now back in terminal, let's setup the system wide shortcut for sublime.
 	sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
 ```
 
-## Run the Machine Builder
-
+####Run the Machine Builder
+----
 
 This setup will backup your existing configuration files and hook up the various text editor configurations,
 application mappings, sets of my favorite functions and utilities, and a few other goodies.  Use this setup
@@ -181,7 +181,21 @@ When you kick off the build system script it will process the following:
 3. remove installed copies.
 4. create symlinks to my configurations.
 
+####Setup POW to Run Applications Locally
+----
+[POW](http://pow.cx/) is a zero-config Rack server for Mac OSX, and can be installed via [Homebrew](http://brew.sh/).
 
+```
+	brew install pow	
+```
 
+Once [POW](http://pow.cx/) is successfully installed make sure you follow the commands brew asks you to run.
+
+```
+	sudo pow --install-system
+	pow --install-local
+```
+
+After installing POW install [powder](https://github.com/Rodreegez/powder) to control and interact with the POW rack server.
 
 
