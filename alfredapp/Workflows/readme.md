@@ -8,7 +8,17 @@ Keyboard Shortcut Files
 	sublimetext 3: cmd+shift+s
 
 ```
+----
 
+### Show Hidden Files
+
+Show or Hide OSX Hidden Files by [@chrishough](https://github.com/chrishough/).
+
+```
+Keywords: show true | false
+```
+
+![Show Hidden Files](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/hidden-files/hidden-files.png)
 
 ----
 
