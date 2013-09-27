@@ -10,6 +10,18 @@ Keyboard Shortcut Files
 ```
 ----
 
+### Empty All
+
+This script will move all of your osx junk mail to the trash, empty the osx mail trash, and empty the system trash by [@chrishough](https://github.com/chrishough/).
+
+```
+Keywords: empty all
+```
+
+![Empty All](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/empty-all/empty-all.png)
+
+----
+
 ### Show Hidden Files
 
 Show or Hide OSX Hidden Files by [@chrishough](https://github.com/chrishough/).
