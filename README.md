@@ -13,6 +13,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [Google Chrome](http://www.google.com/chrome) is your primary development browser.
 * [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally, pre-installed.
 * Although not required for this guide I use the [Adobe Creative Cloud](http://www.adobe.com/) for all of my design related tasks.
+* If you use [Alfred](http://www.alfredapp.com/) workflows and themes, check out [my configurations](https://github.com/chrishough/myconfigurations/tree/master/alfredapp).
 * I would fork this repo to your github account so you can build off it and tailor it to your needs.
 
 
