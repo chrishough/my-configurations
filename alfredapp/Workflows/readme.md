@@ -65,3 +65,14 @@ Keywords: st
 
 ----
 
+### [TimeZones](http://www.alfredforum.com/topic/491-timezones-a-world-clock-script-filter-updated-to-v161/)
+
+Get an instant list of the current time in various cities around the world by [@CarlosNZ](http://www.alfredforum.com/topic/491-timezones-a-world-clock-script-filter-updated-to-v161/). [Download v1.61](https://github.com/zenorocha/alfred-workflows/raw/master/time-zones/time-zones.alfredworkflow).
+
+```
+Keywords: tz
+```
+
+![TimeZones](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/time-zones/alfred-st.png)
+
+----
