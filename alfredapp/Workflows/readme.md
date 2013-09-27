@@ -6,8 +6,8 @@ Keyboard Shortcut Files
 ```
 	iterm2: cmd+shift+i
 	sublimetext 3: cmd+shift+s
-
 ```
+
 ----
 
 ### Empty All
