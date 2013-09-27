@@ -89,3 +89,20 @@ Keywords: subl
 
 ----
 
+### [Weather](http://dferg.us/weather-for-alfred-2/)
+
+Pull your local weather forecast or get the weather for other cities by [@jdfwarrior](https://github.com/jdfwarrior/). [Download](http://dferg.us/weather-for-alfred-2/).
+
+```
+Keywords: weather, forecast, conditions
+```
+
+![Weather](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/weather/alfred-weather.png)
+
+
+
+
+
+
+
+
