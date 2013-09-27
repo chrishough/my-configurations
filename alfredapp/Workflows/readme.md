@@ -1,6 +1,17 @@
 #####Alfred Workflows
 ----
 
+Keyboard Shortcut Files
+
+```
+	iterm2: cmd+shift+i
+	sublimetext 3: cmd+shift+s
+
+```
+
+
+----
+
 ### [Font Awesome](https://github.com/ruedap/alfred2-font-awesome-workflow)
 
 Search through [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icons, by [@ruedap](https://github.com/ruedap/). [Download v0.13](https://github.com/zenorocha/alfred-workflows/raw/master/font-awesome/font-awesome.alfredworkflow).
