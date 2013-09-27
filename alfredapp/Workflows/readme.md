@@ -73,7 +73,7 @@ Get an instant list of the current time in various cities around the world by [@
 Keywords: tz
 ```
 
-![TimeZones](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/time-zones/alfred-st.png)
+![TimeZones](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/time-zones/alfred-tz.png)
 
 ----
 
