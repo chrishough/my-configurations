@@ -1,4 +1,4 @@
-#####Hough Alfred
+#####Alfred
 ----
 
 A collection of [Alfred](http://www.alfredapp.com/) workflows and themes. [Powerpack](https://buy.alfredapp.com/) required!
