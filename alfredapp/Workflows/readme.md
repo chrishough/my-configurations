@@ -76,3 +76,16 @@ Keywords: tz
 ![TimeZones](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/time-zones/alfred-st.png)
 
 ----
+
+### [Sublime Text](https://github.com/franzheidl/alfred-workflows/tree/master/open-with-sublime-text)
+
+Open files or a folders in [Sublime Text 3](http://www.sublimetext.com/3) by [@franzheidl](https://github.com/franzheidl/). [Download v1.0](https://github.com/zenorocha/alfred-workflows/raw/master/sublime-text/sublime-text.alfredworkflow)
+
+```
+Keywords: subl
+```
+
+![Sublime Text](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/sublime-text/alfred-subl.png)
+
+----
+
