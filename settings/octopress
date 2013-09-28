@@ -31,12 +31,10 @@ function newpost () {
 	echo "Creating a new post titled '$1'.";
 	cd $myblog/;
 	rake "new_post[$1]";
-	subl -w "$myblog/source/_posts/$date-$1.markdown";
 }
 function newdraft () {
   date=`date +%Y-%m-%d`
   echo "Creating a new draft titled '$1'.";
   cd $myblog/;
   rake "new_draft[$1]";
-  subl -w "$myblog/source/_drafts/$date-$1.markdown";
 }
