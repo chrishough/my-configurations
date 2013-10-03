@@ -11,14 +11,21 @@ alias rk="rake"
 function rgc() {
   rails g controller "$*";
 }
+# ---------------------------------------------------------------
 function rgcP() {
   rails g controller "$*";
 }
+# ---------------------------------------------------------------
 function rgm() {
   rails g model "$*";
 }
+# ---------------------------------------------------------------
 function rgmP() {
   rails g model "$*" --migration=false;
+}
+# ---------------------------------------------------------------
+function rtail() {
+  tail -f log/development.log;
 }
 # ---------------------------------------------------------------
 # rbenv shortcuts
