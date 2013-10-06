@@ -19,6 +19,7 @@ function gitm() {
 function gitcb() {
  git branch "$*";
  git push -u origin "$*";
+ git push --set-upstream origin "$*";
  git status;
 }
 # ---------------------------------------------------------------
