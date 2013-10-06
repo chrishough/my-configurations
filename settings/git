@@ -1,22 +1,33 @@
 #!/bin/zsh
 # ---------------------------------------------------------------
-# Git Check In, Push, Status Check
+# Check In, Push, Status Check
 function gitc() {
+ git add . -A;
  git commit -m "$*";
  git push;
  git status;
 }
 # ---------------------------------------------------------------
-# Git Merge, Push, Status Check
+# Merge, Push, Status Check
 function gitm() {
  git merge "$*";
  git push;
  git status;
 }
 # ---------------------------------------------------------------
-# Git Merge, Push, Status Check
-function gitpb() {
+# Create Branch, Push to Git, Status Check
+function gitcb() {
+ git branch "$*";
  git push -u origin "$*";
+ git status;
+}
+# ---------------------------------------------------------------
+# Merge, Push, Status Check
+function gitdb() {
+ git branch -d "$*";
+ git push --delete origin "$*";
+ git fetch -p;
+ git remote show origin;
  git status;
 }
 # ---------------------------------------------------------------
@@ -27,11 +38,11 @@ function gitkf() {
  touch "$*/.keep";
 }
 # ---------------------------------------------------------------
-alias gita="git add ."
-alias gitad="git add . -A"
+alias gitcl="git config --list"
+alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
+
 alias gitck="git checkout "
 alias gitpull="git pull"
-alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
 
 alias gitp="git push"
 alias gitpo="git push origin "
@@ -40,9 +51,7 @@ alias gitphm="git push heroku master"
 alias gitpt="git push --tags"
 alias gitpushall="git push --recurse-submodules=on-demand"
 
-alias gitcl="git config --list"
 alias gits="git status"
-alias gitb="git branch"
 alias gitt="git tag"
 alias gitsh="git show"
 
@@ -50,9 +59,8 @@ alias gitl="git log --show-notes"
 alias gitltree="git log --graph --oneline --all"
 alias gitltreeb="git log --graph --all --decorate"
 
-alias gitdr="git push --delete origin "
-alias gitdb="git branch -d "
 alias gitdt="git tag -d "
+alias gitdf="git fetch -p"
 
 alias gitrso="git remote show origin"
 alias gitrv="git remote -v"
@@ -61,4 +69,8 @@ alias standup="git log --since '1 day ago' --no-merges --pretty=format':%C(yello
 alias standup5="git log --since '5 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
 alias standup10="git log --since '10 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
 
-alias purgeSVN="find . -name .svn  -type d -print0 |xargs -0 rm -rf;"
+# ---------------------------------------------------------------
+# Create .gitkeep
+function gitpurgesvn() {
+  find . -name .svn  -type d -print0 |xargs -0 rm -rf
+}
