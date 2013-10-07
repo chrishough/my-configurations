@@ -2,6 +2,7 @@
 # ---------------------------------------------------------------
 # Git Check In, Push, Status Check
 function gitch() {
+ git add . -A;
  git commit -m "$*";
  git push;
  git push heroku master;
