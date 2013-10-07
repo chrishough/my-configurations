@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Slim::Filter
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (F)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Slim.html" title="Slim (module)">Slim</a></span></span>
+     &raquo; 
+    <span class="title">Filter</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Slim::Filter
+  
+  
+  <span class="private note title">Private</span>
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Temple::HTML::Filter</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Temple::HTML::Filter</li>
+          
+            <li class="next">Slim::Filter</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/slim/filter.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This class is part of a private API.</strong>
+  You should avoid using this class if possible, as it may be removed or be changed in the future.
+</p>
+<p>Base class for Temple filters used in Slim</p>
+
+<p>This base filter passes everything through and allows
+to override only some methods without affecting the rest
+of the expression.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="CodeAttributes.html" title="Slim::CodeAttributes (class)">CodeAttributes</a></span>, <span class='object_link'><a href="Controls.html" title="Slim::Controls (class)">Controls</a></span>, <span class='object_link'><a href="DoInserter.html" title="Slim::DoInserter (class)">DoInserter</a></span>, <span class='object_link'><a href="Embedded.html" title="Slim::Embedded (class)">Embedded</a></span>, <span class='object_link'><a href="Embedded/Engine.html" title="Slim::Embedded::Engine (class)">Embedded::Engine</a></span>, <span class='object_link'><a href="EndInserter.html" title="Slim::EndInserter (class)">EndInserter</a></span>, <span class='object_link'><a href="Interpolation.html" title="Slim::Interpolation (class)">Interpolation</a></span>, <span class='object_link'><a href="LogicLess.html" title="Slim::LogicLess (class)">LogicLess</a></span>, <span class='object_link'><a href="NewlineCollector.html" title="Slim::NewlineCollector (class)">NewlineCollector</a></span>, <span class='object_link'><a href="OutputProtector.html" title="Slim::OutputProtector (class)">OutputProtector</a></span>, <span class='object_link'><a href="Splat/Filter.html" title="Slim::Splat::Filter (class)">Splat::Filter</a></span>, <span class='object_link'><a href="TextCollector.html" title="Slim::TextCollector (class)">TextCollector</a></span>, <span class='object_link'><a href="Translator.html" title="Slim::Translator (class)">Translator</a></span>, <span class='object_link'><a href="Translator/DynamicTranslator.html" title="Slim::Translator::DynamicTranslator (class)">Translator::DynamicTranslator</a></span>, <span class='object_link'><a href="Translator/StaticTranslator.html" title="Slim::Translator::StaticTranslator (class)">Translator::StaticTranslator</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#on_slim_control-instance_method" title="#on_slim_control (instance method)">- (Object) <strong>on_slim_control</strong>(code, content) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'><p>Pass-through handler.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#on_slim_embedded-instance_method" title="#on_slim_embedded (instance method)">- (Object) <strong>on_slim_embedded</strong>(type, content) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'><p>Pass-through handler.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#on_slim_output-instance_method" title="#on_slim_output (instance method)">- (Object) <strong>on_slim_output</strong>(escape, code, content) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'><p>Pass-through handler.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#on_slim_text-instance_method" title="#on_slim_text (instance method)">- (Object) <strong>on_slim_text</strong>(content) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'><p>Pass-through handler.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="on_slim_control-instance_method">
+  
+    - (<tt>Object</tt>) <strong>on_slim_control</strong>(code, content) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+<p>Pass-through handler</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/slim/filter.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_on_slim_control'>on_slim_control</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='comma'>,</span> <span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span>
+  <span class='lbracket'>[</span><span class='symbol'>:slim</span><span class='comma'>,</span> <span class='symbol'>:control</span><span class='comma'>,</span> <span class='id identifier rubyid_code'>code</span><span class='comma'>,</span> <span class='id identifier rubyid_compile'>compile</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="on_slim_embedded-instance_method">
+  
+    - (<tt>Object</tt>) <strong>on_slim_embedded</strong>(type, content) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+<p>Pass-through handler</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/slim/filter.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_on_slim_embedded'>on_slim_embedded</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span>
+  <span class='lbracket'>[</span><span class='symbol'>:slim</span><span class='comma'>,</span> <span class='symbol'>:embedded</span><span class='comma'>,</span> <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_compile'>compile</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="on_slim_output-instance_method">
+  
+    - (<tt>Object</tt>) <strong>on_slim_output</strong>(escape, code, content) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+<p>Pass-through handler</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/slim/filter.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_on_slim_output'>on_slim_output</span><span class='lparen'>(</span><span class='id identifier rubyid_escape'>escape</span><span class='comma'>,</span> <span class='id identifier rubyid_code'>code</span><span class='comma'>,</span> <span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span>
+  <span class='lbracket'>[</span><span class='symbol'>:slim</span><span class='comma'>,</span> <span class='symbol'>:output</span><span class='comma'>,</span> <span class='id identifier rubyid_escape'>escape</span><span class='comma'>,</span> <span class='id identifier rubyid_code'>code</span><span class='comma'>,</span> <span class='id identifier rubyid_compile'>compile</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="on_slim_text-instance_method">
+  
+    - (<tt>Object</tt>) <strong>on_slim_text</strong>(content) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+<p>Pass-through handler</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/slim/filter.rb', line 11</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_on_slim_text'>on_slim_text</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span>
+  <span class='lbracket'>[</span><span class='symbol'>:slim</span><span class='comma'>,</span> <span class='symbol'>:text</span><span class='comma'>,</span> <span class='id identifier rubyid_compile'>compile</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Aug 18 14:13:57 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

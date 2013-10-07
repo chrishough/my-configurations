@@ -39,6 +39,12 @@ function gitkf() {
  touch "$*/.keep";
 }
 # ---------------------------------------------------------------
+# Create readme.md
+function gitmd() {
+ touch readme.md;
+ open readme.md;
+}
+# ---------------------------------------------------------------
 alias gitcl="git config --list"
 alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
 

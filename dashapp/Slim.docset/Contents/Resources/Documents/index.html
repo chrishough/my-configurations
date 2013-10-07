@@ -1,0 +1,1097 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>Slim</h1>
+
+<p><a href="http://rubygems.org/gems/slim"><img src="https://badge.fury.io/rb/slim.png" alt="Gem Version"></a> <a href="http://travis-ci.org/slim-template/slim"><img src="https://secure.travis-ci.org/slim-template/slim.png?branch=master" alt="Build Status"></a> <a href="https://gemnasium.com/slim-template/slim"><img src="https://gemnasium.com/slim-template/slim.png?travis" alt="Dependency Status"></a> <a href="https://codeclimate.com/github/slim-template/slim"><img src="https://codeclimate.com/github/slim-template/slim.png" alt="Code Climate"></a></p>
+
+<p>Slim is a template language whose goal is to reduce the view syntax to the essential parts without becoming cryptic. It started as an exercise to see how much could be removed from a standard html template (&lt;, &gt;, closing tags, etc...). As more people took an interest in Slim, the functionality grew and so did the flexibility of the syntax.</p>
+
+<p>A short list of the features...</p>
+
+<ul>
+<li>Elegant syntax
+
+<ul>
+<li>Short syntax without closing tags (Using indentation instead)</li>
+<li>HTML style mode with closing tags</li>
+<li>Configurable shortcut tags (<code>#</code> for <code>&lt;div id=&quot;...&quot;&gt;</code> and <code>.</code> for <code>&lt;div class=&quot;...&quot;&gt;</code> in the default configuration)</li>
+</ul></li>
+<li>Safety
+
+<ul>
+<li>Automatic HTML escaping by default</li>
+<li>Support for Rails&#39; <code>html_safe?</code></li>
+</ul></li>
+<li>Highly configurable and extendable via plugins
+
+<ul>
+<li>Logic less mode similar to Mustache, realized as plugin</li>
+<li>Translator/I18n, realized as plugin</li>
+</ul></li>
+<li>High performance
+
+<ul>
+<li>Comparable speed to ERB/Erubis</li>
+<li>Streaming support in Rails</li>
+</ul></li>
+<li>Supported by all major frameworks (Rails, Sinatra, ...)</li>
+<li>Full Unicode support for tags and attributes on Ruby 1.9</li>
+<li>Embedded engines like Markdown and Textile</li>
+</ul>
+
+<h2>Links</h2>
+
+<ul>
+<li>Source: <a href="http://github.com/slim-template/slim">http://github.com/slim-template/slim</a></li>
+<li>Bugs:   <a href="http://github.com/slim-template/slim/issues">http://github.com/slim-template/slim/issues</a></li>
+<li>List:   <a href="http://groups.google.com/group/slim-template">http://groups.google.com/group/slim-template</a></li>
+<li>API documentation:
+
+<ul>
+<li>Latest Gem: <a href="http://rubydoc.info/gems/slim/frames">http://rubydoc.info/gems/slim/frames</a></li>
+<li>GitHub master: <a href="http://rubydoc.info/github/slim-template/slim/master/frames">http://rubydoc.info/github/slim-template/slim/master/frames</a></li>
+</ul></li>
+</ul>
+
+<h2>Upgrade to version 2.0</h2>
+
+<p>If you are already using Slim 1.x and want to upgrade to the newest version 2.0, you should at first
+upgrade to at least Slim 1.3.8 which will emit warnings for deprecated features. This way you can easily
+see if your application is already Slim 2.0 compliant!</p>
+
+<p>Slim 2.0 removes deprecated features from the 1.3 series and cleans up some minor
+inconsistencies in the syntax (Attribute wrapper and quoted attribute escaping).
+Of course it also includes new features and bugfixes. See the CHANGES for details.</p>
+
+<p>In general don&#39;t be afraid of upgrading! We try to be backward compatible and follow <a href="http://semver.org/">semantic versions</a>
+as good as possible.</p>
+
+<h2>Introduction</h2>
+
+<h3>What is Slim?</h3>
+
+<p>Slim is a fast, lightweight templating engine with support for <strong>Rails 3 and 4</strong>. It has been heavily tested on all major ruby implementations. We use
+continuous integration (travis-ci).</p>
+
+<p>Slim&#39;s core syntax is guided by one thought: &quot;What&#39;s the minimum required to make this work&quot;.</p>
+
+<p>As more people have contributed to Slim, there have been syntax additions influenced from their use of <a href="https://github.com/haml/haml">Haml</a> and <a href="https://github.com/visionmedia/jade">Jade</a>.  The Slim team is open to these additions because we know beauty is in the eye of the beholder.</p>
+
+<p>Slim uses <a href="https://github.com/judofyr/temple">Temple</a> for parsing/compilation and is also integrated into <a href="https://github.com/rtomayko/tilt">Tilt</a>, so it can be used together with <a href="https://github.com/sinatra/sinatra">Sinatra</a> or plain <a href="https://github.com/rack/rack">Rack</a>.</p>
+
+<p>The architecture of Temple is very flexible and allows the extension of the parsing and compilation process without monkey-patching. This is used
+by the logic less plugin and the translator plugin which provides I18n.</p>
+
+<h3>Why use Slim?</h3>
+
+<p>Within the Rails community, <em>Erb</em> and <em>Haml</em> are without doubt the two most popular templating engines. However, <em>Erb</em>&#39;s syntax is cumbersome and <em>Haml</em>&#39;s syntax can be quite cryptic to the uninitiated.</p>
+
+<p>There is also some development in logic-less engines (e.g. <a href="https://github.com/defunkt/mustache">Mustache</a> which requires you to write standard HTML). You can also use Slim in logic-less mode if you like the Slim syntax to build your HTML but don&#39;t want to write Ruby in your templates.</p>
+
+<p>Slim was born to bring a minimalist syntax approach with speed. If people chose not to use Slim, it would not be because of speed.</p>
+
+<p><strong><em>Yes, Slim is speedy!</em></strong> Benchmarks are done for every commit at <a href="http://travis-ci.org/#!/slim-template/slim">http://travis-ci.org/#!/slim-template/slim</a>.
+Don&#39;t trust the numbers? That&#39;s as it should be. Please try the benchmark rake task yourself!</p>
+
+<h3>How to start?</h3>
+
+<p>Install Slim as a gem:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_slim'>slim</span>
+</code></pre>
+
+<p>Include Slim in your Gemfile with <code>gem &#39;slim&#39;</code> or require it with <code>require &#39;slim&#39;</code>. That&#39;s it! Now, just use the .slim extension and you&#39;re good to go.</p>
+
+<h3>Syntax example</h3>
+
+<p>Here&#39;s a quick example to demonstrate what a Slim template looks like:</p>
+
+<pre class="code ruby"><code class="ruby">doctype html
+html
+  head
+    title Slim Examples
+    meta name=&quot;keywords&quot; content=&quot;template language&quot;
+    meta name=&quot;author&quot; content=author
+    link rel=&quot;icon&quot; type=&quot;image/png&quot; href=file_path(&quot;favicon.png&quot;)
+    javascript:
+      alert(&#39;Slim supports embedded javascript!&#39;)
+
+  body
+    h1 Markup examples
+
+    #content
+      p This example shows you how a basic Slim file looks like.
+
+    == yield
+
+    - if items.any?
+      table#items
+        - for item in items
+          tr
+            td.name = item.name
+            td.price = item.price
+    - else
+      p No items found Please add some inventory.
+        Thank you!
+
+    div id=&quot;footer&quot;
+      == render &#39;footer&#39;
+      | Copyright &amp;copy; #{@year} #{@author}
+</code></pre>
+
+<p>Indentation matters, but the indentation depth can be chosen as you like. If you want to first indent 2 spaces, then 5 spaces, it&#39;s your choice. To nest markup you only need to indent by one space, the rest is gravy.</p>
+
+<h2>Line indicators</h2>
+
+<h3>Text <code>|</code></h3>
+
+<p>The pipe tells Slim to just copy the line. It essentially escapes any processing.
+Each following line that is indented greater than the pipe is copied over.</p>
+
+<pre class="code ruby"><code class="ruby">body
+  p
+    |
+      This is a test of the text block.
+</code></pre>
+
+<p>The parsed result of the above:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;body&gt;&lt;p&gt;This is a test of the text block.&lt;/p&gt;&lt;/body&gt;
+</code></pre>
+
+<p>The left margin is set at the indent of the pipe + one space.
+  Any additional spaces will be copied over.</p>
+
+<pre class="code ruby"><code class="ruby">body
+  p
+    | This line is on the left margin.
+       This line will have one space in front of it.
+         This line will have two spaces in front of it.
+           And so on...
+</code></pre>
+
+<p>You can also embed html in the text line</p>
+
+<pre class="code ruby"><code class="ruby">- articles.each do |a|
+  | &lt;tr&gt;&lt;td&gt;#{a.name}&lt;/td&gt;&lt;td&gt;#{a.description}&lt;/td&gt;&lt;/tr&gt;
+</code></pre>
+
+<h3>Text with trailing white space <code>&#39;</code></h3>
+
+<p>The single quote tells Slim to copy the line (similar to <code>|</code>), but makes sure that a single trailing white space is appended.</p>
+
+<h3>Inline html <code>&lt;</code> (HTML style)</h3>
+
+<p>You can write html tags directly in Slim which allows you to write your templates in a more html like style with closing tags or mix html and Slim style.</p>
+
+<pre class="code ruby"><code class="ruby">&lt;html&gt;
+  head
+    title Example
+  &lt;body&gt;
+    - if articles.empty?
+    - else
+      table
+        - articles.each do |a|
+          &lt;tr&gt;&lt;td&gt;#{a.name}&lt;/td&gt;&lt;td&gt;#{a.description}&lt;/td&gt;&lt;/tr&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3>Control code <code>-</code></h3>
+
+<p>The dash denotes control code.  Examples of control code are loops and conditionals. <code>end</code> is forbidden behind <code>-</code>. Blocks are defined only by indentation.
+If your ruby code needs to use multiple lines, append a backslash <code>\</code> at the end of the lines. If your line ends with comma <code>,</code> (e.g because of a method call) you don&#39;t need the additional backslash before the linebreak.</p>
+
+<pre class="code ruby"><code class="ruby">body
+  - if articles.empty?
+    | No inventory
+</code></pre>
+
+<h3>Output <code>=</code></h3>
+
+<p>The equal sign tells Slim it&#39;s a Ruby call that produces output to add to the buffer. If your ruby code needs to use multiple lines, append a backslash <code>\</code> at the end of the lines, for example:</p>
+
+<pre class="code ruby"><code class="ruby">= javascript_include_tag \
+   &quot;jquery&quot;,
+   &quot;application&quot;
+</code></pre>
+
+<p>If your line ends with comma <code>,</code> (e.g because of a method call) you don&#39;t need the additional backslash before the linebreak. For trailing or leading whitespace the modifiers <code>&gt;</code> and <code>&lt;</code> are supported.</p>
+
+<ul>
+<li>Output with trailing white space <code>=&gt;</code>. Same as the single equal sign (<code>=</code>), except that it adds a trailing white space. The legacy syntax <code>=&#39;</code> is also supported.</li>
+<li>Output with leading white space <code>=&lt;</code>. Same as the single equal sign (<code>=</code>), except that it adds a leading white space.</li>
+</ul>
+
+<h3>Output without HTML escaping <code>==</code></h3>
+
+<p>Same as the single equal sign (<code>=</code>), but does not go through the <code>escape_html</code> method. For trailing or leading whitespace the modifiers <code>&gt;</code> and <code>&lt;</code> are supported.</p>
+
+<ul>
+<li>Output without HTML escaping and trailing white space <code>==&gt;</code>. Same as the double equal sign (<code>==</code>), except that it adds a trailing white space. The legacy syntax <code>==&#39;</code> is also supported.</li>
+<li>Output without HTML escaping and leading white space <code>==&lt;</code>. Same as the double equal sign (<code>==</code>), except that it adds a leading white space.</li>
+</ul>
+
+<h3>Code comment <code>/</code></h3>
+
+<p>Use the forward slash for code comments - anything after it won&#39;t get displayed in the final render. Use <code>/</code> for code comments and <code>/!</code> for html comments</p>
+
+<pre class="code ruby"><code class="ruby">body
+  p
+    / This line won&#39;t get displayed.
+      Neither does this line.
+    /! This will get displayed as html comments.
+</code></pre>
+
+<p>The parsed result of the above:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;body&gt;&lt;p&gt;&lt;!--This will get displayed as html comments.--&gt;&lt;/p&gt;&lt;/body&gt;
+</code></pre>
+
+<h3>HTML comment <code>/!</code></h3>
+
+<p>Use the forward slash immediately followed by an exclamation mark for html comments (<code><!-- ... --></code>).</p>
+
+<h3>IE conditional comment <code>/[...]</code></h3>
+
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='regexp_beg'>/</span><span class='regexp_end'>[if IE]
+</span></span></code></pre>
+
+<p>renders as</p>
+
+<pre class="code ruby"><code class="ruby">&lt;!--[if IE]&gt;&lt;p&gt;Get a better browser.&lt;/p&gt;&lt;![endif]--&gt;
+</code></pre>
+
+<h2>HTML tags</h2>
+
+<h3>Doctype tag</h3>
+
+<p>The doctype tag is a special tag which can be used to generate the complex doctypes in a very simple way.</p>
+
+<p>XML VERSION</p>
+
+<pre class="code ruby"><code class="ruby">doctype xml
+  &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+
+doctype xml ISO-8859-1
+  &lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot; ?&gt;
+</code></pre>
+
+<p>XHTML DOCTYPES</p>
+
+<pre class="code ruby"><code class="ruby">doctype html
+  &lt;!DOCTYPE html&gt;
+
+doctype 5
+  &lt;!DOCTYPE html&gt;
+
+doctype 1.1
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;
+
+doctype strict
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+
+doctype frameset
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;
+
+doctype mobile
+  &lt;!DOCTYPE html PUBLIC &quot;-//WAPFORUM//DTD XHTML Mobile 1.2//EN&quot;
+    &quot;http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd&quot;&gt;
+
+doctype basic
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML Basic 1.1//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd&quot;&gt;
+
+doctype transitional
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+</code></pre>
+
+<p>HTML 4 DOCTYPES</p>
+
+<pre class="code ruby"><code class="ruby">doctype strict
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+    &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+
+doctype frameset
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot;
+    &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;
+
+doctype transitional
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+    &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+</code></pre>
+
+<h3>Closed tags (trailing <code>/</code>)</h3>
+
+<p>You can close tags explicitly by appending a trailing <code>/</code>.</p>
+
+<pre class="code ruby"><code class="ruby">img src=&quot;image.png&quot;/
+</code></pre>
+
+<p>Note, that this is usually not necessary since the standard html
+tags (img, br, ...) are closed automatically.</p>
+
+<h3>Trailing and leading whitespace (<code>&lt;</code>, <code>&gt;</code>)</h3>
+
+<p>You can force Slim to add a trailing whitespace after a tag by adding a &gt;.</p>
+
+<pre class="code ruby"><code class="ruby">a&gt; href=&#39;url1&#39; Link1
+a&gt; href=&#39;url2&#39; Link2
+</code></pre>
+
+<p>You can add a leading whitespace by adding &lt;.</p>
+
+<pre class="code ruby"><code class="ruby">a&lt; href=&#39;url1&#39; Link1
+a&lt; href=&#39;url2&#39; Link2
+</code></pre>
+
+<p>You can also combine both.</p>
+
+<pre class="code ruby"><code class="ruby">a&lt;&gt; href=&#39;url1&#39; Link1
+</code></pre>
+
+<h3>Inline tags</h3>
+
+<p>Sometimes you may want to be a little more compact and inline the tags.</p>
+
+<pre class="code ruby"><code class="ruby">ul
+  li.first: a href=&quot;/a&quot; A link
+  li: a href=&quot;/b&quot; B link
+</code></pre>
+
+<p>For readability, don&#39;t forget you can wrap the attributes.</p>
+
+<pre class="code ruby"><code class="ruby">ul
+  li.first: a[href=&quot;/a&quot;] A link
+  li: a[href=&quot;/b&quot;] B link
+</code></pre>
+
+<h3>Text content</h3>
+
+<p>Either start on the same line as the tag</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1 id=&quot;headline&quot; Welcome to my site.
+</code></pre>
+
+<p>Or nest it.  You must use a pipe or an apostrophe to escape processing</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1 id=&quot;headline&quot;
+    | Welcome to my site.
+</code></pre>
+
+<h3>Dynamic content (<code>=</code> and <code>==</code>)</h3>
+
+<p>Can make the call on the same line</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1 id=&quot;headline&quot; = page_headline
+</code></pre>
+
+<p>Or nest it.</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1 id=&quot;headline&quot;
+    = page_headline
+</code></pre>
+
+<h3>Attributes</h3>
+
+<p>You write attributes directly after the tag. For normal text attributes you must use double <code>&quot;</code> or single quotes <code>&#39;</code> (Quoted attributes).</p>
+
+<pre class="code ruby"><code class="ruby">a href=&quot;http://slim-lang.com&quot; title=&#39;Slim Homepage&#39; Goto the Slim homepage
+</code></pre>
+
+<p>You can use text interpolation in the quoted attributes.</p>
+
+<h4>Attributes wrapper</h4>
+
+<p>If a delimiter makes the syntax more readable for you,
+you can use the characters <code>{...}</code>, <code>(...)</code>, <code>[...]</code> to wrap the attributes.</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1(id=&quot;logo&quot;) = page_logo
+  h2[id=&quot;tagline&quot; class=&quot;small tagline&quot;] = page_tagline
+</code></pre>
+
+<p>If you wrap the attributes, you can spread them across multiple lines:</p>
+
+<pre class="code ruby"><code class="ruby">h2[id=&quot;tagline&quot;
+   class=&quot;small tagline&quot;] = page_tagline
+</code></pre>
+
+<p>You may use spaces around the wrappers and assignments:</p>
+
+<pre class="code ruby"><code class="ruby">h1 id = &quot;logo&quot; = page_logo
+h2 [ id = &quot;tagline&quot; ] = page_tagline
+</code></pre>
+
+<h4>Quoted attributes</h4>
+
+<p>Example:</p>
+
+<pre class="code ruby"><code class="ruby">a href=&quot;http://slim-lang.com&quot; title=&#39;Slim Homepage&#39; Goto the Slim homepage
+</code></pre>
+
+<p>You can use text interpolation in the quoted attributes:</p>
+
+<pre class="code ruby"><code class="ruby">a href=&quot;http://#{url}&quot; Goto the #{url}
+</code></pre>
+
+<p>The attribute value will be escaped by default. Use == if you want to disable escaping in the attribute.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_a'>a</span> <span class='id identifier rubyid_href'>href</span><span class='op'>==</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&amp;amp;</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<p>You can break quoted attributes with backslash <code>\</code></p>
+
+<pre class="code ruby"><code class="ruby">a data-title=&quot;help&quot; data-content=&quot;extremely long help text that goes on\
+  and one and one and then starts over....&quot;
+</code></pre>
+
+<h4>Ruby attributes</h4>
+
+<p>Write the ruby code directly after the <code>=</code>. If the code contains spaces you have to wrap
+the code into parentheses <code>(...)</code>. You can also directly write hashes <code>{...}</code> and arrays <code>[...]</code>.</p>
+
+<pre class="code ruby"><code class="ruby">body
+  table
+    - for user in users
+      td id=&quot;user_#{user.id}&quot; class=user.role
+        a href=user_action(user, :edit) Edit #{user.name}
+        a href=(path_to_user user) = user.name
+</code></pre>
+
+<p>The attribute value will be escaped by default. Use == if you want to disable escaping in the attribute.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_a'>a</span> <span class='id identifier rubyid_href'>href</span><span class='op'>==</span><span class='id identifier rubyid_action_path'>action_path</span><span class='lparen'>(</span><span class='symbol'>:start</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>You can also break ruby attributes with backslash <code>\</code> or trailing <code>,</code> as describe for control sections.</p>
+
+<h4>Boolean attributes</h4>
+
+<p>The attribute values <code>true</code>, <code>false</code> and <code>nil</code> are interpreted
+as booleans. If you use the attribute wrapper you can omit the attribute assigment.</p>
+
+<pre class="code ruby"><code class="ruby">input type=&quot;text&quot; disabled=&quot;disabled&quot;
+input type=&quot;text&quot; disabled=true
+input(type=&quot;text&quot; disabled)
+
+input type=&quot;text&quot;
+input type=&quot;text&quot; disabled=false
+input type=&quot;text&quot; disabled=nil
+</code></pre>
+
+<h4>Attribute merging</h4>
+
+<p>You can configure attributes to be merged if multiple are given (See option <code>:merge_attrs</code>). In the default configuration
+this is done for class attributes with the white space as delimiter.</p>
+
+<pre class="code ruby"><code class="ruby">a.menu class=&quot;highlight&quot; href=&quot;http://slim-lang.com/&quot; Slim-lang.com
+</code></pre>
+
+<p>This renders as</p>
+
+<pre class="code ruby"><code class="ruby">&lt;a class=&quot;menu highlight&quot; href=&quot;http://slim-lang.com/&quot;&gt;Slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<p>You can also use an <code>Array</code> as attribute value and the array elements will be merged using the delimiter.</p>
+
+<pre class="code ruby"><code class="ruby">a class=[&quot;menu&quot;,&quot;highlight&quot;]
+a class=:menu,:highlight
+</code></pre>
+
+<h4>Splat attributes <code>*</code></h4>
+
+<p>The splat shortcut allows you turn a hash in to attribute/value pairs</p>
+
+<pre class="code ruby"><code class="ruby">.card*{&#39;data-url&#39;=&gt;place_path(place), &#39;data-id&#39;=&gt;place.id} = place.name
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code ruby"><code class="ruby">&lt;div class=&quot;card&quot; data-id=&quot;1234&quot; data-url=&quot;/place/1234&quot;&gt;Slim&#39;s house&lt;/div&gt;
+</code></pre>
+
+<p>You can also use methods or instance variables which return a hash as shown here:</p>
+
+<pre class="code ruby"><code class="ruby">.card *method_which_returns_hash = place.name
+.card *@hash_instance_variable = place.name
+</code></pre>
+
+<p>The hash attributes which support attribute merging (see Slim option <code>:merge_attrs</code>) can be given as an <code>Array</code></p>
+
+<pre class="code ruby"><code class="ruby">.first *{:class =&gt; [:second, :third]} Text
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code ruby"><code class="ruby">div class=&quot;first second third&quot;
+</code></pre>
+
+<h4>Dynamic tags <code>*</code></h4>
+
+<p>You can create completely dynamic tags using the splat attributes. Just create a method which returns a hash
+with the :tag key.</p>
+
+<pre class="code ruby"><code class="ruby">ruby:
+  def a_unless_current
+    @page_current ? {:tag =&gt; &#39;span&#39;} : {:tag =&gt; &#39;a&#39;, :href =&gt; &#39;http://slim-lang.com/&#39;}
+  end
+- @page_current = true
+*a_unless_current Link
+- @page_current = false
+*a_unless_current Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code ruby"><code class="ruby">&lt;span&gt;Link&lt;/span&gt;&lt;a href=&quot;http://slim-lang.com/&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+
+<h3>Shortcuts</h3>
+
+<h4>Tag shortcuts</h4>
+
+<p>You can define custom tag shortcuts by setting the option <code>:shortcut</code>.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='symbol'>:shortcut</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>c</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:tag</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>container</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>id</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>.</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>class</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+</code></pre>
+
+<p>We can use it in Slim code like this</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_c'>c</span><span class='period'>.</span><span class='id identifier rubyid_content'>content</span> <span class='const'>Text</span>
+</code></pre>
+
+<p>which renders to</p>
+
+<pre class="code ruby"><code class="ruby">&lt;container class=&quot;content&quot;&gt;Text&lt;/container&gt;
+</code></pre>
+
+<h4>Attribute shortcuts</h4>
+
+<p>You can define custom shortcuts (Similar to <code>#</code> for id and <code>.</code> for class).</p>
+
+<p>In this example we add <code>&amp;</code> to create a shortcut for the input elements with type attribute.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='symbol'>:shortcut</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>&amp;</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:tag</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>input</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>type</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>id</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>.</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>class</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='rbrace'>}</span>
+</code></pre>
+
+<p>We can use it in Slim code like this</p>
+
+<pre class="code ruby"><code class="ruby">&amp;text name=&quot;user&quot;
+&amp;password name=&quot;pw&quot;
+&amp;submit
+</code></pre>
+
+<p>which renders to</p>
+
+<pre class="code ruby"><code class="ruby">&lt;input type=&quot;text&quot; name=&quot;user&quot; /&gt;
+&lt;input type=&quot;password&quot; name=&quot;pw&quot; /&gt;
+&lt;input type=&quot;submit&quot; /&gt;
+</code></pre>
+
+<p>In another example we add <code>@</code> to create a shortcut for the role attribute.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='symbol'>:shortcut</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>@</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>role</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>id</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>.</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>class</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='rbrace'>}</span>
+</code></pre>
+
+<p>We can use it in Slim code like this</p>
+
+<pre class="code ruby"><code class="ruby">.person@admin = person.name
+</code></pre>
+
+<p>which renders to</p>
+
+<pre class="code ruby"><code class="ruby">&lt;div class=&quot;person&quot; role=&quot;admin&quot;&gt;Daniel&lt;/div&gt;
+</code></pre>
+
+<p>You can also set multiple attributes at once using one shortcut.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='symbol'>:shortcut</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>@</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='symbol'>:attr</span> <span class='op'>=&gt;</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>data-role</span><span class='words_sep'> </span><span class='tstring_content'>role</span><span class='words_sep'>)</span><span class='rbrace'>}</span><span class='rbrace'>}</span>
+</code></pre>
+
+<p>We can use it in Slim code like this</p>
+
+<pre class="code ruby"><code class="ruby">.person@admin = person.name
+</code></pre>
+
+<p>which renders to</p>
+
+<pre class="code ruby"><code class="ruby">&lt;div class=&quot;person&quot; role=&quot;admin&quot; data-role=&quot;admin&quot;&gt;Daniel&lt;/div&gt;
+</code></pre>
+
+<h4>ID shortcut <code>#</code> and class shortcut <code>.</code></h4>
+
+<p>Similarly to Haml, you can specify the <code>id</code> and <code>class</code> attributes in the following shortcut form</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1#headline
+    = page_headline
+  h2#tagline.small.tagline
+    = page_tagline
+  .content
+    = show_content
+</code></pre>
+
+<p>This is the same as</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1 id=&quot;headline&quot;
+    = page_headline
+  h2 id=&quot;tagline&quot; class=&quot;small tagline&quot;
+    = page_tagline
+  div class=&quot;content&quot;
+    = show_content
+</code></pre>
+
+<h2>Helpers and capturing</h2>
+
+<p>If you use Slim you might want to extend your template with some helpers. Assume that you have the following helper</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>module</span> <span class='const'>Helpers</span>
+  <span class='kw'>def</span> <span class='id identifier rubyid_headline'>headline</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;h1&gt;</span><span class='embexpr_beg'>#{</span><span class='kw'>yield</span><span class='embexpr_end'>}</span><span class='tstring_content'>&lt;/h1&gt;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span>
+</code></pre>
+
+<p>which can be used in Slim as follows</p>
+
+<pre class="code ruby"><code class="ruby">p
+  = headline do
+    &#39; Hello
+    = user.name
+</code></pre>
+
+<p>The content in the <code>do</code> block is then captured automatically and passed to the helper via <code>yield</code>. As a syntactic
+sugar you can omit the <code>do</code> keyword and write only</p>
+
+<pre class="code ruby"><code class="ruby">p
+  = headline
+    &#39; Hello
+    = user.name
+</code></pre>
+
+<h2>Text interpolation</h2>
+
+<p>Use standard Ruby interpolation. The text will be html escaped by default.</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1 Welcome #{current_user.name} to the show.
+  | Unescaped #{{content}} is also possible.
+</code></pre>
+
+<p>To escape the interpolation (i.e. render as is)</p>
+
+<pre class="code ruby"><code class="ruby">body
+  h1 Welcome \#{current_user.name} to the show.
+</code></pre>
+
+<h2>Embedded engines (Markdown, ...)</h2>
+
+<p>Thanks to <a href="https://github.com/rtomayko/tilt">Tilt</a>, Slim has impressive support for embedding other template engines.</p>
+
+<p>Examples:</p>
+
+<pre class="code ruby"><code class="ruby">coffee:
+  square = (x) -&gt; x * x
+
+markdown:
+  #Header
+    Hello from #{&quot;Markdown!&quot;}
+    Second Line!
+</code></pre>
+
+<p>Supported engines:</p>
+
+<p>| Filter | Required gems | Type | Description |
+| ------ | ------------- | ---- | ----------- |
+| ruby: | none | Shortcut | Shortcut to embed ruby code |
+| javascript: | none | Shortcut | Shortcut to embed javascript code and wrap in script tag |
+| css: | none | Shortcut | Shortcut to embed css code and wrap in style tag |
+| sass: | sass | Compile time | Embed sass code and wrap in style tag |
+| scss: | sass | Compile time | Embedd scss code and wrap in style tag |
+| less: | less | Compile time | Embed less css code and wrap in style tag |
+| styl: | styl | Compile time | Embed stylus css code and wrap in style tag |
+| coffee: | coffee-script | Compile time | Compile coffee script code and wrap in script tag |
+| asciidoc: | asciidoctor | Compile time + Interpolation | Compile AsciiDoc code and interpolate #variables in text |
+| markdown: | redcarpet/rdiscount/kramdown | Compile time + Interpolation | Compile markdown code and interpolate #variables in text |
+| textile: | redcloth | Compile time + Interpolation | Compile textile code and interpolate #variables in text |
+| creole: | creole | Compile time + Interpolation | Compile creole code and interpolate #variables in text |
+| wiki:, mediawiki: | wikicloth | Compile time + Interpolation | Compile wiki code and interpolate #variables in text |
+| rdoc: | rdoc | Compile time + Interpolation | Compile rdoc code and interpolate #variables in text |
+| builder: | builder | Precompiled | Embed builder code |
+| nokogiri: | nokogiri | Precompiled | Embed nokogiri builder code |
+| erb: | none | Precompiled | Embed erb code |</p>
+
+<p>The embedded engines can be configured in Slim by setting the options directly on the <code>Slim::Embedded</code> filter. Example:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Embedded</span><span class='period'>.</span><span class='id identifier rubyid_default_options'>default_options</span><span class='lbracket'>[</span><span class='symbol'>:markdown</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='symbol'>:auto_ids</span> <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='rbrace'>}</span>
+</code></pre>
+
+<h2>Configuring Slim</h2>
+
+<p>Slim and the underlying <a href="https://github.com/judofyr/temple">Temple</a> framework are highly configurable.
+The way how you configure Slim depends a bit on the compilation mechanism (Rails or <a href="https://github.com/rtomayko/tilt">Tilt</a>). It is always possible to set default options per <code>Slim::Engine</code> class. This can be done in Rails&#39; environment files. For instance, in config/environments/development.rb you probably want:</p>
+
+<h3>Default options</h3>
+
+<pre class="code ruby"><code class="ruby"><span class='comment'># Indent html for pretty debugging and do not sort attributes (Ruby 1.8)
+</span><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='symbol'>:pretty</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='symbol'>:sort_attrs</span> <span class='op'>=&gt;</span> <span class='kw'>false</span>
+
+<span class='comment'># Indent html for pretty debugging and do not sort attributes (Ruby 1.9)
+</span><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='label'>pretty:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>sort_attrs:</span> <span class='kw'>false</span>
+</code></pre>
+
+<p>You can also access the option hash directly:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_default_options'>default_options</span><span class='lbracket'>[</span><span class='symbol'>:pretty</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='kw'>true</span>
+</code></pre>
+
+<h3>Setting options at runtime</h3>
+
+<p>There are two ways to set options at runtime. For Tilt templates (<code>Slim::Template</code>) you can set
+the options when you instatiate the template:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Template</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>template.slim</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_optional_option_hash'>optional_option_hash</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_render'>render</span><span class='lparen'>(</span><span class='id identifier rubyid_scope'>scope</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>The other possibility is to set the options per thread which is interesting mostly for Rails:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_with_options'>with_options</span><span class='lparen'>(</span><span class='id identifier rubyid_option_hash'>option_hash</span><span class='rparen'>)</span> <span class='kw'>do</span>
+   <span class='comment'># Any Slim engines which are created here use the option_hash
+</span>   <span class='comment'># For example in Rails:
+</span>   <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:page</span><span class='comma'>,</span> <span class='symbol'>:layout</span> <span class='op'>=&gt;</span> <span class='kw'>true</span>
+<span class='kw'>end</span>
+</code></pre>
+
+<p>You have to be aware that the compiled engine code and the options are cached per template in Rails and you cannot change the option afterwards.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='comment'># First render call
+</span><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_with_options'>with_options</span><span class='lparen'>(</span><span class='symbol'>:pretty</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='rparen'>)</span> <span class='kw'>do</span>
+   <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:page</span><span class='comma'>,</span> <span class='symbol'>:layout</span> <span class='op'>=&gt;</span> <span class='kw'>true</span>
+<span class='kw'>end</span>
+
+<span class='comment'># Second render call
+</span><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_with_options'>with_options</span><span class='lparen'>(</span><span class='symbol'>:pretty</span> <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='rparen'>)</span> <span class='kw'>do</span>
+   <span class='id identifier rubyid_render'>render</span> <span class='symbol'>:page</span><span class='comma'>,</span> <span class='symbol'>:layout</span> <span class='op'>=&gt;</span> <span class='kw'>true</span> <span class='comment'># :pretty is still true because it is cached
+</span><span class='kw'>end</span>
+</code></pre>
+
+<h3>Available options</h3>
+
+<p>The following options are exposed by the <code>Slim::Engine</code> and can be set with <code>Slim::Engine.set_default_options</code>.
+There are a lot of them but the good thing is, that Slim checks the configuration keys and reports an error if you try to use an invalid configuration key.</p>
+
+<p>| Type | Name | Default | Purpose |
+| ---- | ---- | ------- | ------- |
+| String | :file | nil | Name of parsed file, set automatically by Slim::Template |
+| Integer | :tabsize | 4 | Number of white spaces per tab (used by the parser) |
+| String | :encoding | &quot;utf-8&quot; | Set encoding of template |
+| String | :default_tag | &quot;div&quot; | Default tag to be used if tag name is omitted |
+| Hash | :shortcut | =&gt; {:attr =&gt; &#39;class&#39;, &#39;#&#39; =&gt; =&gt; &#39;id&#39;} | Attribute shortcuts |
+| Array&lt;Symbol,String&gt; | :enable_engines | nil <i>(All enabled)</i> | List of enabled embedded engines (whitelist) |
+| Array&lt;Symbol,String&gt; | :disable_engines | nil <i>(None disabled)</i> | List of disabled embedded engines (blacklist) |
+| Boolean | :disable_capture | false (true in Rails) | Disable capturing in blocks (blocks write to the default buffer  |
+| Boolean | :disable_escape | false | Disable automatic escaping of strings |
+| Boolean | :use_html_safe | false (true in Rails) | Use String#html_safe? from ActiveSupport (Works together with :disable_escape) |
+| Symbol | :format | :xhtml | HTML output format (Possible formats :xhtml, :html4, :html5, :html) |
+| String | :attr_quote | &#39;&quot;&#39; | Character to wrap attributes in html (can be &#39; or &quot;) |
+| Hash | :merge_attrs | =&gt; &#39; &#39; | Joining character used if multiple html attributes are supplied (e.g. class=&quot;class1 class2&quot;) |
+| Array&lt;String&gt; | :hyphen_attrs | %w(data) | Attributes which will be hyphenated if a Hash is given (e.g. data=a:1,b:2 will render as data-a=&quot;1&quot; data-b=&quot;2&quot;) |
+| Boolean | :sort_attrs | true | Sort attributes by name |
+| Symbol | :js_wrapper | nil | Wrap javascript by :comment, :cdata or :both. You can also :guess the wrapper based on :format. |
+| Boolean | :pretty | false | Pretty HTML indenting, only block level tags are indented <b>(This is slower!)</b> |
+| String | :indent | &#39;  &#39; | Indentation string |
+| Boolean | :streaming | false (true in Rails &gt; 3.1) | Enable output streaming |
+| Class | :generator | Temple::Generators::ArrayBuffer/ RailsOutputBuffer | Temple code generator (default generator generates array buffer) |
+| String | :buffer | &#39;_buf&#39; (&#39;@output_buffer&#39; in Rails) | Variable used for buffer |</p>
+
+<p>There are more options which are supported by the Temple filters but which are not exposed and are not officially supported. You
+have to take a look at the Slim and Temple code for that.</p>
+
+<h3>Option priority and inheritance</h3>
+
+<p>For developers who know more about Slim and Temple architecture it is possible to override default
+options at different positions. Temple uses an inheritance mechanism to allow subclasses to override
+options of the superclass. The option priorities are as follows:</p>
+
+<ol>
+<li><code>Slim::Template</code> options passed at engine instatination</li>
+<li><code>Slim::Template.default_options</code></li>
+<li><code>Slim::Engine.thread_options</code>, <code>Slim::Engine.default_options</code></li>
+<li>Parser/Filter/Generator <code>thread_options</code>, <code>default_options</code> (e.g <code>Slim::Parser</code>, <code>Slim::Compiler</code>)</li>
+</ol>
+
+<p>It is also possible to set options for superclasses like <code>Temple::Engine</code>. But this will affect all temple template engines then.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span> <span class='op'>&lt;</span> <span class='const'>Temple</span><span class='op'>::</span><span class='const'>Engine</span>
+<span class='const'>Slim</span><span class='op'>::</span><span class='const'>Compiler</span> <span class='op'>&lt;</span> <span class='const'>Temple</span><span class='op'>::</span><span class='const'>Filter</span>
+</code></pre>
+
+<h2>Plugins</h2>
+
+<p>Slim currently provides plugins for logic less mode and I18n. See the plugin documentation.</p>
+
+<ul>
+<li><a href="doc/logic_less.md">Logic less mode</a></li>
+<li><a href="doc/translator.md">Translator/I18ne</a></li>
+</ul>
+
+<h2>Framework support</h2>
+
+<h3>Tilt</h3>
+
+<p>Slim uses <a href="https://github.com/rtomayko/tilt">Tilt</a> to compile the generated code. If you want to use the Slim template directly, you can use the Tilt interface.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Tilt</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>template.slim</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_render'>render</span><span class='lparen'>(</span><span class='id identifier rubyid_scope'>scope</span><span class='rparen'>)</span>
+<span class='const'>Slim</span><span class='op'>::</span><span class='const'>Template</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>template.slim</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_optional_option_hash'>optional_option_hash</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_render'>render</span><span class='lparen'>(</span><span class='id identifier rubyid_scope'>scope</span><span class='rparen'>)</span>
+<span class='const'>Slim</span><span class='op'>::</span><span class='const'>Template</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_optional_option_hash'>optional_option_hash</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_source'>source</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_render'>render</span><span class='lparen'>(</span><span class='id identifier rubyid_scope'>scope</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>The optional option hash can have to options which were documented in the section above.</p>
+
+<h3>Sinatra</h3>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sinatra</span><span class='tstring_end'>&#39;</span></span>
+<span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>slim</span><span class='tstring_end'>&#39;</span></span>
+
+<span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_slim'>slim</span> <span class='symbol'>:index</span> <span class='rbrace'>}</span>
+
+ <span class='id identifier rubyid___END__'>__END__</span>
+</code></pre>
+
+<h3>Rails</h3>
+
+<p>Rails generators are provided by <a href="https://github.com/slim-template/slim-rails">slim-rails</a>. slim-rails
+is not necessary to use Slim in Rails though. Just install Slim and add it to your Gemfile with <code>gem &#39;slim&#39;</code>.
+Then just use the .slim extension and you&#39;re good to go.</p>
+
+<h4>Streaming</h4>
+
+<p>HTTP streaming is enabled by default if you use a Rails version which supports it.</p>
+
+<h2>Tools</h2>
+
+<h3>Slim Command &#39;slimrb&#39;</h3>
+
+<p>The gem &#39;slim&#39; comes with the small tool &#39;slimrb&#39; to test Slim from the command line.</p>
+
+<pre class="code ruby"><code class="ruby">
+</code></pre>
+
+<p>Start &#39;slimrb&#39;, type your code and press Ctrl-d to send EOF. Example usage:</p>
+
+<pre class="code ruby"><code class="ruby">
+</code></pre>
+
+<h3>Syntax Highlighters</h3>
+
+<p>There are plugins for various text editors (including the most important ones - Vim, Emacs and Textmate):</p>
+
+<ul>
+<li><a href="https://github.com/slim-template/vim-slim">Vim</a></li>
+<li><a href="https://github.com/slim-template/emacs-slim">Emacs</a></li>
+<li><a href="https://github.com/slim-template/ruby-slim.tmbundle">Textmate / Sublime Text</a></li>
+<li><a href="https://github.com/slim-template/Slim-Sugar">Espresso text editor</a></li>
+<li><a href="https://github.com/slim-template/Coda-2-Slim.mode">Coda</a></li>
+</ul>
+
+<h3>Template Converters (HAML, ERB, ...)</h3>
+
+<ul>
+<li>Slim can be converted to ERB using <code>slimrb</code> or `Slim::ERBConverter&#39; which are both included in the Slim gem</li>
+<li><a href="https://github.com/slim-template/haml2slim">Haml2Slim converter</a></li>
+<li><a href="https://github.com/slim-template/html2slim">ERB2Slim, HTML2Slim converter</a></li>
+</ul>
+
+<h2>Testing</h2>
+
+<h3>Benchmarks</h3>
+
+<p><em>Yes, Slim is one of the fastest Ruby template engines out there!
+   In production mode Slim is nearly as fast as Erubis (which is the fastest template engine).
+   But we would be happy if you chose Slim also for any other reason, we assure
+   you performance will not be an obstacle.</em></p>
+
+<p>Run the benchmarks with <code>rake bench</code>. You can add the option <code>slow</code> to
+run the slow parsing benchmark which needs more time. You can also increase the number of iterations.</p>
+
+<pre class="code ruby"><code class="ruby">rake bench slow=1 iterations=1000
+</code></pre>
+
+<p>We run the benchmarks for every commit on Travis-CI. Take a look at the newest benchmarking results: <a href="http://travis-ci.org/#!/slim-template/slim">http://travis-ci.org/#!/slim-template/slim</a></p>
+
+<h3>Test suite and continuous integration</h3>
+
+<p>Slim provides an extensive test-suite based on minitest. You can run the tests
+with &#39;rake test&#39; and the rails integration tests with &#39;rake test:rails&#39;.</p>
+
+<p>We are currently experimenting with human-readable literate tests which are written as markdown files: <a href="test/literate/TESTS.md">TESTS.md</a></p>
+
+<p>Travis-CI is used for continuous integration testing: <a href="http://travis-ci.org/#!/slim-template/slim">http://travis-ci.org/#!/slim-template/slim</a></p>
+
+<p>Slim is working well on all major Ruby implementations:</p>
+
+<ul>
+<li>Ruby 2.0.0</li>
+<li>Ruby 1.8.7</li>
+<li>Ruby 1.9.2</li>
+<li>Ruby 1.9.3</li>
+<li>Ruby EE</li>
+<li>JRuby</li>
+<li>Rubinius 2.0</li>
+</ul>
+
+<h2>Contributing</h2>
+
+<p>If you&#39;d like to help improve Slim, clone the project with Git by running:</p>
+
+<pre class="code ruby"><code class="ruby"></code></pre>
+
+<p>Work your magic and then submit a pull request. We love pull requests!</p>
+
+<p>Please remember to test against Ruby versions 2.0.0, 1.9.3 and 1.8.7.</p>
+
+<p>If you find the documentation lacking, help us out and update this README.md. If you don&#39;t have the time to work on Slim, but found something we should know about, please submit an issue.</p>
+
+<h2>License</h2>
+
+<p>Slim is released under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
+
+<h2>Authors</h2>
+
+<ul>
+<li><a href="https://github.com/minad">Daniel Mendler</a> (Lead developer)</li>
+<li><a href="https://github.com/stonean">Andrew Stone</a></li>
+<li><a href="https://github.com/fredwu">Fred Wu</a></li>
+</ul>
+
+<h2>Discuss</h2>
+
+<ul>
+<li><a href="http://groups.google.com/group/slim-template">Google Group</a></li>
+</ul>
+
+<h2>Related projects</h2>
+
+<p>Template compilation framework:</p>
+
+<ul>
+<li><a href="https://github.com/judofyr/temple">Temple</a></li>
+</ul>
+
+<p>Framework support:</p>
+
+<ul>
+<li><a href="https://github.com/slim-template/slim-rails">Rails generators (slim-rails)</a></li>
+</ul>
+
+<p>Syntax highlighting:</p>
+
+<ul>
+<li><a href="https://github.com/slim-template/vim-slim">Vim</a></li>
+<li><a href="https://github.com/slim-template/emacs-slim">Emacs</a></li>
+<li><a href="https://github.com/slim-template/ruby-slim.tmbundle">Textmate / Sublime Text</a></li>
+<li><a href="https://github.com/slim-template/Slim-Sugar">Espresso text editor</a></li>
+<li><a href="https://github.com/slim-template/Coda-2-Slim.mode">Coda</a></li>
+</ul>
+
+<p>Template Converters (HAML, ERB, ...):</p>
+
+<ul>
+<li><a href="https://github.com/slim-template/haml2slim">Haml2Slim converter</a></li>
+<li><a href="https://github.com/slim-template/html2slim">ERB2Slim, HTML2Slim converter</a></li>
+</ul>
+
+<p>Language ports/Similar languages:</p>
+
+<ul>
+<li><a href="https://github.com/yury/coffee-views">Coffee script plugin for Slim</a></li>
+<li><a href="https://github.com/chaslemley/slim.clj">Clojure port of Slim</a></li>
+<li><a href="https://github.com/gregwebs/hamlet.rb">Hamlet.rb (Similar template language)</a></li>
+<li><a href="https://github.com/2nd/plim">Plim (Python port of Slim)</a></li>
+<li><a href="https://github.com/jfirebaugh/skim">Skim (Slim for Javascript)</a></li>
+<li><a href="https://github.com/machty/emblem.js">Emblem.js (Javascript, similar to Slim)</a></li>
+<li><a href="https://github.com/haml/haml">Haml (Older engine which inspired Slim)</a></li>
+<li><a href="https://github.com/visionmedia/jade">Jade (Similar engine for javascript)</a></li>
+<li><a href="https://github.com/joaomdmoura/sweet">Sweet (Similar engine which also allows to write classes and functions)</a></li>
+</ul>
+</div></div>
+
+    <div id="footer">
+  Generated on Sun Aug 18 14:13:56 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

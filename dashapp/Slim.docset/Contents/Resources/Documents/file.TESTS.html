@@ -1,0 +1,1122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: TESTS
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: TESTS</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>Slim test suite</h1>
+
+<p>You can run this testsuite with <code>rake test:literate</code>.</p>
+
+<p>We use pretty mode in the test suite to make the output more readable. Pretty mode
+is enabled by setting the option</p>
+
+<pre class="code options"><code class="options">:pretty =&gt; true
+</code></pre>
+
+<h2>Line indicators</h2>
+
+<p>In this section we test all line indicators.</p>
+
+<h3>Text <code>|</code></h3>
+
+<p>A text blocks starts with the <code>|</code> as line indicator.</p>
+
+<pre class="code slim"><code class="slim">| Text block
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">Text block
+</code></pre>
+
+<p>Multiple lines can be indented beneath the first text line.</p>
+
+<pre class="code slim"><code class="slim">|  Text
+    block
+
+     with
+
+    multiple
+   lines
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html"> Text
+  block
+
+   with
+
+  multiple
+ lines
+</code></pre>
+
+<p>The first line of a text block determines the indentation.</p>
+
+<pre class="code slim"><code class="slim">|
+
+   Text
+    block
+
+     with
+
+    multiple
+   lines
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">Text
+ block
+
+  with
+
+ multiple
+lines
+</code></pre>
+
+<p>You can nest text blocks beneath tags.</p>
+
+<pre class="code slim"><code class="slim">body
+  | Text
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;body&gt;
+  Text
+&lt;/body&gt;
+</code></pre>
+
+<p>You can embed html code in the text which is not escaped.</p>
+
+<pre class="code slim"><code class="slim">| &lt;a href=&quot;http://slim-lang.com&quot;&gt;slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a href=&quot;http://slim-lang.com&quot;&gt;slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<h3>Text with trailing white space <code>&#39;</code></h3>
+
+<p>A text blocks with trailing white space starts with the <code>&#39;</code> as line indicator.</p>
+
+<pre class="code slim"><code class="slim">&#39; Text block
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">Text block 
+</code></pre>
+
+<p>This is especially useful if you use tags behind a text block.</p>
+
+<pre class="code slim"><code class="slim">&#39; Link to
+a href=&quot;http://slim-lang.com&quot; slim-lang.com
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">Link to &lt;a href=&quot;http://slim-lang.com&quot;&gt;slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<p>Multiple lines can be indented beneath the first text line.</p>
+
+<pre class="code slim"><code class="slim">&#39;  Text
+    block
+
+     with
+
+    multiple
+   lines
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html"> Text
+  block
+
+   with
+
+  multiple
+ lines 
+</code></pre>
+
+<p>The first line of a text block determines the indentation.</p>
+
+<pre class="code slim"><code class="slim">&#39;
+
+   Text
+    block
+
+     with
+
+    multiple
+   lines
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">Text
+ block
+
+  with
+
+ multiple
+lines 
+</code></pre>
+
+<h3>Inline HTML <code>&lt;</code></h3>
+
+<p>HTML can be written directly.</p>
+
+<pre class="code slim"><code class="slim">&lt;a href=&quot;http://slim-lang.com&quot;&gt;slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a href=&quot;http://slim-lang.com&quot;&gt;slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<p>HTML tags allow nested blocks inside.</p>
+
+<pre class="code slim"><code class="slim">&lt;html&gt;
+  &lt;head&gt;
+    title Example
+  &lt;/head&gt;
+  body
+    - if true
+      | yes
+    - else
+      | no
+&lt;/html&gt;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;html&gt;&lt;head&gt;
+&lt;title&gt;
+  Example
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  yes
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3>Control code <code>-</code></h3>
+
+<p>The dash <code>-</code> denotes arbitrary control code.</p>
+
+<pre class="code slim"><code class="slim">- greeting = &#39;Hello, World!&#39;
+- if false
+  | Not true
+- else
+  = greeting
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">Hello, World!
+</code></pre>
+
+<p>Complex code can be broken with backslash <code>\</code>.</p>
+
+<pre class="code slim"><code class="slim">- greeting = &#39;Hello, &#39;+\
+     \
+    &#39;World!&#39;
+- if false
+  | Not true
+- else
+  = greeting
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">Hello, World!
+</code></pre>
+
+<p>You can also write loops like this</p>
+
+<pre class="code slim"><code class="slim">- items = [{:name =&gt; &#39;table&#39;, :price =&gt; 10}, {:name =&gt; &#39;chair&#39;, :price =&gt; 5}]
+table#items
+  - for item in items do
+    tr
+      td.name = item[:name]
+      td.price = item[:price]
+</code></pre>
+
+<p>which renders as</p>
+
+<pre class="code html"><code class="html">&lt;table id=&quot;items&quot;&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;name&quot;&gt;
+      table
+    &lt;/td&gt;
+    &lt;td class=&quot;price&quot;&gt;
+      10
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;name&quot;&gt;
+      chair
+    &lt;/td&gt;
+    &lt;td class=&quot;price&quot;&gt;
+      5
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<p>The <code>do</code> keyword can be omitted.</p>
+
+<pre class="code slim"><code class="slim">- items = [{:name =&gt; &#39;table&#39;, :price =&gt; 10}, {:name =&gt; &#39;chair&#39;, :price =&gt; 5}]
+table#items
+  - for item in items
+    tr
+      td.name = item[:name]
+      td.price = item[:price]
+</code></pre>
+
+<p>which renders as</p>
+
+<pre class="code html"><code class="html">&lt;table id=&quot;items&quot;&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;name&quot;&gt;
+      table
+    &lt;/td&gt;
+    &lt;td class=&quot;price&quot;&gt;
+      10
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;name&quot;&gt;
+      chair
+    &lt;/td&gt;
+    &lt;td class=&quot;price&quot;&gt;
+      5
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<h3>Output <code>=</code></h3>
+
+<p>The equal sign <code>=</code> produces dynamic output.</p>
+
+<pre class="code slim"><code class="slim">= 7*7
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">49
+</code></pre>
+
+<p>Dynamic output is escaped by default.</p>
+
+<pre class="code slim"><code class="slim">= &#39;&lt;script&gt;evil();&lt;/script&gt;&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&amp;lt;script&amp;gt;evil();&amp;lt;/script&amp;gt;
+</code></pre>
+
+<p>Long code lines can be broken with <code>\</code>.</p>
+
+<pre class="code slim"><code class="slim">= (0..10).map do |i|\
+  2**i \
+end.join(&#39;, &#39;)
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024
+</code></pre>
+
+<p>You don&#39;t need the explicit <code>\</code> if the line ends with a comma <code>,</code>.</p>
+
+<pre class="code slim"><code class="slim">ruby:
+  def test(*args)
+    args.join(&#39;-&#39;)
+  end
+= test(&#39;arg1&#39;,
+&#39;arg2&#39;,
+&#39;arg3&#39;)
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">arg1-arg2-arg3
+</code></pre>
+
+<p>You can also disable HTML escaping globally by setting the option</p>
+
+<pre class="code options"><code class="options">:disable_escape =&gt; true
+</code></pre>
+
+<pre class="code slim"><code class="slim">= &#39;&lt;script&gt;evil();&lt;/script&gt;&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;script&gt;evil();&lt;/script&gt;
+</code></pre>
+
+<p>The equal sign with modifier <code>=&gt;</code> produces dynamic output with a trailing white space.</p>
+
+<pre class="code slim"><code class="slim">=&gt; 7*7
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">49 
+</code></pre>
+
+<p>The legacy syntax <code>=&#39;</code> is also supported.</p>
+
+<pre class="code slim"><code class="slim">=&#39; 7*7
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">49 
+</code></pre>
+
+<p>The equal sign with modifier <code>=&lt;</code> produces dynamic output with a leading white space.</p>
+
+<pre class="code slim"><code class="slim">=&lt; 7*7
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html"> 49
+</code></pre>
+
+<p>The equal sign with modifiers <code>=&lt;&gt;</code> produces dynamic output with a leading and trailing white space.</p>
+
+<pre class="code slim"><code class="slim">=&lt;&gt; 7*7
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html"> 49 
+</code></pre>
+
+<h3>Output without HTML escaping <code>==</code></h3>
+
+<p>The double equal sign <code>==</code> produces dynamic output without HTML escaping.</p>
+
+<pre class="code slim"><code class="slim">== &#39;&lt;script&gt;evil();&lt;/script&gt;&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;script&gt;evil();&lt;/script&gt;
+</code></pre>
+
+<p>The option option</p>
+
+<pre class="code options"><code class="options">:disable_escape =&gt; true
+</code></pre>
+
+<p>doesn&#39;t affect the output of <code>==</code>.</p>
+
+<pre class="code slim"><code class="slim">== &#39;&lt;script&gt;evil();&lt;/script&gt;&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;script&gt;evil();&lt;/script&gt;
+</code></pre>
+
+<p>The double equal sign with modifier <code>==&gt;</code> produces dynamic output without HTML escaping and trailing white space.</p>
+
+<pre class="code slim"><code class="slim">==&gt; &#39;&lt;script&gt;evil();&lt;/script&gt;&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;script&gt;evil();&lt;/script&gt; 
+</code></pre>
+
+<p>The legacy syntax <code>==&#39;</code> is also supported.</p>
+
+<pre class="code slim"><code class="slim">==&#39; &#39;&lt;script&gt;evil();&lt;/script&gt;&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;script&gt;evil();&lt;/script&gt; 
+</code></pre>
+
+<p>The option option</p>
+
+<pre class="code options"><code class="options">:disable_escape =&gt; true
+</code></pre>
+
+<p>doesn&#39;t affect the output of <code>==</code>.</p>
+
+<pre class="code slim"><code class="slim">==&#39; &#39;&lt;script&gt;evil();&lt;/script&gt;&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;script&gt;evil();&lt;/script&gt; 
+</code></pre>
+
+<h3>Code comment <code>/</code></h3>
+
+<p>Code comments begin with <code>/</code> and produce no output.</p>
+
+<pre class="code slim"><code class="slim">/ Comment
+body
+  / Another comment
+    with
+
+    multiple lines
+  p Hello!
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;body&gt;
+  &lt;p&gt;
+    Hello!
+  &lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+
+<h3>HTML comment <code>/!</code></h3>
+
+<p>Code comments begin with <code>/!</code>.</p>
+
+<pre class="code slim"><code class="slim">/! Comment
+body
+  /! Another comment
+     with multiple lines
+  p Hello!
+  /!
+      First line determines indentation
+
+      of the comment
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;!--Comment--&gt;
+&lt;body&gt;
+  &lt;!--Another comment
+  with multiple lines--&gt;
+  &lt;p&gt;
+    Hello!
+  &lt;/p&gt;
+  &lt;!--First line determines indentation
+
+  of the comment--&gt;
+&lt;/body&gt;
+</code></pre>
+
+<h3>IE conditional comment <code>/[...]</code></h3>
+
+<pre class="code slim"><code class="slim">/[if IE]
+    p Get a better browser.
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;!--[if IE]&gt;
+&lt;p&gt;
+  Get a better browser.
+&lt;/p&gt;
+&lt;![endif]--&gt;
+</code></pre>
+
+<h2>HTML tags</h2>
+
+<h3>Doctype tags</h3>
+
+<p>The doctype tag is a special tag which can be used to generate the complex doctypes in a very simple way.</p>
+
+<p>You can output the XML version using the doctype tag.</p>
+
+<pre class="code slim"><code class="slim">doctype xml
+doctype xml ISO-8859-1
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot; ?&gt;
+</code></pre>
+
+<p>In XHTML mode the following doctypes are supported:</p>
+
+<pre class="code slim"><code class="slim">doctype html
+doctype 5
+doctype 1.1
+doctype strict
+doctype frameset
+doctype mobile
+doctype basic
+doctype transitional
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;!DOCTYPE html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//WAPFORUM//DTD XHTML Mobile 1.2//EN&quot; &quot;http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML Basic 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+</code></pre>
+
+<p>If we activate HTML mode with the option</p>
+
+<pre class="code options"><code class="options">:format =&gt; :html
+</code></pre>
+
+<p>the following doctypes are supported:</p>
+
+<pre class="code slim"><code class="slim">doctype html
+doctype 5
+doctype strict
+doctype frameset
+doctype transitional
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;!DOCTYPE html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot; &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+</code></pre>
+
+<h3>Closed tags</h3>
+
+<p>You can close tags explicitly by appending a trailing <code>/</code>.</p>
+
+<pre class="code slim"><code class="slim">div id=&quot;not-closed&quot;
+.closed/
+#closed/
+div id=&quot;closed&quot;/
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;div id=&quot;not-closed&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;closed&quot; /&gt;
+&lt;div id=&quot;closed&quot; /&gt;
+&lt;div id=&quot;closed&quot; /&gt;
+</code></pre>
+
+<p>Note, that this is usually not necessary since the standard html tags (img, br, ...) are closed automatically.</p>
+
+<pre class="code slim"><code class="slim">img src=&quot;image.png&quot;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;img src=&quot;image.png&quot; /&gt;
+</code></pre>
+
+<h3>Trailing and leading whitespace</h3>
+
+<p>You can force a trailing whitespace behind a tag by adding <code>&gt;</code>. The legacy syntax with <code>&#39;</code> is also supported.</p>
+
+<pre class="code slim"><code class="slim">a#closed&gt; class=&quot;test&quot; /
+a#closed&gt; class=&quot;test&quot;/
+a&gt; href=&#39;url1&#39; Link1
+a&#39; href=&#39;url2&#39; Link2
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a class=&quot;test&quot; id=&quot;closed&quot; /&gt; &lt;a class=&quot;test&quot; id=&quot;closed&quot; /&gt; &lt;a href=&quot;url1&quot;&gt;Link1&lt;/a&gt; &lt;a href=&quot;url2&quot;&gt;Link2&lt;/a&gt; 
+</code></pre>
+
+<p>If you combine &gt; and =&#39; only one trailing whitespace is added.</p>
+
+<pre class="code slim"><code class="slim">a&gt; =&#39; &#39;Text1&#39;
+a =&#39; &#39;Text2&#39;
+a&gt; = &#39;Text3&#39;
+a&gt;= &#39;Text4&#39;
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a&gt;Text1&lt;/a&gt; &lt;a&gt;Text2&lt;/a&gt; &lt;a&gt;Text3&lt;/a&gt; &lt;a&gt;Text4&lt;/a&gt; 
+</code></pre>
+
+<p>You can force a leading whitespace before a tag by adding <code>&lt;</code>.</p>
+
+<pre class="code slim"><code class="slim">a#closed&lt; class=&quot;test&quot; /
+a#closed&lt; class=&quot;test&quot;/
+a&lt; href=&#39;url1&#39; Link1
+a&lt; href=&#39;url2&#39; Link2
+</code></pre>
+
+<pre class="code html"><code class="html"> &lt;a class=&quot;test&quot; id=&quot;closed&quot; /&gt; &lt;a class=&quot;test&quot; id=&quot;closed&quot; /&gt; &lt;a href=&quot;url1&quot;&gt;Link1&lt;/a&gt; &lt;a href=&quot;url2&quot;&gt;Link2&lt;/a&gt;
+</code></pre>
+
+<p>You can also combine both.</p>
+
+<pre class="code slim"><code class="slim">a#closed&lt;&gt; class=&quot;test&quot; /
+a#closed&gt;&lt; class=&quot;test&quot;/
+a&lt;&gt; href=&#39;url1&#39; Link1
+a&lt;&gt; href=&#39;url2&#39; Link2
+</code></pre>
+
+<pre class="code html"><code class="html"> &lt;a class=&quot;test&quot; id=&quot;closed&quot; /&gt;  &lt;a class=&quot;test&quot; id=&quot;closed&quot; /&gt;  &lt;a href=&quot;url1&quot;&gt;Link1&lt;/a&gt;  &lt;a href=&quot;url2&quot;&gt;Link2&lt;/a&gt; 
+</code></pre>
+
+<h3>Inline tags</h3>
+
+<p>Sometimes you may want to be a little more compact and inline the tags.</p>
+
+<pre class="code slim"><code class="slim">ul
+  li.first: a href=&quot;/first&quot; First
+  li: a href=&quot;/second&quot; Second
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;ul&gt;
+  &lt;li class=&quot;first&quot;&gt;
+    &lt;a href=&quot;/first&quot;&gt;First&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;/second&quot;&gt;Second&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>For readability, don&#39;t forget you can wrap the attributes.</p>
+
+<pre class="code slim"><code class="slim">ul
+  li.first: a(href=&quot;/first&quot;) First
+  li: a(href=&quot;/second&quot;) Second
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;ul&gt;
+  &lt;li class=&quot;first&quot;&gt;
+    &lt;a href=&quot;/first&quot;&gt;First&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;/second&quot;&gt;Second&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h3>Text content</h3>
+
+<h3>Dynamic content <code>=</code></h3>
+
+<h3>Attributes</h3>
+
+<h4>Attribute wrapper</h4>
+
+<p>If a delimiter makes the syntax more readable for you, you can use the characters <code>{...}</code>, <code>(...)</code>, <code>[...]</code> to wrap the attributes.</p>
+
+<pre class="code slim"><code class="slim">li
+  a(href=&quot;http://slim-lang.com&quot; class=&quot;important&quot;) Link
+li
+  a[href=&quot;http://slim-lang.com&quot; class=&quot;important&quot;] Link
+li
+  a{href=&quot;http://slim-lang.com&quot; class=&quot;important&quot;} Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;li&gt;
+  &lt;a class=&quot;important&quot; href=&quot;http://slim-lang.com&quot;&gt;Link&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a class=&quot;important&quot; href=&quot;http://slim-lang.com&quot;&gt;Link&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a class=&quot;important&quot; href=&quot;http://slim-lang.com&quot;&gt;Link&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+
+<p>If you wrap the attributes, you can spread them across multiple lines:</p>
+
+<pre class="code slim"><code class="slim">a(href=&quot;http://slim-lang.com&quot;
+
+     class=&quot;important&quot;) Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a class=&quot;important&quot; href=&quot;http://slim-lang.com&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+
+<pre class="code slim"><code class="slim">dl(
+  itemprop=&#39;address&#39;
+  itemscope
+  itemtype=&#39;http://schema.org/PostalAddress&#39;
+)
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;dl itemprop=&quot;address&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/PostalAddress&quot;&gt;&lt;/dl&gt;
+</code></pre>
+
+<p>You may use spaces around the wrappers and assignments:</p>
+
+<pre class="code slim"><code class="slim">h1 id = &quot;logo&quot; Logo
+h2 [ id = &quot;tagline&quot; ] Tagline
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;h1 id=&quot;logo&quot;&gt;
+  Logo
+&lt;/h1&gt;
+&lt;h2 id=&quot;tagline&quot;&gt;
+  Tagline
+&lt;/h2&gt;
+</code></pre>
+
+<h4>Quoted attributes</h4>
+
+<p>You can use single or double quotes for simple text attributes.</p>
+
+<pre class="code slim"><code class="slim">a href=&quot;http://slim-lang.com&quot; title=&#39;Slim Homepage&#39; Goto the Slim homepage
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a href=&quot;http://slim-lang.com&quot; title=&quot;Slim Homepage&quot;&gt;Goto the Slim homepage&lt;/a&gt;
+</code></pre>
+
+<p>You can use text interpolation in the quoted attributes:</p>
+
+<pre class="code slim"><code class="slim">- url=&#39;slim-lang.com&#39;
+a href=&quot;http://#{url}&quot; Goto the #{url}
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a href=&quot;http://slim-lang.com&quot;&gt;Goto the slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<p>The attribute value will be escaped by default. Use == if you want to disable escaping in the attribute.</p>
+
+<pre class="code slim"><code class="slim">li
+  a href=&#39;&amp;&#39; Link
+li
+  a href==&quot;&amp;amp;&quot; Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;li&gt;
+  &lt;a href=&quot;&amp;amp;&quot;&gt;Link&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a href=&quot;&amp;amp;&quot;&gt;Link&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+
+<p>You can break quoted attributes with backslash <code>\</code></p>
+
+<pre class="code slim"><code class="slim">a data-title=&quot;help&quot; data-content=&quot;extremely long help text that goes on\
+  and one and one and then starts over....&quot; Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a data-content=&quot;extremely long help text that goes on and one and one and then starts over....&quot; data-title=&quot;help&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+
+<h4>Ruby attributes</h4>
+
+<p>Long ruby attributes can be broken with backslash <code>\</code></p>
+
+<pre class="code slim"><code class="slim">a href=1+\
+   1 Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a href=&quot;2&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+
+<p>You don&#39;t need the explicit <code>\</code> if the line ends with a comma <code>,</code>.</p>
+
+<pre class="code slim"><code class="slim">ruby:
+  def test(*args)
+    args.join(&#39;-&#39;)
+  end
+a href=test(&#39;arg1&#39;,
+&#39;arg2&#39;,
+&#39;arg3&#39;) Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a href=&quot;arg1-arg2-arg3&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+
+<h4>Boolean attributes</h4>
+
+<p>The attribute values <code>true</code>, <code>false</code> and <code>nil</code> are interpreted as booleans.
+If you use the attribut wrapper you can omit the attribute assigment.</p>
+
+<pre class="code slim"><code class="slim">- true_value1 = &quot;&quot;
+- true_value2 = true
+input type=&quot;text&quot; disabled=true_value1
+input type=&quot;text&quot; disabled=true_value2
+input type=&quot;text&quot; disabled=&quot;disabled&quot;
+input type=&quot;text&quot; disabled=true
+input(type=&quot;text&quot; disabled)
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;input disabled=&quot;&quot; type=&quot;text&quot; /&gt;&lt;input disabled=&quot;&quot; type=&quot;text&quot; /&gt;&lt;input disabled=&quot;disabled&quot; type=&quot;text&quot; /&gt;&lt;input disabled=&quot;&quot; type=&quot;text&quot; /&gt;&lt;input disabled=&quot;&quot; type=&quot;text&quot; /&gt;
+</code></pre>
+
+<pre class="code slim"><code class="slim">- false_value1 = false
+- false_value2 = nil
+input type=&quot;text&quot; disabled=false_value1
+input type=&quot;text&quot; disabled=false_value2
+input type=&quot;text&quot;
+input type=&quot;text&quot; disabled=false
+input type=&quot;text&quot; disabled=nil
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;input type=&quot;text&quot; /&gt;&lt;input type=&quot;text&quot; /&gt;&lt;input type=&quot;text&quot; /&gt;&lt;input type=&quot;text&quot; /&gt;&lt;input type=&quot;text&quot; /&gt;
+</code></pre>
+
+<h4>Attribute merging</h4>
+
+<p>You can configure attributes to be merged if multiple are given (See option <code>:merge_attrs</code>). In the default configuration
+this is done for class attributes with the white space as delimiter.</p>
+
+<pre class="code slim"><code class="slim">a.menu class=&quot;highlight&quot; href=&quot;http://slim-lang.com/&quot; Slim-lang.com
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;a class=&quot;menu highlight&quot; href=&quot;http://slim-lang.com/&quot;&gt;Slim-lang.com&lt;/a&gt;
+</code></pre>
+
+<p>You can also use an <code>Array</code> as attribute value and the array elements will be merged using the delimiter.</p>
+
+<pre class="code slim"><code class="slim">- classes = [:alpha, :beta]
+span class=[&quot;first&quot;,&quot;highlight&quot;] class=classes First
+span class=:second,:highlight class=classes Second
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;span class=&quot;first highlight alpha beta&quot;&gt;First&lt;/span&gt;&lt;span class=&quot;second highlight alpha beta&quot;&gt;Second&lt;/span&gt;
+</code></pre>
+
+<h4>Splat attributes <code>*</code></h4>
+
+<h4>Dynamic tags <code>*</code></h4>
+
+<p>You can create completely dynamic tags using the splat attributes. Just create a method which returns a hash
+with the :tag key.</p>
+
+<pre class="code slim"><code class="slim">ruby:
+  def a_unless_current
+    @page_current ? {:tag =&gt; &#39;span&#39;} : {:tag =&gt; &#39;a&#39;, :href =&gt; &#39;http://slim-lang.com/&#39;}
+  end
+- @page_current = true
+*a_unless_current Link
+- @page_current = false
+*a_unless_current Link
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;span&gt;Link&lt;/span&gt;&lt;a href=&quot;http://slim-lang.com/&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+
+<h3>Shortcuts</h3>
+
+<h4>Tag shortcuts</h4>
+
+<p>We add tag shortcuts by setting the option <code>:shortcut</code>.</p>
+
+<pre class="code options"><code class="options">:shortcut =&gt; {&#39;c&#39; =&gt; {:tag =&gt; &#39;container&#39;}, &#39;sec&#39; =&gt; {:tag =&gt;&#39;section&#39;}, &#39;#&#39; =&gt; {:attr =&gt; &#39;id&#39;}, &#39;.&#39; =&gt; {:attr =&gt; &#39;class&#39;} }
+</code></pre>
+
+<pre class="code slim"><code class="slim">sec: c.content Text
+</code></pre>
+
+<p>renders to</p>
+
+<pre class="code html"><code class="html">&lt;section&gt;
+  &lt;container class=&quot;content&quot;&gt;Text&lt;/container&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h4>Attribute shortcuts</h4>
+
+<p>We add <code>&amp;</code> to create a shortcut for the input elements with type attribute by setting the option <code>:shortcut</code>.</p>
+
+<pre class="code options"><code class="options">:shortcut =&gt; {&#39;&amp;&#39; =&gt; {:tag =&gt; &#39;input&#39;, :attr =&gt; &#39;type&#39;}, &#39;#&#39; =&gt; {:attr =&gt; &#39;id&#39;}, &#39;.&#39; =&gt; {:attr =&gt; &#39;class&#39;} }
+</code></pre>
+
+<pre class="code slim"><code class="slim">&amp;text name=&quot;user&quot;
+&amp;password name=&quot;pw&quot;
+&amp;submit.CLASS#ID
+</code></pre>
+
+<p>renders to</p>
+
+<pre class="code html"><code class="html">&lt;input name=&quot;user&quot; type=&quot;text&quot; /&gt;&lt;input name=&quot;pw&quot; type=&quot;password&quot; /&gt;&lt;input class=&quot;CLASS&quot; id=&quot;ID&quot; type=&quot;submit&quot; /&gt;
+</code></pre>
+
+<p>This is stupid, but you can also use multiple character shortcuts.</p>
+
+<pre class="code options"><code class="options">:shortcut =&gt; {&#39;&amp;&#39; =&gt; {:tag =&gt; &#39;input&#39;, :attr =&gt; &#39;type&#39;}, &#39;#&lt;&#39; =&gt; {:attr =&gt; &#39;id&#39;}, &#39;#&gt;&#39; =&gt; {:attr =&gt; &#39;class&#39;} }
+</code></pre>
+
+<pre class="code slim"><code class="slim">&amp;text name=&quot;user&quot;
+&amp;password name=&quot;pw&quot;
+&amp;submit#&gt;CLASS#&lt;ID
+</code></pre>
+
+<p>renders to</p>
+
+<pre class="code html"><code class="html">&lt;input name=&quot;user&quot; type=&quot;text&quot; /&gt;&lt;input name=&quot;pw&quot; type=&quot;password&quot; /&gt;&lt;input class=&quot;CLASS&quot; id=&quot;ID&quot; type=&quot;submit&quot; /&gt;
+</code></pre>
+
+<p>You can also set multiple attributes per shortcut.</p>
+
+<pre class="code options"><code class="options">:shortcut =&gt; {&#39;.&#39; =&gt; {:attr =&gt; %w(id class)} }
+</code></pre>
+
+<pre class="code slim"><code class="slim">.test
+</code></pre>
+
+<p>renders to</p>
+
+<pre class="code html"><code class="html">&lt;div class=&quot;test&quot; id=&quot;test&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<p>Shortcuts can also have multiple characters.</p>
+
+<pre class="code options"><code class="options">:shortcut =&gt; {&#39;.&#39; =&gt; {:attr =&gt; &#39;class&#39;}, &#39;#&#39; =&gt; {:attr =&gt; &#39;id&#39;}, &#39;.#&#39; =&gt; {:attr =&gt; %w(class id)} }
+</code></pre>
+
+<pre class="code slim"><code class="slim">.#test
+.test
+#test
+</code></pre>
+
+<p>renders to</p>
+
+<pre class="code html"><code class="html">&lt;div class=&quot;test&quot; id=&quot;test&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;test&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;test&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<h4>ID shortcut and class shortcut <code>.</code></h4>
+
+<h2>Text interpolation</h2>
+
+<p>Use standard Ruby interpolation. The text will be html escaped by default.</p>
+
+<pre class="code slim"><code class="slim">- user=&quot;John Doe &lt;john@doe.net&gt;&quot;
+h1 Welcome #{user}!
+</code></pre>
+
+<p>renders as</p>
+
+<pre class="code html"><code class="html">&lt;h1&gt;
+  Welcome John Doe &amp;lt;john@doe.net&amp;gt;!
+&lt;/h1&gt;
+</code></pre>
+
+<h2>Embedded engines</h2>
+
+<h2>Configuring Slim</h2>
+
+<h2>Plugins</h2>
+</div></div>
+
+    <div id="footer">
+  Generated on Sun Aug 18 14:13:57 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

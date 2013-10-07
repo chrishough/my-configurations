@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: logic_less
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: logic_less</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>Logic less mode</h1>
+
+<p>Logic less mode is inspired by <a href="https://github.com/defunkt/mustache">Mustache</a>. Logic less mode uses a dictionary object
+e.g. a recursive hash tree which contains the dynamic content.</p>
+
+<h2>Conditional</h2>
+
+<p>If the object is not false or empty?, the content will show</p>
+
+<pre class="code ruby"><code class="ruby"><span class='op'>-</span> <span class='id identifier rubyid_article'>article</span>
+  <span class='id identifier rubyid_h1'>h1</span> <span class='op'>=</span> <span class='id identifier rubyid_title'>title</span>
+</code></pre>
+
+<h2>Inverted conditional</h2>
+
+<p>If the object is false or empty?, the content will show</p>
+
+<pre class="code ruby"><code class="ruby">-! article
+  p Sorry, article not found
+</code></pre>
+
+<h2>Iteration</h2>
+
+<p>If the object is an array, the section will iterate</p>
+
+<pre class="code ruby"><code class="ruby">- articles
+  tr: td = title
+</code></pre>
+
+<h2>Lambdas</h2>
+
+<p>Like mustache, Slim supports lambdas.</p>
+
+<pre class="code ruby"><code class="ruby">= person
+  = name
+</code></pre>
+
+<p>The lambda method could be defined like this</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>def</span> <span class='id identifier rubyid_lambda_method'>lambda_method</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;div class=&#39;person&#39;&gt;</span><span class='embexpr_beg'>#{</span><span class='kw'>yield</span><span class='lparen'>(</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Andrew</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>&lt;/div&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span>
+</code></pre>
+
+<p>You can optionally pass one or more hashes to <code>yield</code>. If you pass multiple hashes, the block will be iterated as described above.</p>
+
+<h2>Dictionary access</h2>
+
+<p>Example code:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='op'>-</span> <span class='id identifier rubyid_article'>article</span>
+  <span class='id identifier rubyid_h1'>h1</span> <span class='op'>=</span> <span class='id identifier rubyid_title'>title</span>
+</code></pre>
+
+<p>The dictionary object is accessed in the order given by the <code>:dictionary_access</code>. Default order:</p>
+
+<ol>
+<li><code>:symbol</code> - If <code>article.respond_to?(:has_key?)</code> and <code>article.has_key?(:title)</code>, Slim will execute <code>article[:title]</code></li>
+<li><code>:string</code> - If <code>article.respond_to?(:has_key?)</code> and <code>article.has_key?(&#39;title&#39;)</code>, Slim will execute <code>article[&#39;title&#39;]</code></li>
+<li><code>:method</code> - If <code>article.respond_to?(:title)</code>, Slim will execute <code>article.send(:title)</code></li>
+<li><code>:instance_variable</code> - If <code>article.instance_variable_defined?(@title)</code>, Slim will execute <code>article.instance_variable_get @title</code></li>
+</ol>
+
+<p>If all the above fails, Slim will try to resolve the title reference in the same order against the parent object. In this example, the parent would be the dictionary object you are rendering the template against.</p>
+
+<p>As you might have guessed, the article reference goes through the same steps against the dictionary. Instance variables are not allowed in the view code, but Slim will find and use them. Essentially, you&#39;re just using dropping the @ prefix in your template. Parameterized method calls are not allowed.</p>
+
+<h2>Strings</h2>
+
+<p>The <code>self</code> keyword will return the <code>.to_s</code> value for the element under consideration.</p>
+
+<p>Given</p>
+
+<pre class="code ruby"><code class="ruby"><span class='lbrace'>{</span>
+  <span class='symbol'>:article</span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Article 1</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Article 2</span><span class='tstring_end'>&#39;</span></span>
+  <span class='rbracket'>]</span>
+<span class='rbrace'>}</span>
+</code></pre>
+
+<p>And</p>
+
+<pre class="code ruby"><code class="ruby">- article
+  tr: td = self
+</code></pre>
+
+<p>This will yield</p>
+
+<pre class="code ruby"><code class="ruby">&lt;tr&gt;
+  &lt;td&gt;Article 1&lt;/td&gt;
+&lt;/&gt;
+&lt;tr&gt;
+  &lt;td&gt;Article 2&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+
+<h2>Logic less in Rails</h2>
+
+<p>Install:</p>
+
+<pre class="code ruby"><code class="ruby"></code></pre>
+
+<p>Require:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>slim</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:require</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>slim/logic_less</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<p>You might want to activate logic less mode only for a few actions, you should disable logic-less mode globally at first in the configuration</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='symbol'>:logic_less</span> <span class='op'>=&gt;</span> <span class='kw'>false</span>
+</code></pre>
+
+<p>and activate logic less mode per render call in your action</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>class</span> <span class='const'>Controller</span>
+  <span class='kw'>def</span> <span class='id identifier rubyid_action'>action</span>
+    <span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_with_options'>with_options</span><span class='lparen'>(</span><span class='symbol'>:logic_less</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='rparen'>)</span> <span class='kw'>do</span>
+      <span class='id identifier rubyid_render'>render</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span>
+</code></pre>
+
+<h2>Logic less in Sinatra</h2>
+
+<p>Sinata has built-in support for Slim. All you have to do is require the logic less Slim plugin. This can be done in your config.ru:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>slim/logic_less</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<p>You are then ready to rock!</p>
+
+<p>You might want to activate logic less mode only for a few actions, you should disable logic-less mode globally at first in the configuration</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Slim</span><span class='op'>::</span><span class='const'>Engine</span><span class='period'>.</span><span class='id identifier rubyid_set_default_options'>set_default_options</span> <span class='symbol'>:logic_less</span> <span class='op'>=&gt;</span> <span class='kw'>false</span>
+</code></pre>
+
+<p>and activate logic less mode per render call in your application</p>
+
+<pre class="code ruby"><code class="ruby">get &#39;/page&#39;
+  slim :page, :logic_less =&gt; true
+end
+</code></pre>
+
+<h2>Options</h2>
+
+<p>| Type | Name | Default | Purpose |
+| ---- | ---- | ------- | ------- |
+| Boolean | :logic_less | true | Enable logic less mode (Enabled if &#39;slim/logic_less&#39; is required) |
+| String | :dictionary | &quot;self&quot; | Dictionary where variables are looked up |
+| Symbol/Array&lt;Symbol&gt; | :dictionary_access | [:symbol, :string, :method, :instance_variable] | Dictionary access order (:symbol, :string, :method, :instance_variable) |</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Sun Aug 18 14:13:57 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

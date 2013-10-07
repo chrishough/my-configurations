@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Slim::EndInserter
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (E)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Slim.html" title="Slim (module)">Slim</a></span></span>
+     &raquo; 
+    <span class="title">EndInserter</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Slim::EndInserter
+  
+  
+  <span class="private note title">Private</span>
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="Filter.html" title="Slim::Filter (class)">Filter</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Temple::HTML::Filter</li>
+          
+            <li class="next"><span class='object_link'><a href="Filter.html" title="Slim::Filter (class)">Filter</a></span></li>
+          
+            <li class="next">Slim::EndInserter</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/slim/end_inserter.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This class is part of a private API.</strong>
+  You should avoid using this class if possible, as it may be removed or be changed in the future.
+</p>
+<p>In Slim you don&#39;t need to close any blocks:</p>
+
+<ul>
+<li>if Slim.awesome?
+| But of course it is!</li>
+</ul>
+
+<p>However, the parser is not smart enough (and that&#39;s a good thing) to
+automatically insert end&#39;s where they are needed. Luckily, this filter
+does <em>exactly</em> that (and it does it well!)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="BLOCK_REGEX-constant" class="">BLOCK_REGEX =
+          <div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This constant is part of a private API.</strong>
+  You should avoid using this constant if possible, as it may be removed or be changed in the future.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A(else|elsif|when|rescue|ensure)\b</span><span class='regexp_end'>/</span></span></pre></dd>
+      
+        <dt id="END_REGEX-constant" class="">END_REGEX =
+          <div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This constant is part of a private API.</strong>
+  You should avoid using this constant if possible, as it may be removed or be changed in the future.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\Aend\b</span><span class='regexp_end'>/</span></span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#on_multi-instance_method" title="#on_multi (instance method)">- (Array) <strong>on_multi</strong>(*exps) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'><p>Handle multi expression <code>[:multi, *exps]</code>.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Filter.html" title="Slim::Filter (class)">Filter</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Filter.html#on_slim_control-instance_method" title="Slim::Filter#on_slim_control (method)">#on_slim_control</a></span>, <span class='object_link'><a href="Filter.html#on_slim_embedded-instance_method" title="Slim::Filter#on_slim_embedded (method)">#on_slim_embedded</a></span>, <span class='object_link'><a href="Filter.html#on_slim_output-instance_method" title="Slim::Filter#on_slim_output (method)">#on_slim_output</a></span>, <span class='object_link'><a href="Filter.html#on_slim_text-instance_method" title="Slim::Filter#on_slim_text (method)">#on_slim_text</a></span></p>
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="on_multi-instance_method">
+  
+    - (<tt>Array</tt>) <strong>on_multi</strong>(*exps) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+<p>Handle multi expression <code>[:multi, *exps]</code></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Corrected Temple expression with ends inserted</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/slim/end_inserter.rb', line 19</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_on_multi'>on_multi</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_exps'>exps</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_result'>result</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='symbol'>:multi</span><span class='rbracket'>]</span>
+  <span class='comment'># This variable is true if the previous line was
+</span>  <span class='comment'># (1) a control code and (2) contained indented content.
+</span>  <span class='id identifier rubyid_prev_indent'>prev_indent</span> <span class='op'>=</span> <span class='kw'>false</span>
+
+  <span class='id identifier rubyid_exps'>exps</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_exp'>exp</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_control?'>control?</span><span class='lparen'>(</span><span class='id identifier rubyid_exp'>exp</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_raise'>raise</span><span class='lparen'>(</span><span class='const'>Temple</span><span class='op'>::</span><span class='const'>FilterError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Explicit end statements are forbidden</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_exp'>exp</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span> <span class='op'>=~</span> <span class='const'>END_REGEX</span>
+
+      <span class='comment'># Two control code in a row. If this one is *not*
+</span>      <span class='comment'># an else block, we should close the previous one.
+</span>      <span class='id identifier rubyid_append_end'>append_end</span><span class='lparen'>(</span><span class='id identifier rubyid_result'>result</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_prev_indent'>prev_indent</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_exp'>exp</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span> <span class='op'>!~</span> <span class='const'>BLOCK_REGEX</span>
+
+      <span class='comment'># Indent if the control code contains something.
+</span>      <span class='id identifier rubyid_prev_indent'>prev_indent</span> <span class='op'>=</span> <span class='op'>!</span><span class='id identifier rubyid_empty_exp?'>empty_exp?</span><span class='lparen'>(</span><span class='id identifier rubyid_exp'>exp</span><span class='lbracket'>[</span><span class='int'>3</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_exp'>exp</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='op'>!=</span> <span class='symbol'>:newline</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_prev_indent'>prev_indent</span>
+      <span class='comment'># This is *not* a control code, so we should close the previous one.
+</span>      <span class='comment'># Ignores newlines because they will be inserted after each line.
+</span>      <span class='id identifier rubyid_append_end'>append_end</span><span class='lparen'>(</span><span class='id identifier rubyid_result'>result</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_prev_indent'>prev_indent</span> <span class='op'>=</span> <span class='kw'>false</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_result'>result</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_compile'>compile</span><span class='lparen'>(</span><span class='id identifier rubyid_exp'>exp</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># The last line can be a control code too.
+</span>  <span class='id identifier rubyid_prev_indent'>prev_indent</span> <span class='op'>?</span> <span class='id identifier rubyid_append_end'>append_end</span><span class='lparen'>(</span><span class='id identifier rubyid_result'>result</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_result'>result</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Aug 18 14:13:59 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
