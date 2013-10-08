@@ -28,6 +28,10 @@ function rtail() {
   tail -f log/development.log;
 }
 # ---------------------------------------------------------------
+function rbuild() {
+  bundle install --path=.bundle --binstubs=.bundle/binstubs;
+}
+# ---------------------------------------------------------------
 # rbenv shortcuts
 export PATH=".bundle/binstubs:$PATH" 
 # ---------------------------------------------------------------
