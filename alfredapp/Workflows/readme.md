@@ -10,6 +10,18 @@ Keyboard Shortcut Files
 
 ----
 
+### iOS Emulator
+
+This script will run a bash script to open the ios xcode emulator without running xcode by [@chrishough](https://github.com/chrishough/).
+
+```
+Keywords: ios
+```
+
+![iOS Emulator](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/ios-emulator/ios-emulator.png)
+
+----
+
 ### Empty All
 
 This script will move all of your osx junk mail to the trash, empty the osx mail trash, and empty the system trash by [@chrishough](https://github.com/chrishough/).
