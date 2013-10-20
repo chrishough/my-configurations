@@ -25,7 +25,11 @@ function rgmP() {
 }
 # ---------------------------------------------------------------
 function rtail() {
-  tail -f log/development.log;
+  if [ "$*" != "" ]; then
+    tail -f "log/$*.log";
+  else
+    tail -f log/development.log;
+  fi
 }
 # ---------------------------------------------------------------
 function rbuild() {
