@@ -51,6 +51,8 @@ alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
 alias gitck="git checkout "
 alias gitpull="git pull"
 
+alias gitb="git branch"
+
 alias gitp="git push"
 alias gitpo="git push origin "
 alias gitpot="git push origin --tags"
