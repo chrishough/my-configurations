@@ -219,7 +219,7 @@ After installing MacVim via [Homebrew](http://brew.sh/) make sure you verify vim
 ```
 	which vim 
 ```
-If vim is not setup correctly point your setup to the correct location.
+If vim is not setup correctly run this command to fix the installation.
 
 ```
 	sudo mv /usr/bin/vim /usr/bin/vim72

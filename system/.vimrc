@@ -1,1 +1,1 @@
-source $HOME/.myconfigurations/settings/.setup
+" MacVim Setup "

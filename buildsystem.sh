@@ -69,7 +69,7 @@ while true; do
              echo "skipped: .bashrc backup exits!"
           fi
           # ---------------------------------------------------------------
-          # VIMRC
+          # VIM
           if [ ! -L .vimrc ]; then
             cp .vimrc $HOME/.myconfigurations-backups/.vimrc
             rm .vimrc
