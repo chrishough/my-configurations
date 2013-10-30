@@ -208,6 +208,20 @@ After installing POW install [powder](https://github.com/Rodreegez/powder) to co
 ### Experimenting with VIM
 ----
 
+Install MacVim
+
 ```
 	brew install macvim --override-system-vim
 ```
+
+After installing MacVim via [Homebrew](http://brew.sh/) make sure you verify vim is pointing to "/usr/local/bin/vim" the correct path.
+
+```
+	which vim 
+```
+If vim is not setup correctly point your setup to the correct location.
+
+```
+	sudo mv /usr/bin/vim /usr/bin/vim72
+```
+
