@@ -207,3 +207,7 @@ After installing POW install [powder](https://github.com/Rodreegez/powder) to co
 
 ### Experimenting with VIM
 ----
+
+```
+	brew install macvim --override-system-vim
+```
