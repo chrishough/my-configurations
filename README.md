@@ -60,7 +60,7 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 	git clone git@github.com:chrishough/myconfigurations.git .myconfigurations
 ```
 
-### Setup Our Text Editor
+### Setup My Text Editor
 ----
 * Download and install [Sublime Text 3](http://www.sublimetext.com/3), and yes pay the license fee. It's worth it.
 * Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
@@ -80,6 +80,12 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 	* [Trailing Spaces](https://github.com/SublimeText/trailingspaces)
 	* [knockdown](https://github.com/aziz/knockdown)
 	* [Bracket Highlighter](https://github.com/facelessuser/BracketHighlighter/tree/BH2ST3)
+
+Make sure you can open sublime via terminal:
+
+```
+	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
+```
 
 **Note**: Currently [Sublime Text 3](http://www.sublimetext.com/3) is in beta, so make sure to check each of the listed plugins for Sublime Text 3 installation details.
 
@@ -199,4 +205,5 @@ Once [POW](http://pow.cx/) is successfully installed make sure you follow the co
 
 After installing POW install [powder](https://github.com/Rodreegez/powder) to control and interact with the POW rack server.
 
-
+### Experimenting with VIM
+----
