@@ -1,0 +1,9 @@
+#!/bin/zsh
+# ---------------------------------------------------------------
+# jekyll Environment Commands
+function runjekyll() {
+  jekyll server;
+}
+
+
+

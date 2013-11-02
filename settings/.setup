@@ -6,6 +6,9 @@ source $HOME/.myconfigurations/settings/shell
 # Ruby
 source $HOME/.myconfigurations/settings/ruby
 # ---------------------------------------------------------------
+# jekyll
+source $HOME/.myconfigurations/settings/jekyll
+# ---------------------------------------------------------------
 # GIT
 source $HOME/.myconfigurations/settings/git
 # ---------------------------------------------------------------
