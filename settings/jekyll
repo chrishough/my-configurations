@@ -2,7 +2,8 @@
 # ---------------------------------------------------------------
 # jekyll Environment Commands
 function runjekyll() {
-  jekyll server;
+  rm -rf _site
+  jekyll server --watch;
 }
 
 
