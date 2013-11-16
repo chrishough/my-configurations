@@ -27,7 +27,7 @@ function getpwd() {pwd | pbcopy;}
 # Flush dns cache
 function flush() {sudo killall -HUP mDNSResponder}
 # ---------------------------------------------------------------
-# Flush dns cache
+# Remove ds files
 function rmds() {find . -name '*.DS_Store' -type f -delete}
 # ---------------------------------------------------------------
 # Open Gems with Sublime
