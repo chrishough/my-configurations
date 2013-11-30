@@ -48,7 +48,7 @@ Keywords: show true | false
 
 ### [Font Awesome](https://github.com/ruedap/alfred2-font-awesome-workflow)
 
-Search through [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icons, by [@ruedap](https://github.com/ruedap/). [Download v0.13](https://github.com/zenorocha/alfred-workflows/raw/master/font-awesome/font-awesome.alfredworkflow).
+Search through [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icons, by [@ruedap](https://github.com/ruedap/). 
 
 ```
 Keywords: fonta
