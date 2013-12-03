@@ -69,6 +69,7 @@ alias gitltree="git log --graph --oneline --all"
 alias gitltreeb="git log --graph --all --decorate"
 
 alias gitdt="git tag -d "
+alias gitdto="git push origin :refs/tags/"
 alias gitdf="git fetch -p"
 
 alias gitrso="git remote show origin"
