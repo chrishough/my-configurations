@@ -45,6 +45,12 @@ function gitmd() {
  open readme.md;
 }
 # ---------------------------------------------------------------
+# Create readme.md
+function gitdt() {
+ git tag -d "$*";
+ git push origin :refs/tags/"$*";
+}
+# ---------------------------------------------------------------
 alias gitcl="git config --list"
 alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
 
@@ -68,8 +74,6 @@ alias gitl="git log --show-notes"
 alias gitltree="git log --graph --oneline --all"
 alias gitltreeb="git log --graph --all --decorate"
 
-alias gitdt="git tag -d "
-alias gitdto="git push origin :refs/tags/"
 alias gitdf="git fetch -p"
 
 alias gitrso="git remote show origin"
