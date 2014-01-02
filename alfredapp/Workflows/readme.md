@@ -144,6 +144,18 @@ Keywords: weather, forecast, conditions
 
 ![Weather](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/weather/alfred-weather.png)
 
+----
+
+### [Ignored](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/)
+
+Handle Ignored Assets [@jordic](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/). [Download](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/).
+
+```
+Keywords: ignored
+```
+
+![Weather](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/ignored/ignored.png)
+
 
 
 
