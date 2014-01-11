@@ -36,10 +36,10 @@ Keywords: empty all
 
 ### Show Hidden Files
 
-Show or Hide OSX Hidden Files by [@chrishough](https://github.com/chrishough/).
+Show or Hide OSX Hidden Files by [@matthojo](http://www.alfredforum.com/topic/1544-hide-show-hidden-files-and-cloudapp-upload/).
 
 ```
-Keywords: show true | false
+Keywords: hidden
 ```
 
 ![Show Hidden Files](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/hidden-files/hidden-files.png)
