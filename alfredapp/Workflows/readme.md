@@ -24,10 +24,10 @@ Keywords: ios
 
 ### Empty All
 
-This script will move all of your osx junk mail to the trash, empty the osx mail trash, and empty the system trash by [@chrishough](https://github.com/chrishough/).
+This script will move all of your osx junk mail to the trash, and empty the osx mail trash. [@chrishough](https://github.com/chrishough/).
 
 ```
-Keywords: empty all
+Keywords: emptymail
 ```
 
 ![Empty All](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/empty-all/empty-all.png)
