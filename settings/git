@@ -78,6 +78,7 @@ alias gitltreeb="git log --graph --all --decorate"
 alias gitdf="git fetch -p"
 
 alias gitrso="git remote show origin"
+alias gitlsr="git ls-remote"
 alias gitrv="git remote -v"
 
 alias standup="git log --since '1 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
