@@ -1,7 +1,7 @@
 {
 	"auto_indent": true,
 	"theme": "Soda Light 3.sublime-theme",
-	"color_scheme": "Packages/base16-railscasts.dark.ch.tmTheme",	
+	"color_scheme": "Packages/base16-railscasts.dark.ch.tmTheme",
 	"soda_classic_tabs": true,
 	"soda_folder_icons": true,
 	"detect_indentation": true,

@@ -10,7 +10,7 @@ function gitc() {
 # ---------------------------------------------------------------
 # Merge, Push, Status Check
 function gitm() {
- git merge "$*";
+ git merge "$*" --no-ff;
  git push;
  git status;
 }
