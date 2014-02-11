@@ -1,9 +1,6 @@
 {
 	"auto_indent": true,
-	"theme": "Soda Light 3.sublime-theme",
 	"color_scheme": "Packages/base16-railscasts.dark.ch.tmTheme",
-	"soda_classic_tabs": true,
-	"soda_folder_icons": true,
 	"detect_indentation": true,
 	"fade_fold_buttons": false,
 	"font_face": "Inconsolata",
@@ -17,8 +14,11 @@
 		"BracketHighlighter"
 	],
 	"match_brackets_angle": true,
+	"soda_classic_tabs": true,
+	"soda_folder_icons": true,
 	"sublimelinter_popup_errors_on_save": true,
 	"tab_size": 2,
+	"theme": "Soda Light 3.sublime-theme",
 	"trailing_spaces_save_after_trim": true,
 	"trailing_spaces_trim_on_save": true,
 	"translate_tabs_to_spaces": true,
