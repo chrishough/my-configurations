@@ -22,18 +22,6 @@ Keywords: ios
 
 ----
 
-### Empty All
-
-This script will move all of your osx junk mail to the trash, and empty the osx mail trash. [@chrishough](https://github.com/chrishough/).
-
-```
-Keywords: emptymail
-```
-
-![Empty All](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/empty-all/empty-all.png)
-
-----
-
 ### Show Hidden Files
 
 Show or Hide OSX Hidden Files by [@matthojo](http://www.alfredforum.com/topic/1544-hide-show-hidden-files-and-cloudapp-upload/).
