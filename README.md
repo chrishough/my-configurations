@@ -17,6 +17,16 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * I would fork this repo to your github account so you can build off it and tailor it to your needs.
 
 
+### rbenv plugins
+----
+* [rbenv-default-gems](https://github.com/sstephenson/rbenv-default-gems): This rbenv plugin hooks into the rbenv install command to automatically install gems every time you install a new version of Ruby.
+* [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash): Never run rbenv rehash again. This rbenv plugin automatically runs rbenv rehash every time you install or uninstall a gem.
+* [rbenv-vars](https://github.com/sstephenson/rbenv-vars): This is a plugin for rbenv that lets you set global and project-specific environment variables before spawning Ruby processes.
+* [rbenv-use](https://github.com/rkh/rbenv-use): This rbenv plugin allows easier switching between Ruby versions without having to keep patchlevels in mind.
+* [rbenv-whatis](https://github.com/rkh/rbenv-whatis): This rbenv plugin resolves abbrevations and aliases to full Ruby version identifiers. It is mainly intended to be used by other plugins, such as rbenv-use.
+* [ruby-build](https://github.com/sstephenson/ruby-build): ruby-build is an rbenv plugin that provides an rbenv install command to compile and install different versions of Ruby on UNIX-like systems.
+* [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs): This plugin makes rbenv transparently aware of project-specific binstubs created by bundler. This means you don't have to type bundle exec ${command} ever again!
+
 ### Setup Shell
 ----
 1. Download and install [iterm2](http://www.iterm2.com).  This shell will be configured to replace the default bash and adjust terminal.
@@ -109,38 +119,34 @@ Before we update the sublime preferences we need to make sure the customized the
 Now under Sublime Text preferences, settings - user, here are my settings:
 
 ```
-	{
-		"auto_indent": true,
-		"color_scheme": "Packages/base16-railscasts.dark.ch.tmTheme",
-		"theme": "Phoenix Dark.sublime-theme",
-		"detect_indentation": true,
-		"fade_fold_buttons": false,
-		"font_face": "Inconsolata",
-		"font_size": 14.0,
-		"highlight_line": false,
-		"ignored_packages":
-		[
-			"Vintage"
-		],
-		"match_brackets_angle": true,
-		"phoenix_color_blue": true,
-		"phoenix_color_expanded_folder": true,
-		"phoenix_dirty_bottom_bar": true,
-		"phoenix_dirty_bottom_bar_red": true,
-		"phoenix_eighties": true,
-		"phoenix_highlight_current_tab": true,
-		"phoenix_sidebar_tree_small": true,
-		"phoenix_solid_current_tab": true,
-		"phoenix_tabs_auto_width": true,
-		"phoenix_tabs_large": true,
-		"sublimelinter_popup_errors_on_save": true,
-		"tab_size": 2,
-		"trailing_spaces_save_after_trim": true,
-		"trailing_spaces_trim_on_save": true,
-		"translate_tabs_to_spaces": true,
-		"trim_automatic_white_space": true,
-		"word_wrap": false
-	}
+{
+	"auto_indent": true,
+	"color_scheme": "Packages/base16-railscasts.dark.ch.tmTheme",
+	"detect_indentation": true,
+	"fade_fold_buttons": false,
+	"font_face": "Inconsolata",
+	"font_size": 14.0,
+	"highlight_line": false,
+	"ignored_packages":
+	[
+		"GitGutter",
+		"Vintage",
+		"MacTerminal",
+		"BracketHighlighter"
+	],
+	"match_brackets_angle": true,
+	"soda_classic_tabs": true,
+	"soda_folder_icons": true,
+	"sublimelinter_popup_errors_on_save": true,
+	"tab_size": 2,
+	"theme": "Soda Light 3.sublime-theme",
+	"trailing_spaces_save_after_trim": true,
+	"trailing_spaces_trim_on_save": true,
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
 ```
 
 Now back in terminal, let's setup the system wide shortcut for sublime.
@@ -150,7 +156,25 @@ Now back in terminal, let's setup the system wide shortcut for sublime.
 	sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
 ```
 
-####Run the Machine Builder
+####Setup POW to Run Applications Locally
+----
+[POW](http://pow.cx/) is a zero-config Rack server for Mac OSX, and can be installed via [Homebrew](http://brew.sh/).
+
+```
+	brew install pow	
+```
+
+Once [POW](http://pow.cx/) is successfully installed make sure you follow the commands brew asks you to run.
+
+```
+	sudo pow --install-system
+	pow --install-local
+```
+
+After installing POW install [powder](https://github.com/Rodreegez/powder) to control and interact with the POW rack server.
+
+
+####Run the Machine Builder (Experimental)
 ----
 
 This setup will backup your existing configuration files and hook up the various text editor configurations,
@@ -188,40 +212,6 @@ When you kick off the build system script it will process the following:
 3. remove installed copies.
 4. create symlinks to my configurations.
 
-####Setup POW to Run Applications Locally
-----
-[POW](http://pow.cx/) is a zero-config Rack server for Mac OSX, and can be installed via [Homebrew](http://brew.sh/).
 
-```
-	brew install pow	
-```
 
-Once [POW](http://pow.cx/) is successfully installed make sure you follow the commands brew asks you to run.
-
-```
-	sudo pow --install-system
-	pow --install-local
-```
-
-After installing POW install [powder](https://github.com/Rodreegez/powder) to control and interact with the POW rack server.
-
-### Experimenting with VIM
-----
-
-Install MacVim
-
-```
-	brew install macvim --override-system-vim
-```
-
-After installing MacVim via [Homebrew](http://brew.sh/) make sure you verify vim is pointing to "/usr/local/bin/vim" the correct path.
-
-```
-	which vim 
-```
-If vim is not setup correctly run this command to fix the installation.
-
-```
-	sudo mv /usr/bin/vim /usr/bin/vim72
-```
 
