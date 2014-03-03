@@ -10,6 +10,18 @@ Keyboard Shortcut Files
 
 ----
 
+### Chrome Bookmarks
+
+This workflow helps you search Google Chrome bookmarks by using a chrome (Google Chrome) or canary (Google Chrome Canary) or chromium (Chromium) keyword:, by [@mdreizin](https://github.com/mdreizin/alfred-workflows/tree/master/chrome-bookmarks). 
+
+```
+Keywords: chrome
+```
+
+![Chrome Bookmarks](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/chrome-bookmarks/chrome-bookmarks.png)
+
+----
+
 ### iOS Emulator
 
 This script will run a bash script to open the ios xcode emulator without running xcode by [@chrishough](https://github.com/chrishough/).
