@@ -38,7 +38,7 @@ function rbuild() {
 }
 # ---------------------------------------------------------------
 # rbenv shortcuts
-export PATH=".bundle/binstubs:$PATH" 
+export PATH=".bundle/binstubs:$PATH"
 # ---------------------------------------------------------------
 # List Gem Versions
 function gemv() {
