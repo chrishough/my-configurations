@@ -9,7 +9,7 @@ export HISTFILESIZE=10000
 export HISTSIZE=10000
 PROMPT_COMMAND='history -a'
 # ---------------------------------------------------------------
-# Autojump 
+# Autojump
 export AUTOJUMP_IGNORE_CASE=1
 # ---------------------------------------------------------------
 # Setn Browser for shell commands
@@ -26,6 +26,9 @@ function getpwd() {pwd | pbcopy;}
 # ---------------------------------------------------------------
 # Flush dns cache
 function flush() {sudo killall -HUP mDNSResponder}
+# ---------------------------------------------------------------
+# Get vm losthost ip address
+function vmip() {ifconfig vmnet1}
 # ---------------------------------------------------------------
 # Remove ds files
 function rmds() {find . -name '*.DS_Store' -type f -delete}
