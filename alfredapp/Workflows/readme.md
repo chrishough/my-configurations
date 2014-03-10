@@ -10,6 +10,18 @@ Keyboard Shortcut Files
 
 ----
 
+### ssh
+
+Open up terminal to your ssh locations. [@isometry](https://github.com/gharlan/). [Download](https://github.com/isometry/alfredworkflows). [Alfred Post](http://www.alfredforum.com/topic/826-ssh-with-smart-hostname-autocompletion/)
+
+```
+Keywords: ssh
+```
+
+![ssh](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/ssh/ssh.png)
+
+----
+
 ### Chrome Bookmarks
 
 This workflow helps you search Google Chrome bookmarks by using a chrome (Google Chrome) or canary (Google Chrome Canary) or chromium (Chromium) keyword:, by [@mdreizin](https://github.com/mdreizin/alfred-workflows/tree/master/chrome-bookmarks). 
