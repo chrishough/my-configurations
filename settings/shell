@@ -30,6 +30,9 @@ function flush() {sudo killall -HUP mDNSResponder}
 # Get vm losthost ip address
 function vmip() {ifconfig vmnet1}
 # ---------------------------------------------------------------
+# Get disc space details
+function disc() {df -h}
+# ---------------------------------------------------------------
 # Remove ds files
 function rmds() {find . -name '*.DS_Store' -type f -delete}
 # ---------------------------------------------------------------
