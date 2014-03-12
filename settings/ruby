@@ -2,7 +2,6 @@
 # ---------------------------------------------------------------
 # Ruby Environment Commands
 alias rb="rbenv"
-alias rbuild="bundle install --path=.bundle --binstubs=.bundle/binstubs"
 alias be="bundle exec"
 # ---------------------------------------------------------------
 # Rails Rake Environment Commands
@@ -33,6 +32,10 @@ function rtail() {
   fi
 }
 # ---------------------------------------------------------------
+function runspec() {
+  RAILS_ENV="$*" bundle exec rake spec;
+}
+# ---------------------------------------------------------------
 function rbuild() {
   bundle install --path=.bundle --binstubs=.bundle/binstubs;
 }
@@ -40,7 +43,7 @@ function rbuild() {
 # rbenv shortcuts
 export PATH=".bundle/binstubs:$PATH"
 # ---------------------------------------------------------------
-# List Gem Versions
+# list Gem Versions
 function gemv() {
  gem list "$*" --remote --all;
 }
