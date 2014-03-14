@@ -10,6 +10,18 @@ Keyboard Shortcut Files
 
 ----
 
+### google search
+
+The Google Suggest workflow allows you quickly and easily find search suggestions from Google.com. These suggestions will match the same results that you would get if you were executing a query on Google’s search page. Go ahead and try it out. [@jdfwarrior](https://twitter.com/jdfwarrior/). [Download](http://dferg.us/google-suggest/). 
+
+```
+Keywords: g
+```
+
+![google](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/google-search/google-search.png)
+
+----
+
 ### ssh
 
 Open up terminal to your ssh locations. [@isometry](https://github.com/gharlan/). [Download](https://github.com/isometry/alfredworkflows). [Alfred Post](http://www.alfredforum.com/topic/826-ssh-with-smart-hostname-autocompletion/)
