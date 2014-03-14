@@ -10,6 +10,18 @@ Keyboard Shortcut Files
 
 ----
 
+### Youtube
+
+The workflow allows the user to search YouTube and have the results returned to Alfred and then choose a video to watch. Just type youtube followed by the query. For example, the below will search for Rebecca Black videos. [@simonbs](https://github.com/simonbs/alfred-youtube-workflow). [Download](http://www.alfredforum.com/topic/45-youtube-workflow/?hl=youtube). 
+
+```
+Keywords: yt, youtube
+```
+
+![youtube](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/youtube/Youtube.png)
+
+----
+
 ### Evernote
 
 You can use ent (search in titles only) or enr (search in reminders) or entodo (search to-do notes) or enrec (search notes updated within a week) or enu (search notes with a source URL) instead of ens. Developed by Carlos-Sz. [Download](http://www.alfredforum.com/topic/840-evernote-80-search-create-append-preview-set-reminders-all-within-alfred/). 
