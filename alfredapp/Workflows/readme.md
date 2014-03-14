@@ -18,7 +18,7 @@ The workflow allows the user to search YouTube and have the results returned to 
 Keywords: yt, youtube
 ```
 
-![youtube](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/youtube/Youtube.png)
+![youtube](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/youtube/YouTube.png)
 
 ----
 
