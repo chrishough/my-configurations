@@ -10,7 +10,19 @@ Keyboard Shortcut Files
 
 ----
 
-### google search
+### Evernote
+
+You can use ent (search in titles only) or enr (search in reminders) or entodo (search to-do notes) or enrec (search notes updated within a week) or enu (search notes with a source URL) instead of ens. Developed by Carlos-Sz. [Download](http://www.alfredforum.com/topic/840-evernote-80-search-create-append-preview-set-reminders-all-within-alfred/). 
+
+```
+Keywords: ens, ent, enr, entodo, enrec, enn
+```
+
+![evernote](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/evernote/Evernote.png)
+
+----
+
+### Google Search
 
 The Google Suggest workflow allows you quickly and easily find search suggestions from Google.com. These suggestions will match the same results that you would get if you were executing a query on Google’s search page. Go ahead and try it out. [@jdfwarrior](https://twitter.com/jdfwarrior/). [Download](http://dferg.us/google-suggest/). 
 
