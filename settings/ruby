@@ -3,6 +3,7 @@
 # Ruby Environment Commands
 alias rb="rbenv"
 alias be="bundle exec"
+alias rake="noglob bundle exec rake"
 # ---------------------------------------------------------------
 # Rails Rake Environment Commands
 alias rk="rake"
