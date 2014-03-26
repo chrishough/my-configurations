@@ -4,6 +4,7 @@
 alias rb="rbenv"
 alias be="bundle exec"
 alias rake="noglob bundle exec rake"
+alias rspec="bundle exec rspec"
 # ---------------------------------------------------------------
 # Rails Rake Environment Commands
 alias rk="rake"
