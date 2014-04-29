@@ -22,6 +22,10 @@ function rgm() {
   rails g model "$*";
 }
 # ---------------------------------------------------------------
+function rails() {
+  rescue rails s;
+}
+# ---------------------------------------------------------------
 function rgmP() {
   rails g model "$*" --migration=false;
 }

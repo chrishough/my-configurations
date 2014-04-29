@@ -18,6 +18,7 @@ function gitm() {
 # Create Branch, Push to Git, Status Check
 function gitcb() {
  git branch "$*";
+ git checkout "$*";
  git push -u origin "$*";
  git push --set-upstream origin "$*";
  git status;
