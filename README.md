@@ -75,25 +75,24 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 * Download and install [Atom](https://atom.io).
 * Using Package Control install these plugins.
 * Considering ATOM is being rapidly developed I encourage you to join their [discuss forums](http://discuss.atom.io/).
-
-	1. Zen
-	2. Atom Dark UI
-	3. Atom Handlebars
-	4. Atom Prettify
-	5. Autocomplete Paths
-	6. Autocomplete Plus
-	7. Emmet
-	8. Gist It
-	9. Slim Language
-	10. Maximize Panes
-	11. Move Panes
-	12. Open Within System
-	13. Pretty Json
-	14. Resize Panes
-	15. Rspec
-	16. Rspec Snippets
-	17. Ruby Slim
-	18. Terminal
+	* Zen
+	* Atom Dark UI
+	* Atom Handlebars
+	* Atom Prettify
+	* Autocomplete Paths
+	* Autocomplete Plus
+	* Emmet
+	* Gist It
+	* Slim Language
+	* Maximize Panes
+	* Move Panes
+	* Open Within System
+	* Pretty Json
+	* Resize Panes
+	* Rspec
+	* Rspec Snippets
+	* Ruby Slim
+	* Terminal
 
 ### Setup POW to Run Applications Locally
 ----
