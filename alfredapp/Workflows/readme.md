@@ -182,18 +182,6 @@ Keywords: tz
 
 ----
 
-### [Sublime Text](https://github.com/franzheidl/alfred-workflows/tree/master/open-with-sublime-text)
-
-Open files or a folders in [Sublime Text 3](http://www.sublimetext.com/3) by [@franzheidl](https://github.com/franzheidl/). [Download v1.0](https://github.com/zenorocha/alfred-workflows/raw/master/sublime-text/sublime-text.alfredworkflow)
-
-```
-Keywords: subl
-```
-
-![Sublime Text](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/sublime-text/alfred-subl.png)
-
-----
-
 ### [Weather](http://dferg.us/weather-for-alfred-2/)
 
 Pull your local weather forecast or get the weather for other cities by [@jdfwarrior](https://github.com/jdfwarrior/). [Download](http://dferg.us/weather-for-alfred-2/).

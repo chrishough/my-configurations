@@ -89,36 +89,10 @@ while true; do
           # ---------------------------------------------------------------
           # END: CORE SETTINGS
           # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-          # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-          # START: SUBLIME SETTINGS
-          # ---------------------------------------------------------------
-          # PREFERENCES.SUBLIME-SETTINGS
-          cd $HOME/library/Application\ Support/Sublime\ Text\ 3/Packages/user
-          if [ ! -L Preferences.sublime-settings ]; then
-            cp Preferences.sublime-settings $HOME/.myconfigurations-backups/Preferences.sublime-settings
-            rm Preferences.sublime-settings
-            ln -s $HOME/.myconfigurations/sublime/Preferences.sublime-settings Preferences.sublime-settings
-          else
-             echo "skipped: Preferences.sublime-settings backup exits!"
-          fi
-          # ---------------------------------------------------------------
-          # DEFAULT (OSX).SUBLIME-KEYMAP
-          if [ ! -L Default\ \(OSX\).sublime-keymap ]; then
-            cp Default\ \(OSX\).sublime-keymap $HOME/.myconfigurations-backups/Default\ \(OSX\).sublime-keymap
-            rm Default\ \(OSX\).sublime-keymap
-            ln -s $HOME/.myconfigurations/sublime/Default\ \(OSX\).sublime-keymap Default\ \(OSX\).sublime-keymap
-          else
-             echo "skipped: Default (OSX).sublime-keymap Default backup exits!"
-          fi
-          # ---------------------------------------------------------------
-          # BASE16-RAILSCASTS.DARK.CH.TMTHEME
-          cd $HOME/library/Application\ Support/Sublime\ Text\ 3/Packages
-          cp base16-railscasts.dark.ch.tmTheme $HOME/.myconfigurations-backups/base16-railscasts.dark.ch.tmTheme
-          # ---------------------------------------------------------------
           echo "\n"
           break;;
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        [Nn]* ) 
+        [Nn]* )
           echo "\nNo Problem! Let's meet up again soon. \n"
           exit;;
         * ) echo "\nPlease answer Yes or No.\n";;

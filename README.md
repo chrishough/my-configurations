@@ -70,98 +70,37 @@ In your shell ```cd``` to your home directory and let's get this code repo downl
 	git clone git@github.com:chrishough/myconfigurations.git .myconfigurations
 ```
 
-### Setup My Text Editor
+### Setup Atom as my Text Editor
 ----
-* Download and install [Sublime Text 3](http://www.sublimetext.com/3), and yes pay the license fee. It's worth it.
-* Follow the instructions and install [Package Control](https://sublime.wbond.net/installation) for Sublime.
-* Using [Package Control](https://sublime.wbond.net/installation) install these plugins.
+* Download and install [Atom](https://atom.io).
+* Using Package Control install these plugins.
+* Considering ATOM is being rapidly developed I encourage you to join their [discuss forums](http://discuss.atom.io/).
 
-	* [Base16 Color Schemes](https://github.com/chriskempson/base16-textmate)
-	* [Theme - Phoenix](https://github.com/netatoo/phoenix-theme)
-	* [Sublime Better CoffeeScript](https://github.com/aponxi/sublime-better-coffeescript)
-	* [Emmet (PyV8)](https://github.com/sergeche/emmet-sublime)
-	* [Git Gutter](https://github.com/jisaacks/GitGutter)
-	* [LESS](https://github.com/danro/less-sublime)
-	* [MacTerminal](https://github.com/afterdesign/MacTerminal)
-	* [SASS](https://github.com/nathos/sass-textmate-bundle/)
-	* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements/)
-	* [SLIM (ruby-slim.tmbundle)](https://github.com/slim-template/ruby-slim.tmbundle)
-	* [Sublime Alignment](http://wbond.net/sublime_packages/alignment)
-	* [Trailing Spaces](https://github.com/SublimeText/trailingspaces)
-	* [knockdown](https://github.com/aziz/knockdown)
-	* [Bracket Highlighter](https://github.com/facelessuser/BracketHighlighter/tree/BH2ST3)
+	1. Zen
+	2. Atom Dark UI
+	3. Atom Handlebars
+	4. Atom Prettify
+	5. Autocomplete Paths
+	6. Autocomplete Plus
+	7. Emmet
+	8. Gist It
+	9. Slim Language
+	10. Maximize Panes
+	11. Move Panes
+	12. Open Within System
+	13. Pretty Json
+	14. Resize Panes
+	15. Rspec
+	16. Rspec Snippets
+	17. Ruby Slim
+	18. Terminal
 
-Make sure you can open sublime via terminal:
-
-```
-	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
-```
-
-**Note**: Currently [Sublime Text 3](http://www.sublimetext.com/3) is in beta, so make sure to check each of the listed plugins for Sublime Text 3 installation details.
-
-Under Sublime Text preferences, key bindings - user, here are my settings:
-
-```
-	[
-	  { "keys": ["command+shift+t"], "command": "delete_trailing_spaces" }
-	]
-```
-
-Before we update the sublime preferences we need to make sure the customized theme is available. The only deviation from what was installed with the package were the gutter text colors and the gutter row highlight color.  By setting the gutter text to white and background to black, it makes copy and pastes far easier to read. In your shell ```cd``` to your home directory and type the following:
-
-
-```
-	cd $HOME/library/Application\ Support/Sublime\ Text\ 3/Packages
-	ln -s $HOME/.myconfigurations/sublime/base16-railscasts.dark.ch.tmTheme base16-railscasts.dark.ch.tmTheme
-```
-
-
-Now under Sublime Text preferences, settings - user, here are my settings:
-
-```
-{
-	"auto_indent": true,
-	"color_scheme": "Packages/base16-railscasts.dark.ch.tmTheme",
-	"detect_indentation": true,
-	"fade_fold_buttons": false,
-	"font_face": "Inconsolata",
-	"font_size": 14.0,
-	"highlight_line": false,
-	"ignored_packages":
-	[
-		"GitGutter",
-		"Vintage",
-		"MacTerminal",
-		"BracketHighlighter"
-	],
-	"match_brackets_angle": true,
-	"soda_classic_tabs": true,
-	"soda_folder_icons": true,
-	"sublimelinter_popup_errors_on_save": true,
-	"tab_size": 2,
-	"theme": "Soda Light 3.sublime-theme",
-	"trailing_spaces_save_after_trim": true,
-	"trailing_spaces_trim_on_save": true,
-	"translate_tabs_to_spaces": true,
-	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
-}
-```
-
-Now back in terminal, let's setup the system wide shortcut for sublime.
-
-```
-	sudo rm /usr/bin/subl
-	sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
-```
-
-####Setup POW to Run Applications Locally
+### Setup POW to Run Applications Locally
 ----
 [POW](http://pow.cx/) is a zero-config Rack server for Mac OSX, and can be installed via [Homebrew](http://brew.sh/).
 
 ```
-	brew install pow	
+	brew install pow
 ```
 
 Once [POW](http://pow.cx/) is successfully installed make sure you follow the commands brew asks you to run.
@@ -173,17 +112,13 @@ Once [POW](http://pow.cx/) is successfully installed make sure you follow the co
 
 After installing POW install [powder](https://github.com/Rodreegez/powder) to control and interact with the POW rack server.
 
-
-####Run the Machine Builder (Experimental)
+### Run the Machine Builder [Experimental]
 ----
 
 This setup will backup your existing configuration files and hook up the various text editor configurations,
 application mappings, sets of my favorite functions and utilities, and a few other goodies.  Use this setup
 at your own risk, and if you run into bugs please let me know.
 
-* I have numerous applications running on [heroku](https://www.heroku.com) so I have a settings file for this service.
-* If you have ```private``` configurations you can use the ```settings/private``` file to omit them from the git repository.
-* My blog is running on [octopress](http://octopress.org/) so I have a settings file for this service.
 * These system and shell files are affected by this build:
   * .zprofile
   * .zshrc
@@ -193,12 +128,8 @@ at your own risk, and if you run into bugs please let me know.
   * .bashrc
   * .vimrc
   * .profile
-* These application files are affected by this build:
-  * Preferences.sublime-settings
-  * Default (OSX).sublime-keymap
 
 To execute the build ```cd``` to your home directory and type the following:
-
 
 ```
 	cd .myconfigurations
@@ -211,7 +142,3 @@ When you kick off the build system script it will process the following:
 2. make backup copies.
 3. remove installed copies.
 4. create symlinks to my configurations.
-
-
-
-
