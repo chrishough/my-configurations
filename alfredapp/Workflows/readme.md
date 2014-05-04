@@ -5,8 +5,20 @@ Keyboard Shortcut Files
 
 ```
 	iterm2: cmd+shift+i
-	sublimetext 3: cmd+shift+s
+	atom: cmd+shift+a
 ```
+
+----
+
+### Emoji
+
+The workflow allows the user to search emoji symbols and have the results returned to Alfred.  Saves time for copy and paste. [@carlosgaldino](https://github.com/carlosgaldino/alfred-emoji-workflow). [Download](https://github.com/carlosgaldino/alfred-emoji-workflow). 
+
+```
+Keywords: emoji
+```
+
+![emoji](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/emoji-codes/emoji-codes.png)
 
 ----
 
