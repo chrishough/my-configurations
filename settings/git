@@ -24,8 +24,14 @@ function gitcb() {
  git status;
 }
 # ---------------------------------------------------------------
-# Merge, Push, Status Check
+# Delete Local
 function gitdb() {
+ git branch -d "$*";
+ git status;
+}
+# ---------------------------------------------------------------
+# Delete Local and Remote Branch
+function gitdbf() {
  git branch -d "$*";
  git push --delete origin "$*";
  git fetch -p;
@@ -58,11 +64,9 @@ alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
 alias gitck="git checkout "
 alias gitpull="git pull"
 
-alias gitb="git branch"
-
 alias gitp="git push"
 alias gitpo="git push origin "
-alias gitpb="git push  -u origin "
+alias gitpb="git push --set-upstream origin "
 alias gitpot="git push origin --tags"
 alias gitphm="git push heroku master"
 alias gitpt="git push --tags"
