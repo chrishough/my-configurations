@@ -27,6 +27,7 @@ function gitcb() {
 # Delete Local
 function gitdb() {
  git branch -d "$*";
+ git remote prune origin
  git status;
 }
 # ---------------------------------------------------------------
