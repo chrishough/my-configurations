@@ -83,6 +83,7 @@ alias gitltreeb="git log --graph --all --decorate"
 
 alias gitdf="git fetch -p"
 
+alias gitrpo="git remote prune origin"
 alias gitrso="git remote show origin"
 alias gitlsr="git ls-remote"
 alias gitrv="git remote -v"
