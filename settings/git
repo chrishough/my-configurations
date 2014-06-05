@@ -24,6 +24,11 @@ function gitcb() {
  git status;
 }
 # ---------------------------------------------------------------
+# Create Pull Request
+function gitcpr() {
+ hub pull-request -m "$*";
+}
+# ---------------------------------------------------------------
 # Delete Local
 function gitdb() {
  git branch -d "$*";
