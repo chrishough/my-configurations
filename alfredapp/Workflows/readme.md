@@ -4,9 +4,14 @@
 Keyboard Shortcut Files
 
 ```
-	iterm2: cmd+shift+i
-	atom: cmd+shift+a
+Open alfred via cmd+space then:
+
+iterm2: cmd+shift+i
+atom: cmd+shift+a
+1password: cmd+shift+p
+
 ```
+[Download](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/keyboard-shortcuts)
 
 ----
 
