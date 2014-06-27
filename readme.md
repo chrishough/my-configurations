@@ -57,7 +57,7 @@ DEFAULT_USER="chrishough"
 
 ![shell-theme-iterm-terminal-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-terminal-example.png)
 
-**5**: The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/assets/terminal/Terminal.png).  Once attached as the background you will notice a red box around your shell window.  
+**5**: The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
 
 ![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
 
