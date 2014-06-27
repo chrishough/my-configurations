@@ -1,3 +1,7 @@
+
+
+***
+
 ###Get Emoji
 
 The workflow allows the user to search emoji symbols and have the results returned to Alfred. [@carlosgaldino](https://github.com/carlosgaldino/alfred-emoji-workflow) [Download](https://github.com/carlosgaldino/alfred-emoji-workflow)  
@@ -69,8 +73,27 @@ Keywords: kill {query}
 
 ***
 
+###Toggle Alfred Ignored List
 
+Handle files ignored by alfred. [@jordic](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/) [Download](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/toggle-add-remove-alfred-ignore.alfredworkflow) 
 
+```
+Keywords: ignored
+```
+
+![toggle-add-remove-alfred-ignore](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/toggle-add-remove-alfred-ignore.png)
+
+###Toggle Hidden Files
+
+Show or hide osx hidden files and folders. [@matthojo](http://www.alfredforum.com/topic/1544-hide-show-hidden-files-and-cloudapp-upload/)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/toggle-visibility-of-hidden-files.alfredworkflow) 
+
+```
+Keywords: hidden
+```
+
+![toggle-visibility-of-hidden-files](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/toggle-visibility-of-hidden-files.png)
 
 
 
@@ -167,27 +190,11 @@ Keywords: chrome
 
 ----
 
-### iOS Emulator
 
-This script will run a bash script to open the ios xcode emulator without running xcode by [@chrishough](https://github.com/chrishough/).
-
-```
-Keywords: ios
-```
-
-![iOS Emulator](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/ios-emulator/ios-emulator.png)
 
 ----
 
-### Show Hidden Files
 
-Show or Hide OSX Hidden Files by [@matthojo](http://www.alfredforum.com/topic/1544-hide-show-hidden-files-and-cloudapp-upload/).
-
-```
-Keywords: hidden
-```
-
-![Show Hidden Files](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/hidden-files/hidden-files.png)
 
 ----
 
@@ -234,15 +241,7 @@ Keywords: st
 
 ----
 
-### [Ignored](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/)
 
-Handle Ignored Assets [@jordic](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/). [Download](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/).
-
-```
-Keywords: ignored
-```
-
-![Weather](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/ignored/ignored.png)
 
 
 
