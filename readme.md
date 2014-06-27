@@ -33,7 +33,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [iStat Menus](http://bjango.com/mac/istatmenus/) for system performance monitoring.
 
 
-### rbenv plugins
+### rbenv 
 ----
 * [rbenv-default-gems](https://github.com/sstephenson/rbenv-default-gems): This rbenv plugin hooks into the rbenv install command to automatically install gems every time you install a new version of Ruby.
 * [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash): Never run rbenv rehash again. This rbenv plugin automatically runs rbenv rehash every time you install or uninstall a gem.
@@ -42,6 +42,14 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [rbenv-whatis](https://github.com/rkh/rbenv-whatis): This rbenv plugin resolves abbreviations and aliases to full Ruby version identifiers. It is mainly intended to be used by other plugins, such as rbenv-use.
 * [ruby-build](https://github.com/sstephenson/ruby-build): ruby-build is an rbenv plugin that provides an rbenv install command to compile and install different versions of Ruby on UNIX-like systems.
 * [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs): This plugin makes rbenv transparently aware of project-specific binstubs created by bundler. This means you don't have to type bundle exec ${command} ever again!
+
+### Atom Packages
+----
+Via `Package Control` these are my favorite packages.  
+
+![atom-package-list](https://github.com/chrishough/myconfigurations/raw/master/graphics/atom/atom-package-list.png)
+
+
 
 ### Setup Shell
 ----
@@ -76,22 +84,5 @@ DEFAULT_USER="chrishough"
 **5**: The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
 
 ![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
-
-***
-####HOUGH WORKSTATION BUILDER
-***
-*Before attempting this setup, please review the assumptions!*
-
-**1**: In your shell ```cd``` to your home directory and download my setup.
-
-```
-git clone git@github.com:chrishough/myconfigurations.git .myconfigurations
-```
-
-**2**: Download and install [Atom](https://atom.io).
-**3**: Using Package Control install these plugins.
-
-![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
-
 
 
