@@ -12,9 +12,25 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * Running ```brew doctor``` does not report any configuration issues.
 * [Google Chrome](http://www.google.com/chrome) is your primary development browser.
 * [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally, pre-installed.
-* Although not required for this guide I use the [Adobe Creative Cloud](http://www.adobe.com/) for all of my design related tasks.
-* You should be using [Alfred](http://www.alfredapp.com/) workflows! Here are a helpful list of the [workflows I use](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/community.md) and list of [workflows I built](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/noconformity.md).
 * I would fork this repo to your github account so you can build off it and tailor it to your needs.
+
+### Software
+----
+
+* [Atom](https://atom.io/), [iterm2](http://www.iterm2.com/#/section/home), [Zsh](http://www.zsh.org/), [Postgres App](http://postgresapp.com/), for development.
+* [Evernote](http://evernote.com/) for notes and local documentation.
+* [Mou](http://mouapp.com/) for editing markdown files.
+* [Colloquy](http://colloquy.info/) for IRC.
+* [Paw](https://luckymarmot.com/paw) for API testing and construction. 
+* [Pathfinder](http://cocoatech.com/pathfinder/) for a finder on steroids.
+* [Arq + S3](http://www.haystacksoftware.com/arq/) for encrypted cloud backup.
+* [Cloak](https://www.getcloak.com/) for cloud based VPN.
+* [Dash](http://kapeli.com/dash) for local documentation.
+* [Divvy](https://mizage.com/divvy/) for osx window management.
+* [Adobe Creative Cloud](http://www.adobe.com/) for designs, mainly AI and Photoshop.
+* [Alfred](http://www.alfredapp.com/) workflows! Here are a helpful list of the [workflows I use](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/community.md) and list of [workflows I built](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/noconformity.md).
+* [Keyboard Maestro](http://www.keyboardmaestro.com/main/) macros. [Find my setup here](https://github.com/chrishough/myconfigurations/tree/master/software/maestro/noconformity.md).
+* [iStat Menus](http://bjango.com/mac/istatmenus/) for system performance monitoring.
 
 
 ### rbenv plugins
@@ -72,73 +88,10 @@ DEFAULT_USER="chrishough"
 git clone git@github.com:chrishough/myconfigurations.git .myconfigurations
 ```
 
+**2**: Download and install [Atom](https://atom.io).
+**3**: Using Package Control install these plugins.
+
+![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
 
 
 
-
-
-
-
-***
-**UNDER CONSTRUCTION**
-***
-
-### Setup Base Configuration
-----
-
-
-### Setup Atom as my Text Editor
-----
-* Download and install [Atom](https://atom.io).
-* Using Package Control install these plugins.
-* Considering ATOM is being rapidly developed I encourage you to join their [discuss forums](http://discuss.atom.io/).
-	* Zen
-	* Atom Dark UI
-	* Atom Handlebars
-	* Atom Prettify
-	* Autocomplete Paths
-	* Autocomplete Plus
-	* Emmet
-	* Gist It
-	* Slim Language
-	* Maximize Panes
-	* Move Panes
-	* Open Within System
-	* Pretty Json
-	* Resize Panes
-	* Rspec
-	* Rspec Snippets
-	* Ruby Slim
-	* Terminal
-
-
-### Run the Machine Builder [Experimental]
-----
-
-This setup will backup your existing configuration files and hook up the various text editor configurations,
-application mappings, sets of my favorite functions and utilities, and a few other goodies.  Use this setup
-at your own risk, and if you run into bugs please let me know.
-
-* These system and shell files are affected by this build:
-  * .zprofile
-  * .zshrc
-  * .gemrc
-  * .gitconfig
-  * .bash_profile
-  * .bashrc
-  * .vimrc
-  * .profile
-
-To execute the build ```cd``` to your home directory and type the following:
-
-```
-	cd .myconfigurations
-	sh buildsystem.sh
-```
-
-When you kick off the build system script it will process the following:
-
-1. mkdir .myconfigurations-backups.
-2. make backup copies.
-3. remove installed copies.
-4. create symlinks to my configurations.
