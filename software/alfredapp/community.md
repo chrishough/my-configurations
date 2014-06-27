@@ -1,3 +1,14 @@
+###Search Dash Docs
+
+This workflow helps you search dash docs, which requires a license for this amazing piece of software.  The workflow comes with Dash, but here is the version I have modified.
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-dash-docs.alfredworkflow)
+
+```
+Trigger Alfred cmd + space, then cmd + d
+```
+
+![search-dash-docs](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/search-dash-docs.png)
+
 ###Search Evernote
 
 You can use ent (search in titles only) or enr (search in reminders) or entodo (search to-do notes) or enrec (search notes updated within a week) or enu (search notes with a source URL) instead of ens. Developed by Carlos-Sz. [Download](http://www.alfredforum.com/topic/840-evernote-80-search-create-append-preview-set-reminders-all-within-alfred/)  
@@ -24,6 +35,17 @@ Keywords: gh {query}
 ![search-github-gh-repo](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/search-github-gh-repo.png)
 ![search-github-gh-user](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/search-github-gh-user.png)
 
+###Search Google
+
+Workflow for google search with search suggestion, instant search, site search, plus more.  This is by far the most robust workflow for google I have found. 
+[@zhaocai](https://github.com/zhaocai/alfred2-google-workflow) [Download](http://zhaocai.github.io/alfred2-google-workflow/)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-google.alfredworkflow)
+
+```
+Keywords: g {query}, gi {query}, gs, trend
+```
+
+![search-google](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/search-google.png)
 
 ###Search Chrome Bookmarks
 
