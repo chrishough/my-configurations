@@ -13,7 +13,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [Google Chrome](http://www.google.com/chrome) is your primary development browser.
 * [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally, pre-installed.
 * Although not required for this guide I use the [Adobe Creative Cloud](http://www.adobe.com/) for all of my design related tasks.
-* If you use [Alfred](http://www.alfredapp.com/) workflows and themes, check out [my configurations](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/).
+* You should be using [Alfred](http://www.alfredapp.com/) workflows! Here are a helpful list of the [workflows I use](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/community.md) and list of [workflows I built](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/noconformity.md).
 * I would fork this repo to your github account so you can build off it and tailor it to your needs.
 
 
@@ -40,24 +40,24 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 ----
 ![shell-theme-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-example.png)
 
-* Download and install the following font files: [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) and [Sauce Code Powerline Regular](https://github.com/Lokaltog/powerline-fonts).
+**1**: Download and install the following font files: [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) and [Sauce Code Powerline Regular](https://github.com/Lokaltog/powerline-fonts).
 
-* In your shell ```cd``` to your home directory and type ```nano .zshrc``` to edit the zsh configuration file. Comment out the previous theme ```#ZSH_THEME="robbyrussel"``` by adding a ```#``` in front of it. Once you have commented out the default theme, add the next block after it.  This enables the new theme, however, please make sure to adjust the ```DEFAULT_USER``` to match your osx username.
+**2**: In your shell ```cd``` to your home directory and type ```nano .zshrc``` to edit the zsh configuration file. Comment out the previous theme ```#ZSH_THEME="robbyrussel"``` by adding a ```#``` in front of it. Once you have commented out the default theme, add the next block after it.  This enables the new theme, however, please make sure to adjust the ```DEFAULT_USER``` to match your osx username.
 
 ```
 ZSH_THEME="agnoster"
 DEFAULT_USER="chrishough"
 ```
 
-* Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors, and import them under the colors panel in iterm2 preferences. My theme uses ```base16-railscasts.dark``` which can be loaded in the presets.  You will need to set the contrast as shown to have a clearer definition of the font icons.
+**3**: Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors, and import them under the colors panel in iterm2 preferences. My theme uses ```base16-railscasts.dark``` which can be loaded in the presets.  You will need to set the contrast as shown to have a clearer definition of the font icons.
 
 ![shell-theme-iterm-colors-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-colors-example.png)
 
-* Under the terminal tab, make sure to change the report terminal type to ```xterm-256color``` and your character encoding to ```Unicode (UTF-8)```.
+**4**: Under the terminal tab, make sure to change the report terminal type to ```xterm-256color``` and your character encoding to ```Unicode (UTF-8)```.
 
-![shell-theme-iterm-terminal-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/shell-theme-iterm-terminal-example.png)
+![shell-theme-iterm-terminal-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-terminal-example.png)
 
-* The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/assets/terminal/Terminal.png).  Once attached as the background you will notice a red box around your shell window.  This will all become clearer when you hook up my [Sublime Text](http://www.sublimetext.com/3) ```vader``` style theme.
+**5**: The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/assets/terminal/Terminal.png).  Once attached as the background you will notice a red box around your shell window.  
 
 ![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
 
@@ -66,7 +66,7 @@ DEFAULT_USER="chrishough"
 ***
 *Before attempting this setup, please review the assumptions!*
 
-1: In your shell ```cd``` to your home directory and download my setup.
+**1**: In your shell ```cd``` to your home directory and download my setup.
 
 ```
 git clone git@github.com:chrishough/myconfigurations.git .myconfigurations
