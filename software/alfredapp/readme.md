@@ -1,5 +1,3 @@
-####Alfred Workflows
-***
 ###Get Emoji
 
 The workflow allows the user to search emoji symbols and have the results returned to Alfred. [@carlosgaldino](https://github.com/carlosgaldino/alfred-emoji-workflow) [Download](https://github.com/carlosgaldino/alfred-emoji-workflow)  
@@ -67,7 +65,7 @@ Easily find processes by name and kill them. [@nathangreenstein](https://github.
 Keywords: kill {query}
 ```
 
-![kill-osx-process](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/kill-process/kill-osx-process.png)
+![kill-osx-process](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/kill-osx-process.png)
 
 ***
 
