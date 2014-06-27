@@ -1,5 +1,75 @@
-#####Alfred Workflows
-----
+####Alfred Workflows
+***
+###Get Emoji
+
+The workflow allows the user to search emoji symbols and have the results returned to Alfred. [@carlosgaldino](https://github.com/carlosgaldino/alfred-emoji-workflow) [Download](https://github.com/carlosgaldino/alfred-emoji-workflow)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-emoji-symbols.alfredworkflow)
+
+```
+Keywords: emoji {query}, symoji {query}
+```
+
+![get-emoji-symbols](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/get-emoji-symbols.png)
+
+###Get FontAwesome 
+
+Search through [Font Awesome](https://github.com/ruedap/alfred2-font-awesome-workflow) fonts. [@ruedap](https://github.com/ruedap/) [Download](http://fortawesome.github.io/Font-Awesome/)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-font-awesome.alfredworkflow)
+
+```
+Keywords: fonta {query}, fa
+```
+
+![get-font-awesome](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/get-font-awesome.png)
+
+###Get IP Address
+
+Shows your internal and external IP address. [@dferg](http://dferg.us/ip-address-workflow/) [Download](https://github.com/zenorocha/alfred-workflows/raw/master/ip-address/ip-address.alfredworkflow)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-ip-address.alfredworkflow)
+
+```
+Keywords: ip
+```
+
+![get-ip-ddress](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/get-ip-address.png)
+
+
+###Get Time Zones
+
+Get an instant list of the current time in various cities around the world. [@CarlosNZ](http://www.alfredforum.com/topic/491-timezones-a-world-clock-script-filter-updated-to-v161/) [Download](https://github.com/zenorocha/alfred-workflows/raw/master/time-zones/time-zones.alfredworkflow)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-timezones.alfredworkflow) 
+
+```
+Keywords: tz
+```
+
+![get-timezones](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/get-timezones.png)
+
+###Get Weather
+
+Pull your local weather forecast or get the weather for other cities. [@jdfwarrior](https://github.com/jdfwarrior/) [Download](http://dferg.us/weather-for-alfred-2/)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-weather.alfredworkflow) 
+
+```
+Keywords: weather, forecast, conditions
+```
+
+![get-weather](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/get-weather.png)
+
+***
+
+###Kill OSX Process
+
+Easily find processes by name and kill them. [@nathangreenstein](https://github.com/nathangreenstein/alfred-process-killer) [Download ](https://github.com/zenorocha/alfred-workflows/raw/master/kill-process/kill-process.alfredworkflow)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/kill-osx-process.alfredworkflow) 
+
+```
+Keywords: kill {query}
+```
+
+![kill-osx-process](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/kill-process/kill-osx-process.png)
+
+***
 
 
 
@@ -22,14 +92,10 @@
 
 
 
-
-
-
-
-
-
-
-
+***
+***
+***
+***
 
 
 
@@ -52,15 +118,7 @@ atom: cmd+shift+a
 
 ----
 
-### Emoji
 
-The workflow allows the user to search emoji symbols and have the results returned to Alfred.  Saves time for copy and paste. [@carlosgaldino](https://github.com/carlosgaldino/alfred-emoji-workflow). [Download](https://github.com/carlosgaldino/alfred-emoji-workflow). 
-
-```
-Keywords: emoji
-```
-
-![emoji](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/emoji-codes/emoji-codes.png)
 
 ----
 
@@ -98,19 +156,6 @@ Keywords: g
 
 ![google](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/google-search/google-search.png)
 
-----
-
-### ssh
-
-Open up terminal to your ssh locations. [@isometry](https://github.com/gharlan/). [Download](https://github.com/isometry/alfredworkflows). [Alfred Post](http://www.alfredforum.com/topic/826-ssh-with-smart-hostname-autocompletion/)
-
-```
-Keywords: ssh
-```
-
-![ssh](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/ssh/ssh.png)
-
-----
 
 ### Chrome Bookmarks
 
@@ -148,15 +193,7 @@ Keywords: hidden
 
 ----
 
-### [Font Awesome](https://github.com/ruedap/alfred2-font-awesome-workflow)
 
-Search through [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icons, by [@ruedap](https://github.com/ruedap/). 
-
-```
-Keywords: fonta
-```
-
-![Font Awesome](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/font-awesome/font-awesome.png)
 
 ----
 
@@ -176,27 +213,10 @@ Keywords: gh
 
 ----
 
-### [IP Address](http://dferg.us/ip-address-workflow/) 
-
-Shows your internal and external IP address by [@dferg](http://dferg.us/ip-address-workflow/). [Download v1.0](https://github.com/zenorocha/alfred-workflows/raw/master/ip-address/ip-address.alfredworkflow).
-
-```
-Keywords: ip
-```
-
-![IP Address](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/ip-address/alfred-ip.png)
 
 ----
 
-### [Kill Process](https://github.com/nathangreenstein/alfred-process-killer) 
 
-Easily find processes by name and kill them by [@nathangreenstein](https://github.com/nathangreenstein/). [Download v1.2](https://github.com/zenorocha/alfred-workflows/raw/master/kill-process/kill-process.alfredworkflow).
-
-```
-Keywords: kill
-```
-
-![Kill Process](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/kill-process/alfred-kill.png)
 
 ----
 
@@ -212,27 +232,7 @@ Keywords: st
 
 ----
 
-### [TimeZones](http://www.alfredforum.com/topic/491-timezones-a-world-clock-script-filter-updated-to-v161/)
 
-Get an instant list of the current time in various cities around the world by [@CarlosNZ](http://www.alfredforum.com/topic/491-timezones-a-world-clock-script-filter-updated-to-v161/). [Download v1.61](https://github.com/zenorocha/alfred-workflows/raw/master/time-zones/time-zones.alfredworkflow).
-
-```
-Keywords: tz
-```
-
-![TimeZones](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/time-zones/alfred-tz.png)
-
-----
-
-### [Weather](http://dferg.us/weather-for-alfred-2/)
-
-Pull your local weather forecast or get the weather for other cities by [@jdfwarrior](https://github.com/jdfwarrior/). [Download](http://dferg.us/weather-for-alfred-2/).
-
-```
-Keywords: weather, forecast, conditions
-```
-
-![Weather](https://github.com/chrishough/myconfigurations/raw/master/alfredapp/Workflows/weather/alfred-weather.png)
 
 ----
 
