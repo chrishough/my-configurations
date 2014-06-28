@@ -2,6 +2,6 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/loc
 
 [[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
 
-source $HOME/.myconfigurations/settings/.setup
+source $HOME/.myconfigurations/workstation/shell/includes
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi

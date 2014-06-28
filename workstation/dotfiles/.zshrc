@@ -43,4 +43,4 @@ unsetopt correct_all
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-source $HOME/.myconfigurations/settings/.setup
+source $HOME/.myconfigurations/workstation/shell/includes

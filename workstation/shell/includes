@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# Shell
+source $HOME/.myconfigurations/workstation/shell/shortcuts/shell
+# ---------------------------------------------------------------
+# Ruby
+source $HOME/.myconfigurations/workstation/shell/shortcuts/ruby
+# ---------------------------------------------------------------
+# Git
+source $HOME/.myconfigurations/workstation/shell/shortcuts/git
+# ---------------------------------------------------------------
+# Heroku
+source $HOME/.myconfigurations/workstation/shell/shortcuts/heroku
+# ---------------------------------------------------------------
+# PRIVATE CONFIGURATIONS
+source $HOME/.myconfigurations/workstation/shell/shortcuts/private
