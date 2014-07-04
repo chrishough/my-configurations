@@ -24,8 +24,7 @@ git config --add remote.github.url $github_commit_url
 git config --list
 
 # copy commit hook
-cp $HOME/.myconfigurations/git/hooks/commit_msg_add_branch_name .git/hooks/commit-msg
-cp $HOME/.myconfigurations/git/hooks/post_commit_add_github_commit_note .git/hooks/post-commit
+cp $HOME/.myconfigurations/software/git/hooks/commit_msg_add_branch_name .git/hooks/commit-msg
+cp $HOME/.myconfigurations/software/git/hooks/post_commit_add_github_commit_note .git/hooks/post-commit
 chmod +x .git/hooks/commit-msg
 chmod +x .git/hooks/post-commit
-

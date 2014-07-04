@@ -64,7 +64,7 @@ function gitdt() {
 }
 # ---------------------------------------------------------------
 alias gitcl="git config --list"
-alias gitclone="sh $HOME/.myconfigurations/git/scripts/clone.sh"
+alias gitclone="sh $HOME/.myconfigurations/software/git/shell-scripts/clone.sh"
 
 alias gitck="git checkout "
 alias gitpull="git pull"
