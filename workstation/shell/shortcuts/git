@@ -8,6 +8,11 @@ function gitc() {
  git status;
 }
 # ---------------------------------------------------------------
+# Update last commit message
+function gitfc() {
+ git commit --amend -m "$*";
+}
+# ---------------------------------------------------------------
 # Merge, Push, Status Check
 function gitm() {
  git merge "$*" --no-ff;
