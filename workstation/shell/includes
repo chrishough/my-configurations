@@ -11,6 +11,8 @@ source $HOME/.myconfigurations/workstation/shell/shortcuts/git
 # ---------------------------------------------------------------
 # Heroku
 source $HOME/.myconfigurations/workstation/shell/shortcuts/heroku
+# Keybase
+source $HOME/.myconfigurations/workstation/shell/shortcuts/keybase
 # ---------------------------------------------------------------
 # PRIVATE CONFIGURATIONS
 source $HOME/.myconfigurations/workstation/shell/shortcuts/private

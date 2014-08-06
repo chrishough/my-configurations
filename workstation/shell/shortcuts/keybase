@@ -1,0 +1,12 @@
+#!/bin/zsh
+# ---------------------------------------------------------------
+alias kb="keybase"
+# gets and installs the latest keybase
+function kbi() {
+ keybase-installer
+}
+# ---------------------------------------------------------------
+# which version are you running
+function kbv() {
+ keybase version
+}
