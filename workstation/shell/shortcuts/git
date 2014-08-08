@@ -35,7 +35,7 @@ function gitcpr() {
 # ---------------------------------------------------------------
 # Delete Local
 function gitdb() {
- git branch -d "$*";
+ git branch -D "$*";
  git remote prune origin
  git status;
 }
