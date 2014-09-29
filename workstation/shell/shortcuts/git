@@ -50,10 +50,10 @@ function gitdbf() {
 }
 # ---------------------------------------------------------------
 # Create .gitkeep
-function gitk() {touch .gitkeep}
+function gitk() {touch .keep}
 function gitkf() {
  mkdir "$*";
- touch "$*/.gitkeep";
+ touch "$*/.keep";
 }
 # ---------------------------------------------------------------
 # Create readme.md
