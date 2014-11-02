@@ -15,6 +15,7 @@ function gitfc() {
 # ---------------------------------------------------------------
 # Merge, Push, Status Check
 function gitm() {
+ git pull
  git merge "$*" --no-ff;
  git push;
  git status;
@@ -22,6 +23,7 @@ function gitm() {
 # ---------------------------------------------------------------
 # Create Branch, Push to Git, Status Check
 function gitcb() {
+ git pull
  git checkout -b "$*";
  git push -u origin "$*";
  git push --set-upstream origin "$*";
