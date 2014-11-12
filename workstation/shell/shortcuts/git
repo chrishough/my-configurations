@@ -30,6 +30,13 @@ function gitcb() {
  git status;
 }
 # ---------------------------------------------------------------
+# Checkout a branch and make sure you have the latest code
+function gitck() {
+ git checkout "$*";
+ git pull
+ git status;
+}
+# ---------------------------------------------------------------
 # Create Pull Request
 function gitcpr() {
  hub pull-request -m "$*";
@@ -64,7 +71,7 @@ function gitmd() {
  open readme.md;
 }
 # ---------------------------------------------------------------
-# Create readme.md
+# Deploy tags
 function gitdt() {
  git tag -d "$*";
  git push origin :refs/tags/"$*";
@@ -73,7 +80,6 @@ function gitdt() {
 alias gitcl="git config --list"
 alias gitclone="sh $HOME/.myconfigurations/software/git/shell-scripts/clone.sh"
 
-alias gitck="git checkout "
 alias gitpull="git pull"
 
 alias gitp="git push"
@@ -92,7 +98,8 @@ alias gitl="git log --show-notes"
 alias gitltree="git log --graph --oneline --all"
 alias gitltreeb="git log --graph --all --decorate"
 
-alias gitdf="git fetch -p"
+alias gitf="git fetch -p"
+alias gitfa="git fetch -all"
 
 alias gitrpo="git remote prune origin"
 alias gitrso="git remote show origin"
