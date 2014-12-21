@@ -1,5 +1,13 @@
 #!/bin/zsh
 # ---------------------------------------------------------------
+alias h="heroku"
+alias hlog="heroku logs"
+alias hps="heroku ps"
+alias hrr="heroku run rake"
+alias hrc="heroku run rails console"
+alias hc="heroku config"
+alias ha="heroku apps"
+
 # Git Check In, Push, Status Check
 function gitch() {
  git add . -A;
@@ -8,17 +16,25 @@ function gitch() {
  git push heroku master;
  git status;
 }
-# ---------------------------------------------------------------
+
 # Git Push, Status Check
 function gitph() {
  git push heroku master;
  git status;
 }
+
 # ---------------------------------------------------------------
-alias h="heroku"
-alias hlog="heroku logs"
-alias hps="heroku ps"
-alias hrr="heroku run rake "
-alias hrc="heroku run rails console"
-alias hc="heroku config"
-alias ha="heroku apps"
+
+herokuhelp () {
+  echo
+  echo "  h           = heroku"
+  echo "  hlog        = heroku logs"
+  echo "  hps         = heroku psql connection"
+  echo "  hrr         = heroku run rake task"
+  echo "  hrc         = heroku run rails console"
+  echo "  hc          = heroku config"
+  echo "  ha          = heroku applications"
+  echo "  gitch       = check in code and push to heroku"
+  echo "  gitph       = push master to heroku"
+  echo
+}

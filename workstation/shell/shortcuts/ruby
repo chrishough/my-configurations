@@ -1,31 +1,34 @@
 #!/bin/zsh
 # ---------------------------------------------------------------
+export PATH=".bundle/binstubs:$PATH"
+
 # Ruby Environment Commands
 alias rb="rbenv"
 alias be="bundle exec"
 alias rake="noglob bundle exec rake"
-# ---------------------------------------------------------------
-# Rails GenerateCommands
-function rgc() {
-  rails g controller "$*";
-}
-# ---------------------------------------------------------------
-function rgcP() {
-  rails g controller "$*";
-}
-# ---------------------------------------------------------------
-function rgm() {
-  rails g model "$*";
-}
-# ---------------------------------------------------------------
-function rstart() {
-  rescue rails s;
-}
-# ---------------------------------------------------------------
-function rgmP() {
-  rails g model "$*" --migration=false;
-}
-# ---------------------------------------------------------------
+function rbuild() { bundle install --path=.bundle --binstubs=.bundle/binstubs }
+
+# Rails Commands
+alias r='rails'
+alias rg='rails g'
+alias rs='bundle exec ./bin/rails s'
+alias rt='bundle exec ./bin/rspec'
+alias rc='bundle exec ./bin/rails c'
+alias rd='rails dbconsole'
+
+# rubygems
+alias gemo='gem outdated'
+
+# rake
+alias rr='bundle exec rake routes'
+alias rdbm='bundle exec rake db:migrate'
+alias rdbr='bundle exec rake db:rollback'
+
+# Rails Generators
+function rgc() { rails g controller "$*"; }
+function rgm() { rails g model "$*"; }
+
+# Rails Helpers
 function rtail() {
   if [ "$*" != "" ]; then
     tail -f "log/$*.log";
@@ -33,19 +36,26 @@ function rtail() {
     tail -f log/development.log;
   fi
 }
+
 # ---------------------------------------------------------------
-function runspec() {
-  RAILS_ENV="$*" bundle exec rake spec;
-}
-# ---------------------------------------------------------------
-function rbuild() {
-  bundle install --path=.bundle --binstubs=.bundle/binstubs;
-}
-# ---------------------------------------------------------------
-# rbenv shortcuts
-export PATH=".bundle/binstubs:$PATH"
-# ---------------------------------------------------------------
-# list Gem Versions
-function gemv() {
- gem list "$*" --remote --all;
+
+rubyhelp () {
+  echo
+  echo "  r           = rails"
+  echo "  rb          = rbenv"
+  echo "  be          = bundle exec"
+  echo "  rake        = noglob bundle exec rake"
+  echo "  rg          = rails generate"
+  echo "  rs          = rails server"
+  echo "  rc          = rails console"
+  echo "  rt          = rspec tests"
+  echo "  rd          = rails db console"
+  echo "  rr          = bundle exec rake routes"
+  echo "  rdbm        = bundle exec rake db:migrate"
+  echo "  rdbr        = bundle exec rake db:rollback"
+  echo "  rgc         = rails g controller"
+  echo "  rgm         = rails g model"
+  echo "  rtail       = tails rails log"
+  echo "  rbuild      = rbenv bundle install"
+  echo
 }

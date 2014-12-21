@@ -1,117 +1,109 @@
 #!/bin/zsh
 # ---------------------------------------------------------------
-# Check In, Push, Status Check
-function gitc() {
- git add . -A;
- git commit -m "$*";
- git push;
- git status;
-}
-# ---------------------------------------------------------------
-# Update last commit message
-function gitfc() {
- git commit --amend -m "$*";
-}
-# ---------------------------------------------------------------
-# Merge, Push, Status Check
-function gitm() {
- git pull
- git merge "$*" --no-ff;
- git push;
- git status;
-}
-# ---------------------------------------------------------------
-# Create Branch, Push to Git, Status Check
-function gitcb() {
- git pull
- git checkout -b "$*";
- git push -u origin "$*";
- git push --set-upstream origin "$*";
- git status;
-}
-# ---------------------------------------------------------------
-# Checkout a branch and make sure you have the latest code
-function gitck() {
- git checkout "$*";
- git pull
- git status;
-}
-# ---------------------------------------------------------------
-# Create Pull Request
-function gitcpr() {
- hub pull-request -m "$*";
-}
-# ---------------------------------------------------------------
-# Delete Local
-function gitdb() {
- git branch -D "$*";
- git remote prune origin
- git status;
-}
-# ---------------------------------------------------------------
-# Delete Local and Remote Branch
-function gitdbf() {
- git branch -d "$*";
- git push --delete origin "$*";
- git fetch -p;
- git remote show origin;
- git status;
-}
-# ---------------------------------------------------------------
-# Create .gitkeep
-function gitk() {touch .keep}
-function gitkf() {
- mkdir "$*";
- touch "$*/.keep";
-}
-# ---------------------------------------------------------------
-# Create readme.md
-function gitmd() {
- touch readme.md;
- open readme.md;
-}
-# ---------------------------------------------------------------
-# Deploy tags
-function gitdt() {
- git tag -d "$*";
- git push origin :refs/tags/"$*";
-}
-# ---------------------------------------------------------------
-alias gitcl="git config --list"
-alias gitclone="sh $HOME/.myconfigurations/software/git/shell-scripts/clone.sh"
+alias gp="git push"
+alias gu="git pull"
+alias gs="git status"
+alias gt="git tag"
+alias grpo="git remote prune origin"
+alias grso="git remote show origin"
+alias gcl="git config --list"
+alias gclone="sh $HOME/.myconfigurations/software/git/shell-scripts/clone.sh"
+alias gpot="git push origin --tags"
+alias gpt="git push --tags"
+alias gl="git log --show-notes"
+alias glt="git log --graph --oneline --all"
+alias gltp="git log --graph --all --decorate"
 
-alias gitpull="git pull"
+function gccc() {
+  git add . -A;
+  git commit -m "$*";
+  git push;
+  git status;
+}
 
-alias gitp="git push"
-alias gitpo="git push origin "
-alias gitpb="git push --set-upstream origin "
-alias gitpot="git push origin --tags"
-alias gitphm="git push heroku master"
-alias gitpt="git push --tags"
-alias gitpushall="git push --recurse-submodules=on-demand"
+function gcb() {
+  git pull
+  git checkout -b "$*";
+  git push -u origin "$*";
+  git push --set-upstream origin "$*";
+  git status;
+}
 
-alias gits="git status"
-alias gitt="git tag"
-alias gitsh="git show"
+function gck() {
+  git checkout "$*";
+  git pull
+  git status;
+}
 
-alias gitl="git log --show-notes"
-alias gitltree="git log --graph --oneline --all"
-alias gitltreeb="git log --graph --all --decorate"
+function gm() {
+  git pull
+  git merge "$*" --no-ff;
+  git push;
+  git status;
+}
 
-alias gitf="git fetch -p"
-alias gitfa="git fetch -all"
+function gdb() {
+  git branch -D "$*";
+  git remote prune origin
+  git status;
+}
 
-alias gitrpo="git remote prune origin"
-alias gitrso="git remote show origin"
-alias gitlsr="git ls-remote"
-alias gitrv="git remote -v"
+function gdbf() {
+  git branch -d "$*";
+  git push --delete origin "$*";
+  git fetch -p;
+  git remote show origin;
+  git status;
+}
 
-alias standup="git log --since '1 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
-alias standup5="git log --since '5 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
-alias standup10="git log --since '10 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --oneline --author 'Chris Hough'"
-
-# ---------------------------------------------------------------
-# Create .gitkeep
-function gitpurgesvn() {
+function gpsvn() {
   find . -name .svn  -type d -print0 |xargs -0 rm -rf
+}
+
+function gk() {touch .keep}
+
+function gkf() {
+  mkdir "$*";
+  touch "$*/.keep";
+}
+
+function gmd() {
+  touch readme.md;
+  open readme.md;
+}
+
+function gdt() {
+  git tag -d "$*";
+  git push origin :refs/tags/"$*";
+}
+
+# ---------------------------------------------------------------
+
+githelp () {
+  echo
+  echo "  gcm          = git commit, push, and status"
+  echo "  gp           = git pull"
+  echo "  grpo         = git remote prune origin"
+  echo "  grso         = git remote show origin"
+  echo "  gcl          = git config --lis"
+  echo "  gm           = git pull, merge branch, push, status"
+  echo "  gcb          = git pull, create branch, push branch to git"
+  echo "  gck          = git checkout, pull, status"
+  echo "  gdbf         = git delete local and remote branch"
+  echo "  gdb          = git delete local branch"
+  echo "  gfc          = git fix last commit message"
+  echo "  gpsvn        = find and delete .svn files"
+  echo "  gclone       = run hough custom clone script"
+  echo "  gs           = git status"
+  echo "  gt           = git tag"
+  echo "  gpot         = git push origin --tags"
+  echo "  gpt          = git push --tags"
+  echo "  gdt          = git deploy tags"
+  echo "  gl           = git log --show-notes"
+  echo "  glt          = git log --graph --oneline --all"
+  echo "  gltp         = git log --graph --all --decorate"
+  echo "  gk           = create git .keep file"
+  echo "  gkf          = create folder with .keep file"
+  echo "  gmd          = create readme markdown file"
+  echo
 }
