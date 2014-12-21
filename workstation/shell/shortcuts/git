@@ -14,7 +14,7 @@ alias gl="git log --show-notes"
 alias glt="git log --graph --oneline --all"
 alias gltp="git log --graph --all --decorate"
 
-function gccc() {
+function gc() {
   git add . -A;
   git commit -m "$*";
   git push;
