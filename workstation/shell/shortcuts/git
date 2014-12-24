@@ -1,6 +1,7 @@
 #!/bin/zsh
 # ---------------------------------------------------------------
 alias gp="git push"
+alias gd="git diff"
 alias gu="git pull"
 alias gs="git status"
 alias gt="git tag"
@@ -83,6 +84,7 @@ githelp () {
   echo
   echo "  gcm          = git commit, push, and status"
   echo "  gp           = git pull"
+  echo "  gd           = git diff"
   echo "  grpo         = git remote prune origin"
   echo "  grso         = git remote show origin"
   echo "  gcl          = git config --lis"
