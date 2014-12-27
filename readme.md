@@ -14,7 +14,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * Running ```brew doctor``` does not report any configuration issues.
 * [Google Chrome](http://www.google.com/chrome) is your primary development browser.
 * [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally, pre-installed.
-* I would fork this repo to your github account so you can build off it and tailor it to your needs.
+* [ruby-build](https://github.com/sstephenson/ruby-build) installed via brew.
 
 ### Software
 ----
@@ -23,7 +23,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [Evernote](http://evernote.com/) for notes and local documentation.
 * [Mou](http://mouapp.com/) for editing markdown files.
 * [Colloquy](http://colloquy.info/) for IRC.
-* [Paw](https://luckymarmot.com/paw) for API testing and construction. 
+* [Paw](https://luckymarmot.com/paw) for API testing and construction.
 * [Pathfinder](http://cocoatech.com/pathfinder/) for a finder on steroids.
 * [Arq + S3](http://www.haystacksoftware.com/arq/) for encrypted cloud backup.
 * [Cloak](https://www.getcloak.com/) for cloud based VPN.
@@ -35,14 +35,13 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [iStat Menus](http://bjango.com/mac/istatmenus/) for system performance monitoring.
 
 
-### rbenv 
+### rbenv plugins
 ----
 * [rbenv-default-gems](https://github.com/sstephenson/rbenv-default-gems): This rbenv plugin hooks into the rbenv install command to automatically install gems every time you install a new version of Ruby.
 * [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash): Never run rbenv rehash again. This rbenv plugin automatically runs rbenv rehash every time you install or uninstall a gem.
 * [rbenv-vars](https://github.com/sstephenson/rbenv-vars): This is a plugin for rbenv that lets you set global and project-specific environment variables before spawning Ruby processes.
 * [rbenv-use](https://github.com/rkh/rbenv-use): This rbenv plugin allows easier switching between Ruby versions without having to keep patch levels in mind.
 * [rbenv-whatis](https://github.com/rkh/rbenv-whatis): This rbenv plugin resolves abbreviations and aliases to full Ruby version identifiers. It is mainly intended to be used by other plugins, such as rbenv-use.
-* [ruby-build](https://github.com/sstephenson/ruby-build): ruby-build is an rbenv plugin that provides an rbenv install command to compile and install different versions of Ruby on UNIX-like systems.
 * [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs): This plugin makes rbenv transparently aware of project-specific binstubs created by bundler. This means you don't have to type bundle exec ${command} ever again!
 
 ### Atom Packages
@@ -51,7 +50,7 @@ Via `Package Control` these are my favorite packages.
 
 ![atom-package-list](https://github.com/chrishough/myconfigurations/raw/master/graphics/atom/atom-package-list.png)
 
-### Setup Shell
+### My Shell
 ----
 1. Download and install [iterm2](http://www.iterm2.com).  This shell will be configured to replace the default bash and adjust terminal.
 2. Follow the guide to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) which will give you access to a vast amount of themes.
@@ -60,7 +59,7 @@ Via `Package Control` these are my favorite packages.
 5. ```brew install the_silver_searcher``` [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) replaces ack and is by far the fastest search utility I have used.
 
 
-### Setup Shell Theme
+### My Shell Theme
 ----
 ![shell-theme-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-example.png)
 
@@ -84,5 +83,3 @@ DEFAULT_USER="chrishough"
 **5**: The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
 
 ![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
-
-
