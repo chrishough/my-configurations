@@ -83,3 +83,13 @@ DEFAULT_USER="chrishough"
 **5**: The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
 
 ![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
+
+### My New Machine Checklist
+----
+1. setup xcode + command line tools
+2. install homebrew, and update homebrew
+3. brew install git
+4. brew install autojump
+5. brew install the_silver_searcher
+6. brew install postgres
+7. install postgresapp from postgresapp.com
