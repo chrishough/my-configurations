@@ -1,22 +1,13 @@
-# BACKUP
-
-'global':
-  'exception-reporting':
-    'userId': '[ hidden on purpose! ]'
+'*':
   'welcome':
     'showOnStartup': false
-  'metrics':
-    'userId': '[ hidden on purpose! ]'
   'editor':
     'fontFamily': 'Inconsolata'
-    'preferredLineLength': 130
     'fontSize': 14
     'showIndentGuide': true
+    'preferredLineLength': 130
     'invisibles': {}
   'core':
-    'useReactEditor': false
-    'useReactMiniEditors': false
-    'destroyEmptyPanes': false
     'ignoredNames': [
       '.git'
       '.svn'
@@ -26,10 +17,13 @@
     'excludeVcsIgnoredPaths': false
     'themes': [
       'atom-dark-ui'
-      'base16-pretty-dark'
+      'base16-tomorrow-dark-theme'
     ]
+    'destroyEmptyPanes': false
   'tree-view':
     'hideIgnoredNames': true
+  'exception-reporting':
+    'userId': 'd9f8a28e-3694-e767-4e3e-180303f43226'
 '.slim.text':
   'editor':
     'showInvisibles': false
