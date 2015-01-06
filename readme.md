@@ -21,7 +21,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 
 * [Atom](https://atom.io/)
 * [iterm2](http://www.iterm2.com/#/section/home)
-* [Zsh](http://www.zsh.org/), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* [Zsh](http://www.zsh.org/) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Postgres App](http://postgresapp.com/), for development.
 * [Autojump](https://github.com/joelthelion/autojump) ```brew install autojump``` memorizes your favorite locations and allows you to quickly navigate to a path from anywhere in your shell.
 * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) ```brew install the_silver_searcher``` replaces ack and is by far the fastest search utility I have used.
@@ -45,15 +45,13 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [rbenv-default-gems](https://github.com/sstephenson/rbenv-default-gems): This rbenv plugin hooks into the rbenv install command to automatically install gems every time you install a new version of Ruby.
 * [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash): Never run rbenv rehash again. This rbenv plugin automatically runs rbenv rehash every time you install or uninstall a gem.
 * [rbenv-vars](https://github.com/sstephenson/rbenv-vars): This is a plugin for rbenv that lets you set global and project-specific environment variables before spawning Ruby processes.
-* [rbenv-use](https://github.com/rkh/rbenv-use): This rbenv plugin allows easier switching between Ruby versions without having to keep patch levels in mind.
-* [rbenv-whatis](https://github.com/rkh/rbenv-whatis): This rbenv plugin resolves abbreviations and aliases to full Ruby version identifiers. It is mainly intended to be used by other plugins, such as rbenv-use.
 * [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs): This plugin makes rbenv transparently aware of project-specific binstubs created by bundler. This means you don't have to type bundle exec ${command} ever again!
 
 ### Atom Packages
 ----
 I use the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font for development.
 
-Via `Package Control` these are my favorite packages.  
+Via `Package Control` these are my favorite packages:  
 
 ![atom-package-list](https://github.com/chrishough/myconfigurations/raw/master/graphics/atom/atom-package-list.png)
 
@@ -98,8 +96,8 @@ The background image I created can be found [here](https://github.com/chrishough
 21. make sure each dotfile exists, if it does not create it
 22. symlink the current dotfiles to the git versions via ruby settings/symlinks.rb
 23. setup my shell theme
-24.
-25.
+24. install rbenv plugins
+25. make sure to setup rbenv vars
 26.
 27.
 28.
