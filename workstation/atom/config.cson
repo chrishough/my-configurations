@@ -1,0 +1,36 @@
+# BACKUP
+
+'global':
+  'exception-reporting':
+    'userId': '[ hidden on purpose! ]'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '[ hidden on purpose! ]'
+  'editor':
+    'fontFamily': 'Inconsolata'
+    'preferredLineLength': 130
+    'fontSize': 14
+    'showIndentGuide': true
+    'invisibles': {}
+  'core':
+    'useReactEditor': false
+    'useReactMiniEditors': false
+    'destroyEmptyPanes': false
+    'ignoredNames': [
+      '.git'
+      '.svn'
+      '.DS_Store'
+      '.bundle'
+    ]
+    'excludeVcsIgnoredPaths': false
+    'themes': [
+      'atom-dark-ui'
+      'base16-pretty-dark'
+    ]
+  'tree-view':
+    'hideIgnoredNames': true
+'.slim.text':
+  'editor':
+    'showInvisibles': false
+    'showIndentGuide': true

@@ -1,0 +1,9 @@
+# BACKUP
+
+'.editor':
+	'alt-r': 'pane:split-right'
+	'alt-f': 'pane:split-down'
+	'shift-cmd-a': 'atom-alignment:align'
+
+'.editor:not(.mini)':
+	'ctrl-.': 'tabs-to-spaces:tabify'

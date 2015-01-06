@@ -97,7 +97,7 @@ DEFAULT_USER="chrishough"
 12. brew install zsh
 13. ```chsh -s /bin/zsh``` to set zsh as the default shell
 14. in iterm2 change the default background to my terminal-background.jpg
-15.
+15. download and install the inconsolata font
 16.
 17.
 18.
