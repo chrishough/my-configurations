@@ -100,4 +100,4 @@ DEFAULT_USER="chrishough"
 15. download and install the inconsolata font
 16. download and install atom
 17. install atom plugins
-18.
+18. setup atom theme, keymap.cson, and config.cson files
