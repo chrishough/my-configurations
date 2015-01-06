@@ -101,4 +101,5 @@ The background image I created can be found [here](https://github.com/chrishough
 26. run brew doctor to make sure there are no errors
 27. install rbenv versions
 28. install [java](http://support.apple.com/kb/DL1572)
+
 ...*Time to drink beer!*
