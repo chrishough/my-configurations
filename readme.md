@@ -19,7 +19,12 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 ### Software
 ----
 
-* [Atom](https://atom.io/), [iterm2](http://www.iterm2.com/#/section/home), [Zsh](http://www.zsh.org/), [Postgres App](http://postgresapp.com/), for development.
+* [Atom](https://atom.io/)
+* [iterm2](http://www.iterm2.com/#/section/home)
+* [Zsh](http://www.zsh.org/), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* [Postgres App](http://postgresapp.com/), for development.
+* [Autojump](https://github.com/joelthelion/autojump) ```brew install autojump``` memorizes your favorite locations and allows you to quickly navigate to a path from anywhere in your shell.
+* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) ```brew install the_silver_searcher``` replaces ack and is by far the fastest search utility I have used.
 * [Evernote](http://evernote.com/) for notes and local documentation.
 * [Mou](http://mouapp.com/) for editing markdown files.
 * [Colloquy](http://colloquy.info/) for IRC.
@@ -50,15 +55,6 @@ Via `Package Control` these are my favorite packages.
 
 ![atom-package-list](https://github.com/chrishough/myconfigurations/raw/master/graphics/atom/atom-package-list.png)
 
-### My Shell
-----
-1. Download and install [iterm2](http://www.iterm2.com).  This shell will be configured to replace the default bash and adjust terminal.
-2. Follow the guide to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) which will give you access to a vast amount of themes.
-3. Once the themes finish installing make sure to run ```chsh -s /bin/zsh``` to set zsh as your default shell.
-4. ```brew install autojump``` [Autojump](https://github.com/joelthelion/autojump) memorizes your favorite locations and allows you to quickly navigate to a path from anywhere in your shell.
-5. ```brew install the_silver_searcher``` [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) replaces ack and is by far the fastest search utility I have used.
-
-
 ### My Shell Theme
 ----
 ![shell-theme-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-example.png)
@@ -86,6 +82,7 @@ DEFAULT_USER="chrishough"
 
 ### My New Machine Checklist
 ----
+0. files migrated, software installed, all software setups in place
 1. setup xcode + command line tools
 2. install homebrew, and update homebrew
 3. brew install git
@@ -93,3 +90,14 @@ DEFAULT_USER="chrishough"
 5. brew install the_silver_searcher
 6. brew install postgres
 7. install postgresapp from postgresapp.com
+8. copy ~/.gitconfig and ~/.ssh to new computer
+9. verify git works by cloning git .myconfigurations
+10. download and install iterm2, set auto check for updates
+11. install .oh-my-zsh
+12. brew install zsh
+13. ```chsh -s /bin/zsh``` to set zsh as the default shell
+14. in iterm2 change the default background to my terminal-background.jpg
+15.
+16.
+17.
+18.
