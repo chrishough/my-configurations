@@ -98,8 +98,8 @@ The background image I created can be found [here](https://github.com/chrishough
 23. setup my shell theme
 24. install rbenv plugins
 25. make sure to setup rbenv vars
-26.
-27.
-28.
+26. run brew doctor to make sure there are no errors
+27. install rbenv versions
+28. install [java](http://support.apple.com/kb/DL1572) 
 29.
 30.
