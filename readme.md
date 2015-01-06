@@ -51,6 +51,8 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 
 ### Atom Packages
 ----
+I use the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font for development.
+
 Via `Package Control` these are my favorite packages.  
 
 ![atom-package-list](https://github.com/chrishough/myconfigurations/raw/master/graphics/atom/atom-package-list.png)
@@ -59,25 +61,15 @@ Via `Package Control` these are my favorite packages.
 ----
 ![shell-theme-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-example.png)
 
-**1**: Download and install the following font files: [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) and [Sauce Code Powerline Regular](https://github.com/Lokaltog/powerline-fonts).
-
-**2**: In your shell ```cd``` to your home directory and type ```nano .zshrc``` to edit the zsh configuration file. Comment out the previous theme ```#ZSH_THEME="robbyrussel"``` by adding a ```#``` in front of it. Once you have commented out the default theme, add the next block after it.  This enables the new theme, however, please make sure to adjust the ```DEFAULT_USER``` to match your osx username.
-
-```
-ZSH_THEME="agnoster"
-DEFAULT_USER="chrishough"
-```
-
-**3**: Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors, and import them under the colors panel in iterm2 preferences. My theme uses ```base16-railscasts.dark``` which can be loaded in the presets.  You will need to set the contrast as shown to have a clearer definition of the font icons.
+Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors, and import them under the colors panel in iterm2 preferences. My theme uses ```base16-railscasts.dark``` which can be loaded in the presets.  You will need to set the contrast as shown to have a clearer definition of the font icons.
 
 ![shell-theme-iterm-colors-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-colors-example.png)
 
-**4**: Under the terminal tab, make sure to change the report terminal type to ```xterm-256color``` and your character encoding to ```Unicode (UTF-8)```.
+Under the terminal tab, make sure to change the report terminal type to ```xterm-256color``` and your character encoding to ```Unicode (UTF-8)```.
 
 ![shell-theme-iterm-terminal-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-terminal-example.png)
 
-**5**: The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
-
+The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
 ![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
 
 ### My New Machine Checklist
@@ -101,3 +93,15 @@ DEFAULT_USER="chrishough"
 16. download and install atom
 17. install atom plugins
 18. setup atom theme, keymap.cson, and config.cson files
+19. backup current settings file by running ruby settings/backup.rb
+20. brew install rbenv ruby-build
+21. make sure each dotfile exists, if it does not create it
+22. symlink the current dotfiles to the git versions via ruby settings/symlinks.rb
+23. setup my shell theme
+24.
+25.
+26.
+27.
+28.
+29.
+30.
