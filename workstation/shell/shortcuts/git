@@ -56,6 +56,17 @@ function gdbf() {
   git status;
 }
 
+function gmdbf() {
+  git pull
+  git merge "$*" --no-ff;
+  git push;
+  git branch -d "$*";
+  git push --delete origin "$*";
+  git fetch -p;
+  git remote show origin;
+  git status;
+}
+
 function gpsvn() {
   find . -name .svn  -type d -print0 |xargs -0 rm -rf
 }
@@ -82,6 +93,7 @@ function gdt() {
 githelp () {
   echo
   echo "  gcm          = git commit, push, and status"
+  echo "  gmdbf        = git merge and delete branch everywhere"
   echo "  gp           = git pull"
   echo "  gd           = git diff"
   echo "  grpo         = git remote prune origin"
