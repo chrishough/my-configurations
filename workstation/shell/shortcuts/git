@@ -108,6 +108,7 @@ function gfcb() {
   echo "branch name:" $param2
   spacer
   git flow $param1 start $param2
+  git flow $param1 publish $param2
 }
 
 function gfmb() {
