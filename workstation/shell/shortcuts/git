@@ -43,6 +43,7 @@ function gm() {
   git pull
   git merge "$*" --no-ff;
   git push;
+  git push --delete origin "$*";
   git remote prune origin
   git branch -D "$*";
   git status;
