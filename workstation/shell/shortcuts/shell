@@ -42,5 +42,8 @@ function sublg { bundle show $@ | xargs subl; }
 # Get Machine Uptime
 function up() {uptime | sed -e "s/:/ /2" | sed -e "s/,/ /2" | awk '{print "Up " $3 " days, " $5 " hours and " $6 " minutes"}'}
 # ---------------------------------------------------------------
+function spacer() {
+  echo "---------------------------------------------------------------"
+}
 # ZSH Autocomplete
 autoload -U compinit && compinit

@@ -13,6 +13,10 @@ alias gpt="git push --tags"
 alias gl="git log --show-notes"
 alias glt="git log --graph --oneline --all"
 alias gltp="git log --graph --all --decorate"
+alias gfi="git flow init"
+alias gf="git flow"
+alias gfh="git flow help"
+
 
 function gc() {
   git add . -A;
@@ -88,10 +92,43 @@ function gdt() {
   git push origin :refs/tags/"$*";
 }
 
+function gfcb() {
+  param1=$1:l
+  param2=$2:l
+  echo "git flow fuction:" $param1
+  echo "branch created:" $param2
+  spacer
+  git flow feature start MYFEATURE
+}
+
+function gfcb() {
+  param1=$1:l
+  param2=$2:l
+  echo "git subcommand:" $param1
+  echo "branch name:" $param2
+  spacer
+  git flow $param1 start $param2
+}
+
+function gfmb() {
+  param1=$1:l
+  param2=$2:l
+  echo "git subcommand:" $param1
+  echo "branch name:" $param2
+  spacer
+  git flow $param1 finish $param2
+}
+
 # ---------------------------------------------------------------
 
 githelp () {
   echo
+  echo "  gfmb         = git flow subcommand finish branch :: param 1= subcommand param 2=branch"
+  echo "  gfcb         = git flow subcommand start branch :: param 1= subcommand param 2=branch"
+  echo "  gfi          = setup code repo using gitflow"
+  echo "  gfh          = git flow help"
+  echo "  gf           = git flow"
+  echo "---------------------------------------------------------------"
   echo "  gcm          = git commit, push, and status"
   echo "  gmdbf        = git merge and delete branch everywhere"
   echo "  gp           = git pull"
@@ -115,6 +152,7 @@ githelp () {
   echo "  gl           = git log --show-notes"
   echo "  glt          = git log --graph --oneline --all"
   echo "  gltp         = git log --graph --all --decorate"
+  echo "---------------------------------------------------------------"
   echo "  gk           = create git .keep file"
   echo "  gkf          = create folder with .keep file"
   echo "  gmd          = create readme markdown file"
