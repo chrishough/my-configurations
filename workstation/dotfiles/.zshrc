@@ -46,3 +46,7 @@ unsetopt correct_all
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 source $HOME/.myconfigurations/workstation/shell/includes
+
+source $(brew --prefix nvm)/nvm.sh
+
+eval "$(direnv hook zsh)"

@@ -5,5 +5,3 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/loc
 source $HOME/.myconfigurations/workstation/shell/includes
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-
-source $(brew --prefix nvm)/nvm.sh
