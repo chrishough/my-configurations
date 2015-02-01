@@ -45,5 +45,8 @@ function up() {uptime | sed -e "s/:/ /2" | sed -e "s/,/ /2" | awk '{print "Up " 
 function spacer() {
   echo "---------------------------------------------------------------"
 }
+
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 # ZSH Autocomplete
 autoload -U compinit && compinit
