@@ -26,7 +26,7 @@ function gc() {
 }
 
 function gcb() {
-  git pull
+  git pull;
   git checkout -b "$*";
   git push -u origin "$*";
   git push --set-upstream origin "$*";
@@ -35,12 +35,12 @@ function gcb() {
 
 function gck() {
   git checkout "$*";
-  git pull
+  git pull;
   git status;
 }
 
 function gm() {
-  git pull
+  git pull;
   git merge "$*" --no-ff;
   git push;
   git status;
@@ -56,6 +56,13 @@ function gmdb() {
   git status;
 }
 
+function gmt() {
+  git pull;
+  git merge "$*" -X theirs;
+  git push;
+  git status;
+}
+
 function gdb() {
   git branch -D "$*";
   git remote prune origin
@@ -63,7 +70,7 @@ function gdb() {
 }
 
 function gmdbf() {
-  git pull
+  git pull;
   git merge "$*" --no-ff;
   git push;
   git branch -d "$*";
@@ -92,15 +99,6 @@ function gcmd() {
 function gdt() {
   git tag -d "$*";
   git push origin :refs/tags/"$*";
-}
-
-function gfcb() {
-  param1=$1:l
-  param2=$2:l
-  echo "git flow fuction:" $param1
-  echo "branch created:" $param2
-  spacer
-  git flow feature start MYFEATURE
 }
 
 function gfcb() {
@@ -138,8 +136,9 @@ githelp () {
   echo "  gd           = git diff"
   echo "  grpo         = git remote prune origin"
   echo "  grso         = git remote show origin"
-  echo "  gcl          = git config --lis"
+  echo "  gcl          = git config --list"
   echo "  gm           = git pull, merge branch, push, status"
+  echo "  gmt          = git merge theirs, push, status"
   echo "  gcb          = git pull, create branch, push branch to git"
   echo "  gck          = git checkout, pull, status"
   echo "  gdbf         = git delete local and remote branch"
