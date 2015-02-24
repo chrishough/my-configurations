@@ -69,17 +69,6 @@ function gdb() {
   git status;
 }
 
-function gmdbf() {
-  git pull;
-  git merge "$*" --no-ff;
-  git push;
-  git branch -d "$*";
-  git push --delete origin "$*";
-  git fetch -p;
-  git remote show origin;
-  git status;
-}
-
 function gpsvn() {
   find . -name .svn  -type d -print0 |xargs -0 rm -rf
 }
