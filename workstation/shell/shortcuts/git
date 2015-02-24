@@ -43,6 +43,13 @@ function gm() {
   git pull
   git merge "$*" --no-ff;
   git push;
+  git status;
+}
+
+function gmdb() {
+  git pull
+  git merge "$*" --no-ff;
+  git push;
   git push --delete origin "$*";
   git remote prune origin
   git branch -D "$*";
@@ -52,14 +59,6 @@ function gm() {
 function gdb() {
   git branch -D "$*";
   git remote prune origin
-  git status;
-}
-
-function gdbf() {
-  git branch -d "$*";
-  git push --delete origin "$*";
-  git fetch -p;
-  git remote show origin;
   git status;
 }
 
@@ -85,7 +84,7 @@ function gkf() {
   touch "$*/.keep";
 }
 
-function gmd() {
+function gcmd() {
   touch readme.md;
   open readme.md;
 }
@@ -134,7 +133,7 @@ githelp () {
   echo "  gf           = git flow"
   echo "---------------------------------------------------------------"
   echo "  gcm          = git commit, push, and status"
-  echo "  gmdbf        = git merge and delete branch everywhere"
+  echo "  gmdb         = git merge and delete branch everywhere"
   echo "  gp           = git pull"
   echo "  gd           = git diff"
   echo "  grpo         = git remote prune origin"
