@@ -1,6 +1,6 @@
 ###Search Urban Dictionary
 
-This is a workflow will query urban dictionary’s API and return definitions.  [@Sheraff](https://github.com/Sheraff/urbandictionary-alfred-workfloww)
+This is a workflow will query urban dictionary’s API and return definitions.  [@Sheraff](https://github.com/Sheraff/urbandictionary-alfred-workflow)
 [Download](https://github.com/Sheraff/urbandictionary-alfred-workflow)  
 [My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/urban-dictionary.alfredworkflow) 
 
