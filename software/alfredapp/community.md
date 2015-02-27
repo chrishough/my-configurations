@@ -1,6 +1,18 @@
+###Search Urban Dictionary
+
+This is a workflow will query urban dictionary’s API and return definitions.  [@Sheraff](https://github.com/Sheraff/urbandictionary-alfred-workfloww)
+[Download](https://github.com/Sheraff/urbandictionary-alfred-workflow)  
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/urban-dictionary.alfredworkflow) 
+
+```
+Keywords: slang {query}
+```
+
+![urban-dictionary](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/urban-dictionary.png)
+
 ###Search Dash Docs
 
-This workflow helps you search dash docs, which requires a license for this amazing piece of software.  The workflow comes with Dash, but here is the version I have modified.
+This workflow helps you search dash docs, which requires a license for this amazing piece of software.  The workflow comes with Dash, but here is the version I have modified.  
 [My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-dash-docs.alfredworkflow)
 
 ```
