@@ -4,7 +4,6 @@ alias gp="git pull"
 alias gd="git diff"
 alias gs="git status"
 alias gt="git tag"
-alias grpo="git remote prune origin"
 alias grso="git remote show origin"
 alias gcl="git config --list"
 alias gclone="sh $HOME/.myconfigurations/software/git/shell-scripts/clone.sh"
@@ -17,6 +16,10 @@ alias gfi="git flow init"
 alias gf="git flow"
 alias gfh="git flow help"
 
+function grpo() {
+  git remote prune origin
+  git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
+}
 
 function gc() {
   git add . -A;
@@ -123,7 +126,7 @@ githelp () {
   echo "  gmdb         = git merge and delete branch everywhere"
   echo "  gp           = git pull"
   echo "  gd           = git diff"
-  echo "  grpo         = git remote prune origin"
+  echo "  grpo         = git prune remote and locals"
   echo "  grso         = git remote show origin"
   echo "  gcl          = git config --list"
   echo "  gm           = git pull, merge branch, push, status"
