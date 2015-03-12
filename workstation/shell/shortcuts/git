@@ -18,7 +18,6 @@ alias gfh="git flow help"
 
 function grpo() {
   git remote prune origin
-  git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
 }
 
 function gc() {
