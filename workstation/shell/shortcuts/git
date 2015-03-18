@@ -60,6 +60,14 @@ function gmdb() {
   git status;
 }
 
+function gdbf() {
+  git pull
+  git push --delete origin "$*";
+  git remote prune origin
+  git branch -D "$*";
+  git status;
+}
+
 function gmt() {
   git pull;
   git merge "$*" -X theirs;
