@@ -49,7 +49,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -92,13 +92,13 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>3F075DB0-335F-4D0B-AC89-09E6D9780D65</string>
+				<string>C40597A9-85A3-4815-8759-2256DE953208</string>
 			</dict>
 		</array>
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -147,7 +147,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -196,7 +196,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -224,7 +224,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1618</string>
+						<string>3024</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -248,7 +248,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>425518729.53661901</real>
+				<real>442118957.744793</real>
 				<key>Name</key>
 				<string>Launch Calendar</string>
 				<key>Triggers</key>
@@ -257,7 +257,7 @@
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>118</integer>
+						<integer>96</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -271,7 +271,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -299,7 +299,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1887</string>
+						<string>3172</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -323,7 +323,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>425369617.02473003</real>
+				<real>442118962.44758701</real>
 				<key>Name</key>
 				<string>Launch Notification Center</string>
 				<key>Triggers</key>
@@ -332,7 +332,7 @@
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>99</integer>
+						<integer>97</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -346,7 +346,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -395,7 +395,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -416,11 +416,11 @@
 									<key>Application</key>
 									<dict>
 										<key>BundleIdentifier</key>
-										<string>com.spotify.client</string>
+										<string>com.industriousone.PandoraMusicality</string>
 										<key>Name</key>
-										<string>Spotify</string>
+										<string>Muse</string>
 										<key>NewFile</key>
-										<string>/Applications/Spotify.app</string>
+										<string>/Applications/Muse.app</string>
 									</dict>
 									<key>ApplicationConditionType</key>
 									<string>Running</string>
@@ -442,11 +442,11 @@
 											<key>Application</key>
 											<dict>
 												<key>BundleIdentifier</key>
-												<string>com.apple.iTunes</string>
+												<string>com.spotify.client</string>
 												<key>Name</key>
-												<string>iTunes</string>
+												<string>Spotify</string>
 												<key>NewFile</key>
-												<string>/Applications/iTunes.app</string>
+												<string>/Applications/Spotify.app</string>
 											</dict>
 											<key>ApplicationConditionType</key>
 											<string>Running</string>
@@ -458,7 +458,58 @@
 									<string>All</string>
 								</dict>
 								<key>ElseActions</key>
-								<array/>
+								<array>
+									<dict>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>Application</key>
+													<dict>
+														<key>BundleIdentifier</key>
+														<string>com.apple.iTunes</string>
+														<key>Name</key>
+														<string>iTunes</string>
+														<key>NewFile</key>
+														<string>/Applications/iTunes.app</string>
+													</dict>
+													<key>ApplicationConditionType</key>
+													<string>Running</string>
+													<key>ConditionType</key>
+													<string>Application</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>ElseActions</key>
+										<array/>
+										<key>IsActive</key>
+										<true/>
+										<key>IsDisclosed</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>IfThenElse</string>
+										<key>ThenActions</key>
+										<array>
+											<dict>
+												<key>Argument</key>
+												<string></string>
+												<key>Command</key>
+												<string>NextTrack</string>
+												<key>IsActive</key>
+												<true/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>iTunesControl</string>
+											</dict>
+										</array>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+								</array>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -468,16 +519,27 @@
 								<key>ThenActions</key>
 								<array>
 									<dict>
-										<key>Argument</key>
-										<string></string>
-										<key>Command</key>
-										<string>NextTrack</string>
+										<key>DisplayKind</key>
+										<string>None</string>
 										<key>IsActive</key>
 										<true/>
 										<key>IsDisclosed</key>
-										<false/>
+										<true/>
 										<key>MacroActionType</key>
-										<string>iTunesControl</string>
+										<string>ExecuteAppleScript</string>
+										<key>Path</key>
+										<string></string>
+										<key>Text</key>
+										<string>tell application "Spotify" to next track
+</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
 									</dict>
 								</array>
 								<key>TimeOutAbortsMacro</key>
@@ -498,13 +560,13 @@
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
-								<false/>
+								<true/>
 								<key>MacroActionType</key>
 								<string>ExecuteAppleScript</string>
 								<key>Path</key>
 								<string></string>
 								<key>Text</key>
-								<string>tell application "Spotify" to next track
+								<string>tell application "Muse" to next
 </string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
@@ -523,7 +585,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>425368704.52263498</real>
+				<real>452554792.211429</real>
 				<key>Name</key>
 				<string>Next Track</string>
 				<key>Triggers</key>
@@ -546,7 +608,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -567,11 +629,11 @@
 									<key>Application</key>
 									<dict>
 										<key>BundleIdentifier</key>
-										<string>com.spotify.client</string>
+										<string>com.industriousone.PandoraMusicality</string>
 										<key>Name</key>
-										<string>Spotify</string>
+										<string>Muse</string>
 										<key>NewFile</key>
-										<string>/Applications/Spotify.app</string>
+										<string>/Applications/Muse.app</string>
 									</dict>
 									<key>ApplicationConditionType</key>
 									<string>Running</string>
@@ -593,11 +655,11 @@
 											<key>Application</key>
 											<dict>
 												<key>BundleIdentifier</key>
-												<string>com.apple.iTunes</string>
+												<string>com.spotify.client</string>
 												<key>Name</key>
-												<string>iTunes</string>
+												<string>Spotify</string>
 												<key>NewFile</key>
-												<string>/Applications/iTunes.app</string>
+												<string>/Applications/Spotify.app</string>
 											</dict>
 											<key>ApplicationConditionType</key>
 											<string>Running</string>
@@ -609,7 +671,58 @@
 									<string>All</string>
 								</dict>
 								<key>ElseActions</key>
-								<array/>
+								<array>
+									<dict>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>Application</key>
+													<dict>
+														<key>BundleIdentifier</key>
+														<string>com.apple.iTunes</string>
+														<key>Name</key>
+														<string>iTunes</string>
+														<key>NewFile</key>
+														<string>/Applications/iTunes.app</string>
+													</dict>
+													<key>ApplicationConditionType</key>
+													<string>Running</string>
+													<key>ConditionType</key>
+													<string>Application</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>ElseActions</key>
+										<array/>
+										<key>IsActive</key>
+										<true/>
+										<key>IsDisclosed</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>IfThenElse</string>
+										<key>ThenActions</key>
+										<array>
+											<dict>
+												<key>Argument</key>
+												<string></string>
+												<key>Command</key>
+												<string>PlayPause</string>
+												<key>IsActive</key>
+												<true/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>iTunesControl</string>
+											</dict>
+										</array>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+								</array>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -619,16 +732,26 @@
 								<key>ThenActions</key>
 								<array>
 									<dict>
-										<key>Argument</key>
-										<string></string>
-										<key>Command</key>
-										<string>PlayPause</string>
+										<key>DisplayKind</key>
+										<string>None</string>
 										<key>IsActive</key>
 										<true/>
 										<key>IsDisclosed</key>
-										<false/>
+										<true/>
 										<key>MacroActionType</key>
-										<string>iTunesControl</string>
+										<string>ExecuteAppleScript</string>
+										<key>Path</key>
+										<string></string>
+										<key>Text</key>
+										<string>tell application "Spotify" to playpause</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
 									</dict>
 								</array>
 								<key>TimeOutAbortsMacro</key>
@@ -655,7 +778,7 @@
 								<key>Path</key>
 								<string></string>
 								<key>Text</key>
-								<string>tell application "Spotify" to playpause</string>
+								<string>tell application "Muse" to playpause</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 								<key>TrimResults</key>
@@ -673,7 +796,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>425518838.85161197</real>
+				<real>452554720.54858702</real>
 				<key>Name</key>
 				<string>Play or Pause</string>
 				<key>Triggers</key>
@@ -696,7 +819,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
@@ -846,7 +969,7 @@
 		<key>Name</key>
 		<string>Hough</string>
 		<key>UID</key>
-		<string>309654FA-B38B-4897-B105-25AC116D9E21</string>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
 	</dict>
 </array>
 </plist>
