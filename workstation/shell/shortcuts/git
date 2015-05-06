@@ -81,6 +81,13 @@ function gdb() {
   git status;
 }
 
+function gdbf() {
+  git branch -D "$*";
+  git push --delete origin "$*";
+  git remote prune origin
+  git status;
+}
+
 function gpsvn() {
   find . -name .svn  -type d -print0 |xargs -0 rm -rf
 }
