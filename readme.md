@@ -79,27 +79,31 @@ The background image I created can be found [here](https://github.com/chrishough
 4. brew install autojump
 5. brew install the_silver_searcher
 6. brew install postgres
-7. install postgresapp from postgresapp.com
-8. copy ~/.gitconfig and ~/.ssh to new computer
-9. verify git works by cloning git .myconfigurations
-10. download and install iterm2, set auto check for updates
-11. install .oh-my-zsh
-12. brew install zsh
-13. ```chsh -s /bin/zsh``` to set zsh as the default shell
-14. in iterm2 change the default background to my terminal-background.jpg
-15. download and install the inconsolata font
-16. download and install atom
-17. install atom plugins
-18. setup atom theme, keymap.cson, and config.cson files
-19. backup current settings file by running ruby settings/backup.rb
-20. brew install rbenv ruby-build
-21. make sure each dotfile exists, if it does not create it
-22. symlink the current dotfiles to the git versions via ruby settings/symlinks.rb
-23. setup my shell theme
-24. install rbenv plugins
-25. make sure to setup rbenv vars
-26. run brew doctor to make sure there are no errors
-27. install rbenv versions
-28. install [java](http://support.apple.com/kb/DL1572)
+7. brew install nvm
+8. brew install direnv
+9. install postgresapp from postgresapp.com
+10. copy ~/.gitconfig and ~/.ssh to new computer
+11. verify git works by cloning git .myconfigurations
+12. download and install iterm2, set auto check for updates
+13. install .oh-my-zsh
+14. brew install zsh
+15. ```chsh -s /bin/zsh``` to set zsh as the default shell
+16. in iterm2 change the default background to my terminal-background.jpg
+17. download and install the inconsolata font
+18. download and install atom
+19. install atom plugins
+20. setup atom theme, keymap.cson, and config.cson files
+21. backup current settings file by running ruby settings/backup.rb
+22. brew install rbenv ruby-build
+23. make sure each dotfile exists, if it does not create it
+24. symlink the current dotfiles to the git versions via ruby settings/symlinks.rb
+25. setup my shell theme
+26. install rbenv plugins
+27. make sure to setup rbenv vars
+28. run brew doctor to make sure there are no errors
+29. install rbenv versions
+30. install [java](http://support.apple.com/kb/DL1572)
+31. cd into scripts and run ruby backup.rb
+32. cd into scripts and run ruby symlinks.rb
 
 ...*Time to drink beer!*

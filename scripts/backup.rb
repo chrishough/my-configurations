@@ -1,5 +1,5 @@
 require 'fileutils'
-require_relative 'settings'
+require_relative '_settings'
 
 def backup_dot_file(filename)
   begin
