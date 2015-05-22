@@ -150,6 +150,7 @@ githelp () {
   echo "  gcm          = git commit, push, and status"
   echo "  gmdb         = git merge and delete branch everywhere"
   echo "  gp           = git pull"
+  echo "  gps          = git push"
   echo "  gd           = git diff"
   echo "  grpo         = git prune remote and locals"
   echo "  grso         = git remote show origin"
