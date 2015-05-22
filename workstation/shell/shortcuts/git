@@ -1,6 +1,5 @@
 #!/bin/zsh
 # ---------------------------------------------------------------
-alias gp="git pull"
 alias gd="git diff"
 alias gs="git status"
 alias gt="git tag"
@@ -22,9 +21,19 @@ function grpo() {
   git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d;
 }
 
+function gp() {
+  git pull;
+  git status;
+}
+
 function gc() {
   git add . -A;
   git commit -m "$*";
+  git push;
+  git status;
+}
+
+function gps() {
   git push;
   git status;
 }
