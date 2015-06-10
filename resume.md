@@ -13,7 +13,7 @@ I value integrity, hard work, and intrinsic motivation. I do not believe in wast
 When I am not head down focusing on the daily grind, you will find me bodybuilding at my local gym, and late night enjoying a microbrew. I believe the food we consume and the exercise we push ourselves through directly relates to how successful we become. I have shared experiences in Chicago, Boulder, Manhattan, and now my family and I live in Portland, Oregon. Outside of the computer, I am a huge fan of tattoo artwork and I have been building a collection for the last five years. I enjoy the outdoors, especially mountain biking, and I hope to get back into the sport of triathlon.
 
 ***
-###![computer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/computer.png) Qualifications
+###![computer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/computer.png) Qualifications
 
 | Qualification | Experience [Years+] |
 | :---: | --- |
@@ -25,46 +25,46 @@ When I am not head down focusing on the daily grind, you will find me bodybuildi
 | **Tools** |  I have been working with code and managing teams for quite awhile now, and there are not many tools I have not experienced.  My current stack can be found here [https://github.com/chrishough/myconfigurations](https://github.com/chrishough/myconfigurations) but I love to work with OSX, Alfred, Dash, Atom, Iterm2, zsh, Divvy, Pathfinder, Keyboard Maestro, Adobe Creative Cloud, Arq, and 1Password. |
 
 ***
-###![briefcase](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/briefcase.png) Enterprise Experience
+###![briefcase](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/briefcase.png) Enterprise Experience
 
-![Placewise Media](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/employers/placewise.png)  
+![Placewise Media](https://github.com/chrishough/myconfigurations/raw/master/graphics/employers/placewise.png)  
 **[Placewise Media](http://www.placewise.com)**  
 **Director of Application Engineering**  
 April 1st, 2014 – Present  
 Denver, Colorado  
-![ruby](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/ruby.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![aws](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/aws.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![heroku](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/heroku.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![git](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/git.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![atom](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/atom.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![postgres](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/postgres.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![solr](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/solr.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![sqlserver](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/sqlserver.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![apple](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/apple.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![middleman](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/middleman.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![emberjs](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/emberjs.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![jquery](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/jquery.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![bootstrap](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/bootstrap.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![zurbfoundation](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/zurbfoundation.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![sentry](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/sentry.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![newrelic](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/newrelic.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![codeclimate](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/codeclimate.png)
+![ruby](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/ruby.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![aws](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/aws.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![heroku](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/heroku.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![git](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/git.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![atom](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/atom.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![postgres](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/postgres.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![solr](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/solr.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![sqlserver](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/sqlserver.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![apple](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/apple.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![middleman](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/middleman.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![emberjs](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/emberjs.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![jquery](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/jquery.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![bootstrap](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/bootstrap.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![zurbfoundation](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/zurbfoundation.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![sentry](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/sentry.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![newrelic](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/newrelic.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![codeclimate](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/codeclimate.png)
 
 * Remotely performance manage the application engineering team, which focus includes enterprise APIs written in ruby on rails, the RetailHub client dashboard like data management application, and overall legacy systems migration planning.
 
@@ -78,31 +78,31 @@ Denver, Colorado
 
 **Web Applications Engineer**  
 August 31, 2009 – April 1st, 2014  
-![ruby](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/ruby.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![aws](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/aws.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![heroku](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/heroku.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![git](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/git.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![atom](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/atom.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![postgres](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/postgres.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![solr](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/solr.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![sqlserver](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/sqlserver.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![apple](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/apple.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![coldfusion](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/coldfusion.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![coldbox](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/coldbox.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![jquery](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/jquery.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![subversion](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/svn.png)
+![ruby](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/ruby.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![aws](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/aws.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![heroku](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/heroku.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![git](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/git.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![atom](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/atom.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![postgres](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/postgres.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![solr](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/solr.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![sqlserver](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/sqlserver.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![apple](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/apple.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![coldfusion](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/coldfusion.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![coldbox](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/coldbox.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![jquery](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/jquery.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![subversion](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/svn.png)
 
 * Through the help and management of an external ruby senior consultant we were able to redevelop a set of key APIs previously haphazardly written in a hacked combination of coldfusion and python django frameworks. This project originally covered six new services written in ruby on rails and migrated the entire setup from leased hardware to the cloud.
 
@@ -110,41 +110,41 @@ August 31, 2009 – April 1st, 2014
 
 * Re-architected the Retailhub content management application using the coldbox coldfusion mvc framework.  This software has multiple access tiers utilized by both internal and external clients to crud content, manage events and deals, and essentially act as the controller silo for each of our data points.  This includes multiple dashboards and complex user workflows that drive sales content throughout the enterprise.  This product is a key component of our customers’ successes.  
 
-![Skidmore Owings & Merrill LLP](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/employers/som.jpg)  
+![Skidmore Owings & Merrill LLP](https://github.com/chrishough/myconfigurations/raw/master/graphics/employers/som.jpg)  
 **[Skidmore Owings & Merrill LLP](http://www.som.co)**  
 **Applications Developer**  
 January 7, 2008 – March 12th, 2009  
 Chicago, Illinois  
-![sqlserver](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/sqlserver.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![coldfusion](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/coldfusion.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![fusebox](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/fusebox.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![subversion](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/svn.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![jquery](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/jquery.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![apple](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/apple.png)
+![sqlserver](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/sqlserver.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![coldfusion](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/coldfusion.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![fusebox](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/fusebox.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![subversion](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/svn.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![jquery](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/jquery.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![apple](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/apple.png)
 
 * Back-end developer supporting in house architectural project management systems written in a combination of coldfusion, javascript and sql server databases.  This included additions to the SOM public facing website as well as the complexities of architecting multi-lingual China based .cn platforms.  
 
 * Utilized the oss coldfusion cfmbb forums to architect the “som forums” which was used as a question and answer multi-tiered application supporting project managers across the enterprise.
 
-![AT&T](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/employers/att.png)  
+![AT&T](https://github.com/chrishough/myconfigurations/raw/master/graphics/employers/att.png)  
 **[AT&T](http://www.att.com)**  
 **Team Leader – Web Technology**  
 August 2001 – September 30, 2007  
 Chicago, Illinois  
-![sqlserver](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/sqlserver.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![coldfusion](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/coldfusion.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![fusebox](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/fusebox.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![subversion](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/svn.png)
-![spacer](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/spacer.png)
-![msft](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/msft.png)
+![sqlserver](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/sqlserver.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![coldfusion](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/coldfusion.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![fusebox](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/fusebox.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![subversion](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/svn.png)
+![spacer](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/spacer.png)
+![msft](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/msft.png)
 
 * Provided project leadership to five coldfusion developers across the following topics: ui ux, cost estimates, client timetables, ranking priorities, status reporting, client and project team coordination, training, and participating in annual performance reviews.
 
@@ -164,7 +164,7 @@ Chicago, Illinois
 * Accomplishment Certificate for the Network Dispatch Center’s Handbook project completed in 2003.
 
 ***
-###![school](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/school.png) Education
+###![school](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/school.png) Education
 
 [NYU School of Continuing and Professional Studies](http://www.scps.nyu.edu/)  
 **Ruby on Rails Programming Course**  
@@ -191,7 +191,7 @@ Mundelein, Illinois
 Graduated 1997
 
 ***
-###![coffee](https://raw.githubusercontent.com/chrishough/myblog/master/source/assets/images/logos/coffee.png) Community
+###![coffee](https://github.com/chrishough/myconfigurations/raw/master/graphics/logos/coffee.png) Community
 
 I regularly attend the [pdx ruby](http://pdxruby.org/) and [emberjs](http://www.meetup.com/Ember-PDX/) meetups and I am a huge fan of conferences. You can also find me on IRC in the #pdxtech channel and on twitter as  [@chrishough](http://www.twitter.com/chrishough/).  In my past, I've been a regular at the [NYTECH](http://www.meetup.com/ny-tech/) meetup, [BDNT](http://www.bdnewtech.com/) Boulder, and [Ignite](http://igniteboulder.com/) Boulder.  
 
