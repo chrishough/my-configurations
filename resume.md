@@ -1,4 +1,5 @@
 #Christopher Hough
+[Contact Me](mailto:chris@noconformity.com?subject=Career Inquiry)
 
 I value integrity, hard work, and intrinsic motivation. I do not believe in wasting time on anything that I set out to do. This intensity is directly reflected in each of the projects I have been a part of. While I have managed both local and remote organizations, I get my hands dirty coding, tinkering with design, and constructing application work flows. I believe an organization’s success is derived from the collaborative successes of all of its parts working together to achieve a common goal.
 
