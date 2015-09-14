@@ -23,6 +23,7 @@ function grpo() {
 
 function gp() {
   git pull;
+  git pull --tags;
   git status;
 }
 
