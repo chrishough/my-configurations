@@ -10,14 +10,14 @@ This workflow setups my favorite application shortcuts.
 |shift + cmd + p|one password|
 |shift + cmd + c|google canary|
 
-![my-application-shortcuts](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/my-application-shortcuts.png)
+![my-application-shortcuts](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/application-shortcuts.png)
 
 ***
 
 ###Start iOS Emulator
 
 This script will run a bash script to open the ios xcode emulator without running xcode.  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/noconformity/start-ios-emulator.alfredworkflow) 
+[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/noconformity/start-ios-emulator.alfredworkflow)
 
 ```
 Keywords: ios
