@@ -1,8 +1,9 @@
 ### My Configurations
 ----
-| Chris Hough | Contact |
-| :---: | :---: |
-| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/develop/graphics/avatar/myphoto-180x180.png)| testing</br>testing |
+| Chris Hough | Contact Me |
+| :---: | :--- |
+| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/develop/graphics/avatar/myphoto-180x180.png)| [Email](mailto:chris@noconformity.com?subject=I read your git resume!)<br/>[Blog](http://noconformity.com/)<br/>[LinkedIn](https://www.linkedin.com/in/chrishough)<br/>[Twitter](https://twitter.com/chrishough)<br/>[Instagram](https://instagram.com/chrishough)<br/>[Facebook](https://www.facebook.com/noconformitynoregrets)<br/>[Sound Cloud](https://soundcloud.com/chrishough/)<br/>[YouTube](https://www.youtube.com/user/excitabledude/) |
+
 
 
 
