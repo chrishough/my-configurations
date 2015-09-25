@@ -2,15 +2,9 @@
 ----
 | Chris Hough | Contact Me |
 | :---: | :--- |
-| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/develop/graphics/avatar/myphoto-180x180.png)| [Email](mailto:chris@noconformity.com?subject=myconfigurations repo)<br/>[Blog](http://noconformity.com/)<br/>[LinkedIn](https://www.linkedin.com/in/chrishough)<br/>[Twitter](https://twitter.com/chrishough)<br/>[Instagram](https://instagram.com/chrishough)<br/>[Facebook](https://www.facebook.com/noconformitynoregrets)<br/>[Sound Cloud](https://soundcloud.com/chrishough/)<br/>[YouTube](https://www.youtube.com/user/excitabledude/) |
+| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/develop/graphics/avatar/myphoto-180x180.png)| [Email](mailto:chris@noconformity.com?subject=myconfigurations repo)<br/>[Blog](http://noconformity.com/)<br/>[LinkedIn](https://www.linkedin.com/in/chrishough)<br/>[Twitter](https://twitter.com/chrishough)<br/>[Instagram](https://instagram.com/chrishough)<br/>[Facebook](https://www.facebook.com/noconformitynoregrets)<br/>[Soundcloud](https://soundcloud.com/chrishough/)<br/>[YouTube](https://www.youtube.com/user/excitabledude/) |
 
-
-
-
-> “Everything that you’re going through is preparing you for what you asked for.”
-
-
-
+> “Everything that you’re going through is preparing you for what you asked for.” - Unknown
 
 I have found every developer's workstation configuration to be highly variable and tailored to their exact desires.  Whatever makes the person tick right?  I tend to spend a chunk of time each month tuning my box for maximum efficiency, and just like the quantified self movement this is my guide tracking the updates.  In a nutshell this is how I [grok, trunk, and live](href="http://www.youtube.com/watch?v=Qi_AAqi0RZM) each and every day. I believe in being part cyborg actually and rarely unplug, however, that is a totally different story.
 
