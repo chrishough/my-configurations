@@ -1,16 +1,12 @@
 ### My Configurations
 ----
-| Chris Hough | Contact Me |
-| :---: | :--- |
-| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/develop/graphics/avatar/myphoto-180x180.png)| [Email](mailto:chris@noconformity.com?subject=myconfigurations repo)<br/>[Blog](http://noconformity.com/)<br/>[LinkedIn](https://www.linkedin.com/in/chrishough)<br/>[Twitter](https://twitter.com/chrishough)<br/>[Instagram](https://instagram.com/chrishough)<br/>[Facebook](https://www.facebook.com/noconformitynoregrets)<br/>[Soundcloud](https://soundcloud.com/chrishough/)<br/>[YouTube](https://www.youtube.com/user/excitabledude/) |
-
-> “Everything that you’re going through is preparing you for what you asked for.” - Unknown
+| Chris Hough | Contact | Breathe |
+| :---: | :--- | :--- |
+| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/master/graphics/avatar/myphoto-320x320.png)| [Email](mailto:chris@noconformity.com?subject=About your resume?)<br/>[Blog](http://noconformity.com/)<br/>[LinkedIn](https://www.linkedin.com/in/chrishough)<br/>[Twitter](https://twitter.com/chrishough)<br/>[Instagram](https://instagram.com/chrishough)<br/>[Facebook](https://www.facebook.com/noconformitynoregrets)<br/>[Soundcloud](https://soundcloud.com/chrishough/)<br/>[YouTube](https://www.youtube.com/user/excitabledude/) | *"Evolution doesn’t linger on past failures, it’s always building upon what worked. So should you.”*<br/>― Jason Fried, REWORK<br/><br/>*“I have not failed. I've just found 10,000 ways that won't work.”*<br/>― Thomas A. Edison<br/><br/>*“First they ignore you, then they laugh at you, then they fight you, then you win.”*<br/>― Mahatma Gandhi
 
 I have found every developer's workstation configuration to be highly variable and tailored to their exact desires.  Whatever makes the person tick right?  I tend to spend a chunk of time each month tuning my box for maximum efficiency, and just like the quantified self movement this is my guide tracking the updates.  In a nutshell this is how I [grok, trunk, and live](href="http://www.youtube.com/watch?v=Qi_AAqi0RZM) each and every day. I believe in being part cyborg actually and rarely unplug, however, that is a totally different story.
 
 ![open-source-projects.jpeg](https://github.com/chrishough/myconfigurations/raw/master/graphics/open-source-projects.jpeg)
-
-If you want to keep up with my rants hit me up on twitter [@chrishough](http://twitter.com/chrishough), and check out my blog [noconformity](http://noconformity.com).
 
 ### Assumptions
 ----
@@ -19,7 +15,7 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [Homebrew](http://brew.sh/) has been successfully installed.
 * Running ```brew doctor``` does not report any configuration issues.
 * [Google Chrome](http://www.google.com/chrome) is your primary development browser.
-* [rbenv](https://github.com/sstephenson/rbenv) is how you are running ruby locally, pre-installed.
+* [rbenv](https://github.com/sstephenson/rbenv) is how you're running ruby locally, pre-installed.
 * [ruby-build](https://github.com/sstephenson/ruby-build) installed via brew.
 
 ### Software
@@ -33,7 +29,6 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) ```brew install the_silver_searcher``` replaces ack and is by far the fastest search utility I have used.
 * [Evernote](http://evernote.com/) for notes and local documentation.
 * [Mou](http://mouapp.com/) for editing markdown files.
-* [Colloquy](http://colloquy.info/) for IRC.
 * [Paw](https://luckymarmot.com/paw) for API testing and construction.
 * [Pathfinder](http://cocoatech.com/pathfinder/) for a finder on steroids.
 * [Arq + S3](http://www.haystacksoftware.com/arq/) for encrypted cloud backup.
@@ -44,7 +39,6 @@ If you want to keep up with my rants hit me up on twitter [@chrishough](http://t
 * [Alfred](http://www.alfredapp.com/) workflows! Here are a helpful list of the [workflows I use](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/community.md) and list of [workflows I built](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/noconformity.md).
 * [Keyboard Maestro](http://www.keyboardmaestro.com/main/) macros. [Find my setup here](https://github.com/chrishough/myconfigurations/tree/master/software/maestro/noconformity.md).
 * [iStat Menus](http://bjango.com/mac/istatmenus/) for system performance monitoring.
-
 
 ### rbenv plugins
 ----
