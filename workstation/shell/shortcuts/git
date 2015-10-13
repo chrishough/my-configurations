@@ -171,7 +171,7 @@ githelp () {
   echo "  gtl          = git tag -l"
   echo "  gpot         = git push origin --tags"
   echo "  gpt          = git push --tags"
-  echo "  gdt          = git deploy tags"
+  echo "  gdt          = git delete tag"
   echo "  gl           = git log --show-notes"
   echo "  glt          = git log --graph --oneline --all"
   echo "  gltp         = git log --graph --all --decorate"
