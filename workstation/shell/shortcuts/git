@@ -16,7 +16,7 @@ alias gfi="git flow init"
 alias gf="git flow"
 alias gfh="git flow help"
 
-function grpo()
+function grpo() {
   git pull;
   git remote prune origin;
   git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d;
@@ -30,7 +30,8 @@ function gp() {
 
 function gct() {
   git tag "$*";
-  git push --tags;
+  git push origin --tags;
+  git tag -l;
   git status;
 }
 
@@ -175,6 +176,7 @@ githelp () {
   echo "  gs           = git status"
   echo "  gt           = git tag"
   echo "  gtl          = git tag -l"
+  echo "  gct          = git set the tag and push it"
   echo "  gpot         = git push origin --tags"
   echo "  gpt          = git push --tags"
   echo "  gdt          = git delete tag"
