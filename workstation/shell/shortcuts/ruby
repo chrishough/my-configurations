@@ -3,11 +3,9 @@
 export PATH=".bundle/binstubs:$PATH"
 
 # Ruby Environment Commands
+alias be="bundle exec"
 alias rb="rbenv"
 alias rbl="rbenv install -l"
-alias be="bundle exec"
-alias rake="noglob bundle exec rake"
-function rbuild() { bundle install --path=.bundle --binstubs=.bundle/binstubs }
 
 # Rails Commands
 alias r='rails'
@@ -22,12 +20,19 @@ alias gemo='gem outdated'
 
 # rake
 alias rr='bundle exec rake routes'
+alias rake="noglob bundle exec rake"
 alias rdbm='bundle exec rake db:migrate'
 alias rdbr='bundle exec rake db:rollback'
+
+function rbuild() {
+  bundle install --path=.bundle --binstubs=.bundle/binstubs
+}
 
 # Rails Generators
 function rgc() { rails g controller "$*"; }
 function rgm() { rails g model "$*"; }
+function rna() { rails new . --skip-bundle -T --database=postgresql }
+function rnamd() { rails new . -O --skip-bundle -T }
 
 # Rails Helpers
 function rtail() {
@@ -59,5 +64,7 @@ rubyhelp () {
   echo "  rgm         = rails g model"
   echo "  rtail       = tails rails log"
   echo "  rbuild      = rbenv bundle install"
+  echo "  rna         = setup new rails application with postgres db"
+  echo "  rnamd       = setup new rails application without a db"
   echo
 }
