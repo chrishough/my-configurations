@@ -6,6 +6,7 @@ export PATH=".bundle/binstubs:$PATH"
 alias be="bundle exec"
 alias rb="rbenv"
 alias rbl="rbenv install -l"
+alias rbi="bundle install"
 
 # Rails Commands
 alias r='rails'
@@ -50,6 +51,7 @@ rubyhelp () {
   echo "  r           = rails"
   echo "  rb          = rbenv"
   echo "  rbl         = rbenv install -l"
+  echo "  rbi         = bundle install"
   echo "  be          = bundle exec"
   echo "  rake        = noglob bundle exec rake"
   echo "  rg          = rails generate"
@@ -63,7 +65,7 @@ rubyhelp () {
   echo "  rgc         = rails g controller"
   echo "  rgm         = rails g model"
   echo "  rtail       = tails rails log"
-  echo "  rbuild      = rbenv bundle install"
+  echo "  rbuild      = rbenv bundle install with binstubs"
   echo "  rna         = setup new rails application with postgres db"
   echo "  rnamd       = setup new rails application without a db"
   echo
