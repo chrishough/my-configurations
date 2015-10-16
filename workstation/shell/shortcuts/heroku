@@ -22,19 +22,3 @@ function gitph() {
  git push heroku master;
  git status;
 }
-
-# ---------------------------------------------------------------
-
-herokuhelp () {
-  echo
-  echo "  h           = heroku"
-  echo "  hlog        = heroku logs"
-  echo "  hps         = heroku psql connection"
-  echo "  hrr         = heroku run rake task"
-  echo "  hrc         = heroku run rails console"
-  echo "  hc          = heroku config"
-  echo "  ha          = heroku applications"
-  echo "  gitch       = check in code and push to heroku"
-  echo "  gitph       = push master to heroku"
-  echo
-}

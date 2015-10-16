@@ -1,4 +1,7 @@
 #!/bin/zsh
 # ---------------------------------------------------------------
-alias mc="mailcatcher -f -v"
-alias atom="atom ."
+apphelp () {
+  echo
+  echo "  mc           = mailcatcher -f -v"
+  echo
+}

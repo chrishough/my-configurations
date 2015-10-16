@@ -43,30 +43,3 @@ function rtail() {
     tail -f log/development.log;
   fi
 }
-
-# ---------------------------------------------------------------
-
-rubyhelp () {
-  echo
-  echo "  r           = rails"
-  echo "  rb          = rbenv"
-  echo "  rbl         = rbenv install -l"
-  echo "  rbi         = bundle install"
-  echo "  be          = bundle exec"
-  echo "  rake        = noglob bundle exec rake"
-  echo "  rg          = rails generate"
-  echo "  rs          = rails server"
-  echo "  rc          = rails console"
-  echo "  rt          = rspec tests"
-  echo "  rd          = rails db console"
-  echo "  rr          = bundle exec rake routes"
-  echo "  rdbm        = bundle exec rake db:migrate"
-  echo "  rdbr        = bundle exec rake db:rollback"
-  echo "  rgc         = rails g controller"
-  echo "  rgm         = rails g model"
-  echo "  rtail       = tails rails log"
-  echo "  rbuild      = rbenv bundle install with binstubs"
-  echo "  rna         = setup new rails application with postgres db"
-  echo "  rnamd       = setup new rails application without a db"
-  echo
-}

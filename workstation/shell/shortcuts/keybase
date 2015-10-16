@@ -11,13 +11,3 @@ function kbi() {
 function kbv() {
  keybase version
 }
-
-# ---------------------------------------------------------------
-
-keybasehelp () {
-  echo
-  echo "  kb           = keybase"
-  echo "  kbi          = keybase installer"
-  echo "  kbv          = keybase version"
-  echo
-}
