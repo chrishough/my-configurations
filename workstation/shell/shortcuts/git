@@ -5,7 +5,7 @@ alias gs="git status"
 alias gt="git tag"
 alias gtl="git tag -l"
 alias grso="git remote show origin"
-alias gcl="git config --list"
+alias gcf="git config --list"
 alias gclone="sh $HOME/.myconfigurations/software/git/shell-scripts/clone.sh"
 alias gpot="git push origin --tags"
 alias gpt="git push --tags"
@@ -42,7 +42,13 @@ function gc() {
   git status;
 }
 
-function gps() {
+function gcl() {
+  git add . -A;
+  git commit -m "$*";
+  git status;
+}
+
+function gpo() {
   git push;
   git status;
 }
@@ -156,14 +162,15 @@ githelp () {
   echo "  gfh          = git flow help"
   echo "  gf           = git flow"
   echo "---------------------------------------------------------------"
-  echo "  gcm          = git commit, push, and status"
+  echo "  gc           = git commit, push to repo, and status"
+  echo "  gcl          = git commit local, and status"
   echo "  gmdb         = git merge and delete branch everywhere"
   echo "  gp           = git pull"
-  echo "  gps          = git push"
+  echo "  gpo          = git push to repo"
   echo "  gd           = git diff"
   echo "  grpo         = git prune remote and locals"
   echo "  grso         = git remote show origin"
-  echo "  gcl          = git config --list"
+  echo "  gcf          = git config --list"
   echo "  gm           = git pull, merge branch, push, status"
   echo "  gmt          = git merge theirs, push, status"
   echo "  gcb          = git pull, create branch, push branch to git"
