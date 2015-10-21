@@ -3,6 +3,9 @@
 # Aliases
 function gs() { git status }
 function gcbn() { git rev-parse --abbrev-ref HEAD }
+function gl(){ git log --show-notes }
+function glt(){ git log --graph --oneline --all }
+function gltp(){ git log --graph --all --decorate }
 
 # Functions
 function gcb() {
@@ -13,6 +16,20 @@ function gcb() {
   git push --set-upstream origin "$1";
   msg "Pending changes?";
   gs;
+}
+function gmt() {
+  git pull;
+  msg "Merging branch: $1 with a full overwrite of the current branch: ${$(gcbn)}"
+  git merge "$1" -X theirs;
+  git push;
+  git status;
+}
+function gmb() {
+  git pull;
+  msg "Merging branch: $1"
+  git merge "$1" --no-ff;
+  git push;
+  git status;
 }
 function gc() {
   git add . -A;
@@ -45,15 +62,35 @@ function gct() {
   git tag -l;
   gs;
 }
+function gdt() {
+  msg "Deleting tag: $1"
+  git tag -d "$1";
+  git push origin :refs/tags/"$1";
+}
 function gck() {
   msg "Checking out branch: $1"
   git checkout "$1";
   git pull;
   gs;
 }
-
-
-
+function gdb() {
+  msg "Deleting branch: $1"
+  git branch -D "$1";
+  git push --delete origin "$1";
+  git remote prune origin
+  gs;
+}
+function gk() {
+  touch .keep
+}
+function gkf() {
+  mkdir "$1";
+  touch "$1/.keep";
+}
+function gcmd() {
+  touch readme.md;
+  open readme.md;
+}
 
 
 
@@ -66,106 +103,3 @@ alias gt="git tag"
 alias gtl="git tag -l"
 alias grso="git remote show origin"
 alias gcf="git config --list"
-alias gclone="sh $HOME/.myconfigurations/software/git/shell-scripts/clone.sh"
-alias gpot="git push origin --tags"
-alias gpt="git push --tags"
-alias gl="git log --show-notes"
-alias glt="git log --graph --oneline --all"
-alias gltp="git log --graph --all --decorate"
-alias gfi="git flow init"
-alias gf="git flow"
-alias gfh="git flow help"
-
-
-# function gcl() {
-#   git add . -A;
-#   git commit -m "$*";
-#   git status;
-# }
-
-
-
-function gm() {
-  git pull;
-  git merge "$*" --no-ff;
-  git push;
-  git status;
-}
-
-function gmdb() {
-  git pull
-  git merge "$*" --no-ff;
-  git push;
-  git push --delete origin "$*";
-  git remote prune origin
-  git branch -D "$*";
-  git status;
-}
-
-function gdbf() {
-  git pull
-  git push --delete origin "$*";
-  git remote prune origin
-  git branch -D "$*";
-  git status;
-}
-
-function gmt() {
-  git pull;
-  git merge "$*" -X theirs;
-  git push;
-  git status;
-}
-
-function gdb() {
-  git branch -D "$*";
-  git remote prune origin
-  git status;
-}
-
-function gdbf() {
-  git branch -D "$*";
-  git push --delete origin "$*";
-  git remote prune origin
-  git status;
-}
-
-function gpsvn() {
-  find . -name .svn  -type d -print0 |xargs -0 rm -rf
-}
-
-function gk() {touch .keep}
-
-function gkf() {
-  mkdir "$*";
-  touch "$*/.keep";
-}
-
-function gcmd() {
-  touch readme.md;
-  open readme.md;
-}
-
-function gdt() {
-  git tag -d "$*";
-  git push origin :refs/tags/"$*";
-}
-
-function gfcb() {
-  param1=$1:l
-  param2=$2:l
-  echo "git subcommand:" $param1
-  echo "branch name:" $param2
-  spacer
-  git flow $param1 start $param2
-  git flow $param1 publish $param2
-}
-
-function gfmb() {
-  param1=$1:l
-  param2=$2:l
-  echo "git subcommand:" $param1
-  echo "branch name:" $param2
-  spacer
-  git flow $param1 finish $param2
-}

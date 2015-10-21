@@ -5,14 +5,24 @@ githelp () {
   echo "  gc           = commit locally, but do not push to origin"
   echo "  gs           = status of local files"
   echo "  gcb          = pull, create local branch, push it to origin, set upstream"
+  echo "  gmb          = pull, merge branch, push, status"
+  echo "  gmt          = pull, merge branch with full rewrite, push, status"
+  echo "  gdb          = delete local and remote branch"
   echo "  gp           = pull down all the code and all the tags"
   echo "  gpo          = pushing all the things to origin"
   echo "  gck          = checkout, pull, status"
   echo "  gct          = set the tag and push it"
+  echo "  gdt          = delete tag and push delete"
   echo "  grpo         = purge dead branches locally and origin"
   echo "  gcbn         = current branch name"
+  echo "  gk           = create git .keep file"
+  echo "  gkf          = create folder with .keep file"
+  echo "  gcmd         = create readme markdown file and open it"
   echo "--------------------------------------------------------------------------------"
-
+  echo "  gpt          = git push --tags"
+  echo "  gl           = git log --show-notes"
+  echo "  glt          = git log --graph --oneline --all"
+  echo "  gltp         = git log --graph --all --decorate"
 
 
 
@@ -29,23 +39,13 @@ githelp () {
   echo "  gd           = git diff"
   echo "  grso         = git remote show origin"
   echo "  gcf          = git config --list"
-  echo "  gm           = git pull, merge branch, push, status"
-  echo "  gmt          = git merge theirs, push, status"
-  echo "  gdbf         = git delete local and remote branch"
-  echo "  gdb          = git delete local branch"
   echo "  gfc          = git fix last commit message"
   echo "  gpsvn        = find and delete .svn files"
-  echo "  gclone       = run hough custom clone script"
+
   echo "  gt           = git tag"
   echo "  gtl          = git tag -l"
   echo "  gpot         = git push origin --tags"
-  echo "  gpt          = git push --tags"
-  echo "  gdt          = git delete tag"
-  echo "  gl           = git log --show-notes"
-  echo "  glt          = git log --graph --oneline --all"
-  echo "  gltp         = git log --graph --all --decorate"
-  echo "  gk           = create git .keep file"
-  echo "  gkf          = create folder with .keep file"
-  echo "  gmd          = create readme markdown file"
+
+
   echo
 }
