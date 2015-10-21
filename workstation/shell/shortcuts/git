@@ -15,9 +15,9 @@ function gcb() {
   gs;
 }
 function gc() {
-  # git add . -A;
+  git add . -A;
   msg "Committing to branch: ${$(gcbn)}";
-  # git commit -m "$1";
+  git commit -m "$1";
   gs;
 }
 function gp() {
