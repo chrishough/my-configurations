@@ -1,5 +1,5 @@
 #!/bin/zsh
-# ---------------------------------------------------------------
+source $HOME/.myconfigurations/workstation/shell/global-helpers
 
 source $HOME/.myconfigurations/workstation/shell/shortcuts/shell
 source $HOME/.myconfigurations/workstation/shell/shortcuts/ruby

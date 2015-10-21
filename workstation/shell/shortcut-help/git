@@ -1,14 +1,29 @@
 #!/bin/zsh
-# ---------------------------------------------------------------
 githelp () {
   echo
+  echo "--------------------------------------------------------------------------------"
+  echo "  gc           = commit locally, but do not push to origin"
+  echo "  gcb          = pull, create local branch, push it to origin, set upstream"
+
+
+
+
+  echo "  gcbn         = current branch name"
+  echo "--------------------------------------------------------------------------------"
+
+
+
+
+
+
+
   echo "  gfmb         = git flow subcommand finish branch :: param 1= subcommand param 2=branch"
   echo "  gfcb         = git flow subcommand start branch :: param 1= subcommand param 2=branch"
   echo "  gfi          = setup code repo using gitflow"
   echo "  gfh          = git flow help"
   echo "  gf           = git flow"
   echo "---------------------------------------------------------------"
-  echo "  gc           = git commit, push to repo, and status"
+
   echo "  gcl          = git commit local, and status"
   echo "  gmdb         = git merge and delete branch everywhere"
   echo "  gp           = git pull"
@@ -19,7 +34,7 @@ githelp () {
   echo "  gcf          = git config --list"
   echo "  gm           = git pull, merge branch, push, status"
   echo "  gmt          = git merge theirs, push, status"
-  echo "  gcb          = git pull, create branch, push branch to git"
+
   echo "  gck          = git checkout, pull, status"
   echo "  gdbf         = git delete local and remote branch"
   echo "  gdb          = git delete local branch"

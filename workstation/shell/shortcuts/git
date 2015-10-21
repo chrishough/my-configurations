@@ -1,5 +1,28 @@
 #!/bin/zsh
-# ---------------------------------------------------------------
+
+# Functions
+function gcb() {
+  git pull;
+  git checkout -b "$1";
+  msg "Creating branch: $1"
+  git push -u origin "$1";
+  git push --set-upstream origin "$1";
+  msg "Pending changes?"
+  git status;
+}
+function gc() {
+  git add . -A;
+  msg "Committing to branch: ${$(gcbn)}"
+  git commit -m "$*";
+  git status;
+}
+
+# Aliases
+function gcbn() { git rev-parse --abbrev-ref HEAD }
+
+
+
+
 alias gd="git diff"
 alias gs="git status"
 alias gt="git tag"
@@ -35,31 +58,18 @@ function gct() {
   git status;
 }
 
-function gc() {
-  git add . -A;
-  git commit -m "$*";
-  git push;
-  git status;
-}
-
-function gcl() {
-  git add . -A;
-  git commit -m "$*";
-  git status;
-}
+# function gcl() {
+#   git add . -A;
+#   git commit -m "$*";
+#   git status;
+# }
 
 function gpo() {
   git push;
   git status;
 }
 
-function gcb() {
-  git pull;
-  git checkout -b "$*";
-  git push -u origin "$*";
-  git push --set-upstream origin "$*";
-  git status;
-}
+
 
 function gck() {
   git checkout "$*";
