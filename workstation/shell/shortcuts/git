@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+# Aliases
+function gs() { git status }
+function gcbn() { git rev-parse --abbrev-ref HEAD }
+
 # Functions
 function gcb() {
   git pull;
@@ -7,24 +11,57 @@ function gcb() {
   msg "Creating branch: $1"
   git push -u origin "$1";
   git push --set-upstream origin "$1";
-  msg "Pending changes?"
-  git status;
+  msg "Pending changes?";
+  gs;
 }
 function gc() {
-  git add . -A;
-  msg "Committing to branch: ${$(gcbn)}"
-  git commit -m "$*";
-  git status;
+  # git add . -A;
+  msg "Committing to branch: ${$(gcbn)}";
+  # git commit -m "$1";
+  gs;
+}
+function gp() {
+  msg "Pull down all the code and all the tags!";
+  git pull;
+  git pull --tags;
+  gs;
+}
+function gpo() {
+  msg "Pushing all the things to origin!";
+  git push;
+  gs;
+}
+function grpo() {
+  msg "Purge dead branches!";
+  git pull;
+  git remote prune origin;
+  git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d;
+}
+function gct() {
+  msg "Creating tag: $1"
+  git tag "$1";
+  git push origin --tags;
+  msg "Current tags!";
+  git tag -l;
+  gs;
+}
+function gck() {
+  msg "Checking out branch: $1"
+  git checkout "$1";
+  git pull;
+  gs;
 }
 
-# Aliases
-function gcbn() { git rev-parse --abbrev-ref HEAD }
+
+
+
+
+
 
 
 
 
 alias gd="git diff"
-alias gs="git status"
 alias gt="git tag"
 alias gtl="git tag -l"
 alias grso="git remote show origin"
@@ -39,24 +76,6 @@ alias gfi="git flow init"
 alias gf="git flow"
 alias gfh="git flow help"
 
-function grpo() {
-  git pull;
-  git remote prune origin;
-  git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d;
-}
-
-function gp() {
-  git pull;
-  git pull --tags;
-  git status;
-}
-
-function gct() {
-  git tag "$*";
-  git push origin --tags;
-  git tag -l;
-  git status;
-}
 
 # function gcl() {
 #   git add . -A;
@@ -64,18 +83,7 @@ function gct() {
 #   git status;
 # }
 
-function gpo() {
-  git push;
-  git status;
-}
 
-
-
-function gck() {
-  git checkout "$*";
-  git pull;
-  git status;
-}
 
 function gm() {
   git pull;
