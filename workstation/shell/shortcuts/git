@@ -1,13 +1,17 @@
 #!/bin/zsh
 
-# Aliases
+# Single Steps
 function gs() { git status }
 function gcbn() { git rev-parse --abbrev-ref HEAD }
 function gl(){ git log --show-notes }
 function glt(){ git log --graph --oneline --all }
 function gltp(){ git log --graph --all --decorate }
+function gd(){ git diff }
+function gtl(){ git tag -l }
+function grso(){ git remote show origin }
+function gcf(){ git config --list }
 
-# Functions
+# Multiple Steps
 function gcb() {
   git pull;
   git checkout -b "$1";
@@ -91,15 +95,3 @@ function gcmd() {
   touch readme.md;
   open readme.md;
 }
-
-
-
-
-
-
-
-alias gd="git diff"
-alias gt="git tag"
-alias gtl="git tag -l"
-alias grso="git remote show origin"
-alias gcf="git config --list"
