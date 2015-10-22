@@ -49,6 +49,11 @@ function gpo() {
   git push;
   gs;
 }
+function gph() {
+ msg "Pushing current branch: ${$(gcbn)} to heroku!"
+ git push heroku master;
+ gs;
+}
 function grpo() {
   msg "Purge dead branches!";
   git pull;

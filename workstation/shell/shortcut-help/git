@@ -27,5 +27,7 @@ githelp () {
   echo "  glt          = show log --graph --oneline --all"
   echo "  gltp         = show log --graph --all --decorate"
   echo "--------------------------------------------------------------------------------"
+  echo "  gph          = push master to heroku"
+  echo "--------------------------------------------------------------------------------"
   echo
 }

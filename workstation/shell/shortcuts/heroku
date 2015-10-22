@@ -1,24 +1,8 @@
 #!/bin/zsh
-# ---------------------------------------------------------------
-alias h="heroku"
-alias hlog="heroku logs"
-alias hps="heroku ps"
-alias hrr="heroku run rake"
-alias hrc="heroku run rails console"
-alias hc="heroku config"
-alias ha="heroku apps"
-
-# Git Check In, Push, Status Check
-function gitch() {
- git add . -A;
- git commit -m "$*";
- git push;
- git push heroku master;
- git status;
-}
-
-# Git Push, Status Check
-function gitph() {
- git push heroku master;
- git status;
-}
+function h() { heroku }
+function hlog() { heroku logs }
+function hps() { heroku ps }
+function hrr() { heroku run rake }
+function hrc() { heroku run rails console }
+function hc() { heroku config }
+function ha() { heroku apps }
