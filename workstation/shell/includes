@@ -7,12 +7,13 @@ source $HOME/.myconfigurations/workstation/shell/shortcuts/ruby
 source $HOME/.myconfigurations/workstation/shell/shortcuts/git
 source $HOME/.myconfigurations/workstation/shell/shortcuts/heroku
 source $HOME/.myconfigurations/workstation/shell/shortcuts/keybase
-source $HOME/.myconfigurations/workstation/shell/shortcuts/apps
+source $HOME/.myconfigurations/workstation/shell/shortcuts/app
 
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/git
-source $HOME/.myconfigurations/workstation/shell/shortcut-help/apps
+source $HOME/.myconfigurations/workstation/shell/shortcut-help/app
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/heroku
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/keybase
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/ruby
+source $HOME/.myconfigurations/workstation/shell/shortcut-help/shell
 
 source $HOME/.myconfigurations/workstation/shell/shortcuts/private

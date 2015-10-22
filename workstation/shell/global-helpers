@@ -4,3 +4,15 @@ function msg() {
   echo $1
   echo "-------------------------------------------"
 }
+function help() {
+  echo
+  echo "-------------------------------------------"
+  echo "  apphelp"
+  echo "  githelp"
+  echo "  herokuhelp"
+  echo "  keybasehelp"
+  echo "  rubyhelp"
+  echo "  shellhelp"
+  echo "-------------------------------------------"
+  echo
+}

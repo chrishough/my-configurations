@@ -26,5 +26,6 @@ githelp () {
   echo "  gl           = show log --show-notes"
   echo "  glt          = show log --graph --oneline --all"
   echo "  gltp         = show log --graph --all --decorate"
+  echo "--------------------------------------------------------------------------------"
   echo
 }
