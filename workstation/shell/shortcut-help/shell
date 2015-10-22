@@ -2,6 +2,16 @@
 shellhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
+  echo "  reloadshell  = reload current shell"
+  echo "  getpwd       = copy current path to the clipboard"
+  echo "  flush        = reset current dns"
+  echo "  vmip         = current ip address"
+  echo "  disc         = disc space details"
+  echo "  up           = current machine up time"
+  echo "  purgeSVN     = remove all .svn folders and files in current directory"
+  echo "  purgeDS      = remove all .DS_Store files in current directory"
+  echo "  hidefiles    = hide .hidden files"
+  echo "  showfiles    = show .hidden files"
   echo "--------------------------------------------------------------------------------"
   echo
 }

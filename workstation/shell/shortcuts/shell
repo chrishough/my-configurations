@@ -1,33 +1,18 @@
 #!/bin/zsh
+function reloadshell() { exec $SHELL }
+function getpwd() { pwd | pbcopy }
+function flush() { sudo killall -HUP mDNSResponder }
+function vmip() { ifconfig vmnet1 }
+function disc() { df -h }
+function up() { uptime | sed -e "s/:/ /2" | sed -e "s/,/ /2" | awk '{print "Up " $3 " days, " $5 " hours and " $6 " minutes"}' }
+function purgeSVN() { find . -name .svn  -type d -print0 |xargs -0 rm -rf }
+function purgeDS() { find . -name '*.DS_Store' -type f -delete }
 
-# Get Current Path
-function openmd() { open -a "/Applications/Mou.app" "$@"; }
-# ---------------------------------------------------------------
-# Get Current Path
-function reloadshell() {exec $SHELL}
-# ---------------------------------------------------------------
-# Get Current Path
-function getpwd() {pwd | pbcopy;}
-# ---------------------------------------------------------------
-# Flush dns cache
-function flush() {sudo killall -HUP mDNSResponder}
-# ---------------------------------------------------------------
-# Get vm losthost ip address
-function vmip() {ifconfig vmnet1}
-# ---------------------------------------------------------------
-# Get disc space details
-function disc() {df -h}
-# ---------------------------------------------------------------
-# Remove ds files
-function rmds() {find . -name '*.DS_Store' -type f -delete}
-# ---------------------------------------------------------------
-# Open Gems with Sublime
-function sublg { bundle show $@ | xargs subl; }
-# ---------------------------------------------------------------
-# Get Machine Uptime
-function up() {uptime | sed -e "s/:/ /2" | sed -e "s/,/ /2" | awk '{print "Up " $3 " days, " $5 " hours and " $6 " minutes"}'}
-# ---------------------------------------------------------------
-function purgeSVN() {find . -name .svn  -type d -print0 |xargs -0 rm -rf}
-
-alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+function hidefiles() {
+  defaults write com.apple.finder AppleShowAllFiles NO;
+  killall Finder /System/Library/CoreServices/Finder.app;
+}
+function showfiles() {
+  defaults write com.apple.finder AppleShowAllFiles YES;
+  killall Finder /System/Library/CoreServices/Finder.app;
+}

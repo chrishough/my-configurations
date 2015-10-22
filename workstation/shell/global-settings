@@ -11,5 +11,8 @@ export AUTOJUMP_IGNORE_CASE=1
 # Set Browser for shell commands
 export BROWSER='open -a /Applications/Google Chrome.app'
 
+# Adjust for Ruby Rbenv
+export PATH=".bundle/binstubs:$PATH"
+
 # ZSH Autocomplete
 autoload -U compinit && compinit

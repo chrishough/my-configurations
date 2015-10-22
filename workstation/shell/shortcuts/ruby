@@ -1,6 +1,4 @@
 #!/bin/zsh
-# ---------------------------------------------------------------
-export PATH=".bundle/binstubs:$PATH"
 
 # Ruby Environment Commands
 alias be="bundle exec"

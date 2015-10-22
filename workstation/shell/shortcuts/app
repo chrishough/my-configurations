@@ -1,3 +1,4 @@
 #!/bin/zsh
-function mc() { mailcatcher -f -v } 
+function mc() { mailcatcher -f -v }
 function atom() { atom . }
+function openmd() { open -a "/Applications/Mou.app" "$1"; }

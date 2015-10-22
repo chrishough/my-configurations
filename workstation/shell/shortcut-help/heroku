@@ -1,7 +1,7 @@
 #!/bin/zsh
-# ---------------------------------------------------------------
 herokuhelp () {
   echo
+  echo "--------------------------------------------------------------------------------"
   echo "  h           = heroku"
   echo "  hlog        = heroku logs"
   echo "  hps         = heroku psql connection"
@@ -11,5 +11,6 @@ herokuhelp () {
   echo "  ha          = heroku applications"
   echo "  gitch       = check in code and push to heroku"
   echo "  gitph       = push master to heroku"
+  echo "--------------------------------------------------------------------------------"
   echo
 }
