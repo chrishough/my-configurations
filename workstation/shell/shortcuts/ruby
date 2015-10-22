@@ -1,42 +1,37 @@
 #!/bin/zsh
-
-# Ruby Environment Commands
-alias be="bundle exec"
 alias rb="rbenv"
+alias rr="bundle exec rake routes"
+alias rs="bundle exec ./bin/rails s"
+alias rt="bundle exec ./bin/rspec"
+alias rc="bundle exec ./bin/rails c"
+alias rg="rails g"
+alias rgo="gem outdated"
+alias rbe="bundle exec"
+alias rdb="rails dbconsole"
 alias rbl="rbenv install -l"
 alias rbi="bundle install"
-
-# Rails Commands
-alias r='rails'
-alias rg='rails g'
-alias rs='bundle exec ./bin/rails s'
-alias rt='bundle exec ./bin/rspec'
-alias rc='bundle exec ./bin/rails c'
-alias rd='rails dbconsole'
-
-# rubygems
-alias gemo='gem outdated'
-
-# rake
-alias rr='bundle exec rake routes'
 alias rake="noglob bundle exec rake"
-alias rdbm='bundle exec rake db:migrate'
-alias rdbr='bundle exec rake db:rollback'
 
-function rbuild() {
-  bundle install --path=.bundle --binstubs=.bundle/binstubs
+function railsinit() {
+  if [[ $1 ]]; then
+    if [[ -z $1 ]] then
+      msg "Creating project folder: $1"
+      mkdir $1
+    fi
+    cd $1
+    msg "Building a rails application with postgresql!"
+    rails new . --skip-bundle -T --database=postgresql
+    msg "Override rails gitignore with a better version!"
+    cp $HOME/.myconfigurations/software/git/gitignore-templates/rails-application .gitignore
+    msg "Using Bundler and setting up local binstubs!"
+    bundle install --path=.bundle --binstubs=.bundle/binstubs
+  else
+    msg "ERROR! Missing project name!"
+  fi
 }
-
-# Rails Generators
-function rgc() { rails g controller "$*"; }
-function rgm() { rails g model "$*"; }
-function rna() { rails new . --skip-bundle -T --database=postgresql }
-function rnamd() { rails new . -O --skip-bundle -T }
-
-# Rails Helpers
 function rtail() {
-  if [ "$*" != "" ]; then
-    tail -f "log/$*.log";
+  if [[ $1 ]]; then
+    tail -f "log/$1.log";
   else
     tail -f log/development.log;
   fi
