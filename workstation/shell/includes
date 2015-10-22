@@ -15,5 +15,3 @@ source $HOME/.myconfigurations/workstation/shell/shortcut-help/heroku
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/keybase
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/ruby
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/shell
-
-source $HOME/.myconfigurations/workstation/shell/shortcuts/private

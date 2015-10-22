@@ -1,6 +1,0 @@
-#!/bin/zsh
-# Saved for Private Configurations that can be checked into git
-# ---------------------------------------------------------------
-# Blog Location
-export myblog=/Users/chrishough/NoConformity/code/private/blog
-# ---------------------------------------------------------------
