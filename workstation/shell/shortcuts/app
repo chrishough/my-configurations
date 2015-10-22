@@ -1,4 +1,3 @@
 #!/bin/zsh
-# ---------------------------------------------------------------
-alias mc="mailcatcher -f -v"
-alias atom="atom ."
+function mc() { mailcatcher -f -v } 
+function atom() { atom . }

@@ -1,6 +1,4 @@
 #!/bin/zsh
-
-# Single Steps
 function gs() { git status }
 function gcbn() { git rev-parse --abbrev-ref HEAD }
 function gl(){ git log --show-notes }
@@ -11,7 +9,6 @@ function gtl(){ git tag -l }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
 
-# Multiple Steps
 function gcb() {
   git pull;
   git checkout -b "$1";
