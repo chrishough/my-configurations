@@ -14,20 +14,32 @@ alias rake="noglob bundle exec rake"
 
 function railsinit() {
   if [[ $1 ]]; then
-    if [[ -z $1 ]] then
+    if [[ ! -d "$1" ]]; then
       msg "Creating project folder: $1"
-      mkdir $1
+      mkdir "$1"
     fi
-    cd $1
+    cd "$1"
+    msg "Setup default ruby version!"
+    rbenvset
     msg "Building a rails application with postgresql!"
     rails new . --skip-bundle -T --database=postgresql
-    msg "Override rails gitignore with a better version!"
-    cp $HOME/.myconfigurations/software/git/gitignore-templates/rails-application .gitignore
+    msg "Override rails gitignore and readme with better versions!"
+    cp $HOME/.myconfigurations/software/git/templates/ignores/rails-application .gitignore
+    if [[ -f "README.md" ]]; then
+      rm README.md
+    fi
+    if [[ -f "README.rdoc" ]]; then
+      rm README.rdoc
+    fi
+    cp $HOME/.myconfigurations/software/git/templates/readmes/rails-application readme.md
     msg "Using Bundler and setting up local binstubs!"
     bundle install --path=.bundle --binstubs=.bundle/binstubs
   else
     msg "ERROR! Missing project name!"
   fi
+}
+function rbenvset() {
+  rbenv local $(rbenv global)
 }
 function rtail() {
   if [[ $1 ]]; then
