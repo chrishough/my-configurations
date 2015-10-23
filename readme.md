@@ -1,8 +1,8 @@
 ### My Configurations
 ----
-| Chris Hough | Contact | Breathe |
-| :---: | :--- | :--- |
-| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/master/graphics/avatar/myphoto-320x320.png)| [Email](mailto:chris@noconformity.com?subject=About your resume?)<br/>[Blog](http://noconformity.com/)<br/>[LinkedIn](https://www.linkedin.com/in/chrishough)<br/>[Twitter](https://twitter.com/chrishough)<br/>[Instagram](https://instagram.com/chrishough)<br/>[Facebook](https://www.facebook.com/noconformitynoregrets)<br/>[Soundcloud](https://soundcloud.com/chrishough/)<br/>[YouTube](https://www.youtube.com/user/excitabledude/) | *"Evolution doesn’t linger on past failures, it’s always building upon what worked. So should you.”*<br/>― Jason Fried, REWORK<br/><br/>*“I have not failed. I've just found 10,000 ways that won't work.”*<br/>― Thomas A. Edison<br/><br/>*“First they ignore you, then they laugh at you, then they fight you, then you win.”*<br/>― Mahatma Gandhi
+| Chris Hough | Favorite Quotes |
+| :---: | :--- |
+| ![open-source-projects.jpeg](https://github.com/chrishough/myresume/raw/master/graphics/avatar/myphoto-320x320.png)<br/><br/>[Resume](https://github.com/chrishough/myresume/) | *"Evolution doesn’t linger on past failures, it’s always building upon what worked. So should you.”*<br/>― Jason Fried, REWORK<br/><br/>*“I have not failed. I've just found 10,000 ways that won't work.”*<br/>― Thomas A. Edison<br/><br/>*“First they ignore you, then they laugh at you, then they fight you, then you win.”*<br/>― Mahatma Gandhi
 
 I have found every developer's workstation configuration to be highly variable and tailored to their exact desires.  Whatever makes the person tick right?  I tend to spend a chunk of time each month tuning my box for maximum efficiency, and just like the quantified self movement this is my guide tracking the updates.  In a nutshell this is how I [grok, trunk, and live](href="http://www.youtube.com/watch?v=Qi_AAqi0RZM) each and every day. I believe in being part cyborg actually and rarely unplug, however, that is a totally different story.
 
