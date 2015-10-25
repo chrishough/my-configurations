@@ -1,5 +1,7 @@
 ### My Configurations
 ----
+Version: 2.2.0
+
 Every developer's workstation configuration is highly variable and tailored to their  desires + software stack. I tend to spend a chunk of time each month tuning my machine for maximum efficiency, and this is my guide tracking the updates.
 
 This is how I **G**ROK, **T**RUNK, and **L**IVE**!**
