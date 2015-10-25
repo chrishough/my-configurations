@@ -1,13 +1,13 @@
 ### My Configurations
 ----
-I find every developer's workstation configuration to be highly variable and tailored to their exact desires. I tend to spend a chunk of time each month tuning my machine for maximum efficiency, and this is my guide tracking the updates.  In a nutshell this is how I grok, trunk, and live.
+Every developer's workstation configuration is highly variable and tailored to their  desires + software stack. I tend to spend a chunk of time each month tuning my machine for maximum efficiency, and this is my guide tracking the updates.
 
-![open-source-projects.jpeg](https://github.com/chrishough/myconfigurations/raw/master/graphics/open-source-projects.jpeg)
+This is how I GROK, TRUNK, and LIVE!
 
 ### Assumptions
 ----
 * The workstation is running the latest production release of [Apple OSX](http://www.apple.com/osx/).
-* The latest release of [Xcode](https://developer.apple.com/xcode/) has been installed with the developer command line tools.
+* The latest release of [Xcode](https://developer.apple.com/xcode/) has been installed with the command line tools.
 * [Homebrew](http://brew.sh/) has been successfully installed.
 * Running ```brew doctor``` does not report any configuration issues.
 * [Google Chrome](http://www.google.com/chrome) is your primary development browser.
@@ -17,24 +17,28 @@ I find every developer's workstation configuration to be highly variable and tai
 ### Software
 ----
 
-* [Atom](https://atom.io/)
-* [iterm2](http://www.iterm2.com/#/section/home)
-* [Zsh](http://www.zsh.org/) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-* [Postgres App](http://postgresapp.com/), for development.
-* [Autojump](https://github.com/joelthelion/autojump) ```brew install autojump``` memorizes your favorite locations and allows you to quickly navigate to a path from anywhere in your shell.
-* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) ```brew install the_silver_searcher``` replaces ack and is by far the fastest search utility I have used.
-* [Evernote](http://evernote.com/) for notes and local documentation.
-* [Mou](http://mouapp.com/) for editing markdown files.
-* [Paw](https://luckymarmot.com/paw) for API testing and construction.
-* [Pathfinder](http://cocoatech.com/pathfinder/) for a finder on steroids.
-* [Arq + S3](http://www.haystacksoftware.com/arq/) for encrypted cloud backup.
-* [Cloak](https://www.getcloak.com/) for cloud based VPN.
-* [Dash](http://kapeli.com/dash) for local documentation.
-* [Divvy](https://mizage.com/divvy/) for osx window management.
-* [Adobe Creative Cloud](http://www.adobe.com/) for designs, mainly AI and Photoshop.
-* [Alfred](http://www.alfredapp.com/) workflows! Here are a helpful list of the [workflows I use](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/community.md) and list of [workflows I built](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/noconformity.md).
-* [Keyboard Maestro](http://www.keyboardmaestro.com/main/) macros. [Find my setup here](https://github.com/chrishough/myconfigurations/tree/master/software/maestro/noconformity.md).
-* [iStat Menus](http://bjango.com/mac/istatmenus/) for system performance monitoring.
+* [Atom](https://atom.io/): Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
+* [iterm2](http://www.iterm2.com/#/section/home): iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
+* [Zsh](http://www.zsh.org/) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh): Zsh is a shell designed for interactive use, although it is also a powerful scripting language.
+* [Postgres App](http://postgresapp.com/): The easiest way to get started with PostgreSQL on the Mac
+* [Autojump](https://github.com/joelthelion/autojump) ```brew install autojump```: Memorizes your favorite locations and allows you to quickly navigate to a path from anywhere in your shell.
+* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) ```brew install the_silver_searcher```: Replaces ack and is by far the fastest search utility I have used.
+* [Evernote](http://evernote.com/): For notes and local documentation.
+* [Mou](http://mouapp.com/): For editing markdown files.
+* [Paw](https://luckymarmot.com/paw): For API testing and construction.
+* [Pathfinder](http://cocoatech.com/pathfinder/): For a finder on steroids.
+* [Arq + S3](http://www.haystacksoftware.com/arq/): For encrypted cloud backup.
+* [Cloak](https://www.getcloak.com/): For cloud based VPN.
+* [Dash](http://kapeli.com/dash): For local documentation.
+* [Divvy](https://mizage.com/divvy/): For osx window management.
+* [Adobe Creative Cloud](http://www.adobe.com/):
+For design things, primarily Ai and Photoshop.
+* [Alfred](http://www.alfredapp.com/): Alfred is an award-winning app for Mac OS X which boosts your efficiency with hotkeys and keywords. Search your Mac and the web effortlessly, and control your Mac using customised actions with the Powerpack.
+  * [Community Workflows](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/community.md)
+  * [Hough Workflows](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/noconformity.md)
+* [Keyboard Maestro](http://www.keyboardmaestro.com/main/): The leading software for Mac OS X automation. It will increase business productivity by using macros(or short cuts) with simple keystrokes.
+  * [Hough Maestro Macros](https://github.com/chrishough/myconfigurations/tree/master/software/maestro/noconformity.md).
+* [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
 
 ### rbenv plugins
 ----
@@ -51,7 +55,7 @@ Via `Package Control` these are my favorite packages:
 
 ![atom-package-list](https://github.com/chrishough/myconfigurations/raw/master/graphics/atom/atom-package-list.png)
 
-### My Shell Theme
+### Shell Theme
 ----
 ![shell-theme-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-example.png)
 
@@ -66,7 +70,7 @@ Under the terminal tab, make sure to change the report terminal type to ```xterm
 The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
 ![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
 
-### My New Machine Checklist
+### New Machine Checklist
 ----
 0. files migrated, software installed, all software setups in place
 1. setup xcode + command line tools
@@ -103,3 +107,5 @@ The background image I created can be found [here](https://github.com/chrishough
 32. cd into scripts and run ruby symlinks.rb
 
 ...*Time to drink beer!*
+
+![open-source-projects.jpeg](https://github.com/chrishough/myconfigurations/raw/master/graphics/open-source-projects.jpeg)
