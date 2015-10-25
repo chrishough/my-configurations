@@ -2,7 +2,7 @@
 
 This is a workflow will query urban dictionary’s API and return definitions.  [@Sheraff](https://github.com/Sheraff/urbandictionary-alfred-workflow)
 [Download](https://github.com/Sheraff/urbandictionary-alfred-workflow)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/urban-dictionary.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/urban-dictionary.alfredworkflow)
 
 ```
 Keywords: slang {query}
@@ -13,7 +13,7 @@ Keywords: slang {query}
 ### Search Dash Docs
 
 This workflow helps you search dash docs, which requires a license for this amazing piece of software.  The workflow comes with Dash, but here is the version I have modified.  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-dash-docs.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-dash-docs.alfredworkflow)
 
 ```
 Trigger Alfred cmd + space, then cmd + d
@@ -24,7 +24,7 @@ Trigger Alfred cmd + space, then cmd + d
 ### Search Evernote
 
 You can use ent (search in titles only) or enr (search in reminders) or entodo (search to-do notes) or enrec (search notes updated within a week) or enu (search notes with a source URL) instead of ens. Developed by Carlos-Sz. [Download](http://www.alfredforum.com/topic/840-evernote-80-search-create-append-preview-set-reminders-all-within-alfred/)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-evernote.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-evernote.alfredworkflow)
 
 ```
 Keywords: ens {query}, ent, enr, entodo, enrec, enn
@@ -35,7 +35,7 @@ Keywords: ens {query}, ent, enr, entodo, enrec, enn
 ### Search GitHub
 
 Open GitHub in the browser by [@gharlan](https://github.com/gharlan/) [Download](https://github.com/zenorocha/alfred-workflows/raw/master/github/github.alfredworkflow)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-github.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-github.alfredworkflow)
 
 You have to login before you can use the workflow: ```gh > login <user>```.
 
@@ -51,7 +51,7 @@ Keywords: gh {query}
 
 Workflow for google search with search suggestion, instant search, site search, plus more.  This is by far the most robust workflow for google I have found.
 [@zhaocai](https://github.com/zhaocai/alfred2-google-workflow) [Download](http://zhaocai.github.io/alfred2-google-workflow/)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-google.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-google.alfredworkflow)
 
 ```
 Keywords: g {query}, gi {query}, gs, trend
@@ -62,7 +62,7 @@ Keywords: g {query}, gi {query}, gs, trend
 ### Search Chrome Bookmarks
 
 This workflow helps you search Google Chrome bookmarks by using a chrome (Google Chrome) or canary (Google Chrome Canary) or chromium (Chromium).  [@mdreizin](https://github.com/mdreizin/alfred-workflows/tree/master/chrome-bookmarks)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-google-chrome-bookmarks.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-google-chrome-bookmarks.alfredworkflow)
 
 ```
 Keywords: ch {query}
@@ -73,7 +73,7 @@ Keywords: ch {query}
 ### Search StackOverflow
 
 Search for a question on [StackOverflow](http://stackoverflow.com)   [@xhinking](https://github.com/xhinking/) [Download](https://github.com/zenorocha/alfred-workflows/raw/master/stack-overflow/stack-overflow.alfredworkflow)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-stackoverflow.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-stackoverflow.alfredworkflow)
 
 ```
 Keywords: st {query}
@@ -81,24 +81,10 @@ Keywords: st {query}
 
 ![search-stackoverflow](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/search-stackoverflow.png)
 
-### Search Youtube
-
-The workflow allows the user to search YouTube and have the results returned to Alfred and then choose a video to watch. Just type youtube followed by the query. For example, the below will search for Rebecca Black videos. [@simonbs](https://github.com/simonbs/alfred-youtube-workflow) [Download](http://www.alfredforum.com/topic/45-youtube-workflow/?hl=youtube)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/search-youtube.alfredworkflow)
-
-```
-Keywords: yt {query}
-```
-
-![search-youtube](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/search-youtube.png)
-
-
-***
-
-### Get Emoji
+### Search Emoji
 
 The workflow allows the user to search emoji symbols and have the results returned to Alfred. [@carlosgaldino](https://github.com/carlosgaldino/alfred-emoji-workflow) [Download](https://github.com/carlosgaldino/alfred-emoji-workflow)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-emoji-symbols.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-emoji-symbols.alfredworkflow)
 
 ```
 Keywords: emoji {query}, symoji {query}
@@ -106,10 +92,10 @@ Keywords: emoji {query}, symoji {query}
 
 ![get-emoji-symbols](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/get-emoji-symbols.png)
 
-### Get FontAwesome
+### Search FontAwesome
 
 Search through [Font Awesome](https://github.com/ruedap/alfred2-font-awesome-workflow) fonts. [@ruedap](https://github.com/ruedap/) [Download](http://fortawesome.github.io/Font-Awesome/)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-font-awesome.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-font-awesome.alfredworkflow)
 
 ```
 Keywords: fonta {query}, fa
@@ -120,7 +106,7 @@ Keywords: fonta {query}, fa
 ### IP Address
 
 Shows your internal and external IP address. [@coderholic](http://www.alfredforum.com/topic/3157-ipinfo-workflow-ip-address-geolocation-hostname-network-provider/)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/ipinfo.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/ipinfo.alfredworkflow)
 
 ```
 Keywords: ipinfo
@@ -132,7 +118,7 @@ Keywords: ipinfo
 ### Get Time Zones
 
 Get an instant list of the current time in various cities around the world. [@CarlosNZ](http://www.alfredforum.com/topic/491-timezones-a-world-clock-script-filter-updated-to-v161/) [Download](https://github.com/zenorocha/alfred-workflows/raw/master/time-zones/time-zones.alfredworkflow)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-timezones.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-timezones.alfredworkflow)
 
 ```
 Keywords: tz
@@ -143,7 +129,7 @@ Keywords: tz
 ### Get Weather
 
 Pull your local weather forecast or get the weather for other cities. [@jdfwarrior](https://github.com/jdfwarrior/) [Download](http://dferg.us/weather-for-alfred-2/)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-weather.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/get-weather.alfredworkflow)
 
 ```
 Keywords: weather, forecast, conditions
@@ -151,12 +137,10 @@ Keywords: weather, forecast, conditions
 
 ![get-weather](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/get-weather.png)
 
-***
-
 ### Kill OSX Process
 
 Easily find processes by name and kill them. [@nathangreenstein](https://github.com/nathangreenstein/alfred-process-killer) [Download ](https://github.com/zenorocha/alfred-workflows/raw/master/kill-process/kill-process.alfredworkflow)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/kill-osx-process.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/kill-osx-process.alfredworkflow)
 
 ```
 Keywords: kill {query}
@@ -164,12 +148,10 @@ Keywords: kill {query}
 
 ![kill-osx-process](https://github.com/chrishough/myconfigurations/raw/master/graphics/alfred-screenshots/kill-osx-process.png)
 
-***
-
 ### Toggle Alfred Ignored List
 
 Handle files ignored by alfred. [@jordic](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/) [Download](http://www.alfredforum.com/topic/213-add-and-remove-alfredignore-from-comments/)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/toggle-add-remove-alfred-ignore.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/toggle-add-remove-alfred-ignore.alfredworkflow)
 
 ```
 Keywords: ignored
@@ -180,7 +162,7 @@ Keywords: ignored
 ### Toggle Hidden Files
 
 Show or hide osx hidden files and folders. [@matthojo](http://www.alfredforum.com/topic/1544-hide-show-hidden-files-and-cloudapp-upload/)  
-[My Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/toggle-visibility-of-hidden-files.alfredworkflow)
+[Hough Version](https://github.com/chrishough/myconfigurations/raw/master/software/alfredapp/community/toggle-visibility-of-hidden-files.alfredworkflow)
 
 ```
 Keywords: hidden
