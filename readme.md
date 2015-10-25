@@ -42,7 +42,31 @@ For design things, primarily Ai and Photoshop.
   * [Hough Maestro Macros](https://github.com/chrishough/myconfigurations/tree/master/software/maestro/noconformity.md).
 * [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
 
-### rbenv plugins
+### Dot Files
+----
+[.bash_profile](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.bash_profile)  
+[.bashrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.bashrc)  
+[.gemrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.gemrc)  
+[.profile](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.profile)  
+[.pryrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.pryrc)  
+[.vimrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.vimrc)  
+[.zprofile](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.zprofile)  
+[.zshrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.bash_profile)  
+
+### Shell Shortcuts
+----
+[includes](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/includes): This is the base file to pull in all the includes.   
+[global-helpers](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/global-helpers): Controls that apply to all of the inlcudes.   
+[global-settings](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/global-settings): Machine and include settings.   
+[app](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/app):  Applications that do not require their own includes file.   
+[git](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/git):  Github shortcuts and workflows.  
+[heroku](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/heroku):  Heroku shortcuts and workflows.    
+[keybase](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/keybase): Keybase shortcuts and workflows.   
+[ruby](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/ruby):  Ruby and Rails based commands.   
+[shell](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/shell):  Everything shell..  
+
+
+### Rbenv Plugins
 ----
 * [rbenv-default-gems](https://github.com/sstephenson/rbenv-default-gems): This rbenv plugin hooks into the rbenv install command to automatically install gems every time you install a new version of Ruby.
 * [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash): Never run rbenv rehash again. This rbenv plugin automatically runs rbenv rehash every time you install or uninstall a gem.
