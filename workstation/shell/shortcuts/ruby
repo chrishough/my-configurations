@@ -10,6 +10,7 @@ alias rbe="bundle exec"
 alias rdb="rails dbconsole"
 alias rbl="rbenv install -l"
 alias rbi="bundle install"
+alias rbibs="bundle install --path=.bundle --binstubs=.bundle/binstubs"
 alias rake="noglob bundle exec rake"
 
 function railsinit() {
