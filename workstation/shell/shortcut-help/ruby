@@ -13,6 +13,7 @@ rubyhelp () {
   echo "  rgo         = find out which gems are outdated on the project"
   echo "  rbl         = rbenv install -l"
   echo "  rbi         = bundle install"
+  echo "  rbibs       = bundle install --path=.bundle --binstubs=.bundle/binstubs"
   echo "  rake        = noglob bundle exec rake"
   echo "  rbenvset    = setup local version of rbenv to global default"
   echo "--------------------------------------------------------------------------------"
