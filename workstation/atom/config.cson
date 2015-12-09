@@ -3,7 +3,6 @@
     showOnStartup: false
   editor:
     fontFamily: "Inconsolata"
-    fontSize: 14
     showIndentGuide: true
     preferredLineLength: 130
     invisibles: {}
