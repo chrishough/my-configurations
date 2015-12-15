@@ -36,34 +36,34 @@ This is how I **G**ROK, **T**RUNK, and **L**IVE**!**
 * [Adobe Creative Cloud](http://www.adobe.com/):
 For design things, primarily Ai and Photoshop.
 * [Alfred](http://www.alfredapp.com/): Alfred is an award-winning app for Mac OS X which boosts your efficiency with hotkeys and keywords. Search your Mac and the web effortlessly, and control your Mac using customised actions with the Powerpack.
-  * [Community Workflows](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/community.md)
-  * [Hough Workflows](https://github.com/chrishough/myconfigurations/tree/master/software/alfredapp/noconformity.md)
+  * [Community Workflows](https://github.com/chrishough/my-configurations/tree/master/software/alfredapp/community.md)
+  * [Hough Workflows](https://github.com/chrishough/my-configurations/tree/master/software/alfredapp/studio.md)
 * [Keyboard Maestro](http://www.keyboardmaestro.com/main/): The leading software for Mac OS X automation. It will increase business productivity by using macros(or short cuts) with simple keystrokes.
-  * [Hough Maestro Macros](https://github.com/chrishough/myconfigurations/tree/master/software/maestro/noconformity.md).
+  * [Hough Maestro Macros](https://github.com/chrishough/my-configurations/tree/master/software/maestro/noconformity.md).
 * [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
 
 ### Dot Files
 ----
-[.bash_profile](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.bash_profile)  
-[.bashrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.bashrc)  
-[.gemrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.gemrc)  
-[.profile](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.profile)  
-[.pryrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.pryrc)  
-[.vimrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.vimrc)  
-[.zprofile](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.zprofile)  
-[.zshrc](https://github.com/chrishough/myconfigurations/blob/master/workstation/dotfiles/.bash_profile)  
+[.bash_profile](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.bash_profile)  
+[.bashrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.bashrc)  
+[.gemrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.gemrc)  
+[.profile](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.profile)  
+[.pryrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.pryrc)  
+[.vimrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.vimrc)  
+[.zprofile](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.zprofile)  
+[.zshrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.bash_profile)  
 
 ### Shell Shortcuts
 ----
-[includes](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/includes): This is the base file to pull in all the includes.   
-[global-helpers](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/global-helpers): Controls that apply to all of the inlcudes.   
-[global-settings](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/global-settings): Machine and include settings.   
-[app](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/app):  Applications that do not require their own includes file.   
-[git](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/git):  Github shortcuts and workflows.  
-[heroku](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/heroku):  Heroku shortcuts and workflows.    
-[keybase](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/keybase): Keybase shortcuts and workflows.   
-[ruby](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/ruby):  Ruby and Rails based commands.   
-[shell](https://github.com/chrishough/myconfigurations/blob/master/workstation/shell/shortcuts/shell):  Everything shell..  
+[includes](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/includes): This is the base file to pull in all the includes.   
+[global-helpers](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-helpers): Controls that apply to all of the inlcudes.   
+[global-settings](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-settings): Machine and include settings.   
+[app](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/app):  Applications that do not require their own includes file.   
+[git](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/git):  Github shortcuts and workflows.  
+[heroku](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/heroku):  Heroku shortcuts and workflows.    
+[keybase](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/keybase): Keybase shortcuts and workflows.   
+[ruby](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/ruby):  Ruby and Rails based commands.   
+[shell](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/shell):  Everything shell..  
 
 
 ### Rbenv Plugins
@@ -79,22 +79,22 @@ I use the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font fo
 
 Via `Package Control` these are my favorite packages:  
 
-![atom-package-list](https://github.com/chrishough/myconfigurations/raw/master/graphics/atom/atom-package-list.png)
+![atom-package-list](https://github.com/chrishough/my-configurations/raw/master/graphics/atom/atom-package-list.png)
 
 ### Shell Theme
 ----
-![shell-theme-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-example.png)
+![shell-theme-example](https://github.com/chrishough/my-configurations/raw/master/graphics/shell-screenshots/shell-theme-example.png)
 
 Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors, and import them under the colors panel in iterm2 preferences. My theme uses ```base16-railscasts.dark``` which can be loaded in the presets.  You will need to set the contrast as shown to have a clearer definition of the font icons.
 
-![shell-theme-iterm-colors-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-colors-example.png)
+![shell-theme-iterm-colors-example](https://github.com/chrishough/my-configurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-colors-example.png)
 
 Under the terminal tab, make sure to change the report terminal type to ```xterm-256color``` and your character encoding to ```Unicode (UTF-8)```.
 
-![shell-theme-iterm-terminal-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-terminal-example.png)
+![shell-theme-iterm-terminal-example](https://github.com/chrishough/my-configurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-terminal-example.png)
 
-The background image I created can be found [here](https://github.com/chrishough/myconfigurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
-![shell-theme-iterm-window-example](https://github.com/chrishough/myconfigurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
+The background image I created can be found [here](https://github.com/chrishough/my-configurations/raw/master/graphics/terminal-background.png).  Once attached as the background you will notice a red box around your shell window.  
+![shell-theme-iterm-window-example](https://github.com/chrishough/my-configurations/raw/master/graphics/shell-screenshots/shell-theme-iterm-window-example.png)
 
 ### New Machine Checklist
 ----
@@ -109,7 +109,7 @@ The background image I created can be found [here](https://github.com/chrishough
 8. brew install direnv
 9. install postgresapp from postgresapp.com
 10. copy ~/.gitconfig and ~/.ssh to new computer
-11. verify git works by cloning git .myconfigurations
+11. verify git works by cloning git .my-configurations
 12. download and install iterm2, set auto check for updates
 13. install .oh-my-zsh
 14. brew install zsh
@@ -134,4 +134,4 @@ The background image I created can be found [here](https://github.com/chrishough
 
 ...*Time to drink beer!*
 
-![open-source-projects.jpeg](https://github.com/chrishough/myconfigurations/raw/master/graphics/open-source-projects.jpeg)
+![open-source-projects.jpeg](https://github.com/chrishough/my-configurations/raw/master/graphics/open-source-projects.jpeg)
