@@ -39,7 +39,7 @@ For design things, primarily Ai and Photoshop.
   * [Community Workflows](https://github.com/chrishough/my-configurations/tree/master/software/alfredapp/community.md)
   * [Hough Workflows](https://github.com/chrishough/my-configurations/tree/master/software/alfredapp/studio.md)
 * [Keyboard Maestro](http://www.keyboardmaestro.com/main/): The leading software for Mac OS X automation. It will increase business productivity by using macros(or short cuts) with simple keystrokes.
-  * [Hough Maestro Macros](https://github.com/chrishough/my-configurations/tree/master/software/maestro/noconformity.md).
+  * [Hough Maestro Macros](https://github.com/chrishough/my-configurations/tree/master/software/maestro/studio.md).
 * [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
 
 ### Dot Files
