@@ -74,8 +74,15 @@ function gdt() {
   git push origin :refs/tags/"$1";
 }
 function grt() {
-  gdt($1)
-  gct($1)
+  msg "Deleting tag: $1"
+  git tag -d "$1";
+  git push origin :refs/tags/"$1";
+  msg "Creating tag: $1"
+  git tag "$1";
+  git push origin --tags;
+  msg "Current tags!";
+  git tag -l;
+  gs;
 }
 function gck() {
   msg "Checking out branch: $1"
