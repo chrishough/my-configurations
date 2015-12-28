@@ -73,6 +73,10 @@ function gdt() {
   git tag -d "$1";
   git push origin :refs/tags/"$1";
 }
+function grt() {
+  gdt($1)
+  gct($1)
+}
 function gck() {
   msg "Checking out branch: $1"
   git checkout "$1";

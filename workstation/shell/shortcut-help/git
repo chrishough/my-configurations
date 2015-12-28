@@ -14,6 +14,7 @@ githelp () {
   echo "  gct          = set the tag and push it"
   echo "  gtl          = list out all the tags"
   echo "  gdt          = delete tag and push delete"
+  echo "  grt          = recreate the tag"
   echo "  grpo         = purge dead branches locally and origin"
   echo "  gcbn         = current branch name"
   echo "  gk           = create git .keep file"
