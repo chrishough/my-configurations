@@ -4,6 +4,7 @@ apphelp () {
   echo "--------------------------------------------------------------------------------"
   echo "  mc           = mailcatcher -f -v"
   echo "  atom         = atom ."
+  echo "  mine         = mine ."
   echo "  openmd       = open mou for passed in md file"
   echo "--------------------------------------------------------------------------------"
   echo

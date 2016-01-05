@@ -1,5 +1,6 @@
 #!/bin/zsh
-alias atom="atom ." 
+alias atom="atom ."
+alias mine="mine ." 
 
 function mc() { mailcatcher -f -v }
 function openmd() { open -a "/Applications/Mou.app" "$1"; }
