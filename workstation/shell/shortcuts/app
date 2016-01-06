@@ -1,6 +1,5 @@
 #!/bin/zsh
 alias atom="atom ."
-alias mine="mine ."
 alias dpg="dotgpg" 
 
 function mc() { mailcatcher -f -v }
