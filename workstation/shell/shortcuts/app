@@ -1,6 +1,12 @@
 #!/bin/zsh
 alias atom="atom ."
-alias dpg="dotgpg" 
+alias dpg="dotgpg"
+alias bd="brew doctor" 
 
 function mc() { mailcatcher -f -v }
 function openmd() { open -a "/Applications/Mou.app" "$1"; }
+
+function bu() {
+  brew update
+  brew doctor
+}
