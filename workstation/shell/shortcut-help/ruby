@@ -16,6 +16,7 @@ rubyhelp () {
   echo "  rbibs       = bundle install --path=.bundle --binstubs=.bundle/binstubs"
   echo "  rake        = noglob bundle exec rake"
   echo "  rbenvset    = setup local version of rbenv to global default"
+  echo "  rbenvupdate = update rbenv and rbenv plugins"
   echo "--------------------------------------------------------------------------------"
   echo "  railsinit   = setup new rails application with postgres db and run bundler"
   echo "  rtail       = tails rails log, option param for log name"

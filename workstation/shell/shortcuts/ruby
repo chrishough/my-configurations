@@ -39,6 +39,19 @@ function railsinit() {
 function rbenvset() {
   rbenv local $(rbenv global)
 }
+function rbenvupdate {
+  cd
+  brew upgrade rbenv
+  cd ~/.rbenv
+  cd plugins
+  for i in *
+  do
+    cd $i
+    git pull
+    cd -
+  done
+  cd
+}
 function rtail() {
   if [[ $1 ]]; then
     tail -f "log/$1.log";
