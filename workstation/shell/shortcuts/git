@@ -9,6 +9,12 @@ function gtl(){ git tag -l }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
 
+function ggoback() {
+  msg "Resetting all local changes"
+  git reset;
+  git clean -fd;
+  gs;
+}
 function gcb() {
   git pull;
   git checkout -b "$1";
