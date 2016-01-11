@@ -24,6 +24,7 @@ githelp () {
   echo "  grso         = show all of the current local and remote branches"
   echo "  gcf          = what are my config settings"
   echo "  ggoback      = reset all local changes and purge files and directories"
+  echo "  gpurgetags   = purge last 120 tags"
   echo "--------------------------------------------------------------------------------"
   echo "  gl           = show log --show-notes"
   echo "  glt          = show log --graph --oneline --all"
