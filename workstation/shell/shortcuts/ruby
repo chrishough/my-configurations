@@ -13,6 +13,7 @@ alias rbi="bundle install"
 alias rbu="bundle update"
 alias rbibs="bundle install --path=.bundle --binstubs=.bundle/binstubs"
 alias rake="noglob bundle exec rake"
+alias guard="bundle exec guard"
 
 function railsinit() {
   if [[ ! -z "$1" ]]; then
