@@ -26,9 +26,9 @@ function gpurgetags(){
 }
 function ggoback() {
   msg "Resetting all local changes"
-  git reset;
-  git clean -fd;
-  gs;
+  git reset --hard;
+  git clean -f -d;
+  git status;
 }
 function gcb() {
   git pull;
