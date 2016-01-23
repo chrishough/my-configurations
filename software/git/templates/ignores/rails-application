@@ -1,33 +1,29 @@
-#-> Configuration files
+###-> Settings
 .bundle/*
 !.bundle/config
 config/secrets.yml
 config/application.yml
 
-#-> Folders
+###-> Folders
 tmp
-public/robot
-!public/robots.txt
 log
 coverage
-.idea
 
-#-> Applications
+public/robot
+!public/robots.txt
+
+
+###-> File Types
 *.com
 *.class
 *.dll
 *.exe
 *.o
 *.so
+*.ase
 *.psd
 *.ai
-*.ase
-
-#-> Ignore Configurations
-*.chef
-*.vagrant
-
-#-> Packages
+*.eps
 *.7z
 *.dmg
 *.gz
@@ -36,13 +32,22 @@ coverage
 *.rar
 *.tar
 *.zip
-
-#-> Logs + Databases
 *.log
 *.sql
 *.sqlite
 
-#-> Generated
+###-> Keep Design Assets
+!design/*.psd
+!design/*.ai
+!design/*.eps
+
+###-> Configurations
+*.idea
+*.chef
+*.vagrant
+
+
+###-> OS Generated
 *.DS_Store
 *.DS_Store?
 *._*
