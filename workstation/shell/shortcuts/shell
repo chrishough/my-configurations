@@ -15,3 +15,6 @@ function showfiles() {
   defaults write com.apple.finder AppleShowAllFiles YES;
   killall Finder /System/Library/CoreServices/Finder.app;
 }
+function cls() {
+  osascript -e 'tell application "System Events" to keystroke "k" using command down'
+}
