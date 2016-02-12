@@ -11,6 +11,7 @@ shellhelp () {
   echo "  purgeDS      = remove all .DS_Store files in current directory"
   echo "  hidefiles    = hide .hidden files"
   echo "  showfiles    = show .hidden files"
+  echo "  cls          = clear shell window"
   echo "--------------------------------------------------------------------------------"
   echo
 }
