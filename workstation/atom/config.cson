@@ -31,3 +31,5 @@
   editor:
     showInvisibles: false
     showIndentGuide: true
+  whitespace:
+    removeTrailingWhitespace: false
