@@ -12,7 +12,6 @@ coverage
 public/robot
 !public/robots.txt
 
-
 ###-> File Types
 *.com
 *.class
@@ -45,7 +44,6 @@ public/robot
 *.idea
 *.chef
 *.vagrant
-
 
 ###-> OS Generated
 *.DS_Store
