@@ -8,7 +8,7 @@ rubyhelp () {
   echo "  rsp         = rails server with pry rescue"
   echo "  rc          = rails console"
   echo "  rtc         = rspec tests with pry rescue"
-  echo "  rtp          = rspec tests"
+  echo "  rtp         = rspec tests"
   echo "  rg          = rails generate"
   echo "  rdb         = rails db console"
   echo "  rbe         = run bundle exec"
