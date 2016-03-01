@@ -47,6 +47,7 @@ function gmt() {
   git status;
 }
 function gmb() {
+  git fetch --all;
   git pull;
   msg "Merging branch: $1"
   git merge "$1" --no-ff;
