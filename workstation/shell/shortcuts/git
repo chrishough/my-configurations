@@ -62,6 +62,7 @@ function gc() {
 }
 function gp() {
   msg "Pull down all the code and all the tags!";
+  git fetch --all;
   git pull;
   git pull --tags;
   gs;
