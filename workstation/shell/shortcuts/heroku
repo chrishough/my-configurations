@@ -1,5 +1,5 @@
 #!/bin/zsh
-function h() { heroku }
+alias h="heroku"
 function hlog() { heroku logs }
 function hps() { heroku ps }
 function hrr() { heroku run rake }
