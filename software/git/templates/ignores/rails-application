@@ -3,6 +3,7 @@
 !.bundle/config
 config/secrets.yml
 config/application.yml
+.env
 
 ###-> Folders
 tmp
