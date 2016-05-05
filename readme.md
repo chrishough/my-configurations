@@ -70,6 +70,7 @@ For design things, primarily Ai and Photoshop.
 * [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash): Never run rbenv rehash again. This rbenv plugin automatically runs rbenv rehash every time you install or uninstall a gem.
 * [rbenv-vars](https://github.com/sstephenson/rbenv-vars): This is a plugin for rbenv that lets you set global and project-specific environment variables before spawning Ruby processes.
 * [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs): This plugin makes rbenv transparently aware of project-specific binstubs created by bundler. This means you don't have to type bundle exec ${command} ever again!
+* [rbenv-update](https://github.com/rkh/rbenv-update): This rbenv plugin adds the rbenv update command that updated rbenv and all installed plugins.
 
 ### Atom Packages
 ----
