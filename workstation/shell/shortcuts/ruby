@@ -1,6 +1,7 @@
 #!/bin/zsh
 MYRUBYVERSION="2.3.0"
 export RUBY_DEP_GEM_SILENCE_WARNINGS=1
+export BUNDLER_EDITOR="atom"
 
 alias rb="rbenv"
 alias rr="bundle exec rake routes"
