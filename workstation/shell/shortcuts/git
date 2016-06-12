@@ -10,67 +10,67 @@ function grso(){ git remote show origin }
 function gcf(){ git config --list }
 
 function gpurgetags(){
-  num=0
-  for t in `git tag`
-  do
-    if [ "$num" -ge 120 ]
-      then
-        break
-    fi
-    git push origin :$t
-    git tag -d $t
-    num=`expr $num + 1`
-    echo "Removed $t"
-  done
-  git tag -l;
+	num=0
+	for t in `git tag`
+	do
+		if [ "$num" -ge 120 ]
+			then
+				break
+		fi
+		git push origin :$t
+		git tag -d $t
+		num=`expr $num + 1`
+		echo "Removed $t"
+	done
+	git tag -l;
 }
 function ggoback() {
-  msg "Resetting all local changes"
-  git reset --hard;
-  git clean -f -d;
-  git status;
+	msg "Resetting all local changes"
+	git reset --hard;
+	git clean -f -d;
+	git status;
 }
 function gcb() {
-  git pull;
-  git checkout -b "$1";
-  msg "Creating branch: $1"
-  git push -u origin "$1";
-  git push --set-upstream origin "$1";
-  msg "Pending changes?";
-  gs;
+	git pull;
+	git checkout -b "$1";
+	msg "Creating branch: $1"
+	git push -u origin "$1";
+	git push --set-upstream origin "$1";
+	msg "Pending changes?";
+	gs;
 }
 function gmt() {
-  git pull;
-  msg "Merging branch: $1 with a full overwrite of the current branch: ${$(gcbn)}"
-  git merge "$1" -X theirs;
-  git push;
-  git status;
+	git pull;
+	msg "Merging branch: $1 with a full overwrite of the current branch: ${$(gcbn)}"
+	git merge "$1" -X theirs;
+	git push;
+	git status;
 }
 function gmb() {
-  git fetch --all;
-  git pull;
-  msg "Merging branch: $1"
-  git merge "$1" --no-ff;
-  git push;
-  git status;
+	git fetch --all;
+	git pull;
+	msg "Merging branch: $1"
+	git merge "$1" --no-ff;
+	git push;
+	git status;
 }
 function gc() {
-  git add . -A;
-  msg "Committing to branch: ${$(gcbn)}" "Message: $1";
-  git commit -m "$1";
-  gs;
+	git add . -A;
+	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
+	git commit -m "$1";
+	gs;
 }
 function gp() {
-  msg "Pull down all the code and all the tags!";
-  git fetch --all;
-  git pull;
-  git pull --tags;
-  gs;
+	msg "Pull down all the code and all the tags!";
+	git fetch --all;
+	git pull;
+	git pull --tags;
+	gs;
 }
 function gpo() {
-  msg "Pushing all the things to origin!";
-  git push;
-  gs;
+	msg "Pushing all the things to origin!";
+	git push;
+	gs;
 }
 function gph() {
  msg "Pushing current branch: ${$(gcbn)} to heroku!"
@@ -78,56 +78,56 @@ function gph() {
  gs;
 }
 function grpo() {
-  msg "Purge dead branches!";
-  git pull;
-  git remote prune origin;
-  git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d;
+	msg "Purge dead branches!";
+	git pull;
+	git remote prune origin;
+	git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d;
 }
 function gct() {
-  msg "Creating tag: $1"
-  git tag "$1";
-  git push origin --tags;
-  msg "Current tags!";
-  git tag -l;
-  gs;
+	msg "Creating tag: $1"
+	git tag "$1";
+	git push origin --tags;
+	msg "Current tags!";
+	git tag -l;
+	gs;
 }
 function gdt() {
-  msg "Deleting tag: $1"
-  git tag -d "$1";
-  git push origin :refs/tags/"$1";
+	msg "Deleting tag: $1"
+	git tag -d "$1";
+	git push origin :refs/tags/"$1";
 }
 function grt() {
-  msg "Deleting tag: $1"
-  git tag -d "$1";
-  git push origin :refs/tags/"$1";
-  msg "Creating tag: $1"
-  git tag "$1";
-  git push origin --tags;
-  msg "Current tags!";
-  git tag -l;
-  gs;
+	msg "Deleting tag: $1"
+	git tag -d "$1";
+	git push origin :refs/tags/"$1";
+	msg "Creating tag: $1"
+	git tag "$1";
+	git push origin --tags;
+	msg "Current tags!";
+	git tag -l;
+	gs;
 }
 function gck() {
-  msg "Checking out branch: $1"
-  git checkout "$1";
-  git pull;
-  gs;
+	msg "Checking out branch: $1"
+	git checkout "$1";
+	git pull;
+	gs;
 }
 function gdb() {
-  msg "Deleting branch: $1"
-  git branch -D "$1";
-  git push --delete origin "$1";
-  git remote prune origin
-  gs;
+	msg "Deleting branch: $1"
+	git branch -D "$1";
+	git push --delete origin "$1";
+	git remote prune origin
+	gs;
 }
 function gk() {
-  touch .keep
+	touch .keep
 }
 function gkf() {
-  mkdir "$1";
-  touch "$1/.keep";
+	mkdir "$1";
+	touch "$1/.keep";
 }
 function gcmd() {
-  touch readme.md;
-  open readme.md;
+	touch readme.md;
+	open readme.md;
 }

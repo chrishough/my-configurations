@@ -1,35 +1,43 @@
 "*":
-  welcome:
-    showOnStartup: false
-  editor:
-    fontFamily: "Inconsolata"
-    showIndentGuide: true
-    preferredLineLength: 130
-    invisibles: {}
-  core:
-    ignoredNames: [
-      ".git"
-      ".svn"
-      ".DS_Store"
-      ".bundle"
-    ]
-    excludeVcsIgnoredPaths: false
-    themes: [
-      "atom-dark-ui"
-      "base16-tomorrow-dark-theme"
-    ]
-    destroyEmptyPanes: false
-  "tree-view":
-    hideIgnoredNames: true
-  "exception-reporting":
-    userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
-  linter:
-    statusBar: "Show all errors"
-  "linter-jshint": {}
-  "linter-js-yaml": {}
-".slim.text":
-  editor:
-    showInvisibles: false
-    showIndentGuide: true
-  whitespace:
-    removeTrailingWhitespace: false
+	core:
+		destroyEmptyPanes: false
+		excludeVcsIgnoredPaths: false
+		ignoredNames: [
+			".git"
+			".svn"
+			".DS_Store"
+			".bundle"
+		]
+		themes: [
+			"atom-dark-ui"
+			"base16-tomorrow-dark-theme"
+		]
+	editor:
+		fontFamily: "Inconsolata"
+		fontSize: 15
+		invisibles: {}
+		preferredLineLength: 130
+		showIndentGuide: true
+		tabLength: 2
+	"exception-reporting":
+		userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
+	linter:
+		statusBar: "Show all errors"
+	"linter-js-yaml": {}
+	"linter-jshint": {}
+	"markdown-preview":
+		useGitHubStyle: true
+	"tree-view":
+		hideIgnoredNames: true
+	welcome:
+		showOnStartup: false
+	whitespace: {}
+	".slim.text":
+		editor:
+			preferredLineLength: 130
+			showIndentGuide: true
+			showInvisibles: false
+	whitespace:
+		removeTrailingWhitespace: true
+	'tabs-to-spaces':
+		'onSave': 'tabify'

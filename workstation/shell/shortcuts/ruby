@@ -24,51 +24,51 @@ alias guard="bundle exec guard"
 GEMDIR=.bundle/ruby/$MYRUBYVERSION/gems
 
 function rgo() {
-  LOCALGEM=$(find $GEMDIR -name \*$1\* -type d -maxdepth 1 -print | head -n1)
-  atom $LOCALGEM
+	LOCALGEM=$(find $GEMDIR -name \*$1\* -type d -maxdepth 1 -print | head -n1)
+	atom $LOCALGEM
 }
 function railsinit() {
-  if [[ ! -z "$1" ]]; then
-    msg "Creating project folder: $1"
-    mkdir "$1"
-    cd "$1"
-  fi
-  msg "Setup default ruby version!"
-  rbenvset
-  msg "Building a rails application with postgresql!"
-  rails new . --skip-bundle -T --database=postgresql
-  msg "Override rails gitignore and readme with better versions!"
-  cp $HOME/.myconfigurations/software/git/templates/ignores/rails-application .gitignore
-  if [[ -f "README.md" ]]; then
-    rm README.md
-  fi
-  if [[ -f "README.rdoc" ]]; then
-    rm README.rdoc
-  fi
-  cp $HOME/.myconfigurations/software/git/templates/readmes/rails-application readme.md
-  msg "Using Bundler and setting up local binstubs!"
-  bundle install --path=.bundle --binstubs=.bundle/binstubs
+	if [[ ! -z "$1" ]]; then
+		msg "Creating project folder: $1"
+		mkdir "$1"
+		cd "$1"
+	fi
+	msg "Setup default ruby version!"
+	rbenvset
+	msg "Building a rails application with postgresql!"
+	rails new . --skip-bundle -T --database=postgresql
+	msg "Override rails gitignore and readme with better versions!"
+	cp $HOME/.myconfigurations/software/git/templates/ignores/rails-application .gitignore
+	if [[ -f "README.md" ]]; then
+		rm README.md
+	fi
+	if [[ -f "README.rdoc" ]]; then
+		rm README.rdoc
+	fi
+	cp $HOME/.myconfigurations/software/git/templates/readmes/rails-application readme.md
+	msg "Using Bundler and setting up local binstubs!"
+	bundle install --path=.bundle --binstubs=.bundle/binstubs
 }
 function rbenvset() {
-  rbenv local $(rbenv global)
+	rbenv local $(rbenv global)
 }
 function rbenvupdate {
-  cd
-  brew upgrade rbenv
-  cd ~/.rbenv
-  cd plugins
-  for i in *
-  do
-    cd $i
-    git pull
-    cd -
-  done
-  cd
+	cd
+	brew upgrade rbenv
+	cd ~/.rbenv
+	cd plugins
+	for i in *
+	do
+		cd $i
+		git pull
+		cd -
+	done
+	cd
 }
 function rtail() {
-  if [[ $1 ]]; then
-    tail -f "log/$1.log";
-  else
-    tail -f log/development.log;
-  fi
+	if [[ $1 ]]; then
+		tail -f "log/$1.log";
+	else
+		tail -f log/development.log;
+	fi
 }
