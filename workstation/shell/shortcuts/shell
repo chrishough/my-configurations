@@ -1,4 +1,6 @@
 #!/bin/zsh
+alias upzsh="upgrade_oh_my_zsh"
+
 function reloadshell() { exec $SHELL }
 function getpwd() { pwd | pbcopy }
 function flush() { sudo killall -HUP mDNSResponder }

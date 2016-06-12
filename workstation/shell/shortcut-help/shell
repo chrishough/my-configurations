@@ -12,6 +12,7 @@ shellhelp () {
   echo "  hidefiles    = hide .hidden files"
   echo "  showfiles    = show .hidden files"
   echo "  cls          = clear shell window"
+  echo "  upzsh        = upgrade zsh"
   echo "--------------------------------------------------------------------------------"
   echo
 }
