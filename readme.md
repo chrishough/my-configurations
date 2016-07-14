@@ -78,7 +78,7 @@ I use the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font fo
 
 Via `Package Control` these are my favorite packages:  
 
-![atom-package-list](https://github.com/chrishough/my-configurations/raw/master/graphics/atom/atom-package-list-20160703.png)
+![atom-package-list](https://github.com/chrishough/my-configurations/raw/master/graphics/atom/atom-package-list-20160714.png)
 
 ### Shell Theme
 ----
