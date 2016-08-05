@@ -78,7 +78,21 @@ I use the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) font fo
 
 Via `Package Control` these are my favorite packages:  
 
-![atom-package-list](https://github.com/chrishough/my-configurations/raw/master/graphics/atom/atom-package-list-20160714.png)
+* [atom-alignment](https://github.com/Freyskeyd/atom-alignment)
+* [atom-auto-update-packages](https://github.com/yujinakayama/atom-auto-update-packages)
+* [emmet-atom](https://github.com/emmetio/emmet-atom)
+* [file-icons](https://github.com/DanBrooker/file-icons)
+* [atom-glowing-cursor](https://github.com/Matthew-Smith/atom-glowing-cursor)
+* [indent-guide-improved](https://github.com/harai/indent-guide-improved)
+* [language-haml](https://github.com/ezekg/language-haml)
+* [language-slim](https://github.com/slim-template/language-slim)
+* [maximize-panes](https://github.com/santip/maximize-panes)
+* [move-panes](https://github.com/santip/move-panes)
+* [pretty-json](https://github.com/federomero/pretty-json)
+* [remote-sync](https://github.com/yongkangchen/remote-sync)
+* [set-syntax](https://github.com/lee-dohm/set-syntax)
+* [atom-tabularize](https://github.com/pcasaretto/atom-tabularize)
+* [atom-trailing-spaces](https://github.com/wpillar/atom-trailing-spaces)
 
 ### Shell Theme
 ----
