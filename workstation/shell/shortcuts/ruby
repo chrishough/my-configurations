@@ -19,7 +19,7 @@ alias rbi="bundle install"
 alias rbu="bundle update"
 alias rbibs="bundle install --path=.bundle --binstubs=.bundle/binstubs"
 alias rake="noglob bundle exec rake"
-alias guard="bundle exec guard"
+alias guard="spring stop && bundle exec guard"
 
 GEMDIR=.bundle/ruby/$MYRUBYVERSION/gems
 
