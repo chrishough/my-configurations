@@ -1,3 +1,4 @@
+<!--
 ### My Configurations
 ----
 Every developer's workstation configuration is highly variable and tailored to their  desires + software stack. I tend to spend a chunk of time each month tuning my machine for maximum efficiency, and this is my guide tracking the updates.
@@ -6,14 +7,8 @@ This is how I **G**ROK, **T**RUNK, and **L**IVE**!**
 
 ### Assumptions
 ----
-* The workstation is running the latest production release of [Apple OSX](http://www.apple.com/osx/).
-* The latest release of [Xcode](https://developer.apple.com/xcode/) has been installed with the command line tools.
-* [Homebrew](http://brew.sh/) has been successfully installed.
-* Running ```brew doctor``` does not report any configuration issues.
-* [Google Chrome](http://www.google.com/chrome) is your primary development browser.
-* [rbenv](https://github.com/sstephenson/rbenv) is how you're running ruby locally, pre-installed.
-* [ruby-build](https://github.com/sstephenson/ruby-build) installed via brew.
 
+ -->
 ### Software
 ----
 
