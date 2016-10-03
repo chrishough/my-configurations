@@ -1,4 +1,4 @@
-### ![icon](https://github.com/chrishough/my-public-data/raw/master/my-configurations/noun_65750_cc.png) My `dotfile` Configurations
+### ![icon](https://github.com/chrishough/my-public-data/raw/master/my-configurations/25/noun_65750_cc.png) My `dotfile` Configurations
 ----
 Every engineer's workstation configuration is highly variable and tailored to their desires, habits, and software stack. I love :heart: rebuilding and tinkering with my build by learning from and collaborating with others.  This setup is what I use to get the job done, however, don't just accept my words as gospel, find your own path when setting up your build.  
 
@@ -14,7 +14,7 @@ If you're learning to code, I hope I can save you time :alarm_clock:. I live by 
 * [sass-lint](https://github.com/brigade/scss-lint)
 * [credo](https://github.com/rrrene/credo)
 
-### ![icon](https://github.com/chrishough/my-public-data/raw/master/my-configurations/noun_446349_cc.png) Assumptions
+### ![icon](https://github.com/chrishough/my-public-data/raw/master/my-configurations/25/noun_446349_cc.png) Assumptions
 
 ---
 
@@ -26,7 +26,7 @@ If you're learning to code, I hope I can save you time :alarm_clock:. I live by 
 * [rbenv](https://github.com/sstephenson/rbenv) is how you're running ruby locally, and it has already been installed.
 * [ruby-build](https://github.com/sstephenson/ruby-build) installed via homebrew.
 
-### ![icon](https://github.com/chrishough/my-public-data/raw/master/my-configurations/noun_154266_cc.png) Software I Use
+### ![icon](https://github.com/chrishough/my-public-data/raw/master/my-configurations/25/noun_154266_cc.png) Software I Use
 
 ---
 * [Atom](https://atom.io/)
