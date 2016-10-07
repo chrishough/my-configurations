@@ -93,4 +93,6 @@ Type `cmd + space` to launch `iterm2` to perform the next block of installations
 Now we have to sync our settings to the configuration repo!
 
 1. Backup existing dotfiles.  
-`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.db`
+`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`
+2. Setup symlinks to our configuration dotfiles.  
+`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`
