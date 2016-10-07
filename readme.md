@@ -30,7 +30,7 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [Divvy](https://mizage.com/divvy/)
 * [Adobe Creative Cloud](http://www.adobe.com/)
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Install
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Base Software Installation
 
 This setup has been validated against OSX 10.11 and 10.12 via [VMWARE Fusion](http://www.vmware.com/products/fusion.html) :bangbang:
 
@@ -50,16 +50,23 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 6. Install the latest version of git via `brew install git`.
 7. Install [Autojump](https://github.com/wting/autojump) via `brew install autojump`.
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="25"> Ruby
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="25"> Setup Ruby
 
 This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. If you are ok with that, let's type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
 
 1. Setup [Ruby](https://www.ruby-lang.org/en/) via `brew install rbenv rbenv-build`
-2. Following the guide on the [repo](https://github.com/rbenv/rbenv) run `rbenv init` and then `eval "$(rbenv init -)"`. This will create the .rbenv directory.
+2. Following the guide on the [repo](https://github.com/rbenv/rbenv) create the `.rbenv` directory.  
+`rbenv init` and then `eval "$(rbenv init -)"`.
 3. Create the rbenv plugin directory `mkdir $(rbenv root)/plugins`.
-4. Install [rbenv-default-gems](https://github.com/rbenv/rbenv-default-gems) plugin via `git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems`.
-5. Install [rbenv/rbenv-gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) plugin via `git clone https://github.com/sstephenson/rbenv-gem-rehash.git $(rbenv root)/plugins/rbenv-gem-rehash`
-6. Install [rbenv-vars](https://github.com/rbenv/rbenv-vars) plugin via `git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars`
-7. Install [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) plugin via `git clone https://github.com/ianheggie/rbenv-binstubs.git $(rbenv root)/plugins/rbenv-binstubs`
-8. Install [rbenv-update](https://github.com/rkh/rbenv-update) plugin via `git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update`
+4. Install [rbenv-default-gems](https://github.com/rbenv/rbenv-default-gems) plugin.    
+`git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems`.
+5. Install [rbenv/rbenv-gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) plugin.     
+`git clone https://github.com/sstephenson/rbenv-gem-rehash.git $(rbenv root)/plugins/rbenv-gem-rehash`
+6. Install [rbenv-vars](https://github.com/rbenv/rbenv-vars) plugin.    
+`git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars`
+7. Install [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) plugin.  
+`git clone https://github.com/ianheggie/rbenv-binstubs.git $(rbenv root)/plugins/rbenv-binstubs`
+8. Install [rbenv-update](https://github.com/rkh/rbenv-update) plugin.  
+`git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update`
 9. Install a few common versions of ruby. At the time of this build the following versions were installed: `rbenv install 2.3.0` and `rbenv install 2.3.1`.  Please note you can run `rbenv install -l` to see the current versions available.
+10. Run `rbenv global 2.3.0` to setup the global version of ruby.
