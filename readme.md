@@ -48,10 +48,11 @@ This setup has been validated against OSX 10.11 and 10.12 via [VMWARE Fusion](ht
 2. Install the full `Xcode` developer package from the Apple App Store. `=>` I use the full package because it comes with both the gcc compiler and emulators for iOS devices.These come in handy for testing responsive websites and applications.
 3. Type `cmd + space` and launch `Xcode`. This should install additional required components and will prompt you for the license approval.
 4. Reboot the workstation.
-5. Type `cmd + space` and launch `Terminal` and to perform the next block of installations.
 
-  1. `xcode-select --install`: this will confirm that xcode developer tools are properly installed.
-  2. `sudo xcodebuild -license accept`: this will confirm that the xcode eula has been approved.
-  3. Install [homebrew](http://brew.sh/)  
-  `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-  4. tbd
+Type `cmd + space` and launch `Terminal` and to perform the next block of installations.
+
+1. `xcode-select --install`: this will confirm that xcode developer tools are properly installed.
+2. `sudo xcodebuild -license accept`: this will confirm that the xcode eula has been approved.
+3. Install [homebrew](http://brew.sh/)  
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+4. tbd
