@@ -47,6 +47,4 @@ unsetopt correct_all
 
 source $HOME/.myconfigurations/workstation/shell/includes
 
-source $(brew --prefix nvm)/nvm.sh
-
 eval "$(direnv hook zsh)"

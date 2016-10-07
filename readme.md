@@ -98,3 +98,10 @@ Now we have to sync our settings to the configuration repo!
 `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`
 2. Setup symlinks to our configuration dotfiles.  
 `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`
+3. If you get the error `zsh compinit: insecure directories, run compaudit for list.` you will need to adjust zsh permissions as desribed in this [stackoverflow post](http://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories).
+```
+cd /usr/local/share/
+sudo chmod -R 755 zsh
+sudo chown -R root:staff zsh
+```
+4. TBD
