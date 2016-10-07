@@ -141,3 +141,7 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`
 4. Setup symlinks to our atom configuration files.  
 `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/database.svg" height="20"> Databases
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Additional Tools
