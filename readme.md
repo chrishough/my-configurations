@@ -14,7 +14,7 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [sass-lint](https://github.com/brigade/scss-lint)
 * [credo](https://github.com/rrrene/credo)
 
-This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests.
+This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Base Software Installation
 
@@ -111,6 +111,10 @@ Verify global rbenv vars are setup correctly. Type `nano $HOME/.rbenv/vars` and 
 GEM_PATH=.bundle
 ```
 
+At this point if you type `cd $HOME && lsa` your home directory should look like this.
+
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/7.png)
+
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Shortcuts and Helpers
 
 As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them.
@@ -126,3 +130,14 @@ As you explore the configuration directories you will notice a number of shortcu
 |[keybase](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/keybase)| keybasehelp |Keybase shortcuts and workflows.|
 |[ruby](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/ruby)| rubyhelp | Ruby and Rails based commands.|
 |[shell](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/shell)| shellhelp | Everything shell.|
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/ide.svg" height="20"> IDE
+
+I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime text 2, and atom.  My current build utilizes [atom](https://atom.io/) to get the job done, and I have been working with it since beta.  No, it is not as fast as an engineer who has mastered the vim keyboard but it comes pretty darn close.
+
+1. Download and install [atom](https://atom.io/). This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
+2. Type `cmd + space` to launch `Atom` to approved the EULA. Once approved, close the application.
+3. Backup existing atom configuration.  
+`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`
+4. Setup symlinks to our atom configuration files.  
+`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`

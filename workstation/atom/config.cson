@@ -1,43 +1,77 @@
 "*":
-	core:
-		destroyEmptyPanes: false
-		excludeVcsIgnoredPaths: false
-		ignoredNames: [
-			".git"
-			".svn"
-			".DS_Store"
-			".bundle"
-		]
-		themes: [
-			"atom-dark-ui"
-			"base16-tomorrow-dark-theme"
-		]
-	editor:
-		fontFamily: "Inconsolata"
-		fontSize: 15
-		invisibles: {}
-		preferredLineLength: 130
-		showIndentGuide: true
-		tabLength: 2
-	"exception-reporting":
-		userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
-	linter:
-		statusBar: "Show all errors"
-	"linter-js-yaml": {}
-	"linter-jshint": {}
-	"markdown-preview":
-		useGitHubStyle: true
-	"tree-view":
-		hideIgnoredNames: true
-	welcome:
-		showOnStartup: false
-	whitespace: {}
-	".slim.text":
-		editor:
-			preferredLineLength: 130
-			showIndentGuide: true
-			showInvisibles: false
-	whitespace:
-		removeTrailingWhitespace: true
-	'tabs-to-spaces':
-		'onSave': 'tabify'
+  "":
+    slim:
+      text:
+        editor:
+          preferredLineLength: 130
+          showIndentGuide: true
+          showInvisibles: false
+    source:
+      yml:
+        "tabs-to-spaces":
+          onSave: "none"
+  core:
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "tabs-to-spaces"
+      "language-cfml"
+    ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+      ".bundle"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontFamily: "Inconsolata"
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 130
+    tabLength: 2
+    tabType: "soft"
+  "exception-reporting":
+    userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
+  "glowing-cursor":
+    cursorWidth: 2
+    glowColor:
+      red: 255
+      green: 39
+      blue: 57
+      alpha: 1
+    glowDistance: 2
+    innerColor:
+      red: 255
+      green: 39
+      blue: 57
+      alpha: 1
+  linter:
+    statusBar: "Show all errors"
+  "linter-js-yaml": {}
+  "linter-jshint": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  "trailing-spaces":
+    enableForIndentation: true
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: true
+".haml.text":
+  editor:
+    preferredLineLength: 130
+".hamlc.text":
+  editor:
+    preferredLineLength: 130
+".slim.text":
+  editor:
+    preferredLineLength: 130
