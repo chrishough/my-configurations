@@ -37,7 +37,7 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 7. Install [Autojump](https://github.com/wting/autojump) via `brew install autojump`.
 8. Install [direnv](http://direnv.net/) to manage environment variables via `brew install direnv`.
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="25"> Setup Ruby
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="20"> Setup Ruby
 
 This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. If you are ok with that, let's type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
 
@@ -110,9 +110,9 @@ sudo chown -R root:staff zsh
 GEM_PATH=.bundle
 ```
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="25"> Shortcuts and Helpers
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Shortcuts and Helpers
 
-As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them. 
+As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them.
 
 | File  | Helper Command | Description  |
 |---|:---:|---|
