@@ -6,6 +6,8 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 If you're learning to code, I hope I can save you time. I live by using linters and tools that monitor testing coverage.  Whether I am building a project for the enterprise or side project I hope to make some money on, I run these tools in real time.  I believe code quality, testing coverage, and coding styles are critical to the success and longevity of any project.
 
+<img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="25"> This guide is highly opinionated. If you have any questions please post an issue. Also, I am open to pull requests.  
+
 * [guard](https://github.com/guard/guard)
 * [rubocop](https://github.com/bbatsov/rubocop)
 * [simplecov](https://github.com/colszowka/simplecov)
@@ -13,22 +15,6 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [eshint](http://eslint.org/)
 * [sass-lint](https://github.com/brigade/scss-lint)
 * [credo](https://github.com/rrrene/credo)
-
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Software
-
-
-* [Atom](https://atom.io/)
-* [iterm2](http://www.iterm2.com)
-* [Zsh](http://www.zsh.org/) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-* [Postgres App](http://postgresapp.com/)
-* [Autojump](https://github.com/joelthelion/autojump)
-* [Paw](https://luckymarmot.com/paw)
-* [Pathfinder](http://cocoatech.com/pathfinder/)
-* [Arq](http://www.haystacksoftware.com/arq/) + [Amazon S3](https://aws.amazon.com/s3/)
-* [Cloak](https://www.getcloak.com/)
-* [Dash](http://kapeli.com/dash)
-* [Divvy](https://mizage.com/divvy/)
-* [Adobe Creative Cloud](http://www.adobe.com/)
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Base Software Installation
 
@@ -70,3 +56,13 @@ This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. 
 `git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update`
 9. Install a few common versions of ruby. At the time of this build the following versions were installed: `rbenv install 2.3.0` and `rbenv install 2.3.1`.  Please note you can run `rbenv install -l` to see the current versions available.
 10. Run `rbenv global 2.3.0` to setup the global version of ruby.
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Core Software
+
+Type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
+
+1. First we will clone this repo to our home directory. Please note, that if you are having cloning issues you may need to setup your [new ssh keys](https://help.github.com/enterprise/11.10.340/user/articles/generating-ssh-keys/).  
+`git clone git@github.com:chrishough/my-configurations.git .myconfigurations`
+2. Install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) regular and bold fonts via [google fonts](https://fonts.google.com/specimen/Inconsolata?selection.family=Inconsolata).
+3. Download and install [iterm2](https://www.iterm2.com/version3.html).  This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
+4.
