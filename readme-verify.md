@@ -23,28 +23,6 @@ For design things, primarily Ai and Photoshop.
   * [Hough Maestro Macros](https://github.com/chrishough/my-configurations/tree/master/software/maestro/studio.md).
 * [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
 
-### Dot Files
-----
-[.bash_profile](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.bash_profile)  
-[.bashrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.bashrc)  
-[.gemrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.gemrc)  
-[.profile](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.profile)  
-[.pryrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.pryrc)  
-[.vimrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.vimrc)  
-[.zprofile](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.zprofile)  
-[.zshrc](https://github.com/chrishough/my-configurations/blob/master/workstation/dotfiles/.bash_profile)  
-
-### Shell Shortcuts
-----
-[includes](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/includes): This is the base file to pull in all the includes.   
-[global-helpers](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-helpers): Controls that apply to all of the inlcudes.   
-[global-settings](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-settings): Machine and include settings.   
-[app](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/app):  Applications that do not require their own includes file.   
-[git](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/git):  Github shortcuts and workflows.  
-[heroku](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/heroku):  Heroku shortcuts and workflows.    
-[keybase](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/keybase): Keybase shortcuts and workflows.   
-[ruby](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/ruby):  Ruby and Rails based commands.   
-[shell](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/shell):  Everything shell..  
 
 
 
@@ -75,7 +53,7 @@ Via `Package Control` these are my favorite packages:
 ----
 
 6. brew install postgres
-7. brew install nvm
+
 
 9. install postgresapp from postgresapp.com
 10. copy ~/.gitconfig and ~/.ssh to new computer
@@ -85,14 +63,11 @@ Via `Package Control` these are my favorite packages:
 19. install atom plugins
 20. setup atom theme, keymap.cson, and config.cson files
 
-23. make sure each dotfile exists, if it does not create it
-24. symlink the current dotfiles to the git versions via ruby settings/symlinks.rb
 
-27. make sure to setup rbenv vars
+
 28. run brew doctor to make sure there are no errors
 30. install [java](http://support.apple.com/kb/DL1572)
-31. cd into scripts and run ruby backup.rb
-32. cd into scripts and run ruby symlinks.rb
+
 
 ...*Time to drink beer!*
 

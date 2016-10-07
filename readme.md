@@ -92,7 +92,7 @@ Type `cmd + space` to launch `iterm2` to perform the next block of installations
 
 ![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/6.png)
 
-Now we have to sync our settings to the configuration repo!
+Now we have to sync our settings to the configuration repo! This will adjust the following files: .pryrc, .vimrc, .zprofile, .zshrc, .profile, .gemrc, .bashrc, and .bash_profile.
 
 1. Backup existing dotfiles.  
 `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`
@@ -104,4 +104,24 @@ cd /usr/local/share/
 sudo chmod -R 755 zsh
 sudo chown -R root:staff zsh
 ```
-4. TBD
+4. Verify global rbenv vars are setup correctly. Type `nano $HOME/.rbenv/vars` and confirm the following. Adjust if necessary. Once completed, type `rbenv vars` and you should see `export GEM_PATH='.bundle'`.
+```
+#GLOBAL
+GEM_PATH=.bundle
+```
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="25"> Shortcuts and Helpers
+
+As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them. 
+
+| File  | Helper Command | Description  |
+|---|:---:|---|
+|[includes](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/includes)| |This is the base file to pull in all the includes.|
+|[global-helpers](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-helpers)| |Controls that apply to all of the inlcudes.|
+|[global-settings](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-settings)| |Machine and include settings.|
+|[app](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/app)| apphelp | Applications that do not require their own includes file.|
+|[git](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/git)| githelp | Github shortcuts and workflows.|
+|[heroku](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/heroku)| herokuhelp | Heroku shortcuts and workflows.|
+|[keybase](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/keybase)| keybasehelp |Keybase shortcuts and workflows.|
+|[ruby](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/ruby)| rubyhelp | Ruby and Rails based commands.|
+|[shell](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/shell)| shellhelp | Everything shell.|
