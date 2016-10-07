@@ -138,9 +138,9 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 1. Download and install [atom](https://atom.io/). This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
 2. Type `cmd + space` to launch `Atom` to approved the EULA. Once approved, close the application.
 3. Backup existing atom configuration.  
-`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`
+`ruby $HOME/.myconfigurations/scripts/setup/ide/backup.rb`
 4. Setup symlinks to our atom configuration files.  
-`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`
+`ruby $HOME/.myconfigurations/scripts/setup/ide/symlinks.rb`
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/database.svg" height="20"> Databases
 
