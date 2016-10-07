@@ -1,5 +1,5 @@
-### <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/computer.svg" height="20"> Configurations
-----
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/computer.svg" height="20"> Configurations
+
 Every engineer's workstation configuration (`dotfiles`) is highly variable and tailored to their desires, habits, and software stack. I love rebuilding and tinkering with my build by learning from and collaborating with others.  This setup is what I use to get the job done, however, don't just accept my words as gospel, find your own path when setting up your build.  
 
 >I also think it is important to reason from first principles, rather than, by analogy. So the normal way we conduct our lives is we reason by analogy. We're doing this because it's like something else that was done or like what other people are doing. Iterations on a theme. It's kinda mentally easier to reason by analogy rather than from first principles. First principles is kinda a physics way of looking at the world and what that really means is you kinda boil things down to the most fundamental truths and say okay, what are we sure is true? or sure as possible is true? and then reason up from there. That takes a lot more mental energy. - Elon Musk Foundation 20
@@ -14,9 +14,7 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [sass-lint](https://github.com/brigade/scss-lint)
 * [credo](https://github.com/rrrene/credo)
 
-### <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Assumptions
-
----
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Assumptions
 
 * The workstation is running the latest production release of [Apple OSX](http://www.apple.com/osx/).
 * The latest release of [Xcode](https://developer.apple.com/xcode/) has been installed with the command line tools.
@@ -26,9 +24,8 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [rbenv](https://github.com/sstephenson/rbenv) is how you're running ruby locally, and it has already been installed.
 * [ruby-build](https://github.com/sstephenson/ruby-build) installed via homebrew.
 
-### <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Software
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Software
 
----
 
 * [Atom](https://atom.io/)
 * [iterm2](http://www.iterm2.com)
@@ -43,9 +40,7 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [Divvy](https://mizage.com/divvy/)
 * [Adobe Creative Cloud](http://www.adobe.com/)
 
-### <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Install
-
----
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Install
 
 This setup has been validated against OSX 10.11 and 10.12 via [VMWARE Fusion](http://www.vmware.com/products/fusion.html) :bangbang:
 
@@ -54,6 +49,7 @@ This setup has been validated against OSX 10.11 and 10.12 via [VMWARE Fusion](ht
 3. Type `cmd + space` and launch `Xcode`. This should install additional required components and will prompt you for the license approval.
 4. Reboot the workstation.
 5. Type `cmd + space` and launch `Terminal` and to perform the next block of installations.
+
   1. `xcode-select --install`: this will confirm that xcode developer tools are properly installed.
   2. `sudo xcodebuild -license accept`: this will confirm that the xcode eula has been approved.
   3. Install [homebrew](http://brew.sh/)  
