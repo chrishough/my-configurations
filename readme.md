@@ -104,7 +104,8 @@ cd /usr/local/share/
 sudo chmod -R 755 zsh
 sudo chown -R root:staff zsh
 ```
-4. Verify global rbenv vars are setup correctly. Type `nano $HOME/.rbenv/vars` and confirm the following. Adjust if necessary. Once completed, type `rbenv vars` and you should see `export GEM_PATH='.bundle'`.
+
+Verify global rbenv vars are setup correctly. Type `nano $HOME/.rbenv/vars` and confirm the following. Adjust if necessary. Once completed, type `rbenv vars` and you should see `export GEM_PATH='.bundle'`.
 ```
 #GLOBAL
 GEM_PATH=.bundle
