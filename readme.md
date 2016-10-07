@@ -6,7 +6,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 If you're learning to code, I hope I can save you time. I live by using linters and tools that monitor testing coverage.  Whether I am building a project for the enterprise or side project I hope to make some money on, I run these tools in real time.  I believe code quality, testing coverage, and coding styles are critical to the success and longevity of any project.
 
-<img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="25"> This guide is highly opinionated. If you have any questions please post an issue. Also, I am open to pull requests.  
+<img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="15"> *This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests.*
 
 * [guard](https://github.com/guard/guard)
 * [rubocop](https://github.com/bbatsov/rubocop)
