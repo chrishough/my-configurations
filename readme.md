@@ -56,6 +56,6 @@ This setup has been validated against OSX 10.11 and 10.12 via [VMWARE Fusion](ht
 5. Type `cmd + space` and launch `Terminal` and to perform the next block of installations.
   1. `xcode-select --install`: this will confirm that xcode developer tools are properly installed.
   2. `sudo xcodebuild -license accept`: this will confirm that the xcode eula has been approved.
-  3. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-`: to install [homebrew](http://brew.sh/)
+  3. Install [homebrew](http://brew.sh/)  
+  `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   4. tbd
