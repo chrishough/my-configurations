@@ -14,16 +14,6 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [sass-lint](https://github.com/brigade/scss-lint)
 * [credo](https://github.com/rrrene/credo)
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Assumptions
-
-* The workstation is running the latest production release of [Apple OSX](http://www.apple.com/osx/).
-* The latest release of [Xcode](https://developer.apple.com/xcode/) has been installed with the command line tools.
-* [Homebrew](http://brew.sh/) has been successfully installed.
-* Running ```brew doctor``` does not report any configuration issues.
-* [Google Chrome](http://www.google.com/chrome) is your primary development browser.
-* [rbenv](https://github.com/sstephenson/rbenv) is how you're running ruby locally, and it has already been installed.
-* [ruby-build](https://github.com/sstephenson/ruby-build) installed via homebrew.
-
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Software
 
 
@@ -49,10 +39,27 @@ This setup has been validated against OSX 10.11 and 10.12 via [VMWARE Fusion](ht
 3. Type `cmd + space` and launch `Xcode`. This should install additional required components and will prompt you for the license approval.
 4. Reboot the workstation.
 
-Type `cmd + space` and launch `Terminal` and to perform the next block of installations.
+Type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
 
 1. `xcode-select --install`: this will confirm that xcode developer tools are properly installed.
 2. `sudo xcodebuild -license accept`: this will confirm that the xcode eula has been approved.
-3. Install [homebrew](http://brew.sh/)  
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-4. tbd
+3. Install [homebrew](http://brew.sh/).    
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+4. Run `brew doctor` and make sure it reports `Your system is ready to brew`.
+5. Update brew via `brew update`.
+6. Install the latest version of git via `brew install git`.
+7. Install [Autojump](https://github.com/wting/autojump) via `brew install autojump`.
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="25"> Ruby
+
+This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. If you are ok with that, let's type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
+
+1. Setup [Ruby](https://www.ruby-lang.org/en/) via `brew install rbenv rbenv-build`
+2. Following the guide on the [repo](https://github.com/rbenv/rbenv) run `rbenv init` and then `eval "$(rbenv init -)"`. This will create the .rbenv directory.
+3. Create the rbenv plugin directory `mkdir $(rbenv root)/plugins`.
+4. Install [rbenv-default-gems](https://github.com/rbenv/rbenv-default-gems) plugin via `git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems`.
+5. Install [rbenv/rbenv-gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) plugin via `git clone https://github.com/sstephenson/rbenv-gem-rehash.git $(rbenv root)/plugins/rbenv-gem-rehash`
+6. Install [rbenv-vars](https://github.com/rbenv/rbenv-vars) plugin via `git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars`
+7. Install [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) plugin via `git clone https://github.com/ianheggie/rbenv-binstubs.git $(rbenv root)/plugins/rbenv-binstubs`
+8. Install [rbenv-update](https://github.com/rkh/rbenv-update) plugin via `git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update`
+9. Install a few common versions of ruby. At the time of this build the following versions were installed: `rbenv install 2.3.0` and `rbenv install 2.3.1`.  Please note you can run `rbenv install -l` to see the current versions available.
