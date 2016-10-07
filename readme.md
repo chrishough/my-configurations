@@ -6,8 +6,6 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 If you're learning to code, I hope I can save you time. I live by using linters and tools that monitor testing coverage.  Whether I am building a project for the enterprise or side project I hope to make some money on, I run these tools in real time.  I believe code quality, testing coverage, and coding styles are critical to the success and longevity of any project.
 
-<img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="15"> *This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests.*
-
 * [guard](https://github.com/guard/guard)
 * [rubocop](https://github.com/bbatsov/rubocop)
 * [simplecov](https://github.com/colszowka/simplecov)
@@ -15,6 +13,8 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [eshint](http://eslint.org/)
 * [sass-lint](https://github.com/brigade/scss-lint)
 * [credo](https://github.com/rrrene/credo)
+
+This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests.
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Base Software Installation
 
@@ -65,4 +65,8 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 `git clone git@github.com:chrishough/my-configurations.git .myconfigurations`
 2. Install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) regular and bold fonts via [google fonts](https://fonts.google.com/specimen/Inconsolata?selection.family=Inconsolata).
 3. Download and install [iterm2](https://www.iterm2.com/version3.html).  This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
-4.
+4. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+5. Install [Zsh](http://www.zsh.org/) and set it as the default shell.  
+`brew install zsh`
+6. Following this [guide](sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh) we need to set zsh as the default shell.  If you run `which zsh` you will see this pointed to `/bin/zsh`. We need to change this.  Running `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh` will properly adjust this for us. Now when you run `which zsh` it should be pointed to `/usr/local/bin/zsh`.
