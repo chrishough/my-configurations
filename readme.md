@@ -90,6 +90,8 @@ Type `cmd + space` to launch `iterm2` to perform the next block of installations
 
 ![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/5.png)
 
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/6.png)
+
 Now we have to sync our settings to the configuration repo!
 
 1. Backup existing dotfiles.  

@@ -84,7 +84,6 @@ Via `Package Control` these are my favorite packages:
 18. download and install atom
 19. install atom plugins
 20. setup atom theme, keymap.cson, and config.cson files
-21. backup current settings file by running ruby settings/backup.rb
 
 23. make sure each dotfile exists, if it does not create it
 24. symlink the current dotfiles to the git versions via ruby settings/symlinks.rb
