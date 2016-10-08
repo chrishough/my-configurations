@@ -172,3 +172,22 @@ rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
 * [Adobe Creative Cloud](http://www.adobe.com/): Design things, primarily Ai and Photoshop.
 * [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
 * [Keyboard Maestro](http://www.keyboardmaestro.com/main/): Keyboard Macros.
+* [1Password](https://1password.com/): Password and 2FA security across all Apple devices.
+* [Alfred](https://www.alfredapp.com/): Replace spotlight with powerful workflows.
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/alfred.svg" height="20"> Alfred Workflows
+
+If you love automation, you will love [Alfred](https://www.alfredapp.com/)! It is basically spotlight on steroids and when you purchase the license you are granted access to infinitely complex workflows.  Here is what I have installed.
+
+* [chrome-bookmarks](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/chrome-bookmarks.alfredworkflow): Search Chrome Bookmarks.
+* [emoji-codes](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/emoji-codes.alfredworkflow): Emoji Search ([repo](https://github.com/carlosgaldino/alfred-emoji-workflow)).
+* [forecast](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/.alfredworkflow): Weather Forecast ([repo](http://github.com/kejadlen/forecast.alfredworkflow)).
+* [github-commands](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/github-commands.alfredworkflow): Parse Github Pages.
+* [google](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/google.alfredworkflow): Google Search.
+* [ip-address-info](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/ip-address-info.alfredworkflow): Retrieve Local IP Address.
+* [open-text-file](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/open-text-file.alfredworkflow): Open a .txt file.
+* [replace-spaces-with-hyphens](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/replace-spaces-with-hyphens.alfredworkflow): Create slugs for git flow.
+* [start-ios-emulator](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/start-ios-emulator.alfredworkflow): Start the iOS Emulator.
+* [timezones](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/timezones.alfredworkflow): Pull Time.
+* [toggle-visibility-of-hidden-files](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/toggle-visibility-of-hidden-files.alfredworkflow): Show OSX Hidden Files.
+* [urban-dictionary](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/urban-dictionary.alfredworkflow): Query the Urban Dictionary.
