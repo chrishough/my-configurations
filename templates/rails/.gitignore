@@ -1,9 +1,13 @@
 ###-> Settings
-.bundle/*
-!.bundle/config
-config/secrets.yml
+.bundle
 config/application.yml
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
 .env
+test.env
+scratch.rb
+lib/tasks/custom.rake
 
 ###-> Folders
 tmp
@@ -26,7 +30,6 @@ public/robot
 *.eps
 *.7z
 *.dmg
-*.gz
 *.iso
 *.jar
 *.rar

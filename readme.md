@@ -136,12 +136,39 @@ As you explore the configuration directories you will notice a number of shortcu
 I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime text 2, and atom.  My current build utilizes [atom](https://atom.io/) to get the job done, and I have been working with it since beta.  No, it is not as fast as an engineer who has mastered the vim keyboard but it comes pretty darn close.
 
 1. Download and install [atom](https://atom.io/). This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
-2. Type `cmd + space` to launch `Atom` to approved the EULA. Once approved, close the application.
-3. Backup existing atom configuration.  
+2. Type `cmd + space` to launch `Atom` to approve the EULA. Once approved, close the application.
+3. Backup the existing atom configuration.  
 `ruby $HOME/.myconfigurations/scripts/setup/ide/backup.rb`
 4. Setup symlinks to our atom configuration files.  
 `ruby $HOME/.myconfigurations/scripts/setup/ide/symlinks.rb`
+5. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
+6. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go.
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/database.svg" height="20"> Databases
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Additional Tools
+Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
+
+1. Type `brew tap homebrew/services` to install brew services. Thoughtbot has a great [guide](https://robots.thoughtbot.com/starting-and-stopping-background-services-with-homebrew) on this tool.
+2. Run `brew install postgres` to install [PostgreSQL](https://www.postgresql.org/).
+3. Start PostgreSQL via `brew services start postgres` and create your base db via the following command:
+```
+createdb `whoami`
+```
+4. If everything worked correctly you can verify this by attaching to Postgres by typing `psql`. Please note this installation of Postgres via Homebrew was adapted from [install-postgresql-on-mac-os-x-via-brew](http://exponential.io/blog/2015/02/21/install-postgresql-on-mac-os-x-via-brew/) and this [stackoverflow post](http://stackoverflow.com/questions/17822974/postgres-fatal-database-files-are-incompatible-with-server). Unfortunately my local copy of Postgres was borked so I rebuilt it at one point by going "nuclear" and removing everything.
+```
+rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
+```
+5. Run `brew install redis` to install [Redis](http://redis.io/).
+6. Start Redis via `brew services start redis`
+
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Additional Recommended Tools
+
+* [Paw](https://luckymarmot.com/paw): API testing and construction.
+* [Pathfinder](http://cocoatech.com/pathfinder/): A finder on steroids.
+* [Arq](http://www.haystacksoftware.com/arq/) + [S3](https://aws.amazon.com/s3/): Encrypted cloud backup.
+* [Cloak](https://www.getcloak.com/): Cloud based VPN.
+* [Dash](http://kapeli.com/dash): Local documentation.
+* [Divvy](https://mizage.com/divvy/): OSX window management.
+* [Adobe Creative Cloud](http://www.adobe.com/): Design things, primarily Ai and Photoshop.
+* [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
+* [Keyboard Maestro](http://www.keyboardmaestro.com/main/): Keyboard Macros.
