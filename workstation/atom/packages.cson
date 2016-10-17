@@ -14,6 +14,7 @@ packages: [
   "pretty-json"
   "remote-sync"
   "set-syntax"
+  "tab-numbers"
   "tabularize"
   "trailing-spaces"
 ]
