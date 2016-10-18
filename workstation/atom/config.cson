@@ -10,6 +10,9 @@
       yml:
         "tabs-to-spaces":
           onSave: "none"
+  "autocomplete-js-import":
+    fuzzy:
+      enabled: true
   core:
     destroyEmptyPanes: false
     disabledPackages: [

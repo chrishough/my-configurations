@@ -2,6 +2,7 @@ packages: [
   "atom-alignment"
   "atom-react-native-autocomplete"
   "auto-update-packages"
+  "autocomplete-js-import"
   "emmet"
   "file-icons"
   "glowing-cursor"
