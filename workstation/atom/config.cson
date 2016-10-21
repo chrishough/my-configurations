@@ -42,9 +42,17 @@
     userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
   "glowing-cursor":
     cursorWidth: 2
-    glowColor: "#ff2739"
+    glowColor:
+      red: 255
+      green: 39
+      blue: 57
+      alpha: 1
     glowDistance: 2
-    innerColor: "#ff2739"
+    innerColor:
+      red: 255
+      green: 39
+      blue: 57
+      alpha: 1
   linter:
     statusBar: "Show all errors"
   "linter-js-yaml": {}
