@@ -13,6 +13,8 @@
   "autocomplete-js-import":
     fuzzy:
       enabled: true
+  "autocomplete-ruby":
+    rsensePath: "/Users/chrishough/.rbenv/shims/rsense"
   core:
     destroyEmptyPanes: false
     disabledPackages: [
