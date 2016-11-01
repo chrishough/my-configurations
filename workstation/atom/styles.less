@@ -26,8 +26,20 @@ atom-text-editor::shadow .cursor {
 
 atom-text-editor::shadow .gutter {
   background-color: #373737;
-  color: #cccccc
+  color: #cccccc;
 }
+
 atom-text-editor::shadow .is-focused .line-number.cursor-line-no-selection {
   color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+atom-text-editor::shadow .gutter:nth-child(2) {
+  border-right: solid 1px red;
+}
+
+atom-text-editor::shadow .wrap-guide {
+  background-color: #000;
+  border-right: dashed 1px red;
 }

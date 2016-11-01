@@ -35,7 +35,6 @@
     fontFamily: "Inconsolata"
     fontSize: 15
     invisibles: {}
-    preferredLineLength: 130
     tabLength: 2
     tabType: "soft"
   "exception-reporting":
