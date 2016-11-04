@@ -37,7 +37,7 @@
     fontFamily: "Inconsolata"
     fontSize: 15
     invisibles: {}
-    tabLength: 2
+    softWrap: true
     tabType: "soft"
   "exception-reporting":
     userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
