@@ -17,6 +17,7 @@ packages: [
   "linter-rails-best-practices"
   "linter-rubocop"
   "linter-sass-lint"
+  "linter-slim"
   "maximize-panes"
   "move-panes"
   "package-sync"
