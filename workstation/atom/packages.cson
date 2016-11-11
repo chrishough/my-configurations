@@ -1,5 +1,7 @@
 packages: [
   "atom-alignment"
+  "atom-material-syntax-dark"
+  "atom-material-ui"
   "atom-react-native-autocomplete"
   "auto-update-packages"
   "autocomplete-js-import"

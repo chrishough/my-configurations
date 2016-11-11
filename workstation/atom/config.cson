@@ -10,6 +10,21 @@
       yml:
         "tabs-to-spaces":
           onSave: "none"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#ec407a"
+      accentColor: "#46ffc1"
+      paintCursor: true
+      predefinedColor: "Pink"
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   "autocomplete-js-import":
     fuzzy:
       enabled: true
@@ -30,7 +45,7 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
+      "atom-material-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
