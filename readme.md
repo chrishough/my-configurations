@@ -72,6 +72,11 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 5. Install [Zsh](http://www.zsh.org/) and set it as the default shell.  
 `brew install zsh`
 6. Following this [guide](sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh) we need to set zsh as the default shell.  If you run `which zsh` you will see this pointed to `/bin/zsh`. We need to change this.  Running `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh` will properly adjust this for us. Now when you run `which zsh` it should be pointed to `/usr/local/bin/zsh`.
+7. Setup [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md).  
+`
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+`
+
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.  Also, if iterm prompts you for an update. Load it.  Also, make sure to check `load updates automatically` during this process.  Please feel free to close `Terminal` at this time.
 
