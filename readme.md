@@ -65,7 +65,7 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 
 1. First we will clone this repo to our home directory. Please note, that if you are having cloning issues you may need to setup your [new ssh keys](https://help.github.com/enterprise/11.10.340/user/articles/generating-ssh-keys/).  
 `git clone git@github.com:chrishough/my-configurations.git .myconfigurations`
-2. Install the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) regular and bold fonts via [google fonts](https://fonts.google.com/specimen/Inconsolata?selection.family=Inconsolata).
+2. Install the [Fira Code Fonts](https://github.com/tonsky/FiraCode).
 3. Download and install [iterm2](https://www.iterm2.com/version3.html).  This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
 4. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
