@@ -12,10 +12,10 @@
           onSave: "none"
   "atom-material-ui":
     colors:
-      abaseColor: "#ec407a"
-      accentColor: "#46ffc1"
+      abaseColor: "#7e57c2"
+      accentColor: "#b0e457"
       paintCursor: true
-      predefinedColor: "Pink"
+      predefinedColor: "Purple"
     tabs:
       compactTabs: true
       tintedTabBar: true
@@ -61,6 +61,7 @@
     glowDistance: 2
     innerColor: "#ff2739"
   linter:
+    showErrorPanel: false
     statusBar: "Show all errors"
   "linter-js-yaml": {}
   "linter-jshint": {}
