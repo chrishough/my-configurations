@@ -34,10 +34,9 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Inconsolata"
-    fontSize: 15
+    fontFamily: "FiraCode-Retina"
+    fontSize: 13
     invisibles: {}
-    softWrap: true
     tabType: "soft"
   "exception-reporting":
     userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
