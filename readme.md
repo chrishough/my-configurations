@@ -151,6 +151,8 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 5. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
 6. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go.
 
+![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom.png)
+
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/database.svg" height="20"> Databases
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
