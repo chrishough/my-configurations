@@ -183,6 +183,7 @@ rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
 * [Keyboard Maestro](http://www.keyboardmaestro.com/main/): Keyboard Macros.
 * [1Password](https://1password.com/): Password and 2FA security across all Apple devices.
 * [Alfred](https://www.alfredapp.com/): Replace spotlight with powerful workflows.
+* [Evernote](https://evernote.com/): Notes on steroids. Also the chrome web clipper plugin is great for saving articles.
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/alfred.svg" height="20"> Alfred Workflows
 
