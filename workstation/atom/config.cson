@@ -17,7 +17,6 @@
       paintCursor: true
       predefinedColor: "Purple"
     tabs:
-      compactTabs: true
       tintedTabBar: true
     treeView:
       blendTabs: true

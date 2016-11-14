@@ -29,6 +29,7 @@ packages: [
   "react-snippets"
   "remote-sync"
   "set-syntax"
+  "smart-tab-name"
   "tab-numbers"
   "tabularize"
   "trailing-spaces"
