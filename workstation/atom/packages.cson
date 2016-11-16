@@ -20,6 +20,7 @@ packages: [
   "linter-rubocop"
   "linter-sass-lint"
   "linter-slim"
+  "markdown-scroll-sync"
   "maximize-panes"
   "move-panes"
   "package-sync"
