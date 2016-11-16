@@ -30,6 +30,7 @@ packages: [
   "remote-sync"
   "set-syntax"
   "smart-tab-name"
+  "synced-sidebar"
   "tab-numbers"
   "tabularize"
   "trailing-spaces"

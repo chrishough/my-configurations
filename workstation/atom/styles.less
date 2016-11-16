@@ -67,3 +67,7 @@ atom-text-editor {
     max-width: initial;
   }
 }
+
+.list-tree li:not(.list-nested-item):not(.tabBlender).selected::before, .list-group li:not(.list-nested-item):not(.tabBlender).selected::before, .list-tree li.list-nested-item > .list-item.selected::before, .list-group li.list-nested-item > .list-item.selected::before {
+  background-color: #373737;
+}
