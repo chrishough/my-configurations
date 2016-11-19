@@ -13,7 +13,7 @@
   "atom-material-ui":
     colors:
       abaseColor: "#7e57c2"
-      accentColor: "#b0e457"
+      accentColor: "#ff2739"
       paintCursor: true
       predefinedColor: "Purple"
     tabs:
@@ -60,6 +60,7 @@
     glowDistance: 2
     innerColor: "#ff2739"
   linter:
+    showErrorInline: false
     showErrorPanel: false
     statusBar: "Show all errors"
   "linter-js-yaml": {}
