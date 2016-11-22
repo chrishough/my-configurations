@@ -25,6 +25,7 @@ packages: [
   "move-panes"
   "package-sync"
   "parcel"
+  "platformio-ide-terminal"
   "pretty-json"
   "react-es6-snippets"
   "react-snippets"

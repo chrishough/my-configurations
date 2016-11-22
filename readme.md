@@ -151,7 +151,51 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 5. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
 6. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go.
 
-![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom.png)
+**My Package List**
+```ruby
+packages: [
+  "atom-alignment"
+  "atom-material-syntax-dark"
+  "atom-material-ui"
+  "atom-react-native-autocomplete"
+  "auto-update-packages"
+  "autocomplete-js-import"
+  "autocomplete-ruby"
+  "emmet"
+  "file-icons"
+  "glowing-cursor"
+  "indent-guide-improved"
+  "language-babel"
+  "language-haml"
+  "language-javascript-jsx"
+  "language-slim"
+  "linter"
+  "linter-eslint"
+  "linter-rails-best-practices"
+  "linter-rubocop"
+  "linter-sass-lint"
+  "linter-slim"
+  "markdown-scroll-sync"
+  "maximize-panes"
+  "move-panes"
+  "package-sync"
+  "parcel"
+  "platformio-ide-terminal"
+  "pretty-json"
+  "react-es6-snippets"
+  "react-snippets"
+  "remote-sync"
+  "set-syntax"
+  "smart-tab-name"
+  "synced-sidebar"
+  "tab-numbers"
+  "tabularize"
+  "trailing-spaces"
+]
+```
+
+**My Atom Design**
+![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor.png)
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/database.svg" height="20"> Databases
 
