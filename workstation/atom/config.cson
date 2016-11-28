@@ -22,6 +22,7 @@
       blendTabs: true
       compactList: true
     ui:
+      animations: false
       panelContrast: true
       panelShadows: true
   "autocomplete-js-import":
@@ -30,6 +31,7 @@
   "autocomplete-ruby":
     rsensePath: "/Users/chrishough/.rbenv/shims/rsense"
   core:
+    audioBeep: false
     destroyEmptyPanes: false
     disabledPackages: [
       "tabs-to-spaces"
