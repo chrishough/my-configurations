@@ -3,6 +3,7 @@ githelp () {
   echo
   echo "--------------------------------------------------------------------------------"
   echo "  gc           = commit locally, but do not push to origin"
+  echo "  gcm          = commit locally, but do not push to origin, commit msg in ide"
   echo "  gs           = status of local files"
   echo "  gcb          = pull, create local branch, push it to origin, set upstream"
   echo "  gmb          = pull, merge branch, push, status"

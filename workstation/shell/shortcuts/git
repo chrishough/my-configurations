@@ -60,6 +60,12 @@ function gc() {
 	git commit -m "$1";
 	gs;
 }
+function gcm() {
+	git add . -A;
+	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
+	git commit;
+	gs;
+}
 function gp() {
 	msg "Pull down all the code and all the tags!";
   git branch -a | grep -v HEAD | perl -ne 'chomp($_); s|^\*?\s*||; if (m|(.+)/(.+)| && not $d{$2}) {print qq(git branch --track $2 $1/$2\n)} else {$d{$_}=1}' | csh -xfs
