@@ -62,7 +62,6 @@ function gc() {
 }
 function gcm() {
 	git add . -A;
-	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
 	git commit;
 	gs;
 }
