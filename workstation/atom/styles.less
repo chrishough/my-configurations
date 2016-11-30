@@ -71,3 +71,20 @@ atom-text-editor {
 .list-tree li:not(.list-nested-item):not(.tabBlender).selected::before, .list-group li:not(.list-nested-item):not(.tabBlender).selected::before, .list-tree li.list-nested-item > .list-item.selected::before, .list-group li.list-nested-item > .list-item.selected::before {
   background-color: #373737;
 }
+
+.smart-tab-name {
+  -webkit-mask: inherit;
+}
+
+.has-custom-icons.tinted-tab-bar .tab-bar:not([data-reactid]) .tab .title[data-path]::before {
+  color: #fff;
+}
+
+.tinted-tab-bar .tab-bar:not([data-reactid]) .tab {
+  color: #fff;
+}
+
+.smart-tab-name .ellipsis {
+  opacity: inherit;
+  color: #fff;
+}
