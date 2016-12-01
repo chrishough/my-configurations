@@ -30,6 +30,8 @@
       enabled: true
   "autocomplete-ruby":
     rsensePath: "/Users/chrishough/.rbenv/shims/rsense"
+  autosave:
+    enabled: true
   core:
     audioBeep: false
     destroyEmptyPanes: false
