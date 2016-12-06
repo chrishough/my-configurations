@@ -65,6 +65,7 @@
     innerColor: "#ff2739"
   linter:
     showErrorInline: false
+    showErrorPanel: false
     statusBar: "Show all errors"
   "linter-js-yaml": {}
   "linter-jshint": {}
