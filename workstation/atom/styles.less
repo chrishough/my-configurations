@@ -36,7 +36,7 @@ atom-text-editor::shadow .is-focused .line-number.cursor-line-no-selection {
 }
 
 atom-text-editor::shadow .gutter:nth-child(2) {
-  border-right: solid 1px red;
+  border-right: solid 1px #373737;
 }
 
 atom-text-editor::shadow .wrap-guide {
@@ -50,6 +50,15 @@ atom-text-editor {
 
 atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
   background-color: inherit;
+}
+
+atom-pane-container atom-pane {
+  border-right: solid 1px #373737;
+}
+
+.tab-bar .tab {
+  flex-grow: 1 !important;
+  max-width: none;
 }
 
 .tab.active {
@@ -110,12 +119,4 @@ atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cu
 .panel-contrast .tabBlender {
   font-weight: bold;
   font-size: 15px;
-}
-
-tabs-tab, .tab {
-  border-left: solid 2px #373737;
-}
-
-tabs-tab, .tab:last-child {
-  border-right: solid 2px #373737;
 }
