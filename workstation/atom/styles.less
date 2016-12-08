@@ -48,6 +48,10 @@ atom-text-editor {
   text-rendering: optimizeLegibility;
 }
 
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: inherit;
+}
+
 .tab.active {
   background-color: black;
   color: #fff;
@@ -64,8 +68,21 @@ atom-text-editor {
 
 .tab-bar {
   .tab {
-    max-width: initial;
+    background-color: black;
+    color: #fff;
   }
+}
+
+.tinted-tab-bar .active .tab-bar:not([data-reactid]) {
+  background: black;
+}
+
+.tinted-tab-bar .tab-bar:not([data-reactid]) {
+  background: black;
+}
+
+.tinted-tab-bar {
+  background: black;
 }
 
 .list-tree li:not(.list-nested-item):not(.tabBlender).selected::before, .list-group li:not(.list-nested-item):not(.tabBlender).selected::before, .list-tree li.list-nested-item > .list-item.selected::before, .list-group li.list-nested-item > .list-item.selected::before {
@@ -87,4 +104,18 @@ atom-text-editor {
 .smart-tab-name .ellipsis {
   opacity: inherit;
   color: #fff;
+  color: red;
+}
+
+.panel-contrast .tabBlender {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+tabs-tab, .tab {
+  border-left: solid 2px #373737;
+}
+
+tabs-tab, .tab:last-child {
+  border-right: solid 2px #373737;
 }

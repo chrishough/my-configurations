@@ -14,7 +14,6 @@
     colors:
       abaseColor: "#7e57c2"
       accentColor: "#ff2739"
-      paintCursor: true
       predefinedColor: "Purple"
     tabs:
       tintedTabBar: true
