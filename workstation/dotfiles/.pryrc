@@ -5,3 +5,4 @@ Pry.commands.alias_command 'e', 'exit'
 Pry.config.default_window_size = 25
 
 Mongo::Logger.logger.level = ::Logger::FATAL if Mongo
+Pry.config.pager = false
