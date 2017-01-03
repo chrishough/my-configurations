@@ -114,3 +114,5 @@
 ".slim.text":
   editor:
     preferredLineLength: 130
+"linter-rubocop":
+  executablePath: "/Users/chrishough/.rbenv/versions/2.3.3/bin/rubocop"
