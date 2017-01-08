@@ -202,3 +202,4 @@ If you love automation, you will love [Alfred](https://www.alfredapp.com/)! It i
 * [timezones](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/timezones.alfredworkflow): Pull Time.
 * [toggle-visibility-of-hidden-files](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/toggle-visibility-of-hidden-files.alfredworkflow): Show OSX Hidden Files.
 * [urban-dictionary](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/urban-dictionary.alfredworkflow): Query the Urban Dictionary.
+* [datetime-format-converter](https://github.com/chrishough/my-configurations/raw/master/scripts/alfred/datetime-format-converter.alfredworkflow): Convert Time ([repo](https://github.com/mwaterfall/alfred-datetime-format-converter)).

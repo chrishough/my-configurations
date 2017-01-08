@@ -63,7 +63,7 @@
     glowDistance: 2
     innerColor: "#ff2739"
   linter:
-    errorPanelHeight: 250
+    errorPanelHeight: 500
     showErrorInline: false
     showErrorPanel: false
     statusBar: "Show all errors"
