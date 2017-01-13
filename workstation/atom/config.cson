@@ -37,6 +37,7 @@
     disabledPackages: [
       "tabs-to-spaces"
       "language-cfml"
+      "synced-sidebar"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -52,7 +53,7 @@
     ]
   editor:
     fontFamily: "FiraCode-Retina"
-    fontSize: 13
+    fontSize: 12
     invisibles: {}
     tabType: "soft"
   "exception-reporting":
@@ -63,7 +64,7 @@
     glowDistance: 2
     innerColor: "#ff2739"
   linter:
-    errorPanelHeight: 500
+    errorPanelHeight: 250
     showErrorInline: false
     showErrorPanel: false
     statusBar: "Show all errors"
@@ -101,6 +102,7 @@
     enableForIndentation: true
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: false
   welcome:
     showOnStartup: false
   whitespace:
