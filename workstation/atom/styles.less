@@ -1,45 +1,19 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed.
- *
- * If you are unfamiliar with LESS, you can read more about it here:
- * http://www.lesscss.org
- */
-
-.tree-view {
-
-}
-
-// style the background and foreground colors on the atom-text-editor-element
-// itself
-atom-text-editor {
-
-}
-
-// To style other content in the text editor's shadow DOM, use the ::shadow
-// expression
-atom-text-editor::shadow .cursor {
-
-}
-
-atom-text-editor::shadow .gutter {
+atom-text-editor.editor .gutter {
   background-color: #373737;
   color: #cccccc;
 }
 
-atom-text-editor::shadow .is-focused .line-number.cursor-line-no-selection {
+atom-text-editor.editor .is-focused .line-number.cursor-line-no-selection {
   color: red;
   font-weight: bold;
   font-style: italic;
 }
 
-atom-text-editor::shadow .gutter:nth-child(2) {
+atom-text-editor.editor .gutter:nth-child(2) {
   border-right: solid 1px #373737;
 }
 
-atom-text-editor::shadow .wrap-guide {
+atom-text-editor.editor .wrap-guide {
   background-color: #000;
   border-right: dashed 1px red;
 }

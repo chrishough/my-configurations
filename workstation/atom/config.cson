@@ -58,7 +58,7 @@
   "exception-reporting":
     userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
   "glowing-cursor":
-    cursorWidth: 2
+    cursorWidth: 5
     glowColor: "#ff2739"
     glowDistance: 2
     innerColor: "#ff2739"
