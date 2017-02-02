@@ -37,6 +37,7 @@
     disabledPackages: [
       "tabs-to-spaces"
       "language-cfml"
+      "linter-rubocop"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
