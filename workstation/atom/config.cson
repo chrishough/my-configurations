@@ -38,7 +38,6 @@
       "tabs-to-spaces"
       "language-cfml"
       "synced-sidebar"
-      "linter-rubocop"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
