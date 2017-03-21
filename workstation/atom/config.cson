@@ -39,8 +39,8 @@
       "language-cfml"
       "synced-sidebar"
       "linter-rubocop"
+      "linter-rails-best-practices"
     ]
-    excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".git"
       ".svn"
@@ -71,6 +71,7 @@
     statusBar: "Show all errors"
   "linter-js-yaml": {}
   "linter-jshint": {}
+  "linter-rubocop": {}
   "markdown-preview":
     useGitHubStyle: true
   "package-sync":
