@@ -1,0 +1,10 @@
+#!/bin/zsh
+dockerhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo "  dk            = base command"
+  echo "  dkl           = list containers"
+  echo "  dks           = stop container"
+  echo "--------------------------------------------------------------------------------"
+  echo
+}
