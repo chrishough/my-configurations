@@ -14,4 +14,5 @@ source $HOME/.myconfigurations/workstation/shell/shortcut-help/app
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/heroku
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/keybase
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/ror
+source $HOME/.myconfigurations/workstation/shell/shortcut-help/docker
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/shell

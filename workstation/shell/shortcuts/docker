@@ -1,0 +1,8 @@
+#!/bin/zsh
+alias dk="docker"
+alias dkl="docker container list"
+
+function dks() {
+	msg "Stopping docker container: $1"
+	docker container stop "$1";
+}
