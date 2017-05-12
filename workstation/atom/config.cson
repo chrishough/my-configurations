@@ -41,6 +41,7 @@
       "linter-rubocop"
       "linter-rails-best-practices"
       "linter-rubocop"
+      "trailing-spaces"
     ]
     ignoredNames: [
       ".git"
