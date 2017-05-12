@@ -10,7 +10,7 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 * [rubocop](https://github.com/bbatsov/rubocop)
 * [simplecov](https://github.com/colszowka/simplecov)
 * [jshint](https://github.com/stereobooster/jshintrb)
-* [eshint](http://eslint.org/)
+* [eslint](http://eslint.org/)
 * [sass-lint](https://github.com/brigade/scss-lint)
 * [credo](https://github.com/rrrene/credo)
 
