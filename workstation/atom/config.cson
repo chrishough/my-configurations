@@ -49,6 +49,9 @@
       ".DS_Store"
       ".bundle"
     ]
+    packagesWithKeymapsDisabled: [
+      "git-plus"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -61,6 +64,9 @@
     tabType: "soft"
   "exception-reporting":
     userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
+  "git-plus":
+    commits:
+      verboseCommits: true
   "glowing-cursor":
     cursorWidth: 5
     glowColor: "#ff2739"
@@ -108,6 +114,9 @@
     showOnStartup: false
   whitespace:
     removeTrailingWhitespace: true
+".diff.source":
+  editor:
+    showInvisibles: true
 ".haml.text":
   editor:
     preferredLineLength: 130
