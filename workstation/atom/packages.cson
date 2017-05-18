@@ -1,7 +1,5 @@
 packages: [
   "atom-alignment"
-  "atom-material-syntax-dark"
-  "atom-material-ui"
   "atom-react-native-autocomplete"
   "auto-update-packages"
   "autocomplete-js-import"
@@ -31,7 +29,6 @@ packages: [
   "maximize-panes"
   "move-panes"
   "package-sync"
-  "parcel"
   "platformio-ide-terminal"
   "pretty-json"
   "react-es6-snippets"
