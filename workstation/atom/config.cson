@@ -35,6 +35,7 @@
     enabled: true
   core:
     audioBeep: false
+    automaticallyUpdate: false
     destroyEmptyPanes: false
     disabledPackages: [
       "tabs-to-spaces"
