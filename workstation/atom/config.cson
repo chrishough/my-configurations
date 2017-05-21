@@ -35,6 +35,8 @@
     enabled: true
   core:
     audioBeep: false
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
     destroyEmptyPanes: false
     disabledPackages: [
       "tabs-to-spaces"
