@@ -17,10 +17,19 @@ atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cu
   background-color: inherit;
 }
 atom-pane-container atom-pane {
-  border-right: 4px solid #000;
+  border-right: 0;
 }
 atom-pane-container atom-pane-axis.horizontal > * {
-  border-right: 4px solid #000;
+  border-right: 0;
+}
+atom-panel.left, .tool-panel.left, atom-panel.panel-left, .tool-panel.panel-left {
+    border-right: 4px solid #000;
+}
+.atom-dock-resize-handle.left, .atom-dock-resize-handle.right {
+  width: 0;
+}
+atom-pane-container atom-pane-axis.horizontal > atom-pane-resize-handle:before {
+  border-left: 4px solid #000;
 }
 .atom-dock-resize-handle.left, .atom-dock-resize-handle.right {
   width: 0;
