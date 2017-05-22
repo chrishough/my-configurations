@@ -12,10 +12,12 @@
           onSave: "none"
   "atom-material-ui":
     colors:
-      abaseColor: "#7e57c2"
-      accentColor: "#ff2739"
-      predefinedColor: "Purple"
+      abaseColor: "#ef5350"
+      accentColor: "#59fcff"
+      genAccent: true
+      predefinedColor: "Red"
     tabs:
+      compactTabs: true
       tintedTabBar: true
     treeView:
       blendTabs: true
@@ -33,13 +35,14 @@
     enabled: true
   core:
     audioBeep: false
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
     destroyEmptyPanes: false
     disabledPackages: [
       "tabs-to-spaces"
       "language-cfml"
       "synced-sidebar"
       "linter-rubocop"
-      "linter-rails-best-practices"
       "linter-rubocop"
       "trailing-spaces"
     ]
@@ -54,7 +57,7 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-material-ui"
+      "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
@@ -77,10 +80,11 @@
   "linter-js-yaml": {}
   "linter-jshint": {}
   "linter-rubocop": {}
+  "linter-ui-default":
+    panelHeight: 81
   "markdown-preview":
     useGitHubStyle: true
   "package-sync":
-    createOnChange: true
     forceOverwrite: true
   "platformio-ide-terminal":
     ansiColors:

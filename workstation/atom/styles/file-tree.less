@@ -1,0 +1,21 @@
+.tree-view {
+  li:not(.list-nested-item), li.list-nested-item > .list-item {
+    line-height: 1.85rem; // Edit me for height
+  }
+  .list-group .selected::before, .list-tree .selected::before {
+    height: 1.85rem; // Edit me for height
+  }
+  .name.icon::before {
+    margin: 0 0.5rem 0 0;
+  }
+  .list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
+  .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+    padding-left: 1rem;
+  }
+  .list-tree.has-collapsable-children li.list-item {
+    margin-left: 1.1rem;
+  }
+  .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+    margin-right: 0.3rem;
+  }
+}

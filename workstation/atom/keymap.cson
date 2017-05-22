@@ -31,7 +31,3 @@
 
 '.editor:not(.mini)':
 	'ctrl-.': 'tabs-to-spaces:tabify'
-
-'body':
-  'cmd-q': 'core:save'
-  'cmd-q cmd-q': 'application:quit'
