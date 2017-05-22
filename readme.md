@@ -152,7 +152,7 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 6. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
 
 **My Atom Design**
-![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor.png)
+![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor-v4.0.0.png)
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/database.svg" height="20"> Databases
 
