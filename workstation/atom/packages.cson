@@ -1,6 +1,6 @@
 packages: [
   "atom-alignment"
-  "atom-react-native-autocomplete"
+  "atom-no-tab-close-button"
   "auto-update-packages"
   "autocomplete-js-import"
   "autocomplete-ruby"
@@ -37,7 +37,6 @@ packages: [
   "remote-sync"
   "set-syntax"
   "smart-tab-name"
-  "tab-numbers"
   "tabularize"
   "trailing-spaces"
 ]
