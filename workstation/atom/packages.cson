@@ -1,6 +1,5 @@
 packages: [
   "atom-alignment"
-  "atom-no-tab-close-button"
   "auto-update-packages"
   "autocomplete-js-import"
   "autocomplete-ruby"

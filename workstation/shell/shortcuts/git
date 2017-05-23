@@ -92,7 +92,7 @@ function grpo() {
 function gct() {
 	msg "Creating tag: $1"
 	git tag "$1";
-	git push origin --tags;
+	git push origin --tags;11
 	msg "Current tags!";
 	git tag -l;
 	gs;
