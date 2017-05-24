@@ -38,4 +38,5 @@ packages: [
   "smart-tab-name"
   "tabularize"
   "trailing-spaces"
+  "warn-before-quitting"
 ]
