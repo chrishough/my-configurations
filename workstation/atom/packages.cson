@@ -1,5 +1,6 @@
 packages: [
   "atom-alignment"
+  "atom-no-tab-close-button"
   "auto-update-packages"
   "autocomplete-js-import"
   "autocomplete-ruby"
@@ -30,7 +31,6 @@ packages: [
   "package-sync"
   "platformio-ide-terminal"
   "pretty-json"
-  "quit-control"
   "react-es6-snippets"
   "react-snippets"
   "remote-sync"
