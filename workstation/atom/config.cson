@@ -46,6 +46,7 @@
       "linter-rubocop"
       "trailing-spaces"
     ]
+    excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".git"
       ".svn"
