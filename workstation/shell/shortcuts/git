@@ -8,6 +8,7 @@ function gd(){ git diff }
 function gtl(){ git tag -l }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
+function gtj(){ git commit --allow-empty -m "Trigger Jenkins build" } 
 
 function gpurgetags(){
 	num=0
