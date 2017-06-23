@@ -1,0 +1,24 @@
+windows:
+  - name: configurations
+    layout: main-vertical
+    panes:
+      - commands:
+        - clear
+        - echo "Configurations Windows"
+      - commands:
+        - clear
+        - cd /Users/chrishough/.myconfigurations
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/AboutChrisHough/MyPrivateData
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/AboutChrisHough/MyPublicData
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code
+        - clear
+        - lsa
