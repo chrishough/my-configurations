@@ -149,8 +149,10 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 `ruby $HOME/.myconfigurations/scripts/setup/ide/backup.rb`
 4. Setup symlinks to our atom configuration files.  
 `ruby $HOME/.myconfigurations/scripts/setup/ide/symlinks.rb`
-5. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
-6. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
+5. Setup symlinks to our application configuration files.  
+`ruby $HOME/.myconfigurations/scripts/setup/apps/symlinks.rb`
+6. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
+7. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
 
 **My Atom Design**
 ![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor-v4.0.0.png)

@@ -1,0 +1,6 @@
+windows:
+  - name: pane-less
+    root: /
+windows:
+  - name: one_more-pane-less
+    root: /
