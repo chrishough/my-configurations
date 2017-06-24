@@ -1,0 +1,45 @@
+windows:
+  - name: configurations
+    layout: 3_columns
+    panes:
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/print_deck
+        - clear
+        - echo "API_URL=http://localhost:3000/api rails s -p 3001"
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear
+        - echo "rails s"
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/aperture
+        - clear
+        - echo "rails s -p 3002"
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/print_deck
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear
+        - echo "rbe sidekiq"
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/aperture
+        - clear
+        - echo "rbe sidekiq"
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/print_deck
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/aperture
+        - clear
