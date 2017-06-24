@@ -36,6 +36,7 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 6. Install the latest version of git via `brew install git`.
 7. Install [Autojump](https://github.com/wting/autojump) via `brew install autojump`.
 8. Install [direnv](http://direnv.net/) to manage environment variables via `brew install direnv`.
+9. Install [itermocil](https://github.com/TomAnthony/itermocil) to manage iterm windows via `brew install TomAnthony/brews/itermocil`.
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="20"> Setup Ruby
 
@@ -85,19 +86,19 @@ Type `cmd + space` to launch `iterm2` to perform the next block of installations
 3. Under the terminal tab, make sure to change the report terminal type to `xterm-256color` and your character encoding to `Unicode (UTF-8)`.
 4. Set the scrollback lines to unlimited.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/1.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/2.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/3.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/4.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/8.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/5.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/6.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/1.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/2.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/3.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/4.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/5.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/6.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/7.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/8.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/9.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/10.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/11.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/12.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/13.png)
 
 Now we have to sync our settings to the configuration repo! This will adjust the following files: .pryrc, .vimrc, .zprofile, .zshrc, .profile, .gemrc, .bashrc, and .bash_profile.
 
@@ -120,7 +121,7 @@ GEM_PATH=.bundle
 
 At this point if you type `cd $HOME && lsa` your home directory should look like this.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/7.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/user_directory.png)
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Shortcuts and Helpers
 
@@ -148,8 +149,10 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 `ruby $HOME/.myconfigurations/scripts/setup/ide/backup.rb`
 4. Setup symlinks to our atom configuration files.  
 `ruby $HOME/.myconfigurations/scripts/setup/ide/symlinks.rb`
-5. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
-6. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
+5. Setup symlinks to our application configuration files.  
+`ruby $HOME/.myconfigurations/scripts/setup/apps/symlinks.rb`
+6. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
+7. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
 
 **My Atom Design**
 ![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor-v4.0.0.png)

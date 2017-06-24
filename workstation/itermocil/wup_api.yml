@@ -1,0 +1,24 @@
+windows:
+  - name: wup_api
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup
+        - clear

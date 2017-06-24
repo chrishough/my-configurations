@@ -13,6 +13,7 @@ shellhelp () {
   echo "  showfiles    = show .hidden files"
   echo "  cls          = clear shell window"
   echo "  upzsh        = upgrade zsh"
+  echo "  dvy          = run itermocil"
   echo "--------------------------------------------------------------------------------"
   echo
 }
