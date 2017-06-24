@@ -1,0 +1,24 @@
+windows:
+  - name: rbr_api
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/RobotsBuildingRobots/myemergencycontactnumber.api
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/RobotsBuildingRobots/myemergencycontactnumber.api
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/RobotsBuildingRobots/myemergencycontactnumber.api
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/RobotsBuildingRobots/myemergencycontactnumber.api
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/RobotsBuildingRobots/myemergencycontactnumber.api
+        - clear
