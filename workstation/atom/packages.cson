@@ -25,7 +25,7 @@ packages: [
   "linter-sass-lint"
   "linter-slim"
   "linter-ui-default"
-  "markdown-scroll-sync"
+  "markdown-preview-plus"
   "maximize-panes"
   "move-panes"
   "package-sync"
