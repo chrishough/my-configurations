@@ -86,19 +86,19 @@ Type `cmd + space` to launch `iterm2` to perform the next block of installations
 3. Under the terminal tab, make sure to change the report terminal type to `xterm-256color` and your character encoding to `Unicode (UTF-8)`.
 4. Set the scrollback lines to unlimited.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/1.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/2.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/3.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/4.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/8.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/5.png)
-
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/6.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/1.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/2.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/3.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/4.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/5.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/6.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/7.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/8.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/9.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/10.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/11.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/12.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/13.png)
 
 Now we have to sync our settings to the configuration repo! This will adjust the following files: .pryrc, .vimrc, .zprofile, .zshrc, .profile, .gemrc, .bashrc, and .bash_profile.
 
@@ -121,7 +121,7 @@ GEM_PATH=.bundle
 
 At this point if you type `cd $HOME && lsa` your home directory should look like this.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/iterm/7.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/user_directory.png)
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Shortcuts and Helpers
 
