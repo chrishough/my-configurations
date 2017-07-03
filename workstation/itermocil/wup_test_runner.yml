@@ -1,0 +1,12 @@
+windows:
+  - name: wup_test_runner
+    layout: even-vertical
+    panes:
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup-test-runner
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Code/WeaveUp/weaveup-test-runner
+        - clear
