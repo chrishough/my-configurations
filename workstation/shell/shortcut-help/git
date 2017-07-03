@@ -12,7 +12,7 @@ githelp () {
   echo "  gp           = pull down all the code and all the tags"
   echo "  gpo          = pushing all the things to origin"
   echo "  gck          = checkout, pull, status"
-  echo "  gtj          = trigger jenkins build"
+  echo "  gci          = trigger CI build"
   echo "  gct          = set the tag and push it"
   echo "  gtl          = list out all the tags"
   echo "  gdt          = delete tag and push delete"

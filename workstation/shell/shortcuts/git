@@ -73,9 +73,9 @@ function gp() {
 	git pull --tags;
 	gs;
 }
-function gtj() {
-  msg "Triggering Jenkins Manual Update!";
-  git commit --allow-empty -m "Trigger Jenkins build"
+function gci() {
+  msg "Triggering CI Manual Update!";
+  git commit --allow-empty -m "Trigger CI build"
   msg "Pushing all the things to origin!";
 	git push;
 	gs;
