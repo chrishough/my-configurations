@@ -39,6 +39,15 @@ function gcb() {
 	msg "Pending changes?";
 	gs;
 }
+function gcbd() {
+	git pull;
+	git checkout -b "$1" develop;
+	msg "Creating branch: $1"
+	git push -u origin "$1";
+	git push --set-upstream origin "$1";
+	msg "Pending changes?";
+	gs;
+}
 function gmt() {
 	git pull;
 	msg "Merging branch: $1 with a full overwrite of the current branch: ${$(gcbn)}"
