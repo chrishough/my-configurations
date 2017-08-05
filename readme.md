@@ -37,6 +37,7 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 7. Install [Autojump](https://github.com/wting/autojump) via `brew install autojump`.
 8. Install [direnv](http://direnv.net/) to manage environment variables via `brew install direnv`.
 9. Install [itermocil](https://github.com/TomAnthony/itermocil) to manage iterm windows via `brew install TomAnthony/brews/itermocil`.
+10. Install [htop](http://hisham.hm/htop/) via `brew install htop`.
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="20"> Setup Ruby
 
