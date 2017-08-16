@@ -1,0 +1,24 @@
+windows:
+  - name: rbr_client
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/chrishough/Career/RobotsBuildingRobots/clients
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Career/RobotsBuildingRobots/clients
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Career/RobotsBuildingRobots/clients
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Career/RobotsBuildingRobots/clients
+        - clear
+      - commands:
+        - clear
+        - cd /Users/chrishough/Career/RobotsBuildingRobots/clients
+        - clear
