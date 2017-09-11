@@ -9,6 +9,10 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 1. Make sure that FileVault and drive encryption are enabled and activated.
 2. Install all of the latest OSX updates including full operating system releases.
 3. Install the full `Xcode` developer package from the Apple App Store. `=>` I use the full package because it comes with both the gcc compiler and emulators for iOS devices. These come in handy for testing responsive websites and applications.
+4. In `System Preferences` under the trackpad disable "Natural" scrolling.
+5. Remove every application icon from the nav bar except finder on the bottom left, and the trash can on the bottom right.
+6. Set the nav bar to magnify with cursor hover, and show / hide across the bottom.
+7. 
 
 
 
