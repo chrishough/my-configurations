@@ -25,7 +25,12 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 12. Make Google Chrome the default browser.
 13. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
 14. Install [Microsoft Office for Mac](https://www.microsoft.com/en-us/store/b/office).
+15. Setup Folder Preferences.
 
+  ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/folder-preferences.png)
+
+16. TBD
+17. TBD
 
 
 
