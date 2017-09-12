@@ -23,6 +23,8 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 10. Install the 1Password Package into Firefox and Chrome.
 11. Setup Google Chrome Profile.
 12. Make Google Chrome the default browser.
+13. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
+14. Install [Microsoft Office for Mac](https://www.microsoft.com/en-us/store/b/office).
 
 
 
