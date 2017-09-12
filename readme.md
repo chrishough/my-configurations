@@ -12,7 +12,17 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 4. In `System Preferences` under the trackpad disable "Natural" scrolling.
 5. Remove every application icon from the nav bar except finder on the bottom left, and the trash can on the bottom right.
 6. Set the nav bar to magnify with cursor hover, and show / hide across the bottom.
-7. 
+7. Install [1Password](https://1password.com/) and sync via iCloud.
+8. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html) an [Firefox](https://www.mozilla.org/en-US/firefox/new/).
+9. Configure `Hot Corners` and `Mission Control`.
+
+  ![hot-corners](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/hot-corners.png)
+
+  ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/mission-control.png)
+
+10. Install the 1Password Package into Firefox and Chrome.
+11. Setup Google Chrome Profile.
+12. Make Google Chrome the default browser.
 
 
 
