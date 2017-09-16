@@ -12,6 +12,21 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 - AgileBits clear
 [1Password](https://1password.com/)
 - Microsoft [Office for Mac](https://www.microsoft.com/en-us/store/b/office)
+- Mizage [Divvy](http://mizage.com/divvy/)
+- Mizage [Shush](http://mizage.com/shush/)
+- [AlfredApp](https://www.alfredapp.com/)
+- Evernote [Skitch](https://evernote.com/products/skitch)
+- [Evernote](https://evernote.com/)
+- Bare Bones [Textwrangler](https://www.barebones.com/products/textwrangler/)
+- [Slack](https://slack.com)
+- Stairways [Keyboard Maestro](https://www.keyboardmaestro.com/main/)
+- Binaryage [Total Finder](https://totalfinder.binaryage.com/)
+- [iTerm2](https://www.iterm2.com/)
+- [Dropbox](https://www.dropbox.com)
+-
+-
+-
+-
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing Apple Workstation
 
@@ -38,9 +53,21 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
   ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/folder-preferences.png)
 
-16. TBD
-17. TBD
-
+16. Install Mizage [Divvy](http://mizage.com/divvy/).
+17. Install Mizage [Shush](http://mizage.com/shush/).
+18. Install [AlfredApp](https://www.alfredapp.com/).
+19. Install Evernote [Skitch](https://evernote.com/products/skitch).
+20. Install [Evernote](https://evernote.com/).
+21. Install Bare Bones [Textwrangler](https://www.barebones.com/products/textwrangler/).
+22. Install [Slack](https://slack.com).
+23. Install Stairways [Keyboard Maestro](https://www.keyboardmaestro.com/main/).
+24. Install Binaryage [Total Finder](https://totalfinder.binaryage.com/).
+25. Install [iTerm2](https://www.iterm2.com/).
+26. Install [Dropbox](https://www.dropbox.com).
+27.
+28.
+29.
+30.
 
 
 
