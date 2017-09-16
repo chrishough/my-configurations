@@ -23,12 +23,16 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 - Binaryage [Total Finder](https://totalfinder.binaryage.com/)
 - [iTerm2](https://www.iterm2.com/)
 - [Dropbox](https://www.dropbox.com)
+- 
 -
+-
+-
+- 
 -
 -
 -
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing Apple Workstation
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing My Apple Workstation
 
 1. Make sure that FileVault and drive encryption are enabled and activated.
 2. Install all of the latest OSX updates including full operating system releases.
@@ -64,12 +68,31 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 24. Install Binaryage [Total Finder](https://totalfinder.binaryage.com/).
 25. Install [iTerm2](https://www.iterm2.com/).
 26. Install [Dropbox](https://www.dropbox.com).
-27.
+27. Follow the `Engineering Work Setup and Configuration` below.
 28.
 29.
 30.
+31.
+32.
+33.
+34.
+35.
 
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Engineering Work Setup and Configuration
 
+1. Type `cmd + space` and launch `Xcode`. This should install additional required components and will prompt you for the license approval.
+2. Reboot the workstation.
+3. In Terminal install `xcode-select --install`: this will confirm that xcode developer tools are properly installed.
+4. `sudo xcodebuild -license accept`: this will confirm that the xcode eula has been approved.
+5. Install [homebrew](http://brew.sh/).    
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+6. Run `brew doctor` and make sure it reports `Your system is ready to brew`.
+7. Update brew via `brew update`.
+8. Install the latest version of git via `brew install git`.
+9. Install [Autojump](https://github.com/wting/autojump) via `brew install autojump`.
+10. Install [direnv](http://direnv.net/) to manage environment variables via `brew install direnv`.
+11. Install [itermocil](https://github.com/TomAnthony/itermocil) to manage iterm windows via `brew install TomAnthony/brews/itermocil`.
+12. Install [htop](http://hisham.hm/htop/) via `brew install htop`.
 
 
 
@@ -106,27 +129,7 @@ If you're learning to code, I hope I can save you time. I live by using linters 
 
 This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Base Software Installation
 
-This setup has been validated against OSX 10.11 and 10.12 via [VMWARE Fusion](http://www.vmware.com/products/fusion.html) :bangbang:
-
-
-3. Type `cmd + space` and launch `Xcode`. This should install additional required components and will prompt you for the license approval.
-4. Reboot the workstation.
-
-Type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
-
-1. `xcode-select --install`: this will confirm that xcode developer tools are properly installed.
-2. `sudo xcodebuild -license accept`: this will confirm that the xcode eula has been approved.
-3. Install [homebrew](http://brew.sh/).    
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-4. Run `brew doctor` and make sure it reports `Your system is ready to brew`.
-5. Update brew via `brew update`.
-6. Install the latest version of git via `brew install git`.
-7. Install [Autojump](https://github.com/wting/autojump) via `brew install autojump`.
-8. Install [direnv](http://direnv.net/) to manage environment variables via `brew install direnv`.
-9. Install [itermocil](https://github.com/TomAnthony/itermocil) to manage iterm windows via `brew install TomAnthony/brews/itermocil`.
-10. Install [htop](http://hisham.hm/htop/) via `brew install htop`.
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="20"> Setup Ruby
 
