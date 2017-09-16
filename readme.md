@@ -4,6 +4,15 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 >I also think it is important to reason from first principles, rather than, by analogy. So the normal way we conduct our lives is we reason by analogy. We're doing this because it's like something else that was done or like what other people are doing. Iterations on a theme. It's kinda mentally easier to reason by analogy rather than from first principles. First principles is kinda a physics way of looking at the world and what that really means is you kinda boil things down to the most fundamental truths and say okay, what are we sure is true? or sure as possible is true? and then reason up from there. That takes a lot more mental energy. - Elon Musk Foundation 20
 
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Software
+
+- Apple [Xcode](https://developer.apple.com/xcode/)
+- Google [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+- Mozilla [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- AgileBits clear
+[1Password](https://1password.com/)
+- Microsoft [Office for Mac](https://www.microsoft.com/en-us/store/b/office)
+
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing Apple Workstation
 
 1. Make sure that FileVault and drive encryption are enabled and activated.
@@ -24,7 +33,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 11. Setup Google Chrome Profile.
 12. Make Google Chrome the default browser.
 13. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
-14. Install [Microsoft Office for Mac](https://www.microsoft.com/en-us/store/b/office).
+14. Install Microsoft [Office for Mac](https://www.microsoft.com/en-us/store/b/office).
 15. Setup Folder Preferences.
 
   ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/folder-preferences.png)

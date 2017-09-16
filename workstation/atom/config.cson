@@ -83,6 +83,7 @@
   "linter-rubocop": {}
   "linter-ui-default":
     panelHeight: 81
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   "package-sync":
