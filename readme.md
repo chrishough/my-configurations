@@ -23,16 +23,16 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 - Binaryage [Total Finder](https://totalfinder.binaryage.com/)
 - [iTerm2](https://www.iterm2.com/)
 - [Dropbox](https://www.dropbox.com)
-- 
 -
 -
 -
-- 
+-
+-
 -
 -
 -
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing My Apple Workstation
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing Apple Workstation
 
 1. Make sure that FileVault and drive encryption are enabled and activated.
 2. Install all of the latest OSX updates including full operating system releases.
@@ -78,7 +78,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 34.
 35.
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Engineering Work Setup and Configuration
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Engineering Workstation Setup and Configuration
 
 1. Type `cmd + space` and launch `Xcode`. This should install additional required components and will prompt you for the license approval.
 2. Reboot the workstation.
