@@ -45,6 +45,7 @@
       "linter-rubocop"
       "linter-rubocop"
       "trailing-spaces"
+      "linter-sass-lint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
