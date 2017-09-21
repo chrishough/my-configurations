@@ -68,8 +68,8 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 24. Install Binaryage [Total Finder](https://totalfinder.binaryage.com/).
 25. Install [iTerm2](https://www.iterm2.com/).
 26. Install [Dropbox](https://www.dropbox.com).
-27. Follow the `Engineering Work Setup and Configuration` below.
-28.
+27. Install [Caffeine](http://lightheadsw.com/caffeine/).
+28. Follow the `Engineering Work Setup and Configuration` below. 
 29.
 30.
 31.
