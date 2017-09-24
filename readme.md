@@ -72,7 +72,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 28. Follow the `Engineering Work Setup and Configuration` below.
 29. Follow the `Ruby Engineering Configuration` below.
 30. Follow the `Shell Configuration` below.
-31.
+31. Setup `.ssh` keys and add them to Github.
 32.
 33.
 34.
