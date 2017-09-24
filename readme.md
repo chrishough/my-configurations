@@ -71,7 +71,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 27. Install [Caffeine](http://lightheadsw.com/caffeine/).
 28. Follow the `Engineering Work Setup and Configuration` below.
 29. Follow the `Ruby Engineering Configuration` below.
-30.
+30. Follow the `Shell Configuration` below.
 31.
 32.
 33.
@@ -115,41 +115,7 @@ This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. 
 9. Install a few common versions of ruby: `rbenv install 2.3.0`, `rbenv install 2.3.1`, and `rbenv install 2.4.1`.  Please note you can run `rbenv install -l` to see the current versions available.
 10. Run `rbenv global 2.4.1` to setup the global version of ruby.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-***
-***
-***
-***
-
-
-If you're learning to code, I hope I can save you time. I live by using linters and tools that monitor testing coverage.  Whether I am building a project for the enterprise or side project I hope to make some money on, I run these tools in real time.  I believe code quality, testing coverage, and coding styles are critical to the success and longevity of any project.
-
-* [guard](https://github.com/guard/guard)
-* [rubocop](https://github.com/bbatsov/rubocop)
-* [simplecov](https://github.com/colszowka/simplecov)
-* [jshint](https://github.com/stereobooster/jshintrb)
-* [eslint](http://eslint.org/)
-* [sass-lint](https://github.com/brigade/scss-lint)
-* [credo](https://github.com/rrrene/credo)
-
-This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
-
-
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Setup Shell
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Shell Configuration
 
 Type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
 
@@ -166,7 +132,6 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 `
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 `
-
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.  Also, if iterm prompts you for an update. Load it.  Also, make sure to check `load updates automatically` during this process.  Please feel free to close `Terminal` at this time.
 
@@ -211,6 +176,39 @@ GEM_PATH=.bundle
 At this point if you type `cd $HOME && lsa` your home directory should look like this.
 
 ![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/user_directory.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***
+***
+***
+***
+
+
+If you're learning to code, I hope I can save you time. I live by using linters and tools that monitor testing coverage.  Whether I am building a project for the enterprise or side project I hope to make some money on, I run these tools in real time.  I believe code quality, testing coverage, and coding styles are critical to the success and longevity of any project.
+
+* [guard](https://github.com/guard/guard)
+* [rubocop](https://github.com/bbatsov/rubocop)
+* [simplecov](https://github.com/colszowka/simplecov)
+* [jshint](https://github.com/stereobooster/jshintrb)
+* [eslint](http://eslint.org/)
+* [sass-lint](https://github.com/brigade/scss-lint)
+* [credo](https://github.com/rrrene/credo)
+
+This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
+
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Shortcuts and Helpers
 
