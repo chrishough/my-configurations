@@ -98,7 +98,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. If you are ok with that, let's type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
 
-1. Setup [Ruby](https://www.ruby-lang.org/en/) via `brew install rbenv rbenv-build`
+1. Setup [Ruby](https://www.ruby-lang.org/en/) via `brew install rbenv`
 2. Following the guide on the [repo](https://github.com/rbenv/rbenv) create the `.rbenv` directory.  
 `rbenv init` and then `eval "$(rbenv init -)"`.
 3. Create the rbenv plugin directory `mkdir $(rbenv root)/plugins`.
