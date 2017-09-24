@@ -4,6 +4,20 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 >I also think it is important to reason from first principles, rather than, by analogy. So the normal way we conduct our lives is we reason by analogy. We're doing this because it's like something else that was done or like what other people are doing. Iterations on a theme. It's kinda mentally easier to reason by analogy rather than from first principles. First principles is kinda a physics way of looking at the world and what that really means is you kinda boil things down to the most fundamental truths and say okay, what are we sure is true? or sure as possible is true? and then reason up from there. That takes a lot more mental energy. - Elon Musk Foundation 20
 
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Guides
+- [Workstation Build](/guides/build.md)
+
+
+
+
+
+
+
+***
+***
+***
+
+
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Software
 
 - Apple [Xcode](https://developer.apple.com/xcode/)
