@@ -35,13 +35,11 @@
 25. Install [iTerm2](https://www.iterm2.com/).
 26. Install [Dropbox](https://www.dropbox.com).
 27. Install [Caffeine](http://lightheadsw.com/caffeine/).
-28. Follow the `Engineering Work Setup and Configuration` below.
-29. Follow the `Ruby Engineering Configuration` below.
+28. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
+29. Follow the [Ruby Engineering Configuration](/guides/build.md) guide.
 30. Follow the `Shell Configuration` below.
 31. Setup `.ssh` keys and add them to Github.
 32.
 33.
 34.
 35.
-
-- [Engineering Work Setup and Configuration](/guides/workstation.md)
