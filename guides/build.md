@@ -10,11 +10,6 @@
 4. In `System Preferences` under the trackpad disable "Natural" scrolling.
 5. Remove every application icon from the bottom navigation bar except finder on the bottom left, and the trash can on the bottom right.
 6. Set the bottom navigation bar to magnify with cursor hover, and show / hide across the bottom.
-
-
-
-
-
 7. Install [1Password](https://1password.com/) and sync via iCloud.
 8. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html) an [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 9. Configure `Hot Corners` and `Mission Control`.
