@@ -1,5 +1,7 @@
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing Apple Workstation
 
+> If you need to reinstall the operating system follow "[How to install macOS](https://support.apple.com/en-us/HT204904)" from the Apple Support documentation.
+
 1. Make sure that FileVault and drive encryption are enabled and activated.
 2. Install all of the latest OSX updates including full operating system releases.
 3. Install the full `Xcode` developer package from the Apple App Store. `=>` I use the full package because it comes with both the gcc compiler and emulators for iOS devices. These come in handy for testing responsive websites and applications.
@@ -39,7 +41,7 @@
 28. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
 29. Follow the [Ruby Engineering Configuration](/guides/build.md) guide.
 30. Follow the [Shell Configuration](/guides/shell.md) below.
-31. 
+31.
 32.
 33.
 34.
