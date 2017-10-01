@@ -1,13 +1,20 @@
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing Apple Workstation
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/installation.svg" height="20"> Setup a New or Reformatting an Existing Apple Workstation OSX 10.13
 
 > If you need to reinstall the operating system follow "[How to install macOS](https://support.apple.com/en-us/HT204904)" from the Apple Support documentation.
 
-1. Make sure that FileVault and drive encryption are enabled and activated.
+1. Remove Siri, Display Mirroring, and Date & Time from the top navigation bar.
+2. Connect to Local Wifi.
+3. Make sure that FileVault and drive encryption are enabled and activated.
 2. Install all of the latest OSX updates including full operating system releases.
 3. Install the full `Xcode` developer package from the Apple App Store. `=>` I use the full package because it comes with both the gcc compiler and emulators for iOS devices. These come in handy for testing responsive websites and applications.
 4. In `System Preferences` under the trackpad disable "Natural" scrolling.
-5. Remove every application icon from the nav bar except finder on the bottom left, and the trash can on the bottom right.
-6. Set the nav bar to magnify with cursor hover, and show / hide across the bottom.
+5. Remove every application icon from the bottom navigation bar except finder on the bottom left, and the trash can on the bottom right.
+6. Set the bottom navigation bar to magnify with cursor hover, and show / hide across the bottom.
+
+
+
+
+
 7. Install [1Password](https://1password.com/) and sync via iCloud.
 8. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html) an [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 9. Configure `Hot Corners` and `Mission Control`.
