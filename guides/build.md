@@ -61,6 +61,7 @@
 51. Configure Divvy Shortcuts.
 52. Setup `OSX Messages` for all accounts.
 53. Install Omnigroup's [Omnigraffle](https://www.omnigroup.com/omnigraffle).
-54. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
-55. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.
-66. Follow the [Shell Configuration](/guides/shell.md) below.
+54. Adjust the applications in the OSX notification center.
+55. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
+56. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.
+57. Follow the [Shell Configuration](/guides/shell.md) below.
