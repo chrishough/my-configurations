@@ -4,6 +4,8 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 >I also think it is important to reason from first principles, rather than, by analogy. So the normal way we conduct our lives is we reason by analogy. We're doing this because it's like something else that was done or like what other people are doing. Iterations on a theme. It's kinda mentally easier to reason by analogy rather than from first principles. First principles is kinda a physics way of looking at the world and what that really means is you kinda boil things down to the most fundamental truths and say okay, what are we sure is true? or sure as possible is true? and then reason up from there. That takes a lot more mental energy. - Elon Musk Foundation 20
 
+These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
+
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Guides
 - [Setup a New or Reformatting an Existing Apple Workstation OSX 10.13](/guides/build.md)
 - [Engineering Workstation Setup and Configuration](/guides/workstation.md)
@@ -11,57 +13,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 - [Shell Configuration](/guides/shell.md)
 - [JavaScript Engineering Configuration](/guides/js.md)
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Software
-
-- Apple [Xcode](https://developer.apple.com/xcode/)
-- Google [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
-- Mozilla [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-- AgileBits clear
-[1Password](https://1password.com/)
-- Microsoft [Office for Mac](https://www.microsoft.com/en-us/store/b/office)
-- Mizage [Divvy](http://mizage.com/divvy/)
-- Mizage [Shush](http://mizage.com/shush/)
-- [AlfredApp](https://www.alfredapp.com/)
-- Evernote [Skitch](https://evernote.com/products/skitch)
-- [Evernote](https://evernote.com/)
-- Bare Bones [Textwrangler](https://www.barebones.com/products/textwrangler/)
-- [Slack](https://slack.com)
-- Stairways [Keyboard Maestro](https://www.keyboardmaestro.com/main/)
-- Binaryage [Total Finder](https://totalfinder.binaryage.com/)
-- [iTerm2](https://www.iterm2.com/)
-- [Dropbox](https://www.dropbox.com)
--
--
--
--
--
--
--
--
-
-***
-***
-***
-***
-***
-***
-***
-
-
-If you're learning to code, I hope I can save you time. I live by using linters and tools that monitor testing coverage.  Whether I am building a project for the enterprise or side project I hope to make some money on, I run these tools in real time.  I believe code quality, testing coverage, and coding styles are critical to the success and longevity of any project.
-
-* [guard](https://github.com/guard/guard)
-* [rubocop](https://github.com/bbatsov/rubocop)
-* [simplecov](https://github.com/colszowka/simplecov)
-* [jshint](https://github.com/stereobooster/jshintrb)
-* [eslint](http://eslint.org/)
-* [sass-lint](https://github.com/brigade/scss-lint)
-* [credo](https://github.com/rrrene/credo)
-
-This guide is highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
-
-
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Shortcuts and Helpers
+## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Shortcuts and Helpers
 
 As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them.
 
@@ -76,21 +28,6 @@ As you explore the configuration directories you will notice a number of shortcu
 |[keybase](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/keybase)| keybasehelp |Keybase shortcuts and workflows.|
 |[ruby](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/ruby)| rubyhelp | Ruby and Rails based commands.|
 |[shell](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/shell)| shellhelp | Everything shell.|
-
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Additional Recommended Tools
-
-* [Paw](https://luckymarmot.com/paw): API testing and construction.
-* [Pathfinder](http://cocoatech.com/pathfinder/): A finder on steroids.
-* [Arq](http://www.haystacksoftware.com/arq/) + [S3](https://aws.amazon.com/s3/): Encrypted cloud backup.
-* [Cloak](https://www.getcloak.com/): Cloud based VPN.
-* [Dash](http://kapeli.com/dash): Local documentation.
-* [Divvy](https://mizage.com/divvy/): OSX window management.
-* [Adobe Creative Cloud](http://www.adobe.com/): Design things, primarily Ai and Photoshop.
-* [iStat Menus](http://bjango.com/mac/istatmenus/): System performance monitoring.
-* [Keyboard Maestro](http://www.keyboardmaestro.com/main/): Keyboard Macros.
-* [1Password](https://1password.com/): Password and 2FA security across all Apple devices.
-* [Alfred](https://www.alfredapp.com/): Replace spotlight with powerful workflows.
-* [Evernote](https://evernote.com/): Notes on steroids. Also the chrome web clipper plugin is great for saving articles.
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/alfred.svg" height="20"> Alfred Workflows
 
