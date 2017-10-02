@@ -13,3 +13,21 @@
 10. Install [direnv](http://direnv.net/) to manage environment variables via `brew install direnv`.
 11. Install [itermocil](https://github.com/TomAnthony/itermocil) to manage iterm windows via `brew install TomAnthony/brews/itermocil`.
 12. Install [htop](http://hisham.hm/htop/) via `brew install htop`.
+13. If this is a reformat from a backup make sure to setup your `.gitconfig` file.
+```
+[user]
+  name = Chris Hough
+  email = {insert email address}
+[mergetool]
+  keepBackup = true
+[core]
+  editor = atom --wait
+[color]
+  ui = auto
+[push]
+  default = simple
+[github]
+  user = chrishough
+[credential]
+  helper = osxkeychain
+```

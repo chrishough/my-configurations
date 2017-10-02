@@ -75,3 +75,7 @@
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/alfred/alfred3.png)
 59. Follow the [IDE Configuration](/guides/ide.md) guide.
 60. Follow the [Database Configuration](/guides/database.md) guide.
+61. Install Kapeli's [Dash Docs](https://kapeli.com/dash).
+62. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.
+63. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).
+64. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.
