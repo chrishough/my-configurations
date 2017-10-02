@@ -19,9 +19,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.  Also, if iterm prompts you for an update. Load it.  Also, make sure to check `load updates automatically` during this process.  Please feel free to close `Terminal` at this time.
 
 1. Download the [Base16 iTerm2](https://github.com/chriskempson/base16-iterm2) colors to your documents directory. My theme uses `base16-railscasts.dark` which can be loaded in the presets.  You will need to set the contrast as shown to have a clearer definition of the font icons.
-2. My theme uses a custom background image which can be downloaded [here](https://github.com/chrishough/my-configurations/raw/master/graphics/terminal-background.png) or extracted from the repo you cloned..  If you need to view hidden files use `cmd + shift + period` described [here](http://osxdaily.com/2011/03/01/show-hidden-files-in-mac-os-x-dialog-boxes-with-commandshiftperiod/).
-3. Under the terminal tab, make sure to change the report terminal type to `xterm-256color` and your character encoding to `Unicode (UTF-8)`.
-4. Set the scrollback lines to unlimited.
+2. Under the terminal tab, make sure to change the report terminal type to `xterm-256color` and your character encoding to `Unicode (UTF-8)`.
+3. Set the scrollback lines to unlimited.
 
 ![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/1.png)
 ![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/2.png)
