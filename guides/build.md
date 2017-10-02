@@ -56,9 +56,11 @@
 46. In Finder `View` to `Show Path Bar` which will display the full folder path at the bottom of a finder window.
 47. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
 48. Configure [Fastmail](https://www.fastmail.com) and [Google](https://mail.google.com/mail/) accounts. 
-
-*** 
-
-Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
-Follow the [Ruby Engineering Configuration](/guides/build.md) guide.
-Follow the [Shell Configuration](/guides/shell.md) below.
+49. Send screenshots to the Desktop's `TMP` folder via: `defaults write com.apple.screencapture location /Users/christopherhough/Desktop/TMP` followed by `killall SystemUIServer`.
+50. Set the osx calendar to display 14 days in week view via `defaults write com.apple.iCal "n days of week" 14`.
+51. Configure Divvy Shortcuts.
+52. Setup `OSX Messages` for all accounts.
+53. Install Omnigroup's [Omnigraffle](https://www.omnigroup.com/omnigraffle).
+54. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
+55. Follow the [Ruby Engineering Configuration](/guides/build.md) guide.
+66. Follow the [Shell Configuration](/guides/shell.md) below.
