@@ -62,5 +62,5 @@
 52. Setup `OSX Messages` for all accounts.
 53. Install Omnigroup's [Omnigraffle](https://www.omnigroup.com/omnigraffle).
 54. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
-55. Follow the [Ruby Engineering Configuration](/guides/build.md) guide.
+55. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.
 66. Follow the [Shell Configuration](/guides/shell.md) below.
