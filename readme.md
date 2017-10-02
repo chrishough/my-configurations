@@ -8,7 +8,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 - [Setup a New or Reformatting an Existing Apple Workstation OSX 10.13](/guides/build.md)
 - [Engineering Workstation Setup and Configuration](/guides/workstation.md)
 - [Ruby Engineering Configuration](/guides/ruby.md)
-- [Shell Configuration](/guides/shell.md) guide.
+- [Shell Configuration](/guides/shell.md)
 - [JavaScript Engineering Configuration](/guides/js.md)
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/download.svg" height="20"> Software
