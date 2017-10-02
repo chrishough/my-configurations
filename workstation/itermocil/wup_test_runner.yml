@@ -4,9 +4,9 @@ windows:
     panes:
       - commands:
         - clear
-        - cd /Users/chrishough/Code/WeaveUp/weaveup-test-runner
+        - cd /Users/christopherhough/Code/WeaveUp/weaveup-test-runner
         - clear
       - commands:
         - clear
-        - cd /Users/chrishough/Code/WeaveUp/weaveup-test-runner
+        - cd /Users/christopherhough/Code/WeaveUp/weaveup-test-runner
         - clear
