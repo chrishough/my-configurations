@@ -53,3 +53,9 @@
 43. Install Panic's [Transmit](https://panic.com/transmit/).
 44. Install CocoaTech's [Pathfinder](https://cocoatech.com/).
 45. Install Bjango's [Istat Menus](https://bjango.com/mac/istatmenus/).
+
+*** 
+
+Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
+Follow the [Ruby Engineering Configuration](/guides/build.md) guide.
+Follow the [Shell Configuration](/guides/shell.md) below.
