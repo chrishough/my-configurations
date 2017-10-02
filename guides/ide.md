@@ -12,7 +12,7 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 `ruby $HOME/.myconfigurations/scripts/setup/apps/symlinks.rb`
 6. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
 7. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
-8. If prompted by Atom, install the latest [Java JDK](https://www.java.com/en/download/mac_download.jsp).
+8. If prompted by Atom to install the latest Java JDX on OSX follow this guide: [How to: Fix Java Command-Line Tool Pop-Up on Mac OS](https://www.theitsage.com/fix-java-command-line-tool-popup-mac/). You will need to download and install [Java for OS X 2015-001](https://support.apple.com/kb/dl1572?locale=en_US).
 
 **My Atom Design**
 ![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor-v4.0.0.png)

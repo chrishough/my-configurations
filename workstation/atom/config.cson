@@ -66,6 +66,7 @@
     fontFamily: "FiraCode-Retina"
     fontSize: 12
     invisibles: {}
+    scrollPastEnd: true
     tabType: "soft"
   "exception-reporting":
     userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
