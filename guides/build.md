@@ -49,6 +49,7 @@
 39. Install [Dropbox](https://www.dropbox.com).
 40. Install [Caffeine](http://lightheadsw.com/caffeine/).
 41. Install the [Harvest](https://www.getharvest.com/) time tracker.
-42. Under the `Keyboard` in system preferences remove all shortcuts for `App Shortcuts`, `Accessibility`, `Spotlight`, `Services`, `Keyboard`, in `Missionn Control` all but the `..switch desktop` options we setup earlier, and finally `Launchpad and Dock`.
-
-
+42. Under the `Keyboard` in system preferences remove all shortcuts for `App Shortcuts`, `Accessibility`, `Spotlight`, `Services`, `Keyboard`, in `Mission Control` all but the `..switch desktop` options we setup earlier, and finally `Launchpad and Dock`.
+43. Install Panic's [Transmit](https://panic.com/transmit/).
+44. Install CocoaTech's [Pathfinder](https://cocoatech.com/).
+45. Install Bjango's [Istat Menus](https://bjango.com/mac/istatmenus/).
