@@ -75,24 +75,6 @@ As you explore the configuration directories you will notice a number of shortcu
 |[ruby](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/ruby)| rubyhelp | Ruby and Rails based commands.|
 |[shell](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/shell)| shellhelp | Everything shell.|
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/ide.svg" height="20"> IDE
-
-I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime text 2, and atom.  My current build utilizes [atom](https://atom.io/) to get the job done, and I have been working with it since beta.  No, it is not as fast as an engineer who has mastered the vim keyboard but it comes pretty darn close.
-
-1. Download and install [atom](https://atom.io/). This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
-2. Type `cmd + space` to launch `Atom` to approve the EULA. Once approved, close the application.
-3. Backup the existing atom configuration.  
-`ruby $HOME/.myconfigurations/scripts/setup/ide/backup.rb`
-4. Setup symlinks to our atom configuration files.  
-`ruby $HOME/.myconfigurations/scripts/setup/ide/symlinks.rb`
-5. Setup symlinks to our application configuration files.  
-`ruby $HOME/.myconfigurations/scripts/setup/apps/symlinks.rb`
-6. From the command prompt type `atom` followed by `cmd + ,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
-7. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
-
-**My Atom Design**
-![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor-v4.0.0.png)
-
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/database.svg" height="20"> Databases
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
