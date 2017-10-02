@@ -24,7 +24,7 @@
   ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/mission-control.png)
 17. In the `Keyboard` settings make sure to check `Use the F1, F2, as standard function keys`.
 17. In the `Energy Savor` set display to turn off after 30 minutes, and uncheck `Put hard disks to sleep when possible`.
-18. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and1 [Firefox](https://www.mozilla.org/en-US/firefox/new/).
+18. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 19. Install the 1Password Package into Firefox and Chrome.
 20. Setup Google Chrome Profile, and organize extensions synced from google.
 21. Make Google Chrome the default browser.
@@ -34,8 +34,9 @@
 25. Use `Show View Options` on the desktop set the icon size to `68 x 68` and `Snap to Grid`.
 26. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
 27. Install Microsoft [Office for Mac](https://www.microsoft.com/en-us/store/b/office).
-28. Setup / Verify Folder Preferences.
+28. Setup / Verify Folder Preferences and adjust Safari home pages..
   ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/folder-preferences.png)
+  ![safari](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/workstation/safari.png)
 29. Install Mizage [Divvy](http://mizage.com/divvy/).
 30. Install Mizage [Shush](http://mizage.com/shush/).
 31. Install Evernote [Skitch](https://evernote.com/products/skitch).
@@ -59,6 +60,9 @@
 49. Send screenshots to the Desktop's `TMP` folder via: `defaults write com.apple.screencapture location /Users/christopherhough/Desktop/TMP` followed by `killall SystemUIServer`.
 50. Set the osx calendar to display 14 days in week view via `defaults write com.apple.iCal "n days of week" 14`.
 51. Configure Divvy Shortcuts.
+  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/divvy/divvy1.png)
+  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/divvy/divvy2.png)
+  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/divvy/divvy3.png)
 52. Setup `OSX Messages` for all accounts.
 53. Install Omnigroup's [Omnigraffle](https://www.omnigroup.com/omnigraffle).
 54. Adjust the applications in the OSX notification center.
@@ -66,5 +70,8 @@
 56. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.
 57. Follow the [Shell Configuration](/guides/shell.md) guide.
 58. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/alfred/alfred1.png)
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/alfred/alfred2.png)
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/alfred/alfred3.png)
 59. Follow the [IDE Configuration](/guides/ide.md) guide.
 60. Follow the [Database Configuration](/guides/database.md) guide.
