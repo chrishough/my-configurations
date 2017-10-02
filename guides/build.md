@@ -67,3 +67,4 @@
 57. Follow the [Shell Configuration](/guides/shell.md) guide.
 58. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.
 59. Follow the [IDE Configuration](/guides/ide.md) guide.
+60. Follow the [Database Configuration](/guides/database.md) guide.
