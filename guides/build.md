@@ -53,6 +53,9 @@
 43. Install Panic's [Transmit](https://panic.com/transmit/).
 44. Install CocoaTech's [Pathfinder](https://cocoatech.com/).
 45. Install Bjango's [Istat Menus](https://bjango.com/mac/istatmenus/).
+46. In Finder `View` to `Show Path Bar` which will display the full folder path at the bottom of a finder window.
+47. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
+48. Configure [Fastmail](https://www.fastmail.com) and [Google](https://mail.google.com/mail/) accounts. 
 
 *** 
 
