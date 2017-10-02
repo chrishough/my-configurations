@@ -65,3 +65,4 @@
 55. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
 56. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.
 57. Follow the [Shell Configuration](/guides/shell.md) below.
+58. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.
