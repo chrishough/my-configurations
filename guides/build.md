@@ -59,7 +59,7 @@
 48. Configure [Fastmail](https://www.fastmail.com) and [Google](https://mail.google.com/mail/) accounts.
 49. Send screenshots to the Desktop's `TMP` folder via: `defaults write com.apple.screencapture location /Users/christopherhough/Desktop/TMP` followed by `killall SystemUIServer`.
 50. Set the osx calendar to display 14 days in week view via `defaults write com.apple.iCal "n days of week" 14`.
-51. Configure Divvy Shortcuts.
+51. Configure Divvy Shortcuts.  
   ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/divvy/divvy1.png)
   ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/divvy/divvy2.png)
   ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/divvy/divvy3.png)
@@ -68,14 +68,14 @@
 54. Adjust the applications in the OSX notification center.
 55. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
 56. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.
-57. Follow the [Shell Configuration](/guides/shell.md) guide.
-58. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.
+57. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.
+58. Follow the [Shell Configuration](/guides/shell.md) guide.
+59. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/alfred/alfred1.png)
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/alfred/alfred2.png)
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/alfred/alfred3.png)
-59. Follow the [IDE Configuration](/guides/ide.md) guide.
-60. Follow the [Database Configuration](/guides/database.md) guide.
-61. Install Kapeli's [Dash Docs](https://kapeli.com/dash).
-62. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.
-63. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).
-64. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.
+60. Follow the [IDE Configuration](/guides/ide.md) guide.
+61. Follow the [Database Configuration](/guides/database.md) guide.
+62. Install Kapeli's [Dash Docs](https://kapeli.com/dash).
+63. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.
+64. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).

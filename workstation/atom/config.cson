@@ -112,6 +112,8 @@
     core: {}
     style:
       defaultPanelHeight: "500px"
+  "save-session":
+    dataSaveFolder: "/Users/christopherhough/.atom/packages/save-session/projects"
   "trailing-spaces":
     enableForIndentation: true
   "tree-view":
