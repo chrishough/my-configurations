@@ -118,7 +118,7 @@
     enableForIndentation: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: false
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace:
