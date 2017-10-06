@@ -30,7 +30,7 @@
     fuzzy:
       enabled: true
   "autocomplete-ruby":
-    rsensePath: "/Users/chrishough/.rbenv/versions/2.4.1/bin/rsense"
+    rsensePath: "/Users/christopherhough/.rbenv/shims/rsense"
   autosave:
     enabled: true
   core:
@@ -45,6 +45,7 @@
       "linter-rubocop"
       "linter-rubocop"
       "trailing-spaces"
+      "linter-sass-lint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -65,6 +66,7 @@
     fontFamily: "FiraCode-Retina"
     fontSize: 12
     invisibles: {}
+    scrollPastEnd: true
     tabType: "soft"
   "exception-reporting":
     userId: "d9f8a28e-3694-e767-4e3e-180303f43226"
@@ -82,7 +84,7 @@
   "linter-jshint": {}
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 81
+    panelHeight: 414
   "markdown-preview":
     useGitHubStyle: true
   "package-sync":
@@ -110,11 +112,13 @@
     core: {}
     style:
       defaultPanelHeight: "500px"
+  "save-session":
+    dataSaveFolder: "/Users/christopherhough/.atom/packages/save-session/projects"
   "trailing-spaces":
     enableForIndentation: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: false
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace:

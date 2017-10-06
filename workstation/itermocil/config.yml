@@ -7,18 +7,18 @@ windows:
         - echo "Configurations Windows"
       - commands:
         - clear
-        - cd /Users/chrishough/.myconfigurations
+        - cd /Users/christopherhough/.myconfigurations
         - clear
       - commands:
         - clear
-        - cd /Users/chrishough/Code/AboutChrisHough/MyPrivateData
+        - cd /Users/christopherhough/Code/AboutChrisHough/MyPrivateData
         - clear
       - commands:
         - clear
-        - cd /Users/chrishough/Code/AboutChrisHough/MyPublicData
+        - cd /Users/christopherhough/Code/AboutChrisHough/MyPublicData
         - clear
       - commands:
         - clear
-        - cd /Users/chrishough/Code
+        - cd /Users/christopherhough/Code
         - clear
         - lsa
