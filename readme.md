@@ -12,6 +12,8 @@ These guides are highly opinionated. If you have any questions please post an is
 - [Ruby Engineering Configuration](/guides/ruby.md)
 - [Shell Configuration](/guides/shell.md)
 - [JavaScript Engineering Configuration](/guides/js.md)
+- [Database Configuration](/guides/database.md)
+- [IDE Configuration](/guides/ide.md)
 
 ## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Shortcuts and Helpers
 
