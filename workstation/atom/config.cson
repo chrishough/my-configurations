@@ -53,6 +53,7 @@
       ".svn"
       ".DS_Store"
       ".bundle"
+      "tmp"
     ]
     packagesWithKeymapsDisabled: [
       "git-plus"
