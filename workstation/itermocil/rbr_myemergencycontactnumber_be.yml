@@ -1,5 +1,5 @@
 windows:
-  - name: rbr_api
+  - name: rbr_myemergencycontactnumber_be
     layout: double-main-horizontal
     panes:
       - commands:
