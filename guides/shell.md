@@ -15,6 +15,7 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 `
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 `
+8. Install [tmux](https://github.com/tmux/tmux/wiki) via `brew install tmux`
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.  Also, if iterm prompts you for an update. Load it.  Also, make sure to check `load updates automatically` during this process.  Please feel free to close `Terminal` at this time.
 
