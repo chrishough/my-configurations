@@ -30,7 +30,7 @@
     fuzzy:
       enabled: true
   "autocomplete-ruby":
-    rsensePath: "/Users/christopherhough/.rbenv/shims/rsense"
+    rsensePath: "/Users/christopherhough/.rbenv/versions/2.4.1/bin/rsense"
   autosave:
     enabled: true
   core:
