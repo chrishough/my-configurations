@@ -8,4 +8,10 @@
   1. `/Archive/`
   2. `/Assets/`
   3. `/Career/`
-7. TBD
+  4. `/Desktop/`
+  5. `/Documents/`
+  6. `/Movies/`
+  7. `/Code/`
+  8. `/Pictures/`
+  9. `/Music/`
+7. Complete this guide: [Setup a New or Reformatting an Existing Apple Workstation](/guides/build.md)
