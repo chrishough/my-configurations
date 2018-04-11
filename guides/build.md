@@ -28,8 +28,8 @@
 19. Install the 1Password Package into Firefox and Chrome.
 20. Setup Google Chrome Profile, and organize extensions synced from google.
 21. Make Google Chrome the default browser.
-22. In `Keyboard` system preferences set `Misson Control` desktop switches to use `ctrl + #` for the first 4 spaces.
-23. Setup `4 - 12 OSX Spaces` via `Mission Control`.
+22. Setup `4 - 12 OSX Spaces` via `Mission Control`.
+23. In `System Preferences` in the `Keyboard` under `Shortcuts` in `Mission Control` desktop switches to use `ctrl + #` for the first 4 spaces.
 24. In `Finder` preferences show `Hard Discs` on the desktop.
 25. Use `Show View Options` on the desktop set the icon size to `68 x 68` and `Snap to Grid`.
 26. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
