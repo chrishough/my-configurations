@@ -224,7 +224,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>3024</string>
+						<string>1280</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -244,7 +244,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>528222851.552683</real>
+				<real>532065420.67595202</real>
 				<key>Name</key>
 				<string>Launch Calendar</string>
 				<key>Triggers</key>
@@ -253,7 +253,7 @@
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>118</integer>
+						<integer>99</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -297,7 +297,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>3172</string>
+						<string>1395</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -317,7 +317,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>442118962.44758701</real>
+				<real>532065430.71237499</real>
 				<key>Name</key>
 				<string>Launch Notification Center</string>
 				<key>Triggers</key>
@@ -326,7 +326,7 @@
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>97</integer>
+						<integer>96</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -370,7 +370,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>3059</string>
+						<string>1320</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -390,7 +390,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>528222878.86549199</real>
+				<real>532065428.05162603</real>
 				<key>Name</key>
 				<string>Launch Weather</string>
 				<key>Triggers</key>
@@ -399,7 +399,7 @@
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>96</integer>
+						<integer>118</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
