@@ -29,8 +29,7 @@
   "autocomplete-js-import":
     fuzzy:
       enabled: true
-  "autocomplete-ruby":
-    rsensePath: "/Users/christopherhough/.rbenv/versions/2.4.1/bin/rsense"
+  "autocomplete-ruby": {}
   autosave:
     enabled: true
   core:
