@@ -25,8 +25,13 @@ atom-pane-container atom-pane-axis.horizontal > * {
 atom-panel.left, .tool-panel.left, atom-panel.panel-left, .tool-panel.panel-left {
     border-right: 2px solid red;
 }
-atom-pane-container atom-pane-axis.horizontal > atom-pane-resize-handle:before {
+atom-pane-container atom-pane-axis.horizontal >
+atom-pane-resize-handle:before {
   border-left: 2px solid red;
+}
+atom-pane-container atom-pane-axis.horizontal >
+atom-pane-resize-handle:first-of-type:before {
+  border-left: 6px solid red;
 }
 .atom-dock-resize-handle.left, .atom-dock-resize-handle.right {
   width: 2px;

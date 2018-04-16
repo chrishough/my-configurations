@@ -1,0 +1,24 @@
+windows:
+  - name: rbr_client_chairseven
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/chairseven/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/chairseven/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/chairseven/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/chairseven/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/chairseven/code
+        - clear

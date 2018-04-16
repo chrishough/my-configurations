@@ -29,27 +29,9 @@ function rgo() {
 	atom $LOCALGEM
 }
 
-function railsinit() {
-	if [[ ! -z "$1" ]]; then
-		msg "Creating project folder: $1"
-		mkdir "$1"
-		cd "$1"
-	fi
-	msg "Setup default ruby version!"
-	rbenvset
-	msg "Building a rails application with postgresql!"
-	rails new . --skip-bundle -T --database=postgresql
-	msg "Override rails gitignore and readme with better versions!"
-	cp $HOME/.myconfigurations/software/git/templates/ignores/rails-application .gitignore
-	if [[ -f "README.md" ]]; then
-		rm README.md
-	fi
-	if [[ -f "README.rdoc" ]]; then
-		rm README.rdoc
-	fi
-	cp $HOME/.myconfigurations/software/git/templates/readmes/rails-application readme.md
-	msg "Using Bundler and setting up local binstubs!"
-	bundle install --path=.bundle --binstubs=.bundle/binstubs
+function rdbr() {
+  rake db:drop db:create db:structure:load
+  RAILS_ENV=test rake db:drop db:create db:structure:load
 }
 
 function rbenvset() {
