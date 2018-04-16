@@ -15,6 +15,7 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 `
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 `
+8. Install [tmux](https://github.com/tmux/tmux/wiki) via `brew install tmux`
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.  Also, if iterm prompts you for an update. Load it.  Also, make sure to check `load updates automatically` during this process.  Please feel free to close `Terminal` at this time.
 
@@ -22,25 +23,25 @@ Type `cmd + space` to launch `iterm2` to perform the next block of installations
 2. Under the terminal tab, make sure to change the report terminal type to `xterm-256color` and your character encoding to `Unicode (UTF-8)`.
 3. Set the scrollback lines to unlimited.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm1.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm2.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm3.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm4.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm5.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm6.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm7.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm8.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm9.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm91.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm92.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm93.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm94.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm95.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm96.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm97.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm98.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm99.png)
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20171001/iterm/iterm991.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm1.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm2.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm3.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm4.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm5.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm6.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm7.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm8.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm9.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm91.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm92.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm93.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm94.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm95.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm96.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm97.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm98.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm99.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/iterm991.png)
 
 Now we have to sync our settings to the configuration repo! This will adjust the following files: .pryrc, .vimrc, .zprofile, .zshrc, .profile, .gemrc, .bashrc, and .bash_profile.
 
@@ -63,4 +64,4 @@ GEM_PATH=.bundle
 
 At this point if you type `cd $HOME && lsa` your home directory should look like this.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20170623/iterm/user_directory.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/user_directory.png)

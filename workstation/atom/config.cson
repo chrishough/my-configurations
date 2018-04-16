@@ -29,8 +29,7 @@
   "autocomplete-js-import":
     fuzzy:
       enabled: true
-  "autocomplete-ruby":
-    rsensePath: "/Users/christopherhough/.rbenv/shims/rsense"
+  "autocomplete-ruby": {}
   autosave:
     enabled: true
   core:
@@ -53,6 +52,7 @@
       ".svn"
       ".DS_Store"
       ".bundle"
+      "tmp"
     ]
     packagesWithKeymapsDisabled: [
       "git-plus"
@@ -118,7 +118,6 @@
     enableForIndentation: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace:

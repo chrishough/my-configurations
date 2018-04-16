@@ -11,6 +11,7 @@ rubyhelp () {
   echo "  rtp         = rspec tests"
   echo "  rg          = rails generate"
   echo "  rdb         = rails db console"
+  echo "  rdbr        = rebuild local dev and testing db via structure file"
   echo "  rbe         = run bundle exec"
   echo "  rgo         = open ruby gem in project in atom"
   echo "  rgod        = find out which gems are outdated on the project"
@@ -21,7 +22,6 @@ rubyhelp () {
   echo "  rbenvset    = setup local version of rbenv to global default"
   echo "  rbenvupdate = update rbenv and rbenv plugins"
   echo "--------------------------------------------------------------------------------"
-  echo "  railsinit   = setup new rails application with postgres db and run bundler"
   echo "  rtail       = tails rails log, option param for log name"
   echo "--------------------------------------------------------------------------------"
   echo
