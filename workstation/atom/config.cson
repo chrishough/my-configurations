@@ -52,8 +52,8 @@
       ".svn"
       ".DS_Store"
       ".bundle"
-      "tmp",
-      "node_modules",
+      "tmp"
+      "node_modules"
       "log"
     ]
     packagesWithKeymapsDisabled: [
