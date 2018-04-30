@@ -52,7 +52,9 @@
       ".svn"
       ".DS_Store"
       ".bundle"
-      "tmp"
+      "tmp",
+      "node_modules",
+      "log"
     ]
     packagesWithKeymapsDisabled: [
       "git-plus"
