@@ -68,6 +68,7 @@
     fontFamily: "FiraCode-Retina"
     fontSize: 12
     invisibles: {}
+    preferredLineLength: 100
     scrollPastEnd: true
     tabType: "soft"
   "exception-reporting":
