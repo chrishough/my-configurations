@@ -79,7 +79,7 @@
 64. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.
 65. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).
 66. In `System Preferences` under `Notifications` set `do not disturb` from 12:00AM to 11:59PM.
-67. Setup the `Today` Panel.
+67. Setup the `Today` Panel.  
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-notifications-panel.png)
-68. Setup the `Finder` Panel.
+68. Setup the `Finder` Panel.  
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-finder-panel.png)
