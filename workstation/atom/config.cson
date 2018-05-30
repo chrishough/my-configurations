@@ -45,6 +45,7 @@
       "linter-rubocop"
       "trailing-spaces"
       "linter-sass-lint"
+      "markdown-preview"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [

@@ -39,6 +39,16 @@ function gcb() {
 	msg "Pending changes?";
 	gs;
 }
+function gcbfb() {
+  current_branch=`git branch | grep \* | cut -d ' ' -f2`
+	git pull;
+	git checkout -b "$1" $current_branch;
+	msg "Creating branch: $1 off of $current_branch"
+	git push -u origin "$1";
+	git push --set-upstream origin "$1";
+	msg "Pending changes?";
+	gs;
+}
 function gcbd() {
 	git pull;
 	git checkout -b "$1" develop;
