@@ -120,8 +120,7 @@
     dataSaveFolder: "/Users/christopherhough/.atom/packages/save-session/projects"
   "trailing-spaces":
     enableForIndentation: true
-  "tree-view":
-    hideIgnoredNames: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
   whitespace:
