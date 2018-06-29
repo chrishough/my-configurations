@@ -1,7 +1,6 @@
 #!/bin/zsh
 function gs() { git status }
 function gcbn() { git rev-parse --abbrev-ref HEAD }
-function gl(){ git log --show-notes }
 function glt(){ git log --graph --oneline --all }
 function gltp(){ git log --graph --all --decorate }
 function gd(){ git diff }
@@ -9,6 +8,9 @@ function gtl(){ git tag -l }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
 
+function gstats(){
+  git shortlog -s -n
+}
 function gpurgetags(){
 	num=0
 	for t in `git tag`
@@ -28,6 +30,7 @@ function ggoback() {
 	msg "Resetting all local changes"
 	git reset --hard;
 	git clean -f -d;
+  git submodule update -f --recursive
 	git status;
 }
 function gcb() {
