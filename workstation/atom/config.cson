@@ -29,12 +29,12 @@
   "autocomplete-js-import":
     fuzzy:
       enabled: true
-  "autocomplete-ruby": {}
+  "autocomplete-ruby":
+    rsensePath: "/Users/christopherhough/.rbenv/versions/2.5.1/bin/rsense"
   autosave:
     enabled: true
   core:
     audioBeep: false
-    closeDeletedFileTabs: true
     closeEmptyWindows: false
     destroyEmptyPanes: false
     disabledPackages: [
