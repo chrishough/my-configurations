@@ -2,6 +2,7 @@
 function gs() { git status }
 function gcbn() { git rev-parse --abbrev-ref HEAD }
 function glt(){ git log --graph --oneline --all }
+function gl(){ git log --show-notes }
 function gltp(){ git log --graph --all --decorate }
 function gd(){ git diff }
 function gtl(){ git tag -l }
