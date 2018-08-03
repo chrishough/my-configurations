@@ -46,6 +46,7 @@
       "trailing-spaces"
       "linter-sass-lint"
       "markdown-preview"
+      "linter-eslint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
