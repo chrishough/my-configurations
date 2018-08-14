@@ -58,6 +58,7 @@
       "node_modules"
       "log"
     ]
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "git-plus"
     ]
