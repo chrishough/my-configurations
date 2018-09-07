@@ -9,6 +9,12 @@ function gtl(){ git tag -l }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
 
+function gsmi(){
+  git status;
+  git pull;
+  git submodule update --init --recursive;
+}
+
 function gstats(){
   git shortlog -s -n
 }
@@ -31,7 +37,7 @@ function ggoback() {
 	msg "Resetting all local changes"
 	git reset --hard;
 	git clean -f -d;
-  git submodule update -f --recursive
+  git submodule update -f --recursive;
 	git status;
 }
 function gcb() {
@@ -90,7 +96,7 @@ function gcm() {
 }
 function gp() {
 	msg "Pull down all the code and all the tags!";
-  git branch -a | grep -v HEAD | perl -ne 'chomp($_); s|^\*?\s*||; if (m|(.+)/(.+)| && not $d{$2}) {print qq(git branch --track $2 $1/$2\n)} else {$d{$_}=1}' | csh -xfs
+  git branch -a | grep -v HEAD | perl -ne 'chomp($_); s|^\*?\s*||; if (m|(.+)/(.+)| && not $d{$2}) {print qq(git branch --track $2 $1/$2\n)} else {$d{$_}=1}' | csh -xfs;
 	git fetch --all;
 	git pull --all;
 	git pull --tags;
@@ -98,7 +104,7 @@ function gp() {
 }
 function gci() {
   msg "Triggering CI Manual Update!";
-  git commit --allow-empty -m "Trigger CI build"
+  git commit --allow-empty -m "Trigger CI build";
   msg "Pushing all the things to origin!";
 	git push;
 	gs;
@@ -110,7 +116,7 @@ function gpo() {
 	gs;
 }
 function gph() {
- msg "Pushing current branch: ${$(gcbn)} to heroku!"
+ msg "Pushing current branch: ${$(gcbn)} to heroku!";
  git push heroku master;
  gs;
 }
@@ -121,20 +127,20 @@ function grpo() {
 	git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D;
 }
 function gct() {
-	msg "Creating tag: $1"
+	msg "Creating tag: $1";
 	git tag "$1";
-	git push origin --tags;11
+	git push origin --tags;
 	msg "Current tags!";
 	git tag -l;
 	gs;
 }
 function gdt() {
-	msg "Deleting tag: $1"
+	msg "Deleting tag: $1";
 	git tag -d "$1";
 	git push origin :refs/tags/"$1";
 }
 function grt() {
-	msg "Deleting tag: $1"
+	msg "Deleting tag: $1";
 	git tag -d "$1";
 	git push origin :refs/tags/"$1";
 	msg "Creating tag: $1"
@@ -145,7 +151,7 @@ function grt() {
 	gs;
 }
 function gck() {
-	msg "Checking out branch: $1"
+	msg "Checking out branch: $1";
 	git checkout "$1";
 	git pull;
 	gs;
@@ -154,11 +160,11 @@ function gdb() {
 	msg "Deleting branch: $1"
 	git branch -D "$1";
 	git push --delete origin "$1";
-	git remote prune origin
+	git remote prune origin;
 	gs;
 }
 function gk() {
-	touch .keep
+	touch .keep;
 }
 function gkf() {
 	mkdir "$1";

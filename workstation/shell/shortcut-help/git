@@ -30,6 +30,7 @@ githelp () {
   echo "  ggoback      = reset all local changes and purge files and directories"
   echo "  gpurgetags   = purge last 120 tags"
   echo "  gstats       = show git commit statistics"
+  echo "  gsmi         = git submodule init recursively"
   echo "--------------------------------------------------------------------------------"
   echo "  gl           = show log --show-notes"
   echo "  glt          = show log --graph --oneline --all"
