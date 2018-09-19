@@ -1,0 +1,39 @@
+// Wrap Guide
+atom-text-editor.editor .wrap-guide {
+  background-color: #000;
+  border-right: dashed 1px red;
+}
+atom-text-editor.editor .gutter {
+  background-color: #373737;
+  color: #cccccc;
+}
+atom-text-editor.editor .is-focused .line-number.cursor-line-no-selection {
+  color: red;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #fff;
+}
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: inherit;
+}
+atom-pane-container atom-pane {
+  border-right: 0;
+}
+atom-pane-container atom-pane-axis.horizontal > * {
+  border-right: 0;
+}
+atom-panel.left, .tool-panel.left, atom-panel.panel-left, .tool-panel.panel-left {
+    border-right: 2px solid red;
+}
+atom-pane-container atom-pane-axis.horizontal >
+atom-pane-resize-handle:before {
+  border-left: 2px solid red;
+}
+atom-pane-container atom-pane-axis.horizontal >
+atom-pane-resize-handle:first-of-type:before {
+  border-left: 6px solid red;
+}
+.atom-dock-resize-handle.left, .atom-dock-resize-handle.right {
+  width: 2px;
+  background-color: red;
+}
