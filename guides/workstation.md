@@ -21,7 +21,7 @@
 [mergetool]
   keepBackup = true
 [core]
-  editor = atom --wait
+  editor = code
 [color]
   ui = auto
 [push]
