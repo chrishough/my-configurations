@@ -20,3 +20,4 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 * [sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented)
 * [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
 * [quit control](https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode)
+* [markdown-preview-github-styles](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
