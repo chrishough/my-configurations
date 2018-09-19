@@ -19,3 +19,4 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 * [slim-lang](https://marketplace.visualstudio.com/items?itemName=sianglim.slim)
 * [sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented)
 * [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
+* [quit control](https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode)
