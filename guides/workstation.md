@@ -21,7 +21,7 @@
 [mergetool]
   keepBackup = true
 [core]
-  editor = code
+  editor = code -- wait
 [color]
   ui = auto
 [push]
