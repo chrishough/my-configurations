@@ -23,12 +23,3 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 * [markdown-preview-github-styles](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [endwise](https://marketplace.visualstudio.com/items?itemName=kaiwood.endwise)
 * [indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-
