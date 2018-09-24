@@ -9,7 +9,7 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 5. Download Gist Settings via the Gist Id stored in Git. Wait for the download sync to finish and restart the IDE.
 
 #### List of Plugins
-* [settings-sync](ttps://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+* [settings-sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 * [gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * [railscasts theme](https://marketplace.visualstudio.com/items?itemName=mrded.railscasts)
 * [ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
