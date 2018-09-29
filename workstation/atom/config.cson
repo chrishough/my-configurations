@@ -45,6 +45,7 @@
       "linter-rubocop"
       "trailing-spaces"
       "linter-sass-lint"
+      "markdown-preview"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -84,7 +85,7 @@
   "linter-jshint": {}
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 414
+    panelHeight: 300
   "markdown-preview":
     useGitHubStyle: true
   "package-sync":
