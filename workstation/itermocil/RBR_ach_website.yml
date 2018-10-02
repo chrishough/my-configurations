@@ -1,5 +1,5 @@
 windows:
-  - name: ach_website
+  - name: RBR_ach_website
     layout: double-main-horizontal
     panes:
       - commands:

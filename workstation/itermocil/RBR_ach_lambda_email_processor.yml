@@ -1,5 +1,5 @@
 windows:
-  - name: ach_website
+  - name: RBR_ach_lambda_email_processor
     layout: double-main-horizontal
     panes:
       - commands:

@@ -1,5 +1,5 @@
 windows:
-  - name: employer_mediapro
+  - name: W2_employer_mediapro
     layout: double-main-horizontal
     panes:
       - commands:

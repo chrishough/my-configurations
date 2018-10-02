@@ -1,5 +1,5 @@
 windows:
-  - name: rbr_client
+  - name: 1099_rbr_client
     layout: double-main-horizontal
     panes:
       - commands:

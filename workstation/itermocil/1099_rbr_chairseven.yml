@@ -1,5 +1,5 @@
 windows:
-  - name: rbr_client_chairseven
+  - name: 1099_rbr_chairseven
     layout: double-main-horizontal
     panes:
       - commands:
