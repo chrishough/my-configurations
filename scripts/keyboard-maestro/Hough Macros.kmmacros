@@ -13,6 +13,192 @@
 				<key>Actions</key>
 				<array>
 					<dict>
+						<key>KeyCode</key>
+						<integer>124</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.amazon.music</string>
+							<key>Name</key>
+							<string>Amazon Music</string>
+							<key>NewFile</key>
+							<string>/Applications/Amazon Music.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>560049913.03536296</real>
+				<key>ModificationDate</key>
+				<real>560050881.30707002</real>
+				<key>Name</key>
+				<string>Amazon Music Next</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>124</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>746B2FE8-4644-404D-947E-259A48C2DDD2</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Hough</string>
+		<key>ToggleMacroUID</key>
+		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<key>UID</key>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>459703999.76049101</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>KeyCode</key>
+						<integer>123</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.amazon.music</string>
+							<key>Name</key>
+							<string>Amazon Music</string>
+							<key>NewFile</key>
+							<string>/Applications/Amazon Music.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>560049913.03536296</real>
+				<key>ModificationDate</key>
+				<real>560050887.20232999</real>
+				<key>Name</key>
+				<string>Amazon Music Previous</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>123</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>F97D07B5-ED5D-45DC-9D19-703395B70E64</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Hough</string>
+		<key>ToggleMacroUID</key>
+		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<key>UID</key>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>459703999.76049101</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>KeyCode</key>
+						<integer>49</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.amazon.music</string>
+							<key>Name</key>
+							<string>Amazon Music</string>
+							<key>NewFile</key>
+							<string>/Applications/Amazon Music.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>560049913.03536296</real>
+				<key>ModificationDate</key>
+				<real>560050844.70808196</real>
+				<key>Name</key>
+				<string>Amazon Music Stop</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>1</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>A54BDAF3-CE02-43A9-9938-361D880FD4F4</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Hough</string>
+		<key>ToggleMacroUID</key>
+		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<key>UID</key>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>459703999.76049101</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
 						<key>IsDisclosed</key>
 						<false/>
 						<key>MacroActionType</key>
@@ -91,6 +277,122 @@
 				</array>
 				<key>UID</key>
 				<string>C40597A9-85A3-4815-8759-2256DE953208</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Hough</string>
+		<key>ToggleMacroUID</key>
+		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<key>UID</key>
+		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>459703999.76049101</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Aqua</string>
+						<key>ActionName</key>
+						<string>A Macro by Christopher Stone &lt;scriptmeister@thestoneforge.com&gt;</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC6mAQAAKwAAAAEA
+						AACeAQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNjcx
+						CntcZm9udHRibFxmMFxmc3dpc3Nc
+						ZmNoYXJzZXQwIEhlbHZldGljYTt9
+						CntcY29sb3J0Ymw7XHJlZDI1NVxn
+						cmVlbjI1NVxibHVlMjU1O30Ke1wq
+						XGV4cGFuZGVkY29sb3J0Ymw7O30K
+						XHBhcmRcdHg1NjBcdHgxMTIwXHR4
+						MTY4MFx0eDIyNDBcdHgyODAwXHR4
+						MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+						NTA0MFx0eDU2MDBcdHg2MTYwXHR4
+						NjcyMFxwYXJkaXJuYXR1cmFsXHBh
+						cnRpZ2h0ZW5mYWN0b3IwCgpcZjBc
+						ZnMyNCBcY2YwIEF1dGhvcmVkIGJ5
+						IENocmlzdG9waGVyIFN0b25lIDxz
+						Y3JpcHRtZWlzdGVyQHRoZXN0b25l
+						Zm9yZ2UuY29tPlwKXCdhMFwnYTAy
+						MDE1LzEyLzAzIDAzOjQwIDogQ3Jl
+						YXRlZFwKXCdhMFwnYTAyMDE1LzEy
+						LzAzIDA0OjEwIDogTW9kaWZpZWR9
+						AQAAACMAAAABAAAABwAAAFRYVC5y
+						dGYQAAAA83mxW7YBAAAAAAAAAAAA
+						AA==
+						</data>
+						<key>Title</key>
+						<string>Discover App Responsible for Secure-Input </string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Window</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string>/Users/chris/test_directory/aa</string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>#! /usr/bin/env bash
+
+PID=$(ioreg -l -w 0 | perl -wlne 'if ( m!.*"kCGSSessionSecureInputPID"=([0-9]+).*!i ) { print $1 }' | uniq);
+
+if [ "$PID" != "" ]; then
+	ps -a -x -c -o pid,user,comm | sed -En '/^[[:blank:]]*'"$PID"'[[:blank:]]/p'
+else
+	echo "No Secure-Input App Found!";
+fi
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<false/>
+						<key>TrimResultsNew</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>470829720.26332498</real>
+				<key>ModificationDate</key>
+				<real>470830242.75618201</real>
+				<key>Name</key>
+				<string>Discover App Responsible for Secure-Input </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>AED86833-6DC0-4536-9CA7-8D2AD7417497</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -224,7 +526,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1280</string>
+						<string>3020</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -244,7 +546,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>532065420.67595202</real>
+				<real>545245493.87623</real>
 				<key>Name</key>
 				<string>Launch Calendar</string>
 				<key>Triggers</key>
@@ -297,7 +599,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1395</string>
+						<string>3170</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -317,7 +619,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>532065430.71237499</real>
+				<real>545245409.05577397</real>
 				<key>Name</key>
 				<string>Launch Notification Center</string>
 				<key>Triggers</key>
@@ -370,7 +672,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1320</string>
+						<string>3135</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -390,7 +692,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>532065428.05162603</real>
+				<real>548002868.18256998</real>
 				<key>Name</key>
 				<string>Launch Weather</string>
 				<key>Triggers</key>
