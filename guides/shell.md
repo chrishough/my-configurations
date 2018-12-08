@@ -1,4 +1,4 @@
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Shell Configuration
+## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/toolbox.svg" height="20"> Shell Configuration
 
 Type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
 
