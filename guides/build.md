@@ -2,15 +2,17 @@
 
 > If you need to reinstall the operating system follow "[How to install macOS](https://support.apple.com/en-us/HT204904)" from the Apple Support documentation.
 
+
+
 TODO: 
 - update image of folder preferences: advanced and sidebar #26
-- add image screen shot of shush settings #33
-- add dock screen shot of shush settings #10
-- add caffeine screen shot of shush settings #47
+- add shush screen shot of settings #33
+- add dock screen shot of settings #10
+- add caffeine screen shot of settings #47
 - upgrade omnigraffle to version 7!
-- add bartender screen shot of shush settings #52
-- add istat menus screen shots of shush settings #50
-
+- add bartender screen shots of settings #52
+- add istat menus screen shots settings #50
+- add arqscreen shots settings #56
 
 
 
@@ -79,6 +81,12 @@ TODO:
 50. Install [Istat Menus](https://bjango.com/mac/istatmenus/).
 51. Install [Omnigraffle](https://www.omnigroup.com/omnigraffle).
 52. Install [Bartender](https://www.macbartender.com/).
+53. Send screenshots to the Desktop's `TMP` folder via: `defaults write com.apple.screencapture location /Users/christopherhough/Desktop/TMP` followed by `killall SystemUIServer`.
+54. Set the osx calendar to display 14 days in week view via `defaults write com.apple.iCal "n days of week" 14`.
+55. Setup `OSX Messages` for all accounts. Verify non-apple users too.
+56. In `System Preferences` under `Notifications` set `do not disturb` from 12:00AM to 11:59PM.
+
+56. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
 
 
 
@@ -91,7 +99,6 @@ TODO:
 
 
 
-44. Under the `Keyboard` in system preferences remove all shortcuts for `App Shortcuts`, `Accessibility`, `Spotlight`, `Services`, `Keyboard`, in `Mission Control` all but the `..switch desktop` options we setup earlier, and finally `Launchpad and Dock`.
 
 
 
@@ -99,26 +106,10 @@ TODO:
 
 
 
-
-
-
-
-49. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
-
-
-51. Send screenshots to the Desktop's `TMP` folder via: `defaults write com.apple.screencapture location /Users/christopherhough/Desktop/TMP` followed by `killall SystemUIServer`.
-
-52. Set the osx calendar to display 14 days in week view via `defaults write com.apple.iCal "n days of week" 14`.
-
-
-
-
-
-54. Setup `OSX Messages` for all accounts.
-
-56. Adjust the applications in the OSX notification center.
-
-
+67. Setup the `Today` Panel.
+  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-notifications-panel.png)
+68. Setup the `Finder` Panel.
+  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-finder-panel.png)
 
 
 
@@ -137,8 +128,5 @@ TODO:
 63. Follow the [Database Configuration](/guides/database.md) guide.
 64. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.
 65. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).
-66. In `System Preferences` under `Notifications` set `do not disturb` from 12:00AM to 11:59PM.
-67. Setup the `Today` Panel.
-  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-notifications-panel.png)
-68. Setup the `Finder` Panel.
-  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-finder-panel.png)
+
+
