@@ -13,6 +13,7 @@ TODO:
 - add bartender screen shots of settings #52
 - add istat menus screen shots settings #50
 - add arqscreen shots settings #56
+- update image of folder sidebar #59
 
 
 
@@ -85,31 +86,31 @@ TODO:
 54. Set the osx calendar to display 14 days in week view via `defaults write com.apple.iCal "n days of week" 14`.
 55. Setup `OSX Messages` for all accounts. Verify non-apple users too.
 56. In `System Preferences` under `Notifications` set `do not disturb` from 12:00AM to 11:59PM.
-
-56. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-67. Setup the `Today` Panel.
+57. Setup the `Today` Panel.
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-notifications-panel.png)
-68. Setup the `Finder` Panel.
+58. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
+
+> If this is a migration of an existing computer, now is the time to bring over each folder and back them up to a new S3 bucket with a new IAM user, and new bucket policy. Once all of the files have been updated, reformat the old machine and sell it.    
+
+59. Setup the `Finder` Panel.  
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-finder-panel.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
