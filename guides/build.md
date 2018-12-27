@@ -14,6 +14,7 @@ TODO:
 - add istat menus screen shots settings #50
 - add arqscreen shots settings #56
 - update image of folder sidebar #59
+- update image of ruby versions
 
 
 
@@ -94,9 +95,7 @@ TODO:
 
 59. Setup the `Finder` Panel.  
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-finder-panel.png)
-
-
-
+60. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).
 
 
 
