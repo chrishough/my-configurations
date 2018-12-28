@@ -15,7 +15,7 @@ TODO:
 - add arqscreen shots settings #56
 - update image of folder sidebar #59
 - update image of ruby versions
-
+- reformat to include data format https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/
 
 
 
