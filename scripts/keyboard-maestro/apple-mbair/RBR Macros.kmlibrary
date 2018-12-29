@@ -20,7 +20,7 @@
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -72,17 +72,17 @@
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -134,17 +134,17 @@
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -196,17 +196,17 @@
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -245,17 +245,17 @@
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -294,142 +294,17 @@
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
-			<key>Macros</key>
-			<array>
-				<dict>
-					<key>Actions</key>
-					<array>
-						<dict>
-							<key>ActionColor</key>
-							<string>Aqua</string>
-							<key>ActionName</key>
-							<string>A Macro by Christopher Stone &lt;scriptmeister@thestoneforge.com&gt;</string>
-							<key>IsDisclosed</key>
-							<false/>
-							<key>MacroActionType</key>
-							<string>Comment</string>
-							<key>StyledText</key>
-							<data>
-							cnRmZAAAAAADAAAAAgAA
-							AAcAAABUWFQucnRmAQAA
-							AC6mAQAAKwAAAAEAAACe
-							AQAAe1xydGYxXGFuc2lc
-							YW5zaWNwZzEyNTJcY29j
-							b2FydGYxNjcxCntcZm9u
-							dHRibFxmMFxmc3dpc3Nc
-							ZmNoYXJzZXQwIEhlbHZl
-							dGljYTt9CntcY29sb3J0
-							Ymw7XHJlZDI1NVxncmVl
-							bjI1NVxibHVlMjU1O30K
-							e1wqXGV4cGFuZGVkY29s
-							b3J0Ymw7O30KXHBhcmRc
-							dHg1NjBcdHgxMTIwXHR4
-							MTY4MFx0eDIyNDBcdHgy
-							ODAwXHR4MzM2MFx0eDM5
-							MjBcdHg0NDgwXHR4NTA0
-							MFx0eDU2MDBcdHg2MTYw
-							XHR4NjcyMFxwYXJkaXJu
-							YXR1cmFsXHBhcnRpZ2h0
-							ZW5mYWN0b3IwCgpcZjBc
-							ZnMyNCBcY2YwIEF1dGhv
-							cmVkIGJ5IENocmlzdG9w
-							aGVyIFN0b25lIDxzY3Jp
-							cHRtZWlzdGVyQHRoZXN0
-							b25lZm9yZ2UuY29tPlwK
-							XCdhMFwnYTAyMDE1LzEy
-							LzAzIDAzOjQwIDogQ3Jl
-							YXRlZFwKXCdhMFwnYTAy
-							MDE1LzEyLzAzIDA0OjEw
-							IDogTW9kaWZpZWR9AQAA
-							ACMAAAABAAAABwAAAFRY
-							VC5ydGYQAAAA83mxW7YB
-							AAAAAAAAAAAAAA==
-							</data>
-							<key>Title</key>
-							<string>Discover App Responsible for Secure-Input </string>
-						</dict>
-						<dict>
-							<key>DisplayKind</key>
-							<string>Window</string>
-							<key>IncludeStdErr</key>
-							<true/>
-							<key>MacroActionType</key>
-							<string>ExecuteShellScript</string>
-							<key>NotifyOnFailure</key>
-							<false/>
-							<key>Path</key>
-							<string>/Users/chris/test_directory/aa</string>
-							<key>Source</key>
-							<string>Nothing</string>
-							<key>StopOnFailure</key>
-							<false/>
-							<key>Text</key>
-							<string>#! /usr/bin/env bash
-
-PID=$(ioreg -l -w 0 | perl -wlne 'if ( m!.*"kCGSSessionSecureInputPID"=([0-9]+).*!i ) { print $1 }' | uniq);
-
-if [ "$PID" != "" ]; then
-	ps -a -x -c -o pid,user,comm | sed -En '/^[[:blank:]]*'"$PID"'[[:blank:]]/p'
-else
-	echo "No Secure-Input App Found!";
-fi
-</string>
-							<key>TimeOutAbortsMacro</key>
-							<true/>
-							<key>TrimResults</key>
-							<false/>
-							<key>TrimResultsNew</key>
-							<false/>
-							<key>UseText</key>
-							<true/>
-						</dict>
-					</array>
-					<key>CreationDate</key>
-					<real>470829720.26332498</real>
-					<key>ModificationDate</key>
-					<real>470830242.75618201</real>
-					<key>Name</key>
-					<string>Discover App Responsible for Secure-Input </string>
-					<key>Triggers</key>
-					<array>
-						<dict>
-							<key>FireType</key>
-							<string>Pressed</string>
-							<key>KeyCode</key>
-							<integer>122</integer>
-							<key>MacroTriggerType</key>
-							<string>HotKey</string>
-							<key>Modifiers</key>
-							<integer>0</integer>
-						</dict>
-					</array>
-					<key>UID</key>
-					<string>AED86833-6DC0-4536-9CA7-8D2AD7417497</string>
-				</dict>
-			</array>
-			<key>Name</key>
-			<string>Hough</string>
-			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
-			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
-		</dict>
-		<dict>
-			<key>Activate</key>
-			<string>Normal</string>
-			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -468,17 +343,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -517,17 +392,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -549,7 +424,7 @@ fi
 							<key>Fuzz</key>
 							<integer>15</integer>
 							<key>HorizontalPositionExpression</key>
-							<string>3020</string>
+							<string>1280</string>
 							<key>MacroActionType</key>
 							<string>MouseMoveAndClick</string>
 							<key>Modifiers</key>
@@ -569,7 +444,7 @@ fi
 					<key>CreationDate</key>
 					<real>459703999.76049101</real>
 					<key>ModificationDate</key>
-					<real>545245493.87623</real>
+					<real>532065420.67595202</real>
 					<key>Name</key>
 					<string>Launch Calendar</string>
 					<key>Triggers</key>
@@ -590,17 +465,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -622,7 +497,7 @@ fi
 							<key>Fuzz</key>
 							<integer>15</integer>
 							<key>HorizontalPositionExpression</key>
-							<string>3170</string>
+							<string>1395</string>
 							<key>MacroActionType</key>
 							<string>MouseMoveAndClick</string>
 							<key>Modifiers</key>
@@ -642,7 +517,7 @@ fi
 					<key>CreationDate</key>
 					<real>459703999.76049101</real>
 					<key>ModificationDate</key>
-					<real>545245409.05577397</real>
+					<real>532065430.71237499</real>
 					<key>Name</key>
 					<string>Launch Notification Center</string>
 					<key>Triggers</key>
@@ -663,17 +538,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -695,7 +570,7 @@ fi
 							<key>Fuzz</key>
 							<integer>15</integer>
 							<key>HorizontalPositionExpression</key>
-							<string>3135</string>
+							<string>1375</string>
 							<key>MacroActionType</key>
 							<string>MouseMoveAndClick</string>
 							<key>Modifiers</key>
@@ -715,7 +590,7 @@ fi
 					<key>CreationDate</key>
 					<real>459703999.76049101</real>
 					<key>ModificationDate</key>
-					<real>548002868.18256998</real>
+					<real>547855929.67302406</real>
 					<key>Name</key>
 					<string>Launch Weather</string>
 					<key>Triggers</key>
@@ -736,17 +611,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -785,17 +660,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -836,17 +711,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -887,17 +762,17 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 		<dict>
 			<key>Activate</key>
 			<string>Normal</string>
 			<key>CreationDate</key>
-			<real>459703999.76049101</real>
+			<real>567795789.58685505</real>
 			<key>Macros</key>
 			<array>
 				<dict>
@@ -938,14 +813,14 @@ fi
 				</dict>
 			</array>
 			<key>Name</key>
-			<string>Hough</string>
+			<string>RBR</string>
 			<key>ToggleMacroUID</key>
-			<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+			<string>731CD09F-7319-44C3-A012-E13156979084</string>
 			<key>UID</key>
-			<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+			<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
 		</dict>
 	</array>
 	<key>UID</key>
-	<string>269142DE-8D9F-4721-BD21-564D4720F595</string>
+	<string>9D862A87-7936-40B9-9146-2A826F214CA8</string>
 </dict>
 </plist>
