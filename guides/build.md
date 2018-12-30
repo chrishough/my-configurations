@@ -5,7 +5,6 @@
 
 
 TODO: 
-- update image of folder preferences: advanced and sidebar #26
 - add shush screen shot of settings #33
 - add dock screen shot of settings #10
 - add caffeine screen shot of settings #47
@@ -41,8 +40,8 @@ TODO:
 16. Open Xcode, accept the license agreement.
 17. Open Xcode, install all iOS Emulators.
 18. Configure `Hot Corners` and `Mission Control`.
-  ![hot-corners](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/hot-corners.png)
-  ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/mission-control.png)
+  ![hot-corners](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/hot-corners.png)
+  ![mission-control](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/mission-control.png)
 19. In the `Keyboard` settings make sure to check `Use the F1, F2, as standard function keys`.
 20. In the `Energy Savor` set display to turn off after 30 minutes, and uncheck `Put hard disks to sleep when possible` and `Prevent computer from sleeping automatically when display is off`.
 21. Setup `4 - 12 OSX Spaces` via `Mission Control`.
@@ -51,8 +50,9 @@ TODO:
 24. Use `Show View Options` on the desktop set the icon size to `68 x 68` and `Snap to Grid`.
 25. In Finder `View` to `Show Path Bar` which will display the full folder path at the bottom of a finder window.
 26. Setup / Verify Folder Preferences.
-  ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/folder-preferences.png)
-  ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/folder-preferences.png)
+  ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/folder-preferences-1.png)
+  ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/folder-preferences-2.png) 
+  ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/folder-preferences-3.png)
 27. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 28. Install the 1Password Package into Firefox and Chrome.
 29. Setup Google Chrome Profile, and organize extensions synced from google.
@@ -60,7 +60,7 @@ TODO:
 31. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
 32. Install iMovie, iPhoto, Keynote, Numbers, Pages, GarageBand, FaceTime from the `App Store`.
 33. Install [Shush](http://mizage.com/shush/) from the `App Store`. Open after to configure. 
-  ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/folder-preferences.png)
+  ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/folder-preferences.png)
 34. Install [Evernote](https://evernote.com/) from the `App Store`. Open after to configure.
 35. Install Skitch [Skitch](https://evernote.com/products/skitch) from the `App Store`. Open after to configure.
 36. Install [Paprika](https://www.paprikaapp.com/) from the `App Store`. Open after to configure.
@@ -70,9 +70,9 @@ TODO:
 40. Install [Office for Mac](https://www.microsoft.com/en-us/store/b/office).
 41. Install [Divvy](http://mizage.com/divvy/), and set to open via `cmd + shift + space`.
 42. Configure Divvy Shortcuts.  
-  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/divvy/divvy1.png)
-  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/divvy/divvy2.png)
-  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/divvy/divvy3.png)
+  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/divvy/divvy1.png)
+  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/divvy/divvy2.png)
+  ![divvy](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/divvy/divvy3.png)
 43. Install [Keyboard Maestro](https://www.keyboardmaestro.com/main/).
 44. Install [Total Finder](https://totalfinder.binaryage.com/).
 45. Install [iTerm2](https://www.iterm2.com/).
@@ -88,13 +88,13 @@ TODO:
 55. Setup `OSX Messages` for all accounts. Verify non-apple users too.
 56. In `System Preferences` under `Notifications` set `do not disturb` from 12:00AM to 11:59PM.
 57. Setup the `Today` Panel.
-  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-notifications-panel.png)
+  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/osx-notifications-panel.png)
 58. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
 
 > If this is a migration of an existing computer, now is the time to bring over each folder and back them up to a new S3 bucket with a new IAM user, and new bucket policy. Once all of the files have been updated, reformat the old machine and sell it.    
 
 59. Setup the `Finder` Panel.  
-  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/workstation/osx-finder-panel.png)
+  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/osx-finder-panel.png)
 60. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).
 
 
@@ -121,9 +121,9 @@ TODO:
 59. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.
 60. Follow the [Shell Configuration](/guides/shell.md) guide.
 61. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.
-  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/alfred/alfred1.png)
-  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/alfred/alfred2.png)
-  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/alfred/alfred3.png)
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred1.png)
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred2.png)
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred3.png)
 62. Follow the [IDE Configuration](/guides/ide.md) guide.
 63. Follow the [Database Configuration](/guides/database.md) guide.
 64. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.
