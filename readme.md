@@ -1,4 +1,4 @@
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/computer.svg" height="20"> Configurations
+## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/computer.svg" height="20"> Configurations
 
 Every engineer's workstation configuration (`dotfiles`) is highly variable and tailored to their desires, habits, and software stack. I love rebuilding and tinkering with my build by learning from and collaborating with others.  This setup is what I use to get the job done, however, don't just accept my words as gospel, find your own path when setting up your build.  
 
@@ -6,7 +6,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/face.svg" height="20"> Guides
+## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/face.svg" height="20"> Guides
 - [Setup a New or Reformatting an Existing Apple Workstation](/guides/build.md)
 - [Engineering Workstation Setup and Configuration](/guides/workstation.md)
 - [Ruby Engineering Configuration](/guides/ruby.md)
@@ -15,7 +15,7 @@ These guides are highly opinionated. If you have any questions please post an is
 - [Database Configuration](/guides/database.md)
 - [IDE Configuration](/guides/ide.md)
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/toolbox.svg" height="20"> Shortcuts and Helpers
+## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/toolbox.svg" height="20"> Shortcuts and Helpers
 
 As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them.
 
@@ -31,7 +31,7 @@ As you explore the configuration directories you will notice a number of shortcu
 |[ruby](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/ruby)| rubyhelp | Ruby and Rails based commands.|
 |[shell](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/shell)| shellhelp | Everything shell.|
 
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/alfred.svg" height="20"> Alfred Workflows
+## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/alfred.svg" height="20"> Alfred Workflows
 
 If you love automation, you will love [Alfred](https://www.alfredapp.com/)! It is basically spotlight on steroids and when you purchase the license you are granted access to infinitely complex workflows.  Here is what I have installed.
 
