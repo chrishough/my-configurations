@@ -3,14 +3,10 @@
 > If you need to reinstall the operating system follow "[How to install macOS](https://support.apple.com/en-us/HT204904)" from the Apple Support documentation.
 
 
-
 TODO: 
 - upgrade omnigraffle to version 7!
 - add bartender screen shots of settings #52
 - add istat menus screen shots settings #50
-- add arqscreen shots settings #56
-- update image of folder sidebar #59
-- update image of ruby versions
 - reformat to include data format https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/
 
 *****
@@ -20,13 +16,13 @@ TODO:
 2. Reinstall the latest version of OSX. 
 3. Make sure that FileVault and drive encryption are enabled and activated.
 4. Install [1Password](https://1password.com/) and sync via personal cloud repo, not icloud.
-5. Connect to our Wifi.
+5. Connect to Wifi.
 6. Setup icloud mail accounts that are sycned across all Apple Devices.
 7. Install all of the latest OSX updates including full operating system releases.
 8. Remove every application icon from the dock except finder on the bottom left, and the trash can on the bottom right.
 9. Remove `Siri`, `Display Mirroring`, and `Date & Time` from the top navigation bar.
 10. Set the dock to magnify with cursor hover, and show / hide across the bottom.
-  ![shush](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/dock-1.png)
+  ![dock](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/dock.png)
 11. In `Displays` set "Resolution" to `scaled` and select `more space`.
 12. In `System Preferences` under the `Trackpad` disable `Natural` scrolling.
 13. In `System Preferences` under the `Trackpad` under `Point and Click` set the tracking speed to `6`.
@@ -48,7 +44,7 @@ TODO:
 27. In `Finder` preferences only show `Hard Discs` on the desktop, and set new finder windows to open with `user home directory`.
 28. Use `Show View Options` on the desktop set the icon size to `68 x 68` and `Snap to Grid`.
 29. In Finder `View` to `Show Path Bar` which will display the full folder path at the bottom of a finder window.
-30. Setup / Verify Folder Preferences.
+30. Setup Finder Folder Preferences.
   ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/folder-preferences-1.png)
   ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/folder-preferences-2.png) 
   ![folder-prefrences](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/folder-preferences-3.png)
@@ -89,12 +85,13 @@ TODO:
 60. In `System Preferences` under `Notifications` set `do not disturb` from 12:00AM to 11:59PM.
 61. Setup the `Today` Panel.
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/osx-notifications-panel.png)
-62. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.
+62. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.  
 
 > If this is a migration of an existing computer, now is the time to bring over each folder and back them up to a new S3 bucket with a new IAM user, and new bucket policy. Once all of the files have been updated, reformat the old machine and sell it.    
 
+  ![arq](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/arq/arq-1.png)
 63. Setup the `Finder` Panel.  
-  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/osx-finder-panel.png)
+  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/finder-panel.png)
 64. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).
 
 

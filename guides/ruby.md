@@ -16,7 +16,8 @@ This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. 
 `git clone https://github.com/ianheggie/rbenv-binstubs.git $(rbenv root)/plugins/rbenv-binstubs`
 8. Install [rbenv-update](https://github.com/rkh/rbenv-update) plugin.  
 `git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update`
-9. Install a few common versions of ruby: `rbenv install 2.3.0`, `rbenv install 2.4.1`, and `rbenv install 2.5.1`.  Please note you can run `rbenv install -l` to see the current versions available.
+9. Install a few common versions of ruby. Please note you can run `rbenv install -l` to see the current versions available.
+  ![ruby-versions](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/code/ruby-versions.png)
 10. Run `rbenv global 2.5.3` to setup the global version of ruby.
 11. If this is a new machine migrated from an older box, make sure to copy over the `.rbenv/vars` file so you do not lose passwords.
 12. Setup pre-gems for our IDE at this time: `gem install rsense`.
