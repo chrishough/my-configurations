@@ -1,0 +1,24 @@
+windows:
+  - name: W2_employer_mediapro
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/MediaPro/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/MediaPro/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/MediaPro/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/MediaPro/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/MediaPro/code
+        - clear

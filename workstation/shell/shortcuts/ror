@@ -2,7 +2,7 @@
 # rubocop:disable all
 MYRUBYVERSION="2.3.3"
 export RUBY_DEP_GEM_SILENCE_WARNINGS=1
-export BUNDLER_EDITOR="atom"
+export BUNDLER_EDITOR="vscode"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 alias rb="rbenv"
@@ -26,7 +26,7 @@ GEMDIR=.bundle/ruby/$MYRUBYVERSION/gems
 
 function rgo() {
 	LOCALGEM=$(find $GEMDIR -name \*$1\* -type d -maxdepth 1 -print | head -n1)
-	atom $LOCALGEM
+	code $LOCALGEM
 }
 
 function rdbr() {

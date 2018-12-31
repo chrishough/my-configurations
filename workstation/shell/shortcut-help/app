@@ -5,7 +5,7 @@ apphelp () {
   echo "  bd           = brew doctor"
   echo "  bu           = brew update, brew doctor"
   echo "  mc           = mailcatcher -f -v"
-  echo "  atom         = atom ."
+  echo "  vscode       = code ."
   echo "  dpg          = dotgpg alias for encryption"
   echo "  openmd       = open mou for passed in md file"
   echo "--------------------------------------------------------------------------------"

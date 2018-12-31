@@ -1,0 +1,24 @@
+windows:
+  - name: RBR_ach_lambda_email_processor
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/AboutChrisHough/LambdaEmailProcessor
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/AboutChrisHough/LambdaEmailProcessor
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/AboutChrisHough/LambdaEmailProcessor
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/AboutChrisHough/LambdaEmailProcessor
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/AboutChrisHough/LambdaEmailProcessor
+        - clear

@@ -6,7 +6,193 @@
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>KeyCode</key>
+						<integer>124</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.amazon.music</string>
+							<key>Name</key>
+							<string>Amazon Music</string>
+							<key>NewFile</key>
+							<string>/Applications/Amazon Music.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567794591.82083094</real>
+				<key>ModificationDate</key>
+				<real>567795297.28960896</real>
+				<key>Name</key>
+				<string>Amazon Music Next</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>124</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0698F819-243B-4B04-BFAF-6475C06D15EB</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>RBR</string>
+		<key>ToggleMacroUID</key>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
+		<key>UID</key>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567626526.04352701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>KeyCode</key>
+						<integer>123</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.amazon.music</string>
+							<key>Name</key>
+							<string>Amazon Music</string>
+							<key>NewFile</key>
+							<string>/Applications/Amazon Music.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567794591.82083094</real>
+				<key>ModificationDate</key>
+				<real>567795314.266029</real>
+				<key>Name</key>
+				<string>Amazon Music Previous</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>123</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>6F5EE20A-29CB-46A9-A0CC-45D26F6F611A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>RBR</string>
+		<key>ToggleMacroUID</key>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
+		<key>UID</key>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567626526.04352701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>KeyCode</key>
+						<integer>49</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.amazon.music</string>
+							<key>Name</key>
+							<string>Amazon Music</string>
+							<key>NewFile</key>
+							<string>/Applications/Amazon Music.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567794591.82083094</real>
+				<key>ModificationDate</key>
+				<real>567795276.61349404</real>
+				<key>Name</key>
+				<string>Amazon Music Stop</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>1</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>E535A05A-CAA7-4D28-86C5-0444D23B90C6</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>RBR</string>
+		<key>ToggleMacroUID</key>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
+		<key>UID</key>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -45,17 +231,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -94,17 +280,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -143,17 +329,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -192,17 +378,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -224,7 +410,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1280</string>
+						<string>3000</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -244,7 +430,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>532065420.67595202</real>
+				<real>567627039.14861798</real>
 				<key>Name</key>
 				<string>Launch Calendar</string>
 				<key>Triggers</key>
@@ -265,17 +451,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -297,7 +483,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1395</string>
+						<string>3165</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -317,7 +503,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>532065430.71237499</real>
+				<real>567627669.00756299</real>
 				<key>Name</key>
 				<string>Launch Notification Center</string>
 				<key>Triggers</key>
@@ -338,17 +524,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -370,7 +556,7 @@
 						<key>Fuzz</key>
 						<integer>15</integer>
 						<key>HorizontalPositionExpression</key>
-						<string>1320</string>
+						<string>3142</string>
 						<key>MacroActionType</key>
 						<string>MouseMoveAndClick</string>
 						<key>Modifiers</key>
@@ -390,7 +576,7 @@
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>532065428.05162603</real>
+				<real>567627657.14993</real>
 				<key>Name</key>
 				<string>Launch Weather</string>
 				<key>Triggers</key>
@@ -411,17 +597,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -460,17 +646,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -511,17 +697,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -562,17 +748,17 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>459703999.76049101</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -613,11 +799,11 @@
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Hough</string>
+		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>C0DFB1C6-A2FC-4A2B-8EB4-1425812D77E9</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>C301A6F4-2EA8-4032-9827-771E4B396A57</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 </array>
 </plist>

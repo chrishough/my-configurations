@@ -13,7 +13,7 @@ rubyhelp () {
   echo "  rdb         = rails db console"
   echo "  rdbr        = rebuild local dev and testing db via structure file"
   echo "  rbe         = run bundle exec"
-  echo "  rgo         = open ruby gem in project in atom"
+  echo "  rgo         = open ruby gem"
   echo "  rgod        = find out which gems are outdated on the project"
   echo "  rbl         = rbenv install -l"
   echo "  rbi         = bundle install"
