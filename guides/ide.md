@@ -1,4 +1,4 @@
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/ide.svg" height="20"> IDE Configuration
+## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/ide.svg" height="20"> IDE Configuration
 
 I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime text 2, and atom.  My current build utilizes [vscode](https://code.visualstudio.com/) to get the job done. It is not as fast as an engineer who has mastered the vim keyboard but it comes pretty darn close.
 

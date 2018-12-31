@@ -1,4 +1,4 @@
-## <img src="https://cdn.rawgit.com/chrishough/my-public-data/master/my-configurations/rubyonrails.svg" height="20"> Ruby Engineering Configuration
+## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/rubyonrails.svg" height="20"> Ruby Engineering Configuration
 
 This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. If you are ok with that, let's type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
 
