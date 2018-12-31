@@ -1,7 +1,8 @@
 #!/bin/zsh
-alias atom="atom ."
 alias dpg="dotgpg"
-alias bd="brew doctor" 
+alias bd="brew doctor"
+alias dvy="itermocil"
+alias vscode="code ."
 
 function mc() { mailcatcher -f -v }
 function openmd() { open -a "/Applications/Mou.app" "$1"; }

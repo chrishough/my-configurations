@@ -1,18 +1,25 @@
 ## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/ide.svg" height="20"> IDE Configuration
 
-I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime text 2, and atom.  My current build utilizes [atom](https://atom.io/) to get the job done, and I have been working with it since beta.  No, it is not as fast as an engineer who has mastered the vim keyboard but it comes pretty darn close.
+I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime text 2, and atom.  My current build utilizes [vscode](https://code.visualstudio.com/) to get the job done. It is not as fast as an engineer who has mastered the vim keyboard but it comes pretty darn close.
 
-1. Download and install [atom](https://atom.io/). This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
-2. Type `cmd + space` to launch `Atom` to approve the EULA. Once approved, close the application.
-3. Backup the existing atom configuration.  
-`ruby $HOME/.myconfigurations/scripts/setup/ide/backup.rb`
-4. Setup symlinks to our atom configuration files.  
-`ruby $HOME/.myconfigurations/scripts/setup/ide/symlinks.rb`
-5. Setup symlinks to our application configuration files.  
-`ruby $HOME/.myconfigurations/scripts/setup/apps/symlinks.rb`
-6. From the command prompt type `atom`, then after the editor opens, type `cmd` + `,` and click on install. On this interface we want to search for [package-sync](https://atom.io/packages/package-sync) and install it.
-7. With package-sync installed type `shift + cmd + p` and type `package-sync:sync`. This will install all of the packages inside the `package.cson` file.  Please watch the bottom of atom to see it scrolling through the installation process. Once complete please close atom and re-open it. If you do not have any errors, you are good to go. I enjoy adjusting this configuration and keep an updated copy of my [package list](https://github.com/chrishough/my-configurations/blob/master/workstation/atom/packages.cson).
-8. If prompted by Atom to install the latest Java JDX on OSX follow this guide: [How to: Fix Java Command-Line Tool Pop-Up on Mac OS](https://www.theitsage.com/fix-java-command-line-tool-popup-mac/). You will need to download and install [Java for OS X 2015-001](https://support.apple.com/kb/dl1572?locale=en_US).
+1. Download and install [vscode](https://code.visualstudio.com/). This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
+2. Type `cmd + space` to launch `vscode` to approve the EULA. Once approved, close the application.
+3. From the [documentation](https://code.visualstudio.com/docs/setup/mac) install the command line launcher via `shell command`.
+4. Install the [settings-sync](ttps://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) package.
+5. Download Gist Settings via the Gist Id stored in Git. Wait for the download sync to finish and restart the IDE.
 
-**My Atom Design**
-![atom](https://github.com/chrishough/my-public-data/raw/master/my-configurations/atom-editor-v4.0.0.png)
+#### List of Plugins
+* [settings-sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+* [gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* [railscasts theme](https://marketplace.visualstudio.com/items?itemName=mrded.railscasts)
+* [ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+* [ruby rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
+* [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+* [slim-lang](https://marketplace.visualstudio.com/items?itemName=sianglim.slim)
+* [sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented)
+* [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
+* [quit control](https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode)
+* [markdown-preview-github-styles](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
+* [endwise](https://marketplace.visualstudio.com/items?itemName=kaiwood.endwise)
+* [indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)

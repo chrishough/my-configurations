@@ -1,6 +1,5 @@
 #!/bin/zsh
 alias upzsh="upgrade_oh_my_zsh"
-alias dvy="itermocil"
 
 function reloadshell() { exec $SHELL }
 function getpwd() { pwd | pbcopy }
@@ -9,6 +8,7 @@ function disc() { df -h }
 function up() { uptime | sed -e "s/:/ /2" | sed -e "s/,/ /2" | awk '{print "Up " $3 " days, " $5 " hours and " $6 " minutes"}' }
 function purgeSVN() { find . -name .svn  -type d -print0 |xargs -0 rm -rf }
 function purgeDS() { find . -name '*.DS_Store' -type f -delete }
+function resetvideo() { sudo killall VDCAssistant }
 
 function hidefiles() {
   defaults write com.apple.finder AppleShowAllFiles NO;

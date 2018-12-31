@@ -1,5 +1,5 @@
 windows:
-  - name: configurations
+  - name: RBR_config
     layout: main-vertical
     panes:
       - commands:
