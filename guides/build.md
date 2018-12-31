@@ -103,9 +103,6 @@
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred3.png)  
 70. Follow the [IDE Configuration](/guides/ide.md) guide.  
 71. Follow the [Database Configuration](/guides/database.md) guide.  
-
-***
-
 72. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.  
 73. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).  
 
