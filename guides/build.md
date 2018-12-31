@@ -2,16 +2,6 @@
 
 > If you need to reinstall the operating system follow "[How to install macOS](https://support.apple.com/en-us/HT204904)" from the Apple Support documentation.
 
-
-TODO: 
-- upgrade omnigraffle to version 7!
-- add bartender screen shots of settings #52
-- add istat menus screen shots settings #50
-- reformat to include data format https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/
-
-*****
-
-
 1. Power up the new machine, then reboot into the system utilities. Here wipe and reformat the drive completely removing the shipped install. 
 2. Reinstall the latest version of OSX. 
 3. Make sure that FileVault and drive encryption are enabled and activated.
@@ -77,8 +67,18 @@ TODO:
 52. Install [Transmit](https://panic.com/transmit/).
 53. Install [Pathfinder](https://cocoatech.com/).
 54. Install [Istat Menus](https://bjango.com/mac/istatmenus/).
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-1.png)
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-2.png)
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-3.png)
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-4.png)
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-5.png)
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-6.png)
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-7.png)
+    ![istat-menus](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/istatmenus/istatmenus-8.png)
 55. Install [Omnigraffle](https://www.omnigroup.com/omnigraffle).
-56. Install [Bartender](https://www.macbartender.com/).
+56. Install [Bartender](https://www.macbartender.com/).  
+  ![bartender](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/bartender/bartender-1.png)  
+  ![bartender](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/bartender/bartender-2.png)  
 57. Send screenshots to the Desktop's `TMP` folder via: `defaults write com.apple.screencapture location /Users/christopherhough/Desktop/TMP` followed by `killall SystemUIServer`.
 58. Set the osx calendar to display 14 days in week view via `defaults write com.apple.iCal "n days of week" 14`.
 59. Setup `OSX Messages` for all accounts. Verify non-apple users too.
@@ -87,43 +87,26 @@ TODO:
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/osx-notifications-panel.png)
 62. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.  
 
-> If this is a migration of an existing computer, now is the time to bring over each folder and back them up to a new S3 bucket with a new IAM user, and new bucket policy. Once all of the files have been updated, reformat the old machine and sell it.    
+> If this is a migration of an existing computer, now is the time to bring over each folder and back them up to a new S3 bucket with a new IAM user, and new bucket policy. Once all of the files have been updated, reformat the old machine and sell it. Use a tough eraser i.e. `diskutil secureErase freespace 3 /Volumes/DRIVE` via https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/   
 
   ![arq](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/arq/arq-1.png)
 63. Setup the `Finder` Panel.  
-  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/finder-panel.png)
-64. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).
-
-
+  ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/finder-panel.png)    
+64. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).    
+65. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.  
+66. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.  
+67. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.  
+68. Follow the [Shell Configuration](/guides/shell.md) guide.  
+69. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.  
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred1.png)  
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred2.png)  
+  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred3.png)  
+70. Follow the [IDE Configuration](/guides/ide.md) guide.  
+71. Follow the [Database Configuration](/guides/database.md) guide.  
 
 ***
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-57. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.
-58. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.
-59. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.
-60. Follow the [Shell Configuration](/guides/shell.md) guide.
-61. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.
-  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred1.png)
-  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred2.png)
-  ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred3.png)
-62. Follow the [IDE Configuration](/guides/ide.md) guide.
-63. Follow the [Database Configuration](/guides/database.md) guide.
-64. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.
-65. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).
+72. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.  
+73. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).  
 
 
