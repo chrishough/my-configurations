@@ -22,7 +22,7 @@ As you explore the configuration directories you will notice a number of shortcu
 | File  | Helper Command | Description  |
 |---|:---:|---|
 |[includes](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/includes)| |This is the base file to pull in all the includes.|
-|[global-helpers](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-helpers)| |Controls that apply to all of the inlcudes.|
+|[global-helpers](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-helpers)| |Controls that apply to all of the includes.|
 |[global-settings](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-settings)| |Machine and include settings.|
 |[app](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/app)| apphelp | Applications that do not require their own includes file.|
 |[git](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/shortcuts/git)| githelp | Github shortcuts and workflows.|
