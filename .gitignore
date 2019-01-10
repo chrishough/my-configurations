@@ -18,6 +18,7 @@ workstation/shell/shortcuts/private
 *.exe
 *.o
 *.so
+*.vscode
 
 #------------------------
 # Packages #
