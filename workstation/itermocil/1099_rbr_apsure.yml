@@ -1,0 +1,24 @@
+windows:
+  - name: 1099_rbr_codingzeal
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/apsure/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/apsure/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/apsure/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/apsure/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/clients/apsure/code
+        - clear
