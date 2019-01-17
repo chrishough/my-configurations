@@ -14,7 +14,10 @@
 11. Install [itermocil](https://github.com/TomAnthony/itermocil) to manage iterm windows via `brew install TomAnthony/brews/itermocil`.
 12. Install [htop](http://hisham.hm/htop/) via `brew install htop`.
 13. Install [wget](https://www.gnu.org/software/wget/) via 'brew install wget'
-14. If this is a reformat from a backup make sure to setup your `.gitconfig` file.
+14. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.  
+15. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).  
+
+If this is a reformat from a backup make sure to setup your `.gitconfig` file.
 ```
 [user]
   name = Chris Hough
