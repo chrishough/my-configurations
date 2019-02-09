@@ -1,5 +1,5 @@
 windows:
-  - name: 1099_rbr_codingzeal
+  - name: 1099_rbr_apsure
     layout: double-main-horizontal
     panes:
       - commands:
