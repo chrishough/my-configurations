@@ -14,4 +14,18 @@ rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
 ```
 5. Run `brew install redis` to install [Redis](http://redis.io/).
 6. Start Redis via `brew services start redis`
-7. Install Aquafold's [Aqua Data Studio](http://www.aquafold.com/).
+7. Start Redis via `brew services start postgresql`
+8. Verify we are running the latest versions of our core database technlogies.
+```
+psql --version
+psql -c "SELECT version();"
+pg_dump --version
+```
+9. If everything has been setup correctly, here is an example output of those commands.
+```
+psql (PostgreSQL) 11.2
+ 
+PostgreSQL 11.2 ...
+
+pg_dump (PostgreSQL) 11.2
+```
