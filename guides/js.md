@@ -3,3 +3,5 @@
 1. Setup [Node Virtual Machine](https://github.com/creationix/nvm) via `brew install nvm`.
 2. Setup [Node](https://nodejs.org/en/) via `brew install node`.
 3. Setup [phantomjs](http://phantomjs.org/) via `brew install phantomjs`. 
+4. Setup [eslint](https://eslint.org) via `npm install -g eslint`.
+5. Setup [stylelint](https://stylelint.io/) via `npm install -g stylelint`.

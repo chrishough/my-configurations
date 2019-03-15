@@ -93,17 +93,16 @@
 63. Setup the `Finder` Panel.  
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/finder-panel.png)    
 64. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).    
-65. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.  
-66. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.  
-67. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.  
-68. Follow the [Shell Configuration](/guides/shell.md) guide.  
-69. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.  
+65. Install [Jing](https://www.techsmith.com/jing-tool.html).
+66. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.  
+67. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.  
+68. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.  
+69. Follow the [Shell Configuration](/guides/shell.md) guide.  
+70. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.  
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred1.png)  
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred2.png)  
   ![alfred](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/alfred/alfred3.png)  
-70. Follow the [IDE Configuration](/guides/ide.md) guide.  
-71. Follow the [Database Configuration](/guides/database.md) guide.  
-72. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.  
-73. Install [NGROK](https://ngrok.com/) via this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).  
+71. Follow the [IDE Configuration](/guides/ide.md) guide.  
+72. Follow the [Database Configuration](/guides/database.md) guid
 
 
