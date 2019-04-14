@@ -1,0 +1,24 @@
+windows:
+  - name: RBR_myemergencycontactnumber
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/myemergencycontactnumber
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/myemergencycontactnumber
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/myemergencycontactnumber
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/myemergencycontactnumber
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/myemergencycontactnumber
+        - clear
