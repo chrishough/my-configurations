@@ -31,6 +31,7 @@ githelp () {
   echo "  gpurgetags   = purge last 120 tags"
   echo "  gstats       = show git commit statistics"
   echo "  gsmi         = git submodule init recursively"
+  echo "  gec          = push empty commit"
   echo "--------------------------------------------------------------------------------"
   echo "  gl           = show log --show-notes"
   echo "  glt          = show log --graph --oneline --all"
