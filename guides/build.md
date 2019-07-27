@@ -93,7 +93,7 @@
 63. Setup the `Finder` Panel.  
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/finder-panel.png)    
 64. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).    
-65. Install [Jing](https://www.techsmith.com/jing-tool.html).
+65. Install [Jing](https://www.techsmith.com/jing-tool.html).     
 66. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.  
 67. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.  
 68. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.  
