@@ -7,7 +7,7 @@
 3. Make sure that FileVault and drive encryption are enabled and activated.
 4. Install [1Password](https://1password.com/) and sync via personal cloud repo, not icloud.
 5. Connect to Wifi.
-6. Setup icloud mail accounts that are sycned across all Apple Devices.
+6. Setup icloud mail accounts that are synced across all Apple Devices.
 7. Install all of the latest OSX updates including full operating system releases.
 8. Remove every application icon from the dock except finder on the bottom left, and the trash can on the bottom right.
 9. Remove `Siri`, `Display Mirroring`, and `Date & Time` from the top navigation bar.
