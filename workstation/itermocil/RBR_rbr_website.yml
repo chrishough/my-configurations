@@ -1,0 +1,24 @@
+windows:
+  - name: RBR_rbr_website
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/robotsbuildingrobots.com
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/robotsbuildingrobots.com
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/robotsbuildingrobots.com
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/robotsbuildingrobots.com
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Code/RobotsBuildingRobots/robotsbuildingrobots.com
+        - clear

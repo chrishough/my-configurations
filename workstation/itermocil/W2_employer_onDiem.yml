@@ -1,0 +1,24 @@
+windows:
+  - name: W2_employer_ondiem
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/onDiem/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/onDiem/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/onDiem/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/onDiem/code
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/onDiem/code
+        - clear

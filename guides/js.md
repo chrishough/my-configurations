@@ -5,3 +5,5 @@
 3. Setup [phantomjs](http://phantomjs.org/) via `brew install phantomjs`. 
 4. Setup [eslint](https://eslint.org) via `npm install -g eslint`.
 5. Setup [stylelint](https://stylelint.io/) via `npm install -g stylelint`.
+6. Setup [bower](https://bower.io/) via `npm install -g bower`.
+7. Setup [yarn](https://yarnpkg.com/en/) via `brew install yarn`.

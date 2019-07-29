@@ -6,10 +6,10 @@ Type `cmd + space` to launch `Terminal` to perform the next block of installatio
 `git clone git@github.com:chrishough/my-configurations.git .myconfigurations`
 2. Install the [Fira Code Fonts](https://github.com/tonsky/FiraCode).
 3. Download and install [iterm2](https://www.iterm2.com/version3.html).  This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
-4. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-5. Install [Zsh](http://www.zsh.org/) and set it as the default shell.  
+4. Install [Zsh](http://www.zsh.org/) and set it as the default shell.  
 `brew install zsh`
+5. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 6. Now need to set zsh as the default shell.  If you run `which zsh` you will see this pointed to `/bin/zsh`. We need to change this.  Running `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh` will properly adjust this for us. Now reopen the terminall window, and when you run `which zsh` it should be pointed to `/usr/local/bin/zsh`.
 7. Setup [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md).  
 `
@@ -65,4 +65,4 @@ GEM_PATH=.bundle
 
 At this point if you type `cd $HOME && lsa` your home directory should look like this.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/user_directory.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/iterm/user_directory.png)
