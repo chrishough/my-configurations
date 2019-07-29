@@ -102,9 +102,9 @@ function gp() {
 	git pull --tags;
 	gs;
 }
-function gci() {
-  msg "Triggering CI Manual Update!";
-  git commit --allow-empty -m "Trigger CI build";
+function gec() {
+  msg "Triggering CI via Empty Commit!";
+  git commit --allow-empty -m "Empty Commit!";
   msg "Pushing all the things to origin!";
 	git push;
 	gs;

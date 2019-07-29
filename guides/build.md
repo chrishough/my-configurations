@@ -7,7 +7,7 @@
 3. Make sure that FileVault and drive encryption are enabled and activated.
 4. Install [1Password](https://1password.com/) and sync via personal cloud repo, not icloud.
 5. Connect to Wifi.
-6. Setup icloud mail accounts that are sycned across all Apple Devices.
+6. Setup icloud mail accounts that are synced across all Apple Devices.
 7. Install all of the latest OSX updates including full operating system releases.
 8. Remove every application icon from the dock except finder on the bottom left, and the trash can on the bottom right.
 9. Remove `Siri`, `Display Mirroring`, and `Date & Time` from the top navigation bar.
@@ -93,7 +93,7 @@
 63. Setup the `Finder` Panel.  
   ![workstation](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/workstation/finder-panel.png)    
 64. Install [Amazon Music](https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740).    
-65. Install [Jing](https://www.techsmith.com/jing-tool.html).
+65. Install [Jing](https://www.techsmith.com/jing-tool.html).     
 66. Follow the [Engineering Work Setup and Configuration](/guides/workstation.md) guide.  
 67. Follow the [Ruby Engineering Configuration](/guides/ruby.md) guide.  
 68. Follow the [JavaScript Engineering Configuration](/guides/js.md) guide.  
