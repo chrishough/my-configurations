@@ -12,12 +12,10 @@ This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. 
 `git clone https://github.com/sstephenson/rbenv-gem-rehash.git $(rbenv root)/plugins/rbenv-gem-rehash`
 6. Install [rbenv-vars](https://github.com/rbenv/rbenv-vars) plugin.    
 `git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars`
-7. Install [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) plugin.  
-`git clone https://github.com/ianheggie/rbenv-binstubs.git $(rbenv root)/plugins/rbenv-binstubs`
-8. Install [rbenv-update](https://github.com/rkh/rbenv-update) plugin.  
+7. Install [rbenv-update](https://github.com/rkh/rbenv-update) plugin.  
 `git clone https://github.com/rkh/rbenv-update.git $(rbenv root)/plugins/rbenv-update`
-9. Install a few common versions of ruby. Please note you can run `rbenv install -l` to see the current versions available.
+8. Install a few common versions of ruby. Please note you can run `rbenv install -l` to see the current versions available.
   ![ruby-versions](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/code/ruby-versions.png)
-10. Run `rbenv global 2.5.3` to setup the global version of ruby.
-11. If this is a new machine migrated from an older box, make sure to copy over the `.rbenv/vars` file so you do not lose passwords.
-12. Setup pre-gems for our IDE at this time: `gem install rsense`.
+9. Run `rbenv global 2.5.3` to setup the global version of ruby.
+10. If this is a new machine migrated from an older box, make sure to copy over the `.rbenv/vars` file so you do not lose passwords.
+11. Setup pre-gems for our IDE at this time: `gem install rsense`.
