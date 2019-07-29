@@ -65,4 +65,4 @@ GEM_PATH=.bundle
 
 At this point if you type `cd $HOME && lsa` your home directory should look like this.
 
-![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20180414/iterm/user_directory.png)
+![iterm](https://github.com/chrishough/my-public-data/raw/master/my-configurations/20181226/iterm/user_directory.png)
