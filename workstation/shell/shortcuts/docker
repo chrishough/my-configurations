@@ -1,8 +1,17 @@
 #!/bin/zsh
 alias dk="docker"
 alias dkl="docker container list"
+alias dc="docker-compose"
 
 function dks() {
 	msg "Stopping docker container: $1"
 	docker container stop "$1";
+}
+function db() {
+	msg "Building docker container: $1"
+	docker-compose build "$1";
+}
+function ds() {
+	msg "Run shell in docker container: $1"
+	docker-compose run --rm --entrypoint bash "$1";
 }

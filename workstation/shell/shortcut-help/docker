@@ -3,8 +3,11 @@ dockerhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
   echo "  dk            = base command"
+  echo "  dc            = docker compose base command"
   echo "  dkl           = list containers"
   echo "  dks           = stop container"
+  echo "  db            = build docker container"
+  echo "  ds            = build docker and connect shell entry point"
   echo "--------------------------------------------------------------------------------"
   echo
 }

@@ -1,6 +1,7 @@
 #!/bin/zsh
 source $HOME/.myconfigurations/workstation/shell/global-settings
 source $HOME/.myconfigurations/workstation/shell/global-helpers
+source $HOME/.myconfigurations/workstation/shell/global-private
 
 source $HOME/.myconfigurations/workstation/shell/shortcuts/git
 source $HOME/.myconfigurations/workstation/shell/shortcuts/app
