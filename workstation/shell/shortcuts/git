@@ -99,7 +99,7 @@ function gp() {
   git branch -a | grep -v HEAD | perl -ne 'chomp($_); s|^\*?\s*||; if (m|(.+)/(.+)| && not $d{$2}) {print qq(git branch --track $2 $1/$2\n)} else {$d{$_}=1}' | csh -xfs;
 	git fetch --all;
 	git pull --all;
-	git pull --tags;
+	git fetch origin --tags --force;
 	gs;
 }
 function gec() {
