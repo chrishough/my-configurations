@@ -1,0 +1,2 @@
+#!/bin/zsh
+alias npm_install_sass_override="npm install --unsafe-perm node-sass -g"
