@@ -5,7 +5,7 @@ function glt(){ git log --graph --oneline --all }
 function gl(){ git log --show-notes }
 function gltp(){ git log --graph --all --decorate }
 function gd(){ git diff }
-function gtl(){ git tag -l }
+function gtl(){ git tag --sort=v:refname }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
 
