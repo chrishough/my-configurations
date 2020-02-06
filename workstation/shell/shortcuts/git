@@ -147,7 +147,7 @@ function grt() {
 	git tag "$1";
 	git push origin --tags;
 	msg "Current tags!";
-	git tag -l;
+	gtl;
 	gs;
 }
 function gck() {
