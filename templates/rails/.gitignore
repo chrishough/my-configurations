@@ -4,18 +4,21 @@ config/application.yml
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+config/master.key
 .env
 test.env
 scratch.rb
 lib/tasks/custom.rake
 
 ###-> Folders
-tmp
-log
+/.bundle
 coverage
-
-public/robot
-!public/robots.txt
+/storage/*
+!/storage/.keep
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
 ###-> File Types
 *.com
@@ -50,6 +53,7 @@ public/robot
 *.vagrant
 
 ###-> OS Generated
+.byebug_history
 *.DS_Store
 *.DS_Store?
 *._*
