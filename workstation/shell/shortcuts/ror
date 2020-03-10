@@ -2,8 +2,8 @@
 # rubocop:disable all
 MYRUBYVERSION="2.3.3"
 export RUBY_DEP_GEM_SILENCE_WARNINGS=1
-# TODO for Ruby 2.7 - Not Compatible with Older Versions
-# export RUBYOPT='-W:no-deprecated -W:no-experimental'
+export RUBYOPT='-W:no-deprecated -W:no-experimental'
+export RUBYOPT='-W0'
 export BUNDLER_EDITOR="vscode"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
