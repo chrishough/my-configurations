@@ -36,13 +36,10 @@
         "terminal.ansiWhite": "#e6e1dc",
         "terminal.ansiBrightWhite": "#f9f7f3",
         "terminal.background": "#000000",
-
         "window.activeBorder": "#FF1728",
-
         "editorGutter.background": "#000000",
         "editorGroupHeader.tabsBackground": "#000000",
         "editor.background": "#000000",
-
         "tab.activeBorderTop": "#FF1728"
     },
     "files.exclude": {
@@ -51,6 +48,10 @@
         "node_modules/": true
     },
     "explorer.autoReveal": false,
+    "editor.rulers": [
+        { "column": 100, "color": "#ff00ff" },
+        { "column": 125, "color": "#ff0000" }
+    ]
     // My Customizations -- END ------------------------------------------
     "workbench.editor.closeEmptyGroups": false,
     "explorer.confirmDragAndDrop": false,
