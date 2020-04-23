@@ -109,7 +109,6 @@ function gec() {
 	git push;
 	gs;
 }
-
 function gpo() {
 	msg "Pushing all the things to origin!";
 	git push;
