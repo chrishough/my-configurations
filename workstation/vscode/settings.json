@@ -1,0 +1,67 @@
+{
+
+    "workbench.startupEditor": "newUntitledFile",
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 150,
+    "workbench.commandPalette.history": 1000,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "sync.gist": "1c6ff2f001a2bd7368966050952777e2",
+    "sync.quietSync": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    "workbench.colorTheme": "RailsCasts",
+    "editor.minimap.enabled": false,
+    // My Customizations -- START ----------------------------------------
+    // https://code.visualstudio.com/api/references/theme-color
+    "workbench.colorCustomizations": {
+        "terminal.ansiBlack": "#2b2b2b",
+        "terminal.ansiBrightBlack": "#5a647e",
+        "terminal.ansiRed": "#da4939",
+        "terminal.ansiBrightRed": "#cc7833",
+        "terminal.ansiGreen": "#a5c261",
+        "terminal.ansiBrightGreen": "#FF1728",
+        "terminal.ansiYellow": "#ffc66d",
+        "terminal.ansiBrightYellow": "#FF1728",
+        "terminal.ansiBlue": "#6d9cbe",
+        "terminal.ansiBrightBlue": "#d4cfc9",
+        "terminal.ansiMagenta": "#b6b3eb",
+        "terminal.ansiBrightMagenta": "#f4f1ed",
+        "terminal.ansiCyan": "#519f50",
+        "terminal.ansiBrightCyan": "#bc9458",
+        "terminal.ansiWhite": "#e6e1dc",
+        "terminal.ansiBrightWhite": "#f9f7f3",
+        "terminal.background": "#000000",
+        "window.activeBorder": "#FF1728",
+        "editorGutter.background": "#2b2b2b",
+        "editorGroupHeader.tabsBackground": "#000000",
+        "editor.background": "#000000",
+        "tab.activeBorderTop": "#FF1728"
+    },
+    "files.exclude": {
+        ".sass-cache/": true,
+        ".vscode/": true,
+        "node_modules/": true
+    },
+    "explorer.autoReveal": false,
+    "editor.rulers": [
+        { "column": 100, "color": "#ffc66d" },
+        { "column": 125, "color": "#ff0000" }
+    ]
+    // My Customizations -- END ------------------------------------------
+    "workbench.editor.closeEmptyGroups": false,
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": -1,
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "extensions.ignoreRecommendations": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "editor.fontSize": 14
+}

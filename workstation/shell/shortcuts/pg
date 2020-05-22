@@ -1,0 +1,5 @@
+#!/bin/zsh
+function pgv() {
+  postgres -V;
+  psql -V;
+}

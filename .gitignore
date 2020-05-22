@@ -2,6 +2,9 @@
 # Ignore specific config files
 #------------------------
 workstation/shell/shortcuts/private
+workstation/shell/global-private
+workstation/itermocil
+!workstation/itermocil/.keep
 
 #------------------------
 # Ignore all logfiles and tempfiles.

@@ -5,7 +5,7 @@ function glt(){ git log --graph --oneline --all }
 function gl(){ git log --show-notes }
 function gltp(){ git log --graph --all --decorate }
 function gd(){ git diff }
-function gtl(){ git tag -l }
+function gtl(){ git tag --sort=v:refname }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
 
@@ -99,7 +99,7 @@ function gp() {
   git branch -a | grep -v HEAD | perl -ne 'chomp($_); s|^\*?\s*||; if (m|(.+)/(.+)| && not $d{$2}) {print qq(git branch --track $2 $1/$2\n)} else {$d{$_}=1}' | csh -xfs;
 	git fetch --all;
 	git pull --all;
-	git pull --tags;
+	git fetch origin --tags --force;
 	gs;
 }
 function gec() {
@@ -109,7 +109,6 @@ function gec() {
 	git push;
 	gs;
 }
-
 function gpo() {
 	msg "Pushing all the things to origin!";
 	git push;
@@ -131,7 +130,7 @@ function gct() {
 	git tag "$1";
 	git push origin --tags;
 	msg "Current tags!";
-	git tag -l;
+	gtl;
 	gs;
 }
 function gdt() {
@@ -147,7 +146,7 @@ function grt() {
 	git tag "$1";
 	git push origin --tags;
 	msg "Current tags!";
-	git tag -l;
+	gtl;
 	gs;
 }
 function gck() {
