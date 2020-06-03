@@ -7,6 +7,14 @@ function dks() {
 	msg "Stopping docker container: $1"
 	docker container stop "$1";
 }
+function dksa() {
+	msg "Stopping all docker containers"
+	docker stop $(docker ps -a -q)
+}
+function dkpa() {
+	msg "Prune all docker containers"
+	docker system prune -a
+}
 function db() {
 	msg "Building docker container: $1"
 	docker-compose build "$1";
@@ -14,4 +22,17 @@ function db() {
 function ds() {
 	msg "Run shell in docker container: $1"
 	docker-compose run --rm --entrypoint bash "$1";
+}
+function dku() {
+	msg "Starting up docker containers"
+	docker-compose up -d;
+}
+function dke() {
+	containerId=$(docker ps -qf "name=$1");
+
+	if [[ -n "$containerId" ]]; then
+		docker exec -it $containerId bash;
+	else
+		echo "No docker container with name: $name is running";
+	fi
 }
