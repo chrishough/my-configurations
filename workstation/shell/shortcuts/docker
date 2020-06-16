@@ -11,7 +11,7 @@ function dksa() {
 	msg "Stopping all docker containers"
 	docker stop $(docker ps -a -q)
 }
-function dkpa() {
+function dkpa() { 
 	msg "Prune all docker containers"
 	docker system prune -a
 }
