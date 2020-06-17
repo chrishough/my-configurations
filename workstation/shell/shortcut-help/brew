@@ -5,7 +5,7 @@ brewhelp () {
   echo "  bd           = brew doctor"
   echo "  bu           = brew update, brew upgrade, brew doctor"
   echo "  bsx          = stop all brew services"
-  echo "  bsx          = start all brew services"
+  echo "  bss          = start all brew services"
   echo "  bsr          = restart all brew services"
   echo "  bsc          = brew services cleanup"
   echo "  bsl          = brew services list"
