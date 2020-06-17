@@ -4,7 +4,7 @@ source $HOME/.myconfigurations/workstation/shell/global-helpers
 source $HOME/.myconfigurations/workstation/shell/global-private
 
 source $HOME/.myconfigurations/workstation/shell/shortcuts/git
-source $HOME/.myconfigurations/workstation/shell/shortcuts/app
+source $HOME/.myconfigurations/workstation/shell/shortcuts/brew
 source $HOME/.myconfigurations/workstation/shell/shortcuts/heroku
 source $HOME/.myconfigurations/workstation/shell/shortcuts/keybase
 source $HOME/.myconfigurations/workstation/shell/shortcuts/ror
@@ -15,7 +15,7 @@ source $HOME/.myconfigurations/workstation/shell/shortcuts/js
 source $HOME/.myconfigurations/workstation/shell/shortcuts/pg
 
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/git
-source $HOME/.myconfigurations/workstation/shell/shortcut-help/app
+source $HOME/.myconfigurations/workstation/shell/shortcut-help/brew
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/heroku
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/keybase
 source $HOME/.myconfigurations/workstation/shell/shortcut-help/ror
