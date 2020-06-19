@@ -29,6 +29,7 @@ function dks() {
 function dku() {
 	msg "Starting up docker containers"
 	docker-compose up -d;
+	dkcs;
 }
 function dke() {
 	containerId=$(docker ps -qf "name=$1");
