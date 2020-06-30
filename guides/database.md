@@ -1,4 +1,4 @@
-## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/database.svg" height="20"> Databases
+## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/database.svg" height="20"> Databases
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
 
