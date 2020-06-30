@@ -1,4 +1,4 @@
-## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/download.svg" height="20"> Engineering Workstation Setup and Configuration
+## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/download.svg" height="20"> Engineering Workstation Setup and Configuration
 
 1. Type `cmd + space` and launch `Xcode`. This should install additional required components and will prompt you for the license approval.
 2. Reboot the workstation.
