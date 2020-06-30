@@ -1,4 +1,4 @@
-## <img src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data/my-configurations/programmingjs.svg" height="30"> JavaScript Engineering Configuration
+## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/programmingjs.svg" height="30"> JavaScript Engineering Configuration
 
 1. Setup [Node Version Manager](https://github.com/creationix/nvm) via `brew install nvm`.
 2. Setup [Node](https://nodejs.org/en/) via `brew install node`.
