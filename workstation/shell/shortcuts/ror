@@ -62,4 +62,8 @@ function rtail() {
 		tail -f log/development.log;
 	fi
 }
+
+function rmc() {
+	mailcatcher -f -v
+}
 # rubocop:enable all

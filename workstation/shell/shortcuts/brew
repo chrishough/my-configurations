@@ -1,0 +1,33 @@
+#!/bin/zsh
+alias bd="brew doctor"
+alias bsc="brew services cleanup"
+alias bsl="brew services list"
+
+function bu() {
+  brew update
+  brew upgrade
+  brew doctor
+}
+
+function bsr() {
+  bsx
+  bss
+}
+
+function bsx() {
+  brew services stop elasticsearch-full
+  brew services stop mongodb-community
+  brew services stop postgresql
+  brew services stop redis
+  bsc
+  bsl
+}
+
+function bss() {
+  brew services start elasticsearch-full
+  brew services start mongodb-community
+  brew services start postgresql
+  brew services start redis
+  bsc
+  bsl
+}

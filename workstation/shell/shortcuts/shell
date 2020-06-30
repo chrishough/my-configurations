@@ -1,5 +1,7 @@
 #!/bin/zsh
 alias upzsh="upgrade_oh_my_zsh"
+alias dvy="itermocil"
+alias vscode="code ."
 
 function reloadshell() { exec $SHELL }
 function getpwd() { pwd | pbcopy }
