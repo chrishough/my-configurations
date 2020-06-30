@@ -14,6 +14,7 @@ rubyhelp () {
   echo "  rdbr        = rebuild local dev and testing db via structure file"
   echo "  rbe         = run bundle exec"
   echo "  rgo         = open ruby gem"
+  echo "  rmc         = mailcatcher -f -v"
   echo "  rgod        = find out which gems are outdated on the project"
   echo "  rbl         = rbenv install -l"
   echo "  rbi         = bundle install"

@@ -3,11 +3,18 @@ dockerhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
   echo "  dk            = base command"
-  echo "  dc            = docker compose base command"
+  echo "  dkc           = docker compose base command"
   echo "  dkl           = list containers"
+  echo "  dkcs          = use docker compose to list all services"
+  echo "  dkcl          = use docker compose to show logs"
+  echo "  dkclf         = use docker compose to follow logs"
   echo "  dks           = stop container"
-  echo "  db            = build docker container"
-  echo "  ds            = build docker and connect shell entry point"
+  echo "  dku           = startup containers"
+  echo "  dke           = searches for image name and attempts to connect via bash"
+  echo "  dksa          = stop all containers"
+  echo "  dkpa          = prune all containers"
+  echo "  dkb           = build docker container"
+  echo "  dks           = build docker and connect shell entry point"
   echo "--------------------------------------------------------------------------------"
   echo
 }

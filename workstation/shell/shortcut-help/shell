@@ -14,6 +14,7 @@ shellhelp () {
   echo "  cls          = clear shell window"
   echo "  upzsh        = upgrade zsh"
   echo "  dvy          = run itermocil"
+  echo "  vscode       = code ."
   echo "  resetvideo   = if your video freezes run this to reset the camera"
   echo "--------------------------------------------------------------------------------"
   echo
