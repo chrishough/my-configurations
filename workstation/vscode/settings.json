@@ -19,6 +19,7 @@
     // My Customizations -- START ----------------------------------------
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
+
         "terminal.ansiBlack": "#2b2b2b",
         "terminal.ansiBrightBlack": "#5a647e",
         "terminal.ansiRed": "#da4939",
@@ -49,9 +50,10 @@
     },
     "explorer.autoReveal": false,
     "editor.rulers": [
-        { "column": 100, "color": "#ffc66d" },
-        { "column": 125, "color": "#ff0000" }
-    ]
+        { "column": 100, "color": "#e6e1dc" },
+        { "column": 125, "color": "#bc9458" },
+        { "column": 180, "color": "#FF1728" }
+    ],
     // My Customizations -- END ------------------------------------------
     "workbench.editor.closeEmptyGroups": false,
     "explorer.confirmDragAndDrop": false,
@@ -63,5 +65,12 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "liveshare.accountProvider": "",
+    "liveshare.account": "",
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "debug.node.autoAttach": "on",
+    "files.insertFinalNewline": true
 }
