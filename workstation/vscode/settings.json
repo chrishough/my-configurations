@@ -19,7 +19,6 @@
     // My Customizations -- START ----------------------------------------
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
-
         "terminal.ansiBlack": "#2b2b2b",
         "terminal.ansiBrightBlack": "#5a647e",
         "terminal.ansiRed": "#da4939",
@@ -72,5 +71,9 @@
         "ms-azuretools.vscode-docker": "workspace"
     },
     "debug.node.autoAttach": "on",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "ruby.lint": {
+
+    },
+    "ruby.rubocop.executePath": "/Users/christopherhough/.rbenv/versions/2.7.1/bin/"
 }
