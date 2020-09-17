@@ -89,6 +89,11 @@ function gc() {
 	git commit -m "$1";
 	gs;
 }
+function gcz() {
+	git add . -A;
+	git cz;
+	gs;
+}
 function gcm() {
 	git add . -A;
 	git commit;
