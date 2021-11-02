@@ -19,7 +19,7 @@ These guides are highly opinionated. If you have any questions please post an is
 
 As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them.
 
-| File  | Helper Command | Description  |
+| File  | Help Command | Description  |
 |---|:---:|---|
 |[includes](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/includes)| |This is the base file to pull in all the includes.|
 |[global-helpers](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-helpers)| |Controls that apply to all of the includes.|

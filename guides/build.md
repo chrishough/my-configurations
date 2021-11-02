@@ -2,6 +2,8 @@
 
 > If you need to reinstall the operating system follow "[How to install macOS](https://support.apple.com/en-us/HT204904)" from the Apple Support documentation.
 
+### This Guide is Based on OSX 12 "Monterey"
+
 1. Power up the new machine, then reboot into the system utilities. Here wipe and reformat the drive completely removing the shipped install. 
 2. Reinstall the latest version of OSX. 
 3. Make sure that FileVault and drive encryption are enabled and activated.
@@ -10,7 +12,7 @@
 6. Setup icloud mail accounts that are synced across all Apple Devices.
 7. Install all of the latest OSX updates including full operating system releases.
 8. Remove every application icon from the dock except finder on the bottom left, and the trash can on the bottom right.
-9. Remove `Siri`, `Display Mirroring`, and `Date & Time` from the top navigation bar.
+9. Remove `Siri`, `Display Mirroring`, and `Spotlight from the top navigation bar.
 10. Set the dock to magnify with cursor hover, and show / hide across the bottom.
   ![dock](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/dock.png)
 11. In `Displays` set "Resolution" to `scaled` and select `more space`.
@@ -18,9 +20,9 @@
 13. In `System Preferences` under the `Trackpad` under `Point and Click` set the tracking speed to `6`.
 14. In `Accessibility` under `Display` set the cursor size to `2`.
 15. In `Accessibility` under `Captions` set to `Large Text`.
-16. In `System Preferences` in the `Keyboard` under `Shortcuts` disable all Spotlight keyboard shortcuts.
-17. Install [AlfredApp](https://www.alfredapp.com/).
-18. Set the Alfred launch shortcut to `cmd + spacebar`.
+16. Install [AlfredApp](https://www.alfredapp.com/).
+17. Set the Alfred launch shortcut to `cmd + spacebar`.
+18. In `System Preferences` in the `Keyboard` under `Shortcuts` disable all Spotlight keyboard shortcuts.
 19. Install the full `Xcode` developer package from the Apple App Store. `=>` I use the full package because it comes with both the gcc compiler and emulators for iOS devices. These come in handy for testing responsive websites and applications.
 20. Open Xcode, accept the license agreement.
 21. Open Xcode, install all iOS Emulators.
