@@ -30,18 +30,18 @@
   ![hot-corners](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/hot-corners.png)
   ![mission-control](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/mission-control.png)
 23. In the `Keyboard` settings make sure to check `Use the F1, F2, as standard function keys`.
-24. In the `Energy Savor` set display to turn off after 30 minutes, and uncheck `Put hard disks to sleep when possible` and `Prevent computer from sleeping automatically when display is off`.
-25. Setup `4 - 12 OSX Spaces` via `Mission Control`.
+24. In the `Energy Saver` set display to turn off after 30 minutes, and uncheck `Put hard disks to sleep when possible` and `Prevent computer from sleeping automatically when display is off`.
+25. Setup at least `4 OSX Spaces` via `Mission Control`.
 26. In `System Preferences` in the `Keyboard` under `Shortcuts` in `Mission Control` desktop switches to use `ctrl + #` for the first 4 spaces.
 27. In `Finder` preferences only show `Hard Discs` on the desktop, and set new finder windows to open with `user home directory`.
 28. Use `Show View Options` on the desktop set the icon size to `68 x 68` and `Snap to Grid`.
-29. In Finder `View` to `Show Path Bar` which will display the full folder path at the bottom of a finder window.
-30. Setup Finder Folder Preferences.
+29. In Finder `View` to `Show Path Bar`, `Show Status Bar`,  which will display the full folder path at the bottom of a finder window.
+30. Setup Finder Folder Preferences.   
   ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-1.png)
   ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-2.png) 
   ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-3.png)
-31. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and [Firefox](https://www.mozilla.org/en-US/firefox/new/).
-32. Install the 1Password Package into Firefox and Chrome.
+31. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html), [Firefox](https://www.mozilla.org/en-US/firefox/new/), and [Brave](https://github.com/chrishough/my-configurations).
+32. Install the 1Password Package into all browsers.
 33. Setup Google Chrome Profile, and organize extensions synced from google.
 34. Make Google Chrome the default browser.
 35. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
