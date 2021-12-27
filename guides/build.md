@@ -10,7 +10,9 @@
 4. Under `Customize Settings` I `Enable Location Services` and do not share `Mac Analytics`, `Crash Data`, `Ask Siri`, and I uncheck `Store files from Documents and Desktop in iCloud Drive`. 
 5. Under `Customize Settings` I make sure to turn on `FileVault disk encryption` and `Allow my iCloud account to unlock my disk`.
 6. Open the disc utility and if you notice an internal volume named `Update` delete it via this [guide from Apple](https://support.apple.com/guide/disk-utility/add-erase-or-delete-apfs-volumes-dskua9e6a110/mac), then restart the computer. Please note, this may also cause a warning `Incompatible Disc` to be displayed. If this occurs, you will need repeat steps 1 through 5 following [this video walkthrough](https://youtu.be/HFo9mTfTk9I). 
-
+7. Under the `App Store` in System Preferences, make sure `Automatically Check for Updates` is checked, and `Download new available updates in the background` and `Install system data files and security updates` are both checked. 
+8. Click `Show Updates` and run all pending updates.
+9. 
 
 
 
