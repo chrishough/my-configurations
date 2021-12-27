@@ -7,8 +7,9 @@
 1. Following this [guide from Apple](https://support.apple.com/en-us/HT204904) reboot into the system utilities and completely wipe the hard drive and reinstall the operating system. This guide use this step: `On an Intel-based Mac, if you use Shift-Option-Command-R during startup, you're offered the macOS that came with your Mac, or the closest version still available. If you use Option-Command-R during startup, in most cases you're offered the latest macOS that is compatible with your Mac. Otherwise you're offered the macOS that came with your Mac, or the closest version still available.`
 2. When the format utility for erasing the hard drive prompts for name for the drive, I name it `MACHD` during the reformat process, and the format is `APFS`. Please note, I turn on filevault after the full reformat to keep the drive key synced with iCloud, and SSD type drives do not have the option to zero out like older drives.
 3. Once the drive is reformatted, reinstall macOS using your home network, and iCloud account. I also allow my Apple ID to reset my workstation password.
-4. I `Enable Location Services` and do not share `Mac Analytics`, `Crash Data`, `Ask Siri`, and I uncheck `Store files from Documents and Desktop in iCloud Drive`. 
-5. I make sure to turn on `FileVault disk encryption` and `Allow my iCloud account to unlock my disk`.
+4. Under `Customize Settings` I `Enable Location Services` and do not share `Mac Analytics`, `Crash Data`, `Ask Siri`, and I uncheck `Store files from Documents and Desktop in iCloud Drive`. 
+5. Under `Customize Settings` I make sure to turn on `FileVault disk encryption` and `Allow my iCloud account to unlock my disk`.
+6. Open the disc utility and if you notice an internal volume named `Update` delete it via this [guide from Apple](https://support.apple.com/guide/disk-utility/add-erase-or-delete-apfs-volumes-dskua9e6a110/mac), then restart the computer. Please note, this may also cause a warning `Incompatible Disc` to be displayed. If this occurs, you will need repeat steps 1 through 5 following [this video walkthrough](https://youtu.be/HFo9mTfTk9I). 
 
 
 
@@ -16,7 +17,8 @@
 
 
 
-
+***
+***
 ***
 
 
