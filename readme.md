@@ -7,7 +7,10 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/face.svg" height="20"> Guides
-- [Setup a New or Reformatting an Existing Apple Workstation](/guides/build.md)
+> If you are following these below, they are in sequence of how I setup my engineering life.
+1. [Setup a New or Reformatting an Existing Apple Workstation](/guides/build.md)
+
+
 - [Engineering Workstation Setup and Configuration](/guides/workstation.md)
 - [Ruby Engineering Configuration](/guides/ruby.md)
 - [Shell Configuration](/guides/shell.md)

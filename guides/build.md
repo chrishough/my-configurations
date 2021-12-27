@@ -2,7 +2,24 @@
 
 > If you need to reinstall the operating system follow "[How to install macOS](https://support.apple.com/en-us/HT204904)" from the Apple Support documentation.
 
-### This Guide is Based on OSX 12 "Monterey"
+### This Guide was written on OSX 12 "Monterey"
+
+1. Following this [guide from Apple](https://support.apple.com/en-us/HT204904) reboot into the system utilities and completely wipe the hard drive and reinstall the operating system. This guide use this step: `On an Intel-based Mac, if you use Shift-Option-Command-R during startup, you're offered the macOS that came with your Mac, or the closest version still available. If you use Option-Command-R during startup, in most cases you're offered the latest macOS that is compatible with your Mac. Otherwise you're offered the macOS that came with your Mac, or the closest version still available.`
+2. When the format utility for erasing the hard drive prompts for name for the drive, I name it `MACHD` during the reformat process, and the format is `APFS`. Please note, I turn on filevault after the full reformat to keep the drive key synced with iCloud, and SSD type drives do not have the option to zero out like older drives.
+3. Once the drive is reformatted, reinstall macOS using your home network, and iCloud account. I also allow my Apple ID to reset my workstation password.
+4. 
+
+
+
+
+
+
+
+
+***
+
+
+
 
 1. Power up the new machine, then reboot into the system utilities. Here wipe and reformat the drive completely removing the shipped install. 
 2. Reinstall the latest version of OSX. 
