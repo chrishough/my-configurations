@@ -16,23 +16,50 @@
 10. Open `Xcode` and verify it both installs the required components it needs and launches without errors.
 11. Open `Terminal` and install the developer tools by typing `xcode-select --install`.
 12. Under `System Preferences` under `Users & Groups` disable the `Guest User` from being able to access the computer, then reboot the machine to confirm.
-
-
-
-
-
+13. In `System Preferences` under the `Trackpad` disable `Natural` scrolling.
+14. In `System Preferences` under the `Trackpad` under `Point and Click` set the tracking speed to `6`.
+15. In `Accessibility` under `Display` set the cursor size to `2`.
+16. In `Accessibility` under `Captions` set to `Large Text`.
+17. Remove `Siri`, `Display Mirroring`, and `Spotlight` from the top navigation bar.
+18. In `System Preferences` under `Displays` set `Resolution` to `scaled` and select `more space`. 
+19. In `System Preferences` under the `Keyboard` settings make sure to check `Use the F1, F2, as standard function keys`.
+20. In `System Preferences` under the `Energy Saver` set display to turn off after 30 minutes, and uncheck `Put hard disks to sleep when possible` and `Prevent computer from sleeping automatically when display is off`.
+21. Under `System Preferences` under `Mission Control` configure `Hot Corners`.
+    * Top-Left: Application Windows
+    * Bottom-Left: Desktop
+    * Top-Right: Mission Control
+    * Bottom-Right: Start Screen Saver
+22. Under `System Preferences` configure `Mission Control`.
+    * Disable `Automatically Rearrange Spaces...`.
+    * Set `Mission Control` to `F3`.
+    * Set `Application Windows` to `F4`.
+    * Set both `Show Desktop` and `Show Dashboard` to `-`.
+23. In `System Preferences` configure the `Dock & Menu Bar`.
+    * Enable `Magnification` and set it to `max`.
+    * Enable `Automatically hide and show the Dock`.
+24. Remove every application icon from the dock except finder on the bottom left, and the trash can on the bottom right.
+25. Setup at least `4 OSX Spaces` via `Mission Control`.
+26. In `System Preferences` in the `Keyboard` under `Shortcuts` in `Mission Control` desktop switches to use `ctrl + #` for the first 4 spaces.
+27. In `Finder` preferences only show `Hard Discs` and `External Discs` on the desktop, and set new finder windows to open with `user home directory`. 
+28. In Finder `View` to `Show Path Bar`, `Show Status Bar`,  which will display the full folder path at the bottom of a finder window.
+29. Use `Show View Options` on the desktop set the icon size to `68 x 68` then right click on the desktop and set the `Sort By` to `Snap to Grid`. 
+30. In `Finder` preferences setup the `Sidebar`...
+    * ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-2.png)  
+31. In `Finder` preferences setup the `Advanced`...
+    * ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-3.png)
 
 ***
 ***
 ***
 
-https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
-https://plugins.jetbrains.com/plugin/13308-indent-rainbow
-https://plugins.jetbrains.com/plugin/7495--ignore 
-https://plugins.jetbrains.com/plugin/7499-gittoolbox 
-https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar 
-https://plugins.jetbrains.com/plugin/12062-vscode-keymap 
-https://plugins.jetbrains.com/plugin/10044-atom-material-icons 
+https://plugins.jetbrains.com/plugin/10080-rainbow-brackets  
+https://plugins.jetbrains.com/plugin/13308-indent-rainbow  
+https://plugins.jetbrains.com/plugin/7495--ignore   
+https://plugins.jetbrains.com/plugin/7499-gittoolbox   
+https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar   
+https://plugins.jetbrains.com/plugin/12062-vscode-keymap   
+https://plugins.jetbrains.com/plugin/10044-atom-material-icons  
+https://plugins.jetbrains.com/plugin/12310-gruvbox-theme  
 
 
 
@@ -40,35 +67,22 @@ https://plugins.jetbrains.com/plugin/10044-atom-material-icons
 
 6. Setup icloud mail accounts that are synced across all Apple Devices.
 
-8. Remove every application icon from the dock except finder on the bottom left, and the trash can on the bottom right.
-9. Remove `Siri`, `Display Mirroring`, and `Spotlight from the top navigation bar.
-10. Set the dock to magnify with cursor hover, and show / hide across the bottom.
-  ![dock](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/dock.png)
-11. In `Displays` set "Resolution" to `scaled` and select `more space`.
-12. In `System Preferences` under the `Trackpad` disable `Natural` scrolling.
-13. In `System Preferences` under the `Trackpad` under `Point and Click` set the tracking speed to `6`.
-14. In `Accessibility` under `Display` set the cursor size to `2`.
-15. In `Accessibility` under `Captions` set to `Large Text`.
+
+
+
+
 16. Install [AlfredApp](https://www.alfredapp.com/).
 17. Set the Alfred launch shortcut to `cmd + spacebar`.
 18. In `System Preferences` in the `Keyboard` under `Shortcuts` disable all Spotlight keyboard shortcuts.
 
-20. Open Xcode, accept the license agreement.
-21. Open Xcode, install all iOS Emulators.
-22. Configure `Hot Corners` and `Mission Control`.
-  ![hot-corners](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/hot-corners.png)
-  ![mission-control](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/mission-control.png)
-23. In the `Keyboard` settings make sure to check `Use the F1, F2, as standard function keys`.
-24. In the `Energy Saver` set display to turn off after 30 minutes, and uncheck `Put hard disks to sleep when possible` and `Prevent computer from sleeping automatically when display is off`.
-25. Setup at least `4 OSX Spaces` via `Mission Control`.
-26. In `System Preferences` in the `Keyboard` under `Shortcuts` in `Mission Control` desktop switches to use `ctrl + #` for the first 4 spaces.
-27. In `Finder` preferences only show `Hard Discs` on the desktop, and set new finder windows to open with `user home directory`.
-28. Use `Show View Options` on the desktop set the icon size to `68 x 68` and `Snap to Grid`.
-29. In Finder `View` to `Show Path Bar`, `Show Status Bar`,  which will display the full folder path at the bottom of a finder window.
+
+
+
+
+
 30. Setup Finder Folder Preferences.   
-  ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-1.png)
-  ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-2.png) 
-  ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-3.png)
+
+
 31. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html), [Firefox](https://www.mozilla.org/en-US/firefox/new/), and [Brave](https://github.com/chrishough/my-configurations).
 32. Install the 1Password Package into all browsers.
 33. Setup Google Chrome Profile, and organize extensions synced from google.
