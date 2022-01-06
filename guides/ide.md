@@ -23,3 +23,13 @@ I have used a variety of editors over the years including homesite, dreamweaver,
 * [markdown-preview-github-styles](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [endwise](https://marketplace.visualstudio.com/items?itemName=kaiwood.endwise)
 * [indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
+
+
+https://plugins.jetbrains.com/plugin/10080-rainbow-brackets  
+https://plugins.jetbrains.com/plugin/13308-indent-rainbow  
+https://plugins.jetbrains.com/plugin/7495--ignore   
+https://plugins.jetbrains.com/plugin/7499-gittoolbox   
+https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar   
+https://plugins.jetbrains.com/plugin/12062-vscode-keymap   
+https://plugins.jetbrains.com/plugin/10044-atom-material-icons  
+https://plugins.jetbrains.com/plugin/12310-gruvbox-theme  

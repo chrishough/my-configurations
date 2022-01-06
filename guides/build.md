@@ -43,32 +43,30 @@
 27. In `Finder` preferences only show `Hard Discs` and `External Discs` on the desktop, and set new finder windows to open with `user home directory`. 
 28. In Finder `View` to `Show Path Bar`, `Show Status Bar`,  which will display the full folder path at the bottom of a finder window.
 29. Use `Show View Options` on the desktop set the icon size to `68 x 68` then right click on the desktop and set the `Sort By` to `Snap to Grid`. 
-30. In `Finder` preferences setup the `Sidebar`...
-    * ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-2.png)  
-31. In `Finder` preferences setup the `Advanced`...
-    * ![folder-prefrences](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/folder-preferences-3.png)
+30. In `Finder` preferences setup `Sidebar`...
+    * Disable `Recents`.
+    * Disable `Airdrop`.
+    * Disable `CDs, DVDs..`.
+    * Disable `Bonjour Computers`.
+    * Disable `Tags`.
+    * Enable `The Computer Name`.
+    * Enable `Hard Discs`.
+    * Enable `Cloud Storage`.
+    * Enable `External Discs`.
+31. In `Finder` preferences setup `Advanced`...
+    * Under `Keep folders on top` enable `In Windows when sorting by name`.
+    * Under `When performing a search` set to `Search This Mac`. 
 
 ***
 ***
 ***
 
-https://plugins.jetbrains.com/plugin/10080-rainbow-brackets  
-https://plugins.jetbrains.com/plugin/13308-indent-rainbow  
-https://plugins.jetbrains.com/plugin/7495--ignore   
-https://plugins.jetbrains.com/plugin/7499-gittoolbox   
-https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar   
-https://plugins.jetbrains.com/plugin/12062-vscode-keymap   
-https://plugins.jetbrains.com/plugin/10044-atom-material-icons  
-https://plugins.jetbrains.com/plugin/12310-gruvbox-theme  
 
 
 
 4. Install [1Password](https://1password.com/) and sync via personal cloud repo, not icloud.
 
 6. Setup icloud mail accounts that are synced across all Apple Devices.
-
-
-
 
 
 16. Install [AlfredApp](https://www.alfredapp.com/).
@@ -78,9 +76,6 @@ https://plugins.jetbrains.com/plugin/12310-gruvbox-theme
 
 
 
-
-
-30. Setup Finder Folder Preferences.   
 
 
 31. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html), [Firefox](https://www.mozilla.org/en-US/firefox/new/), and [Brave](https://github.com/chrishough/my-configurations).
