@@ -13,7 +13,9 @@
 7. Under the `App Store` in System Preferences, make sure `Automatically Check for Updates` is checked, and `Download new available updates in the background` and `Install system data files and security updates` are both checked. 
 8. Click `Show Updates` and run all pending updates.
 9. Install the full `Xcode` developer package from the Apple App Store. I use the full package because it comes with both the gcc compiler and emulators for iOS devices. These come in handy for testing responsive websites and applications. Please note, this will require the latest version of the osx operating system, and if `FileVault` has not finished encrypting the hard drive you will have to wait for that to finish. The status can be located under `Settings and Privacy` then under `FileVault`.
-10.
+10. Open `Xcode` and verify it both installs the required components it needs and launches without errors.
+11. Open `Terminal` and install the developer tools by typing `xcode-select --install`.
+12. Under `System Preferences` under `Users & Groups` disable the `Guest User` from being able to access the computer, then reboot the machine to confirm.
 
 
 
@@ -24,7 +26,13 @@
 ***
 ***
 
-
+https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
+https://plugins.jetbrains.com/plugin/13308-indent-rainbow
+https://plugins.jetbrains.com/plugin/7495--ignore 
+https://plugins.jetbrains.com/plugin/7499-gittoolbox 
+https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar 
+https://plugins.jetbrains.com/plugin/12062-vscode-keymap 
+https://plugins.jetbrains.com/plugin/10044-atom-material-icons 
 
 
 
