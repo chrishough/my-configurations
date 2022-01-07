@@ -52,8 +52,7 @@ then run `git clone git@github.com:chrishough/my-configurations.git .myconfigura
 15. Install the [Fira Code Fonts](https://fonts.google.com/specimen/Fira+Code).
 16. Install [tmux](https://github.com/tmux/tmux/wiki) via `brew install tmux`.
 17. Install [Zsh](http://www.zsh.org/) via`brew install zsh`.
-18. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) `sh -c "$(curl -fsSL https://raw.
-githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`.
+18. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`.
 19. Now need to set zsh as the default shell.  If you run `which zsh` you will see this pointed to `/bin/zsh`. We need to change this.  Running `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh` will properly adjust this for us. Now reopen the terminall window, and when you run `which zsh` it should be pointed to `/usr/local/bin/zsh`.
 20. Setup [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) via 
 `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`.
