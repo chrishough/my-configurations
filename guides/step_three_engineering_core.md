@@ -69,3 +69,17 @@ then run `git clone git@github.com:chrishough/my-configurations.git .myconfigura
     * ![iterm](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/iterm/iterm5.png)
     * ![iterm](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/iterm/iterm6.png)
 
+> Now we have to sync our settings to the configuration repo! This will adjust the following files: .pryrc, .vimrc, .zprofile, .zshrc, .profile, .gemrc, .bashrc, and .bash_profile.
+
+24. Backup existing dotfiles.  
+`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`
+25. Setup symlinks to our configuration dotfiles.  
+`ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`
+26. If you get the error `zsh compinit: insecure directories, run compaudit for list.` you will need to adjust zsh permissions as desribed in this [stackoverflow post](http://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories).
+```
+cd /usr/local/share/
+sudo chmod -R 755 zsh
+sudo chown -R root:staff zsh
+```
+28. At this point if you type `cd $HOME && lsa` your home directory should look something like this.
+ * ![iterm](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/iterm/user_directory.png)

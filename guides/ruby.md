@@ -19,3 +19,9 @@ This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. 
 9. Run `rbenv global 2.5.3` to setup the global version of ruby.
 10. If this is a new machine migrated from an older box, make sure to copy over the `.rbenv/vars` file so you do not lose passwords.
 11. Setup pre-gems for our IDE at this time: `gem install rsense`.
+
+27. Verify global rbenv vars are setup correctly. Type `nano $HOME/.rbenv/vars` and confirm the following. Adjust if necessary. Once completed, type `rbenv vars` and you should see `export GEM_PATH='.bundle'`.
+```
+#GLOBAL
+GEM_PATH=.bundle
+```
