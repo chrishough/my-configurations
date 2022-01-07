@@ -90,4 +90,4 @@ If you see this error regarding NVM this will be installed during the next parts
 ```
 
 At this point if you type `cd $HOME && lsa` your home directory should look something like this.
- * ![iterm](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/iterm/user_directory.png)
+![iterm](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/iterm/user_directory.png)
