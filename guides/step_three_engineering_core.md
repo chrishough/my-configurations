@@ -75,7 +75,7 @@ then run `git clone git@github.com:chrishough/my-configurations.git .myconfigura
 25. Setup symlinks to our configuration dotfiles `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`.
 26. Create the shell file for private includes via `touch .myconfigurations/workstation/shell/global-private`.
 
-> Potential Errors at this point! 
+### Potential Errors...
 
 If you get the error `zsh compinit: insecure directories, run compaudit for list.` you will need to adjust zsh permissions as desribed in this [stackoverflow post](http://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories).
 ```
