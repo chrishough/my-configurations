@@ -2,19 +2,12 @@
 
 Type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
 
-2. Install the [Fira Code Fonts](https://github.com/tonsky/FiraCode).
-3. Download and install [iterm2](https://www.iterm2.com/version3.html).  This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
-4. Install [Zsh](http://www.zsh.org/) and set it as the default shell.  
-`brew install zsh`
-5. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-6. Now need to set zsh as the default shell.  If you run `which zsh` you will see this pointed to `/bin/zsh`. We need to change this.  Running `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh` will properly adjust this for us. Now reopen the terminall window, and when you run `which zsh` it should be pointed to `/usr/local/bin/zsh`.
-7. Setup [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md).  
-`
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-`
-8. Install [tmux](https://github.com/tmux/tmux/wiki) via `brew install tmux`
-9. Install [git-large-file-storage](https://help.github.com/articles/installing-git-large-file-storage/) via `brew install git-lfs`
+2. 
+
+
+
+
+
 
 Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.  Also, if iterm prompts you for an update. Load it.  Also, make sure to check `load updates automatically` during this process.  Please feel free to close `Terminal` at this time.
 
