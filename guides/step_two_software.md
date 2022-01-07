@@ -48,9 +48,4 @@ display 14 days in week view.
 31. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.  
 32. Organize the applications in the `Finder` panel alphabetically. 
 
-> If this is a migration of an existing computer, now is the time to bring over each folder and back them up to a new S3 bucket with a new IAM user, and new bucket policy. Once all of the files have been updated, reformat the old machine and sell it. Use a tough eraser i.e. `diskutil secureErase freespace 3 /Volumes/DRIVE` via https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/   
-
-![arq](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/arq/arq-1.png)
-
-
 

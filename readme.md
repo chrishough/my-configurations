@@ -10,7 +10,7 @@ These guides are highly opinionated. If you have any questions please post an is
 > If you are following these below, they are in sequence of how I setup my engineering life.  
  
 1. [Setup a New or Reformatting an Existing Apple Workstation](/guides/step_one_core.md)
-2. [Install Additional Software](/guides/step_two_software.md)
+2. [Install Additional Business amd Workflow Software](/guides/step_two_software.md)
 
 
 
