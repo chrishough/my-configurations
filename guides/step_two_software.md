@@ -28,7 +28,7 @@ display 14 days in week view.
 22. Install [Total Finder](https://totalfinder.binaryage.com/).
 23. Install [iTerm2](https://www.iterm2.com/).
 24. Install [Dropbox](https://www.dropbox.com).
-25. Install [Caffeine](http://lightheadsw.com/caffeine/). 
+25. Install [Caffeine](https://www.macupdate.com/app/mac/24120/caffeine/). 
     * ![caffeine](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/caffeine/caffeine-1.png)
 26. Install [Transmit](https://panic.com/transmit/).
 27. Install [Pathfinder](https://cocoatech.com/).
@@ -45,11 +45,8 @@ display 14 days in week view.
     * ![bartender](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/bartender/bartender-1.png)  
     * ![bartender](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/bartender/bartender-2.png)  
 30. Setup `OSX Messages` for all accounts. Verify non-apple users too.
-31. Setup the `Today` Panel.
-    * ![workstation](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/workstation/osx-notifications-panel.png)
-32. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.  
-33. Organize the applications in the `Finder` panel alphabetically. 
-
+31. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.  
+32. Organize the applications in the `Finder` panel alphabetically. 
 
 > If this is a migration of an existing computer, now is the time to bring over each folder and back them up to a new S3 bucket with a new IAM user, and new bucket policy. Once all of the files have been updated, reformat the old machine and sell it. Use a tough eraser i.e. `diskutil secureErase freespace 3 /Volumes/DRIVE` via https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/   
 
