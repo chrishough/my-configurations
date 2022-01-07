@@ -42,8 +42,9 @@ display 14 days in week view.
     * ![istat-menus](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/istatmenus/istatmenus-7.png)
     * ![istat-menus](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/istatmenus/istatmenus-8.png)
 29. Install [Bartender](https://www.macbartender.com/).  
-    * ![bartender](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/bartender/bartender-1.png)  
-    * ![bartender](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/bartender/bartender-2.png)  
+    * ![bartender](https://raw.githubusercontent.
+    scom/chrishough/my-configurations/master/graphics/documentation/guides/bartender/bartender-1.png)  
+    * ![bartender](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/bartender/bartender-2.png) 
 30. Setup `OSX Messages` for all accounts. Verify non-apple users too.
 31. Install Haystack Software's [Arq](https://www.arqbackup.com/download/) backup software, and configure it to hook up to S3.  
 32. Organize the applications in the `Finder` panel alphabetically. 

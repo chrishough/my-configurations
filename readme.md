@@ -11,11 +11,11 @@ These guides are highly opinionated. If you have any questions please post an is
  
 1. [Setup a New or Reformatting an Existing Apple Workstation](/guides/step_one_core.md)
 2. [Install Additional Business amd Workflow Software](/guides/step_two_software.md)
+3. [Engineering Workstation Setup and Configuration](/guides/step_three_engineering_core.md)
 
 
 
-
-- [Engineering Workstation Setup and Configuration](/guides/workstation.md)
+- 
 - [Ruby Engineering Configuration](/guides/ruby.md)
 - [Shell Configuration](/guides/shell.md)
 - [JavaScript Engineering Configuration](/guides/js.md)

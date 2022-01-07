@@ -2,8 +2,6 @@
 
 Type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
 
-1. First we will clone this repo to our home directory. Please note, that if you are having cloning issues you may need to setup your [new ssh keys](https://help.github.com/enterprise/11.10.340/user/articles/generating-ssh-keys/).  
-`git clone git@github.com:chrishough/my-configurations.git .myconfigurations`
 2. Install the [Fira Code Fonts](https://github.com/tonsky/FiraCode).
 3. Download and install [iterm2](https://www.iterm2.com/version3.html).  This will normally be dropped into your downloads directory. Like all Apple OS applications make sure to drag this to the applications directory.
 4. Install [Zsh](http://www.zsh.org/) and set it as the default shell.  
