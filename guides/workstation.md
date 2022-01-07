@@ -35,3 +35,10 @@ If this is a reformat from a backup make sure to setup your `.gitconfig` file.
 [credential]
   helper = osxkeychain
 ```
+
+
+
+33. Setup Alfred theme and workflows brought in from the `.myconfigurations` repo.  
+    * ![alfred](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/alfred/alfred1.png)  
+    * ![alfred](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/alfred/alfred2.png)  
+    * ![alfred](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/alfred/alfred3.png)  

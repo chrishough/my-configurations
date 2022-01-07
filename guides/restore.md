@@ -17,4 +17,4 @@
   10. `/Church/`
   11. `/christopherhough/.ssh/`
   12. `/christopherhough/.puma-dev/`
-7. Complete this guide: [Setup a New or Reformatting an Existing Apple Workstation](/guides/build.md)
+7. Complete this guide: [Setup a New or Reformatting an Existing Apple Workstation](/guides/step_one_core.md)
