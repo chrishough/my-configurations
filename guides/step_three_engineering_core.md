@@ -73,11 +73,21 @@ then run `git clone git@github.com:chrishough/my-configurations.git .myconfigura
 
 24. Backup existing dotfiles `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`.
 25. Setup symlinks to our configuration dotfiles `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`.
-26. If you get the error `zsh compinit: insecure directories, run compaudit for list.` you will need to adjust zsh permissions as desribed in this [stackoverflow post](http://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories).
+26. Create the shell file for private includes via `touch .myconfigurations/workstation/shell/global-private`.
+
+> Potential Errors at this point! 
+
+If you get the error `zsh compinit: insecure directories, run compaudit for list.` you will need to adjust zsh permissions as desribed in this [stackoverflow post](http://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories).
 ```
 cd /usr/local/share/
 sudo chmod -R 755 zsh
 sudo chown -R root:staff zsh
 ```
-28. At this point if you type `cd $HOME && lsa` your home directory should look something like this.
+
+If you see this error regarding NVM this will be installed during the next parts of this guide.
+```
+/Users/christopherhough/.zprofile:.:8: no such file or directory: /usr/local/opt/nvm/nvm.sh
+```
+
+At this point if you type `cd $HOME && lsa` your home directory should look something like this.
  * ![iterm](https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/guides/iterm/user_directory.png)
