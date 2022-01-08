@@ -3,13 +3,14 @@
 I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime 
 text 2, atom, and vscode.  
 
-**Database Work**
+**Database Work**  
 I currently use [DataGrip](https://www.jetbrains.com/datagrip/) from JetBrains.
 
-**Ruby Work**
+**Ruby Work**  
 I currently use [RubyMine](https://www.jetbrains.com/ruby/) from JetBrains.
 
-#### List of Plugins
+> My Current List of Plugins
+
 * https://plugins.jetbrains.com/plugin/10080-rainbow-brackets  
 * https://plugins.jetbrains.com/plugin/13308-indent-rainbow  
 * https://plugins.jetbrains.com/plugin/7495--ignore   
