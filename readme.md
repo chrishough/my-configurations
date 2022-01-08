@@ -13,13 +13,12 @@ These guides are highly opinionated. If you have any questions please post an is
 2. [Install Additional Business amd Workflow Software](/guides/step_two_software.md)
 3. [Engineering Workstation Setup and Configuration](/guides/step_three_engineering_core.md)
 4. [Ruby Engineering Configurations](/guides/step_four_ruby.md)
+5. [JavaScript Engineering Configuration](/guides/step_five_js.md)
 
 
 
 *** 
 
-- 
-- [JavaScript Engineering Configuration](/guides/js.md)
 - [Database Configuration](/guides/database.md)
 - [IDE Configuration](/guides/ide.md)
 
