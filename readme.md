@@ -14,12 +14,13 @@ These guides are highly opinionated. If you have any questions please post an is
 3. [Engineering Workstation Setup and Configuration](/guides/step_three_engineering_core.md)
 4. [Ruby Engineering Configurations](/guides/step_four_ruby.md)
 5. [JavaScript Engineering Configuration](/guides/step_five_js.md)
+6. [Database Configuration](/guides/step_six_database.md)
 
 
 
 *** 
 
-- [Database Configuration](/guides/database.md)
+- 
 - [IDE Configuration](/guides/ide.md)
 
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/toolbox.svg" height="20"> Shortcuts and Helpers
