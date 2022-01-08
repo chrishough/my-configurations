@@ -1,7 +1,5 @@
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/database.svg" height="20"> Databases : Step Six
 
-Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.
-
 1. Type `brew tap homebrew/services` to install brew services. Thoughtbot has a great [guide](https://robots.thoughtbot.com/starting-and-stopping-background-services-with-homebrew) on this tool.
 2. Run `brew install postgres` to install [PostgreSQL](https://www.postgresql.org/).
 3. Start PostgreSQL via `brew services start postgres` and create your base db via the following command:
@@ -23,9 +21,11 @@ pg_dump --version
 ```
 9. If everything has been setup correctly, here is an example output of those commands.
 ```
-psql (PostgreSQL) 11.2
- 
-PostgreSQL 11.2 ...
+psql (PostgreSQL) 14.1
+                                                     version
+------------------------------------------------------------------------------------------------------------------
+ PostgreSQL 14.1 on x86_64-apple-darwin21.1.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.3), 64-bit
+(1 row)
 
-pg_dump (PostgreSQL) 11.2
+pg_dump (PostgreSQL) 14.1
 ```
