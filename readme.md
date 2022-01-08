@@ -7,19 +7,21 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/face.svg" height="20"> Guides
-- [Setup a New or Reformatting an Existing Apple Workstation](/guides/build.md)
-- [Engineering Workstation Setup and Configuration](/guides/workstation.md)
-- [Ruby Engineering Configuration](/guides/ruby.md)
-- [Shell Configuration](/guides/shell.md)
-- [JavaScript Engineering Configuration](/guides/js.md)
-- [Database Configuration](/guides/database.md)
-- [IDE Configuration](/guides/ide.md)
+> If you are following these below, they are in sequence of how I setup my engineering life.  
+ 
+1. [Setup a New or Reformatting an Existing Apple Workstation](/guides/step_one_core.md)
+2. [Install Additional Business amd Workflow Software](/guides/step_two_software.md)
+3. [Engineering Workstation Setup and Configuration](/guides/step_three_engineering_core.md)
+4. [Ruby Engineering Configurations](/guides/step_four_ruby.md)
+5. [JavaScript Engineering Configuration](/guides/step_five_js.md)
+6. [Database Configuration](/guides/step_six_database.md)
+7. [IDE Configuration](/guides/step_seven_ide.md)
 
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/toolbox.svg" height="20"> Shortcuts and Helpers
 
 As you explore the configuration directories you will notice a number of shortcut files have been preloaded.  These files are described below and many come pre-built with their own helpers.  I encourage you to personalize these as you see fit and make sure you understand what each git function does before blindly using them.
 
-| File  | Helper Command | Description  |
+| File  | Help Command | Description  |
 |---|:---:|---|
 |[includes](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/includes)| |This is the base file to pull in all the includes.|
 |[global-helpers](https://github.com/chrishough/my-configurations/blob/master/workstation/shell/global-helpers)| |Controls that apply to all of the includes.|

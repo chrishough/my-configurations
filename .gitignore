@@ -5,6 +5,7 @@ workstation/shell/shortcuts/private
 workstation/shell/global-private
 workstation/itermocil
 !workstation/itermocil/.keep
+.idea
 
 #------------------------
 # Ignore all logfiles and tempfiles.
