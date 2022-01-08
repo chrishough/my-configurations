@@ -1,7 +1,7 @@
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/ide.svg" height="20"> IDE Configuration : Step Seven
 
 I have used a variety of editors over the years including homesite, dreamweaver, eclipse, vim, sublime text, sublime 
-text 2, atom, and vscode. I recommned, like all parts of this guide, you use what you love the most.
+text 2, atom, and vscode. I recommend, like all parts of this guide, you use what you love the most.
 
 **Database Work**  
 I currently use [DataGrip](https://www.jetbrains.com/datagrip/) from JetBrains.
