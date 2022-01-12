@@ -3,7 +3,7 @@
 > Please note, if you have not installed Xcode, please review the [first part of this guide](/guides/step_one_core.md) and complete those steps before starting this phase.
 
 1. Install [homebrew](http://brew.sh/).    
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 2. Run `brew doctor` and make sure it reports `Your system is ready to brew`.
 3. Update brew via `brew update`.
 4. Install the latest version of git via `brew install git`.
