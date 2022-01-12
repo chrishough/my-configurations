@@ -1,2 +1,1 @@
-homebrew=/usr/local/bin:/usr/local/sbin
-export PATH=$homebrew:$PATH
+# NO LONGER USED FOR PRE-M1 AND M1 OSX

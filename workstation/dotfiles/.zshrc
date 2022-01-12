@@ -52,6 +52,9 @@ eval "$(direnv hook zsh)"
 # For osx machines fix the alt + arrow functionality
 bindkey -e; bindkey '\e\e[C' forward-word; bindkey '\e\e[D' backward-word
 
+homebrew=/usr/local/bin:/usr/local/sbin
+
+export PATH=$homebrew:$PATH
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
