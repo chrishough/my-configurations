@@ -1,7 +1,7 @@
 source $HOME/.myconfigurations/workstation/shell/includes
 
 if [[ `uname -m` == 'arm64' ]]; then
-    # SAVED FOR REFERENCE
+    eval "$(rbenv init - zsh)"
 else
     export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/local/share/npm/bin
 
