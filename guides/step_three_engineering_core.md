@@ -15,7 +15,8 @@
 10. Install the [Heroku CLI Tool](https://devcenter.heroku.com/articles/heroku-cli) via `brew install heroku/brew/heroku`.  
 11. Install [NGROK](https://ngrok.com/) via `brew install --cask ngrok` from this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).  
 12. Install [Git Large File Storage](https://git-lfs.github.com/) via `brew install git-lfs`.
-13. Setup your `.gitconfig` file with your account information.
+13. Install [puma-dev](https://github.com/puma/puma-dev) via `brew install puma/puma/puma-dev && puma-dev -install -d localhost && sudo puma-dev -setup`
+14. Setup your `.gitconfig` file with your account information.
 ```
 [user]
   name = Chris Hough
