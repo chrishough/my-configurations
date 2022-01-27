@@ -16,6 +16,7 @@ These guides are highly opinionated. If you have any questions please post an is
 5. [JavaScript Engineering Configuration](/guides/step_five_js.md)
 6. [Database Configuration](/guides/step_six_database.md)
 7. [IDE Configuration](/guides/step_seven_ide.md)
+8. [Additional Software](/guides/step_eight_additional_software.md)
 
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/toolbox.svg" height="20"> Shortcuts and Helpers
 

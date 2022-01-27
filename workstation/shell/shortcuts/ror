@@ -2,11 +2,18 @@
 # rubocop:disable all
 MYRUBYVERSION="2.3.3"
 export RUBY_DEP_GEM_SILENCE_WARNINGS=1
-# NOTE: This only works in Ruby >= 2.7
-# export RUBYOPT='-W:no-deprecated -W:no-experimental'
 export RUBYOPT='-W0'
 export BUNDLER_EDITOR="vscode"
-export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# NOTE: This only works in Ruby >= 2.7
+# export RUBYOPT='-W:no-deprecated -W:no-experimental'
+
+if [[ `uname -m` == 'arm64' ]]; then
+   # SAVED FOR REFERENCE
+else
+  export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+fi
 
 alias rb="rbenv"
 alias rr="bundle exec rake routes"
