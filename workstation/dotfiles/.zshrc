@@ -48,6 +48,11 @@ source $HOME/.myconfigurations/workstation/shell/includes
 # Test for Apple Silicon...
 if [[ `uname -m` == 'arm64' ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    eval "$(rbenv init - zsh)"
+
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 else
     homebrew=/usr/local/bin:/usr/local/sbin
     export PATH=$homebrew:$PATH
@@ -61,6 +66,10 @@ fi
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 eval "$(direnv hook zsh)"
+
+# Hide Direnv Output in the Shells...
+# https://stackoverflow.com/questions/51349012/stop-direnv-showing-all-environment-variables-on-load
+export DIRENV_LOG_FORMAT=
 
 # For osx machines fix the alt + arrow functionality
 bindkey -e; bindkey '\e\e[C' forward-word; bindkey '\e\e[D' backward-word

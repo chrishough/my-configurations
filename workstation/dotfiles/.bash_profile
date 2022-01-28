@@ -1,7 +1,7 @@
 source $HOME/.myconfigurations/workstation/shell/includes
 
 if [[ `uname -m` == 'arm64' ]]; then
-    # SAVED FOR REFERENCE
+    # NOT USED FOR M1 MACHINES IN VERSION 7.0.0
 else
     export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin
 
