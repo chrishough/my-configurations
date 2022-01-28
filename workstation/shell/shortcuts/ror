@@ -1,16 +1,13 @@
 #!/bin/zsh
 # rubocop:disable all
-MYRUBYVERSION="2.3.3"
+MYRUBYVERSION="3.0.0"
 export RUBY_DEP_GEM_SILENCE_WARNINGS=1
 export RUBYOPT='-W0'
 export BUNDLER_EDITOR="vscode"
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-# NOTE: This only works in Ruby >= 2.7
-# export RUBYOPT='-W:no-deprecated -W:no-experimental'
-
 if [[ `uname -m` == 'arm64' ]]; then
-   # SAVED FOR REFERENCE
+   # NOT USED FOR M1 MACHINES IN VERSION 7.0.0
 else
   export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 fi
