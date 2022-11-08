@@ -8,13 +8,13 @@ function gd(){ git diff }
 function gtl(){ git tag --sort=v:refname }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
+function gpab(){ git branch | grep -v "master" | xargs git branch -D }
 
 function gsmi(){
   git status;
   git pull;
   git submodule update --init --recursive;
 }
-
 function gstats(){
   git shortlog -s -n
 }

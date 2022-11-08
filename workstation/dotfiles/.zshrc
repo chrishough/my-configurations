@@ -61,6 +61,7 @@ else
     export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
     export PATH="/usr/local/sbin:$PATH"
     export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+    export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 fi
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -73,5 +74,3 @@ export DIRENV_LOG_FORMAT=
 
 # For osx machines fix the alt + arrow functionality
 bindkey -e; bindkey '\e\e[C' forward-word; bindkey '\e\e[D' backward-word
-
-

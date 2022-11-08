@@ -70,7 +70,6 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    "editor.fontSize": 14,
     "liveshare.accountProvider": "",
     "liveshare.account": "",
     "remote.extensionKind": {
@@ -84,4 +83,6 @@
     "ruby.rubocop.useBundler": true,
     "editor.formatOnSave": false,
     "window.zoomLevel": -1,
+    "editor.accessibilityPageSize": 20,
+    "editor.fontSize": 14,
 }
