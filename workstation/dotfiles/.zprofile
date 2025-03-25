@@ -10,3 +10,5 @@ else
     export NVM_DIR="$HOME/.nvm"
     . "$(brew --prefix nvm)/nvm.sh"
 fi
+
+eval "$(/usr/local/bin/brew shellenv)"
