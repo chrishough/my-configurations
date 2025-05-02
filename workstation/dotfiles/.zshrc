@@ -104,3 +104,6 @@ if type brew &>/dev/null; then
     autoload -Uz compinit
     compinit
 fi
+
+# Windsurf Requirement
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"

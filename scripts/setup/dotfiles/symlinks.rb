@@ -2,6 +2,12 @@ require 'fileutils'
 require_relative 'settings'
 include Settings
 
+# sudo codesign --force --deep --sign - /Applications/Visual\ Studio\ Code.app
+# ln -s ~/.myconfigurations/workstation/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+# ln -s ~/.myconfigurations/workstation/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+
+# sudo codesign --force --deep --sign - /Applications/Cursor.app
+
 def remove_installed_file(filename)
   FileUtils.rm(@curr_dot_file)
   puts "#{filename} has been successfully removed..."
@@ -17,3 +23,4 @@ DOT_FILE_LIST.each do |filename|
   build_file_vars(filename)
   create_dot_file_shortcut(filename)
 end
+

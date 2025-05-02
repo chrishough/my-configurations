@@ -1,0 +1,11 @@
+[
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorIsOpen"
+  },
+  {
+    "key": "ctrl+cmd+r",
+    "command": "workbench.files.action.refreshFilesExplorer"
+  }
+]
