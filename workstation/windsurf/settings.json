@@ -1,0 +1,7 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.minimap.enabled": false,
+  "extensions.ignoreRecommendations": true,
+  "extensions.allowed": "*",
+  "editor.fontSize": 12
+}
