@@ -3,5 +3,15 @@
   "extensions.ignoreRecommendations": true,
   "extensions.allowed": "*",
   "editor.fontSize": 12,
-  "workbench.colorTheme": "RailsCasts"
+  "workbench.colorTheme": "RailsCasts Plus Theme",
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.lsp.useCustomShell": false,
+  "ruby.intellisense": "rubyLocate",
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Shopify.ruby-lsp"
+  }
 }
