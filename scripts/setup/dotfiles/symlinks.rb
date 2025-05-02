@@ -7,6 +7,8 @@ include Settings
 # ln -s ~/.myconfigurations/workstation/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 # sudo codesign --force --deep --sign - /Applications/Cursor.app
+# ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
+# ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 
 def remove_installed_file(filename)
   FileUtils.rm(@curr_dot_file)

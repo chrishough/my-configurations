@@ -1,0 +1,7 @@
+{
+  "window.commandCenter": true,
+  "extensions.ignoreRecommendations": true,
+  "extensions.allowed": "*",
+  "editor.fontSize": 12,
+  "workbench.colorTheme": "RailsCasts"
+}
