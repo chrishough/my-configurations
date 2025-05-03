@@ -1,12 +1,42 @@
 {
-  "window.commandCenter": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.wordWrapColumn": 150,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": false,
+  "editor.rulers": [
+    {
+        "column": 100,
+        "color": "#e6e1dc"
+    },
+    {
+        "column": 125,
+        "color": "#bc9458"
+    },
+    {
+        "column": 180,
+        "color": "#FF1728"
+    }
+  ],
+
+  "explorer.autoReveal": false,
+  "explorer.confirmDragAndDrop": false,
 
   "extensions.ignoreRecommendations": true,
   "extensions.allowed": "*",
 
-  "editor.fontSize": 12,
-
   "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+      ".sass-cache/": true,
+      ".vscode/": true,
+      "node_modules/": true
+  },
+
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
 
   "ruby.useLanguageServer": true,
   "ruby.lint": {
@@ -17,17 +47,31 @@
   "ruby.lsp.useCustomShell": false,
   "ruby.intellisense": "rubyLocate",
   "[ruby]": {
-    "editor.formatOnSave": false,
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
 
-
   "sync.gist": "648602059bb9983f49458d2f1ad476d9",
 
+  "window.commandCenter": true,
+  "window.zoomLevel": -1,
+
+  "workbench.startupEditor": "newUntitledFile",
   "workbench.colorTheme": "RailsCasts Plus Theme",
+  "workbench.editor.centeredLayoutAutoResize": false,
+  "workbench.commandPalette.history": 1000,
+  "workbench.editor.closeEmptyGroups": false,
+
   // -------------------------------------------------------------------
   // https://code.visualstudio.com/api/references/theme-color
   "workbench.colorCustomizations": {
+    "editorGutter.background": "#2b2b2b",
+
+    "editorGroupHeader.tabsBackground": "#000000",
+
+    "editorGroup.border": "#FF1728",
+
+    "editor.background": "#000000",
+
     "tab.activeBorderTop": "#FF1728",
 
     "terminal.ansiBlack": "#2b2b2b",
@@ -48,35 +92,7 @@
     "terminal.ansiBrightWhite": "#f9f7f3",
     "terminal.background": "#000000",
 
-    "window.activeBorder": "#FF1728",
-
-    "editorGutter.background": "#2b2b2b",
-
-    "editorGroupHeader.tabsBackground": "#000000",
-
-    "editorGroup.border": "#FF1728",
-
-    "editor.background": "#000000",
-  },
-  "files.exclude": {
-      ".sass-cache/": true,
-      ".vscode/": true,
-      "node_modules/": true
-  },
-  "explorer.autoReveal": false,
-  "editor.rulers": [
-      {
-          "column": 100,
-          "color": "#e6e1dc"
-      },
-      {
-          "column": 125,
-          "color": "#bc9458"
-      },
-      {
-          "column": 180,
-          "color": "#FF1728"
-      }
-  ]
+    "window.activeBorder": "#FF1728"
+  }
   // -------------------------------------------------------------------
 }
