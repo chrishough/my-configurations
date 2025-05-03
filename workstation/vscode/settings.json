@@ -62,6 +62,8 @@
     "sync.autoUpload": false,
     "sync.forceDownload": false,
 
+    "terminal.integrated.fontSize": 14,
+
     "window.commandCenter": true,
     "window.zoomLevel": -1,
 

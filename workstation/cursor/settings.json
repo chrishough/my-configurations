@@ -52,6 +52,8 @@
 
   "sync.gist": "648602059bb9983f49458d2f1ad476d9",
 
+  "terminal.integrated.fontSize": 14,
+
   "window.commandCenter": true,
   "window.zoomLevel": -1,
 
