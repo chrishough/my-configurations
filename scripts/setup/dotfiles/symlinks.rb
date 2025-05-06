@@ -12,7 +12,7 @@ include Settings
 # sudo codesign --force --deep --sign - /Applications/Cursor.app
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
-# ln -s "$HOME/.myconfigurations/workstation/cursor/nippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"
+# ln -s "$HOME/.myconfigurations/workstation/cursor/snippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"
 
 def remove_installed_file(filename)
   FileUtils.rm(@curr_dot_file)

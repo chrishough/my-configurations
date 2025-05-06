@@ -1,8 +1,8 @@
 {
 	"bdp => binding.pry": {
-	"prefix": "bdp",
-	"body": ["binding.pry"],
-	"description": "Shortcut for binding.pry"
+		"prefix": "bdp",
+		"body": ["binding.pry"],
+		"description": "Shortcut for binding.pry"
 	},
 	"it with debugger": {
 		"prefix": "itdbg",
@@ -10,3 +10,4 @@
 		"description": "Insert it { debugger }"
 	}
 }
+

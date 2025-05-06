@@ -4,6 +4,7 @@
   "editor.wordWrapColumn": 150,
   "editor.minimap.enabled": false,
   "editor.formatOnSave": false,
+  "editor.semanticHighlighting.enabled": true,
   "editor.rulers": [
     {
         "column": 100,
@@ -38,7 +39,6 @@
     "files.trimTrailingWhitespace": false
   },
 
-  "ruby.useLanguageServer": true,
   "ruby.lint": {
     "rubocop": true
   },
@@ -48,6 +48,18 @@
   "ruby.intellisense": "rubyLocate",
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
+  },
+  "ruby.useLanguageServer": true,
+  "rubyLsp.enabledFeatures": {
+    "definition": true,
+    "documentHighlights": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "hover": true,
+    "semanticHighlighting": true
+  },
+  "rubyLsp.rubyVersionManager": {
+    "type": "auto"
   },
 
   "sync.gist": "648602059bb9983f49458d2f1ad476d9",
