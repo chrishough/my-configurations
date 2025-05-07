@@ -1,1 +1,6 @@
-// TBD
+[
+  {
+      "key": "cmd+i",
+      "command": "composerMode.agent"
+  }
+]
