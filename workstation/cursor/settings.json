@@ -86,6 +86,11 @@
 
     "editor.background": "#000000",
 
+    "panel.border": "#FF1728",
+
+    "sideBar.background": "#111111",
+    "sideBar.border": "#FF1728",
+
     "tab.activeBorderTop": "#FF1728",
 
     "terminal.ansiBlack": "#2b2b2b",
