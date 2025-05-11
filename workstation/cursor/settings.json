@@ -67,7 +67,7 @@
   "terminal.integrated.fontSize": 14,
 
   "window.commandCenter": true,
-  "window.zoomLevel": -0.5,
+  "window.zoomLevel": -0.25,
 
   "workbench.startupEditor": "newUntitledFile",
   "workbench.colorTheme": "RailsCasts Plus Theme",

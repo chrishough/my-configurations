@@ -4,10 +4,15 @@
 		"body": ["binding.pry"],
 		"description": "Shortcut for binding.pry"
 	},
-	"it with debugger": {
+	"rspec it with debugger": {
 		"prefix": "itdbg",
 		"body": ["it { debugger }"],
 		"description": "Insert it { debugger }"
+	},
+  "comment block": {
+		"prefix": "cmt",
+		"body": ["# -------------------------------------------------------------------"],
+		"description": "Insert comment block in ruby"
 	}
 }
 
