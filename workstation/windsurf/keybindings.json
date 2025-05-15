@@ -2,5 +2,10 @@
   {
       "key": "cmd+i",
       "command": "composerMode.agent"
+  },
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "when": "editorTextFocus"
   }
 ]
