@@ -47,7 +47,6 @@ scratch.rb
 *.jar
 *.rar
 *.tar
-*.zip
 *.log
 *.sql
 *.sqlite
