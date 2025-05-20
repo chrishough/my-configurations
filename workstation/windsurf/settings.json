@@ -62,6 +62,12 @@
     "type": "auto"
   },
 
+  "settingsSync.ignoredExtensions": [
+    "bierner.markdown-emoji",
+    "marlosirapuan.vscode-theme-railscasts-plus",
+    "misogi.ruby-rubocop"
+  ],
+
   "sync.gist": "409d087c34a3bb6fdd8fa3dfb3824d84",
 
   "terminal.integrated.fontSize": 14,
