@@ -8,6 +8,7 @@ include Settings
 # ln -s ~/.myconfigurations/workstation/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 # ln -s ~/.myconfigurations/workstation/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
+# sudo codesign --force --deep --sign - /Applications/Windsurf.app
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/settings.json" "$HOME/Library/Application Support/Windsurf/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/keybindings.json" "$HOME/Library/Application Support/Windsurf/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/snippets/ruby.json" "$HOME/Library/Application Support/Windsurf/User/snippets/ruby.json"
