@@ -11,7 +11,6 @@ include Settings
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/settings.json" "$HOME/Library/Application Support/Windsurf/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/keybindings.json" "$HOME/Library/Application Support/Windsurf/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/snippets/ruby.json" "$HOME/Library/Application Support/Windsurf/User/snippets/ruby.json"
-# ln -s "$HOME/.myconfigurations/workstation/windsurf/markdown.css" "$HOME/Library/Application Support/Windsurf/User/markdown.css"
 
 # sudo codesign --force --deep --sign - /Applications/Cursor.app
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
