@@ -17,6 +17,7 @@ title = "gitleaks config"
 [allowlist]
 description = "global allow lists"
 paths = [
+    '''workstation/shell/global-private''',
     '''gitleaks\.toml''',
     '''(?i)\.(?:bmp|gif|jpe?g|png|svg|tiff?)$''',
     '''(?i)\.(?:eot|[ot]tf|woff2?)$''',
