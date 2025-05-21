@@ -68,7 +68,6 @@
     "window.zoomLevel": -0.25,
 
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "RailsCasts",
     "workbench.editor.centeredLayoutAutoResize": false,
     "workbench.commandPalette.history": 1000,
     "workbench.editor.closeEmptyGroups": false,
