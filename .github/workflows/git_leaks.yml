@@ -20,4 +20,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: detect --source=. --redact --exit-code=1 --log-opts=''
+          args: detect --source=. --redact --exit-code=1
