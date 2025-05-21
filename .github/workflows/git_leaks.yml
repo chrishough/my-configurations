@@ -6,6 +6,7 @@ on:
 
 jobs:
   scan:
+    name: Git Leaks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -18,7 +19,7 @@ jobs:
           curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.24.3/gitleaks_8.24.3_linux_x64.tar.gz | tar -xz
           sudo mv gitleaks /usr/local/bin/
 
-      - name: Run Gitleaks
+      - name: Run Gitleaks scan
         run: |
           gitleaks detect \
             --source=. \
