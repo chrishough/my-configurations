@@ -23,6 +23,4 @@ jobs:
           gitleaks detect \
             --source=. \
             --redact \
-            --report-format sarif \
-            --report-path results.sarif \
             --exit-code=1
