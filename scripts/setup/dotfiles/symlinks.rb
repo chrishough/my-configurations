@@ -2,6 +2,8 @@ require 'fileutils'
 require_relative 'settings'
 include Settings
 
+# ------------------------------------------------------------------------
+
 # ln -s "$HOME/.myconfigurations" "$HOME/Documents/myconfigurations"
 
 # sudo codesign --force --deep --sign - /Applications/Visual\ Studio\ Code.app
@@ -17,6 +19,8 @@ include Settings
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/snippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"
+
+# ------------------------------------------------------------------------
 
 def remove_installed_file(filename)pwd
   FileUtils.rm(@curr_dot_file)
@@ -34,3 +38,4 @@ DOT_FILE_LIST.each do |filename|
   create_dot_file_shortcut(filename)
 end
 
+# ------------------------------------------------------------------------
