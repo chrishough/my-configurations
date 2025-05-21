@@ -20,8 +20,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          config: .gitleaks.toml
-          flags: >
+          args: >
             detect
             --source=.
             --redact
