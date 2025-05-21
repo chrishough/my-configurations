@@ -10,24 +10,26 @@ jobs:
   gitleaks:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      # This step is the key to fixing the issue
+      - name: Checkout with full history
         uses: actions/checkout@v4
         with:
-          # Full history for all branches
-          fetch-depth: 0
+          # Using a deeper fetch depth may help
+          fetch-depth: 0  # Unlimited depth
+          # For PRs, fetch both base and head
+          ref: ${{ github.head_ref || github.ref }}
 
-      # Special handling for pull requests to fix the commit reference issue
-      - name: Setup for PR
-        if: github.event_name == 'pull_request'
+      # Debug information to help understand git state
+      - name: Debug Git Information
         run: |
-          # Create local branch for PR base
-          git fetch origin ${{ github.base_ref }}
-          # Explicitly checkout PR head
-          git checkout ${{ github.event.pull_request.head.sha }}
+          echo "Current branch: $(git branch --show-current)"
+          echo "Available branches:"
+          git branch -a
+          echo "Current commit: $(git rev-parse HEAD)"
 
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # This environment variable prevents the commit range issue
-          GITLEAKS_DISABLE_RANGE_SCAN: true
+          # Tell GitLeaks to scan the working directory instead of a commit range
+          GITLEAKS_DETECT_ARGS: "--source=. --verbose --redact"
