@@ -1,0 +1,14 @@
+#!/bin/zsh
+herokuhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo "  h           = heroku connection"
+  echo "  hlog        = heroku logs"
+  echo "  hps         = heroku psql connection"
+  echo "  hrr         = heroku run rake task"
+  echo "  hrc         = heroku run rails console"
+  echo "  hc          = heroku config"
+  echo "  ha          = heroku applications"
+  echo "--------------------------------------------------------------------------------"
+  echo
+}

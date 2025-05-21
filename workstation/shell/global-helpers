@@ -1,0 +1,23 @@
+#!/bin/zsh
+function msg() {
+  echo
+  echo "-------------------------------------------"
+  echo $1
+  if [[ $2 ]]; then
+    echo $2
+  fi
+  echo "-------------------------------------------"
+  echo
+}
+function help() {
+  echo
+  echo "-------------------------------------------"
+  echo "  apphelp"
+  echo "  githelp"
+  echo "  herokuhelp"
+  echo "  keybasehelp"
+  echo "  rubyhelp"
+  echo "  shellhelp"
+  echo "-------------------------------------------"
+  echo
+}

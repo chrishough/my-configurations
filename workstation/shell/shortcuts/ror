@@ -1,0 +1,73 @@
+#!/bin/zsh
+# rubocop:disable all
+MYRUBYVERSION="3.0.0"
+export RUBY_DEP_GEM_SILENCE_WARNINGS=1
+export RUBYOPT='-W:no-deprecated -W:no-experimental'
+export BUNDLER_EDITOR="vscode"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+if [[ `uname -m` == 'arm64' ]]; then
+   # NOT USED FOR M1 MACHINES IN VERSION 7.0.0
+else
+  export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+fi
+
+alias rb="rbenv"
+alias rr="bundle exec rake routes"
+alias rsp="bundle exec rescue ./bin/rails s"
+alias rs="spring stop && bundle exec ./bin/rails s"
+alias rt="spring stop && bundle exec ./bin/rspec"
+alias rtc="bundle exec rescue ./bin/rspec"
+alias rc="spring stop && bundle exec ./bin/rails c"
+alias rg="rails g"
+alias rgod="gem outdated"
+alias rbe="bundle exec"
+alias rdb="rails dbconsole"
+alias rbl="rbenv install -l"
+alias rbi="bundle install"
+alias rbu="bundle update"
+alias rbibs="bundle install --path=.bundle --binstubs=.bundle/binstubs"
+alias rake="noglob bundle exec rake"
+
+GEMDIR=.bundle/ruby/$MYRUBYVERSION/gems
+
+function rgo() {
+	LOCALGEM=$(find $GEMDIR -name \*$1\* -type d -maxdepth 1 -print | head -n1)
+	code $LOCALGEM
+}
+
+function rdbr() {
+  rake db:drop db:create db:structure:load
+  RAILS_ENV=test rake db:drop db:create db:structure:load
+}
+
+function rbenvset() {
+	rbenv local $(rbenv global)
+}
+
+function rbenvupdate {
+	cd
+	brew upgrade rbenv
+	cd ~/.rbenv
+	cd plugins
+	for i in *
+	do
+		cd $i
+		git pull
+		cd -
+	done
+	cd
+}
+
+function rtail() {
+	if [[ $1 ]]; then
+		tail -f "log/$1.log";
+	else
+		tail -f log/development.log;
+	fi
+}
+
+function rmc() {
+	mailcatcher -f -v
+}
+# rubocop:enable all
