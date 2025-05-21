@@ -2,33 +2,18 @@ name: Git Leaks
 
 on:
   push:
-    branches: [ "**" ]
   pull_request:
-    branches: [ "**" ]
 
 jobs:
-  gitleaks:
+  scan:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          # Fetch all history for pull requests and all branches
           fetch-depth: 0
-          # For PRs, also fetch the target branch
-          ref: ${{ github.event.pull_request.head.sha }}
 
-      # This step ensures we have the base branch for comparison in PRs
-      - name: Fetch base branch for PRs
-        if: github.event_name == 'pull_request'
-        run: |
-          git fetch origin ${{ github.event.pull_request.base.ref }}
-          git checkout -b pr_head
-
-      # Now run GitLeaks with a simpler configuration
       - name: Run Gitleaks
-        uses: zricethezav/gitleaks-action@master
-        with:
-          config-path: .gitleaks.toml
+        uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
