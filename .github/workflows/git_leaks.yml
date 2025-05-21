@@ -2,34 +2,18 @@ name: Git Leaks
 
 on:
   push:
-    branches: [ "**" ]
   pull_request:
-    branches: [ "**" ]
 
 jobs:
-  gitleaks:
+  scan:
     runs-on: ubuntu-latest
     steps:
-      # This step is the key to fixing the issue
-      - name: Checkout with full history
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          # Using a deeper fetch depth may help
-          fetch-depth: 0  # Unlimited depth
-          # For PRs, fetch both base and head
-          ref: ${{ github.head_ref || github.ref }}
-
-      # Debug information to help understand git state
-      - name: Debug Git Information
-        run: |
-          echo "Current branch: $(git branch --show-current)"
-          echo "Available branches:"
-          git branch -a
-          echo "Current commit: $(git rev-parse HEAD)"
+          fetch-depth: 0
 
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Tell GitLeaks to scan the working directory instead of a commit range
-          GITLEAKS_DETECT_ARGS: "--source=. --verbose --redact"
