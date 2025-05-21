@@ -5,16 +5,16 @@ function glt(){ git log --graph --oneline --all }
 function gl(){ git log --show-notes }
 function gltp(){ git log --graph --all --decorate }
 function gd(){ git diff }
-function gtl(){ git tag --sort=v:refname }
+function gtl(){ git tag --sort=v:refname | cat }
 function grso(){ git remote show origin }
 function gcf(){ git config --list }
+function gpab(){ git branch | grep -v "master" | xargs git branch -D }
 
 function gsmi(){
   git status;
   git pull;
   git submodule update --init --recursive;
 }
-
 function gstats(){
   git shortlog -s -n
 }
@@ -87,6 +87,8 @@ function gc() {
 	git add . -A;
 	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
 	git commit -m "$1";
+	msg "Pushing all the things to origin!";
+  git push;
 	gs;
 }
 function gcz() {

@@ -9,6 +9,7 @@ githelp () {
   echo "  gcm          = commit locally, but do not push to origin, commit msg in ide"
   echo "  gmb          = pull, merge branch, push, status"
   echo "  gmt          = pull, merge branch with full rewrite, push, status"
+  echo "  gpab         = delete all local branches"
   echo "  gdb          = delete local and remote branch"
   echo "  gp           = pull down all the code and all the tags"
   echo "  gpo          = pushing all the things to origin"
