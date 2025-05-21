@@ -1,11 +1,59 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "files.autoSave": "onFocusChange",
     "editor.tabSize": 2,
+    "editor.fontSize": 14,
     "editor.wordWrapColumn": 150,
-    "workbench.commandPalette.history": 1000,
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": false,
+    "editor.accessibilityPageSize": 20,
+    "editor.rulers": [
+        {
+            "column": 100,
+            "color": "#e6e1dc"
+        },
+        {
+            "column": 125,
+            "color": "#bc9458"
+        },
+        {
+            "column": 180,
+            "color": "#FF1728"
+        }
+    ],
+
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "extensions.ignoreRecommendations": true,
+    "extensions.allowed": "*",
+
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        ".sass-cache/": true,
+        ".vscode/": true,
+        "node_modules/": true
+    },
+
     "git.confirmSync": false,
     "git.autofetch": true,
+
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+
+    "ruby.useLanguageServer": true,
+    "ruby.lint": {
+        "rubocop": true
+    },
+    "ruby.rubocop.configFilePath": "./.rubocop.yml",
+    "ruby.rubocop.useBundler": true,
+    "ruby.lsp.useCustomShell": false,
+    "ruby.intellisense": "rubyLocate",
+    "[ruby]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp"
+    },
+
     "sync.gist": "1c6ff2f001a2bd7368966050952777e2",
     "sync.quietSync": false,
     "sync.removeExtensions": true,
@@ -13,11 +61,30 @@
     "sync.autoDownload": false,
     "sync.autoUpload": false,
     "sync.forceDownload": false,
-    "workbench.colorTheme": "RailsCasts",
-    "editor.minimap.enabled": false,
-    // My Customizations -- START ----------------------------------------
+
+    "terminal.integrated.fontSize": 14,
+
+    "window.commandCenter": true,
+    "window.zoomLevel": -0.25,
+
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "workbench.commandPalette.history": 1000,
+    "workbench.editor.closeEmptyGroups": false,
+
+    // -------------------------------------------------------------------
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
+        "editorGutter.background": "#2b2b2b",
+
+        "editorGroupHeader.tabsBackground": "#000000",
+
+        "editorGroup.border": "#FF1728",
+
+        "editor.background": "#000000",
+
+        "tab.activeBorderTop": "#FF1728",
+
         "terminal.ansiBlack": "#2b2b2b",
         "terminal.ansiBrightBlack": "#5a647e",
         "terminal.ansiRed": "#da4939",
@@ -35,53 +102,8 @@
         "terminal.ansiWhite": "#e6e1dc",
         "terminal.ansiBrightWhite": "#f9f7f3",
         "terminal.background": "#000000",
-        "window.activeBorder": "#FF1728",
-        "editorGutter.background": "#2b2b2b",
-        "editorGroupHeader.tabsBackground": "#000000",
-        "editor.background": "#000000",
-        "tab.activeBorderTop": "#FF1728"
-    },
-    "files.exclude": {
-        ".sass-cache/": true,
-        ".vscode/": true,
-        "node_modules/": true
-    },
-    "explorer.autoReveal": false,
-    "editor.rulers": [
-        {
-            "column": 100,
-            "color": "#e6e1dc"
-        },
-        {
-            "column": 125,
-            "color": "#bc9458"
-        },
-        {
-            "column": 180,
-            "color": "#FF1728"
-        }
-    ],
-    // My Customizations -- END ------------------------------------------
-    "workbench.editor.closeEmptyGroups": false,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.editor.centeredLayoutAutoResize": false,
-    "extensions.ignoreRecommendations": true,
-    "files.trimTrailingWhitespace": true,
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "editor.fontSize": 14,
-    "liveshare.accountProvider": "",
-    "liveshare.account": "",
-    "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace"
-    },
-    "debug.node.autoAttach": "on",
-    "files.insertFinalNewline": true,
-    "ruby.lint": {},
-    "ruby.rubocop.executePath": "/Users/christopherhough/.rbenv/versions/2.7.1/bin/",
-    "ruby.rubocop.onSave": false,
-    "ruby.rubocop.useBundler": true,
-    "editor.formatOnSave": false,
-    "window.zoomLevel": -1,
+
+        "window.activeBorder": "#FF1728"
+    }
+    // -------------------------------------------------------------------
 }

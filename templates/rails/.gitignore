@@ -1,16 +1,21 @@
-###-> Settings
-.bundle
-config/application.yml
-config/settings.local.yml
-config/settings/*.local.yml
-config/environments/*.local.yml
-config/master.key
-.env
-test.env
-scratch.rb
-lib/tasks/custom.rake
+#--------------------------------------------
+# IGNORE SPECIFIC WORKSTATION CONFIGURATION
+#--------------------------------------------
+*.vscode
+*.idea
+workstation/shell/shortcuts/private
+workstation/shell/global-private
+workstation/itermocil
+!workstation/itermocil/.keep
 
-###-> Folders
+#--------------------------------------------
+# APPLICATION
+#--------------------------------------------
+/config/master.key
+
+#--------------------------------------------
+# IGNORE ALL LOGFILES AND TEMPFILES
+#--------------------------------------------
 /.bundle
 coverage
 /storage/*
@@ -19,8 +24,13 @@ coverage
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+spec/persist_specs.txt
+.byebug_history
+scratch.rb
 
-###-> File Types
+#--------------------------------------------
+# IGNORE THESE FILE TYPES
+#--------------------------------------------
 *.com
 *.class
 *.dll
@@ -41,24 +51,22 @@ coverage
 *.log
 *.sql
 *.sqlite
-
-###-> Keep Design Assets
-!design/*.psd
-!design/*.ai
-!design/*.eps
-
-###-> Configurations
-*.idea
+*.gz
+*.svn
 *.chef
 *.vagrant
 
-###-> OS Generated
-.byebug_history
+#--------------------------------------------
+# OS GENERATED FILES
+#--------------------------------------------
 *.DS_Store
 *.DS_Store?
 *._*
 *.Spotlight-V100
 *.Trashes
+*.*~
+._*
+.Spotlight-V100
+.Trashes
 ehthumbs.db
 Thumbs.db
-*.*~
