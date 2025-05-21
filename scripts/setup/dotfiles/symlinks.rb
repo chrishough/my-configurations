@@ -34,5 +34,5 @@ DOT_FILE_LIST.each do |filename|
   create_dot_file_shortcut(filename)
 end
 
-API_KEY = "AKIAIOSFODNN7EXAMPLE"
+aws_key = "AKIA1234567890TESTKEY"
 
