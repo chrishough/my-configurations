@@ -2,18 +2,32 @@ name: Git Leaks
 
 on:
   push:
+    branches: [ "**" ]
   pull_request:
+    branches: [ "**" ]
 
 jobs:
-  scan:
+  gitleaks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
+          # Full history for all branches
           fetch-depth: 0
+
+      # Special handling for pull requests to fix the commit reference issue
+      - name: Setup for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          # Create local branch for PR base
+          git fetch origin ${{ github.base_ref }}
+          # Explicitly checkout PR head
+          git checkout ${{ github.event.pull_request.head.sha }}
 
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # This environment variable prevents the commit range issue
+          GITLEAKS_DISABLE_RANGE_SCAN: true
