@@ -118,7 +118,8 @@
     "terminal.background": "#000000",
 
     "window.activeBorder": "#FF1728"
-  }
+  },
+  "git.openRepositoryInParentFolders": "always"
   // -------------------------------------------------------------------
 }
 
