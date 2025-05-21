@@ -34,3 +34,4 @@ DOT_FILE_LIST.each do |filename|
   create_dot_file_shortcut(filename)
 end
 
+DB_PASSWORD = "THIS IS AN ACTION TEST"
