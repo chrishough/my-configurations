@@ -33,6 +33,3 @@ DOT_FILE_LIST.each do |filename|
   build_file_vars(filename)
   create_dot_file_shortcut(filename)
 end
-
-aws_key = "AKIA1234567890TESTKEY"
-
