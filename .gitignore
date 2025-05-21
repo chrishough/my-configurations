@@ -3,6 +3,7 @@
 #--------------------------------------------
 *.vscode
 *.idea
+
 workstation/shell/global-private
 workstation/itermocil
 !workstation/itermocil/.keep
@@ -20,8 +21,8 @@ coverage
 /storage/*
 !/storage/.keep
 /log/*
-/tmp/*
 !/log/.keep
+/tmp/*
 !/tmp/.keep
 spec/persist_specs.txt
 .byebug_history
