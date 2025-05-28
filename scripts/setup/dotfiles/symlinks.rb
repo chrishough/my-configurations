@@ -17,6 +17,7 @@ include Settings
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/snippets/ruby.json" "$HOME/Library/Application Support/Windsurf/User/snippets/ruby.json"
 
 # sudo codesign --force --deep --sign - /Applications/Cursor.app
+# xattr -d com.apple.quarantine /Applications/Cursor.app
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/snippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"
