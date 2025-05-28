@@ -104,6 +104,7 @@
 
   "workbench.colorTheme": "RailsCasts Plus Theme",
   "workbench.commandPalette.history": 1000,
+  "workbench.commandPalette.location": "center",
   "workbench.editor.centeredLayoutAutoResize": false,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.startupEditor": "newUntitledFile"
