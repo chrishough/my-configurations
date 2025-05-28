@@ -35,6 +35,8 @@
       "node_modules/": true
   },
 
+  "git.openRepositoryInParentFolders": "always",
+
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },

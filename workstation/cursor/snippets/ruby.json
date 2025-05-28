@@ -8,6 +8,11 @@
 		"prefix": "itdbg",
 		"body": ["it { debugger }"],
 		"description": "Insert it { debugger }"
+	},
+  "comment block": {
+		"prefix": "cmt",
+		"body": ["# -------------------------------------------------------------------"],
+		"description": "Insert comment block in ruby"
 	}
 }
 

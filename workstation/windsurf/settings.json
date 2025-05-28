@@ -35,6 +35,8 @@
       "node_modules/": true
   },
 
+  "git.openRepositoryInParentFolders": "always",
+
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
@@ -118,8 +120,7 @@
     "terminal.background": "#000000",
 
     "window.activeBorder": "#FF1728"
-  },
-  "git.openRepositoryInParentFolders": "always"
+  }
   // -------------------------------------------------------------------
 }
 
