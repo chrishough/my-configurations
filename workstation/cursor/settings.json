@@ -7,6 +7,9 @@
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
 
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.composer.textSizeScale": 1.3,
+
   "editor.fontSize": 14,
   "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
@@ -107,5 +110,5 @@
   "workbench.commandPalette.location": "center",
   "workbench.editor.centeredLayoutAutoResize": false,
   "workbench.editor.closeEmptyGroups": false,
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
 }
