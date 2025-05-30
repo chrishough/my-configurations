@@ -7,6 +7,7 @@
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
 
+  "cursor.experimental.autoConfirmSearch": true,
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.composer.textSizeScale": 1.3,
 
