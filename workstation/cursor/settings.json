@@ -13,6 +13,7 @@
 
   "editor.fontSize": 14,
   "editor.formatOnSave": false,
+
   "editor.minimap.enabled": false,
   "editor.rulers": [
     {
@@ -51,7 +52,9 @@
 
   "ruby.intellisense": "rubyLocate",
   "ruby.lint": {
-    "rubocop": true
+    "rubocop": {
+      "command": "bundle exec rubocop"
+    }
   },
   "ruby.lsp.useCustomShell": false,
   "ruby.rubocop.configFilePath": "./.rubocop.yml",
