@@ -6,16 +6,22 @@ include Settings
 
 # ln -s "$HOME/.myconfigurations" "$HOME/Documents/myconfigurations"
 
-# sudo codesign --force --deep --sign - /Applications/Visual\ Studio\ Code.app
-# ln -s ~/.myconfigurations/workstation/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-# ln -s ~/.myconfigurations/workstation/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
+# cd "$HOME/Library/Application Support/Code/User/"
+# sudo codesign --force --deep --sign - /Applications/Visual\ Studio\ Code.app
+# ln -s ~/.myconfigurations/workstation/vscode/settings.json "$HOME/Library/Application Support/Code/settings.json"
+# ln -s ~/.myconfigurations/workstation/vscode/keybindings.json "$HOME/Library/Application Support/Code/keybindings.json"
+
+
+# cd "$HOME/Library/Application Support/Windsurf/User/"
 # sudo codesign --force --deep --sign - /Applications/Windsurf.app
 # xattr -d com.apple.quarantine /Applications/Windsurf.app
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/settings.json" "$HOME/Library/Application Support/Windsurf/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/keybindings.json" "$HOME/Library/Application Support/Windsurf/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/windsurf/snippets/ruby.json" "$HOME/Library/Application Support/Windsurf/User/snippets/ruby.json"
 
+
+# cd "$HOME/Library/Application Support/Cursor/User/"
 # sudo codesign --force --deep --sign - /Applications/Cursor.app
 # xattr -d com.apple.quarantine /Applications/Cursor.app
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
