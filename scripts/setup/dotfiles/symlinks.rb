@@ -11,6 +11,7 @@ include Settings
 # sudo codesign --force --deep --sign - /Applications/Visual\ Studio\ Code.app
 # ln -s ~/.myconfigurations/workstation/vscode/settings.json "$HOME/Library/Application Support/Code/settings.json"
 # ln -s ~/.myconfigurations/workstation/vscode/keybindings.json "$HOME/Library/Application Support/Code/keybindings.json"
+# ln -s "$HOME/.myconfigurations/workstation/vscode/snippets/ruby.json" "$HOME/Library/Application Support/Code/User/snippets/ruby.json"
 
 
 # cd "$HOME/Library/Application Support/Windsurf/User/"
@@ -27,6 +28,10 @@ include Settings
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/snippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"
+
+
+# cd "$HOME/.claude"
+# ln -s "$HOME/.myconfigurations/workstation/claude/settings.json" "$HOME/.claude/settings.json"
 
 # ------------------------------------------------------------------------
 
