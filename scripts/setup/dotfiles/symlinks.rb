@@ -32,6 +32,7 @@ include Settings
 
 # cd "$HOME/.claude"
 # ln -s "$HOME/.myconfigurations/workstation/claude/settings.json" "$HOME/.claude/settings.json"
+# ln -s "$HOME/.myconfigurations/workstation/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 
 # ------------------------------------------------------------------------
 
