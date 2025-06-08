@@ -14,3 +14,4 @@ When writing or refactoring Ruby code:
 - Target Ruby version is **3.4**.
 - Exclude files as specified in `.rubocop.yml`.
 - When in doubt, prefer readable, maintainable, and idiomatic code, channeling the approach Sandy Metz used in *Practical Object-Oriented Design*.
+- Core Language is always Ruby!
