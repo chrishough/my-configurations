@@ -14,6 +14,7 @@
   - rubocop-factory_bot
   - rubocop-rspec_rails
   - rubocop-obsession
+- **Temporary Files:** Always store temporary files, caches, or other transient data within the project's local `./tmp` directory. Avoid system-wide temporary directories to ensure consistency and isolation.
 - **General Principle:** Favor readable, maintainable, and idiomatic code. If uncertain, clarify or ask before proceeding.
 
 > Always check for `.rubocop.yml`, any files in `config/rubocop/`, and the `Gemfile` in this project, and use them for all code and architectural suggestions. If any are missing, use standard Ruby/Rails practices as your guide.
