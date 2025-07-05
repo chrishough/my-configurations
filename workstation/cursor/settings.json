@@ -115,4 +115,5 @@
   "workbench.editor.centeredLayoutAutoResize": false,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.startupEditor": "newUntitledFile",
+  "git.autofetch": true,
 }
