@@ -28,6 +28,18 @@ include Settings
 # cursor --list-extensions > "/Users/christopherhough/Library/Application Support/Cursor/User/extensions.txt"
 # xargs -n1 cursor --install-extension < "/Users/christopherhough/Library/Application Support/Cursor/User/extensions.txt"
 
+# cursor --install-extension vscode-theme-railscasts-plus-0.0.6.vsix
+# cursor --install-extension misogi.ruby-rubocop-0.8.5.vsix
+# cursor --install-extension markdown-emoji-0.3.1.vsix
+
+
+# cursor --list-extensions \
+#   | grep -v "marlosirapuan.vscode-theme-railscasts-plus" \
+#   | grep -v "misogi.ruby-rubocop" \
+#   | grep -v "bierner.markdown-emoji" \
+#   > "/Users/christopherhough/Library/Application Support/Cursor/User/extensions.txt"
+
+
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/snippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"

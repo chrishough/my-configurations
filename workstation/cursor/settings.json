@@ -114,4 +114,5 @@
   "workbench.editor.closeEmptyGroups": false,
   "workbench.startupEditor": "newUntitledFile",
   "git.autofetch": true,
+  "workbench.colorTheme": "RailsCasts Plus Theme",
 }
