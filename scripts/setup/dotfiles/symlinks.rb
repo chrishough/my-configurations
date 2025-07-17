@@ -28,6 +28,7 @@ include Settings
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/snippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"
+# ln -s "$HOME/.myconfigurations/workstation/cursor/extensions.json" "$HOME/Library/Application Support/Cursor/User/extensions.json"
 
 
 # cd "$HOME/.claude"
