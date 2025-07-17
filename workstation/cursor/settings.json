@@ -108,8 +108,6 @@
     "terminal.background": "#000000",
     "window.activeBorder": "#FF1728"
   },
-
-  "workbench.colorTheme": "RailsCasts Plus Theme",
   "workbench.commandPalette.history": 1000,
   "workbench.commandPalette.location": "center",
   "workbench.editor.centeredLayoutAutoResize": false,

@@ -1,8 +1,6 @@
 anthropic.claude-code
-bierner.markdown-emoji
 eamodio.gitlens
 johnpapa.vscode-peacock
-marlosirapuan.vscode-theme-railscasts-plus
 misogi.ruby-rubocop
 oderwat.indent-rainbow
 shopify.ruby-lsp
