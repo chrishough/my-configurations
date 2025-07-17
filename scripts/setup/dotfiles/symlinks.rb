@@ -25,10 +25,12 @@ include Settings
 # cd "$HOME/Library/Application Support/Cursor/User/"
 # sudo codesign --force --deep --sign - /Applications/Cursor.app
 # xattr -d com.apple.quarantine /Applications/Cursor.app
+# cursor --list-extensions > "/Users/christopherhough/Library/Application Support/Cursor/User/extensions.txt"
+#
 # ln -s "$HOME/.myconfigurations/workstation/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 # ln -s "$HOME/.myconfigurations/workstation/cursor/snippets/ruby.json" "$HOME/Library/Application Support/Cursor/User/snippets/ruby.json"
-# ln -s "$HOME/.myconfigurations/workstation/cursor/extensions.json" "$HOME/Library/Application Support/Cursor/User/extensions.json"
+# ln -s "$HOME/.myconfigurations/workstation/cursor/extensions.txt" "$HOME/Library/Application Support/Cursor/User/extensions.txt"
 
 
 # cd "$HOME/.claude"
