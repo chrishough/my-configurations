@@ -1,7 +1,6 @@
 anthropic.claude-code
 eamodio.gitlens
 johnpapa.vscode-peacock
-misogi.ruby-rubocop
 oderwat.indent-rainbow
 shopify.ruby-lsp
 wingrunr21.vscode-ruby
