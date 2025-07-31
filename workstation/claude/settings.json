@@ -1,4 +1,6 @@
 {
-  "model": "opus"
+  "model": "opus",
+  "feedbackSurveyState": {
+    "lastShownTime": 1753967733488
+  }
 }
-

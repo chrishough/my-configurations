@@ -32,6 +32,7 @@ Always analyze the project to determine:
 - **Run linters** before considering any code complete
 - **Never override** project-specific linting rules with general best practices
 - **When multiple linters exist**, apply all of them in the appropriate order
+- **NEVER automatically disable linter rules** without explicit permission - always ask first before adding ignore comments, disabling rules, or modifying linter configurations
 
 ## Language-Specific Guidelines
 
