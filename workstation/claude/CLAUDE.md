@@ -78,6 +78,9 @@ Always analyze the project to determine:
 ### Code Quality
 - **Readability**: Clear naming, self-documenting code
 - **Testing**: Unit, integration, E2E with appropriate coverage
+  - **NEVER mark tests as skipped** (skip, xit, it.skip, @skip, etc.) - fix them or ask for guidance
+  - **Maintain all existing tests** in working condition
+  - **Fix failing tests** rather than disabling them
 - **Documentation**: Meaningful comments, API docs, architecture decisions
 - **Error Handling**: Graceful degradation, proper logging
 - **Performance**: Profiling before optimizing, caching strategies
