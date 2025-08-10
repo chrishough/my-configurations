@@ -79,8 +79,14 @@ Always analyze the project to determine:
 - **Readability**: Clear naming, self-documenting code
 - **Testing**: Unit, integration, E2E with appropriate coverage
   - **NEVER mark tests as skipped** (skip, xit, it.skip, @skip, etc.) - fix them or ask for guidance
+  - **When working with specs**: Never skip as a solution, always fix the underlying issue
   - **Maintain all existing tests** in working condition
   - **Fix failing tests** rather than disabling them
+  - **Test Data Creation**:
+    - **Always use factories** (FactoryBot, factory_girl, etc.) if they exist in the project
+    - **NEVER create test data directly** in specs - use the project's factory pattern
+    - **Check for existing factories** before creating new test data
+    - **Follow project conventions** for traits, sequences, and associations
 - **Documentation**: Meaningful comments, API docs, architecture decisions
 - **Error Handling**: Graceful degradation, proper logging
 - **Performance**: Profiling before optimizing, caching strategies
