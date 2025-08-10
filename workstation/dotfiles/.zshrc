@@ -47,9 +47,6 @@ source $HOME/.myconfigurations/workstation/shell/includes
 
 # Test for Apple Silicon...
 if [[ `uname -m` == 'arm64' ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-    eval "$(rbenv init - zsh)"
-
     export NVM_DIR="$HOME/.nvm"
     [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
     [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
@@ -63,6 +60,9 @@ else
     export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
     export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
