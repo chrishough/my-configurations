@@ -1,12 +1,15 @@
-name: Git Leaks
+name: SECURITY
+
+# gitleaks detect \
+#   --source=. \
+#   --redact \
+#   --verbose > tmp/gitleaks-output.txt 2>&1
 
 on:
-  push:
   pull_request:
 
 jobs:
-  scan:
-    name: Git Leaks
+  security_leaks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
