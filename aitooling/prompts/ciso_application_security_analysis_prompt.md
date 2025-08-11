@@ -130,3 +130,91 @@ When analyzing, think like both a black hat (finding vulnerabilities) and white 
 End your analysis with a "CISO Recommendation" section that provides strategic guidance for long-term security posture improvement.
 
 Remember: In cybersecurity, paranoia is a feature, not a bug. Leave no stone unturned.
+
+### 11. Report Output Instructions
+
+**Compile and save the final security analysis report as follows:**
+- **Format**: Markdown (.md)
+- **Location**: `docs/evaluations/`
+- **Filename**: `YYYYMMDD-{application-name}-security-analysis.md`
+  - Example: `20250810-myapp-api-security-analysis.md`
+  - Use lowercase and hyphens for the application name portion
+  - Replace spaces with hyphens in multi-word application names
+
+**The markdown report should include:**
+- Proper heading hierarchy (# for main sections, ## for subsections)
+- Code blocks with appropriate syntax highlighting
+- Tables for vulnerability summaries and scoring breakdowns
+- Links to relevant CVEs, CWEs, and security references
+- Embedded diagrams using mermaid syntax where applicable for threat models
+
+### 12. Visual Indicators and Formatting
+
+**Use expressive visual indicators throughout the report:**
+
+**Severity Levels:**
+- 🔴 **CRITICAL**: Immediate action required
+- 🟠 **HIGH**: Urgent remediation needed
+- 🟡 **MEDIUM**: Should be addressed soon
+- 🟢 **LOW**: Minor issues
+- 🔵 **INFO**: Informational findings
+
+**Status Indicators:**
+- ✅ **PASSED**: Security check passed
+- ❌ **FAILED**: Security check failed
+- ⚠️ **WARNING**: Potential issue detected
+- 🚨 **ALERT**: Active threat or vulnerability
+- 🛡️ **PROTECTED**: Security control in place
+- 🔓 **VULNERABLE**: Exposed to attacks
+- 🔒 **SECURE**: Properly secured
+- 🔐 **ENCRYPTED**: Encryption verified
+- 🔑 **AUTH ISSUE**: Authentication/Authorization problem
+- 🚪 **BACKDOOR**: Potential backdoor detected
+- 💉 **INJECTION**: Injection vulnerability
+- 🕷️ **BUG**: Security bug found
+- 🎯 **TARGETED**: High-value target for attackers
+- 🔍 **INVESTIGATE**: Requires further analysis
+- ⏰ **TIME-SENSITIVE**: Urgent timeline
+- 📊 **METRICS**: Performance/Security metrics
+- 🏆 **BEST PRACTICE**: Following security best practices
+- 💀 **CRITICAL RISK**: Severe security risk
+
+**Section Headers:**
+- 📋 Executive Summary
+- 🎯 Critical Findings
+- 📊 Security Score Breakdown
+- 🔍 Detailed Analysis
+- 🛡️ Security Controls Assessment
+- 🚨 Vulnerability Report
+- ✅ Compliance Status
+- 🔧 Remediation Plan
+- 📈 Risk Matrix
+- 💡 Recommendations
+
+**Compliance Status:**
+- ✅ **COMPLIANT**: Meets requirements
+- ❌ **NON-COMPLIANT**: Fails requirements
+- ⚠️ **PARTIAL**: Partially compliant
+
+**Use color-coded sections with markdown formatting:**
+```markdown
+> 🔴 **CRITICAL FINDING**
+> SQL Injection vulnerability detected in user authentication module
+
+> 🟢 **SECURITY STRENGTH**
+> Strong encryption implementation using AES-256
+
+> 🟡 **MEDIUM RISK**
+> Outdated dependency with known vulnerabilities
+```
+
+**Risk Scoring Visual:**
+- 🟢 Score 80-100: Excellent Security Posture
+- 🟡 Score 60-79: Acceptable with Improvements Needed
+- 🟠 Score 40-59: Significant Security Gaps
+- 🔴 Score 0-39: Critical Security Failures
+
+**Example filename formats:**
+- `20250810-user-authentication-service-security-analysis.md`
+- `20250810-payment-gateway-security-analysis.md`
+- `20250810-mobile-app-backend-security-analysis.md`
