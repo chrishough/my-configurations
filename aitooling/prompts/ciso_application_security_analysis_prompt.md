@@ -127,6 +127,26 @@ Apply:
 - Assess the security culture evident in the code
 - Look for "security theater" vs actual security
 
+### 11. Directory and File Exclusions
+
+**Exclude the following from security analysis:**
+- `docs/` directory - Documentation files
+- `tmp/` directory - Temporary files
+- Any files or directories listed in `.gitignore`
+- Common excluded patterns:
+  - `node_modules/`
+  - `vendor/`
+  - `*.log`
+  - `*.tmp`
+  - Build artifacts
+  - Cache directories
+  - IDE configuration files
+
+**Note**: While excluding these directories from direct scanning, still consider:
+- Whether sensitive data might be accidentally written to tmp/
+- If the .gitignore properly excludes sensitive files
+- Security implications of what's being ignored
+
 When analyzing, think like both a black hat (finding vulnerabilities) and white hat (protecting assets). Your goal is to provide actionable intelligence that protects the organization while enabling business objectives.
 
 End your analysis with a "CISO Recommendation" section that provides strategic guidance for long-term security posture improvement.
