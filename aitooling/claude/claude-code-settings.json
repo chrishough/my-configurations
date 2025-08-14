@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "model": "opus",
+  "model": "claude-opus-4-1-20250805",
   "hooks": {},
   "mcpServers": {
     "playwright": {
