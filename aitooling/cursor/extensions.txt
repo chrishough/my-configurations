@@ -1,0 +1,8 @@
+anthropic.claude-code
+eamodio.gitlens
+johnpapa.vscode-peacock
+oderwat.indent-rainbow
+shopify.ruby-lsp
+sianglim.slim
+wingrunr21.vscode-ruby
+yzhang.markdown-all-in-one

@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#6B633AFF",
+        "font" : "Helvetica Neue",
+        "color" : "#978D5CFF"
+      },
+      "shortcut" : {
+        "size" : 18,
+        "colorSelected" : "#958B5AFF",
+        "font" : "Helvetica Neue",
+        "color" : "#978D5BFF"
+      },
+      "backgroundSelected" : "#EDDE90FF",
+      "text" : {
+        "size" : 21,
+        "colorSelected" : "#4E482BFF",
+        "font" : "Helvetica Neue",
+        "color" : "#6E673DFF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 0,
+      "iconSize" : 57
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#D0C170FF",
+      "spacing" : 10,
+      "text" : {
+        "size" : 50,
+        "colorSelected" : "#000000FF",
+        "font" : "Helvetica Neue",
+        "color" : "#312D1BFF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "window" : {
+      "color" : "#FAECB3FF",
+      "paddingHorizontal" : 7,
+      "width" : 600,
+      "borderPadding" : 39,
+      "borderColor" : "#424242FF",
+      "blur" : 10,
+      "roundness" : -64,
+      "paddingVertical" : 10
+    },
+    "credit" : "Chris Hough",
+    "separator" : {
+      "color" : "#D1C271FF",
+      "thickness" : 3
+    },
+    "scrollbar" : {
+      "color" : "#D1C271FF",
+      "thickness" : 3
+    },
+    "name" : "Hough.Studio"
+  }
+}

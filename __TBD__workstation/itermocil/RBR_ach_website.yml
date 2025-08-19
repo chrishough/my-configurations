@@ -1,0 +1,24 @@
+windows:
+  - name: RBR_ach_website
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/personal-branding/AboutChrisHough
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/personal-branding/AboutChrisHough
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/personal-branding/AboutChrisHough
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/personal-branding/AboutChrisHough
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/personal-branding/AboutChrisHough
+        - clear

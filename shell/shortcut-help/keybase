@@ -1,0 +1,10 @@
+#!/bin/zsh
+keybasehelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo "  kb           = keybase"
+  echo "  kbi          = keybase installer"
+  echo "  kbv          = keybase version"
+  echo "--------------------------------------------------------------------------------"
+  echo
+}

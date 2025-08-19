@@ -1,0 +1,4 @@
+#!/bin/zsh
+function kb() { keybase }
+function kbi() { keybase-installer }
+function kbv() { keybase version }

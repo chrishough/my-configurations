@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+# SETTINGS AND PRIVATE VARIABLES : NEVER CHECK IN THIS FILE!
+source $HOME/.myconfigurations.private
+
+source $HOME/.myconfigurations/shell/global-settings
+source $HOME/.myconfigurations/shell/global-helpers
+
+# Define shell modules to load
+_myconfig_modules=(git brew heroku keybase ror python docker shell js pg)
+
+# Source shortcuts and help files for each module
+for _module in "${_myconfig_modules[@]}"; do
+  source "$HOME/.myconfigurations/shell/shortcuts/$_module"
+  source "$HOME/.myconfigurations/shell/shortcut-help/$_module"
+done
+
+# Clean up temporary variables
+unset _myconfig_modules _module

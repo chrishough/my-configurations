@@ -1,0 +1,24 @@
+windows:
+  - name: RBR_application_framework
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/application-factory
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/application-factory
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/application-factory
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/application-factory
+        - clear
+      - commands:
+        - clear
+        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/application-factory
+        - clear

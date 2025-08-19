@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+# This pre-commit hook will prevent any commit to forbidden branches
+# (by default, "staging" and "production").
+# Put this file in your local repo, in the .git/hooks folder
+# and make sure it is executable.
+# The name of the file *must* be "pre-commit" for Git to pick it up.
+# Edit .git/hooks/pre-commit & make sure it is excutable chmod +x
+# https://gist.github.com/Simbul/1781656
+
+FORBIDDEN_BRANCHES = ["testing", "staging", "production"]
+
+def current_branch()
+  branches = `git branch --no-color`.split(/\n/)
+  current = branches.select{ |b| b =~ /\s*\*/ }.first
+  current.gsub(/[\*\s]/, "")
+end
+
+branch = current_branch
+
+if (FORBIDDEN_BRANCHES.include?(branch))
+  puts
+  puts " STOP THE PRESS!"
+  puts " You are trying to commit on the *#{branch}* branch."
+  puts " Surely you don't mean that?"
+  puts
+  puts " If you really do, force the commit by adding --no-verify to the command."
+  puts
+
+  exit 1
+end

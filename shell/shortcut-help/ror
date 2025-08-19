@@ -1,0 +1,29 @@
+#!/bin/zsh
+rubyhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo "  rb          = rbenv"
+  echo "  rr          = bundle exec rake routes"
+  echo "  rs          = rails server"
+  echo "  rsp         = rails server with pry rescue"
+  echo "  rc          = rails console"
+  echo "  rtc         = rspec tests with pry rescue"
+  echo "  rtp         = rspec tests"
+  echo "  rg          = rails generate"
+  echo "  rdb         = rails db console"
+  echo "  rdbr        = rebuild local dev and testing db via structure file"
+  echo "  rbe         = run bundle exec"
+  echo "  rgo         = open ruby gem"
+  echo "  rmc         = mailcatcher -f -v"
+  echo "  rgod        = find out which gems are outdated on the project"
+  echo "  rbl         = rbenv install -l"
+  echo "  rbi         = bundle install"
+  echo "  rbibs       = bundle install --path=.bundle --binstubs=.bundle/binstubs"
+  echo "  rake        = noglob bundle exec rake"
+  echo "  rbenvset    = setup local version of rbenv to global default"
+  echo "  rbenvupdate = update rbenv and rbenv plugins"
+  echo "--------------------------------------------------------------------------------"
+  echo "  rtail       = tails rails log, option param for log name"
+  echo "--------------------------------------------------------------------------------"
+  echo
+}

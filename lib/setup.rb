@@ -4,12 +4,12 @@
 require 'pry'
 require_relative 'helpers/setup_helper'
 
-# Collect paths from all setup files
-all_paths = []
+# Initialize PATHS array
+PATHS = []
 
+# Load all setup files - they will append to PATHS
 require_relative '../aitooling/setup'
-
-all_paths.concat(PATHS) if defined?(PATHS)
+require_relative '../dotfiles/setup'
 
 # Process all collected paths
-SetupHelper.process_paths(all_paths)
+SetupHelper.process_paths(PATHS)

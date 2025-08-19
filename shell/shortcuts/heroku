@@ -1,0 +1,8 @@
+#!/bin/zsh
+alias h="heroku"
+function hlog() { heroku logs }
+function hps() { heroku ps }
+function hrr() { heroku run rake }
+function hrc() { heroku run rails console }
+function hc() { heroku config }
+function ha() { heroku apps }

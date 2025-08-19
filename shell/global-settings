@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+# Adjust Shell History
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+PROMPT_COMMAND='history -a'
+
+# Autojump
+export AUTOJUMP_IGNORE_CASE=1
+
+# Set Browser for shell commands
+export BROWSER='open -a /Applications/Google Chrome.app'
+
+# Adjust for Ruby Rbenv
+export PATH=".bundle/binstubs:$PATH"
+
+# Default Editor
+export EDITOR=vim
+
+# ZSH Autocomplete
+autoload -U compinit && compinit
