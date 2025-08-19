@@ -7,6 +7,9 @@ workstation/shell/shortcuts/private
 workstation/shell/global-private
 workstation/itermocil
 !workstation/itermocil/.keep
+aitooling/cursor/workspaces/*
+!aitooling/cursor/workspaces/.keep
+!aitooling/cursor/workspaces/.gitignore
 
 #--------------------------------------------
 # APPLICATION
