@@ -1,8 +1,15 @@
 #!/bin/zsh
 
-alias dvy="itermocil"
+# alias dvy="itermocil"
 
-function dvyl() { dvy --list | grep -v "^/" | sort -f }
+function dvy() {
+  if [[ -n "$1" ]]; then
+    itermocil "$1"
+  else
+    itermocil --list | grep -v "^/" | sort -V
+  fi
+}
+function dvyl() { itermocil $(itermocil --list | grep -v "^/" | sort -Vr | fzf) }
 
 function dvyhelp () {
   echo
