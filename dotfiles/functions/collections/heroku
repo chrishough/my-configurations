@@ -1,14 +1,27 @@
 #!/bin/zsh
-herokuhelp () {
+alias h="heroku"
+
+function hl() { h login }
+function hlog() { h logs }
+function hps() { h ps }
+function hrr() { h run rake }
+function hrc() { h run rails console }
+function hc() { h config }
+function ha() { h apps }
+
+function herokuhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
-  echo "  h           = heroku connection"
+  echo
+  echo "  h           = heroku"
+  echo "  hl          = heroku login"
   echo "  hlog        = heroku logs"
   echo "  hps         = heroku psql connection"
   echo "  hrr         = heroku run rake task"
   echo "  hrc         = heroku run rails console"
   echo "  hc          = heroku config"
   echo "  ha          = heroku applications"
+  echo
   echo "--------------------------------------------------------------------------------"
   echo
 }

@@ -7,7 +7,7 @@ source $HOME/.myconfigurations/shell/global-settings
 source $HOME/.myconfigurations/shell/global-helpers
 
 # Define shell modules to load
-_myconfig_modules=(git heroku ror shell js)
+_myconfig_modules=(git ror shell js)
 
 # Source shortcuts and help files for each module
 for _module in "${_myconfig_modules[@]}"; do

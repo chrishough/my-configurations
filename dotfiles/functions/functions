@@ -1,5 +1,5 @@
 #!/bin/zsh
-_myconfig_modules=(itermocil brew python pg)
+_myconfig_modules=(itermocil brew python pg heroku)
 
 for _module in "${_myconfig_modules[@]}"; do
   source "$HOME/.myconfigurations/dotfiles/functions/collections/$_module"
