@@ -4,7 +4,6 @@ alias dvy="itermocil"
 
 function dvyl() { dvy --list | grep -v "^/" | sort -f }
 
-
 function dvyhelp () {
   echo
   echo "--------------------------------------------------------------------------------"

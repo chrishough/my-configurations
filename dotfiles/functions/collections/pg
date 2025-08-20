@@ -1,8 +1,17 @@
 #!/bin/zsh
-pghelp () {
+
+function pgv() {
+  postgres -V;
+  psql -V;
+}
+
+function pghelp () {
   echo
   echo "--------------------------------------------------------------------------------"
+  echo
   echo "  pgv           = database versions"
+  echo
   echo "--------------------------------------------------------------------------------"
   echo
 }
+
