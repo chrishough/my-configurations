@@ -1,1 +1,16 @@
 #!/bin/zsh
+
+
+alias dvy="itermocil"
+function dvyl() { dvy --list | grep -v "^/" | sort -f }
+
+
+function applicationshelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo "  dvy          = launch itermocil"
+  echo "  dvyl         = list itermocil profiles"
+  echo "--------------------------------------------------------------------------------"
+  echo
+}
+

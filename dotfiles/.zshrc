@@ -44,6 +44,8 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 source $HOME/.myconfigurations/shell/includes
+source $HOME/.myconfigurations/dotfiles/functions/functions
+
 
 # Test for Apple Silicon...
 if [[ `uname -m` == 'arm64' ]]; then
