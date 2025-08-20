@@ -1,0 +1,30 @@
+windows:
+  - name: 1099_rbr_client
+    root: $HOME/Career/RobotsBuildingRobots/clients
+    layout: double-main-horizontal
+    panes:
+      - commands:
+        - echo -e "\\033]6;1;bg;red;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;green;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;blue;brightness;0\\a"
+        - clear
+      - commands:
+        - echo -e "\\033]6;1;bg;red;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;green;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;blue;brightness;0\\a"
+        - clear
+      - commands:
+        - echo -e "\\033]6;1;bg;red;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;green;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;blue;brightness;0\\a"
+        - clear
+      - commands:
+        - echo -e "\\033]6;1;bg;red;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;green;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;blue;brightness;0\\a"
+        - clear
+      - commands:
+        - echo -e "\\033]6;1;bg;red;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;green;brightness;255\\a"
+        - echo -e "\\033]6;1;bg;blue;brightness;0\\a"
+        - clear

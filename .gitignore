@@ -2,14 +2,14 @@
 # IGNORE SPECIFIC WORKSTATION CONFIGURATION
 #--------------------------------------------
 *.vscode
-*.idea
-workstation/shell/shortcuts/private
-workstation/shell/global-private
-workstation/itermocil
-!workstation/itermocil/.keep
+*.claude
+
 aitooling/cursor/workspaces/*
 !aitooling/cursor/workspaces/.keep
-!aitooling/cursor/workspaces/.gitignore
+
+applications/vscode/workspaces/*
+!applications/vscode/workspaces/.keep
+!applications/itermocil/.keep
 
 #--------------------------------------------
 # APPLICATION

@@ -1,5 +1,5 @@
 windows:
-  - name: RBR_config
+  - name: rbr_config
     layout: main-vertical
     panes:
       - commands:
@@ -7,18 +7,18 @@ windows:
         - echo "Configurations Windows"
       - commands:
         - clear
-        - cd /Users/christopherhough/.myconfigurations
+        - cd $HOME/.myconfigurations
         - clear
       - commands:
         - clear
-        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/personal-branding/MyVersionedAssets
+        - cd $HOME/Career/RobotsBuildingRobots/code/personal-branding/MyVersionedAssets
         - clear
       - commands:
         - clear
-        - cd /Users/christopherhough/Career/RobotsBuildingRobots/code/personal-branding/MyVersionedAssets
+        - cd $HOME/Career/RobotsBuildingRobots/code/personal-branding/MyVersionedAssets
         - clear
       - commands:
         - clear
-        - cd /Users/christopherhough
+        - cd $HOME
         - clear
         - lsa

@@ -1,0 +1,22 @@
+windows:
+  - name: rbr_links_ach_website
+    layout: main-vertical
+    panes:
+      - commands:
+        - clear
+        - cd $HOME/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+        - clear
+      - commands:
+        - clear
+        - cd $HOME/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+        - clear
+      - commands:
+        - clear
+        - cd $HOME/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+        - clear
+      - commands:
+        - clear
+        - cd $HOME/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+        - clear
+
+
