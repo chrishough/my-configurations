@@ -1,21 +1,24 @@
 #!/bin/zsh
-shellhelp () {
+
+function shellhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
+  echo
   echo "  reloadshell  = reload current shell"
   echo "  getpwd       = copy current path to the clipboard"
   echo "  flush        = reset current dns"
   echo "  disc         = disc space details"
   echo "  up           = current machine up time"
-  echo "  purgeSVN     = remove all .svn folders and files in current directory"
   echo "  purgeDS      = remove all .DS_Store files in current directory"
-  echo "  hidefiles    = hide .hidden files"
-  echo "  showfiles    = show .hidden files"
-  echo "  cls          = clear shell window"
-  echo "  upzsh        = upgrade zsh"
-  echo "  dvy          = run itermocil"
-  echo "  vscode       = code ."
-  echo "  resetvideo   = if your video freezes run this to reset the camera"
+  echo
   echo "--------------------------------------------------------------------------------"
   echo
 }
+
+function reloadshell() { exec $SHELL }
+function getpwd() { pwd | pbcopy }
+function flush() { sudo killall -HUP mDNSResponder }
+function disc() { df -h }
+function up() { uptime | sed -e "s/:/ /2" | sed -e "s/,/ /2" | awk '{print "Up " $3 " days, " $5 " hours and " $6 " minutes"}' }
+function purgeDS() { find . -name '*.DS_Store' -type f -delete }
+

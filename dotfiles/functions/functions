@@ -1,4 +1,9 @@
 #!/bin/zsh
+
+# SETTINGS AND PRIVATE VARIABLES : NEVER CHECK IN THIS FILE!
+source $HOME/.myconfigurations.private
+
+# IMPORT FUNCTIONS GROUPS
 _myconfig_modules=(itermocil ror git brew python pg heroku js)
 
 for _module in "${_myconfig_modules[@]}"; do
