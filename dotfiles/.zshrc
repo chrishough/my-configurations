@@ -105,3 +105,5 @@ if type brew &>/dev/null; then
     autoload -Uz compinit
     compinit
 fi
+
+alias upzsh="upgrade_oh_my_zsh"

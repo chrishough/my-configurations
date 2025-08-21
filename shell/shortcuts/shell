@@ -1,5 +1,5 @@
 #!/bin/zsh
-alias upzsh="upgrade_oh_my_zsh"
+
 
 alias vscode="code ."
 
