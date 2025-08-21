@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# Adjust for Ruby Rbenv
+export PATH=".bundle/binstubs:$PATH"
 export RUBY_DEP_GEM_SILENCE_WARNINGS=1
 export RUBYOPT='-W:no-deprecated -W:no-experimental'
 export BUNDLER_EDITOR="vscode"

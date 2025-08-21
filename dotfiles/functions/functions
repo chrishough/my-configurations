@@ -12,3 +12,19 @@ done
 
 # Clean up temporary variables
 unset _myconfig_modules _module
+
+function help() {
+  echo
+  echo "-------------------------------------------"
+  echo
+  echo "  brewhelp"
+  echo "  githelp"
+  echo "  dvyhelp"
+  echo "  pghelp"
+  echo "  rubyhelp"
+  echo "  shellhelp"
+  echo "  herokuhelp"
+  echo
+  echo "-------------------------------------------"
+  echo
+}

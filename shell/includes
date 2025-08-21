@@ -1,4 +1,3 @@
 #!/bin/zsh
 
 source $HOME/.myconfigurations/shell/global-settings
-source $HOME/.myconfigurations/shell/global-helpers
