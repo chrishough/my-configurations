@@ -1,5 +1,21 @@
 #!/bin/zsh
 
+function brewhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+  echo "  bd           = brew doctor"
+  echo "  bu           = brew update, brew upgrade, brew doctor"
+  echo "  bsx          = stop all brew services"
+  echo "  bss          = start all brew services"
+  echo "  bsr          = restart all brew services"
+  echo "  bsc          = brew services cleanup"
+  echo "  bsl          = brew services list"
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}
+
 alias bd="brew doctor"
 alias bsc="brew services cleanup"
 alias bsl="brew services list"
@@ -31,18 +47,4 @@ function bss() {
   bsl
 }
 
-function brewhelp () {
-  echo
-  echo "--------------------------------------------------------------------------------"
-  echo
-  echo "  bd           = brew doctor"
-  echo "  bu           = brew update, brew upgrade, brew doctor"
-  echo "  bsx          = stop all brew services"
-  echo "  bss          = start all brew services"
-  echo "  bsr          = restart all brew services"
-  echo "  bsc          = brew services cleanup"
-  echo "  bsl          = brew services list"
-  echo
-  echo "--------------------------------------------------------------------------------"
-  echo
-}
+

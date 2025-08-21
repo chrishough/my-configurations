@@ -1,10 +1,5 @@
 #!/bin/zsh
 
-function pgv() {
-  postgres -V;
-  psql -V;
-}
-
 function pghelp () {
   echo
   echo "--------------------------------------------------------------------------------"
@@ -14,4 +9,11 @@ function pghelp () {
   echo "--------------------------------------------------------------------------------"
   echo
 }
+
+function pgv() {
+  postgres -V;
+  psql -V;
+}
+
+
 
