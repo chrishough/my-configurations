@@ -1,4 +1,5 @@
-source $HOME/.myconfigurations/shell/includes
+# SOURCE SHARED FUNCTIONS
+source $HOME/.myconfigurations/dotfiles/functions/functions
 
 if [[ `uname -m` == 'arm64' ]]; then
    # NOT USED FOR M1 MACHINES IN VERSION 7.0.0

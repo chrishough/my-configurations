@@ -11,6 +11,10 @@
     "key": "cmd+shift+e",
     "command": "workbench.files.action.showActiveFileInExplorer",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "composerMode.background"
   }
 ]
 

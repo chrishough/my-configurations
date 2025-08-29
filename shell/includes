@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-source $HOME/.myconfigurations/shell/global-settings

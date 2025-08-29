@@ -3,6 +3,17 @@
 # SETTINGS AND PRIVATE VARIABLES : NEVER CHECK IN THIS FILE!
 source $HOME/.myconfigurations.private
 
+# ADJUST SHELL HISTORY
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+PROMPT_COMMAND='history -a'
+
+# SET BROWSER FOR SHELL COMMANDS
+export BROWSER='open -a /Applications/Google Chrome.app'
+
+# DEFAULT EDITOR
+export EDITOR=vim
+
 # IMPORT FUNCTIONS GROUPS
 _myconfig_modules=(itermocil ror git brew python pg heroku js)
 
@@ -10,9 +21,16 @@ for _module in "${_myconfig_modules[@]}"; do
   source "$HOME/.myconfigurations/dotfiles/functions/collections/$_module"
 done
 
-# Clean up temporary variables
+# CLEAN UP TEMPORARY VARIABLES
 unset _myconfig_modules _module
 
+# AUTOJUMP
+export AUTOJUMP_IGNORE_CASE=1
+
+# ZSH AUTOCOMPLETE
+autoload -U compinit && compinit
+
+# ZSH HELP
 function help() {
   echo
   echo "-------------------------------------------"

@@ -40,12 +40,11 @@ plugins=(colorize node npm autojump macos zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-#disable auto correct
+# disable auto correct
 unsetopt correct_all
 
-source $HOME/.myconfigurations/shell/includes
+# source shared functions
 source $HOME/.myconfigurations/dotfiles/functions/functions
-
 
 # Test for Apple Silicon...
 if [[ `uname -m` == 'arm64' ]]; then
