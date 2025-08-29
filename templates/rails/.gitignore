@@ -3,15 +3,14 @@
 #--------------------------------------------
 *.vscode
 *.idea
-workstation/shell/shortcuts/private
-workstation/shell/global-private
-workstation/itermocil
-!workstation/itermocil/.keep
 
 #--------------------------------------------
 # APPLICATION
 #--------------------------------------------
 /config/master.key
+
+# Ignore precompiled assets in development
+/public/assets
 
 #--------------------------------------------
 # IGNORE ALL LOGFILES AND TEMPFILES
@@ -38,7 +37,6 @@ scratch.rb
 *.o
 *.so
 *.ase
-*.psd
 *.ai
 *.eps
 *.7z
@@ -47,7 +45,6 @@ scratch.rb
 *.jar
 *.rar
 *.tar
-*.zip
 *.log
 *.sql
 *.sqlite
@@ -70,3 +67,8 @@ scratch.rb
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+/node_modules
