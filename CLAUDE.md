@@ -50,12 +50,22 @@ rbenvset     # Set local Ruby version to global
 ### Directory Structure
 ```
 .myconfigurations/
-├── shell/                    # Shell configurations and shortcuts
-│   ├── includes             # Main entry point for shell includes
-│   ├── global-settings      # Machine and include settings
-│   ├── global-helpers       # Global helper functions
-│   ├── shortcuts/           # Module-specific shortcuts (git, ror, etc.)
-│   └── shortcut-help/       # Help documentation for each module
+├── dotfiles/                # Shell configurations and dotfiles
+│   ├── .zshrc              # Zsh configuration
+│   ├── .bash_profile       # Bash profile
+│   ├── functions/          # Shell functions and modules
+│   │   ├── functions       # Main loader for shell modules
+│   │   └── collections/    # Module-specific functions and help
+│   │       ├── git         # Git shortcuts and help
+│   │       ├── ror         # Ruby/Rails shortcuts and help
+│   │       ├── brew        # Homebrew shortcuts and help
+│   │       ├── heroku      # Heroku shortcuts and help
+│   │       ├── shell       # Shell utilities and help
+│   │       ├── js          # JavaScript/Node shortcuts
+│   │       ├── pg          # PostgreSQL shortcuts
+│   │       ├── python      # Python environment shortcuts
+│   │       └── itermocil   # iTerm2 layouts
+│   └── setup.rb            # Dotfiles setup script
 ├── aitooling/               # AI tool configurations
 │   ├── claude/              # Claude-specific settings and CLAUDE.md
 │   ├── cursor/              # Cursor IDE settings
@@ -68,22 +78,24 @@ rbenvset     # Set local Ruby version to global
 ```
 
 ### Shell Module System
-The shell configuration loads modules dynamically through `shell/includes`:
+The shell configuration loads modules dynamically through `dotfiles/functions/functions`:
 1. Sources private configuration from `~/.myconfigurations.private`
-2. Loads global settings and helpers
-3. Iterates through defined modules (git, brew, heroku, keybase, ror, python, docker, shell, js, pg)
-4. For each module, sources both shortcuts and help files
+2. Sets global environment variables (HISTSIZE, BROWSER, EDITOR)
+3. Iterates through defined modules (itermocil, ror, git, brew, python, pg, heroku, js)
+4. For each module, sources the combined functions and help from `collections/<module>`
 
 ### Key Configuration Files
-- **shell/includes**: Main entry point that orchestrates module loading
-- **shell/global-settings**: Environment variables and system-wide settings
-- **shell/global-helpers**: Shared utility functions used across modules
+- **dotfiles/functions/functions**: Main entry point that orchestrates module loading
+- **dotfiles/.zshrc**: Zsh configuration with oh-my-zsh setup
+- **dotfiles/functions/collections/**: Module-specific functions, aliases, and help text
 - **aitooling/claude/CLAUDE.md**: Global development guidelines for Claude
 
 ### Module Pattern
-Each shell module follows a consistent pattern:
-- `shortcuts/<module>`: Defines aliases and functions
-- `shortcut-help/<module>`: Provides help documentation
+Each shell module in `collections/` combines:
+- Function definitions
+- Aliases
+- Help documentation (via `<module>help` function)
+- Module-specific environment variables
 - Modules are self-contained and can be enabled/disabled via the `_myconfig_modules` array
 
 ### Private Configuration
