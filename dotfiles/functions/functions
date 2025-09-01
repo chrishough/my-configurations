@@ -15,7 +15,7 @@ export BROWSER='open -a /Applications/Google Chrome.app'
 export EDITOR=vim
 
 # IMPORT FUNCTIONS GROUPS
-_myconfig_modules=(itermocil ror git brew python pg heroku js)
+_myconfig_modules=(itermocil ror git brew python pg heroku js shell)
 
 for _module in "${_myconfig_modules[@]}"; do
   source "$HOME/.myconfigurations/dotfiles/functions/collections/$_module"
