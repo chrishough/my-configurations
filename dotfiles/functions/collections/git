@@ -144,7 +144,8 @@ function gcz() {
 }
 function gcm() {
 	git add . -A;
-	git commit;
+	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
+	git commit -m "$1";
 	gs;
 }
 function gp() {
