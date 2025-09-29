@@ -28,4 +28,4 @@ if (FORBIDDEN_BRANCHES.include?(branch))
   puts
 
   exit 1
-end
+endgot
