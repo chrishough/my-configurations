@@ -108,4 +108,4 @@ fi
 alias upzsh="upgrade_oh_my_zsh"
 
 export JAVA_HOME="/usr/local/opt/openjdk@17"
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
