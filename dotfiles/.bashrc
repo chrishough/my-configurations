@@ -3,3 +3,5 @@ if [[ `uname -m` == 'arm64' ]]; then
 else
     if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 fi
+
+export PATH="$HOME/.local/bin:$PATH"
