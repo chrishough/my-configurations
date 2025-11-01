@@ -116,4 +116,5 @@
   "git.autofetch": true,
   "workbench.colorTheme": "RailsCasts Plus Theme",
   "gitlens.plusFeatures.enabled": false,
+  "claudeCode.selectedModel": "default",
 }

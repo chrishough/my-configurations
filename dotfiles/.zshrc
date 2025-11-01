@@ -63,6 +63,8 @@ else
 fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
 eval "$(rbenv init - zsh)"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -109,4 +111,5 @@ alias upzsh="upgrade_oh_my_zsh"
 
 export JAVA_HOME="/usr/local/opt/openjdk@17"
 
-export PATH="$HOME/.local/bin:$PATH"
+export EDITOR='nano'
+export VISUAL='nano'
