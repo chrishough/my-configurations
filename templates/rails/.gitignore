@@ -12,6 +12,9 @@
 # Ignore precompiled assets in development
 /public/assets
 
+# Never check in environment variables file!
+.env
+
 #--------------------------------------------
 # IGNORE ALL LOGFILES AND TEMPFILES
 #--------------------------------------------
