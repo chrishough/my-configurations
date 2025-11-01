@@ -120,6 +120,14 @@ Follow the guides in sequence:
 3. Document in `shell/shortcut-help/<module>`
 4. If new module, add to `_myconfig_modules` array in `shell/includes`
 
+## Security Guidelines
+
+### Environment Variables and Secrets
+- **NEVER read `.env` files** - they contain sensitive credentials, API keys, and secrets
+- Use `.env.example` as reference for required environment variables
+- For environment configuration questions, refer to `.env.example` only
+- Private configuration is stored in `~/.myconfigurations.private` (not tracked in git)
+
 ## Important Notes
 
 - Ruby version is set to 3.4.3 in the Gemfile

@@ -65,6 +65,9 @@ Always analyze the project to determine:
 - **Input Validation**: Always validate and sanitize user input
 - **Authentication/Authorization**: Implement proper access controls
 - **Secrets Management**: Never hardcode credentials, use environment variables
+  - **NEVER read `.env` files** - they contain sensitive credentials, API keys, and secrets
+  - Use `.env.example` as reference for required environment variables
+  - For environment configuration questions, refer to `.env.example` only
 - **Dependencies**: Regular updates, vulnerability scanning
 - **OWASP Top 10**: Always consider common vulnerabilities
 
