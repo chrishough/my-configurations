@@ -135,3 +135,4 @@ Follow the guides in sequence:
 - Alfred workflows are stored in `scripts/alfred/`
 - Legacy configurations are prefixed with `__TBD__` indicating they may need updating
 - The repository follows the author's opinionated setup - adapt as needed for your use case
+- **Documentation Files**: All explanation, documentation, and reference markdown files (*.md) should be written to the `./tmp` directory, NOT to the project root or other directories, unless told otherwise. These are for reference only and should not be committed to the repository.
