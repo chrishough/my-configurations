@@ -68,6 +68,8 @@ Always analyze the project to determine:
   - **NEVER read `.env` files** - they contain sensitive credentials, API keys, and secrets
   - Use `.env.example` as reference for required environment variables
   - For environment configuration questions, refer to `.env.example` only
+  - **NEVER read Rails secrets files** (`config/secrets.yml`, `config/credentials.yml.enc`, `config/master.key`) - they contain encrypted credentials and sensitive application secrets
+  - If asked about Rails secrets, only provide commands to view them (e.g., `rails credentials:edit`, `rails credentials:show`) - NEVER read the files directly
 - **Dependencies**: Regular updates, vulnerability scanning
 - **OWASP Top 10**: Always consider common vulnerabilities
 
