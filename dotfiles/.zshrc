@@ -109,9 +109,9 @@ fi
 
 alias upzsh="upgrade_oh_my_zsh"
 
-export SSL_CERT_FILE=/usr/local/opt/openssl@3/cert.pem
-export SSL_CERT_DIR=/usr/local/opt/openssl@3/certs
-export AWS_CA_BUNDLE=/usr/local/opt/openssl@3/cert.pem
+export SSL_CERT_FILE=/usr/local/etc/openssl@3/cert.pem
+export SSL_CERT_DIR=/usr/local/etc/openssl@3/certs
+export AWS_CA_BUNDLE=/usr/local/etc/openssl@3/cert.pem
 
 export JAVA_HOME="/usr/local/opt/openjdk@17"
 
