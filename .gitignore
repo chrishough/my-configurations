@@ -3,6 +3,8 @@
 #--------------------------------------------
 *.vscode
 *.claude
+*.idea
+*.code
 
 aitooling/cursor/workspaces/*
 !aitooling/cursor/workspaces/.keep

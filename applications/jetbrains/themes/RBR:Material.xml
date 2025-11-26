@@ -1,0 +1,27 @@
+<mtTheme>
+  <shouldSyncColors>false</shouldSyncColors>
+  <fileId>custom</fileId>
+  <themeId>RBR:Theme</themeId>
+  <name>RBR:Theme</name>
+  <editorColorsScheme>RBR:Railscasts</editorColorsScheme>
+  <dark>true</dark>
+  <colors>
+    <color id="background" value="000000ff"/>
+    <color id="foreground" value="e1e4e8ff"/>
+    <color id="text" value="959da5ff"/>
+    <color id="highlight" value="444d56ff"/>
+    <color id="selectionBackground" value="3392ffff"/>
+    <color id="selectionForeground" value="ffffffff"/>
+    <color id="button" value="39414aff"/>
+    <color id="secondaryBackground" value="2f363dff"/>
+    <color id="disabled" value="6a737dff"/>
+    <color id="contrast" value="1e2428ff"/>
+    <color id="tableSelected" value="2b3036ff"/>
+    <color id="secondBorder" value="1b1f23ff"/>
+    <color id="treeSelection" value="39414aff"/>
+    <color id="notifications" value="2f363dff"/>
+    <color id="accent" value="f9826cff"/>
+    <color id="secondAccent" value="9ecbffff"/>
+    <color id="excluded" value="2f363dff"/>
+  </colors>
+</mtTheme>
