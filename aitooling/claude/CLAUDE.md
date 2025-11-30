@@ -64,6 +64,10 @@ Always analyze the project to determine:
 ### Security First
 - **Input Validation**: Always validate and sanitize user input
 - **Authentication/Authorization**: Implement proper access controls
+- **File Permissions**: **NEVER run `chmod` commands** unless explicitly instructed by the user
+  - File permissions are security-critical and changes can expose sensitive data
+  - Always ask for explicit permission before modifying file permissions
+  - If permission issues arise, report them and ask the user how to proceed
 - **Secrets Management**: Never hardcode credentials, use environment variables
   - **NEVER read `.env` files** - they contain sensitive credentials, API keys, and secrets
   - Use `.env.example` as reference for required environment variables

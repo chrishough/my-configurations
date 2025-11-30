@@ -3,5 +3,49 @@
   "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754090209216
+  },
+  "sandboxing": {
+    "Read": {
+      "deny": [
+        "**/.env",
+        "**/.env.*",
+        "**/config/secrets.yml",
+        "**/config/credentials.yml.enc",
+        "**/config/master.key",
+        "**/.myconfigurations.private",
+        "**/*.pem",
+        "**/*.key",
+        "**/*.p12",
+        "**/*.pfx",
+        "**/*.secret",
+        "**/*.secrets",
+        "**/*credentials*",
+        "~/.ssh/**",
+        "~/.gnupg/**",
+        "**/.aws/credentials",
+        "**/.aws/config",
+        "**/secrets/**",
+        "**/*.keystore",
+        "**/*.jks"
+      ]
+    },
+    "Bash": {
+      "deny": [
+        "**/chmod **/.env*",
+        "**/chmod **/config/secrets.yml",
+        "**/chmod **/config/credentials.yml.enc",
+        "**/chmod **/config/master.key",
+        "**/chmod **/.myconfigurations.private",
+        "**/cat **/.env*",
+        "**/cat **/config/secrets.yml",
+        "**/cat **/config/credentials.yml.enc",
+        "**/head **/.env*",
+        "**/tail **/.env*",
+        "**/less **/.env*",
+        "**/more **/.env*",
+        "**/vim **/.env*",
+        "**/nano **/.env*"
+      ]
+    }
   }
 }
