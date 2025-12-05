@@ -13,6 +13,10 @@ _dvy_links_about_chris_hough() {
     selectp -t 1 \; \
     splitw -h -c "$dir" \; \
     select-layout -E \; \
+    send-keys -t "$session:0.0" 'clear' Enter \; \
+    send-keys -t "$session:0.1" 'clear' Enter \; \
+    send-keys -t "$session:0.2" 'clear' Enter \; \
+    send-keys -t "$session:0.3" 'clear' Enter \; \
     attach -t "$session"
 }
 
