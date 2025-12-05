@@ -21,12 +21,13 @@ _dvy_layout_apps() {
     splitw -h -c "$dir" \; \
     select-layout -E
 
-  # Send commands to each pane (clear first, then custom command if specified)
+  # Send commands to each pane (clear, custom command if specified, clear)
   for pane in 0 1 2 3; do
     tmux send-keys -t "$session:0.$pane" 'clear' Enter
     local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
     if [[ -n "$cmd" ]]; then
       tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
 
@@ -55,12 +56,13 @@ _dvy_layout_configurations() {
     splitw -v -p 50 -c "$dir" \; \
     select-layout -E
 
-  # Send commands to each pane (clear first, then custom command if specified)
+  # Send commands to each pane (clear, custom command if specified, clear)
   for pane in 0 1 2 3 4; do
     tmux send-keys -t "$session:0.$pane" 'clear' Enter
     local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
     if [[ -n "$cmd" ]]; then
       tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
 
