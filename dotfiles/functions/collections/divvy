@@ -26,6 +26,34 @@ _dvy_layout_apps() {
     attach -t "$session"
 }
 
+# Layout: configurations
+# +--------+---------+
+# |        |    1    |
+# |        +---------+
+# |   0    |    2    |
+# |        +---------+
+# |        |    3    |
+# |        +---------+
+# |        |    4    |
+# +--------+---------+
+_dvy_layout_configurations() {
+  local session="$1"
+  local dir="$2"
+
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
+    splitw -h -p 40 -c "$dir" \; \
+    splitw -v -p 75 -c "$dir" \; \
+    splitw -v -p 66 -c "$dir" \; \
+    splitw -v -p 50 -c "$dir" \; \
+    select-layout -E \; \
+    send-keys -t "$session:0.0" 'clear' Enter \; \
+    send-keys -t "$session:0.1" 'clear' Enter \; \
+    send-keys -t "$session:0.2" 'clear' Enter \; \
+    send-keys -t "$session:0.3" 'clear' Enter \; \
+    send-keys -t "$session:0.4" 'clear' Enter \; \
+    attach -t "$session"
+}
+
 _dvy_list() {
   echo
   echo "-------------------------------------------"
@@ -86,6 +114,9 @@ dvy() {
         apps)
           _dvy_layout_apps "$session" "$dir"
           ;;
+        configurations)
+          _dvy_layout_configurations "$session" "$dir"
+          ;;
         *)
           echo "Error: Unknown layout type: $layout"
           return 1
@@ -110,7 +141,8 @@ dvyhelp() {
   echo "   Paths file: $_DVY_PATHS_FILE"
   echo
   echo " Layout types:"
-  echo "   apps     4-pane custom layout"
+  echo "   apps            4-pane custom layout"
+  echo "   configurations  5-pane left column + 4 stacked rows"
   echo
   echo "-------------------------------------------"
   echo
