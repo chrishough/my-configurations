@@ -8,6 +8,7 @@
 	},
 
 	"editor.accessibilityPageSize": 20,
+	"editor.dimUnfocused": false,
 	"editor.fontSize": 14,
 	"editor.formatOnSave": false,
 	"editor.minimap.enabled": false,
@@ -65,6 +66,7 @@
 
 	"terminal.integrated.fontSize": 14,
 
+	"window.autoDetectColorScheme": false,
 	"window.commandCenter": true,
 	"window.zoomLevel": -0.25,
 
