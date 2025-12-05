@@ -93,7 +93,7 @@ _dvy_list() {
 dvy() {
   case "$1" in
     --kill)
-      tmux kill-server
+      tmux kill-server 2>/dev/null || echo "\nNo server running my friend!\n"
       ;;
     --list|-l)
       _dvy_list
