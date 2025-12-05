@@ -1,22 +1,19 @@
 _dvy_links_about_chris_hough() {
+  # +--------+----+----+
+  # |        | 1  | 2  |
+  # |   0    +----+----+
+  # |        |    3    |
+  # +--------+---------+
   local dir=~/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+  local session=links_about_chris_hough
 
-  if [ -z "$TMUX" ]; then
-    tmux new-session -d -s rbr_links -c "$dir"
-    tmux split-window -h -p 50 -t rbr_links -c "$dir"
-    tmux split-window -v -p 50 -t rbr_links -c "$dir"
-    tmux split-window -h -p 50 -t rbr_links:0.1 -c "$dir"
-    tmux select-layout -t rbr_links "e572,218x84,0,0{108x84,0,0,0,109x84,109,0[109x41,109,0{53x41,109,0,1,55x41,163,0,3},109x42,109,42,2]}"
-    tmux select-pane -t rbr_links:0.0
-    tmux attach-session -t rbr_links
-  else
-    tmux new-window -n rbr_links -c "$dir"
-    tmux split-window -h -p 50 -c "$dir"
-    tmux split-window -v -p 50 -c "$dir"
-    tmux split-window -h -p 50 -t 1 -c "$dir"
-    tmux select-layout "e572,218x84,0,0{108x84,0,0,0,109x84,109,0[109x41,109,0{53x41,109,0,1,55x41,163,0,3},109x42,109,42,2]}"
-    tmux select-pane -t 0
-  fi
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
+    splitw -h -p 40 -c "$dir" \; \
+    splitw -v -p 65 -c "$dir" \; \
+    selectp -t 1 \; \
+    splitw -h -c "$dir" \; \
+    select-layout -E \; \
+    attach -t "$session"
 }
 
 _dvy_list() {
@@ -25,7 +22,7 @@ _dvy_list() {
   echo " Available dvy layouts:"
   echo "-------------------------------------------"
   echo
-  echo "  links_about_chris_hough"
+  echo " dvy links_about_chris_hough"
   echo
   echo "-------------------------------------------"
   echo

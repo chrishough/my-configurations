@@ -7,8 +7,6 @@ install_brew_packages() {
     local packages=(
         "autojump"
         "fzf"
-        "itermocil"
-        "tmuxinator"
         "heroku"
         "postgresql"
         "python"

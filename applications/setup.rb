@@ -1,22 +1,10 @@
 PATHS ||= []
 PATHS.concat([
   {
-    itermocil: [
-      {
-        source: "$HOME/.itermocil",
-        destination: "$HOME/.myconfigurations/applications/itermocil"
-      }
-    ],
     tmux: [
       {
         source: "$HOME/.tmux.conf",
         destination: "$HOME/.myconfigurations/applications/tmux/conf"
-      }
-    ],
-    tmuxinator: [
-      {
-        source: "$HOME/.tmuxinator",
-        destination: "$HOME/.myconfigurations/applications/tmuxinator"
       }
     ],
     vscode: [
