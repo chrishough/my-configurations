@@ -92,6 +92,9 @@ _dvy_list() {
 
 dvy() {
   case "$1" in
+    --kill)
+      tmux kill-server
+      ;;
     --list|-l)
       _dvy_list
       ;;
@@ -150,6 +153,7 @@ dvyhelp() {
   echo " Commands:"
   echo "   dvy <session_name>  Launch a tmux session"
   echo "   dvy --list, -l      List available layouts"
+  echo "   dvy --kill          Kill tmux server"
   echo "   dvy --help, -h      Show this help"
   echo
   echo " Configuration:"
