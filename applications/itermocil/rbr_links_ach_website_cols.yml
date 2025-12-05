@@ -1,9 +1,0 @@
-windows:
-  - name: rbr_links_ach_website_cols
-    root: $HOME/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
-    layout: even-horizontal
-    panes:
-      - commands:
-          - clear
-      - commands:
-          - clear
