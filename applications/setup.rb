@@ -7,6 +7,18 @@ PATHS.concat([
         destination: "$HOME/.myconfigurations/applications/itermocil"
       }
     ],
+    tmux: [
+      {
+        source: "$HOME/.tmux.conf",
+        destination: "$HOME/.myconfigurations/applications/tmux/conf"
+      }
+    ],
+    tmuxinator: [
+      {
+        source: "$HOME/.tmuxinator",
+        destination: "$HOME/.myconfigurations/applications/tmuxinator"
+      }
+    ],
     vscode: [
       {
         source: "$HOME/Library/Application Support/Code/User/settings.json",

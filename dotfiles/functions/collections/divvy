@@ -1,0 +1,47 @@
+_dvy_links_about_chris_hough() {
+  local dir=~/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+
+  if [ -z "$TMUX" ]; then
+    tmux new-session -d -s rbr_links -c "$dir"
+    tmux split-window -h -p 50 -t rbr_links -c "$dir"
+    tmux split-window -v -p 50 -t rbr_links -c "$dir"
+    tmux split-window -h -p 50 -t rbr_links:0.1 -c "$dir"
+    tmux select-layout -t rbr_links "e572,218x84,0,0{108x84,0,0,0,109x84,109,0[109x41,109,0{53x41,109,0,1,55x41,163,0,3},109x42,109,42,2]}"
+    tmux select-pane -t rbr_links:0.0
+    tmux attach-session -t rbr_links
+  else
+    tmux new-window -n rbr_links -c "$dir"
+    tmux split-window -h -p 50 -c "$dir"
+    tmux split-window -v -p 50 -c "$dir"
+    tmux split-window -h -p 50 -t 1 -c "$dir"
+    tmux select-layout "e572,218x84,0,0{108x84,0,0,0,109x84,109,0[109x41,109,0{53x41,109,0,1,55x41,163,0,3},109x42,109,42,2]}"
+    tmux select-pane -t 0
+  fi
+}
+
+_dvy_list() {
+  echo
+  echo "-------------------------------------------"
+  echo " Available dvy layouts:"
+  echo "-------------------------------------------"
+  echo
+  echo "  links_about_chris_hough"
+  echo
+  echo "-------------------------------------------"
+  echo
+}
+
+dvy() {
+  case "$1" in
+    --list|-l)
+      _dvy_list
+      ;;
+    links_about_chris_hough)
+      _dvy_links_about_chris_hough
+      ;;
+    *)
+      echo "Usage: dvy <layout_name> | dvy --list"
+      echo "Run 'dvy --list' to see available layouts."
+      ;;
+  esac
+}

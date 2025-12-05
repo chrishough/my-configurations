@@ -1,0 +1,19 @@
+name: links_about_chris_hough
+root: ~/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+
+# Layout:
+# +--------+----+----+
+# |        | 1  | 2  |
+# |   0    +----+----+
+# |        |    3    |
+# +--------+---------+
+
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        -
+        - tmuxinator start nested_links_about_chris_hough
+        -
+
+

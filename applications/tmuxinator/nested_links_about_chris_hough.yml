@@ -1,0 +1,9 @@
+name: nested_links_about_chris_hough
+root: ~/Career/RobotsBuildingRobots/code/personal-branding/LinksAboutChrisHough
+
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        -
+        -

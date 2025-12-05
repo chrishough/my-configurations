@@ -8,6 +8,7 @@ install_brew_packages() {
         "autojump"
         "fzf"
         "itermocil"
+        "tmuxinator"
         "heroku"
         "postgresql"
         "python"
@@ -17,10 +18,10 @@ install_brew_packages() {
         "zsh-syntax-highlighting"
         "zsh-autosuggestions"
     )
-    
+
     echo "Running brew update..."
     brew update
-    
+
     # Loop through packages and install if not present
     for package in "${packages[@]}"; do
         if brew list --formula | grep -q "^${package}\$"; then
@@ -30,7 +31,7 @@ install_brew_packages() {
             brew install "${package}"
         fi
     done
-    
+
     echo "Running brew update and doctor..."
     brew update
     brew doctor

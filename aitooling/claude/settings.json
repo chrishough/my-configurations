@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "alwaysThinkingEnabled": true,
+  "alwaysThinkingEnabled": false,
   "feedbackSurveyState": {
     "lastShownTime": 1754090209216
   },
@@ -26,7 +26,8 @@
         "**/.aws/config",
         "**/secrets/**",
         "**/*.keystore",
-        "**/*.jks"
+        "**/*.jks",
+        ".myconfigurations.private"
       ]
     },
     "Bash": {
@@ -44,7 +45,8 @@
         "**/less **/.env*",
         "**/more **/.env*",
         "**/vim **/.env*",
-        "**/nano **/.env*"
+        "**/nano **/.env*",
+        ".myconfigurations.private"
       ]
     }
   }
