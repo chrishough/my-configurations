@@ -3,13 +3,13 @@
 
 _DVY_PATHS_FILE="$HOME/.myconfigurations/applications/tmux/paths.json"
 
-# Layout: links
+# Layout: apps
 # +--------+----+----+
 # |        | 1  | 2  |
 # |   0    +----+----+
 # |        |    3    |
 # +--------+---------+
-_dvy_layout_links() {
+_dvy_layout_apps() {
   local session="$1"
   local dir="$2"
 
@@ -83,8 +83,8 @@ dvy() {
       dir="${dir/#\~/$HOME}"
 
       case "$layout" in
-        links)
-          _dvy_layout_links "$session" "$dir"
+        apps)
+          _dvy_layout_apps "$session" "$dir"
           ;;
         *)
           echo "Error: Unknown layout type: $layout"
@@ -110,7 +110,7 @@ dvyhelp() {
   echo "   Paths file: $_DVY_PATHS_FILE"
   echo
   echo " Layout types:"
-  echo "   links    4-pane custom layout"
+  echo "   apps     4-pane custom layout"
   echo
   echo "-------------------------------------------"
   echo
