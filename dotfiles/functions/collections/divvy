@@ -15,7 +15,7 @@ _dvy_layout_apps() {
   local config="$3"
 
   tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
-    splitw -h -p 60 -c "$dir" \; \
+    splitw -h -p 55 -c "$dir" \; \
     splitw -v -p 65 -c "$dir" \; \
     selectp -t 1 \; \
     splitw -h -c "$dir" \; \
@@ -50,7 +50,7 @@ _dvy_layout_configurations() {
   local config="$3"
 
   tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
-    splitw -h -p 60 -c "$dir" \; \
+    splitw -h -p 55 -c "$dir" \; \
     splitw -v -p 75 -c "$dir" \; \
     splitw -v -p 66 -c "$dir" \; \
     splitw -v -p 50 -c "$dir" \; \
