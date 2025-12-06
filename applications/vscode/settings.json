@@ -102,6 +102,7 @@
 		"terminal.ansiYellow": "#ffc66d",
 		"terminal.background": "#000000",
 		"window.activeBorder": "#FF1728"
-	}
+	},
+	"workbench.preferredHighContrastColorTheme": "RailsCasts Plus Theme"
 	// -------------------------------------------------------------------
 }
