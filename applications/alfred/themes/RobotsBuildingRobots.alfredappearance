@@ -22,12 +22,13 @@
         "color" : "#6E673DFF"
       },
       "iconPaddingHorizontal" : 4,
+      "roundness" : 0,
       "paddingVertical" : 0,
       "iconSize" : 57
     },
     "search" : {
-      "paddingVertical" : 2,
-      "background" : "#D0C170FF",
+      "backgroundSelected" : "#B2D7FFFF",
+      "paddingHorizontal" : 8,
       "spacing" : 10,
       "text" : {
         "size" : 50,
@@ -35,7 +36,9 @@
         "font" : "Helvetica Neue",
         "color" : "#312D1BFF"
       },
-      "backgroundSelected" : "#B2D7FFFF"
+      "background" : "#D0C170FF",
+      "roundness" : 0,
+      "paddingVertical" : 2
     },
     "window" : {
       "color" : "#FAECB3FF",
@@ -56,6 +59,6 @@
       "color" : "#D1C271FF",
       "thickness" : 3
     },
-    "name" : "Hough.Studio"
+    "name" : "RobotsBuildingRobots"
   }
 }

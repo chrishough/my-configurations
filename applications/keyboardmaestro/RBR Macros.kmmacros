@@ -6,308 +6,25 @@
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>Application</key>
-									<dict>
-										<key>BundleIdentifier</key>
-										<string>com.spotify.client</string>
-										<key>Name</key>
-										<string>Spotify</string>
-										<key>NewFile</key>
-										<string>/Applications/Spotify.app</string>
-									</dict>
-									<key>ApplicationConditionType</key>
-									<string>Running</string>
-									<key>ConditionType</key>
-									<string>Application</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>ElseActions</key>
-						<array>
-							<dict>
-								<key>Argument</key>
-								<string></string>
-								<key>Command</key>
-								<string>BackTrack</string>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>iTunesControl</string>
-							</dict>
-						</array>
+						<key>ActionUID</key>
+						<integer>438</integer>
+						<key>HardwareKey</key>
+						<string>PLAY</string>
 						<key>MacroActionType</key>
-						<string>IfThenElse</string>
-						<key>ThenActions</key>
-						<array>
-							<dict>
-								<key>KeyCode</key>
-								<integer>123</integer>
-								<key>MacroActionType</key>
-								<string>SimulateKeystroke</string>
-								<key>Modifiers</key>
-								<integer>256</integer>
-								<key>ReleaseAll</key>
-								<false/>
-								<key>TargetApplication</key>
-								<dict>
-									<key>BundleIdentifier</key>
-									<string>com.spotify.client</string>
-									<key>Name</key>
-									<string>Spotify</string>
-									<key>NewFile</key>
-									<string>/Applications/Spotify.app</string>
-								</dict>
-								<key>TargetingType</key>
-								<string>Specific</string>
-							</dict>
-						</array>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
+						<string>SimulateHardwareKey</string>
 					</dict>
 				</array>
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>622243078.86135697</real>
-				<key>Name</key>
-				<string>Previous Track</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>98</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>C6D65586-17ED-48D8-B7B4-4E999B331A2C</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>RBR</string>
-		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
-		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>567795789.58685505</real>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>Application</key>
-									<dict>
-										<key>BundleIdentifier</key>
-										<string>com.spotify.client</string>
-										<key>Name</key>
-										<string>Spotify</string>
-										<key>NewFile</key>
-										<string>/Applications/Spotify.app</string>
-									</dict>
-									<key>ApplicationConditionType</key>
-									<string>Running</string>
-									<key>ConditionType</key>
-									<string>Application</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>ElseActions</key>
-						<array>
-							<dict>
-								<key>Argument</key>
-								<string></string>
-								<key>Command</key>
-								<string>NextTrack</string>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>iTunesControl</string>
-							</dict>
-						</array>
-						<key>MacroActionType</key>
-						<string>IfThenElse</string>
-						<key>ThenActions</key>
-						<array>
-							<dict>
-								<key>KeyCode</key>
-								<integer>124</integer>
-								<key>MacroActionType</key>
-								<string>SimulateKeystroke</string>
-								<key>Modifiers</key>
-								<integer>256</integer>
-								<key>ReleaseAll</key>
-								<false/>
-								<key>TargetApplication</key>
-								<dict>
-									<key>BundleIdentifier</key>
-									<string>com.spotify.client</string>
-									<key>Name</key>
-									<string>Spotify</string>
-									<key>NewFile</key>
-									<string>/Applications/Spotify.app</string>
-								</dict>
-								<key>TargetingType</key>
-								<string>Specific</string>
-							</dict>
-						</array>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>459703999.76049101</real>
-				<key>ModificationDate</key>
-				<real>622243075.65534306</real>
-				<key>Name</key>
-				<string>Next Track</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>101</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>F8650119-4651-4E58-AEA3-516FCA935AC7</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>RBR</string>
-		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
-		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>567795789.58685505</real>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>Application</key>
-									<dict>
-										<key>BundleIdentifier</key>
-										<string>com.spotify.client</string>
-										<key>Name</key>
-										<string>Spotify</string>
-										<key>NewFile</key>
-										<string>/Applications/Spotify.app</string>
-									</dict>
-									<key>ApplicationConditionType</key>
-									<string>Running</string>
-									<key>ConditionType</key>
-									<string>Application</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>ElseActions</key>
-						<array>
-							<dict>
-								<key>KeyCode</key>
-								<integer>49</integer>
-								<key>MacroActionType</key>
-								<string>SimulateKeystroke</string>
-								<key>Modifiers</key>
-								<integer>0</integer>
-								<key>ReleaseAll</key>
-								<false/>
-								<key>TargetApplication</key>
-								<dict>
-									<key>BundleIdentifier</key>
-									<string>com.apple.Music</string>
-									<key>Name</key>
-									<string>Music</string>
-									<key>NewFile</key>
-									<string>/System/Applications/Music.app</string>
-								</dict>
-								<key>TargetingType</key>
-								<string>Specific</string>
-							</dict>
-						</array>
-						<key>MacroActionType</key>
-						<string>IfThenElse</string>
-						<key>ThenActions</key>
-						<array>
-							<dict>
-								<key>KeyCode</key>
-								<integer>49</integer>
-								<key>MacroActionType</key>
-								<string>SimulateKeystroke</string>
-								<key>Modifiers</key>
-								<integer>0</integer>
-								<key>ReleaseAll</key>
-								<false/>
-								<key>TargetApplication</key>
-								<dict>
-									<key>BundleIdentifier</key>
-									<string>com.spotify.client</string>
-									<key>Name</key>
-									<string>Spotify</string>
-									<key>NewFile</key>
-									<string>/Applications/Spotify.app</string>
-								</dict>
-								<key>TargetingType</key>
-								<string>Specific</string>
-							</dict>
-						</array>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>459703999.76049101</real>
-				<key>ModificationDate</key>
-				<real>622243037.48313701</real>
+				<real>657664093.85260904</real>
 				<key>Name</key>
 				<string>Play or Pause</string>
 				<key>Triggers</key>
@@ -324,72 +41,112 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>02B22387-88D2-4CC9-97ED-2BE0468B3FA5</string>
+				<string>EE664654-0F0E-424D-8267-EA044EBA4A20</string>
 			</dict>
 		</array>
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
-						<key>Action</key>
-						<string>Click</string>
-						<key>Button</key>
-						<integer>0</integer>
-						<key>ClickCount</key>
-						<integer>1</integer>
-						<key>DisplayMatches</key>
-						<false/>
-						<key>DragHorizontalPosition</key>
-						<string>0</string>
-						<key>DragVerticalPosition</key>
-						<string>0</string>
-						<key>Fuzz</key>
-						<integer>15</integer>
-						<key>HorizontalPositionExpression</key>
-						<string>1165</string>
+						<key>ActionUID</key>
+						<integer>810</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>Application</key>
+									<dict>
+										<key>BundleIdentifier</key>
+										<string>com.spotify.client</string>
+										<key>Name</key>
+										<string>Spotify</string>
+										<key>NewFile</key>
+										<string>/Applications/Spotify.app</string>
+									</dict>
+									<key>ApplicationConditionType</key>
+									<string>Running</string>
+									<key>ConditionType</key>
+									<string>Application</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>41</integer>
+								<key>Argument</key>
+								<string></string>
+								<key>Command</key>
+								<string>NextTrack</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>iTunesControl</string>
+							</dict>
+						</array>
 						<key>MacroActionType</key>
-						<string>MouseMoveAndClick</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-						<key>MouseDrag</key>
-						<string>None</string>
-						<key>Relative</key>
-						<string>Screen</string>
-						<key>RelativeCorner</key>
-						<string>TopLeft</string>
-						<key>RestoreMouseLocation</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>814</integer>
+								<key>KeyCode</key>
+								<integer>124</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>196864</integer>
+								<key>ReleaseAll</key>
+								<false/>
+								<key>TargetApplication</key>
+								<dict>
+									<key>BundleIdentifier</key>
+									<string>com.spotify.client</string>
+									<key>Name</key>
+									<string>Spotify</string>
+									<key>NewFile</key>
+									<string>/Applications/Spotify.app</string>
+								</dict>
+								<key>TargetingType</key>
+								<string>Specific</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
 						<true/>
-						<key>VerticalPositionExpression</key>
-						<string>14</string>
 					</dict>
 				</array>
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>627065896.44361305</real>
+				<real>658600871.76079798</real>
 				<key>Name</key>
-				<string>Launch Weather</string>
+				<string>Next Track</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>118</integer>
+						<integer>101</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -397,72 +154,112 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>C38FBFE4-8583-45E7-8095-C4D9CD1020B7</string>
+				<string>3659892A-A9B1-4D8D-A8EF-F8BF7A64D319</string>
 			</dict>
 		</array>
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
-						<key>Action</key>
-						<string>Click</string>
-						<key>Button</key>
-						<integer>0</integer>
-						<key>ClickCount</key>
-						<integer>1</integer>
-						<key>DisplayMatches</key>
-						<false/>
-						<key>DragHorizontalPosition</key>
-						<string>0</string>
-						<key>DragVerticalPosition</key>
-						<string>0</string>
-						<key>Fuzz</key>
-						<integer>15</integer>
-						<key>HorizontalPositionExpression</key>
-						<string>1265</string>
+						<key>ActionUID</key>
+						<integer>1185</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>Application</key>
+									<dict>
+										<key>BundleIdentifier</key>
+										<string>com.spotify.client</string>
+										<key>Name</key>
+										<string>Spotify</string>
+										<key>NewFile</key>
+										<string>/Applications/Spotify.app</string>
+									</dict>
+									<key>ApplicationConditionType</key>
+									<string>Running</string>
+									<key>ConditionType</key>
+									<string>Application</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>50</integer>
+								<key>Argument</key>
+								<string></string>
+								<key>Command</key>
+								<string>BackTrack</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>iTunesControl</string>
+							</dict>
+						</array>
 						<key>MacroActionType</key>
-						<string>MouseMoveAndClick</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-						<key>MouseDrag</key>
-						<string>None</string>
-						<key>Relative</key>
-						<string>Screen</string>
-						<key>RelativeCorner</key>
-						<string>TopLeft</string>
-						<key>RestoreMouseLocation</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>1186</integer>
+								<key>KeyCode</key>
+								<integer>123</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>196864</integer>
+								<key>ReleaseAll</key>
+								<false/>
+								<key>TargetApplication</key>
+								<dict>
+									<key>BundleIdentifier</key>
+									<string>com.spotify.client</string>
+									<key>Name</key>
+									<string>Spotify</string>
+									<key>NewFile</key>
+									<string>/Applications/Spotify.app</string>
+								</dict>
+								<key>TargetingType</key>
+								<string>Specific</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
 						<true/>
-						<key>VerticalPositionExpression</key>
-						<string>15</string>
 					</dict>
 				</array>
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>627065960.03230405</real>
+				<real>658600917.01936197</real>
 				<key>Name</key>
-				<string>Launch Control Center</string>
+				<string>Previous Track</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>96</integer>
+						<integer>98</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -470,48 +267,50 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>4F848F4F-C129-431A-8E13-85D20D0A2F35</string>
+				<string>20E00B60-A6F9-4F2B-B39E-066B454D41A5</string>
 			</dict>
 		</array>
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
+						<key>ActionUID</key>
+						<integer>38</integer>
 						<key>IsDisclosed</key>
 						<false/>
 						<key>MacroActionType</key>
 						<string>SystemAction</string>
 						<key>SystemAction</key>
-						<string>IncreaseVolume</string>
+						<string>MuteVolume</string>
 					</dict>
 				</array>
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>425353551.97717702</real>
+				<real>425353750.93423802</real>
 				<key>Name</key>
-				<string>Increase Volume</string>
+				<string>Mute Volume</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>111</integer>
+						<integer>109</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -519,100 +318,29 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>79FD1C37-5D4B-404B-8F87-B0C21063CEE9</string>
+				<string>AC52B7DA-1FE6-4148-853C-A98E6DF98116</string>
 			</dict>
 		</array>
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
-						<key>Action</key>
-						<string>Click</string>
-						<key>Button</key>
-						<integer>0</integer>
-						<key>ClickCount</key>
-						<integer>1</integer>
-						<key>DisplayMatches</key>
-						<false/>
-						<key>DragHorizontalPosition</key>
-						<string>0</string>
-						<key>DragVerticalPosition</key>
-						<string>0</string>
-						<key>Fuzz</key>
-						<integer>15</integer>
-						<key>HorizontalPositionExpression</key>
-						<string>1350</string>
-						<key>MacroActionType</key>
-						<string>MouseMoveAndClick</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-						<key>MouseDrag</key>
-						<string>None</string>
-						<key>Relative</key>
-						<string>Screen</string>
-						<key>RelativeCorner</key>
-						<string>TopLeft</string>
-						<key>RestoreMouseLocation</key>
-						<true/>
-						<key>VerticalPositionExpression</key>
-						<string>15</string>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>459703999.76049101</real>
-				<key>ModificationDate</key>
-				<real>627065938.33749998</real>
-				<key>Name</key>
-				<string>Launch Calendar</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>99</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>5FA73303-7D80-43B3-A965-904F4DAB15AE</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>RBR</string>
-		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
-		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>567795789.58685505</real>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
+						<key>ActionUID</key>
+						<integer>33</integer>
 						<key>IsDisclosed</key>
 						<false/>
 						<key>MacroActionType</key>
@@ -647,42 +375,68 @@
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
-						<key>IsDisclosed</key>
+						<key>Action</key>
+						<string>Click</string>
+						<key>ActionUID</key>
+						<integer>37</integer>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
 						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>3596</string>
 						<key>MacroActionType</key>
-						<string>SystemAction</string>
-						<key>SystemAction</key>
-						<string>MuteVolume</string>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>14</string>
 					</dict>
 				</array>
 				<key>CreationDate</key>
 				<real>459703999.76049101</real>
 				<key>ModificationDate</key>
-				<real>627065985.42764401</real>
+				<real>785656076.62960601</real>
 				<key>Name</key>
-				<string>Mute</string>
+				<string>Launch Weather</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>109</integer>
+						<integer>96</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -690,27 +444,230 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>AC52B7DA-1FE6-4148-853C-A98E6DF98116</string>
+				<string>C38FBFE4-8583-45E7-8095-C4D9CD1020B7</string>
 			</dict>
 		</array>
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
+						<key>Action</key>
+						<string>Click</string>
+						<key>ActionUID</key>
+						<integer>1576</integer>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>3630</string>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>14</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>747351601.77269995</real>
+				<key>ModificationDate</key>
+				<real>785656046.63729</real>
+				<key>Name</key>
+				<string>Launch Menu Calendar</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>118</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>ED5C76E9-CB83-404E-8DF8-47246A494A15</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>RBR</string>
+		<key>ToggleMacroUID</key>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
+		<key>UID</key>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567626526.04352701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>Click</string>
+						<key>ActionUID</key>
+						<integer>35</integer>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>3800</string>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>15</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>459703999.76049101</real>
+				<key>ModificationDate</key>
+				<real>785656008.59231699</real>
+				<key>Name</key>
+				<string>Launch Control Center</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>99</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>5FA73303-7D80-43B3-A965-904F4DAB15AE</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>RBR</string>
+		<key>ToggleMacroUID</key>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
+		<key>UID</key>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567626526.04352701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>34</integer>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SystemAction</string>
+						<key>SystemAction</key>
+						<string>IncreaseVolume</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>459703999.76049101</real>
+				<key>ModificationDate</key>
+				<real>425353551.97717702</real>
+				<key>Name</key>
+				<string>Increase Volume</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>111</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>79FD1C37-5D4B-404B-8F87-B0C21063CEE9</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>RBR</string>
+		<key>ToggleMacroUID</key>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
+		<key>UID</key>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567626526.04352701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>32</integer>
 						<key>IsDisclosed</key>
 						<false/>
 						<key>MacroActionType</key>
@@ -745,21 +702,98 @@
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>567795789.58685505</real>
+		<real>567626526.04352701</real>
 		<key>Macros</key>
 		<array>
 			<dict>
 				<key>Actions</key>
 				<array>
 					<dict>
+						<key>Action</key>
+						<string>Click</string>
+						<key>ActionUID</key>
+						<integer>36</integer>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>2915</string>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>15</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>459703999.76049101</real>
+				<key>ModificationDate</key>
+				<real>748793695.95771897</real>
+				<key>Name</key>
+				<string>Launch Memory</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>97</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>4F848F4F-C129-431A-8E13-85D20D0A2F35</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>RBR</string>
+		<key>ToggleMacroUID</key>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
+		<key>UID</key>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567626526.04352701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>31</integer>
 						<key>IsDisclosed</key>
 						<false/>
 						<key>MacroActionType</key>
@@ -794,9 +828,9 @@
 		<key>Name</key>
 		<string>RBR</string>
 		<key>ToggleMacroUID</key>
-		<string>731CD09F-7319-44C3-A012-E13156979084</string>
+		<string>DE7ECC07-8A34-4C12-BF6B-7279BEBF7CEB</string>
 		<key>UID</key>
-		<string>5AF00E32-8E9A-4DC3-89C3-0ACFAA11235D</string>
+		<string>876856B6-6F6A-4CCD-BE97-5FFA00D46F5E</string>
 	</dict>
 </array>
 </plist>
