@@ -87,6 +87,18 @@ _dvy_list() {
 
   echo
   echo "-------------------------------------------"
+  echo " Active tmux sessions:"
+  echo "-------------------------------------------"
+  echo
+
+  if tmux list-sessions 2>/dev/null; then
+    :
+  else
+    echo " No active sessions."
+  fi
+
+  echo
+  echo "-------------------------------------------"
   echo
 }
 
