@@ -103,58 +103,100 @@ _dvy_list() {
 }
 
 dvy() {
+  local flag=""
+  local session=""
+
+  # Parse arguments
   case "$1" in
     --kill)
       tmux kill-server 2>/dev/null || echo "\nNo server running my friend!\n"
+      return
       ;;
     --list|-l)
       _dvy_list
+      return
       ;;
     --help|-h)
       dvyhelp
+      return
       ;;
     "")
-      echo "Usage: dvy <session_name> | dvy --list"
+      echo "Usage: dvy <session_name> | dvy -a <session> | dvy -d <session>"
       echo "Run 'dvy --list' to see available layouts."
+      return
+      ;;
+    -a|-d)
+      flag="$1"
+      session="$2"
+      if [[ -z "$session" ]]; then
+        echo "Error: Session name required."
+        echo "Usage: dvy $flag <session_name>"
+        return 1
+      fi
       ;;
     *)
-      if [[ ! -f "$_DVY_PATHS_FILE" ]]; then
-        echo "Error: Paths file not found: $_DVY_PATHS_FILE"
-        return 1
-      fi
+      session="$1"
+      ;;
+  esac
 
-      local session="$1"
-      local config
-      config=$(jq -r --arg s "$session" '.[$s] // empty' "$_DVY_PATHS_FILE")
+  # Handle -a (attach) flag
+  if [[ "$flag" == "-a" ]]; then
+    if tmux has-session -t "$session" 2>/dev/null; then
+      tmux attach -t "$session"
+    else
+      echo "Error: Session '$session' does not exist."
+      echo "Run 'dvy --list' to see active sessions."
+      return 1
+    fi
+    return
+  fi
 
-      if [[ -z "$config" ]]; then
-        echo "Error: Layout '$session' not found."
-        echo "Run 'dvy --list' to see available layouts."
-        return 1
-      fi
+  # Handle -d (delete) flag
+  if [[ "$flag" == "-d" ]]; then
+    if tmux has-session -t "$session" 2>/dev/null; then
+      tmux kill-session -t "$session"
+      echo "Session '$session' killed."
+    else
+      echo "Error: Session '$session' does not exist."
+    fi
+    return
+  fi
 
-      local layout dir
-      layout=$(echo "$config" | jq -r '.layout')
-      dir=$(echo "$config" | jq -r '.dir')
+  # Default: create new session
+  if [[ ! -f "$_DVY_PATHS_FILE" ]]; then
+    echo "Error: Paths file not found: $_DVY_PATHS_FILE"
+    return 1
+  fi
 
-      # Expand ~ to $HOME
-      dir="${dir/#\~/$HOME}"
+  local config
+  config=$(jq -r --arg s "$session" '.[$s] // empty' "$_DVY_PATHS_FILE")
 
-      # Kill existing session if it exists
-      tmux kill-session -t "$session" 2>/dev/null
+  if [[ -z "$config" ]]; then
+    echo "Error: Layout '$session' not found."
+    echo "Run 'dvy --list' to see available layouts."
+    return 1
+  fi
 
-      case "$layout" in
-        apps)
-          _dvy_layout_apps "$session" "$dir" "$config"
-          ;;
-        configurations)
-          _dvy_layout_configurations "$session" "$dir" "$config"
-          ;;
-        *)
-          echo "Error: Unknown layout type: $layout"
-          return 1
-          ;;
-      esac
+  local layout dir
+  layout=$(echo "$config" | jq -r '.layout')
+  dir=$(echo "$config" | jq -r '.dir')
+
+  # Expand ~ to $HOME
+  dir="${dir/#\~/$HOME}"
+
+  # Kill existing session if it exists
+  tmux kill-session -t "$session" 2>/dev/null
+
+  case "$layout" in
+    apps)
+      _dvy_layout_apps "$session" "$dir" "$config"
+      ;;
+    configurations)
+      _dvy_layout_configurations "$session" "$dir" "$config"
+      ;;
+    *)
+      echo "Error: Unknown layout type: $layout"
+      return 1
       ;;
   esac
 }
@@ -166,8 +208,10 @@ dvyhelp() {
   echo "-------------------------------------------"
   echo
   echo " Commands:"
-  echo "   dvy <session_name>  Launch a tmux session"
-  echo "   dvy --list, -l      List available layouts"
+  echo "   dvy <session_name>  Launch a tmux session (kills existing)"
+  echo "   dvy -a <session>    Attach to existing session"
+  echo "   dvy -d <session>    Delete/kill a session"
+  echo "   dvy --list, -l      List available layouts and active sessions"
   echo "   dvy --kill          Kill tmux server"
   echo "   dvy --help, -h      Show this help"
   echo
