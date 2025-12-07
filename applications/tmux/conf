@@ -3,3 +3,6 @@ set -g mouse on
 # This is the only important part — copies to macOS clipboard, no warning
 bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
 bind-key -T copy-mode-vi Y send-keys -X copy-pipe-and-cancel "pbcopy"
+
+# Clear screen and scrollback
+bind -n C-k send-keys -R \; clear-history
