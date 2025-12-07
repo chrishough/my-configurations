@@ -140,6 +140,9 @@ dvy() {
       # Expand ~ to $HOME
       dir="${dir/#\~/$HOME}"
 
+      # Kill existing session if it exists
+      tmux kill-session -t "$session" 2>/dev/null
+
       case "$layout" in
         apps)
           _dvy_layout_apps "$session" "$dir" "$config"
