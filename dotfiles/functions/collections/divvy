@@ -219,8 +219,24 @@ dvyhelp() {
   echo "   Paths file: $_DVY_PATHS_FILE"
   echo
   echo " Layout types:"
-  echo "   apps            4-pane custom layout"
-  echo "   configurations  5-pane left column + 4 stacked rows"
+  echo
+  echo "   apps - 4-pane layout"
+  echo "   +--------+----+----+"
+  echo "   |        | 1  | 2  |"
+  echo "   |   0    +----+----+"
+  echo "   |        |    3    |"
+  echo "   +--------+---------+"
+  echo
+  echo "   configurations - 5-pane layout"
+  echo "   +--------+---------+"
+  echo "   |        |    1    |"
+  echo "   |        +---------+"
+  echo "   |   0    |    2    |"
+  echo "   |        +---------+"
+  echo "   |        |    3    |"
+  echo "   |        +---------+"
+  echo "   |        |    4    |"
+  echo "   +--------+---------+"
   echo
   echo "-------------------------------------------"
   echo
