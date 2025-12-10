@@ -11,3 +11,5 @@ bind-key -T copy-mode-vi Y send-keys -X copy-pipe-and-cancel "pbcopy"
 # Clear screen and scrollback
 bind -n C-k send-keys -R \; clear-history
 bind -n C-l send-keys C-l \; clear-history
+# Make Cmd+K clear screen + scrollback exactly like native iTerm2
+bind-key -n M-k send-keys C-l \; clear-history
