@@ -3,6 +3,19 @@
 
 _DVY_PATHS_FILE="$HOME/.myconfigurations/applications/tmux/paths.json"
 
+_dvy_next_session_name() {
+  local base="$1"
+  if ! tmux has-session -t "$base" 2>/dev/null; then
+    echo "$base"
+    return
+  fi
+  local i=2
+  while tmux has-session -t "${base}_${i}" 2>/dev/null; do
+    ((i++))
+  done
+  echo "${base}_${i}"
+}
+
 # Layout: apps
 # +--------+----+----+
 # |        | 1  | 2  |
@@ -184,8 +197,8 @@ dvy() {
   # Expand ~ to $HOME
   dir="${dir/#\~/$HOME}"
 
-  # Kill existing session if it exists
-  tmux kill-session -t "$session" 2>/dev/null
+  # Get next available session name (auto-suffix if exists)
+  session=$(_dvy_next_session_name "$session")
 
   case "$layout" in
     apps)
@@ -208,7 +221,7 @@ dvyhelp() {
   echo "-------------------------------------------"
   echo
   echo " Commands:"
-  echo "   dvy <session_name>  Launch a tmux session (kills existing)"
+  echo "   dvy <session_name>  Launch a tmux session (auto-suffixes if exists)"
   echo "   dvy -a <session>    Attach to existing session"
   echo "   dvy -d <session>    Delete/kill a session"
   echo "   dvy --list, -l      List available layouts and active sessions"
