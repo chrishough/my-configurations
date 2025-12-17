@@ -16,7 +16,7 @@ alias dkrcps="docker compose ps"
 alias dkrclogs="docker compose logs postgres"
 
 
-function rubyhelp () {
+function dkrhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
 	echo
