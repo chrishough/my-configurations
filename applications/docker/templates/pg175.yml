@@ -8,7 +8,7 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - pg175_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -16,4 +16,4 @@ services:
       retries: 5
 
 volumes:
-  postgres_data:
+  pg175_data:

@@ -1,14 +1,14 @@
 services:
   postgres:
     image: postgres:16.9
-    container_name: pg169_postgres
+    container_name: pg169
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - pg169_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -16,4 +16,4 @@ services:
       retries: 5
 
 volumes:
-  postgres_data:
+  pg169_data:
