@@ -15,7 +15,7 @@ export BROWSER='open -a /Applications/Google Chrome.app'
 export EDITOR=vim
 
 # IMPORT FUNCTIONS GROUPS
-_myconfig_modules=(ror git brew python pg heroku js shell divvy)
+_myconfig_modules=(ror docker git brew python pg heroku js shell divvy)
 
 for _module in "${_myconfig_modules[@]}"; do
   source "$HOME/.myconfigurations/dotfiles/functions/collections/$_module"

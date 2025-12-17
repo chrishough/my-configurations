@@ -8,7 +8,6 @@ install_brew_packages() {
         "autojump"
         "fzf"
         "heroku"
-        "postgresql"
         "python"
         "ruby"
         "zsh"
