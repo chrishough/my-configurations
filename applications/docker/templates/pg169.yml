@@ -24,4 +24,4 @@ volumes:
 configs:
   init_sql:
     content: |
-      CREATE ROLE christopherhough WITH LOGIN SUPERUSER CREATEDB CREATEROLE;
+      CREATE ROLE ${USER} WITH LOGIN SUPERUSER CREATEDB CREATEROLE;
