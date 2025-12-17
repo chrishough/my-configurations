@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:16.9
-    container_name: pg169_redis_elasticsearch
+    container_name: pg169_postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
