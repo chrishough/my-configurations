@@ -27,6 +27,12 @@ function dkrstopall() {
   echo "All containers stopped."
 }
 
+# Remove all containers (stopped and running)
+function dkrrmall() {
+  docker rm -f $(docker ps -aq) 2>/dev/null
+  echo "All containers removed."
+}
+
 # Templates directory
 _DOCKER_TEMPLATES="$HOME/.myconfigurations/applications/docker/templates"
 
@@ -82,6 +88,7 @@ function dkrhelp () {
   echo "  pg175       = connect to PG 17.5 through psql"
   echo "  pg169       = connect to PG 16.9 through psql"
   echo "  dkrstopall  = stop all running containers"
+  echo "  dkrrmall    = remove all containers (stopped and running)"
   echo
   echo "  Templates (in ~/.myconfigurations/applications/docker/templates):"
   echo "  dkrup <svc>   = start service(s) from templates (e.g., dkrup pg175 redis7)"
