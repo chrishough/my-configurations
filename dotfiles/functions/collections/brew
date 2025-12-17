@@ -33,7 +33,7 @@ function bsr() {
 
 function bsx() {
   brew services stop opensearch
-  brew services stop mongodb-community
+  brew services stop postgresql
   brew services stop redis
   bsc
   bsl

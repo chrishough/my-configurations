@@ -1,0 +1,31 @@
+#!/bin/zsh
+
+
+alias dkr="docker"
+
+# Start the database
+alias dkrcu="docker compose up -d"
+
+# Stop it when done
+alias dkrcd="docker compose down"
+
+# Check status
+alias dkrcps="docker compose ps"
+
+# View logs if something's wrong"
+alias dkrclogs="docker compose logs postgres"
+
+
+function rubyhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+	echo
+  echo "  dkr         = docker"
+  echo "  dkrcu       = docker compose up -d"
+  echo "  dkrcd       = docker compose down"
+  echo "  dkrcps      = docker compose ps"
+  echo "  dkrclogs    = docker compose logs postgres"
+	echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}
