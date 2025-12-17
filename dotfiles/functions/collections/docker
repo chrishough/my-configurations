@@ -27,10 +27,53 @@ function dkrstopall() {
   echo "All containers stopped."
 }
 
+# Templates directory
+_DOCKER_TEMPLATES="$HOME/.myconfigurations/applications/docker/templates"
+
+# Start one or more services from templates
+# Usage: dkrup pg175 redis7 opensearch1315
+function dkrup() {
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: dkrup <service> [service...]"
+    echo "Available services:"
+    ls -1 "$_DOCKER_TEMPLATES"/*.yml 2>/dev/null | xargs -n1 basename | sed 's/\.yml$//'
+    return 1
+  fi
+
+  for service in "$@"; do
+    local template="$_DOCKER_TEMPLATES/${service}.yml"
+    if [[ -f "$template" ]]; then
+      echo "Starting $service..."
+      docker compose -f "$template" up -d
+    else
+      echo "Template not found: $template"
+    fi
+  done
+}
+
+# Stop one or more services from templates
+# Usage: dkrdown pg175 redis7
+function dkrdown() {
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: dkrdown <service> [service...]"
+    return 1
+  fi
+
+  for service in "$@"; do
+    local template="$_DOCKER_TEMPLATES/${service}.yml"
+    if [[ -f "$template" ]]; then
+      echo "Stopping $service..."
+      docker compose -f "$template" down
+    else
+      echo "Template not found: $template"
+    fi
+  done
+}
+
 function dkrhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
-	echo
+  echo
   echo "  dkr         = docker"
   echo "  dkrcu       = docker compose up -d"
   echo "  dkrcd       = docker compose down"
@@ -39,7 +82,11 @@ function dkrhelp () {
   echo "  pg175       = connect to PG 17.5 through psql"
   echo "  pg169       = connect to PG 16.9 through psql"
   echo "  dkrstopall  = stop all running containers"
-	echo
+  echo
+  echo "  Templates (in ~/.myconfigurations/applications/docker/templates):"
+  echo "  dkrup <svc>   = start service(s) from templates (e.g., dkrup pg175 redis7)"
+  echo "  dkrdown <svc> = stop service(s) from templates (e.g., dkrdown pg175)"
+  echo
   echo "--------------------------------------------------------------------------------"
   echo
 }
