@@ -27,6 +27,7 @@ function dkrhelp () {
   echo "  dkrcd       = docker compose down"
   echo "  dkrcps      = docker compose ps"
   echo "  dkrclogs    = docker compose logs postgres"
+  echo "  pg175       = connect to PG 17.5 through psql"
 	echo
   echo "--------------------------------------------------------------------------------"
   echo
