@@ -18,6 +18,12 @@ alias dkrclogs="docker compose logs postgres"
 # Connect to PG 17.5 via psql
 alias pg175="docker exec -it pg175 psql -U postgres"
 
+# Stop all running containers
+function dkrstopall() {
+  docker stop $(docker ps -q) 2>/dev/null
+  echo "All containers stopped."
+}
+
 function dkrhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
@@ -28,6 +34,7 @@ function dkrhelp () {
   echo "  dkrcps      = docker compose ps"
   echo "  dkrclogs    = docker compose logs postgres"
   echo "  pg175       = connect to PG 17.5 through psql"
+  echo "  dkrstopall  = stop all running containers"
 	echo
   echo "--------------------------------------------------------------------------------"
   echo
