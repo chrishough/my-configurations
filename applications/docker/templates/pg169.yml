@@ -4,11 +4,14 @@ services:
     container_name: pg169
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
     ports:
       - "5432:5432"
     volumes:
       - pg169_data:/var/lib/postgresql/data
+    configs:
+      - source: init_sql
+        target: /docker-entrypoint-initdb.d/init.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -17,3 +20,8 @@ services:
 
 volumes:
   pg169_data:
+
+configs:
+  init_sql:
+    content: |
+      CREATE ROLE christopherhough WITH LOGIN SUPERUSER CREATEDB CREATEROLE;
