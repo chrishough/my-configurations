@@ -44,7 +44,7 @@ function dkrup() {
     local template="$_DOCKER_TEMPLATES/${service}.yml"
     if [[ -f "$template" ]]; then
       echo "Starting $service..."
-      docker compose -f "$template" up -d
+      docker compose -p "$service" -f "$template" up -d
     else
       echo "Template not found: $template"
     fi
@@ -63,7 +63,7 @@ function dkrdown() {
     local template="$_DOCKER_TEMPLATES/${service}.yml"
     if [[ -f "$template" ]]; then
       echo "Stopping $service..."
-      docker compose -f "$template" down
+      docker compose -p "$service" -f "$template" down
     else
       echo "Template not found: $template"
     fi
