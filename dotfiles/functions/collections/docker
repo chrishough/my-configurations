@@ -33,6 +33,48 @@ function dkrrmall() {
   echo "All containers removed."
 }
 
+# Interactive container stop - select which containers to stop
+function dkrselstop() {
+  local containers=($(docker ps --format '{{.Names}}'))
+
+  if [[ ${#containers[@]} -eq 0 ]]; then
+    echo "No running containers."
+    return 0
+  fi
+
+  # Use fzf if available, otherwise fall back to select
+  if command -v fzf &>/dev/null; then
+    local selected=$(printf '%s\n' "${containers[@]}" | fzf --multi --header="Select containers to stop (TAB to multi-select, ENTER to confirm)")
+    if [[ -n "$selected" ]]; then
+      echo "$selected" | while read -r name; do
+        echo "Stopping $name..."
+        docker stop "$name"
+      done
+    fi
+  else
+    echo "Running containers:"
+    echo
+    local i=1
+    for c in "${containers[@]}"; do
+      echo "  $i) $c"
+      ((i++))
+    done
+    echo
+    echo "Enter numbers to stop (space-separated), or 'q' to quit:"
+    read -r selection
+
+    [[ "$selection" == "q" ]] && return 0
+
+    for num in ${=selection}; do
+      if [[ "$num" =~ ^[0-9]+$ ]] && (( num >= 1 && num <= ${#containers[@]} )); then
+        local name="${containers[$num]}"
+        echo "Stopping $name..."
+        docker stop "$name"
+      fi
+    done
+  fi
+}
+
 # Templates directory
 _DOCKER_TEMPLATES="$HOME/.myconfigurations/applications/docker/templates"
 
@@ -89,6 +131,7 @@ function dkrhelp () {
   echo "  pg169       = connect to PG 16.9 through psql"
   echo "  dkrstopall  = stop all running containers"
   echo "  dkrrmall    = remove all containers (stopped and running)"
+  echo "  dkrselstop  = interactive select containers to stop"
   echo
   echo "  Templates (in ~/.myconfigurations/applications/docker/templates):"
   echo "  dkrup <svc>   = start service(s) from templates (e.g., dkrup pg175 redis7)"
