@@ -1,6 +1,5 @@
 #!/bin/zsh
 
-
 alias dkr="docker"
 
 # Start the database
