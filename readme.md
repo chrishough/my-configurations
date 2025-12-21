@@ -9,7 +9,7 @@ These guides are highly opinionated. If you have any questions please post an is
 ## Installation
 > If you are following these below, they are in sequence of how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Happy to help my friends. 
  
-1. TBD
+ 1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/01.md)
 2. TBD
 3. TBD
 4. TBD
