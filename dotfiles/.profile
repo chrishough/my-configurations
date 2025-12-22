@@ -1,1 +1,3 @@
+#!/bin/zsh
+
 # NO LONGER USED FOR PRE-M1 AND M1 OSX

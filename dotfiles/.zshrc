@@ -46,28 +46,8 @@ unsetopt correct_all
 # source shared functions
 source $HOME/.myconfigurations/dotfiles/functions/functions
 
-# Test for Apple Silicon...
-if [[ `uname -m` == 'arm64' ]]; then
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-else
-    homebrew=/usr/local/bin:/usr/local/sbin
-    export PATH=$homebrew:$PATH
-    export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
-    export PATH="/usr/local/opt/qt/bin:$PATH"
-    export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
-    export PATH="/usr/local/sbin:$PATH"
-    export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-    export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-fi
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-
-eval "$(rbenv init - zsh)"
-
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 eval "$(direnv hook zsh)"
 
@@ -78,43 +58,5 @@ export DIRENV_LOG_FORMAT=
 # For osx machines fix the alt + arrow functionality
 bindkey -e; bindkey '\e\e[C' forward-word; bindkey '\e\e[D' backward-word
 
-# Loads the correct version of node via nvm
-autoload -U add-zsh-hook
-load-nvmrc() {
-  local node_version="$(nvm version)"
-  local nvmrc_path="$(nvm_find_nvmrc)"
-
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-
-    if [ "$nvmrc_node_version" = "N/A" ]; then
-      nvm install
-    elif [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm use
-    fi
-  elif [ "$node_version" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-    autoload -Uz compinit
-    compinit
-fi
-
 alias upzsh="upgrade_oh_my_zsh"
 
-export SSL_CERT_FILE=/usr/local/etc/openssl@3/cert.pem
-export SSL_CERT_DIR=/usr/local/etc/openssl@3/certs
-export AWS_CA_BUNDLE=/usr/local/etc/openssl@3/cert.pem
-
-export JAVA_HOME="/usr/local/opt/openjdk@17"
-
-export EDITOR='nano'
-
-export VISUAL='nano'

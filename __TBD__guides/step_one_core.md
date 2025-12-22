@@ -5,25 +5,10 @@
 ### This Guide was written on OSX 12 "Monterey"
 
 
-12. Under `System Preferences` under `Users & Groups` disable the `Guest User` from being able to access the computer, then reboot the machine to confirm.
-13. In `System Preferences` under the `Trackpad` disable `Natural` scrolling.
-14. In `System Preferences` under the `Trackpad` under `Point and Click` set the tracking speed to `6`.
-15. In `Accessibility` under `Display` set the cursor size to `2`.
-16. In `Accessibility` under `Captions` set to `Large Text`.
-17. Remove `Siri`, `Display Mirroring`, and `Spotlight` from the top navigation bar.
-18. In `System Preferences` under `Displays` set `Resolution` to `scaled` and select `more space`. 
-19. In `System Preferences` under the `Keyboard` settings make sure to check `Use the F1, F2, as standard function keys`.
-20. In `System Preferences` under the `Energy Saver` set display to turn off after 30 minutes, and uncheck `Put hard disks to sleep when possible` and `Prevent computer from sleeping automatically when display is off`.
-21. Under `System Preferences` under `Mission Control` configure `Hot Corners`.
-    * Top-Left: Application Windows
-    * Bottom-Left: Desktop
-    * Top-Right: Mission Control
-    * Bottom-Right: Start Screen Saver
-22. Under `System Preferences` configure `Mission Control`.
-    * Disable `Automatically Rearrange Spaces...`.
-    * Set `Mission Control` to `F3`.
-    * Set `Application Windows` to `F4`.
-    * Set both `Show Desktop` and `Show Dashboard` to `-`.
+
+
+
+
 23. In `System Preferences` configure the `Dock & Menu Bar`.
     * Enable `Magnification` and set it to `max`.
     * Enable `Automatically hide and show the Dock`.
