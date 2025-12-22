@@ -1,11 +1,17 @@
 ## <img src="https://raw.githubusercontent.com/chrishough/my-configurations/master/graphics/documentation/readmes/installation.svg" height="20"> Install Additional Software : Step Two
 
+
 1. Install [AlfredApp](https://www.alfredapp.com/).
 2. Set the Alfred launch shortcut to `cmd + spacebar`.
-3. In `System Preferences` in the `Keyboard` under `Shortcuts` disable all Spotlight keyboard shortcuts.
-4. In `System Preferences` under `Notifications` adjust notifications to your liking. I disable all of them.
+
+
 5. Download and Install [Chrome](https://www.google.com/chrome/browser/desktop/index.html), [Firefox](https://www.mozilla.org/en-US/firefox/new/), and [Brave](https://github.com/chrishough/my-configurations).
 6. Install the 1Password Package into all browsers.
+
+
+
+
+
 7. Setup Google and Brave Synced Extensions.
 8. Make Brave the default browser.
 9. Setup the `TMP` directory on the desktop and make sure all browser downloads default to this folder.
