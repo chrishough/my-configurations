@@ -8,9 +8,12 @@ These guides are highly opinionated. If you have any questions please post an is
 
 ## Installation
 > If you are following these below, they are in sequence of how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Happy to help my friends. 
- 
+
+#### This Guide was written on OSX 15.7.3 "Sequoia"
+> Refer to older versions of these dotfiles for Intel chipsets, version 8 and beyond only supports the Apple M series chipsets
+
  1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/01.md)
-2. TBD
+2. [Install Additional Business amd Workflow Software](/docs/installation/02.md)
 3. TBD
 4. TBD
 
@@ -25,8 +28,6 @@ These guides are highly opinionated. If you have any questions please post an is
 ---
 TBD 
 ---
- 1. [Setup a New or Reformatting an Existing Apple Workstation](/guides/step_one_core.md)
-2. [Install Additional Business amd Workflow Software](/guides/step_two_software.md)
 3. [Engineering Workstation Setup and Configuration](/guides/step_three_engineering_core.md)
 4. [Ruby Engineering Configurations](/guides/step_four_ruby.md)
 5. [JavaScript Engineering Configuration](/guides/step_five_js.md)
