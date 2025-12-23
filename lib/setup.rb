@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 # ruby "$HOME/.myconfigurations/lib/setup.rb"
 
-require 'pry' rescue LoadError
 require_relative 'helpers/setup_helper'
 
 # Initialize PATHS array
