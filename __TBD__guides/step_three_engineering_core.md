@@ -3,7 +3,7 @@
 > Please note, if you have not installed Xcode, please review the [first part of this guide](/guides/step_one_core.md) and complete those steps before starting this phase.
 
 
-23. Install [iTerm2](https://www.iterm2.com/).
+
 
 
 1. Install [homebrew](http://brew.sh/).    
