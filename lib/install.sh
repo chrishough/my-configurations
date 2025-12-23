@@ -6,10 +6,15 @@ install_brew_packages() {
     # Array of packages to install
     local packages=(
         "autojump"
+        "direnv"
         "fzf"
         "heroku"
         "python"
+        "git-lfs"
         "ruby"
+        "htop"
+        "wget"
+        "tmux"
         "zsh"
         "zsh-completions"
         "zsh-syntax-highlighting"
