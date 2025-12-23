@@ -59,9 +59,11 @@
 
 > Now we have to sync our settings to the configuration repo! This will adjust the following files: .pryrc, .vimrc, .zprofile, .zshrc, .profile, .gemrc, .bashrc, and .bash_profile.
 
-24. Backup existing dotfiles `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`.
+<!--
+ 24. Backup existing dotfiles `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/backup.rb`.
 25. Setup symlinks to our configuration dotfiles `ruby $HOME/.myconfigurations/scripts/setup/dotfiles/symlinks.rb`.
 26. Create the shell file for private includes via `touch .myconfigurations/workstation/shell/global-private`.
+ -->
 
 ### Potential Errors...
 

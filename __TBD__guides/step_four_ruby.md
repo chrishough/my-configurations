@@ -2,9 +2,12 @@
 
 This installation utilizes [rbenv](https://github.com/rbenv/rbenv) to run ruby. If you are ok with that, let's type `cmd + space` to launch `Terminal` to perform the next block of installations in your home directory.
 
-1. Setup [Ruby](https://www.ruby-lang.org/en/) via `brew install rbenv`
+
+
 2. Following the guide on the [repo](https://github.com/rbenv/rbenv) create the `.rbenv` directory.  `rbenv init` and then `eval "$(rbenv init -)"`.
+
 3. Create the rbenv plugin directory `mkdir $(rbenv root)/plugins`.
+
 4. Install [rbenv-default-gems](https://github.com/rbenv/rbenv-default-gems) plugin `git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems`.
 5. Install [rbenv/rbenv-gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) plugin `git clone https://github.com/sstephenson/rbenv-gem-rehash.git $(rbenv root)/plugins/rbenv-gem-rehash`.
 6. Install [rbenv-vars](https://github.com/rbenv/rbenv-vars) plugin `git clone https://github.com/rbenv/rbenv-vars.git $(rbenv root)/plugins/rbenv-vars`.
@@ -19,3 +22,12 @@ available. I installed the following: 2.7.5, 3.0.3, and 3.1.0 and the time this 
 #GLOBAL
 GEM_PATH=.bundle
 ```
+
+
+
+
+
+
+<!-- 
+1. Setup [Ruby](https://www.ruby-lang.org/en/) via `brew install rbenv` 
+-->
