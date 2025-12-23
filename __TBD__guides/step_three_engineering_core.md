@@ -27,10 +27,7 @@
 
 13. Install [puma-dev](https://github.com/puma/puma-dev) via `brew install puma/puma/puma-dev && puma-dev -install -d localhost && sudo puma-dev -setup`
 
-13. Clone this repo "git@github.com:chrishough/my-configurations.git" to our home directory. Please note, that if 
-you are having cloning issues you may 
-need to setup your [new ssh keys](https://help.github.com/enterprise/11.10.340/user/articles/generating-ssh-keys/) 
-then run `git clone git@github.com:chrishough/my-configurations.git .myconfigurations`.
+
 
 
 
@@ -41,15 +38,12 @@ then run `git clone git@github.com:chrishough/my-configurations.git .myconfigura
 15. Install the [Fira Code Fonts](https://fonts.google.com/specimen/Fira+Code).
 
 
-18. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`.
 
 
 
 
-19. Now need to set zsh as the default shell.  If you run `which zsh` you will see this pointed to `/bin/zsh`. We need to change this.  Running `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh` will properly adjust this for us. Now reopen the terminal window, and when you run `which zsh` it should be pointed to `/usr/local/bin/zsh`.
 
-20. Setup [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) via 
-`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`.
+
 
 > Type `cmd + space` to launch `iterm2` to perform the next block of installations in your home directory. Please verify you are in your home directory by typing `cd $HOME`.  Also, if iterm prompts you for an update. Load it.  Also, make sure to check `load updates automatically` during this process.  Please feel free to close `Terminal` at this time.
 
