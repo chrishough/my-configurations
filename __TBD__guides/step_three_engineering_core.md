@@ -6,16 +6,6 @@
 
 
 
-1. Install [homebrew](http://brew.sh/).    
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-2. Run `brew doctor` and make sure it reports `Your system is ready to brew`.
-3. Update brew via `brew update`.
-4. Install the latest version of git via `brew install git`.
-
-
-
-
-
 
 
 
@@ -36,33 +26,7 @@
 11. Install [NGROK](https://ngrok.com/) via `brew install --cask ngrok` from this [guide](https://gist.github.com/wosephjeber/aa174fb851dfe87e644e).  
 
 13. Install [puma-dev](https://github.com/puma/puma-dev) via `brew install puma/puma/puma-dev && puma-dev -install -d localhost && sudo puma-dev -setup`
-14. Setup your `.gitconfig` file with your account information.
-```
-[user]
-  name = Chris Hough
-  email = {insert email address}
-[mergetool]
-  keepBackup = true
-[core]
-  editor = vi
-[color]
-  ui = auto
-[push]
-  default = simple
-[github]
-  user = chrishough
-[credential]
-  helper = osxkeychain
-[filter "lfs"]
-  process = git-lfs filter-process
-  required = true
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-[pull]
-  rebase = false
-[init]
-  defaultBranch = master
-```
+
 13. Clone this repo "git@github.com:chrishough/my-configurations.git" to our home directory. Please note, that if 
 you are having cloning issues you may 
 need to setup your [new ssh keys](https://help.github.com/enterprise/11.10.340/user/articles/generating-ssh-keys/) 
