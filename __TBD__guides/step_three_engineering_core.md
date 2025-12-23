@@ -2,6 +2,10 @@
 
 > Please note, if you have not installed Xcode, please review the [first part of this guide](/guides/step_one_core.md) and complete those steps before starting this phase.
 
+
+23. Install [iTerm2](https://www.iterm2.com/).
+
+
 1. Install [homebrew](http://brew.sh/).    
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 2. Run `brew doctor` and make sure it reports `Your system is ready to brew`.
