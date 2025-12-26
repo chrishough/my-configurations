@@ -1,5 +1,15 @@
 #!/bin/zsh
 
+alias h="heroku"
+
+function hl() { h login }
+function hlog() { h logs }
+function hps() { h ps }
+function hrr() { h run rake }
+function hrc() { h run rails console }
+function hc() { h config }
+function ha() { h apps }
+
 function herokuhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
@@ -16,15 +26,3 @@ function herokuhelp () {
   echo "--------------------------------------------------------------------------------"
   echo
 }
-
-alias h="heroku"
-
-function hl() { h login }
-function hlog() { h logs }
-function hps() { h ps }
-function hrr() { h run rake }
-function hrc() { h run rails console }
-function hc() { h config }
-function ha() { h apps }
-
-
