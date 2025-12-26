@@ -103,6 +103,8 @@
 		"terminal.background": "#000000",
 		"window.activeBorder": "#FF1728"
 	},
-	"workbench.preferredHighContrastColorTheme": "RailsCasts Plus Theme"
+	"workbench.preferredHighContrastColorTheme": "RailsCasts Plus Theme",
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1"
 	// -------------------------------------------------------------------
 }
