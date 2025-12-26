@@ -105,6 +105,6 @@
 	},
 	"workbench.preferredHighContrastColorTheme": "RailsCasts Plus Theme",
 	"gitlens.ai.model": "vscode",
-	"gitlens.ai.vscode.model": "copilot:gpt-4.1"
+	"gitlens.ai.vscode.model": "anthropic:claude-4.5-opus"
 	// -------------------------------------------------------------------
 }
