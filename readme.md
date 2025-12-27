@@ -15,23 +15,4 @@ These guides are highly opinionated. If you have any questions please post an is
 1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/01.md)
 2. [Install Additional Business amd Workflow Software](/docs/installation/02.md)
 3. [Engineering Workstation Setup and Configuration](/docs/installation/03.md)
-4. TBD
-
-
-
-
-
-
-
-
-
----
-TBD 
----
-
-4. [Ruby Engineering Configurations](/guides/step_four_ruby.md)
-5. [JavaScript Engineering Configuration](/guides/step_five_js.md)
-6. [Database Configuration](/guides/step_six_database.md)
-7. [IDE Configuration](/guides/step_seven_ide.md)
-8. [Additional Software](/guides/step_eight_additional_software.md)
 
