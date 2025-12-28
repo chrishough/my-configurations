@@ -23,6 +23,8 @@ install_brew_packages() {
         "zsh-completions"
         "zsh-syntax-highlighting"
         "zsh-autosuggestions"
+        "cmake"
+        "pkg-config"
     )
 
     echo "Running brew update..."
