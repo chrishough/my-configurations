@@ -20,6 +20,11 @@ alias pg175="docker exec -it pg175 psql -U postgres"
 # Connect to PG 17.5 via psql
 alias pg169="docker exec -it pg169 psql -U postgres"
 
+# List all running containers
+function dkrps() {
+  docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"
+}
+
 # Stop all running containers
 function dkrstopall() {
   docker stop $(docker ps -q) 2>/dev/null
@@ -128,6 +133,7 @@ function dkrhelp () {
   echo "  dkrclogs    = docker compose logs postgres"
   echo "  pg175       = connect to PG 17.5 through psql"
   echo "  pg169       = connect to PG 16.9 through psql"
+  echo "  dkrps       = list all running containers"
   echo "  dkrstopall  = stop all running containers"
   echo "  dkrrmall    = remove all containers (stopped and running)"
   echo "  dkrselstop  = interactive select containers to stop"
