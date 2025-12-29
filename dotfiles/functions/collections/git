@@ -87,7 +87,7 @@ function gmb() {
 function gc() {
 	git add . -A;
 	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
-	git commit -m "$1";
+	git commit -m "$1" --no-verify;
 	msg "Pushing all the things to origin!";
   git push;
 	gs;
