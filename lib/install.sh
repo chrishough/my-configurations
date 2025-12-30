@@ -25,6 +25,7 @@ install_brew_packages() {
         "zsh-autosuggestions"
         "cmake"
         "pkg-config"
+        "libpq"
     )
 
     echo "Running brew update..."
