@@ -31,6 +31,17 @@ function dkrstopall() {
   echo "All containers stopped."
 }
 
+# Start all stopped containers
+function dkrstartall() {
+  local stopped=$(docker ps -aq -f status=exited -f status=created)
+  if [[ -n "$stopped" ]]; then
+    docker start $stopped
+    echo "All stopped containers started."
+  else
+    echo "No stopped containers to start."
+  fi
+}
+
 # Remove all containers (stopped and running)
 function dkrrmall() {
   docker rm -f $(docker ps -aq) 2>/dev/null
@@ -135,6 +146,7 @@ function dkrhelp () {
   echo "  pg169       = connect to PG 16.9 through psql"
   echo "  dkrps       = list all running containers"
   echo "  dkrstopall  = stop all running containers"
+  echo "  dkrstartall = start all stopped containers"
   echo "  dkrrmall    = remove all containers (stopped and running)"
   echo "  dkrselstop  = interactive select containers to stop"
   echo
