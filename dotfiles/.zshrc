@@ -49,6 +49,7 @@ source $HOME/.myconfigurations/dotfiles/functions/functions
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 eval "$(direnv hook zsh)"
 
