@@ -35,7 +35,7 @@ function dkrstopall() {
 function dkrstartall() {
   local stopped=$(docker ps -aq -f status=exited -f status=created)
   if [[ -n "$stopped" ]]; then
-    docker start $stopped
+    echo "$stopped" | xargs docker start
     echo "All stopped containers started."
   else
     echo "No stopped containers to start."
