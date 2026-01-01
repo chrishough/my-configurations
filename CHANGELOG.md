@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [8.1.0] - 2026-01-01
+
+### Removed
+
+#### Cursor IDE Configuration
+- Removed entire Cursor IDE configuration (`applications/cursor/`)
+  - `extensions.txt` - Extension list
+  - `keybindings.json` - Keyboard shortcuts
+  - `settings.json` - Editor settings
+  - `snippets/ruby.json` - Ruby code snippets
+  - `readme.md` - Setup documentation
+  - `workspaces/.keep` - Workspace placeholder
+  - `plugins/` - IDE plugins:
+    - `misogi.ruby-rubocop-0.8.5.vsix.zip`
+    - `vscode-markdown-emoji.zip`
+    - `vscode-theme-railscasts-plus.zip`
+
+**Summary**: Removed Cursor IDE in favor of other tooling.
+
+---
+
 ## [8.0.0] - 2026-01-01
 
 ### Added
@@ -317,6 +338,7 @@ Complete modular architecture with 9 shell modules (`dotfiles/functions/collecti
 
 | Version | Release | Focus |
 |---------|---------|-------|
+| 8.1.0 | 2026-01-01 | Cursor IDE removal |
 | 8.0.0 | 2026-01-01 | Ruby 4.0.0, tmux/DVY migration, Docker templates, AI tooling, shell modularization, Apple Silicon exclusive |
 | 7.4.0 | 2025-08-10 | RuboCop linting, IDE workspaces, NVM pinning |
 | 7.3.0 | 2025-05-21 | Ruby 3.4.3, Gemfile infrastructure |
