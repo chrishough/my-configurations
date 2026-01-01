@@ -1,0 +1,74 @@
+#!/bin/zsh
+
+export PATH=".bundle/binstubs:$PATH"
+export RUBY_DEP_GEM_SILENCE_WARNINGS=1
+export RUBYOPT='-W:no-deprecated -W:no-experimental'
+export BUNDLER_EDITOR="vscode"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+eval "$(rbenv init - zsh)"
+
+alias rb="rbenv"
+alias rbl="rbenv install -l"
+
+alias rbe="bundle exec"
+alias rbi="bundle install"
+alias rbu="bundle update"
+
+alias rr="bundle exec rake routes"
+alias rsp="bundle exec rescue ./bin/rails s"
+alias rs="bundle exec ./bin/rails s"
+alias rt="bundle exec ./bin/rspec"
+alias rtc="bundle exec rescue ./bin/rspec"
+alias rc="bundle exec ./bin/rails c"
+alias rg="bundle exec rails g"
+alias rdb="bundle exec rails dbconsole"
+alias rake="clear && bundle exec rake"
+
+function rdbr() {
+  rake db:drop db:create db:structure:load
+  RAILS_ENV=test rake db:drop db:create db:structure:load
+}
+
+function rbenvset() {
+	rbenv local $(rbenv global)
+}
+
+function rtail() {
+	if [[ $1 ]]; then
+		tail -f "log/$1.log";
+	else
+		tail -f log/development.log;
+	fi
+}
+
+function rmc() {
+	mailcatcher -f -v
+}
+
+
+function rubyhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+	echo
+  echo "  rb          = rbenv"
+  echo "  rr          = bundle exec rake routes"
+  echo "  rs          = rails server"
+  echo "  rsp         = rails server with pry rescue"
+  echo "  rc          = rails console"
+  echo "  rtc         = rspec tests with pry rescue"
+  echo "  rtp         = rspec tests"
+  echo "  rg          = rails generate"
+  echo "  rdb         = rails db console"
+  echo "  rdbr        = rebuild local dev and testing db via structure file"
+  echo "  rbe         = run bundle exec"
+  echo "  rmc         = mailcatcher -f -v"
+  echo "  rbl         = rbenv install -l"
+  echo "  rbi         = bundle install"
+  echo "  rake        = noglob bundle exec rake"
+  echo "  rbenvset    = setup local version of rbenv to global default"
+  echo "  rtail       = tails rails log, option param for log name"
+	echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}

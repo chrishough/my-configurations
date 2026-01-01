@@ -1,0 +1,159 @@
+#!/bin/zsh
+
+alias dkr="docker"
+
+# Start the database
+alias dkrcu="docker compose up -d"
+
+# Stop it when done
+alias dkrcd="docker compose down"
+
+# Check status
+alias dkrcps="docker compose ps"
+
+# View logs if something's wrong"
+alias dkrclogs="docker compose logs postgres"
+
+# Connect to PG 17.5 via psql
+alias pg175="docker exec -it pg175 psql -U postgres"
+
+# Connect to PG 17.5 via psql
+alias pg169="docker exec -it pg169 psql -U postgres"
+
+# List all running containers
+function dkrps() {
+  docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"
+}
+
+# Stop all running containers
+function dkrstopall() {
+  docker stop $(docker ps -q) 2>/dev/null
+  echo "All containers stopped."
+}
+
+# Start all stopped containers
+function dkrstartall() {
+  local stopped=$(docker ps -aq -f status=exited -f status=created)
+  if [[ -n "$stopped" ]]; then
+    echo "$stopped" | xargs docker start
+    echo "All stopped containers started."
+  else
+    echo "No stopped containers to start."
+  fi
+}
+
+# Remove all containers (stopped and running)
+function dkrrmall() {
+  docker rm -f $(docker ps -aq) 2>/dev/null
+  echo "All containers removed."
+}
+
+# Interactive container stop - select which containers to stop
+function dkrselstop() {
+  local containers=($(docker ps --format '{{.Names}}'))
+
+  if [[ ${#containers[@]} -eq 0 ]]; then
+    echo "No running containers."
+    return 0
+  fi
+
+  # Use fzf if available, otherwise fall back to select
+  if command -v fzf &>/dev/null; then
+    local selected=$(printf '%s\n' "${containers[@]}" | fzf --multi --header="Select containers to stop (TAB to multi-select, ENTER to confirm)")
+    if [[ -n "$selected" ]]; then
+      echo "$selected" | while read -r name; do
+        echo "Stopping $name..."
+        docker stop "$name"
+      done
+    fi
+  else
+    echo "Running containers:"
+    echo
+    local i=1
+    for c in "${containers[@]}"; do
+      echo "  $i) $c"
+      ((i++))
+    done
+    echo
+    echo "Enter numbers to stop (space-separated), or 'q' to quit:"
+    read -r selection
+
+    [[ "$selection" == "q" ]] && return 0
+
+    for num in ${=selection}; do
+      if [[ "$num" =~ ^[0-9]+$ ]] && (( num >= 1 && num <= ${#containers[@]} )); then
+        local name="${containers[$num]}"
+        echo "Stopping $name..."
+        docker stop "$name"
+      fi
+    done
+  fi
+}
+
+# Templates directory
+_DOCKER_TEMPLATES="$HOME/.myconfigurations/applications/docker/templates"
+
+# Start one or more services from templates
+# Usage: dkrup pg175 redis7 opensearch1315
+function dkrup() {
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: dkrup <service> [service...]"
+    echo "Available services:"
+    ls -1 "$_DOCKER_TEMPLATES"/*.yml 2>/dev/null | xargs -n1 basename | sed 's/\.yml$//'
+    return 1
+  fi
+
+  for service in "$@"; do
+    local template="$_DOCKER_TEMPLATES/${service}.yml"
+    if [[ -f "$template" ]]; then
+      echo "Starting $service..."
+      docker compose -p "$service" -f "$template" up -d
+    else
+      echo "Template not found: $template"
+    fi
+  done
+}
+
+# Stop one or more services from templates
+# Usage: dkrdown pg175 redis7
+function dkrdown() {
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: dkrdown <service> [service...]"
+    return 1
+  fi
+
+  for service in "$@"; do
+    local template="$_DOCKER_TEMPLATES/${service}.yml"
+    if [[ -f "$template" ]]; then
+      echo "Stopping $service..."
+      docker compose -p "$service" -f "$template" down
+    else
+      echo "Template not found: $template"
+    fi
+  done
+}
+
+function dkrhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+  echo "  dkr         = docker"
+  echo "  dkrcu       = docker compose up -d"
+  echo "  dkrcd       = docker compose down"
+  echo "  dkrcps      = docker compose ps"
+  echo "  dkrclogs    = docker compose logs postgres"
+  echo "  pg175       = connect to PG 17.5 through psql"
+  echo "  pg169       = connect to PG 16.9 through psql"
+  echo "  dkrps       = list all running containers"
+  echo "  dkrstopall  = stop all running containers"
+  echo "  dkrstartall = start all stopped containers"
+  echo "  dkrrmall    = remove all containers (stopped and running)"
+  echo "  dkrselstop  = interactive select containers to stop"
+  echo
+  echo "  Templates (in ~/.myconfigurations/applications/docker/templates):"
+  echo "  dkrup <svc>   = start service(s) from templates (e.g., dkrup pg175 redis7)"
+  echo "  dkrdown <svc> = stop service(s) from templates (e.g., dkrdown pg175)"
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}

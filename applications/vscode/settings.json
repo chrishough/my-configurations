@@ -1,0 +1,110 @@
+{
+	"[markdown]": {
+		"files.trimTrailingWhitespace": false
+	},
+
+	"[ruby]": {
+		"editor.defaultFormatter": "Shopify.ruby-lsp"
+	},
+
+	"editor.accessibilityPageSize": 20,
+	"editor.dimUnfocused": false,
+	"editor.fontSize": 14,
+	"editor.formatOnSave": false,
+	"editor.minimap.enabled": false,
+	"editor.rulers": [
+		{
+		"column": 100,
+		"color": "#e6e1dc"
+		},
+		{
+		"column": 125,
+		"color": "#bc9458"
+		},
+		{
+		"column": 180,
+		"color": "#FF1728"
+		}
+	],
+	"editor.tabSize": 2,
+	"editor.wordWrapColumn": 150,
+
+	"explorer.autoReveal": false,
+	"explorer.confirmDragAndDrop": false,
+
+	"extensions.allowed": "*",
+	"extensions.ignoreRecommendations": true,
+
+	"files.autoSave": "onFocusChange",
+	"files.exclude": {
+		".sass-cache/": true,
+		".vscode/": true,
+		"node_modules/": true
+	},
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+
+	"git.autofetch": true,
+	"git.confirmSync": false,
+
+	"ruby.intellisense": "rubyLocate",
+	"ruby.lint": {
+		"rubocop": true
+	},
+	"ruby.lsp.useCustomShell": false,
+	"ruby.rubocop.configFilePath": "./.rubocop.yml",
+	"ruby.rubocop.useBundler": true,
+	"ruby.useLanguageServer": true,
+
+	"sync.autoDownload": false,
+	"sync.autoUpload": false,
+	"sync.forceDownload": false,
+	"sync.gist": "1c6ff2f001a2bd7368966050952777e2",
+	"sync.quietSync": false,
+	"sync.removeExtensions": true,
+	"sync.syncExtensions": true,
+
+	"terminal.integrated.fontSize": 14,
+
+	"window.autoDetectColorScheme": false,
+	"window.commandCenter": true,
+	"window.zoomLevel": -0.25,
+
+	"workbench.commandPalette.history": 1000,
+	"workbench.commandPalette.location": "center",
+	"workbench.editor.centeredLayoutAutoResize": false,
+	"workbench.editor.closeEmptyGroups": false,
+	"workbench.startupEditor": "newUntitledFile",
+
+	// -------------------------------------------------------------------
+	// https://code.visualstudio.com/api/references/theme-color
+	"workbench.colorCustomizations": {
+		"editor.background": "#000000",
+		"editorGutter.background": "#2b2b2b",
+		"editorGroup.border": "#FF1728",
+		"editorGroupHeader.tabsBackground": "#000000",
+		"tab.activeBorderTop": "#FF1728",
+		"terminal.ansiBlack": "#2b2b2b",
+		"terminal.ansiBlue": "#6d9cbe",
+		"terminal.ansiBrightBlack": "#5a647e",
+		"terminal.ansiBrightBlue": "#d4cfc9",
+		"terminal.ansiBrightCyan": "#bc9458",
+		"terminal.ansiBrightGreen": "#FF1728",
+		"terminal.ansiBrightMagenta": "#f4f1ed",
+		"terminal.ansiBrightRed": "#cc7833",
+		"terminal.ansiBrightWhite": "#f9f7f3",
+		"terminal.ansiBrightYellow": "#FF1728",
+		"terminal.ansiCyan": "#519f50",
+		"terminal.ansiGreen": "#a5c261",
+		"terminal.ansiMagenta": "#b6b3eb",
+		"terminal.ansiRed": "#da4939",
+		"terminal.ansiWhite": "#e6e1dc",
+		"terminal.ansiYellow": "#ffc66d",
+		"terminal.background": "#000000",
+		"window.activeBorder": "#FF1728"
+	},
+	"workbench.preferredHighContrastColorTheme": "RailsCasts Plus Theme",
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "anthropic:claude-4.5-opus"
+	// -------------------------------------------------------------------
+}

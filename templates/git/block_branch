@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/bin/zsh
 
 # This pre-commit hook will prevent any commit to forbidden branches
 # (by default, "staging" and "production").
@@ -28,4 +28,4 @@ if (FORBIDDEN_BRANCHES.include?(branch))
   puts
 
   exit 1
-end
+endgot

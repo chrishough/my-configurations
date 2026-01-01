@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres:17.5
+    container_name: pg175
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg175_data:/var/lib/postgresql/data
+    configs:
+      - source: init_sql
+        target: /docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pg175_data:
+
+configs:
+  init_sql:
+    content: |
+      CREATE ROLE ${USER} WITH LOGIN SUPERUSER CREATEDB CREATEROLE;

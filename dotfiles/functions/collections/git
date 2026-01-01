@@ -1,0 +1,228 @@
+#!/bin/zsh
+
+function gs() { git status }
+function gcbn() { git rev-parse --abbrev-ref HEAD }
+function glt(){ git log --graph --oneline --all }
+function gl(){ git log --show-notes }
+function gltp(){ git log --graph --all --decorate }
+function gd(){ git diff }
+function gtl(){ git tag --sort=v:refname | cat }
+function grso(){ git remote show origin }
+function gcf(){ git config --list }
+function gpab(){ git branch | grep -v "master" | xargs git branch -D }
+
+function gsmi(){
+  git status;
+  git pull;
+  git submodule update --init --recursive;
+}
+function gstats(){
+  git shortlog -s -n
+}
+function gpurgetags(){
+	num=0
+	for t in `git tag`
+	do
+		if [ "$num" -ge 120 ]
+			then
+				break
+		fi
+		git push origin :$t
+		git tag -d $t
+		num=`expr $num + 1`
+		echo "Removed $t"
+	done
+	git tag -l;
+}
+function ggoback() {
+	msg "Resetting all local changes"
+	git reset --hard;
+	git clean -f -d;
+  git submodule update -f --recursive;
+	git status;
+}
+function gcb() {
+	git pull;
+	git checkout -b "$1";
+	msg "Creating branch: $1"
+	git push -u origin "$1";
+	git push --set-upstream origin "$1";
+	msg "Pending changes?";
+	gs;
+}
+function gcbfb() {
+  current_branch=`git branch | grep \* | cut -d ' ' -f2`
+	git pull;
+	git checkout -b "$1" $current_branch;
+	msg "Creating branch: $1 off of $current_branch"
+	git push -u origin "$1";
+	git push --set-upstream origin "$1";
+	msg "Pending changes?";
+	gs;
+}
+function gcbd() {
+	git pull;
+	git checkout -b "$1" develop;
+	msg "Creating branch: $1"
+	git push -u origin "$1";
+	git push --set-upstream origin "$1";
+	msg "Pending changes?";
+	gs;
+}
+function gmt() {
+	git pull;
+	msg "Merging branch: $1 with a full overwrite of the current branch: ${$(gcbn)}"
+	git merge "$1" -X theirs;
+	git push;
+	git status;
+}
+function gmb() {
+	git fetch --all;
+	git pull;
+	msg "Merging branch: $1"
+	git merge "$1" --no-ff;
+	git push;
+	git status;
+}
+function gc() {
+	git add . -A;
+	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
+	git commit -m "$1" --no-verify;
+	msg "Pushing all the things to origin!";
+  git push;
+	gs;
+}
+function gcz() {
+	git add . -A;
+	git cz;
+	gs;
+}
+function gcm() {
+	git add . -A;
+	msg "Committing to branch: ${$(gcbn)}" "Message: $1";
+	git commit -m "$1";
+	gs;
+}
+function gp() {
+	msg "Pull down all the code and all the tags!";
+  git branch -a | grep -v HEAD | perl -ne 'chomp($_); s|^\*?\s*||; if (m|(.+)/(.+)| && not $d{$2}) {print qq(git branch --track $2 $1/$2\n)} else {$d{$_}=1}' | csh -xfs;
+	git fetch --all;
+	git pull --all;
+	git fetch origin --tags --force;
+	gs;
+}
+function gec() {
+  msg "Triggering CI via Empty Commit!";
+  git commit --allow-empty -m "Empty Commit!";
+  msg "Pushing all the things to origin!";
+	git push;
+	gs;
+}
+function gpo() {
+	msg "Pushing all the things to origin!";
+	git push;
+	gs;
+}
+function gph() {
+ msg "Pushing current branch: ${$(gcbn)} to heroku!";
+ git push heroku master;
+ gs;
+}
+function grpo() {
+	msg "Purge dead branches!";
+	git pull;
+	git remote prune origin;
+	git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D;
+}
+function gct() {
+	msg "Creating tag: $1";
+	git tag "$1";
+	git push origin --tags;
+	msg "Current tags!";
+	gtl;
+	gs;
+}
+function gdt() {
+	msg "Deleting tag: $1";
+	git tag -d "$1";
+	git push origin :refs/tags/"$1";
+}
+function grt() {
+	msg "Deleting tag: $1";
+	git tag -d "$1";
+	git push origin :refs/tags/"$1";
+	msg "Creating tag: $1"
+	git tag "$1";
+	git push origin --tags;
+	msg "Current tags!";
+	gtl;
+	gs;
+}
+function gck() {
+	msg "Checking out branch: $1";
+	git checkout "$1";
+	git pull;
+	gs;
+}
+function gdb() {
+	msg "Deleting branch: $1"
+	git branch -D "$1";
+	git push --delete origin "$1";
+	git remote prune origin;
+	gs;
+}
+function gk() {
+	touch .keep;
+}
+function gkf() {
+	mkdir "$1";
+	touch "$1/.keep";
+}
+function gcmd() {
+	touch readme.md;
+	open readme.md;
+}
+
+function githelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+	echo
+  echo "  gc           = commit locally, but do not push to origin"
+  echo "  gcb          = pull, create local branch, push it to origin, set upstream"
+  echo "  gcbd         = pull, create local branch off of develop, push it to origin, set upstream"
+  echo "  gcbfb        = pull, create branch off another branch, push it to origin, set upstream"
+  echo "  gcm          = commit locally, but do not push to origin, commit msg in ide"
+  echo "  gmb          = pull, merge branch, push, status"
+  echo "  gmt          = pull, merge branch with full rewrite, push, status"
+  echo "  gpab         = delete all local branches"
+  echo "  gdb          = delete local and remote branch"
+  echo "  gp           = pull down all the code and all the tags"
+  echo "  gpo          = pushing all the things to origin"
+  echo "  gck          = checkout, pull, status"
+  echo "  gec          = setup empty commit and trigger ci"
+  echo "  gct          = set the tag and push it"
+  echo "  gtl          = list out all the tags"
+  echo "  gdt          = delete tag and push delete"
+  echo "  grt          = recreate the tag"
+  echo "  grpo         = purge dead branches locally and origin"
+  echo "  gcbn         = current branch name"
+  echo "  gk           = create git .keep file"
+  echo "  gkf          = create folder with .keep file"
+  echo "  gcmd         = create readme markdown file and open it"
+  echo "  gd           = show current diff"
+  echo "  grso         = show all of the current local and remote branches"
+  echo "  gcf          = what are my config settings"
+  echo "  gs           = status of local files"
+  echo "  ggoback      = reset all local changes and purge files and directories"
+  echo "  gpurgetags   = purge last 120 tags"
+  echo "  gstats       = show git commit statistics"
+  echo "  gsmi         = git submodule init recursively"
+  echo "  gec          = push empty commit"
+  echo "  gl           = show log --show-notes"
+  echo "  glt          = show log --graph --oneline --all"
+  echo "  gltp         = show log --graph --all --decorate"
+  echo "  gph          = push master to heroku"
+	echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}

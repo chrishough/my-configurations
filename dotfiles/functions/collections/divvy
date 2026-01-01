@@ -1,0 +1,256 @@
+# DVY - Dynamic tmux layout manager
+# Reads layouts from ~/.myconfigurations/applications/tmux/paths.json
+
+_DVY_PATHS_FILE="$HOME/.myconfigurations/applications/tmux/paths.json"
+
+_dvy_next_session_name() {
+  local base="$1"
+  if ! tmux has-session -t "$base" 2>/dev/null; then
+    echo "$base"
+    return
+  fi
+  local i=2
+  while tmux has-session -t "${base}_${i}" 2>/dev/null; do
+    ((i++))
+  done
+  echo "${base}_${i}"
+}
+
+# Layout: apps
+# +--------+----+----+
+# |        | 1  | 2  |
+# |   0    +----+----+
+# |        |    3    |
+# +--------+---------+
+_dvy_layout_apps() {
+  local session="$1"
+  local dir="$2"
+  local config="$3"
+
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
+    splitw -h -p 55 -c "$dir" \; \
+    splitw -v -p 65 -c "$dir" \; \
+    selectp -t 1 \; \
+    splitw -h -c "$dir" \; \
+    select-layout -E
+
+  # Send commands to each pane (clear, custom command if specified, clear)
+  for pane in 0 1 2 3; do
+    tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
+    if [[ -n "$cmd" ]]; then
+      tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    fi
+  done
+
+  tmux attach -t "$session"
+}
+
+# Layout: configurations
+# +--------+---------+
+# |        |    1    |
+# |        +---------+
+# |   0    |    2    |
+# |        +---------+
+# |        |    3    |
+# |        +---------+
+# |        |    4    |
+# +--------+---------+
+_dvy_layout_configurations() {
+  local session="$1"
+  local dir="$2"
+  local config="$3"
+
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
+    splitw -h -p 55 -c "$dir" \; \
+    splitw -v -p 75 -c "$dir" \; \
+    splitw -v -p 66 -c "$dir" \; \
+    splitw -v -p 50 -c "$dir" \; \
+    select-layout -E
+
+  # Send commands to each pane (clear, custom command if specified, clear)
+  for pane in 0 1 2 3 4; do
+    tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
+    if [[ -n "$cmd" ]]; then
+      tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    fi
+  done
+
+  tmux attach -t "$session"
+}
+
+_dvy_list() {
+  echo
+  echo "-------------------------------------------"
+  echo " Available dvy layouts:"
+  echo "-------------------------------------------"
+  echo
+
+  if [[ -f "$_DVY_PATHS_FILE" ]]; then
+    jq -r 'keys[]' "$_DVY_PATHS_FILE" | while read -r session; do
+      echo " dvy $session"
+    done
+  else
+    echo " No layouts configured."
+    echo " Add entries to: $_DVY_PATHS_FILE"
+  fi
+
+  echo
+  echo "-------------------------------------------"
+  echo " Active tmux sessions:"
+  echo "-------------------------------------------"
+  echo
+
+  if tmux list-sessions 2>/dev/null; then
+    :
+  else
+    echo " No active sessions."
+  fi
+
+  echo
+  echo "-------------------------------------------"
+  echo
+}
+
+dvy() {
+  local flag=""
+  local session=""
+
+  # Parse arguments
+  case "$1" in
+    --kill)
+      tmux kill-server 2>/dev/null || echo "\nNo server running my friend!\n"
+      return
+      ;;
+    --list|-l)
+      _dvy_list
+      return
+      ;;
+    --help|-h)
+      dvyhelp
+      return
+      ;;
+    "")
+      echo "Usage: dvy <session_name> | dvy -a <session> | dvy -d <session>"
+      echo "Run 'dvy --list' to see available layouts."
+      return
+      ;;
+    -a|-d)
+      flag="$1"
+      session="$2"
+      if [[ -z "$session" ]]; then
+        echo "Error: Session name required."
+        echo "Usage: dvy $flag <session_name>"
+        return 1
+      fi
+      ;;
+    *)
+      session="$1"
+      ;;
+  esac
+
+  # Handle -a (attach) flag
+  if [[ "$flag" == "-a" ]]; then
+    if tmux has-session -t "$session" 2>/dev/null; then
+      tmux attach -t "$session"
+    else
+      echo "Error: Session '$session' does not exist."
+      echo "Run 'dvy --list' to see active sessions."
+      return 1
+    fi
+    return
+  fi
+
+  # Handle -d (delete) flag
+  if [[ "$flag" == "-d" ]]; then
+    if tmux has-session -t "$session" 2>/dev/null; then
+      tmux kill-session -t "$session"
+      echo "Session '$session' killed."
+    else
+      echo "Error: Session '$session' does not exist."
+    fi
+    return
+  fi
+
+  # Default: create new session
+  if [[ ! -f "$_DVY_PATHS_FILE" ]]; then
+    echo "Error: Paths file not found: $_DVY_PATHS_FILE"
+    return 1
+  fi
+
+  local config
+  config=$(jq -r --arg s "$session" '.[$s] // empty' "$_DVY_PATHS_FILE")
+
+  if [[ -z "$config" ]]; then
+    echo "Error: Layout '$session' not found."
+    echo "Run 'dvy --list' to see available layouts."
+    return 1
+  fi
+
+  local layout dir
+  layout=$(echo "$config" | jq -r '.layout')
+  dir=$(echo "$config" | jq -r '.dir')
+
+  # Expand ~ to $HOME
+  dir="${dir/#\~/$HOME}"
+
+  # Get next available session name (auto-suffix if exists)
+  session=$(_dvy_next_session_name "$session")
+
+  case "$layout" in
+    apps)
+      _dvy_layout_apps "$session" "$dir" "$config"
+      ;;
+    configurations)
+      _dvy_layout_configurations "$session" "$dir" "$config"
+      ;;
+    *)
+      echo "Error: Unknown layout type: $layout"
+      return 1
+      ;;
+  esac
+}
+
+dvyhelp() {
+  echo
+  echo "-------------------------------------------"
+  echo " DVY - Dynamic tmux layout manager"
+  echo "-------------------------------------------"
+  echo
+  echo " Commands:"
+  echo "   dvy <session_name>  Launch a tmux session (auto-suffixes if exists)"
+  echo "   dvy -a <session>    Attach to existing session"
+  echo "   dvy -d <session>    Delete/kill a session"
+  echo "   dvy --list, -l      List available layouts and active sessions"
+  echo "   dvy --kill          Kill tmux server"
+  echo "   dvy --help, -h      Show this help"
+  echo
+  echo " Configuration:"
+  echo "   Paths file: $_DVY_PATHS_FILE"
+  echo
+  echo " Layout types:"
+  echo
+  echo "   apps - 4-pane layout"
+  echo "   +--------+----+----+"
+  echo "   |        | 1  | 2  |"
+  echo "   |   0    +----+----+"
+  echo "   |        |    3    |"
+  echo "   +--------+---------+"
+  echo
+  echo "   configurations - 5-pane layout"
+  echo "   +--------+---------+"
+  echo "   |        |    1    |"
+  echo "   |        +---------+"
+  echo "   |   0    |    2    |"
+  echo "   |        +---------+"
+  echo "   |        |    3    |"
+  echo "   |        +---------+"
+  echo "   |        |    4    |"
+  echo "   +--------+---------+"
+  echo
+  echo "-------------------------------------------"
+  echo
+}

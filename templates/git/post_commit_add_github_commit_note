@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 #
 # Automatically adds branch name and branch description to every commit post commit message.
 # Edit .git/hooks/post-commit & make sure it is excutable chmod +x

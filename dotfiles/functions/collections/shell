@@ -1,0 +1,35 @@
+#!/bin/zsh
+
+function reloadshell() { exec $SHELL }
+function getpwd() { pwd | pbcopy }
+function flush() { sudo killall -HUP mDNSResponder }
+function disc() { df -h }
+function up() { uptime | sed -e "s/:/ /2" | sed -e "s/,/ /2" | awk '{print "Up " $3 " days, " $5 " hours and " $6 " minutes"}' }
+function purgeDS() { find . -name '*.DS_Store' -type f -delete }
+function msg() {
+  local message="$1"
+  local color="${2:-blue}"
+
+  case "$color" in
+      red)    echo -e "\033[31m→ $message\033[0m" ;;
+      green)  echo -e "\033[32m→ $message\033[0m" ;;
+      yellow) echo -e "\033[33m→ $message\033[0m" ;;
+      blue)   echo -e "\033[34m→ $message\033[0m" ;;
+      *)      echo "→ $message" ;;
+  esac
+}
+
+function shellhelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+  echo "  reloadshell  = reload current shell"
+  echo "  getpwd       = copy current path to the clipboard"
+  echo "  flush        = reset current dns"
+  echo "  disc         = disc space details"
+  echo "  up           = current machine up time"
+  echo "  purgeDS      = remove all .DS_Store files in current directory"
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}
