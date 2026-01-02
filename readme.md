@@ -1,4 +1,4 @@
-## Chris Hough Configurations
+## [Chris Hough](https://github.com/chrishough) Configurations
 
 Every engineer's workstation configuration (`dotfiles`) is highly variable and tailored to their desires, habits, and software stack. I love rebuilding and tinkering with my build by learning from and collaborating with others.  This setup is what I use to get the job done, however, don't just accept my words as gospel, find your own path when setting up your build.  
 
