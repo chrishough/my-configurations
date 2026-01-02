@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [8.2.0] - 2026-01-02
+
+### Changed
+
+#### GitHub Actions
+- Updated `actions/checkout` from v5 to v6 in security workflow
+
+#### Documentation
+- Updated readme header to include link to GitHub profile
+
+---
+
 ## [8.1.0] - 2026-01-01
 
 ### Removed
@@ -338,6 +350,7 @@ Complete modular architecture with 9 shell modules (`dotfiles/functions/collecti
 
 | Version | Release | Focus |
 |---------|---------|-------|
+| 8.2.0 | 2026-01-02 | GitHub Actions v6, documentation update |
 | 8.1.0 | 2026-01-01 | Cursor IDE removal |
 | 8.0.0 | 2026-01-01 | Ruby 4.0.0, tmux/DVY migration, Docker templates, AI tooling, shell modularization, Apple Silicon exclusive |
 | 7.4.0 | 2025-08-10 | RuboCop linting, IDE workspaces, NVM pinning |
