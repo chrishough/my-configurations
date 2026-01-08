@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [8.3.0] - 2026-01-06
+
+### Added
+
+#### Documentation
+- Added "Running a Desktop?" sections to installation guides for desktop-specific configurations
+- Added firewall reminder in readme "Finished with Everything?" section
+- New macOS configuration steps:
+  - Calendar app time zone support enablement
+  - Messages notification sound disabling
+  - Mail viewing preference (most recent message at top)
+  - Mail "All Trash" folder added to Favorites
+
+#### Desktop Software (Desktop-specific)
+- **VMWARE Fusion** for Windows ecosystem debugging
+  - Windows 11 virtual machine setup instructions
+  - Google Chrome installation within VM
+  - Bridged networking configuration
+
+### Changed
+
+#### Documentation Reorganization
+- Separated desktop-specific instructions from laptop/universal setup steps
+- Moved Energy Saver settings to "Running a Desktop?" section in core setup guide
+- Moved iStat Menus to "Running a Desktop?" section in engineering guide
+- Renumbered core macOS setup steps for clarity (01.md)
+
+#### Software Categorization
+- Moved Spotify from engineering tools (03.md) to business software (02.md)
+
+---
+
 ## [8.2.0] - 2026-01-02
 
 ### Changed
@@ -350,6 +382,7 @@ Complete modular architecture with 9 shell modules (`dotfiles/functions/collecti
 
 | Version | Release | Focus |
 |---------|---------|-------|
+| 8.3.0 | 2026-01-06 | Desktop-specific sections, VMWARE Fusion, documentation reorganization |
 | 8.2.0 | 2026-01-02 | GitHub Actions v6, documentation update |
 | 8.1.0 | 2026-01-01 | Cursor IDE removal |
 | 8.0.0 | 2026-01-01 | Ruby 4.0.0, tmux/DVY migration, Docker templates, AI tooling, shell modularization, Apple Silicon exclusive |
