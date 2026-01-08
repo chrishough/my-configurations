@@ -6,7 +6,7 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
-## Installation
+### Installation
 > If you are following these below, they are in sequence of how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Happy to help my friends. 
 
 #### This Guide was written on OSX 26.2 "Tahoe"
@@ -16,3 +16,6 @@ These guides are highly opinionated. If you have any questions please post an is
 2. [Install Additional Business amd Workflow Software](/docs/installation/02.md)
 3. [Engineering Workstation Setup and Configuration](/docs/installation/03.md)
 
+### Finished with Everything? 
+
+* Under `System Preferences` in `Network` to enable the `Firewall`.
