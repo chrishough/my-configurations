@@ -1,4 +1,4 @@
-## [Chris Hough](https://github.com/chrishough) Configurations
+# [Chris Hough](https://github.com/chrishough) Configurations
 
 Every engineer's workstation configuration (`dotfiles`) is highly variable and tailored to their desires, habits, and software stack. I love rebuilding and tinkering with my build by learning from and collaborating with others.  This setup is what I use to get the job done, however, don't just accept my words as gospel, find your own path when setting up your build.  
 
@@ -6,16 +6,13 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
-### Installation
-> If you are following these below, they are in sequence of how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Happy to help my friends. 
-
-#### This Guide was written on OSX 26.2 "Tahoe"
-> Refer to older versions of these dotfiles for Intel chipsets, version 8 and beyond only supports the Apple M series chipsets
+# My Engineering Life
+> This is how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Refer to older versions of these dotfiles for Intel chipsets, version 8+ only supports the Apple M-Series chipsets. Happy to help my friends! This Guide was written on OSX 26.2 "Tahoe".
 
 1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/01.md)
 2. [Install Additional Business amd Workflow Software](/docs/installation/02.md)
 3. [Engineering Workstation Setup and Configuration](/docs/installation/03.md)
 
-### Finished with Everything? 
+#### Finished with Everything? 
 
 * Under `System Preferences` in `Network` to enable the `Firewall`.
