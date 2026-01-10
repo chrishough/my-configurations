@@ -13,7 +13,55 @@ These guides are highly opinionated. If you have any questions please post an is
 2. [Install Additional Business amd Workflow Software](/docs/installation/002.md)
 3. [Engineering Workstation Setup and Configuration](/docs/installation/003.md)
 4. [Artificial Intelligence Preferences and Configurations](/docs/installation/004.md)
+5. Under `System Preferences` in `Network` to enable the `Firewall`
 
-#### Finished with Everything? 
+#### Setup Scripts Reference
 
-* Under `System Preferences` in `Network` to enable the `Firewall`.
+This repository includes two idempotent setup scripts that can be run safely multiple times—they only make changes when necessary.
+
+##### `lib/install.sh` - Homebrew Package Installation
+
+Installs essential development tools via Homebrew. Run with:
+```bash
+sh "$HOME/.myconfigurations/lib/install.sh"
+```
+
+**Idempotency:** Checks `brew list` before each install. Skips packages already present, only installs missing ones.
+
+| Category | Packages |
+|----------|----------|
+| Shell | zsh, zsh-completions, zsh-syntax-highlighting, zsh-autosuggestions, tmux, autojump, fzf, direnv |
+| Languages | ruby, rbenv, node, nvm, yarn, python |
+| Tools | heroku, git-lfs, htop, wget, cmake, pkg-config, libpq |
+
+##### `lib/setup.rb` - Configuration Symlinks
+
+Creates symlinks from expected system locations to versioned config files in this repository. Run with:
+```bash
+ruby "$HOME/.myconfigurations/lib/setup.rb"
+```
+
+**Idempotency:** The `SetupHelper` module checks each path before acting:
+- Correct symlink exists → skips (no action)
+- Wrong symlink exists → removes old, creates correct
+- Regular file exists → skips (preserves user files)
+- Nothing exists → creates parent directories and symlink
+
+**Managed Symlinks:**
+
+| Category | Source (System Location) | Destination (Repository) |
+|----------|--------------------------|--------------------------|
+| dotfiles | `~/.bash_profile` | `dotfiles/.bash_profile` |
+| dotfiles | `~/.bashrc` | `dotfiles/.bashrc` |
+| dotfiles | `~/.gemrc` | `dotfiles/.gemrc` |
+| dotfiles | `~/.profile` | `dotfiles/.profile` |
+| dotfiles | `~/.pryrc` | `dotfiles/.pryrc` |
+| dotfiles | `~/.vimrc` | `dotfiles/.vimrc` |
+| dotfiles | `~/.zprofile` | `dotfiles/.zprofile` |
+| dotfiles | `~/.zshrc` | `dotfiles/.zshrc` |
+| claude | `~/.claude/settings.json` | `aitooling/claude/settings.json` |
+| claude | `~/.claude/CLAUDE.md` | `aitooling/claude/CLAUDE.md` |
+| tmux | `~/.tmux.conf` | `applications/tmux/conf` |
+| vscode | `~/Library/.../User/settings.json` | `applications/vscode/settings.json` |
+| vscode | `~/Library/.../User/keybindings.json` | `applications/vscode/keybindings.json` |
+| vscode | `~/Library/.../User/snippets/ruby.json` | `applications/vscode/snippets/ruby.json` |
