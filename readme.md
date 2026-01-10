@@ -12,7 +12,7 @@ These guides are highly opinionated. If you have any questions please post an is
 1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/001.md)
 2. [Install Additional Business amd Workflow Software](/docs/installation/002.md)
 3. [Engineering Workstation Setup and Configuration](/docs/installation/003.md)
-3. [Artificial Intelligence Preferences and Configurations](/docs/installation/004.md)
+4. [Artificial Intelligence Preferences and Configurations](/docs/installation/004.md)
 
 #### Finished with Everything? 
 
