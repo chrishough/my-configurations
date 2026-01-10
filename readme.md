@@ -9,9 +9,10 @@ These guides are highly opinionated. If you have any questions please post an is
 # My Engineering Life
 > This is how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Refer to older versions of these dotfiles for Intel chipsets, version 8+ only supports the Apple M-Series chipsets. Happy to help my friends! This Guide was written on OSX 26.2 "Tahoe".
 
-1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/01.md)
-2. [Install Additional Business amd Workflow Software](/docs/installation/02.md)
-3. [Engineering Workstation Setup and Configuration](/docs/installation/03.md)
+1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/001.md)
+2. [Install Additional Business amd Workflow Software](/docs/installation/002.md)
+3. [Engineering Workstation Setup and Configuration](/docs/installation/003.md)
+3. [Artificial Intelligence Preferences and Configurations](/docs/installation/004.md)
 
 #### Finished with Everything? 
 
