@@ -1,4 +1,4 @@
-## [Chris Hough](https://github.com/chrishough) Configurations
+# [Chris Hough](https://github.com/chrishough) Configurations
 
 Every engineer's workstation configuration (`dotfiles`) is highly variable and tailored to their desires, habits, and software stack. I love rebuilding and tinkering with my build by learning from and collaborating with others.  This setup is what I use to get the job done, however, don't just accept my words as gospel, find your own path when setting up your build.  
 
@@ -6,16 +6,62 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 
 These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
-### Installation
-> If you are following these below, they are in sequence of how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Happy to help my friends. 
+# My Engineering Life
+> This is how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Refer to older versions of these dotfiles for Intel chipsets, version 8+ only supports the Apple M-Series chipsets. Happy to help my friends! This Guide was written on OSX 26.2 "Tahoe".
 
-#### This Guide was written on OSX 26.2 "Tahoe"
-> Refer to older versions of these dotfiles for Intel chipsets, version 8 and beyond only supports the Apple M series chipsets
+1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/001.md)
+2. [Install Additional Business amd Workflow Software](/docs/installation/002.md)
+3. [Engineering Workstation Setup and Configuration](/docs/installation/003.md)
+4. [Artificial Intelligence Preferences and Configurations](/docs/installation/004.md)
+5. Under `System Preferences` in `Network` to enable the `Firewall`
 
-1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/01.md)
-2. [Install Additional Business amd Workflow Software](/docs/installation/02.md)
-3. [Engineering Workstation Setup and Configuration](/docs/installation/03.md)
+#### Setup Scripts Reference
 
-### Finished with Everything? 
+This repository includes two idempotent setup scripts that can be run safely multiple times—they only make changes when necessary.
 
-* Under `System Preferences` in `Network` to enable the `Firewall`.
+##### `lib/install.sh` - Homebrew Package Installation
+
+Installs essential development tools via Homebrew. Run with:
+```bash
+sh "$HOME/.myconfigurations/lib/install.sh"
+```
+
+**Idempotency:** Checks `brew list` before each install. Skips packages already present, only installs missing ones.
+
+| Category | Packages |
+|----------|----------|
+| Shell | zsh, zsh-completions, zsh-syntax-highlighting, zsh-autosuggestions, tmux, autojump, fzf, direnv |
+| Languages | ruby, rbenv, node, nvm, yarn, python |
+| Tools | heroku, git-lfs, htop, wget, cmake, pkg-config, libpq |
+
+##### `lib/setup.rb` - Configuration Symlinks
+
+Creates symlinks from expected system locations to versioned config files in this repository. Run with:
+```bash
+ruby "$HOME/.myconfigurations/lib/setup.rb"
+```
+
+**Idempotency:** The `SetupHelper` module checks each path before acting:
+- Correct symlink exists → skips (no action)
+- Wrong symlink exists → removes old, creates correct
+- Regular file exists → skips (preserves user files)
+- Nothing exists → creates parent directories and symlink
+
+**Managed Symlinks:**
+
+| Category | Source (System Location) | Destination (Repository) |
+|----------|--------------------------|--------------------------|
+| dotfiles | `~/.bash_profile` | `dotfiles/.bash_profile` |
+| dotfiles | `~/.bashrc` | `dotfiles/.bashrc` |
+| dotfiles | `~/.gemrc` | `dotfiles/.gemrc` |
+| dotfiles | `~/.profile` | `dotfiles/.profile` |
+| dotfiles | `~/.pryrc` | `dotfiles/.pryrc` |
+| dotfiles | `~/.vimrc` | `dotfiles/.vimrc` |
+| dotfiles | `~/.zprofile` | `dotfiles/.zprofile` |
+| dotfiles | `~/.zshrc` | `dotfiles/.zshrc` |
+| claude | `~/.claude/settings.json` | `aitooling/claude/settings.json` |
+| claude | `~/.claude/CLAUDE.md` | `aitooling/claude/CLAUDE.md` |
+| tmux | `~/.tmux.conf` | `applications/tmux/conf` |
+| vscode | `~/Library/.../User/settings.json` | `applications/vscode/settings.json` |
+| vscode | `~/Library/.../User/keybindings.json` | `applications/vscode/keybindings.json` |
+| vscode | `~/Library/.../User/snippets/ruby.json` | `applications/vscode/snippets/ruby.json` |
