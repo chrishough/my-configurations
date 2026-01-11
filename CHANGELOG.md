@@ -26,6 +26,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Business Software
 - Discord added to required software list
+- Adobe Creative Cloud added with Photoshop, Illustrator, and Acrobat
+- New "Running a Laptop?" section in business software guide (`002.md`)
+  - Bartender reorganized to laptop-specific section
 
 ### Changed
 
