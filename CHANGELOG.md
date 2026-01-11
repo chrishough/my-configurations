@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [8.4.0] - 2026-01-11
+
+### Added
+
+#### Documentation
+- New AI Configuration Guide (`docs/installation/004.md`):
+  - Claude CLI installation via NPM (`@anthropic-ai/claude-code`)
+  - Plugin installation: Playwright, Code Simplifier, Frontend Design
+  - Setup script symlink instructions for Claude configuration
+  - Favorite Claude skills reference
+- Setup Scripts Reference section in README documenting:
+  - `lib/install.sh` - Idempotent Homebrew package installation with package categories table
+  - `lib/setup.rb` - Idempotent symlink management with managed paths table
+
+#### AI Tooling
+- Code Simplifier plugin enabled in Claude settings
+
+#### Business Software
+- Discord added to required software list
+
+### Changed
+
+#### Documentation Reorganization
+- Renamed installation guides with 3-digit numbering (`01.md` → `001.md`, `02.md` → `002.md`, `03.md` → `003.md`)
+- README restructure with new "My Engineering Life" section header
+- Installation steps renumbered (1-5) with firewall reminder as final step
+
+#### Dependencies
+- Ruby version updated from 3.4.3 to 4.0.0 in Gemfile
+
+---
+
 ## [8.3.0] - 2026-01-06
 
 ### Added
@@ -382,6 +414,7 @@ Complete modular architecture with 9 shell modules (`dotfiles/functions/collecti
 
 | Version | Release | Focus |
 |---------|---------|-------|
+| 8.4.0 | 2026-01-11 | AI configuration guide, setup scripts documentation, Code Simplifier plugin, Ruby 4.0.0 |
 | 8.3.0 | 2026-01-06 | Desktop-specific sections, VMWARE Fusion, documentation reorganization |
 | 8.2.0 | 2026-01-02 | GitHub Actions v6, documentation update |
 | 8.1.0 | 2026-01-01 | Cursor IDE removal |
