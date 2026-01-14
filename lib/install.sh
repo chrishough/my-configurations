@@ -26,6 +26,7 @@ install_brew_packages() {
         "cmake"
         "pkg-config"
         "libpq"
+        "gitleaks"
     )
 
     echo "Running brew update..."
