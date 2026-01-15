@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [8.5.0] - 2026-01-13
+
+### Added
+
+#### Security
+- **Gitleaks** secret scanning tool added to Homebrew package list (`lib/install.sh`)
+  - Detects hardcoded secrets, API keys, and credentials in git repositories
+
+### Changed
+
+#### Repository Organization
+- Relocated git hook templates from `templates/git/` to `applications/git/templates/`
+  - `block_branch` - Branch protection hook
+  - `commit_msg_add_branch_name` - Commit message enhancement hook
+  - `post_commit_add_github_commit_note` - GitHub integration hook
+
+---
+
 ## [8.4.0] - 2026-01-11
 
 ### Added
@@ -417,6 +435,7 @@ Complete modular architecture with 9 shell modules (`dotfiles/functions/collecti
 
 | Version | Release | Focus |
 |---------|---------|-------|
+| 8.5.0 | 2026-01-13 | Gitleaks security scanning, git templates reorganization |
 | 8.4.0 | 2026-01-11 | AI configuration guide, setup scripts documentation, Code Simplifier plugin, Ruby 4.0.0 |
 | 8.3.0 | 2026-01-06 | Desktop-specific sections, VMWARE Fusion, documentation reorganization |
 | 8.2.0 | 2026-01-02 | GitHub Actions v6, documentation update |
