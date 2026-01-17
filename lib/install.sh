@@ -27,6 +27,7 @@ install_brew_packages() {
         "pkg-config"
         "libpq"
         "gitleaks"
+        "chezmoi"
     )
 
     echo "Running brew update..."
