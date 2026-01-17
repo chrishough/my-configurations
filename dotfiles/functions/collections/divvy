@@ -16,13 +16,13 @@ _dvy_next_session_name() {
   echo "${base}_${i}"
 }
 
-# Layout: apps
+# Layout: l1_r3
 # +--------+----+----+
 # |        | 1  | 2  |
 # |   0    +----+----+
 # |        |    3    |
 # +--------+---------+
-_dvy_layout_apps() {
+_dvy_layout_l1_r3() {
   local session="$1"
   local dir="$2"
   local config="$3"
@@ -47,7 +47,7 @@ _dvy_layout_apps() {
   tmux attach -t "$session"
 }
 
-# Layout: configurations
+# Layout: l1_r4
 # +--------+---------+
 # |        |    1    |
 # |        +---------+
@@ -57,7 +57,7 @@ _dvy_layout_apps() {
 # |        +---------+
 # |        |    4    |
 # +--------+---------+
-_dvy_layout_configurations() {
+_dvy_layout_l1_r4() {
   local session="$1"
   local dir="$2"
   local config="$3"
@@ -71,6 +71,49 @@ _dvy_layout_configurations() {
 
   # Send commands to each pane (clear, custom command if specified, clear)
   for pane in 0 1 2 3 4; do
+    tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
+    if [[ -n "$cmd" ]]; then
+      tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    fi
+  done
+
+  tmux attach -t "$session"
+}
+
+# Layout: l2_r4
+# +--------+---------+
+# |   0    |    1    |
+# |        +---------+
+# |        |    2    |
+# +--------+---------+
+# |        |    3    |
+# |   5    +---------+
+# |        |    4    |
+# +--------+---------+
+_dvy_layout_l2_r4() {
+  local session="$1"
+  local dir="$2"
+  local config="$3"
+
+  # Create session with pane 0
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines)
+
+  # Split horizontally: pane 1 on right (50%)
+  tmux split-window -h -p 50 -t "$session:0" -c "$dir"
+
+  # Split right pane (1) vertically 3 times
+  tmux split-window -v -p 75 -t "$session:0.1" -c "$dir"
+  tmux split-window -v -p 66 -t "$session:0.2" -c "$dir"
+  tmux split-window -v -p 50 -t "$session:0.3" -c "$dir"
+
+  # Split left pane (0) vertically once
+  tmux split-window -v -p 50 -t "$session:0.0" -c "$dir"
+
+  tmux select-layout -t "$session:0" -E
+
+  for pane in 0 1 2 3 4 5; do
     tmux send-keys -t "$session:0.$pane" 'clear' Enter
     local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
     if [[ -n "$cmd" ]]; then
@@ -201,11 +244,14 @@ dvy() {
   session=$(_dvy_next_session_name "$session")
 
   case "$layout" in
-    apps)
-      _dvy_layout_apps "$session" "$dir" "$config"
+    l1_r3)
+      _dvy_layout_l1_r3 "$session" "$dir" "$config"
       ;;
-    configurations)
-      _dvy_layout_configurations "$session" "$dir" "$config"
+    l1_r4)
+      _dvy_layout_l1_r4 "$session" "$dir" "$config"
+      ;;
+    l2_r4)
+      _dvy_layout_l2_r4 "$session" "$dir" "$config"
       ;;
     *)
       echo "Error: Unknown layout type: $layout"
@@ -233,14 +279,14 @@ dvyhelp() {
   echo
   echo " Layout types:"
   echo
-  echo "   apps - 4-pane layout"
+  echo "   l1_r3 - 4-pane layout (1 left, 3 right)"
   echo "   +--------+----+----+"
   echo "   |        | 1  | 2  |"
   echo "   |   0    +----+----+"
   echo "   |        |    3    |"
   echo "   +--------+---------+"
   echo
-  echo "   configurations - 5-pane layout"
+  echo "   l1_r4 - 5-pane layout (1 left, 4 right)"
   echo "   +--------+---------+"
   echo "   |        |    1    |"
   echo "   |        +---------+"
@@ -248,6 +294,17 @@ dvyhelp() {
   echo "   |        +---------+"
   echo "   |        |    3    |"
   echo "   |        +---------+"
+  echo "   |        |    4    |"
+  echo "   +--------+---------+"
+  echo
+  echo "   l2_r4 - 6-pane layout (2 left, 4 right)"
+  echo "   +--------+---------+"
+  echo "   |   0    |    1    |"
+  echo "   |        +---------+"
+  echo "   |        |    2    |"
+  echo "   +--------+---------+"
+  echo "   |        |    3    |"
+  echo "   |   5    +---------+"
   echo "   |        |    4    |"
   echo "   +--------+---------+"
   echo
