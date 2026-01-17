@@ -28,6 +28,7 @@ install_brew_packages() {
         "libpq"
         "gitleaks"
         "chezmoi"
+        "gh"
     )
 
     echo "Running brew update..."
