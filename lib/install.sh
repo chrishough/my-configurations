@@ -29,6 +29,7 @@ install_brew_packages() {
         "gitleaks"
         "chezmoi"
         "gh"
+        "terminal-notifier"
     )
 
     echo "Running brew update..."
