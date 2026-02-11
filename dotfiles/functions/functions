@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # SETTINGS AND PRIVATE VARIABLES : NEVER CHECK IN THIS FILE!
-source $HOME/.myconfigurations.private
+source $HOME/.myconfigurations.private.keys
 
 # ADJUST SHELL HISTORY
 export HISTFILESIZE=10000

@@ -17,9 +17,9 @@ require "tmpdir"
 #       ],
 #       claude: [
 #         { source: "$HOME/.claude/settings.json",
-#           destination: "$HOME/.myconfigurations.ai/claude/global/settings.json" },
+#           destination: "$HOME/.myconfigurations.private/claude/global/settings.json" },
 #         { source: "$HOME/.claude/CLAUDE.md",
-#           destination: "$HOME/.myconfigurations.ai/claude/brains/global/CLAUDE.md" }
+#           destination: "$HOME/.myconfigurations.private/claude/brains/global/CLAUDE.md" }
 #       ]
 #     }
 #   ]
@@ -231,7 +231,7 @@ RSpec.describe SetupHelper do
     context "when source has deeply nested directories that do not exist" do
       it "creates all intermediate source directories and the symlink" do
         # Destination file exists in the repo (simulating the config store).
-        dest_file = File.join( tmpdir, ".myconfigurations.ai/claude/local/settings.json" )
+        dest_file = File.join( tmpdir, ".myconfigurations.private/claude/local/settings.json" )
         FileUtils.mkdir_p( File.dirname( dest_file ) )
         File.write( dest_file, "{}" )
 
@@ -242,7 +242,7 @@ RSpec.describe SetupHelper do
             claude: [
               {
                 source: "$HOME/test/.claude/settings.local.json",
-                destination: "$HOME/.myconfigurations.ai/claude/local/settings.json",
+                destination: "$HOME/.myconfigurations.private/claude/local/settings.json",
               }
             ],
           }
@@ -341,7 +341,7 @@ RSpec.describe SetupHelper do
       it "creates symlinks for every tool entry" do
         # Set up destination files for two tools.
         tmux_dest = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
-        claude_dest = File.join( tmpdir, ".myconfigurations.ai/claude/global/settings.json" )
+        claude_dest = File.join( tmpdir, ".myconfigurations.private/claude/global/settings.json" )
 
         FileUtils.mkdir_p( File.dirname( tmux_dest ) )
         FileUtils.mkdir_p( File.dirname( claude_dest ) )
@@ -360,7 +360,7 @@ RSpec.describe SetupHelper do
             claude: [
               {
                 source: "$HOME/.claude/settings.json",
-                destination: "$HOME/.myconfigurations.ai/claude/global/settings.json",
+                destination: "$HOME/.myconfigurations.private/claude/global/settings.json",
               }
             ],
           }
@@ -388,8 +388,8 @@ RSpec.describe SetupHelper do
     # --------------------------------------------------------------------------
     context "when a tool has multiple path entries" do
       it "creates a symlink for each path entry" do
-        settings_dest = File.join( tmpdir, ".myconfigurations.ai/claude/global/settings.json" )
-        claude_md_dest = File.join( tmpdir, ".myconfigurations.ai/claude/brains/global/CLAUDE.md" )
+        settings_dest = File.join( tmpdir, ".myconfigurations.private/claude/global/settings.json" )
+        claude_md_dest = File.join( tmpdir, ".myconfigurations.private/claude/brains/global/CLAUDE.md" )
 
         FileUtils.mkdir_p( File.dirname( settings_dest ) )
         FileUtils.mkdir_p( File.dirname( claude_md_dest ) )
@@ -402,11 +402,11 @@ RSpec.describe SetupHelper do
             claude: [
               {
                 source: "$HOME/.claude/settings.json",
-                destination: "$HOME/.myconfigurations.ai/claude/global/settings.json",
+                destination: "$HOME/.myconfigurations.private/claude/global/settings.json",
               },
               {
                 source: "$HOME/.claude/CLAUDE.md",
-                destination: "$HOME/.myconfigurations.ai/claude/brains/global/CLAUDE.md",
+                destination: "$HOME/.myconfigurations.private/claude/brains/global/CLAUDE.md",
               }
             ],
           }

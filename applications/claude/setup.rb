@@ -5,13 +5,13 @@
 
 require_relative "helpers/setup_helper"
 
-PATHS = [].freeze
+PATHS = [] # rubocop:disable Style/MutableConstant
 PATHS.push(
   {
     claude: [
       {
         source: "test/.claude/settings.local.json",
-        destination: "$HOME/.myconfigurations.ai/claude/local/settings.json",
+        destination: "$HOME/.myconfigurations.private/claude/local/settings.json",
       }
     ],
   },

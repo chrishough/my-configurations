@@ -5,8 +5,8 @@
 
 require_relative "helpers/setup_helper"
 
-# Initialize PATHS array
-PATHS = [].freeze
+# Initialize PATHS array -- must remain mutable so setup files can push into it.
+PATHS = [] # rubocop:disable Style/MutableConstant
 
 require_relative "../applications/setup"
 # Load all setup files - they will append to PATHS

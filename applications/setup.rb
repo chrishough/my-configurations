@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-PATHS = [].freeze
 PATHS.push(
   {
     tmux: [
@@ -12,11 +11,11 @@ PATHS.push(
     claude: [
       {
         source: "$HOME/.claude/settings.json",
-        destination: "$HOME/.myconfigurations.ai/claude/global/settings.json",
+        destination: "$HOME/.myconfigurations.private/claude/global/settings.json",
       },
       {
         source: "$HOME/.claude/CLAUDE.md",
-        destination: "$HOME/.myconfigurations.ai/claude/brains/global/CLAUDE.md",
+        destination: "$HOME/.myconfigurations.private/claude/brains/global/CLAUDE.md",
       }
     ],
     vscode: [
