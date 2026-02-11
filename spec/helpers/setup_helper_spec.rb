@@ -285,6 +285,36 @@ RSpec.describe SetupHelper do
         expect( File.exist?( source_keep ) ).to be true
         expect( File.exist?( dest_keep ) ).to be true
       end
+
+      # When mkdir_p creates multiple directories (e.g., a/b/c/d), every
+      # intermediate directory must receive a .keep file -- not just the leaf.
+      # This ensures all directories can be tracked in git.
+      it "adds .keep files to all intermediate directories created by mkdir_p" do
+        paths = [
+          {
+            deep: [
+              {
+                source: "$HOME/a/b/c/d/settings.json",
+                destination: "$HOME/w/x/y/z/settings.json",
+              }
+            ],
+          }
+        ]
+
+        described_class.process_paths( paths )
+
+        # Every intermediate source directory should have a .keep file.
+        %w[a a/b a/b/c a/b/c/d].each do |subpath|
+          keep = File.join( tmpdir, subpath, ".keep" )
+          expect( File.exist?( keep ) ).to( be( true ), "expected .keep in #{subpath}" )
+        end
+
+        # Every intermediate destination directory should have a .keep file.
+        %w[w w/x w/x/y w/x/y/z].each do |subpath|
+          keep = File.join( tmpdir, subpath, ".keep" )
+          expect( File.exist?( keep ) ).to( be( true ), "expected .keep in #{subpath}" )
+        end
+      end
     end
 
     # --------------------------------------------------------------------------

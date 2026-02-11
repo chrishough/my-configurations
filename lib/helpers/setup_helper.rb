@@ -54,14 +54,16 @@ module SetupHelper
           end
 
           unless File.exist?( source_dir )
+            base_dir = deepest_existing_ancestor( source_dir )
             puts( "  Creating source directory: #{source_dir}" )
             FileUtils.mkdir_p( source_dir )
-            add_keep_file( source_dir )
+            add_keep_files( source_dir, base_dir )
           end
 
           unless File.exist?( destination_dir )
+            base_dir = deepest_existing_ancestor( destination_dir )
             FileUtils.mkdir_p( destination_dir )
-            add_keep_file( destination_dir )
+            add_keep_files( destination_dir, base_dir )
           end
 
           puts( "  Creating symlink: #{source} -> #{destination}" )
@@ -71,8 +73,22 @@ module SetupHelper
     end
   end
 
-  def self.add_keep_file( dir )
-    keep_file = File.join( dir, ".keep" )
-    FileUtils.touch( keep_file ) unless File.exist?( keep_file )
+  def self.deepest_existing_ancestor( dir )
+    current = dir
+    current = File.dirname( current ) until File.exist?( current ) || current == "/" || current == "."
+    current
+  end
+
+  def self.add_keep_files( dir, base_dir )
+    current = dir
+    dirs_to_keep = []
+    while current != base_dir && current != "/" && current != "."
+      dirs_to_keep << current
+      current = File.dirname( current )
+    end
+    dirs_to_keep.each do |d|
+      keep_file = File.join( d, ".keep" )
+      FileUtils.touch( keep_file ) unless File.exist?( keep_file )
+    end
   end
 end
