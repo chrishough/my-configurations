@@ -1,0 +1,20 @@
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - lib/helpers/setup_helper.rb
+
+Metrics/MethodLength:
+  Exclude:
+    - lib/helpers/setup_helper.rb
+
+Metrics/AbcSize:
+  Exclude:
+    - lib/helpers/setup_helper.rb
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - lib/helpers/setup_helper.rb
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - lib/helpers/setup_helper.rb

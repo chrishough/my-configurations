@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'tmpdir'
-require 'fileutils'
-require 'helpers/setup_helper'
+require "fileutils"
+require "helpers/setup_helper"
+require "tmpdir"
 
 # SetupHelper.process_paths receives a nested data structure (Array of Hashes)
 # that mirrors the format used in applications/setup.rb and dotfiles/setup.rb.
@@ -31,29 +31,23 @@ require 'helpers/setup_helper'
 #
 # All specs use a temporary directory so the real filesystem is never touched.
 RSpec.describe SetupHelper do
-  describe '.process_paths' do
+  describe ".process_paths" do
     # Create a fresh temp directory for every example and clean it up after.
     # We override $HOME so that PathHelper.expand_shell_path resolves "$HOME"
     # to our sandbox instead of the real home directory.
-    let(:tmpdir) { Dir.mktmpdir('setup_helper_spec') }
+    let( :tmpdir ) { Dir.mktmpdir( "setup_helper_spec" ) }
+    let( :original_home ) { Dir.home }
 
     before do
-      @original_home = ENV['HOME']
-      ENV['HOME'] = tmpdir
+      original_home
+      ENV["HOME"] = tmpdir
+      allow( $stdout ).to receive( :write )
+      allow( $stdout ).to receive( :puts )
     end
 
     after do
-      ENV['HOME'] = @original_home
-      FileUtils.rm_rf(tmpdir)
-    end
-
-    # Helper to suppress puts output during tests so spec output stays clean.
-    around do |example|
-      original_stdout = $stdout
-      $stdout = StringIO.new
-      example.run
-    ensure
-      $stdout = original_stdout
+      ENV["HOME"] = original_home
+      FileUtils.rm_rf( tmpdir )
     end
 
     # --------------------------------------------------------------------------
@@ -61,138 +55,138 @@ RSpec.describe SetupHelper do
     # The most common path: source does not exist yet, destination file exists,
     # and we expect a symlink to be created at source pointing to destination.
     # --------------------------------------------------------------------------
-    context 'when the source does not exist' do
-      it 'creates a symlink from source to destination' do
+    context "when the source does not exist" do
+      it "creates a symlink from source to destination" do
         # Simulate a destination config file that already exists in the repo.
-        dest_file = File.join(tmpdir, '.myconfigurations/applications/tmux/conf')
-        FileUtils.mkdir_p(File.dirname(dest_file))
-        File.write(dest_file, 'tmux config content')
+        dest_file = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
+        FileUtils.mkdir_p( File.dirname( dest_file ) )
+        File.write( dest_file, "tmux config content" )
 
         # This mirrors the tmux entry from applications/setup.rb.
         paths = [
           {
             tmux: [
               {
-                source: '$HOME/.tmux.conf',
-                destination: '$HOME/.myconfigurations/applications/tmux/conf'
+                source: "$HOME/.tmux.conf",
+                destination: "$HOME/.myconfigurations/applications/tmux/conf",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
-        source_path = File.join(tmpdir, '.tmux.conf')
+        source_path = File.join( tmpdir, ".tmux.conf" )
 
         # The source should now be a symlink pointing to the destination.
-        expect(File.symlink?(source_path)).to be true
-        expect(File.readlink(source_path)).to eq(dest_file)
+        expect( File.symlink?( source_path ) ).to be true
+        expect( File.readlink( source_path ) ).to eq( dest_file )
       end
     end
 
     # --------------------------------------------------------------------------
-    # Correct symlink already exists — skip
+    # Correct symlink already exists -- skip
     # When re-running setup, existing correct symlinks should not be recreated.
     # The method prints "Symlink already correct" and calls `next`.
     # --------------------------------------------------------------------------
-    context 'when a correct symlink already exists at source' do
-      it 'leaves the symlink unchanged' do
-        source_path = File.join(tmpdir, '.tmux.conf')
-        dest_file = File.join(tmpdir, '.myconfigurations/applications/tmux/conf')
-        FileUtils.mkdir_p(File.dirname(dest_file))
-        File.write(dest_file, 'tmux config')
+    context "when a correct symlink already exists at source" do
+      it "leaves the symlink unchanged" do
+        source_path = File.join( tmpdir, ".tmux.conf" )
+        dest_file = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
+        FileUtils.mkdir_p( File.dirname( dest_file ) )
+        File.write( dest_file, "tmux config" )
 
         # Pre-create the correct symlink.
-        File.symlink(dest_file, source_path)
+        File.symlink( dest_file, source_path )
 
         paths = [
           {
             tmux: [
               {
-                source: '$HOME/.tmux.conf',
-                destination: '$HOME/.myconfigurations/applications/tmux/conf'
+                source: "$HOME/.tmux.conf",
+                destination: "$HOME/.myconfigurations/applications/tmux/conf",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
         # Symlink should still exist and still point to the same destination.
-        expect(File.symlink?(source_path)).to be true
-        expect(File.readlink(source_path)).to eq(dest_file)
+        expect( File.symlink?( source_path ) ).to be true
+        expect( File.readlink( source_path ) ).to eq( dest_file )
       end
     end
 
     # --------------------------------------------------------------------------
-    # Incorrect symlink — replace
+    # Incorrect symlink -- replace
     # If a symlink exists but points to the wrong target (e.g., after moving
     # config files), the method deletes the old symlink and creates a new one.
     # --------------------------------------------------------------------------
-    context 'when an incorrect symlink exists at source' do
-      it 'removes the old symlink and creates a correct one' do
-        source_path = File.join(tmpdir, '.tmux.conf')
-        wrong_dest = File.join(tmpdir, 'old/wrong/path')
-        correct_dest = File.join(tmpdir, '.myconfigurations/applications/tmux/conf')
+    context "when an incorrect symlink exists at source" do
+      it "removes the old symlink and creates a correct one" do
+        source_path = File.join( tmpdir, ".tmux.conf" )
+        wrong_dest = File.join( tmpdir, "old/wrong/path" )
+        correct_dest = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
 
-        FileUtils.mkdir_p(File.dirname(wrong_dest))
-        FileUtils.mkdir_p(File.dirname(correct_dest))
-        File.write(correct_dest, 'correct config')
+        FileUtils.mkdir_p( File.dirname( wrong_dest ) )
+        FileUtils.mkdir_p( File.dirname( correct_dest ) )
+        File.write( correct_dest, "correct config" )
 
         # Pre-create a symlink pointing to the wrong location.
-        File.symlink(wrong_dest, source_path)
+        File.symlink( wrong_dest, source_path )
 
         paths = [
           {
             tmux: [
               {
-                source: '$HOME/.tmux.conf',
-                destination: '$HOME/.myconfigurations/applications/tmux/conf'
+                source: "$HOME/.tmux.conf",
+                destination: "$HOME/.myconfigurations/applications/tmux/conf",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
         # The symlink should now point to the correct destination.
-        expect(File.symlink?(source_path)).to be true
-        expect(File.readlink(source_path)).to eq(correct_dest)
+        expect( File.symlink?( source_path ) ).to be true
+        expect( File.readlink( source_path ) ).to eq( correct_dest )
       end
     end
 
     # --------------------------------------------------------------------------
-    # Regular file exists at source — skip
+    # Regular file exists at source -- skip
     # If a real (non-symlink) file exists at the source location, the method
     # refuses to overwrite it. This protects user data that hasn't been moved
     # into the configuration repo yet.
     # --------------------------------------------------------------------------
-    context 'when a regular file exists at source' do
-      it 'does not create a symlink and leaves the file intact' do
-        source_path = File.join(tmpdir, '.tmux.conf')
-        dest_file = File.join(tmpdir, '.myconfigurations/applications/tmux/conf')
-        FileUtils.mkdir_p(File.dirname(dest_file))
-        File.write(dest_file, 'repo config')
+    context "when a regular file exists at source" do
+      it "does not create a symlink and leaves the file intact" do
+        source_path = File.join( tmpdir, ".tmux.conf" )
+        dest_file = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
+        FileUtils.mkdir_p( File.dirname( dest_file ) )
+        File.write( dest_file, "repo config" )
 
         # Create a real file (not a symlink) at the source path.
-        File.write(source_path, 'user local config')
+        File.write( source_path, "user local config" )
 
         paths = [
           {
             tmux: [
               {
-                source: '$HOME/.tmux.conf',
-                destination: '$HOME/.myconfigurations/applications/tmux/conf'
+                source: "$HOME/.tmux.conf",
+                destination: "$HOME/.myconfigurations/applications/tmux/conf",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
-        # The regular file should remain untouched — no symlink created.
-        expect(File.symlink?(source_path)).to be false
-        expect(File.read(source_path)).to eq('user local config')
+        # The regular file should remain untouched -- no symlink created.
+        expect( File.symlink?( source_path ) ).to be false
+        expect( File.read( source_path ) ).to eq( "user local config" )
       end
     end
 
@@ -202,28 +196,28 @@ RSpec.describe SetupHelper do
     # FileUtils.mkdir_p if they don't exist. This is important for first-time
     # setup on a fresh machine where directories like ~/.claude/ may not exist.
     # --------------------------------------------------------------------------
-    context 'when parent directories do not exist' do
-      it 'creates source and destination parent directories' do
+    context "when parent directories do not exist" do
+      it "creates source and destination parent directories" do
         # Use a deeply nested path that definitely doesn't exist yet.
         paths = [
           {
             newtool: [
               {
-                source: '$HOME/.config/newtool/deep/settings.json',
-                destination: '$HOME/.myconfigurations/apps/newtool/deep/settings.json'
+                source: "$HOME/.config/newtool/deep/settings.json",
+                destination: "$HOME/.myconfigurations/apps/newtool/deep/settings.json",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
-        source_dir = File.join(tmpdir, '.config/newtool/deep')
-        dest_dir = File.join(tmpdir, '.myconfigurations/apps/newtool/deep')
+        source_dir = File.join( tmpdir, ".config/newtool/deep" )
+        dest_dir = File.join( tmpdir, ".myconfigurations/apps/newtool/deep" )
 
         # Both directory trees should have been created.
-        expect(Dir.exist?(source_dir)).to be true
-        expect(Dir.exist?(dest_dir)).to be true
+        expect( Dir.exist?( source_dir ) ).to be true
+        expect( Dir.exist?( dest_dir ) ).to be true
       end
     end
 
@@ -232,46 +226,46 @@ RSpec.describe SetupHelper do
     # The applications/setup.rb file defines tmux, claude, and vscode in a
     # single hash. Verify that all tools in the group are processed.
     # --------------------------------------------------------------------------
-    context 'when processing multiple tools in one path group' do
-      it 'creates symlinks for every tool entry' do
+    context "when processing multiple tools in one path group" do
+      it "creates symlinks for every tool entry" do
         # Set up destination files for two tools.
-        tmux_dest = File.join(tmpdir, '.myconfigurations/applications/tmux/conf')
-        claude_dest = File.join(tmpdir, '.myconfigurations.ai/claude/global/settings.json')
+        tmux_dest = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
+        claude_dest = File.join( tmpdir, ".myconfigurations.ai/claude/global/settings.json" )
 
-        FileUtils.mkdir_p(File.dirname(tmux_dest))
-        FileUtils.mkdir_p(File.dirname(claude_dest))
-        File.write(tmux_dest, 'tmux')
-        File.write(claude_dest, 'claude')
+        FileUtils.mkdir_p( File.dirname( tmux_dest ) )
+        FileUtils.mkdir_p( File.dirname( claude_dest ) )
+        File.write( tmux_dest, "tmux" )
+        File.write( claude_dest, "claude" )
 
         # This mirrors the structure from applications/setup.rb with two tools.
         paths = [
           {
             tmux: [
               {
-                source: '$HOME/.tmux.conf',
-                destination: '$HOME/.myconfigurations/applications/tmux/conf'
+                source: "$HOME/.tmux.conf",
+                destination: "$HOME/.myconfigurations/applications/tmux/conf",
               }
             ],
             claude: [
               {
-                source: '$HOME/.claude/settings.json',
-                destination: '$HOME/.myconfigurations.ai/claude/global/settings.json'
+                source: "$HOME/.claude/settings.json",
+                destination: "$HOME/.myconfigurations.ai/claude/global/settings.json",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
-        tmux_source = File.join(tmpdir, '.tmux.conf')
-        claude_source = File.join(tmpdir, '.claude/settings.json')
+        tmux_source = File.join( tmpdir, ".tmux.conf" )
+        claude_source = File.join( tmpdir, ".claude/settings.json" )
 
         # Both tools should have their symlinks created.
-        expect(File.symlink?(tmux_source)).to be true
-        expect(File.readlink(tmux_source)).to eq(tmux_dest)
+        expect( File.symlink?( tmux_source ) ).to be true
+        expect( File.readlink( tmux_source ) ).to eq( tmux_dest )
 
-        expect(File.symlink?(claude_source)).to be true
-        expect(File.readlink(claude_source)).to eq(claude_dest)
+        expect( File.symlink?( claude_source ) ).to be true
+        expect( File.readlink( claude_source ) ).to eq( claude_dest )
       end
     end
 
@@ -281,42 +275,42 @@ RSpec.describe SetupHelper do
     # VSCode has three (settings, keybindings, snippets).
     # Verify all entries under one tool key are processed.
     # --------------------------------------------------------------------------
-    context 'when a tool has multiple path entries' do
-      it 'creates a symlink for each path entry' do
-        settings_dest = File.join(tmpdir, '.myconfigurations.ai/claude/global/settings.json')
-        claude_md_dest = File.join(tmpdir, '.myconfigurations.ai/claude/brains/global/CLAUDE.md')
+    context "when a tool has multiple path entries" do
+      it "creates a symlink for each path entry" do
+        settings_dest = File.join( tmpdir, ".myconfigurations.ai/claude/global/settings.json" )
+        claude_md_dest = File.join( tmpdir, ".myconfigurations.ai/claude/brains/global/CLAUDE.md" )
 
-        FileUtils.mkdir_p(File.dirname(settings_dest))
-        FileUtils.mkdir_p(File.dirname(claude_md_dest))
-        File.write(settings_dest, '{}')
-        File.write(claude_md_dest, '# CLAUDE')
+        FileUtils.mkdir_p( File.dirname( settings_dest ) )
+        FileUtils.mkdir_p( File.dirname( claude_md_dest ) )
+        File.write( settings_dest, "{}" )
+        File.write( claude_md_dest, "# CLAUDE" )
 
         # Mirrors the claude entry from applications/setup.rb exactly.
         paths = [
           {
             claude: [
               {
-                source: '$HOME/.claude/settings.json',
-                destination: '$HOME/.myconfigurations.ai/claude/global/settings.json'
+                source: "$HOME/.claude/settings.json",
+                destination: "$HOME/.myconfigurations.ai/claude/global/settings.json",
               },
               {
-                source: '$HOME/.claude/CLAUDE.md',
-                destination: '$HOME/.myconfigurations.ai/claude/brains/global/CLAUDE.md'
+                source: "$HOME/.claude/CLAUDE.md",
+                destination: "$HOME/.myconfigurations.ai/claude/brains/global/CLAUDE.md",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
-        settings_source = File.join(tmpdir, '.claude/settings.json')
-        claude_md_source = File.join(tmpdir, '.claude/CLAUDE.md')
+        settings_source = File.join( tmpdir, ".claude/settings.json" )
+        claude_md_source = File.join( tmpdir, ".claude/CLAUDE.md" )
 
-        expect(File.symlink?(settings_source)).to be true
-        expect(File.readlink(settings_source)).to eq(settings_dest)
+        expect( File.symlink?( settings_source ) ).to be true
+        expect( File.readlink( settings_source ) ).to eq( settings_dest )
 
-        expect(File.symlink?(claude_md_source)).to be true
-        expect(File.readlink(claude_md_source)).to eq(claude_md_dest)
+        expect( File.symlink?( claude_md_source ) ).to be true
+        expect( File.readlink( claude_md_source ) ).to eq( claude_md_dest )
       end
     end
 
@@ -326,46 +320,46 @@ RSpec.describe SetupHelper do
     # applications/setup.rb, each appending a separate hash to the PATHS array.
     # Verify that multiple array elements are all processed.
     # --------------------------------------------------------------------------
-    context 'when processing multiple path groups' do
-      it 'processes each group independently' do
-        dotfile_dest = File.join(tmpdir, '.myconfigurations/dotfiles/.zshrc')
-        app_dest = File.join(tmpdir, '.myconfigurations/applications/tmux/conf')
+    context "when processing multiple path groups" do
+      it "processes each group independently" do
+        dotfile_dest = File.join( tmpdir, ".myconfigurations/dotfiles/.zshrc" )
+        app_dest = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
 
-        FileUtils.mkdir_p(File.dirname(dotfile_dest))
-        FileUtils.mkdir_p(File.dirname(app_dest))
-        File.write(dotfile_dest, 'zsh config')
-        File.write(app_dest, 'tmux config')
+        FileUtils.mkdir_p( File.dirname( dotfile_dest ) )
+        FileUtils.mkdir_p( File.dirname( app_dest ) )
+        File.write( dotfile_dest, "zsh config" )
+        File.write( app_dest, "tmux config" )
 
         # Two separate path groups, as if loaded from two different setup files.
         paths = [
           {
             dotfiles: [
               {
-                source: '$HOME/.zshrc',
-                destination: '$HOME/.myconfigurations/dotfiles/.zshrc'
+                source: "$HOME/.zshrc",
+                destination: "$HOME/.myconfigurations/dotfiles/.zshrc",
               }
-            ]
+            ],
           },
           {
             tmux: [
               {
-                source: '$HOME/.tmux.conf',
-                destination: '$HOME/.myconfigurations/applications/tmux/conf'
+                source: "$HOME/.tmux.conf",
+                destination: "$HOME/.myconfigurations/applications/tmux/conf",
               }
-            ]
+            ],
           }
         ]
 
-        described_class.process_paths(paths)
+        described_class.process_paths( paths )
 
-        zshrc_source = File.join(tmpdir, '.zshrc')
-        tmux_source = File.join(tmpdir, '.tmux.conf')
+        zshrc_source = File.join( tmpdir, ".zshrc" )
+        tmux_source = File.join( tmpdir, ".tmux.conf" )
 
-        expect(File.symlink?(zshrc_source)).to be true
-        expect(File.readlink(zshrc_source)).to eq(dotfile_dest)
+        expect( File.symlink?( zshrc_source ) ).to be true
+        expect( File.readlink( zshrc_source ) ).to eq( dotfile_dest )
 
-        expect(File.symlink?(tmux_source)).to be true
-        expect(File.readlink(tmux_source)).to eq(app_dest)
+        expect( File.symlink?( tmux_source ) ).to be true
+        expect( File.readlink( tmux_source ) ).to eq( app_dest )
       end
     end
   end

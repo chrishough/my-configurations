@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Add the project's lib directory to the load path so we can require helpers directly.
-$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+$LOAD_PATH.unshift File.expand_path( "../lib", __dir__ )
 
 RSpec.configure do |config|
   # Use expect syntax exclusively (no `should`).
