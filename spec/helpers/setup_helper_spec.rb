@@ -222,6 +222,117 @@ RSpec.describe SetupHelper do
     end
 
     # --------------------------------------------------------------------------
+    # Deeply nested source directories within $HOME
+    # Mirrors the applications/claude/setup.rb pattern where the source path
+    # includes multiple nested directories (e.g., test/.claude/) that may not
+    # exist on a fresh machine. All intermediate directories after $HOME must
+    # be created automatically so the symlink succeeds.
+    # --------------------------------------------------------------------------
+    context "when source has deeply nested directories that do not exist" do
+      it "creates all intermediate source directories and the symlink" do
+        # Destination file exists in the repo (simulating the config store).
+        dest_file = File.join( tmpdir, ".myconfigurations.ai/claude/local/settings.json" )
+        FileUtils.mkdir_p( File.dirname( dest_file ) )
+        File.write( dest_file, "{}" )
+
+        # Source path mirrors applications/claude/setup.rb: nested dirs
+        # "test/" and "test/.claude/" do not exist yet inside $HOME.
+        paths = [
+          {
+            claude: [
+              {
+                source: "$HOME/test/.claude/settings.local.json",
+                destination: "$HOME/.myconfigurations.ai/claude/local/settings.json",
+              }
+            ],
+          }
+        ]
+
+        described_class.process_paths( paths )
+
+        source_path = File.join( tmpdir, "test/.claude/settings.local.json" )
+        test_dir = File.join( tmpdir, "test" )
+        claude_dir = File.join( tmpdir, "test/.claude" )
+
+        # Both intermediate directories should have been created.
+        expect( Dir.exist?( test_dir ) ).to be true
+        expect( Dir.exist?( claude_dir ) ).to be true
+
+        # The symlink should have been created successfully.
+        expect( File.symlink?( source_path ) ).to be true
+        expect( File.readlink( source_path ) ).to eq( dest_file )
+      end
+    end
+
+    # --------------------------------------------------------------------------
+    # Deeply nested destination directories within $HOME
+    # The destination side also uses mkdir_p. Verify that when the destination
+    # directory tree doesn't exist, all intermediate directories are created.
+    # --------------------------------------------------------------------------
+    context "when destination has deeply nested directories that do not exist" do
+      it "creates all intermediate destination directories and the symlink" do
+        # Neither the source nor destination directories exist yet.
+        paths = [
+          {
+            newtool: [
+              {
+                source: "$HOME/.newtool/config.json",
+                destination: "$HOME/deep/nested/repo/store/config.json",
+              }
+            ],
+          }
+        ]
+
+        described_class.process_paths( paths )
+
+        dest_dir = File.join( tmpdir, "deep/nested/repo/store" )
+        source_path = File.join( tmpdir, ".newtool/config.json" )
+        dest_path = File.join( tmpdir, "deep/nested/repo/store/config.json" )
+
+        # All intermediate destination directories should exist.
+        expect( Dir.exist?( dest_dir ) ).to be true
+
+        # Symlink should point to the destination.
+        expect( File.symlink?( source_path ) ).to be true
+        expect( File.readlink( source_path ) ).to eq( dest_path )
+      end
+    end
+
+    # --------------------------------------------------------------------------
+    # $HOME guard -- skip when $HOME does not exist
+    # SetupHelper must NEVER create the $HOME directory itself. If $HOME does
+    # not exist and a path is under it, the entry is skipped with an error
+    # message. This prevents accidentally creating a bogus home directory.
+    # --------------------------------------------------------------------------
+    context "when $HOME does not exist" do
+      it "skips the entry without creating directories or symlinks" do
+        # Point $HOME to a path that does not exist.
+        fake_home = File.join( tmpdir, "nonexistent_home" )
+        ENV["HOME"] = fake_home
+
+        paths = [
+          {
+            claude: [
+              {
+                source: "$HOME/.claude/settings.json",
+                destination: "$HOME/.myconfigurations/settings.json",
+              }
+            ],
+          }
+        ]
+
+        described_class.process_paths( paths )
+
+        # $HOME should NOT have been created.
+        expect( Dir.exist?( fake_home ) ).to be false
+
+        # No symlink should have been created.
+        source_path = File.join( fake_home, ".claude/settings.json" )
+        expect( File.exist?( source_path ) ).to be false
+      end
+    end
+
+    # --------------------------------------------------------------------------
     # Multiple tools in a single path group
     # The applications/setup.rb file defines tmux, claude, and vscode in a
     # single hash. Verify that all tools in the group are processed.

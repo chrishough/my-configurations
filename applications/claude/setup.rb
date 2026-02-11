@@ -10,7 +10,7 @@ PATHS.push(
   {
     claude: [
       {
-        source: ".claude/settings.local.json",
+        source: "test/.claude/settings.local.json",
         destination: "$HOME/.myconfigurations.ai/claude/local/settings.json",
       }
     ],

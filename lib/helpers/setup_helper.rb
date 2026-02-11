@@ -30,14 +30,26 @@ module SetupHelper
             end
           end
 
-          # Create source directory if it doesn't exist
+          # Guard: never create $HOME itself -- only subdirectories within it.
+          home_dir = Dir.home
+
           source_dir = File.dirname( source )
+          if source_dir.start_with?( home_dir ) && !File.exist?( home_dir )
+            puts( "  ERROR: Home directory does not exist: #{home_dir}, skipping" )
+            next
+          end
+
+          destination_dir = File.dirname( destination )
+          if destination_dir.start_with?( home_dir ) && !File.exist?( home_dir )
+            puts( "  ERROR: Home directory does not exist: #{home_dir}, skipping" )
+            next
+          end
+
           unless File.exist?( source_dir )
             puts( "  Creating source directory: #{source_dir}" )
             FileUtils.mkdir_p( source_dir )
           end
 
-          destination_dir = File.dirname( destination )
           FileUtils.mkdir_p( destination_dir )
 
           puts( "  Creating symlink: #{source} -> #{destination}" )
