@@ -6,6 +6,10 @@ PATHS.push(
       {
         source: "$HOME/.tmux.conf",
         destination: "$HOME/.myconfigurations/applications/tmux/conf",
+      },
+      {
+        source: "$HOME/.myconfigurations/applications/tmux/paths.json",
+        destination: "$HOME/.myconfigurations.private/tmux/paths.json",
       }
     ],
     claude: [
