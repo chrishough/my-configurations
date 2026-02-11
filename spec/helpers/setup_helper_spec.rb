@@ -37,12 +37,17 @@ RSpec.describe SetupHelper do
     # to our sandbox instead of the real home directory.
     let( :tmpdir ) { Dir.mktmpdir( "setup_helper_spec" ) }
     let( :original_home ) { Dir.home }
+    let( :highline_instance ) { instance_double( HighLine ) }
 
     before do
       original_home
       ENV["HOME"] = tmpdir
       allow( $stdout ).to receive( :write )
       allow( $stdout ).to receive( :puts )
+      # Stub HighLine.new so interactive prompts don't block tests.
+      allow( HighLine ).to receive( :new ).and_return( highline_instance )
+      allow( highline_instance ).to receive( :say )
+      allow( highline_instance ).to receive( :agree ).and_return( false )
     end
 
     after do
@@ -156,13 +161,12 @@ RSpec.describe SetupHelper do
     end
 
     # --------------------------------------------------------------------------
-    # Regular file exists at source -- skip
-    # If a real (non-symlink) file exists at the source location, the method
-    # refuses to overwrite it. This protects user data that hasn't been moved
-    # into the configuration repo yet.
+    # Regular file exists at source -- user approves replacement
+    # When a real file exists, HighLine prompts the user. If they approve,
+    # the file is removed and replaced with a symlink.
     # --------------------------------------------------------------------------
-    context "when a regular file exists at source" do
-      it "does not create a symlink and leaves the file intact" do
+    context "when a regular file exists and user approves replacement" do
+      it "removes the file and creates a symlink" do
         source_path = File.join( tmpdir, ".tmux.conf" )
         dest_file = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
         FileUtils.mkdir_p( File.dirname( dest_file ) )
@@ -170,6 +174,45 @@ RSpec.describe SetupHelper do
 
         # Create a real file (not a symlink) at the source path.
         File.write( source_path, "user local config" )
+
+        # User approves the replacement.
+        allow( highline_instance ).to receive( :agree ).and_return( true )
+
+        paths = [
+          {
+            tmux: [
+              {
+                source: "$HOME/.tmux.conf",
+                destination: "$HOME/.myconfigurations/applications/tmux/conf",
+              }
+            ],
+          }
+        ]
+
+        described_class.process_paths( paths )
+
+        # The regular file should be replaced with a symlink.
+        expect( File.symlink?( source_path ) ).to be true
+        expect( File.readlink( source_path ) ).to eq( dest_file )
+      end
+    end
+
+    # --------------------------------------------------------------------------
+    # Regular file exists at source -- user declines replacement
+    # When a real file exists and the user declines, the file is left intact
+    # and no symlink is created.
+    # --------------------------------------------------------------------------
+    context "when a regular file exists and user declines replacement" do
+      it "leaves the file intact and does not create a symlink" do
+        source_path = File.join( tmpdir, ".tmux.conf" )
+        dest_file = File.join( tmpdir, ".myconfigurations/applications/tmux/conf" )
+        FileUtils.mkdir_p( File.dirname( dest_file ) )
+        File.write( dest_file, "repo config" )
+
+        # Create a real file (not a symlink) at the source path.
+        File.write( source_path, "user local config" )
+
+        # User declines the replacement (default stub returns false).
 
         paths = [
           {
@@ -218,6 +261,29 @@ RSpec.describe SetupHelper do
         # Both directory trees should have been created.
         expect( Dir.exist?( source_dir ) ).to be true
         expect( Dir.exist?( dest_dir ) ).to be true
+      end
+
+      # .keep files are added to newly created directories so they can be
+      # tracked in git. Verify both source and destination directories get one.
+      it "adds a .keep file to newly created source and destination directories" do
+        paths = [
+          {
+            newtool: [
+              {
+                source: "$HOME/.config/keeptest/settings.json",
+                destination: "$HOME/.myconfigurations/apps/keeptest/settings.json",
+              }
+            ],
+          }
+        ]
+
+        described_class.process_paths( paths )
+
+        source_keep = File.join( tmpdir, ".config/keeptest/.keep" )
+        dest_keep = File.join( tmpdir, ".myconfigurations/apps/keeptest/.keep" )
+
+        expect( File.exist?( source_keep ) ).to be true
+        expect( File.exist?( dest_keep ) ).to be true
       end
     end
 

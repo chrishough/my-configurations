@@ -5,6 +5,8 @@ git_source( :github ) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "4.0.0"
 
+gem "highline", "~> 3.1"
+
 group :development, :test do
   gem "rubocop", require: false
   gem "rubocop-performance", require: false

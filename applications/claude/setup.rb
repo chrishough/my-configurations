@@ -3,14 +3,22 @@
 
 # ruby "$HOME/.myconfigurations/applications/claude/setup.rb"
 
-require_relative "helpers/setup_helper"
+require "highline"
+require_relative "../../lib/helpers/setup_helper"
+
+# Guard: this script must only run inside a git project directory.
+unless system( "git rev-parse --git-dir > /dev/null 2>&1" )
+  cli = HighLine.new
+  cli.say( "<%= color( 'ERROR: Must be run inside a git project directory!', :red ) %>" )
+  exit( 1 )
+end
 
 PATHS = [] # rubocop:disable Style/MutableConstant
 PATHS.push(
   {
     claude: [
       {
-        source: "test/.claude/settings.local.json",
+        source: ".claude/settings.local.json",
         destination: "$HOME/.myconfigurations.private/claude/local/settings.json",
       }
     ],
