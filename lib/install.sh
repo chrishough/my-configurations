@@ -30,6 +30,7 @@ install_brew_packages() {
         "chezmoi"
         "gh"
         "terminal-notifier"
+        "watchman"
     )
 
     echo "Running brew update..."
