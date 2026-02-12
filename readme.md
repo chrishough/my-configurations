@@ -44,12 +44,12 @@ ruby "$HOME/.myconfigurations/lib/setup.rb"
 **Idempotency:** The `SetupHelper` module checks each path before acting:
 - Correct symlink exists → skips (no action)
 - Wrong symlink exists → removes old, creates correct
-- Regular file exists → skips (preserves user files)
+- Regular file exists → prompts to approve/decline replacement
 - Nothing exists → creates parent directories and symlink
 
 **Managed Symlinks:**
 
-| Category | Source (System Location) | Destination (Repository) |
+| Category | Source (System Location) | Destination (Config Store) |
 |----------|--------------------------|--------------------------|
 | dotfiles | `~/.bash_profile` | `dotfiles/.bash_profile` |
 | dotfiles | `~/.bashrc` | `dotfiles/.bashrc` |
@@ -59,9 +59,10 @@ ruby "$HOME/.myconfigurations/lib/setup.rb"
 | dotfiles | `~/.vimrc` | `dotfiles/.vimrc` |
 | dotfiles | `~/.zprofile` | `dotfiles/.zprofile` |
 | dotfiles | `~/.zshrc` | `dotfiles/.zshrc` |
-| claude | `~/.claude/settings.json` | `aitooling/claude/settings.json` |
-| claude | `~/.claude/CLAUDE.md` | `aitooling/claude/CLAUDE.md` |
 | tmux | `~/.tmux.conf` | `applications/tmux/conf` |
+| tmux | `applications/tmux/paths.json` | `~/.myconfigurations.private/tmux/paths.json` |
+| claude | `~/.claude/settings.json` | `~/.myconfigurations.private/claude/global/settings.json` |
+| claude | `~/.claude/CLAUDE.md` | `~/.myconfigurations.private/claude/brains/global/CLAUDE.md` |
 | vscode | `~/Library/.../User/settings.json` | `applications/vscode/settings.json` |
 | vscode | `~/Library/.../User/keybindings.json` | `applications/vscode/keybindings.json` |
 | vscode | `~/Library/.../User/snippets/ruby.json` | `applications/vscode/snippets/ruby.json` |
