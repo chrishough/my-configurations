@@ -1,0 +1,18 @@
+#!/bin/zsh
+
+function cm() { chezmoi managed }
+function cra() { chezmoi re-add }
+
+function wl() { watchman watch-list }
+
+function synchelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+  echo "  cm           = chezmoi managed"
+  echo "  cra          = chezmoi re-add"
+  echo "  wl           = watchman watch-list"
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}
