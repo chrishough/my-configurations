@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+function initsync() {
+  ruby "$HOME/.myconfigurations/applications/claude/setup.rb"
+}
+
 function cm() { chezmoi managed }
 function cra() { chezmoi re-add }
 
@@ -16,6 +20,7 @@ function synchelp () {
   echo
   echo "--------------------------------------------------------------------------------"
   echo
+  echo "  initsync     = initialize claude sync"
   echo "  cm           = chezmoi managed"
   echo "  cra          = chezmoi re-add"
   echo "  wl           = watchman watch-list"
