@@ -20,7 +20,7 @@ function wtsa() {
   done
 }
 
-function synchelp () {
+function aihelp () {
   echo
   echo "--------------------------------------------------------------------------------"
   echo
