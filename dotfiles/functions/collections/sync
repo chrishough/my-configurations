@@ -1,7 +1,11 @@
 #!/bin/zsh
 
-function initsync() {
+function csync() {
   ruby "$HOME/.myconfigurations/applications/claude/setup.rb"
+}
+
+function esync() {
+  entire enable --strategy auto-commit
 }
 
 function cm() { chezmoi managed }
@@ -20,7 +24,8 @@ function synchelp () {
   echo
   echo "--------------------------------------------------------------------------------"
   echo
-  echo "  initsync     = initialize claude sync"
+  echo "  csync        = initialize claude sync"
+  echo "  esync        = enable entire sync with auto-commit strategy"
   echo "  cm           = chezmoi managed"
   echo "  cra          = chezmoi re-add"
   echo "  wl           = watchman watch-list"
