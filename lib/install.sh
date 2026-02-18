@@ -5,7 +5,6 @@
 install_brew_taps() {
     # Array of tap packages in "user/tap/formula" format
     local tap_packages=(
-        "entireio/tap/entire"
         "PeonPing/tap/peon-ping"
     )
 
