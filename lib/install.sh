@@ -54,6 +54,7 @@ install_brew_packages() {
         "gh"
         "terminal-notifier"
         "watchman"
+        "ngrok"
     )
 
     echo "Running brew update..."
