@@ -30,7 +30,9 @@ export AUTOJUMP_IGNORE_CASE=1
 # ZSH AUTOCOMPLETE
 autoload -U compinit && compinit
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+if command -v brew &>/dev/null; then
+  [[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
+fi
 
 # ZSH HELP
 function help() {
