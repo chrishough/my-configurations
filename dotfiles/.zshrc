@@ -43,13 +43,13 @@ source $ZSH/oh-my-zsh.sh
 # disable auto correct
 unsetopt correct_all
 
-# source shared functions
-source $HOME/.myconfigurations/dotfiles/functions/functions
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+
+# source shared functions
+source $HOME/.myconfigurations/dotfiles/functions/functions
 
 eval "$(direnv hook zsh)"
 
