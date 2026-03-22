@@ -1,5 +1,5 @@
 #!/bin/zsh
-# sh "$HOME/.myconfigurations/lib/install.sh"
+# zsh "$HOME/.myconfigurations/lib/install.sh"
 
 # Function to install brew tap packages if they don't exist
 install_brew_taps() {
