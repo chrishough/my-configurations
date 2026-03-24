@@ -15,6 +15,35 @@ _dvy_next_session_name() {
   echo "${base}_${i}"
 }
 
+# Layout: l1_r2
+# +--------+---------+
+# |        |    1    |
+# |   0    +---------+
+# |        |    2    |
+# +--------+---------+
+_dvy_layout_l1_r2() {
+  local session="$1"
+  local dir="$2"
+  local config="$3"
+
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
+    splitw -h -p 55 -c "$dir" \; \
+    splitw -v -p 50 -c "$dir" \; \
+    select-layout -E
+
+  # Send commands to each pane (clear, custom command if specified, clear)
+  for pane in 0 1 2; do
+    tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
+    if [[ -n "$cmd" ]]; then
+      tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    fi
+  done
+
+  tmux attach -t "$session"
+}
+
 # Layout: l1_r3
 # +--------+----+----+
 # |        | 1  | 2  |
@@ -243,6 +272,9 @@ dvy() {
   session=$(_dvy_next_session_name "$session")
 
   case "$layout" in
+    l1_r2)
+      _dvy_layout_l1_r2 "$session" "$dir" "$config"
+      ;;
     l1_r3)
       _dvy_layout_l1_r3 "$session" "$dir" "$config"
       ;;
@@ -277,6 +309,13 @@ dvyhelp() {
   echo "   Paths file: $_DVY_PATHS_FILE"
   echo
   echo " Layout types:"
+  echo
+  echo "   l1_r2 - 3-pane layout (1 left, 2 right)"
+  echo "   +--------+---------+"
+  echo "   |        |    1    |"
+  echo "   |   0    +---------+"
+  echo "   |        |    2    |"
+  echo "   +--------+---------+"
   echo
   echo "   l1_r3 - 4-pane layout (1 left, 3 right)"
   echo "   +--------+----+----+"
