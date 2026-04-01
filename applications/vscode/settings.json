@@ -106,6 +106,7 @@
 	"workbench.preferredHighContrastColorTheme": "RailsCasts Plus Theme",
 	"gitlens.ai.model": "vscode",
 	"gitlens.ai.vscode.model": "anthropic:claude-4.5-opus",
-	"claudeCode.preferredLocation": "panel"
+	"claudeCode.preferredLocation": "panel",
+	"workbench.colorTheme": "RailsCasts"
 	// -------------------------------------------------------------------
 }
