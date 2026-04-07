@@ -29,7 +29,9 @@ install_brew_packages() {
     # Array of packages to install
     local packages=(
         "autojump"
+        "awscli"
         "direnv"
+        "ffmpeg"
         "fzf"
         "heroku"
         "rbenv"
