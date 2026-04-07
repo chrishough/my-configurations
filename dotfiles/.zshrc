@@ -65,3 +65,5 @@ alias upzsh="upgrade_oh_my_zsh"
 # Clean up old zcompdump files on shell start (keeps only the current one)
 find "${HOME}" -maxdepth 1 -name ".zcompdump*" -mtime +7 -delete 2>/dev/null
 
+# Ingore Husky Commit Tools!
+export HUSKY=0
