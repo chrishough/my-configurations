@@ -15,6 +15,20 @@ _dvy_next_session_name() {
   echo "${base}_${i}"
 }
 
+_dvy_set_tab_color() {
+  local hex="${1#\#}"
+  local r=$((16#${hex:0:2}))
+  local g=$((16#${hex:2:2}))
+  local b=$((16#${hex:4:2}))
+  echo -ne "\033]6;1;bg;red;brightness;${r}\a"
+  echo -ne "\033]6;1;bg;green;brightness;${g}\a"
+  echo -ne "\033]6;1;bg;blue;brightness;${b}\a"
+}
+
+_dvy_reset_tab_color() {
+  echo -ne "\033]6;1;bg;*;default\a"
+}
+
 # Layout: l1_r2
 # +--------+---------+
 # |        |    1    |
@@ -40,8 +54,6 @@ _dvy_layout_l1_r2() {
       tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
-
-  tmux attach -t "$session"
 }
 
 # Layout: l1_r3
@@ -71,8 +83,6 @@ _dvy_layout_l1_r3() {
       tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
-
-  tmux attach -t "$session"
 }
 
 # Layout: l1_r4
@@ -106,8 +116,6 @@ _dvy_layout_l1_r4() {
       tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
-
-  tmux attach -t "$session"
 }
 
 # Layout: l2_r4
@@ -149,8 +157,6 @@ _dvy_layout_l2_r4() {
       tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
-
-  tmux attach -t "$session"
 }
 
 _dvy_list() {
@@ -289,6 +295,20 @@ dvy() {
       return 1
       ;;
   esac
+
+  # Set iTerm2 tab color if configured, attach, then reset on detach
+  local tab_color
+  tab_color=$(echo "$config" | jq -r '.tab_color // empty')
+  if [[ -n "$tab_color" ]]; then
+    _dvy_set_tab_color "$tab_color"
+  fi
+
+  tmux attach -t "$session"
+
+  # Reset tab color after detach/exit
+  if [[ -n "$tab_color" ]]; then
+    _dvy_reset_tab_color
+  fi
 }
 
 dvyhelp() {
@@ -307,6 +327,7 @@ dvyhelp() {
   echo
   echo " Configuration:"
   echo "   Paths file: $_DVY_PATHS_FILE"
+  echo "   tab_color:  Optional \"#RRGGBB\" hex color for iTerm2 tab (auto-resets on detach)"
   echo
   echo " Layout types:"
   echo
