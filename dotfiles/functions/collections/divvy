@@ -232,7 +232,21 @@ dvy() {
   # Handle -a (attach) flag
   if [[ "$flag" == "-a" ]]; then
     if tmux has-session -t "$session" 2>/dev/null; then
+      local tab_color=""
+      if [[ -f "$_DVY_PATHS_FILE" ]]; then
+        local a_config
+        a_config=$(jq -r --arg s "$session" '.[$s] // empty' "$_DVY_PATHS_FILE")
+        if [[ -n "$a_config" ]]; then
+          tab_color=$(echo "$a_config" | jq -r '.tab_color // empty')
+        fi
+      fi
+      if [[ -n "$tab_color" ]]; then
+        _dvy_set_tab_color "$tab_color"
+      fi
       tmux attach -t "$session"
+      if [[ -n "$tab_color" ]]; then
+        _dvy_reset_tab_color
+      fi
     else
       echo "Error: Session '$session' does not exist."
       echo "Run 'dvy --list' to see active sessions."
