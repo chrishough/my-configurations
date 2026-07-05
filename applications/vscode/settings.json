@@ -107,6 +107,7 @@
 	"gitlens.ai.model": "vscode",
 	"gitlens.ai.vscode.model": "anthropic:claude-4.5-opus",
 	"claudeCode.preferredLocation": "panel",
-	"workbench.colorTheme": "RailsCasts"
+	"workbench.colorTheme": "RailsCasts",
+	"diffEditor.hideUnchangedRegions.enabled": true
 	// -------------------------------------------------------------------
 }
