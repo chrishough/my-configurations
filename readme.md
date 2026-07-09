@@ -9,7 +9,7 @@ These guides are highly opinionated. If you have any questions please post an is
 # My Engineering Life
 > This is how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Refer to older versions of these dotfiles for Intel chipsets, version 8+ only supports the Apple M-Series chipsets. Happy to help my friends! This Guide was written on OSX 26.5.2 "Tahoe".
 
-0. [Prepare Apple Workstation](/docs/installation/001.md)
+0. [Initialize Workstation Core Settings](/docs/installation/000.md).
 
 
 
