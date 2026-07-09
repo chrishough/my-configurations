@@ -5,6 +5,22 @@ require "highline"
 require_relative "path_helper"
 
 module SetupHelper
+  def self.ensure_private_path!
+    return unless ENV["MYCONFIGURATIONS_PRIVATE_PATH"].to_s.strip.empty?
+
+    abort( <<~ERROR )
+      ERROR: MYCONFIGURATIONS_PRIVATE_PATH is not set.
+
+      This variable must point to your private configurations directory
+      (not tracked in git) before running setup, e.g.:
+
+        export MYCONFIGURATIONS_PRIVATE_PATH="$HOME/.myconfigurations.private"
+
+      Add it to your shell profile (or ~/.myconfigurations.private.keys),
+      reload your shell, then re-run this script.
+    ERROR
+  end
+
   def self.process_paths( paths )
     cli = HighLine.new
     paths.each do |path_group|

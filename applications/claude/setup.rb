@@ -13,13 +13,15 @@ unless system( "git rev-parse --git-dir > /dev/null 2>&1" )
   exit( 1 )
 end
 
+SetupHelper.ensure_private_path!
+
 PATHS = [] # rubocop:disable Style/MutableConstant
 PATHS.push(
   {
     claude: [
       {
         source: ".claude/settings.local.json",
-        destination: "$HOME/.myconfigurations.private/claude/local/settings.local.json",
+        destination: "#{ENV['MYCONFIGURATIONS_PRIVATE_PATH']}/claude/local/settings.local.json",
       }
     ],
   },

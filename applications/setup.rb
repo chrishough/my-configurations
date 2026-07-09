@@ -9,17 +9,17 @@ PATHS.push(
       },
       {
         source: "$HOME/.myconfigurations/applications/tmux/paths.json",
-        destination: "$HOME/.myconfigurations.private/tmux/paths.json",
+        destination: "#{ENV['MYCONFIGURATIONS_PRIVATE_PATH']}/tmux/paths.json",
       }
     ],
     claude: [
       {
         source: "$HOME/.claude/settings.json",
-        destination: "$HOME/.myconfigurations.private/claude/global/settings.json",
+        destination: "#{ENV['MYCONFIGURATIONS_PRIVATE_PATH']}/claude/global/settings.json",
       },
       {
         source: "$HOME/.claude/CLAUDE.md",
-        destination: "$HOME/.myconfigurations.private/claude/brains/global/CLAUDE.md",
+        destination: "#{ENV['MYCONFIGURATIONS_PRIVATE_PATH']}/claude/brains/global/CLAUDE.md",
       }
     ],
     vscode: [

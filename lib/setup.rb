@@ -5,6 +5,8 @@
 
 require_relative "helpers/setup_helper"
 
+SetupHelper.ensure_private_path!
+
 # Initialize PATHS array -- must remain mutable so setup files can push into it.
 PATHS = [] # rubocop:disable Style/MutableConstant
 

@@ -1,6 +1,6 @@
 # DVY - Dynamic tmux layout manager
 # Reads layouts from ~/.myconfigurations/applications/tmux/paths.json
-_DVY_PATHS_FILE="$HOME/.myconfigurations.private/tmux/paths.json"
+_DVY_PATHS_FILE="${MYCONFIGURATIONS_PRIVATE_PATH:-$HOME/.myconfigurations.private}/tmux/paths.json"
 
 _dvy_next_session_name() {
   local base="$1"
