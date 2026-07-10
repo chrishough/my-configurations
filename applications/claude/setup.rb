@@ -7,11 +7,11 @@ require "highline"
 require_relative "../../lib/helpers/setup_helper"
 
 # Guard: this script must only run inside a git project directory.
-unless system( "git rev-parse --git-dir > /dev/null 2>&1" )
-  cli = HighLine.new
-  cli.say( "<%= color( 'ERROR: Must be run inside a git project directory!', :red ) %>" )
-  exit( 1 )
-end
+# unless system( "git rev-parse --git-dir > /dev/null 2>&1" )
+#   cli = HighLine.new
+#   cli.say( "<%= color( 'ERROR: Must be run inside a git project directory!', :red ) %>" )
+#   exit( 1 )
+# end
 
 SetupHelper.ensure_private_path!
 
