@@ -15,18 +15,33 @@ _dvy_next_session_name() {
   echo "${base}_${i}"
 }
 
+# Emit a raw terminal escape sequence to the outer terminal (iTerm2).
+# When running inside tmux, wrap it in tmux's DCS passthrough so tmux
+# forwards it to iTerm2 instead of swallowing it. Requires tmux 3.3+
+# with `set -g allow-passthrough on`.
+_dvy_emit() {
+  local seq="$1"
+  if [[ -n "$TMUX" ]]; then
+    # Double every ESC in the payload, then wrap: ESC P tmux ; <payload> ESC \
+    seq="${seq//$'\033'/$'\033\033'}"
+    printf '\033Ptmux;%s\033\\' "$seq"
+  else
+    printf '%s' "$seq"
+  fi
+}
+
 _dvy_set_tab_color() {
   local hex="${1#\#}"
   local r=$((16#${hex:0:2}))
   local g=$((16#${hex:2:2}))
   local b=$((16#${hex:4:2}))
-  echo -ne "\033]6;1;bg;red;brightness;${r}\a"
-  echo -ne "\033]6;1;bg;green;brightness;${g}\a"
-  echo -ne "\033]6;1;bg;blue;brightness;${b}\a"
+  _dvy_emit "$(printf '\033]6;1;bg;red;brightness;%d\a' "$r")"
+  _dvy_emit "$(printf '\033]6;1;bg;green;brightness;%d\a' "$g")"
+  _dvy_emit "$(printf '\033]6;1;bg;blue;brightness;%d\a' "$b")"
 }
 
 _dvy_reset_tab_color() {
-  echo -ne "\033]6;1;bg;*;default\a"
+  _dvy_emit "$(printf '\033]6;1;bg;*;default\a')"
 }
 
 # Layout: l1_r2
