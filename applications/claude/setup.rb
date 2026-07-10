@@ -21,7 +21,7 @@ PATHS.push(
     claude: [
       {
         source: ".claude/settings.local.json",
-        destination: "#{ENV['1']}/claude/local/settings.local.json",
+        destination: "#{ENV.fetch( 'MYCONFIGURATIONS_PRIVATE_PATH', nil )}/claude/local/settings.local.json",
       }
     ],
   },
@@ -29,4 +29,3 @@ PATHS.push(
 
 # Process all collected paths
 SetupHelper.process_paths( PATHS )
-
