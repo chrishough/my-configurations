@@ -4,28 +4,11 @@ function csync() {
   ruby "$HOME/.myconfigurations/applications/claude/setup.rb"
 }
 
-function cm() { chezmoi managed }
-function cra() { chezmoi re-add }
-
-function wl() { watchman watch-list }
-function wts() { watchman trigger-list }
-function wtsa() {
-  for root in $(watchman watch-list | grep -o '"\/[^"]*"' | tr -d '"'); do
-    echo "=== $root ==="
-    watchman trigger-list "$root"
-  done
-}
-
 function aihelp () {
   echo
   echo "--------------------------------------------------------------------------------"
   echo
   echo "  csync        = initialize claude sync"
-  echo "  cm           = chezmoi managed"
-  echo "  cra          = chezmoi re-add"
-  echo "  wl           = watchman watch-list"
-  echo "  wts          = watchman trigger-list"
-  echo "  wtsa         = watchman trigger-list all"
   echo
   echo "--------------------------------------------------------------------------------"
   echo

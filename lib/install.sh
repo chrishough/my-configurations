@@ -52,10 +52,8 @@ install_brew_packages() {
         "pkg-config"
         "libpq"
         "gitleaks"
-        "chezmoi"
         "gh"
         "terminal-notifier"
-        "watchman"
         "ngrok"
     )
 

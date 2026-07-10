@@ -21,7 +21,7 @@ PATHS.push(
     claude: [
       {
         source: ".claude/settings.local.json",
-        destination: "#{ENV['MYCONFIGURATIONS_PRIVATE_PATH']}/claude/local/settings.local.json",
+        destination: "#{ENV['1']}/claude/local/settings.local.json",
       }
     ],
   },
