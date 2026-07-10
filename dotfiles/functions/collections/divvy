@@ -23,7 +23,10 @@ _dvy_emit() {
   local seq="$1"
   if [[ -n "$TMUX" ]]; then
     # Double every ESC in the payload, then wrap: ESC P tmux ; <payload> ESC \
-    seq="${seq//$'\033'/$'\033\033'}"
+    # (ESC held in a var so it works in both bash and zsh)
+    local esc
+    esc=$(printf '\033')
+    seq="${seq//$esc/$esc$esc}"
     printf '\033Ptmux;%s\033\\' "$seq"
   else
     printf '%s' "$seq"
