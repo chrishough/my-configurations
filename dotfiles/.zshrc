@@ -43,13 +43,13 @@ source $ZSH/oh-my-zsh.sh
 # disable auto correct
 unsetopt correct_all
 
-# source shared functions
-source $HOME/.myconfigurations/dotfiles/functions/functions
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+
+# source shared functions
+source $HOME/.myconfigurations/dotfiles/functions/functions
 
 eval "$(direnv hook zsh)"
 
@@ -65,3 +65,5 @@ alias upzsh="upgrade_oh_my_zsh"
 # Clean up old zcompdump files on shell start (keeps only the current one)
 find "${HOME}" -maxdepth 1 -name ".zcompdump*" -mtime +7 -delete 2>/dev/null
 
+# Ingore Husky Commit Tools!
+export HUSKY=0

@@ -1,7 +1,6 @@
 # DVY - Dynamic tmux layout manager
 # Reads layouts from ~/.myconfigurations/applications/tmux/paths.json
-
-_DVY_PATHS_FILE="$HOME/.myconfigurations/applications/tmux/paths.json"
+_DVY_PATHS_FILE="${MYCONFIGURATIONS_PRIVATE_PATH:-$HOME/.myconfigurations.private}/tmux/paths.json"
 
 _dvy_next_session_name() {
   local base="$1"
@@ -16,13 +15,72 @@ _dvy_next_session_name() {
   echo "${base}_${i}"
 }
 
-# Layout: apps
+# Emit a raw terminal escape sequence to the outer terminal (iTerm2).
+# When running inside tmux, wrap it in tmux's DCS passthrough so tmux
+# forwards it to iTerm2 instead of swallowing it. Requires tmux 3.3+
+# with `set -g allow-passthrough on`.
+_dvy_emit() {
+  local seq="$1"
+  if [[ -n "$TMUX" ]]; then
+    # Double every ESC in the payload, then wrap: ESC P tmux ; <payload> ESC \
+    # (ESC held in a var so it works in both bash and zsh)
+    local esc
+    esc=$(printf '\033')
+    seq="${seq//$esc/$esc$esc}"
+    printf '\033Ptmux;%s\033\\' "$seq"
+  else
+    printf '%s' "$seq"
+  fi
+}
+
+_dvy_set_tab_color() {
+  local hex="${1#\#}"
+  local r=$((16#${hex:0:2}))
+  local g=$((16#${hex:2:2}))
+  local b=$((16#${hex:4:2}))
+  _dvy_emit "$(printf '\033]6;1;bg;red;brightness;%d\a' "$r")"
+  _dvy_emit "$(printf '\033]6;1;bg;green;brightness;%d\a' "$g")"
+  _dvy_emit "$(printf '\033]6;1;bg;blue;brightness;%d\a' "$b")"
+}
+
+_dvy_reset_tab_color() {
+  _dvy_emit "$(printf '\033]6;1;bg;*;default\a')"
+}
+
+# Layout: l1_r2
+# +--------+---------+
+# |        |    1    |
+# |   0    +---------+
+# |        |    2    |
+# +--------+---------+
+_dvy_layout_l1_r2() {
+  local session="$1"
+  local dir="$2"
+  local config="$3"
+
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines) \; \
+    splitw -h -p 55 -c "$dir" \; \
+    splitw -v -p 50 -c "$dir" \; \
+    select-layout -E
+
+  # Send commands to each pane (clear, custom command if specified, clear)
+  for pane in 0 1 2; do
+    tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
+    if [[ -n "$cmd" ]]; then
+      tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    fi
+  done
+}
+
+# Layout: l1_r3
 # +--------+----+----+
 # |        | 1  | 2  |
 # |   0    +----+----+
 # |        |    3    |
 # +--------+---------+
-_dvy_layout_apps() {
+_dvy_layout_l1_r3() {
   local session="$1"
   local dir="$2"
   local config="$3"
@@ -43,11 +101,9 @@ _dvy_layout_apps() {
       tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
-
-  tmux attach -t "$session"
 }
 
-# Layout: configurations
+# Layout: l1_r4
 # +--------+---------+
 # |        |    1    |
 # |        +---------+
@@ -57,7 +113,7 @@ _dvy_layout_apps() {
 # |        +---------+
 # |        |    4    |
 # +--------+---------+
-_dvy_layout_configurations() {
+_dvy_layout_l1_r4() {
   local session="$1"
   local dir="$2"
   local config="$3"
@@ -78,8 +134,47 @@ _dvy_layout_configurations() {
       tmux send-keys -t "$session:0.$pane" 'clear' Enter
     fi
   done
+}
 
-  tmux attach -t "$session"
+# Layout: l2_r4
+# +--------+---------+
+# |   0    |    1    |
+# |        +---------+
+# |        |    2    |
+# +--------+---------+
+# |        |    3    |
+# |   5    +---------+
+# |        |    4    |
+# +--------+---------+
+_dvy_layout_l2_r4() {
+  local session="$1"
+  local dir="$2"
+  local config="$3"
+
+  # Create session with pane 0
+  tmux new-session -d -s "$session" -c "$dir" -x $(tput cols) -y $(tput lines)
+
+  # Split horizontally: pane 1 on right (50%)
+  tmux split-window -h -p 50 -t "$session:0" -c "$dir"
+
+  # Split right pane (1) vertically 3 times
+  tmux split-window -v -p 75 -t "$session:0.1" -c "$dir"
+  tmux split-window -v -p 66 -t "$session:0.2" -c "$dir"
+  tmux split-window -v -p 50 -t "$session:0.3" -c "$dir"
+
+  # Split left pane (0) vertically once
+  tmux split-window -v -p 50 -t "$session:0.0" -c "$dir"
+
+  tmux select-layout -t "$session:0" -E
+
+  for pane in 0 1 2 3 4 5; do
+    tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    local cmd=$(echo "$config" | jq -r --arg p "$pane" '.[$p] // empty')
+    if [[ -n "$cmd" ]]; then
+      tmux send-keys -t "$session:0.$pane" "$cmd" Enter
+      tmux send-keys -t "$session:0.$pane" 'clear' Enter
+    fi
+  done
 }
 
 _dvy_list() {
@@ -155,7 +250,21 @@ dvy() {
   # Handle -a (attach) flag
   if [[ "$flag" == "-a" ]]; then
     if tmux has-session -t "$session" 2>/dev/null; then
+      local tab_color=""
+      if [[ -f "$_DVY_PATHS_FILE" ]]; then
+        local a_config
+        a_config=$(jq -r --arg s "$session" '.[$s] // empty' "$_DVY_PATHS_FILE")
+        if [[ -n "$a_config" ]]; then
+          tab_color=$(echo "$a_config" | jq -r '.tab_color // empty')
+        fi
+      fi
+      if [[ -n "$tab_color" ]]; then
+        _dvy_set_tab_color "$tab_color"
+      fi
       tmux attach -t "$session"
+      if [[ -n "$tab_color" ]]; then
+        _dvy_reset_tab_color
+      fi
     else
       echo "Error: Session '$session' does not exist."
       echo "Run 'dvy --list' to see active sessions."
@@ -201,17 +310,37 @@ dvy() {
   session=$(_dvy_next_session_name "$session")
 
   case "$layout" in
-    apps)
-      _dvy_layout_apps "$session" "$dir" "$config"
+    l1_r2)
+      _dvy_layout_l1_r2 "$session" "$dir" "$config"
       ;;
-    configurations)
-      _dvy_layout_configurations "$session" "$dir" "$config"
+    l1_r3)
+      _dvy_layout_l1_r3 "$session" "$dir" "$config"
+      ;;
+    l1_r4)
+      _dvy_layout_l1_r4 "$session" "$dir" "$config"
+      ;;
+    l2_r4)
+      _dvy_layout_l2_r4 "$session" "$dir" "$config"
       ;;
     *)
       echo "Error: Unknown layout type: $layout"
       return 1
       ;;
   esac
+
+  # Set iTerm2 tab color if configured, attach, then reset on detach
+  local tab_color
+  tab_color=$(echo "$config" | jq -r '.tab_color // empty')
+  if [[ -n "$tab_color" ]]; then
+    _dvy_set_tab_color "$tab_color"
+  fi
+
+  tmux attach -t "$session"
+
+  # Reset tab color after detach/exit
+  if [[ -n "$tab_color" ]]; then
+    _dvy_reset_tab_color
+  fi
 }
 
 dvyhelp() {
@@ -230,17 +359,25 @@ dvyhelp() {
   echo
   echo " Configuration:"
   echo "   Paths file: $_DVY_PATHS_FILE"
+  echo "   tab_color:  Optional \"#RRGGBB\" hex color for iTerm2 tab (auto-resets on detach)"
   echo
   echo " Layout types:"
   echo
-  echo "   apps - 4-pane layout"
+  echo "   l1_r2 - 3-pane layout (1 left, 2 right)"
+  echo "   +--------+---------+"
+  echo "   |        |    1    |"
+  echo "   |   0    +---------+"
+  echo "   |        |    2    |"
+  echo "   +--------+---------+"
+  echo
+  echo "   l1_r3 - 4-pane layout (1 left, 3 right)"
   echo "   +--------+----+----+"
   echo "   |        | 1  | 2  |"
   echo "   |   0    +----+----+"
   echo "   |        |    3    |"
   echo "   +--------+---------+"
   echo
-  echo "   configurations - 5-pane layout"
+  echo "   l1_r4 - 5-pane layout (1 left, 4 right)"
   echo "   +--------+---------+"
   echo "   |        |    1    |"
   echo "   |        +---------+"
@@ -248,6 +385,17 @@ dvyhelp() {
   echo "   |        +---------+"
   echo "   |        |    3    |"
   echo "   |        +---------+"
+  echo "   |        |    4    |"
+  echo "   +--------+---------+"
+  echo
+  echo "   l2_r4 - 6-pane layout (2 left, 4 right)"
+  echo "   +--------+---------+"
+  echo "   |   0    |    1    |"
+  echo "   |        +---------+"
+  echo "   |        |    2    |"
+  echo "   +--------+---------+"
+  echo "   |        |    3    |"
+  echo "   |   5    +---------+"
   echo "   |        |    4    |"
   echo "   +--------+---------+"
   echo

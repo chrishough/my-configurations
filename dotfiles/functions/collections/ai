@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+function csync() {
+  ruby "$HOME/.myconfigurations/applications/claude/setup.rb"
+}
+
+function aihelp () {
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+  echo "  csync        = initialize claude sync"
+  echo
+  echo "--------------------------------------------------------------------------------"
+  echo
+}

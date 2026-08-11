@@ -1,0 +1,28 @@
+plugins:
+  - rubocop-rspec
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 4.0
+  EnabledByDefault: true
+  DisplayCopNames: true
+  Exclude:
+    - tmp/**/*
+    - vendor/**/*
+    - .ruby-lsp/**/*
+
+Bundler/GemComment:
+  Enabled: false
+Bundler/GemVersion:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+
+Lint/ConstantResolution:
+  Enabled: false
+
+inherit_from:
+  - config/rubocop/metrics.yml
+  - config/rubocop/style.yml
+  - config/rubocop/layout.yml
+  - config/rubocop/rspec.yml

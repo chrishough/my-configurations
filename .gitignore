@@ -3,17 +3,14 @@
 #--------------------------------------------
 *.vscode
 *.claude
+*.entire
 *.idea
 *.code
-
-aitooling/cursor/workspaces/*
-!aitooling/cursor/workspaces/.keep
 
 applications/tmux/paths.json
 
 applications/vscode/workspaces/*
 !applications/vscode/workspaces/.keep
-!applications/itermocil/.keep
 
 #--------------------------------------------
 # APPLICATION
