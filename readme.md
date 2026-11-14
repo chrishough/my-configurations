@@ -7,13 +7,16 @@ Every engineer's workstation configuration (`dotfiles`) is highly variable and t
 These guides are highly opinionated. If you have any questions please post an issue. I am open to pull requests. Finally, this guide is supposed to read from top to bottom. If you are following this advice, please read it like *following the yellow brick road*, and have fun.  
 
 # My Engineering Life
-> This is how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Refer to older versions of these dotfiles for Intel chipsets, version 8+ only supports the Apple M-Series chipsets. Happy to help my friends! This Guide was written on OSX 26.2 "Tahoe".
+> This is how I setup my engineering life. Follow at your own risk, and feel free to open an issue for any bugs you may find. Refer to older versions of these dotfiles for Intel chipsets, version 8+ only supports the Apple M-Series chipsets. Happy to help my friends! This Guide was written on OSX 26.5.2 "Tahoe".
+
+0. [Initialize Workstation Core Settings](/docs/installation/000.md).
+
+
 
 1. [Setup a New or Reformatting an Existing Apple Workstation](/docs/installation/001.md)
-2. [Install Additional Business amd Workflow Software](/docs/installation/002.md)
+2. [Install Additional Business and Workflow Software](/docs/installation/002.md)
 3. [Engineering Workstation Setup and Configuration](/docs/installation/003.md)
 4. [Artificial Intelligence Preferences and Configurations](/docs/installation/004.md)
-5. Under `System Preferences` in `Network` to enable the `Firewall`
 
 #### Setup Scripts Reference
 
@@ -44,12 +47,12 @@ ruby "$HOME/.myconfigurations/lib/setup.rb"
 **Idempotency:** The `SetupHelper` module checks each path before acting:
 - Correct symlink exists → skips (no action)
 - Wrong symlink exists → removes old, creates correct
-- Regular file exists → skips (preserves user files)
+- Regular file exists → prompts to approve/decline replacement
 - Nothing exists → creates parent directories and symlink
 
 **Managed Symlinks:**
 
-| Category | Source (System Location) | Destination (Repository) |
+| Category | Source (System Location) | Destination (Config Store) |
 |----------|--------------------------|--------------------------|
 | dotfiles | `~/.bash_profile` | `dotfiles/.bash_profile` |
 | dotfiles | `~/.bashrc` | `dotfiles/.bashrc` |
@@ -59,9 +62,10 @@ ruby "$HOME/.myconfigurations/lib/setup.rb"
 | dotfiles | `~/.vimrc` | `dotfiles/.vimrc` |
 | dotfiles | `~/.zprofile` | `dotfiles/.zprofile` |
 | dotfiles | `~/.zshrc` | `dotfiles/.zshrc` |
-| claude | `~/.claude/settings.json` | `aitooling/claude/settings.json` |
-| claude | `~/.claude/CLAUDE.md` | `aitooling/claude/CLAUDE.md` |
 | tmux | `~/.tmux.conf` | `applications/tmux/conf` |
+| tmux | `applications/tmux/paths.json` | `~/.myconfigurations.private/tmux/paths.json` |
+| claude | `~/.claude/settings.json` | `~/.myconfigurations.private/claude/global/settings.json` |
+| claude | `~/.claude/CLAUDE.md` | `~/.myconfigurations.private/claude/brains/global/CLAUDE.md` |
 | vscode | `~/Library/.../User/settings.json` | `applications/vscode/settings.json` |
 | vscode | `~/Library/.../User/keybindings.json` | `applications/vscode/keybindings.json` |
 | vscode | `~/Library/.../User/snippets/ruby.json` | `applications/vscode/snippets/ruby.json` |

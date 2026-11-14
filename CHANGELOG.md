@@ -258,7 +258,7 @@ Complete modular architecture with 9 shell modules (`dotfiles/functions/collecti
 - libpq installation fixes for Apple Silicon
 
 #### Private Configuration Isolation
-- All private settings moved to `~/.myconfigurations.private` (outside repo)
+- All private settings moved to `~/.myconfigurations.private.keys` (outside repo)
 - Guards in Claude configuration files to prevent accidental commits
 
 ### Removed

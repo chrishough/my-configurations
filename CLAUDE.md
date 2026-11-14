@@ -79,7 +79,7 @@ rbenvset     # Set local Ruby version to global
 
 ### Shell Module System
 The shell configuration loads modules dynamically through `dotfiles/functions/functions`:
-1. Sources private configuration from `~/.myconfigurations.private`
+1. Sources private configuration from `~/.myconfigurations.private.keys`
 2. Sets global environment variables (HISTSIZE, BROWSER, EDITOR)
 3. Iterates through defined modules (itermocil, ror, git, brew, python, pg, heroku, js)
 4. For each module, sources the combined functions and help from `collections/<module>`
@@ -99,7 +99,7 @@ Each shell module in `collections/` combines:
 - Modules are self-contained and can be enabled/disabled via the `_myconfig_modules` array
 
 ### Private Configuration
-Sensitive settings are stored in `~/.myconfigurations.private` (not tracked in git) and sourced at the beginning of the shell initialization process.
+Sensitive settings are stored in `~/.myconfigurations.private.keys` (not tracked in git) and sourced at the beginning of the shell initialization process.
 
 ## Development Workflow
 
@@ -128,11 +128,11 @@ Follow the guides in sequence:
 - For environment configuration questions, refer to `.env.example` only
 - **NEVER read Rails secrets files** (`config/secrets.yml`, `config/credentials.yml.enc`, `config/master.key`) - they contain encrypted credentials and sensitive application secrets
 - If asked about Rails secrets, only provide commands to view them (e.g., `rails credentials:edit`, `rails credentials:show`) - NEVER read the files directly
-- Private configuration is stored in `~/.myconfigurations.private` (not tracked in git)
+- Private configuration is stored in `~/.myconfigurations.private.keys` (not tracked in git)
 
 ## Important Notes
 
-- Ruby version is set to 3.4.3 in the Gemfile
+- Ruby version is set to 4.0.9 in the Gemfile
 - Uses Zsh as the default shell with oh-my-zsh framework
 - Alfred workflows are stored in `scripts/alfred/`
 - Legacy configurations are prefixed with `__TBD__` indicating they may need updating

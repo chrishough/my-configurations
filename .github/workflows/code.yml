@@ -1,0 +1,97 @@
+name: CODE
+
+on:
+  pull_request:
+
+jobs:
+  # ----------------------------------------------------------------
+  # RUBY
+  # ----------------------------------------------------------------
+  code_ruby:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+      - name: Ruby Version
+        run: |
+          ruby -v
+      - name: Setup Ruby Dependencies
+        run: |
+          gem update bundler
+          bundle install --jobs 4 --retry 3
+      - name: Test Ruby Dependencies
+        run: |
+          bundle exec rake -T
+
+  # ----------------------------------------------------------------
+  # BUNDLE
+  # ----------------------------------------------------------------
+  code_bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Update bundle-audit database
+        run: bundle exec bundle-audit update
+
+      - name: Check for known security vulnerabilities in Ruby dependencies
+        run: bundle exec bundle-audit check
+
+      - name: Check for outdated gems
+        run: bundle outdated --strict
+        continue-on-error: true
+
+  # ----------------------------------------------------------------
+  # QUALITY
+  # ----------------------------------------------------------------
+  code_lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Lint code for consistent style!
+        run: bundle exec rubocop
+
+  # ----------------------------------------------------------------
+  # SPECS
+  # ----------------------------------------------------------------
+  code_specs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
+      - name: Set Up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Run RSpec Tests
+        env:
+          RAILS_ENV: test
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: 5432
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        run: bundle exec rspec --fail-fast

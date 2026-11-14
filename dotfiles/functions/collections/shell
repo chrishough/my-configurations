@@ -19,6 +19,9 @@ function msg() {
   esac
 }
 
+# Force `tilt` to the Homebrew binary so the rbenv shim (Ruby tilt gem) can't shadow it.
+[ -x /opt/homebrew/bin/tilt ] && alias tilt="/opt/homebrew/bin/tilt"
+
 function shellhelp () {
   echo
   echo "--------------------------------------------------------------------------------"
@@ -29,6 +32,7 @@ function shellhelp () {
   echo "  disc         = disc space details"
   echo "  up           = current machine up time"
   echo "  purgeDS      = remove all .DS_Store files in current directory"
+  echo "  tilt         = Tilt (Homebrew) — bypasses the rbenv ruby gem shim"
   echo
   echo "--------------------------------------------------------------------------------"
   echo

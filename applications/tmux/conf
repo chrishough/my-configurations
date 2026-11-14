@@ -4,6 +4,9 @@ set -g mouse on
 # Use system clipboard
 set -g set-clipboard on
 
+# Allow programs (e.g. dvy tab colors) to pass escape sequences through to iTerm2
+set -g allow-passthrough on
+
 # This is the only important part — copies to macOS clipboard, no warning
 bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
 bind-key -T copy-mode-vi Y send-keys -X copy-pipe-and-cancel "pbcopy"

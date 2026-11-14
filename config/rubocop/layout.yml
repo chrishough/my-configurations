@@ -1,0 +1,42 @@
+Layout/ClassStructure:
+  ExpectedOrder:
+    - constant
+    - module_inclusion
+    - attribute
+    - public_class_method
+    - public_method
+    - private_attribute
+    - protected_method
+    - private_method
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_first_argument
+
+Layout/MultilineMethodArgumentLineBreaks:
+  AllowMultilineFinalElement: true
+
+Layout/HashAlignment:
+  EnforcedColonStyle: key
+  EnforcedHashRocketStyle: key
+  AllowMultipleStyles: false
+
+Layout/SingleLineBlockChain:
+  Exclude:
+    - "spec/**/*"
+
+Layout/SpaceInsideParens:
+  EnforcedStyle: space
+
+Layout/RedundantLineBreak:
+  Enabled: false
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: space
+
+Layout/LineLength:
+  Max: 180
+  Exclude:
+    - spec/**/*.rb
