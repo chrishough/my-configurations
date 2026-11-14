@@ -29,6 +29,4 @@ PATHS.push(
 
 # Process all collected paths
 
-
-
 SetupHelper.process_paths( PATHS )
