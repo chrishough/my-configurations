@@ -132,7 +132,7 @@ Follow the guides in sequence:
 
 ## Important Notes
 
-- Ruby version is set to 3.4.3 in the Gemfile
+- Ruby version is set to 4.0.9 in the Gemfile
 - Uses Zsh as the default shell with oh-my-zsh framework
 - Alfred workflows are stored in `scripts/alfred/`
 - Legacy configurations are prefixed with `__TBD__` indicating they may need updating

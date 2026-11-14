@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source( :github ) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "4.0.5"
+ruby "4.0.9"
 
 gem "highline", "~> 3.1"
 gem "rake", "~> 13.3"
